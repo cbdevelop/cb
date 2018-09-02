@@ -1,0 +1,1998 @@
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif; font-weight:400; font-size:14px; margin:0px 0px; padding:0px 0px;
+     overflow-x:hidden; background-color: #f3f5f5;
+    }
+:focus, a:focus {
+    outline:none;
+    }
+input, select, textarea, label {
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    }
+input:focus, select:focus {
+    outline:none;
+    }   
+select::-ms-expand {
+    display: none;
+    }     
+a { text-decoration:none !important; color:#333; display:inline-block;} 
+a:hover { text-decoration:none;} a:active { text-decoration:none;} 
+h1, h2, h3, h4, h5, h6, p {margin: 0px 0px; padding: 0px 0px;}
+.clear { clear:both;}
+.wrapper {
+	width: 100%; position: relative;
+}
+header {
+	width: 100%; background:none; height: 68px; position: fixed; z-index: 10000; left: 0px; right: 0px; top: 0px; margin: 0px auto;
+	-webkit-transition: 0.15s all; -moz-transition: 0.15s all; transition: 0.15s all;
+	}
+.headInn {
+	width: 100%; max-width: 1300px; margin: 0px auto; padding: 0px 16px; position:relative;
+	}
+.logo {
+	float: left; width: 150px; height: 54px; margin: 9px 0px 0px 0px;
+	}
+.logo a {
+	display: block;
+}
+.logoImg {
+	display: block; width: 90px; height: 50px; background: url(../images/logo-w.png); background-position: center;
+	background-size: 85px; background-repeat: no-repeat;
+}
+nav {
+	float:right;
+}
+nav ul {
+	margin: 0px 0px; padding: 0px 10px 0px 0px; text-transform: uppercase;
+}
+nav ul li {
+	list-style-type:none; float:left; 
+}
+nav ul li a {
+	display:block; padding: 23px 20px 0px; margin: 0px 2px; color: #fff; font-size: 15px; height: 68px; font-weight: 400;
+	border-bottom: 4px solid rgba(0,0,0,0);
+}
+nav ul li a:hover, nav ul li a.Act {
+	color:#fff;  border-bottom: 4px solid #16af92;
+	}
+nav ul li a:focus {
+	color: #fff;
+}
+.signWrap {
+	float: right; padding: 15px 0px 0px 0px; position: relative;
+}
+.siIcon {
+	display: block; width: 36px; height: 36px; border: 1px solid #fff; border-radius: 50%; cursor: pointer;
+	color: #fff; text-align: center; padding: 0px 0px 0px 0px; font-size: 16px; line-height: 33px; float: left;
+}
+.menuIcon {
+	display: none; width: 36px; height: 36px; border: 1px solid #fff; border-radius: 50%; cursor: pointer;
+	color: #fff; text-align: center; padding: 0px 0px 0px 0px; font-size: 16px; line-height: 33px; float: left;
+	margin: 0px 0px 0px 15px;
+}
+.scrollAct {
+	background: #fff; box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+}
+.staticHead {
+	background: #fff; box-shadow: 0px 0px 3px rgba(0,0,0,0.2); position: static;
+}
+.scrollAct nav ul li a {
+	color: #454545;
+}
+.scrollAct .siIcon {
+	border: 1px solid #ccc; color: #545454;
+}
+.scrollAct .menuIcon {
+	border: 1px solid #ccc; color: #545454;
+}
+.scrollAct .logoImg {
+	background: url(../images/logo.png); background-position: center; background-size: 85px; background-repeat: no-repeat;		
+}
+.siIcon:hover, .menuIcon:hover  {
+	border: 1px solid #16af92;
+}
+.siIcon.siIconAct {
+	border: 1px solid #16af92; color: #16af92;
+}
+
+.themeOut {
+	background-color: #fff;  position: relative; margin-bottom: 0px;
+}
+.themeWrap {
+	background: url(../images/theme.jpg); background-attachment: fixed; background-size: 100%; min-height: 620px;
+}
+.themeText {
+	width: 900px; margin: 0px auto; padding: 21% 0px 0px; text-align: center;
+}
+.themeText h1 {
+	text-transform: uppercase; color: #fff; font-size: 40px; margin: 0px 0px; padding: 0px 0px; font-weight: 400;
+	text-shadow: 2px 2px 6px rgba(0,0,0,0.8); letter-spacing: 1px;
+}
+.themeText h2 {
+	color: #fff; font-size: 18px; margin: 0px 0px; padding: 15px 0px 0px 0px; font-weight: 400; line-height: 28px;
+	text-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+}
+.searchOut {
+	width: 1200px; height: 82px; background-color: #fff; position: absolute; bottom: -40px; margin: 0px auto; left: 0px;
+	right: 0px; box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+}
+.searchOut label {
+	display: block; text-transform: uppercase; color: #6d6d6d; font-size: 13px; font-weight: 400;
+}
+.select {
+	float: left; padding: 15px 0px 0px 20px; width: 16%;
+}
+.select span {
+	text-transform: capitalize; display: inline-block; padding: 0px 0px 0px 5px; font-size: 12px; font-weight: 500;
+	color: #1bb99b; cursor: pointer;
+}
+.select.time {
+	width: 13%;
+}
+.select select {
+	-webkit-appearance:none; -moz-appearance:none; -o-appearance:none; appearance:none; border:none; padding:0px 20px 0px 0px; width:90%;
+	background:url("../images/arrow.svg") no-repeat 97% 11px; background-size:9px; font-family: 'Roboto';
+	font-size: 16px; font-weight: 500; color: #333; text-indent: 0px; height: 32px;
+}
+.select input {
+	background:url("../images/cale.svg") no-repeat 97% 7px; background-size:16px; font-family: 'Roboto';
+	font-size: 15px; font-weight: 500; color: #333; text-indent: 0px; height: 32px; width:90%;
+	-webkit-appearance:none; -moz-appearance:none; -o-appearance:none; appearance:none; border:none; padding:0px 20px 0px 0px;
+}
+.select input.date {
+	background:url("../images/time.svg") no-repeat 97% 7px; background-size:16px;
+}
+.select input.loca {
+	padding:0px 0px 0px 0px; background-image: none;
+}
+.atten {
+	float: left; padding: 15px 0px 0px 20px; width: 22%;
+}
+.atten b {
+	display: inline-block; color: #40b99b;
+}
+.atten input {
+	background:url("../images/veg.svg") no-repeat 0px 7px; background-size:16px; font-family: 'Roboto';
+	font-size: 15px; font-weight: 500; color: #333; text-indent: 0px; height: 32px; width:46%;
+	-webkit-appearance:none; -moz-appearance:none; -o-appearance:none; appearance:none; border:none; padding:0px 0px 0px 25px;
+}
+.atten input.non {
+	background:url("../images/non-veg.svg") no-repeat 0px 7px; background-size:16px;
+}
+.seaBtn {
+	float: right; width: 12%;
+}
+.seaButton {
+	border: none; background-color: #1bb99b; color: #fff; height: 82px; width: 100%; font-size: 17px; font-weight: 400;
+	text-transform: uppercase;
+}
+.homeHeading{
+	text-align: center; background: url(../images/bg-head.png) repeat-x center; padding: 0px 0px;
+	display: block; width: 750px; margin: 0px auto 20px;
+}
+.homeHeading h3 {
+	display: inline-block; background-color: #fff; padding: 0px 35px; font-size: 30px; font-weight: 300; color: #404c58;
+	text-transform: uppercase;
+}
+.howItOut {
+	background-color: #fff;
+}
+.howItOut.bgTwo {
+	background-color: #f2f2f2;
+}
+.howItOut.bgTwo .homeHeading h3 {
+	background-color: #f2f2f2;
+}
+.howItWrap {
+	width: 1200px; margin: 0px auto; padding: 95px 0px 50px;
+}
+.howItCta {
+	width:23%; margin: 1% 1%; float: left; background-color: #fff; border-bottom: 2px solid #fff;
+	border-radius: 2px; overflow: hidden; height: 420px; box-shadow:0px 1px 4px rgba(0,0,0,0.2);
+}
+.howItCta img {
+	width:100%;
+}
+.howItCtaInn {
+	padding:20px 15px; text-align: center; position: relative; background-color: #fff;
+	-webkit-transition:0.2s all; -moz-transition:0.2s all; transition:0.2s all;
+}
+.howItCtaInn b {
+	display:block; font-size: 14px; font-weight: 400; padding-bottom: 14px; color: #878787;
+}
+.howItCtaInn p {
+	padding:0px 0px 10px; margin: 0px 0px; font-size: 15px; font-weight: 400; color: #545454; line-height: 24px;
+}
+.howItCta:hover {
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.3); border-bottom: 2px solid #1ab698;
+}
+.howItCta:hover .howItCtaInn {
+	margin-top: -30px;
+}
+.countWrapOut {
+	background-color: #f2f2f2;
+}
+.countWrap {
+	width: 1200px; margin: 0px auto; padding: 45px 0px;
+}
+.countCta {
+	width: 23%; float: left; margin: 1%;
+}
+.countCta span {
+	float: left;
+}
+.countCta p {
+	float: left; padding: 0px 0px 0px 20px; font-size: 15px; font-weight: 400; color: #606f7e;
+}
+.countCta p i {
+	display: block; font-size: 38px; font-weight: 400; color: #1bb99b; font-style: normal;
+}
+.patWrapOut {
+	width: 100%; background: url(../images/pat-bg.jpg); background-position: center; background-repeat: no-repeat;
+	background-size: 100%; background-attachment: fixed; 
+}
+.patWrap {
+	width: 1200px; margin: 0px auto; padding: 80px 0px 50px;
+}
+.patWrap h3 {
+	padding: 0px 35px 25px; font-size: 30px; font-weight: 400; color: #fff; text-transform: uppercase; display: block;
+	text-align: center; text-shadow: 0px 1px 2px rgba(0,0,0,0.25); 
+}
+.patCta {
+	float: left; width: 46%; margin: 1% 2%; background-color: #fff; box-shadow: 0px 1px 4px rgba(0,0,0,0.2);
+	border-radius: 3px; min-height: 320px; position: relative;
+}
+.patCta span {
+	display: block; position: relative;
+}
+.patCta span img {
+	width: 100%;
+}
+.chefIcon {
+	position: absolute; width: 90px; height: 90px; background-color: #fff; border-radius: 50%;
+	border: 1px solid #d2d2d2; top: 86px; left: 30px; text-align: center; line-height: 80px;
+}
+.chefIcon img {
+	width: 70px !important;
+}
+.patCta h4 {
+	padding: 20px 15px 0px 135px; margin:0px 0px; font-size: 18px; font-weight: 500; color: #353e46; text-transform: uppercase;
+}
+.patCta p {
+	padding:15px 20px 10px 135px; margin: 0px 0px; font-size: 15px; font-weight: 400; color: #545454; line-height: 24px;
+}
+.resMes {display: none;}
+.hoAbWrap {
+	width: 100%; background: url(../images/about-bg.jpg); background-position: center; background-repeat: repeat;
+	background-size: 300px; background-attachment: fixed;
+}
+.hoAbImg {
+	width: 50%; float: left; position: relative;
+}
+.hoAbImg h2 {
+	position: absolute; width: 100%; bottom: 50px; font-size: 35px; font-weight: 300; color: #fff;
+	text-align: center; text-transform: uppercase; display: none;
+}
+.hoAbImg img {
+	width: 100%;
+}
+.hoAbText {
+	width: 50%; box-sizing: border-box; float: left; padding: 85px 20px 50px 40px;
+}
+.hoAbText h3 {
+	padding: 0px 0px 0px 0px; margin: 0px 0px; font-size: 32px; font-weight: 300; color: #404c58; text-transform: uppercase;
+}
+.hoAbText h3 span {
+	color: #14a88c;
+}
+.hoAbText p {
+	padding: 22px 0px; margin: 0px 0px; font-size: 18px; color: #3c3c3c; line-height: 30px; font-weight: 300;
+	width: 90%;
+}
+.hoAbText a {
+	font-size: 16px; font-weight: 400; color: #14a88c;
+}
+.hoAbText a:hover {
+	color: #404c58;
+}
+.whyChoCta {
+	width: 30.333%; margin: 1% 1.5%; float: left; padding: 10px 20px 10px; text-align: center;
+	min-height: 320px; 
+}
+.whyChoCta span {
+	display: block; margin: 0px auto; width: 150px; height: 150px; border: 1px solid #a9bcd0; border-radius: 50%;
+	text-align: center; line-height: 140px; -webkit-transition: 0.3s all; -moz-transition: 0.3s all; transition: 0.3s all;
+}
+.whyChoCta h4 {
+	margin: 0px auto; padding: 20px 0px 15px; width: 80%; font-size: 20px; font-weight: 400; color: #404c58;
+}
+.whyChoCta p {
+	margin: 0px auto; padding: 0px 0px; width: 80%; font-size: 15px; font-weight: 400; color: #666; line-height: 25px;
+}
+.whyChoCta:hover.whyChoCta span {
+	box-shadow:0px 6px 8px rgba(0,0,0,0.15);
+}
+
+.blogCta {
+	padding: 3px; background-color: #fff; box-shadow:0px 1px 4px rgba(0,0,0,0.2); min-height: 420px;
+	width: 364px; margin: 1% 1.5%; float: left; -webkit-transition: 0.3s all; -moz-transition: 0.3s all; transition: 0.3s all;
+}
+.blogCta a {
+	display: block;
+}
+.blogCta span {
+	display: block; margin: 0px auto; width: 100%; height: 220px;
+}
+.blogCta span img {
+	width: 100%;
+}
+.blogCta h4 {
+	margin: 0px auto; padding: 16px 20px 0px; font-size: 17px; font-weight: 400; color: #464646;
+}
+.blogCta p {
+	margin: 0px auto; padding: 10px 20px; font-size: 14px; font-weight: 400; color: #666; line-height: 23px;
+}
+.viBl {
+	display: inline-block; padding: 0px 20px 0px; color: #28bda1;
+}
+.viBl:hover {
+	text-decoration: underline;
+}
+.blogCta:hover {
+	box-shadow:0px 4px 10px rgba(0,0,0,0.25);
+}
+
+.testiCta {
+	width:276px; margin: 1%; float: left; background-color: #f9f9f9; text-align: center; padding: 20px;
+	border-radius: 2px; height: 360px; box-shadow:0px 1px 4px rgba(0,0,0,0.2);
+	 -webkit-transition: 0.23s all; -moz-transition: 0.23s all; transition: 0.23s all;
+}
+.testiCta span {
+	display: block; padding: 10px 0px;
+}
+.testiCta i {
+	color: #1bb99b; font-size: 15px; display: inline-block; padding: 0px 2px;
+}
+.testiCta h3 {
+	padding: 5px 25px 15px 25px; margin: 0px 0px; color: #293138; font-size: 15px; font-weight: 500;
+}
+.testiCta p {
+	padding: 0px 5px 20px; margin: 0px 0px; color: #666; font-size: 14px; font-weight: 400; line-height: 25px; height: 210px;
+}
+.testiCta h4 {
+	padding: 5px 5px 15px; margin: 0px 0px; color: #293138; font-size: 15px; font-weight: 500;
+}
+.testiCta:hover {
+	box-shadow:0px 3px 8px rgba(0,0,0,0.25); background-color: #fff;
+}
+footer {
+	padding: 30px 0px 25px; border-top: 1px solid #d9d9d9; position: relative; z-index: 100; background-color: #fff;
+}
+.footInn {
+	width: 1200px; margin: 0px auto;
+}
+.footLogo {
+	float: left;
+}
+.footLogo img {
+	width: 240px;
+}
+.footMenu {
+	float: left; padding: 13px 0px 0px 100px;
+}
+.footMenu a {
+	display: inline-block; padding: 1px 5px; margin: 0px 12px; text-transform: uppercase; color: #5a5959; font-size: 14px;
+}
+.footMenu a:hover {
+	color: #16ac8f;
+}
+.social {
+	float: right; padding: 10px 0px 0px 0px;
+}
+.social a {
+	display: inline-block; padding: 0px 4px; margin: 0px 10px; opacity: 0.5; 
+	-webkit-transition: 0.15s all; -moz-transition: 0.15s all; transition: 0.15s all;
+}
+.social a img {
+	width: 28px;
+}
+.social a:hover {
+	opacity: 0.8;
+}
+.copyRight {
+	text-align: center; font-size: 13px; color: #666; padding: 20px 0px 0px 0px;
+}
+.mask {
+	position: fixed; background-color: rgba(0,0,0,0.25); top: 0px; left: 0px; right: 0px; width: 100%; height: 100%;
+	display: none; z-index: 100000;
+}
+.padMd {
+	padding: 55px 0px 50px;
+}
+
+/*   Back to top  */
+.backtotop {
+    width:50px; position:fixed; bottom:20px; right:15px; cursor:pointer; display: none; outline:none !important; z-index:3000; text-align:center;
+    animation:bounce 1s infinite; -webkit-animation:bounce 1s infinite; -moz-animation:bounce 1s infinite;
+}
+.backtotop img { width:90%; padding:5% 0px 0px 0px;}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}
+
+.mask {
+    position:fixed; width:100%; height:100%; background-color:rgba(0,0,0,0.6); top:0px; left:0px; z-index:100000; display:none;
+    }
+.signPop {
+	position: fixed; left: 0px; right: 0px; width: 900px; margin: 0px auto; top: 8%; height: 540px; background-color: #fff;
+	z-index: 100100; box-shadow: 0px 5px 10px rgba(0,0,0,0.3); display: none;
+}
+.closePop {
+	position: absolute; right: 15px; top: 10px; z-index: 100; font-size: 20px; color: #999; cursor: pointer;
+}
+.closePop:hover {
+	color: #e46767;
+}
+.signImg {
+	width: 50%; background-color: #ddd; height: 100%; float: left; position: relative;
+}
+.sldImg {
+	position: absolute; width: 100%; height: 100%;
+}
+.sldImg img {
+	width: 100%;
+}
+.signPopInn {
+	width: 50%; background-color: #fff; float: left; position: relative;
+}
+.signPopInn h2 {
+	margin: 0px 0px; padding: 0px 0px; text-align: center; text-transform: uppercase; font-weight: 400;
+	color: #3e3e3e; font-size: 22px;
+}
+.signPopInn p {
+	margin: 0px 0px; padding: 6px 0px 20px; text-align: center; text-transform: uppercase; font-weight: 400;
+	color: #3e3e3e; font-size: 15px;
+}
+.signPopInn p a {
+	color: #00a285; font-weight: 500;
+}
+.signIn {
+	padding: 70px 60px 40px;
+}
+.signIn b {
+	text-align: right; display: block; font-size: 14px; font-weight: 400; color: #454545; padding: 0px 0px 5px 0px;
+	cursor: pointer;
+}
+.sinput {
+	width: 100%; height: 42px; border: 1px solid #c4c4c4; border-radius: 2px; padding: 0px 0px 0px 45px;
+	font-size: 14px; font-weight: 400; margin: 5px 0px 10px 0px; color: #333;
+	background:url("../images/user.svg") no-repeat 11px center; background-size:21px; font-family: 'Roboto';
+}
+.sinput.pass {
+	background:url("../images/pass.svg") no-repeat 11px center; background-size:22px;
+}
+.sinput.mail {
+	background:url("../images/mail.svg") no-repeat 11px center; background-size:22px;
+}
+.sinput.phone {
+	background:url("../images/phone.svg") no-repeat 9px center; background-size:26px;
+}
+.sinput:focus {
+	border: 1px solid #1accac; 
+}
+.siBtn {
+	width: 100%; height: 40px; border: 1px solid #1accac; border-radius: 2px; color: #fff;
+	font-size: 15px; font-weight: 500; margin: 5px 0px 10px 0px; font-family: 'Roboto'; text-transform: uppercase;
+	background-color: #1accac;
+}
+.signPopInn h4{
+	text-align: center; background: url(../images/bg-head.png) repeat-x center; display: block; margin: 15px 0px 0px 0px;
+}
+.signPopInn h4 i {
+	display: inline-block; background-color: #fff; padding: 0px 10px; font-size: 14px; font-weight: 400; color: #666;
+	text-transform: uppercase; font-style: normal;
+}
+.fbGo { padding: 10px 0px 0px 0px;}
+.fb {
+    display:block; background-color:#48629b; border:1px solid #385593; font-size:15px; font-weight:400; color:#fff;
+	padding:8px 15px; margin:10px 0px 0px; cursor:pointer; width: 49%; float: left;
+}
+.fb:hover, .fb:focus { background-color:#385593; color: #fff;}
+.gp {
+    display:block; background-color: #dc4b38; border: 1px solid #d73a25; font-size:15px; font-weight:400; color:#fff;
+	padding:8px 15px; margin:10px 0px 0px; cursor:pointer; width: 49%; float: right;
+}
+.gp:hover, .gp:focus { background-color:#d73a25; color: #fff;}
+.fbGo i {display: inline-block; padding: 0px 10px 0px 5px;}
+.signUp { padding: 30px 60px 30px;}
+.signUp p { padding: 6px 0px 10px;}
+.signUp .sinput {
+	height: 40px; margin: 5px 0px 5px 0px;
+}
+.signUp h4 { margin: 5px 0px 0px 0px;}
+.termTxt {
+	font-size: 13px; font-weight: 400; color: #666; padding: 4px 0px;
+}
+.termTxt a { color: #13b89a;}
+.termTxt a:hover { color: #333;}
+.signUp .fb, .signUp .gp { margin: 5px 0px 0px 0px;}
+.forgotPass { padding: 160px 60px 30px;}
+.forgotPass h2 { padding: 0px 0px 25px 0px;}
+.forback {
+	font-size: 14px; color: #666; padding: 10px 0px; text-align: center; cursor: pointer;
+}
+.forback i { display: inline-block; padding: 0px 10px 0px 0px;}
+
+
+.addTheme {
+	width: 100%; height: 500px; position: relative; 
+	background-image:url(../images/addtheme.jpg); background-attachment: fixed; background-repeat: no-repeat; background-size: 100%;
+}
+.addTheme.addThemeEvevt {
+	background-image:url(../images/addtheme1.jpg); background-attachment: fixed; background-repeat: no-repeat; background-size: 100%;
+}
+.addThemeText {
+	width: 1200px; margin: 0px auto; position: relative; height: 460px;
+}
+.addThemeText h2 {
+	padding: 210px 0px 0px; margin: 0px 0px; color: #fff; font-size: 45px; font-weight: 300; text-transform: uppercase;
+	text-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+}
+.addThemeText p {
+	padding: 5px 0px 0px; margin: 0px 0px; color: #fff; font-size: 20px; font-weight: 400;
+}
+.themIcon {
+	position: absolute; width: 180px; height: 180px; background-color: #fff; border-radius: 50%; z-index: 100;
+	box-shadow: 0px 2px 8px rgba(0,0,0,0.3); text-align: center; line-height: 170px; right: 0px; bottom: 0px;
+}
+.themIcon img { width: 80%;}
+.addThemeInn {
+  	width: 120%; height: 180px; left: -10%; bottom: -100px; position: absolute; display: block; background-color: #f5f5f5;
+	-webkit-transform: rotate(-5deg); -moz-transform: rotate(-5deg); -ms-transform: rotate(-5deg); -o-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+.addContWrap {
+	width: 100%; background-color: #f5f5f5; position: relative; z-index: 10; 
+}
+.addContInn {
+	width: 1200px; margin: 0px auto; padding: 0px 0px 0px;
+}
+.addForm {
+	float: left; width: 50%; background-color: #fff; padding: 30px; box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+	position: relative; top: -150px;
+}
+.addForm label {
+	float: left; width: 33%; font-size: 14px; font-weight: 400; color: #626262; display: block;
+}
+.addInn {
+	float: right; width: 63%;
+}
+.addInn input, .addInn textarea {
+	width: 100%; height: 42px; border: 1px solid #dedede; border-radius: 4px; padding: 0px 20px; background-color: #fdfdfd;
+	font-size: 14px; font-weight: 400; margin: 0px 0px 15px 0px; color: #333; font-family: 'Roboto';	
+}
+.addInn textarea {
+	resize: none; padding: 10px 20px; height: 100px; margin: 0px 0px 5px 0px;
+}
+.addInn select {
+	-webkit-appearance:none; -moz-appearance:none; -o-appearance:none; appearance:none; margin: 0px 0px 15px 0px; 
+	background:url("../images/arrow.svg") no-repeat 95% center; background-size:11px; font-family: 'Roboto';
+	font-size: 14px; font-weight: 400; color: #333; text-indent: 0px; height: 42px; border: 1px solid #dedede;
+	border-radius: 4px; padding: 0px 15px; background-color: #fdfdfd; width: 100%;
+}
+.addInn input:focus, .addInn textarea:focus, .addInn select:focus {
+	border: 1px solid #1accac;
+}
+.addCont {
+	float: right; width: 48%; padding: 10px 20px;
+}
+.addCont h3, .addCont h4 {
+	padding: 0px 0px; margin: 0px 0px; font-size: 16px; font-weight: 500; color: #434343;
+}
+.addCont h4 { color: #12b396; padding: 0px 0px 15px 0px;}
+.addCont p {
+	padding: 12px 0px 22px 0px; margin: 0px 0px; font-size: 14px; font-weight: 400; color: #666; line-height: 22px;
+}
+
+/* terms */
+.termOut {
+	background-color: #f5f5f5; padding: 50px 0px 0px 0px;	
+}
+.termsWrap {
+	width: 1200px; margin: 0px auto; background-color: #fff; padding: 5px;  box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+}
+.termsWrap .homeHeading {
+	margin: 50px auto 10px;
+}
+.termsWrapImg {}
+.termsWrapImg img {
+	width: 100%;
+}
+.termsWrapCta {
+	padding: 20px 20px 30px;
+}
+.termsWrapCta li {
+	list-style-type: none;  font-size: 14px; font-weight: 400; color: #545454; padding: 2px 0px 2px 10px;
+}
+.termsWrapCta h2 {
+	padding: 5px 0px 15px 0px; margin: 0px 0px; font-size: 16px; font-weight: 500; color: #a21e23;
+}
+.termsWrapCta h3 {
+	padding: 0px 0px 12px; margin: 0px 0px; font-size: 15px; font-weight: 500; color: #2d3447; line-height: 22px;
+}
+.termsWrapCta p {
+	padding: 0px 0px 16px; margin: 0px 0px; font-size: 14px; font-weight: 400; color: #545454; line-height: 22px;
+}
+.termsWrapCta p b {
+	font-weight: 500; color: #333;
+}
+
+/* blogs */
+.blogOut {
+	background-color: #f3f5f5; padding: 90px 0px 30px 0px; background-attachment: fixed;
+}
+.blogWrap {
+	width: 914px; margin: 0px auto; padding: 10px 0px 30px 0px;
+}
+.blogWrap h2 {
+	padding: 0px 0px 15px 8px; font-size: 22px; font-weight: 500; color: #454545;
+}
+.blogDetails {
+	width: 900px; margin: 0px auto;
+}
+.blogDetails h2 {
+	padding: 0px 0px 15px 0px; font-size: 22px; font-weight: 500; color: #454545;
+}
+.blogDetails p {
+	padding: 0px 0px 15px 0px; font-size: 15px; font-weight: 400; color: #545454; max-width: 0px 0px;
+	line-height: 24px; 
+}
+.blogDetails b {
+	padding: 0px 0px 10px 0px; font-size: 16px; font-weight: 500; color: #232323; display: block;
+}
+.postDate {
+	padding: 10px 0px 0px; color: #666; font-size: 14px; font-weight: 400; 
+}
+.postDate i {
+	display: inline-block; padding: 0px 10px 0px 0px; color: #0fab8f;
+}
+.blogImg {
+	width: 100%;
+}
+.blogImg img {
+	width: 100%; max-width: 100%; max-height: 450px;
+}
+.blogNew {
+	background-color: #fff; padding: 15px 20px; margin-bottom: 30px;
+}
+.resCarousel .blogCta {
+	width: 100%; margin: 0px 0px; box-shadow: 0px 2px 6px rgba(0,0,0,0.1); min-height: 400px;
+}
+.resCarousel .item {
+	padding: 6px;
+}
+.resCarousel .blogCta span {
+	max-height: 178px;
+}
+
+.contTheme {
+	width: 100%; height: 350px; position: relative; 
+	background-image:url(../images/conttheme.jpg); background-attachment: fixed; background-repeat: no-repeat; background-size: 100%;
+}
+.aboutTheme {
+	width: 100%; height: 350px; position: relative; 
+	background-image:url(../images/abouttheme.jpg); background-attachment: fixed; background-repeat: no-repeat; background-size: 100%;
+}
+.contThemeText {
+	width: 1200px; margin: 0px auto; position: relative; height: 460px;
+}
+.contThemeText h2 {
+	padding: 200px 0px 0px; margin: 0px 0px; color: #fff; font-size: 40px; font-weight: 300; text-transform: uppercase;
+	text-shadow: 0px 2px 5px rgba(0,0,0,0.3); text-align: center;
+}
+.contThemeText p {
+	padding: 5px 0px 0px; margin: 0px 0px; color: #fff; font-size: 18px; font-weight: 400; text-align: center;
+}
+.ContWrapOut {
+	padding: 40px 0px;
+}
+.ContWrapOut .addForm {
+	position: static;
+}
+.contDetails {
+	float: right; width: 48%; padding: 10px 20px;
+}
+.contDetails h3 {
+	padding: 0px 0px 10px; margin: 0px 0px; font-size: 20px; font-weight: 400; color: #434343; text-transform: uppercase;
+}
+.contDetails p {
+	margin: 0px 0px; padding: 0px 0px 6px; font-size: 14px; font-weight: 400; color: #545454;
+}
+.contDetails span {
+	display: block; padding: 5px 0px 0px;
+}
+.contDetails span i {
+	display: inline-block; width: 25px; text-align: center;
+}
+.contDetails span a {
+	display: inline-block; font-size: 14px; font-weight: 400; color: #545454;
+}
+.contDetails span a:hover {
+	color: #0fab8f;
+}
+.aboutWrap {
+	width: 1200px; margin: 0px auto; padding: 50px 0px;
+}
+.aboutLeft {
+	float: left; width: 45%;
+}
+.aboutLeft img {
+	width: 90%;
+}
+.aboutRight {
+	float: left; width: 50%;
+}
+.aboutRight h2 {
+	font-size: 30px; font-weight: 300; color: #404c58; text-transform: uppercase; padding: 5px 0px 15px 0px;
+}
+.aboutRight p {
+	font-size: 16px; font-weight: 400; color: #666; padding: 5px 0px 15px 0px; line-height: 25px;
+}
+.resSearch { 
+	width: 90%; margin: 0px auto; position: absolute; bottom: -30px; background-color: #fff; height: 60px;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.3); left: 0px; right: 0px;  display: none;
+}
+.resSearch input {
+	height: 60px; width: 70%; border: none; font-size: 18px; font-weight: 400; padding: 0px 25px; color: #454545; float: left;
+	cursor: pointer; background-color: #fff;
+}
+.resSearch button {
+	width: 30%; height: 60px; border: 1px solid #1accac; border-radius: 2px; color: #fff; float: right;
+	font-size: 15px; font-weight: 500; margin: 0px; font-family: 'Roboto'; text-transform: uppercase;
+	background-color: #1accac; 
+}
+.searClose {
+	display: none; position: relative; width: 100%;
+}
+.searClose i {
+	position: absolute; right: 4px; top: -18px; font-size: 20px; color: #999; padding: 10px 15px; cursor: pointer;
+}
+.searClose i:hover {
+	color: #ec5a5a;
+}
+
+/* check boxcss*/
+.checkbox {
+	position: relative; margin: 0px 0px 0px; border: 1px solid #ccc; border-radius: 2px; padding: 5px 15px 5px 10px;
+  }
+.checkboxAct { border: 1px solid #12b396;}
+  .checkbox label {
+	padding-left: 28px; display: block; font-size: 14px; font-weight: 400; color: #666;
+  }
+  .checkbox input {
+	top: 0; left: 0; z-index: 1; cursor: pointer; opacity: 0; position: absolute; margin: 0px !important;
+  }
+  .checkbox input:checked + .input-helper:before {
+	border-color: #009688;
+  }
+  .checkbox .input-helper:before,
+  .checkbox .input-helper:after {
+	position: absolute; content: ""; transition: all 200ms;
+  }
+  .checkbox .input-helper:before {
+	left: 0; border: 1px solid #999;
+  }
+  .checkbox input {
+	width: 18px; height: 18px;
+  }
+  .checkbox input:checked + .input-helper:before {
+	background-color: #12b396;
+  }
+  .checkbox input:checked + .input-helper:after {
+	transform: scale(1); opacity: 1;
+  }
+  .checkbox .input-helper:before {
+	top: 5; left: 8px; width: 18px; height: 18px; border-radius: 2px; color: #fff;
+  }
+  .checkbox .input-helper:after {
+	content: '\2713'; font-size: 13px; top: 6; left: 11px; color: #fff; transform: scale(0); opacity: 0;
+  }
+
+.chefHead {
+	background-color: #fff; position: absolute; top: 0px; left: 0px; width: 100%; z-index: 10000;
+	border-top: 1px solid #ededed; height: 65px;
+}
+.chefHeadFixed {
+	position: fixed; top: 0px; box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+}
+.chefHeadInn {
+	margin: 0px auto; width: 1200px; height: 65px; position: relative;
+}
+.chefHeadInn ul {
+	margin: 0px 0px; padding: 0px 190px 0px 0px; position: relative; width: 65%; overflow: auto; float: left;
+}
+.scrTab {
+	overflow-x: auto; overflow-y: hidden;  white-space: nowrap; padding: 0px; height: 72px; width: 590px;
+}
+.chefHeadInn ul li {
+	list-style-type: none; display: inline-block; padding: 20px 15px; font-size: 14px; font-weight: 500; color: #454545; height: 64px;
+}
+.chefHeadInn ul li:hover, .chefHeadInn ul li a:hover {
+	color: #00a285;
+}
+.chefHeadInn ul li.Act {
+	border-bottom: 4px solid #0fab8f; color: #00a285;
+}
+.chefHeadInn ul li.Act a {
+	color: #00a285;
+}
+.chefSearch {
+	position: absolute; right: 0px; height: 64px; background-color: #fff; width: 190px;
+	-webkit-transition: 0.2s all; -moz-transition: 0.2s all; transition: 0.2s all; top: 0px;
+}
+.chefSearch input{
+	width: 90%; border: 1px solid #e7e7e7; border-radius: 3px; height: 35px; padding: 0px 30px 0px 15px;
+	font-size: 14px; font-weight: 400; color: #333; margin: 14px 0px 0px 10%; background-color: #f6f6f6;
+	background-image:url("../images/search.png"); background-size:15px; background-position: 95% center;
+	background-repeat: no-repeat;
+}
+.chefSearch input:focus {
+	border: 1px solid #8fded0;
+}
+.chefSearchFull {
+	width: 100%;
+}
+.chefSearchFull input{
+	background-image:url("../images/search.png"); background-size:15px; background-position: 98% center; margin: 14px 0px 0px 0px; 
+	width: 100%;
+}
+.cartOut {
+	float: right; width: 32%;
+}
+.filter {
+	background-color: #fff; box-shadow: 0px 16px 18px 0px rgba(46,51,51,0.1); 
+	width: 100%; margin: 0px 0px 10px 0px;
+}
+.resultOut {
+	background-color: #f3f5f5; padding: 78px 0px 40px; width: 100%; position: relative; min-height: 500px;
+}
+.checkOut {
+	padding: 80px 0px 40px;
+}
+.resultInn {
+	width: 1200px; margin: 0px auto;
+}
+.resultWrap {
+	width: 66%;
+}
+.resultWrap h2 {
+	padding: 2px 0px 15px 0px; margin: 0px 0px; font-size: 17px; font-weight: 500; color: #454545;
+}
+.resultWrap ul {
+    display: flex; padding: 0px 0px; margin: 0px 0px;  justify-content: space-between; align-items: flex-start;
+    flex-wrap: wrap; list-style-type: none;
+}
+.resultWrap ul li { 
+	list-style-type: none; position: relative; flex: 0 1 49%; display: flex; 
+	justify-content: space-between; align-self: stretch; margin-bottom: 16px; padding: 16px; border-left: 4px solid #fff;
+	border-radius: 2px; background-color: #fff; outline: none; transition: box-shadow 0.2s ease-in-out;
+    flex-direction: row; box-shadow: 0px 1px 1px 0px rgba(46,51,51,0.07); cursor: pointer;	
+}
+.resultWrap ul li:hover {
+	box-shadow: 0px 18px 20px 0px rgba(46,51,51,0.07);
+}
+.foodCta {
+	width: 100%;
+}
+.foodAct {
+	border-left: 4px solid #12b396 !important;
+}
+.foodCta.foodCtaImg {
+	padding: 0px 110px 0px 0px;
+}
+.foodCta h3 {
+	padding: 0px 0px 0px; margin:0px 0px 0px; font-size: 14px; font-weight: 500; color: #454545;
+}
+.foodCta p {
+	padding: 6px 0px 18px; margin:0px 0px 0px; font-size: 14px; font-weight: 400; color: #787878;
+	max-height: 90px; overflow: hidden;
+}
+.foodBtn {
+	width: 100%;
+}
+.foodVeg {
+	float: left; background:url("../images/veg.png") no-repeat 0px center; background-size:20px;
+	width: 22px; height: 22px; margin: 0px 15px 0px 0px;
+}
+.foodNonVeg {
+	float: left; background:url("../images/non-veg.png") no-repeat 0px center; background-size:20px;
+	width: 22px; height: 22px; margin: 0px 16px 0px 0px;
+}
+.favIcon {
+	float: left; width: 22px; height: 22px; margin: 0px 15px 0px 0px; font-size: 18px; line-height: 20px; color: #999;
+}
+.foodBtn .fa-heart {
+	color: #fc8229;
+}
+.favIcon:hover {
+	color: #0fab8f;
+}
+.foodLink {
+	float: left; font-size: 13px; font-weight: 500; color: #0fab8f; padding: 1px 5px; margin:0px;
+}
+.colRed{
+	color: #545454;
+}
+.foodLink:hover {
+	color: #12b396;
+}
+.colRed:hover {
+	color: #d46b6b;
+}
+.foodImg {
+	position: absolute; right: 16px; top: 16px; width: 100px;
+}
+.foodImg img {
+	width: 100%;
+}
+.filterTp {
+	padding: 12px 15px;
+}
+.filterTp .checkbox {
+	float: left; width: auto; margin: 0px 0px 0px;
+}
+.mr {
+	margin-right: 15px !important;
+}
+.chosen-container .chosen-results li {
+	float: none;
+}
+.chosen-container .chosen-results {
+	width: 100%;
+}
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+	padding: 0px 0px;
+}
+.filtSelect {
+	width: 100%; padding: 5px 0px;
+}
+.chosen-choices {
+	width:100%;
+}
+.chosen-container-multi .chosen-choices {
+	background-image: none; padding: 3px 10px; border: 1px solid #e0dddd; border-radius: 3px;
+}
+.chosen-container-active .chosen-choices {
+	box-shadow: 0px 0px 0px #fff;
+}
+.filter p {
+	padding: 0px 0px; margin: 0px 0px; width: 100%; text-align: center; background-color: #f2f2f2;
+}
+.filter p a {
+	display:block; font-size: 13px; font-weight: 400; color: #666; padding: 7px 10px;
+}
+.filter p a:hover {
+	color: #12b396;
+}
+.cartWpar {
+	background-color: #fff; box-shadow: 0px 16px 18px 0px rgba(46,51,51,0.1); padding: 5px; width: 100%;
+}
+.cartWpar h3 {
+	padding: 10px 5px 5px; margin: 0px 10px; border-bottom: 1px solid #ededed; font-size: 14px; color: #666;
+	font-weight: 500;
+}
+.cartWpar h4 {
+	padding: 5px 5px 8px; margin: 0px 10px 0px 15px; font-size: 15px; color: #666;
+	font-weight: 500;
+}
+.cartWpar h4 span {
+	display: inline-block; float: right;
+}
+.cartBtn {
+	width: 100%; text-align: center; background-color: #12b396; height: 45px; border-radius: 3px;
+	font-size: 17px; font-weight: 400; color: #fff; line-height: 42px;
+}
+.cartBtn b {
+	display: inline-block; font-size: 24px; float: left; padding: 2px 15px 0px 15px; font-weight: 500;
+}
+.cartBtn span {
+	float: right; padding: 8px 15px 0px 0px; font-size: 15px;
+}
+.cartBtn:hover, .cartBtn:focus {
+	background-color: #12b396; color: #fff; 
+}
+.cartBtn.cartBtnEmpty {
+	background-color: #999; color: #fff; 
+}
+.emptyCart {
+	height: 300px; font-size: 14px; text-align: center; color: #999;
+}
+.emptyCart i {
+	display: block; font-size: 30px; color: #bdbdbd; padding: 100px 0px 0px 0px;
+}
+.cartOver {
+	max-height: 380px; overflow: auto;
+}
+.cartWpar ul {
+	float: none; width: 100%; padding: 8px 16px 6px 20px;
+}
+.cartWpar ul li {
+	float: none; width: 100%; padding: 0px 0px; height: auto;
+}
+.cartWpar ul li span {
+	display: block; cursor: pointer; position: relative; padding: 4px 25px 4px 0px;
+	font-size: 14px; font-weight: 400; color: #545454;
+}
+.cartWpar ul li span i {
+	position: absolute; right: 6px; top: 6px; font-size: 12px; color: #999;
+}
+.cartWpar ul li div {
+	padding: 0px 0px 0px 15px;
+}
+.cartWpar ul li span:hover i {
+	color: #C54F51;
+}
+.cartWpar ul li div span {
+	padding:3px 0px;
+}
+.cartWpar ul li b {
+	font-weight: 400; font-size: 13px; color: #12b396;
+}
+
+.modifySearch {
+	position: fixed; width: 450px; margin: 0px auto; top: 10%; left: 0px; right: 0px; background-color: #fff;
+	z-index: 100010; display: none; box-shadow: 0px 16px 18px 0px rgba(46,51,51,0.2);  border-radius: 6px;
+}
+.modifySearch .searchOut { width: auto; height: auto; margin: 0px auto; position: static; padding: 20px 0px 0px 0px;}
+.modifySearch .searClose { display:block;}
+.modifySearch .seaBtn { width: 100%;}
+.modifySearch .select { width: 96%; padding: 15px 0px 15px 20px;}
+.modifySearch .select select { width:98%;}
+.modifySearch .select.time, .modifySearch .select.date { width: 48%;}
+.modifySearch .atten { width: 100%; padding: 0px 0px 5px 20px;}
+.modifySearch .atten input { width: 48%;}
+.modifySearch .resSearch { display: block;}
+.modifySearch .seaButton { height: 60px; }
+
+.foodPop {
+	position: fixed; width: 580px; margin: 0px auto; left: 0px; right: 0px; top: 3%; max-height: 94%; border-radius: 6px;
+	background-color: #fff; box-shadow: 0px 16px 18px 0px rgba(46,51,51,0.2);  z-index: 100010; display: none;
+}
+.foodPopInn {
+	width: auto; max-height: 520px; overflow: auto; padding: 16px 20px;
+}
+.foodPopInnImg {
+	width: 100%; padding: 0px 0px 10px 0px;
+}
+.foodPopInnImg img {
+	width:100%;
+}
+.foodPopInn h2 {
+	padding: 5px 0px 10px; margin: 0px 0px; font-size: 20px; font-weight: 500; color: #343434;
+}
+.foodPopInn p {
+	padding: 5px 0px 15px; margin: 0px 0px; font-size: 14px; font-weight: 400; color: #666; line-height: 22px;
+}
+.foodPopInn h3 {
+	padding: 0px 0px 10px; margin: 0px 0px; font-size: 16px; font-weight: 500; color: #343434;
+}
+.foodCheck {
+	width: auto; padding: 0px 0px 10px 0px;
+}
+.foodCheck .checkbox {
+	padding: 10px 10px; border: 1px solid #dedede; border-radius: 4px; margin: 0px 0px 6px 0px;
+}
+.foodCheck .checkbox .input-helper:before {
+	left: 10px; border: 1px solid #999; top:10px;
+  }
+.foodCheck .checkbox input:checked + .input-helper:before {
+	background-color: #12b396;
+  }
+.foodCheck .checkbox .input-helper:after {
+	content: '\2713'; font-size: 13px; left: 13px; top: 10px; color: #fff; transform: scale(0); opacity: 0;
+  }
+.foodPopBtn {
+	width: auto; border-top: 1px solid #ededed; padding: 8px 20px;
+}
+.foodPopBtn a {
+	display: inline-block; padding: 4px 5px; border: 1px solid #cdcdcd; width: 100px; text-align: center;
+	border-radius: 3px; margin: 0px 2px; font-size: 14px; font-weight: 400; color: #666;
+}
+.foodPopBtn a:hover, .foodPopBtn a:focus {
+	color: #454545; background-color: #f5f5f5;
+}
+.foodPopBtn a.add {
+	border: 1px solid #12b396; background-color: #12b396; color: #fff;
+}
+.foodPopBtn a.add:hover {
+	background-color: #08a88b; border: 1px solid #08a88b;
+}
+.chefMoreWrap {
+	float: right; padding: 20px 10px 0px; position: relative; color: #666;
+}
+.chefMoreWrap i {
+	display: inline-block; padding: 0px 0px 0px 5px; color: #08a88b;
+}
+.chefMoreWrap:hover {
+	color: #12b396;
+}
+.chefMorePop {
+	position: absolute; top: 50px; right: 418px; display: none;
+}
+.chefMorePop div {
+	position: relative; background-color: #fff; box-shadow: 0px 2px 4px rgba(0,0,0,0.3); border-top: 1px solid #606f7e;
+    z-index: 1000; display: block; width: 180px; border-radius: 1px; padding: 10px;
+}
+.chefMorePop div a {
+	display: block;	font-size: 14px; font-weight: 400; color: #545454; padding: 4px 0px;
+}
+.chefMorePop div a:hover {
+	color: #12b396;
+}
+.chefCta {
+	clear: both;
+}
+.chefImg {
+	float: left; width: 28%;
+}
+.chefImg img {
+	width: 100%; border-radius: 50%;
+}
+.chefText {
+	float: right; width: 66%;
+}
+.chefText h3 {
+	padding: 0px 0px 3px; margin: 0px 0px; font-size: 18px; font-weight: 500; color: #333;
+	width: 204px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.ratChef {
+	display: block;
+}
+.ratChef i {
+	font-size: 13px; font-weight: 400; display: inline-block; padding: 0px 1px; color: #ffa200;
+}
+.chefDet {
+	clear: both; padding: 2px 0px 0px 0px;
+}
+.chefDet div {
+	padding: 2px 0px; display: block; font-size: 14px;
+}
+.chefDet b {
+	display: inline-block; font-weight: 400; padding: 0px 5px 0px 0px; float: left;
+}
+.chefDet p {
+	display: inline-block; padding: 0px 0px 0px 5px; width: 150px; overflow: hidden; text-overflow: ellipsis;
+	white-space: nowrap; float: right;
+}
+.chefDet p.menu {
+	width: 185px;
+}
+.chefDet p i {
+	font-style: normal; display: inline-block; padding: 0px 5px 0px 0px; font-weight: 500; color: #12b396;
+}
+.chPopOut, .estPopOut {
+	width: 800px; margin: 0px auto; position: fixed; z-index: 100010; background-color: #fff; display: none;
+	box-shadow: 0px 8px 18px rgba(0,0,0,0.2); top: 5%; left: 0px; right: 0px; min-height: 50%; max-height: 90%;
+	border-radius: 5px; padding: 30px;
+}
+.estPopOut {width:600px; min-height: 50%; max-height: 90%; display: none; padding: 20px;}
+.estPop {
+	padding: 0px; max-height: 440px; overflow-y: auto;
+}
+.estPopOut .noteMesg {
+	padding: 7px 15px; border-radius: 2px; background-color: #f2f2f2; border: 1px solid #dedede; font-size: 14px;
+	font-weight: 400; color: #686767;
+}
+.estCta {
+	padding:10px 10px;
+}
+.estCta span {
+	padding: 0px 25px 0px 0px;
+}
+.estCta span img {
+	width: 42px; border: 1px solid #f1f1f1; border-radius: 5px;
+}
+.estCta b {
+	padding: 5px 20px 0px 0px; margin: 0px 0px; width: 300px; font-size: 15px; font-weight: 500; color: #545454;
+}
+.estCta select {
+	-webkit-appearance:none; -moz-appearance:none; -o-appearance:none; appearance:none; padding:0px 20px 0px 5px; width:100px;
+	background-image:url("../images/arrow.svg"); background-repeat: no-repeat; background-size:9px; font-family: 'Roboto';
+	font-size: 16px; font-weight: 500; color: #333; text-indent: 0px; height: 32px;	background-position: 94% center;
+	border: 1px solid #ededed; border-radius: 3px;
+}
+.estCta i {
+	padding: 8px 0px 0px 0px; display: inline-block; width: 30px; text-align: center; cursor: pointer; font-size: 15px;
+	color: #666;
+}
+
+
+.chPop {
+	clear: both; position: relative;
+}
+.chPopImg {
+	float: left; width: 220px; padding: 4px; text-align: center; position: relative;
+}
+.chPopImg h3 {
+	padding: 20px 5px 10px; margin: 0px 0px; font-size: 22px; font-weight: 500; color: #333;
+}
+.chPopImg span {
+	display: block; padding: 0px 0px 10px 0px;
+}
+.chPopImg span i {
+	display: inline-block; padding: 0px 1px 0px 0px; font-size: 15px; color: #ffa200; margin: 0px 1px;
+}
+.chPopImg img {
+	width: 100%; background-color: #f1f1f1; padding: 3px;
+}
+.chPopText {
+	float: right; width: 66%; position: relative;
+}
+.chPopTab {
+	width: auto; border-bottom: 1px solid #f1f1f1;
+}
+.chPopTab a {
+	text-transform: uppercase; font-size: 14px; font-weight: 500; color: #545454; padding: 2px 20px 0px 20px;
+	margin: 0px 1px 0px 0px; height: 34px;
+}
+.chPopTab a:hover, .chPopTab a.Act {
+	border-bottom: 3px solid #12b396;
+}
+.popClose {
+	position: absolute; right: -10px; top: -15px; color: #ccc; font-size: 20px; cursor: pointer;
+}
+.popClose:hover {
+	color: #e95555;
+}
+
+/*  scrollbar */
+::-webkit-scrollbar-track{
+	background-color: #dedede;
+}
+::-webkit-scrollbar{
+	width: 10px; height: 8px; background-color: #dedede;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #606f7e; border-radius: 4px;
+}
+/*  scrollbar */
+.MoreFil { width: auto;}
+.MoreFil a {
+	display: inline-block; padding: 6px 5px; color: #12b396; font-weight: 500; font-size: 14px;
+}
+.filSeletWrap { padding: 0px 15px 10px;}
+.filSeletWrap span {
+	display: inline-block; border: 1px solid #ccc; border-radius: 12px; font-size: 13px; font-weight: 400; color: #545454;
+	padding: 3px 22px 3px 8px; position: relative; margin-bottom: 3px;
+}
+.filSeletWrap span a {
+	position: absolute; right: 6px; top: 6px; font-size: 12px; color: #999;
+}
+.filSeletWrap span:hover { border: 1px solid #adadad;}
+.filSeletWrap span:hover a { color: #D94B4D;}
+.MorePop {
+	position: absolute; width: 384px; background-color: #fff; padding: 15px; top: 46px; right: 0px;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.3); border-top: 1px solid #606f7e; z-index: 1000; display: block;
+}
+.MorePop .checkbox {
+	border: none; width: 50%;
+}
+
+.note {
+	display: block; padding: 8px 20px 2px; font-size: 14px; font-weight: 500; color: #666; cursor: pointer;
+	background-color: #f6f6f6;
+}
+.note i {
+	float: right; font-size: 18px;
+}
+.notePop { 
+	width: 400px; margin: 0px auto; position: fixed; z-index: 100010; background-color: #fff; box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+	height: 250px; left: 0px; right: 0px; top: 10%; display: none; border-radius: 5px;
+}
+.notePop textarea {
+	width: 100%; border: none; border-radius: 3px; height: 200px; padding: 10px 15px;
+	font-size: 14px; font-weight: 400; color: #333; resize: none;
+}
+.noteAct {
+	color: #0fab8f;
+}
+.note span {
+	display: inline-block; width: 85%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+	padding: 0px 0px 0px 0px;
+}
+.stepWrap {
+	position: fixed; right: 7px; top: 25%; width: 55px;
+}
+.stepWrap ul {
+	margin: 0px 0px; padding: 0px 0px; position: relative;
+}
+.stepWrap ul li {
+	list-style-type: none; display: block; background-color: #fff; box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+	width: 50px; height: 50px; border-radius: 50%; margin: 0px 0px 10px 0px; text-align: center; line-height: 12px;
+	font-size: 18px; opacity: 0.4;
+}
+.stepWrap ul li:first-child + li.Act {
+	opacity: 0.6;
+}
+.stepWrap ul li:first-child + li + li.Act  {
+	opacity: 0.8;
+}
+.stepWrap ul li:first-child + li + li + li.Act  {
+	opacity: 1;
+}
+.stepWrap ul li span {
+	display: block; font-size: 10px; text-transform: uppercase; padding: 10px 0px 1px 0px; margin: 0px;
+}
+.stepWrap ul li.Act {
+	background-color: #12b396; color: #fff;
+}
+.stepWrap ul li a {
+	display: block;
+}
+.stepWrap ul li.Act a {
+	color: #fff;
+}
+.promoWrap {
+	padding: 20px 20px;
+}
+.promoWrap h3 {
+	padding: 0px 0px; margin: 0px 0px; text-align: center; font-size: 20px;
+}
+
+.chPopWrap {
+	padding: 10px 10px; margin: 0px 0px; max-height: 500px; overflow-y: auto;
+}
+.PopTabOne {
+	padding: 0px 0px;
+}
+.PopTabOne div {
+	padding: 5px 0px 10px 0px;
+}
+.PopTabOne span {
+	float: left; width: 30%; font-size: 14px; font-weight: 400; color: #666;
+}
+.PopTabOne p {
+	float: right; width: 64%; font-size: 14px; font-weight: 500; color: #333;
+}
+.PopTabOne p i {
+	font-style: normal; display: inline-block; padding: 0px 5px 0px 0px; font-weight: 500; color: #12b396;
+}
+.PopTabOne b {
+	display: block; width:100%; font-size: 14px; font-weight: 400; color: #545454; padding: 8px 0px 0px 0px;
+	line-height: 24px;
+}
+
+.PopTabTwo, .PopTabThree {
+	display: none;
+}
+.review {
+	padding: 5px 0px 15px 0px;
+}
+.review h2 {
+	padding: 0px 0px 5px 0px; margin: 0px 0px; font-size: 16px; font-weight: 500; color: #333;
+}
+.review p {
+	padding: 5px 0px 0px; margin: 0px 0px; font-size: 14px; font-weight: 400; color: #666;
+}
+.Portfolio {
+	width: auto;
+}
+.Portfolio img {
+	width: 31%; background-color: #f5f5f5; padding: 2px; margin: 0.5%;
+}
+.noteMesg {
+	padding: 10px 15px; border-radius: 2px; background-color: #ffecec; border: 1px solid #fde3e3;
+	font-size: 13px; font-weight: 400; color: #673434; margin: 0px 0px 10px 0px;
+}
+.noteMesg span {
+	color: #333; font-size: 16px; font-weight: 500; display: inline-block; padding: 0px 5px;
+}
+.noteMesg p a {
+	display: inline-block; padding: 0px 5px; font-weight: 500; color: #12b396; text-transform: uppercase;
+}
+.eventCheck{
+	margin: 0px 0px 15px 0px;
+}
+.eventCheck .checkbox {
+	background-color: #e4fddd; border: 1px solid #c9fcc8; border-radius: 2px; font-size: 13px;
+}
+.eventCheck .checkbox label {
+	font-size: 13px;
+}
+.managerPrice {
+	clear: both; font-size: 25px; display:block; padding: 2px 10px 0px 0px; color: #878787; text-align: right;
+	font-weight: 600; position: relative;
+}
+.managerPrice i {
+	display: inline-block; font-size: 14px; width: 18px; height: 22px; background-color: #f1f1f1; text-align: center;
+	float: right; border-radius: 3px; margin: 6px 0px 0px 10px; line-height: 20px; 
+}
+.managerPrice i:hover {
+	background-color: #dedede; color: #666;
+}
+.infoText {
+	position: absolute; font-size: 14px; font-weight: 400; color: #fff; text-align: left; opacity: 0; visibility: hidden;
+	top: -30px; right: 0px; width: 250px; background-color: #12b396; padding: 5px 10px; box-shadow: 0px 8px 8px rgba(0,0,0,0.1);
+	font-family:'Roboto', Arial, Helvetica, sans-serif; border-radius: 3px;
+}
+.managerPrice i:hover .infoText {
+	opacity: 1; visibility: visible;
+}
+.filBtn {
+	float: left;
+}
+.filBtn a {
+	display: inline-block; border: 1px solid #cccc; padding: 5px 22px; margin: 0px 10px 0px 0px; border-radius: 15px;
+	font-size: 14px; color: #666; background-color: #ffff;
+}
+.filBtn a:hover {
+	border: 1px solid #56c764;
+}
+.filBtn a.Act {
+	border: 1px solid #56c764; background-color: #56c764; color: #fff;
+}
+.addBtn {
+	width: 130px; margin: 0px auto; text-align: center; background-color: #12b396; height: 40px;
+    border-radius: 3px; font-size: 16px; font-weight: 400; color: #fff; line-height: 38px;
+}
+.addBtn:hover, .addBtn:focus {
+	background-color: #0ea58a; color: #fff;
+}
+.ceri {
+	display: block; margin: 0px 0px; padding: 15px 0px 10px;
+}
+.ceri li {
+	list-style-type: none;  text-align: center; display: inline-block; font-size: 10px; padding: 0px 8px; font-weight: 500;
+	color: #666;
+}
+.ceri li img {
+	background-color: #fff; width: 68px; display: block; margin: 0px auto;
+}
+.changeMask {
+	position: absolute; width: 100%; height: 100%; background-color: #fff; opacity: 0.7; top: 0px; left: 0px;
+	display: none;
+}
+.changeChPop {
+	position: absolute; top: 5px; left: 0px; width: 100%; background-color: #fff; height: 500px;
+	overflow-y: auto; display: none;
+}
+.changeChPop table {
+	width: 100%; border: 1px solid #f5f5f5; border-bottom: none; border-top: none;
+}
+.changeChPop table tr th {
+	background-color: #f1f1f1; font-size: 13px; font-weight: 500; color: #787878; height: 30px; padding: 0px 10px;
+}
+.changeChPop table tr td {
+	background-color: #fff; font-size: 14px; font-weight: 500; color: #666; height: 45px; padding: 0px 10px;
+	border-top: 1px solid #f5f5f5;
+}
+.promoText {
+	color: #14a88c; font-size: 15px; font-weight: 500; text-align: center; cursor: pointer; padding: 0px 0px 5px 0px;
+}
+
+.secuPay {
+	padding: 5px; width: 100%; margin: 30px 0px 0px 0px; text-align: center;
+}
+
+.secuPayInn {
+	padding: 0px 5px; position: relative; display: inline-block;
+}
+.secuPayInn img {
+	 width: 55px; cursor: pointer;
+}
+.secuPayInn p {
+	padding: 3px 0px 0px 15px; font-size: 13px; font-weight: 400; color: #454545; line-height: 18px;
+}
+.secuPayInn p b {
+	display: block; font-size: 15px; font-weight: 500; color: #333; padding: 2px 0px 0px 0px;
+}
+.checkOut .chefHead {
+	position: fixed; top: 0px; left: 0px; box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+}
+.payLogo {
+	float: left; padding: 6px 0px 0px 0px;
+}
+.payLogo img {
+	width: auto; max-height: 52px;
+}
+.promoApp {
+	background-color: #ddffd4; border: 1px solid #a3ffa2; box-shadow: 0px 16px 18px 0px rgba(46,51,51,0.1);
+	padding: 10px 20px; margin: 10px 0px; display: block;
+}
+
+.payAddWrap {
+	background-color: #fff; box-shadow: 0px 2px 3px 0px rgba(46,51,51,0.08); border-radius: 3px;
+	margin: 0px 0px 15px 0px;
+}
+.payAddWrap h2 { 
+	padding: 12px 20px; background-color: #ccc; font-size: 17px; font-weight: 500; color: #545454; border-radius: 3px 3px 0px 0px;
+	cursor: pointer;
+}
+.payAddWrap h2 i {
+	float: right;
+}
+.address {
+	padding: 15px 30px; width: 95%;
+}
+.addressInn {
+	float: left; width: 50%; padding: 0px 30px 10px 0px;
+}
+.addressInnFull {
+	width: 100%; 
+}
+.addressInn label {
+	width: 100%; margin: 0px 0px 2px; font-size: 13px; font-weight: 400; color: #666;
+}
+.addfild {
+	width: 100%; height: 38px; border: 1px solid #dedede; border-radius: 2px; padding: 0px 15px; background-color: #fdfdfd;
+	font-size: 14px; font-weight: 400; color: #454545; font-family: 'Roboto';	
+}
+.addfild.addfildFull {
+	padding: 10px 15px; height: 80px; resize: none;
+}
+.addfild:focus {
+	border: 1px solid #1accac; background-color: #fff;
+}
+.addressInn a {
+	padding: 7px 5px; border: 1px solid #12b396; background-color: #12b396; width: 130px; text-align: center;
+    border-radius: 3px; margin: 10px 0px 0px; font-size: 15px; font-weight: 500; color: #fff; float: right;
+}
+.paymentWrapInn {
+	width: 66%;
+}
+.paymentWrap {
+	padding: 0px 0px; 
+}
+
+.tabs-menu {
+	float: left; width:25%; background-color:#FFF; margin:0px 0px; padding:10px 0px; height:100%;
+	border-right:1px solid #ebebeb; min-height: 400px;
+}
+.tabs-menu li {
+    list-style-type:none; color:#666; font-size:14px; font-weight:500;
+}
+.tabs-menu li a {
+    padding: 12px 20px; color: #666; display:block; border-bottom:1px solid #ebebeb;
+}
+.tabs-menu .current a {
+    color: #FFF; position:relative; background-color:#12b396;
+}  
+.tab {
+    float: left; width: 74%; padding:0px 0px 0px 2%;
+}
+.tab-content {
+    padding: 20px 10px 25px; display: none;
+}
+.card_details {
+    padding:10px 3% 0px 1%;
+}
+.card_filds {
+    padding:8px 0px;
+}
+.card_filds.card_filds_a {
+    padding:15px 0px 10px 0px;
+}       
+.card_details span {
+    display:inline-block; width:25%; float:right; padding: 3px 0px 0px 0px;
+}
+.card_details span img {
+    width:100%; margin-top:-8px; position:relative; top:8px;
+}
+.card_details span.sm_img {
+    width:47px;
+}           
+.card_details span.sm_img_a {
+    width:47px; float: none; position: relative; top: -5px; left: 5px;
+}               
+.card_details label, .card_filds label {
+    font-size:14px; font-weight:500; width:27%; text-align:left; display:inline-block; color:#666;
+}
+.card_details label.lab_sm {
+    width:35px;
+}   
+.cardfild {
+	width:73%; height: 38px; border: 1px solid #dedede; border-radius: 2px; padding: 0px 15px; background-color: #fdfdfd;
+	font-size: 14px; font-weight: 400; color: #454545; font-family: 'Roboto';	
+} 
+.cardfild.cardfild_small {
+    width:46%;
+}
+.cardfild.cardfild_cvv {
+    width:17%; text-align:center;
+} 
+.cardfild:focus {
+	border: 1px solid #1accac; background-color: #fff;
+} 
+#internationalCC {
+    background-position: 99% 3px; background-repeat: no-repeat; background-size: 35px;
+}
+#internationalCC.amex {
+    background-image: url('/images/card-amex.gif');
+}
+#internationalCC.visa {
+    background-image: url('/images/card-visa.gif');
+}
+#internationalCC.master {
+    background-image: url('/images/card-mastercard.gif');
+}
+.cardfild.cardfild_select {
+    width:16%; padding:0px 5px; appearance:none; -webkit-appearance:none;
+    background-image:url(../images/arr-1.png); background-repeat:no-repeat; background-size:10px;
+    background-position:85% center; margin:0px 5px 0px -2px;
+}
+.cardfild.cardfild_bank {
+    appearance:none; -webkit-appearance:none; padding:0px 5px; width:72%;
+    background-image:url(../images/arr-1.png); background-repeat:no-repeat; background-size:10px;
+    background-position:95% center;
+}
+.cardfild:focus {
+    outline:none;
+}       
+.cvv_text {
+    text-align:right; font-size:13px; color:#666; position:relative;
+}
+.cvv_text b {font-weight:400;}   
+.note_text {
+    font-size:12px; font-weight:400; color:#666; padding:12px 0px 15px 0px; line-height:16px;
+}
+.note_text span {
+    float:none; font-weight:500; padding:0px 5px 0px 0px; width: auto; color: #454545;
+}
+.donate_btn img {
+    position: absolute; left:0px; top:27px;
+}
+.net_bank {
+    padding:10px 3% 0px 1%; position:relative;
+}
+.net_bank_inn {
+}
+.net_bank_inn_cta {
+    float:left; width:33.3%; padding:20px 0px;
+}
+.net_bank_inn_cta input {
+	position: relative; top: 10px;
+}
+.net_bank_inn_cta label {
+	width:68%;
+}
+.net_bank_inn_cta img {
+    width:100%; position:relative; margin-top:-10px; top:10px;
+}
+.save_card {
+	padding: 0px 0px 10px 0px;
+}
+.save_card span {
+    display:block; float:none; width: auto; background-color:#FFF;
+    margin:0px 0px 5px 0px;
+}
+.save_card label {
+	display: block; width: 100%;
+}
+.save_card label b {
+    font-weight:700; color:#3f5888;
+}
+.save_c {
+    padding:12px 0px 0px 0px;
+}
+.save_c .checkbox {
+	border: none; padding: 0px 0px;
+}
+.save_c .checkbox label {
+	width: auto; float: none;
+}
+.save_c .checkbox span {
+	width: auto; float: none; padding: 0px 0px 0px 5px; font-size: 14px; font-weight: 400; color: #454545;
+}                                                                          
+#tab-1 {
+    display: block;  
+}
+.donate_btn {
+	padding: 0px 0px 10px 0px;
+}
+.donate_btn input {
+	padding: 7px 5px; border: 1px solid #12b396; background-color: #12b396; width: 130px;
+    text-align: center; border-radius: 3px; margin: 0px 0px 0px; font-size: 15px; font-weight: 500; color: #fff; float: right;
+}
+.donate_btn input:hover {
+    background-color:#16ac8f;
+}
+.promPop {
+	width: 550px; margin: 0px auto; position: fixed; z-index: 100010; background-color: #fff; display: none;
+	box-shadow: 0px 8px 18px rgba(0,0,0,0.2); top: 5%; left: 0px; right: 0px; min-height: 50%; max-height: 90%;
+	border-radius: 5px; padding: 20px 20px 10px 20px;
+}
+.promtaps {
+	width:auto;
+}
+.promoInn {
+	width: auto;
+}
+.promoInn ul {
+	padding: 5px 10px 15px; margin: 0px 0px; max-height: 270px; overflow-y: auto;
+}
+.promoInn ul li {
+	list-style-type: none; border: 1px solid #ededed; margin: 10px 0px 0px; padding: 5px 10px; border-radius: 4px;
+}
+.promoInn ul li p {
+	float: left; width: 80%; font-size: 13px; font-weight: 500; color: #787878;
+}
+.promoInn ul li p span {
+	display: block; font-size: 16px; color: #666;
+}
+.promoInn ul li a {
+	float: right; padding: 3px 5px; border:1px solid #ccc; border-radius: 2px; font-size: 14px; font-weight: 400; color: #666;
+	margin: 6px 0px 0px 0px; text-align: center; width: 18%;
+}
+.promoInn ul li a:hover {
+	border:1px solid #12b396;
+}
+.promPop .foodPopBtn {
+	padding: 8px 0px;
+}
+.promoInn ul li.act {
+	border: 1px solid #12b396;
+}
+.promoInn ul li.act a {
+	background-color: #12b396; color: #fff; border:1px solid #12b396;
+}
+.promoInn b {
+	display: block; text-align: center; font-size: 14px; font-weight: 400; color: #999; padding: 10px 0px 5px;
+}
+.promEnt {
+	width: 450px; margin: 0px auto; padding: 20px 0px 10px 0px;
+}
+.promEnt p {
+	padding: 5px 0px 0px; margin: 0px 0px; font-size: 13px; font-weight: 400; color: #E17A33; float: left;
+	width: 100%;
+}
+.promEnt input {
+	width: 74%; height: 38px; border: 1px solid #c4c4c4; border-radius: 2px; padding: 0px 15px;
+    font-size: 15px; font-weight: 500; margin: 0px; color: #666; float: left;
+}
+.promEnt input:focus {
+	border: 1px solid #1accac; 
+}
+.promEnt button {
+	height: 38px; width: 25%; border: none; background-color: #12b396; color: #fff; font-size: 15px; font-weight: 500;
+	text-transform: uppercase; float: left;
+}
+.sponsWrap {
+	padding: 20px; margin: 0px 0px; display: none; min-height: 200px;
+}
+.noSpon {
+	text-align: center; font-size: 14px; font-weight: 500; color: #999;
+}
+.noSpon img {
+	display: block; width: 70px; margin: 0px auto; padding: 40px 0px 10px; opacity: 0.4;
+}
+.payAmout {
+	padding: 0px 0px;
+}
+.payInn {
+	float: left; width:30%; 
+}
+.payInn.payInnMd {
+	width: 37%;
+}
+.radio {
+	position: relative; float: left; clear: left; display: block; padding-left: 35px;
+	line-height: 22px; font-size: 15px; color: #666; cursor: pointer; font-weight: 500;
+  }
+  .radio:before {
+	background: #fff; content: ""; position: absolute; display: inline-block; top: 0; left: 0; width: 22px; height: 21px;
+	border: 1px solid #bbb; border-radius: 100%; 
+  }
+  .payInn input[type="radio"], .save_card input[type="radio"] {
+	display: none;
+  } 
+  .payInn input[type="radio"]:checked + label:before, .save_card input[type="radio"]:checked + label:before {
+	content: "\2022"; text-align: center; line-height: 15px; font-family: Tahoma; font-size: 35px; color: #12b396;
+	text-shadow: 0 0 4px #bbb;
+  }
+  .amountFild {
+	width: 100%; padding: 0px 0px 0px 40px; border: 1px solid #dedede; border-radius: 2px; background-color: #fdfdfd;
+	font-size: 20px; font-weight: 600; color: #666; height: 38px;
+	background-image:url("../images/rupee1.png"); background-size:18px; font-family: 'Roboto';
+	background-repeat: no-repeat; background-position: 10px center;
+}
+.amountFild:focus {
+	border: 1px solid #1accac; background-color: #fff;
+}
+.logInpop {
+	position: absolute; z-index: 100000; top: 60px; right: -20px; display: none;
+}
+.logInInn {
+	width: 250px; background-color: #fff; position: relative; box-shadow: 0px 6px 6px rgba(0,0,0,0.1);
+	padding: 10px 15px; border: 1px solid #ededed; border-radius: 5px;
+}
+.logInInn:after {
+	bottom: 100%; left: 85%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute;
+	pointer-events: none; border-color: rgba(136, 183, 213, 0); border-bottom-color: #dedede; border-width: 10px;
+	margin-left: -10px;
+}
+.logInInn a {
+	display: block; padding: 10px 5px; font-size: 15px; font-weight: 400; color: #666; text-transform: uppercase;
+}
+.logInInn a:hover {
+	color: #00a285;
+}
+.logInInn a.logout {
+	color: #d73a25;
+}
+.profileOut {
+	background-color: #f3f5f5; padding: 85px 0px 30px 0px; background-attachment: fixed;
+}
+.profileWrap {
+	width: 1200px; margin: 0px auto; padding: 20px; background-color: #fff; box-shadow: 0px 4px 4px rgba(0,0,0,0.1);
+}
+.profileTabs {
+	border-bottom: 1px solid #ededed;
+}
+.profileTabs a {
+	display: inline-block; padding: 0px 25px 13px; font-size: 15px; text-transform: uppercase; color: #666; font-weight: 500;
+}
+.profileTabs a.Act {
+	border-bottom: 4px solid #12b396; color: #12b396;
+}
+.profileInn {
+	padding: 20px;
+}
+.profileLeft {
+	float: left; width: 250px; height: 250px; background-color: #f1f1f1; text-align: center; line-height: 240px;
+	border-radius: 5px;
+}
+.profileLeft img {
+	width: 150px; opacity: 0.5;
+}
+.profileRight {
+	float: left; width: 76%; padding: 0px 0px 0px 40px; position: relative;
+}
+.userDetails {
+	float: left; width: 45%;
+}
+.userDetails div {
+	padding: 5px 0px 10px 0px;
+}
+.userDetails select{
+	width: 100%; height: 38px; border: 1px solid #dedede; border-radius: 2px; padding: 0px 15px; background-color: #fdfdfd;
+	font-size: 14px; font-weight: 400; color: #454545; font-family: 'Roboto';	appearance:none; -webkit-appearance:none;
+    background-image:url(../images/arr-1.png); background-repeat:no-repeat; background-size:12px;
+    background-position:95% center; margin:0px 5px 0px -2px;	
+}
+.userDetails div label {
+	display: block; padding: 0px 0px 5px; margin: 0px 0px; font-size: 14px; font-weight: 400; color: #666;
+}
+.detEdit, .pasBtn {
+	float: right; display: inline-block; padding: 7px 10px; border: 1px solid #cdcdcd; width: 120px;
+	text-align: center; border-radius: 3px; margin: 0px 0px 0px 15px; font-size: 14px; font-weight: 400; color: #666;
+	background-color: #fff;
+}
+.detEdit:hover, .pasBtn:hover {
+	border: 1px solid #12b396;
+}
+.detEdit.Act, .pasBtn.Act {
+	border: 1px solid #12b396; color: #fff; background-color: #12b396;
+}
+.userBtn {
+	float: right;
+}
+.userBtn a {
+	display: inline-block; padding: 10px 25px; border: 1px solid #12b396; text-align: center;
+	border-radius: 3px; margin: 0px; font-size: 14px; font-weight: 500; color: #fff; text-transform: uppercase;
+	background-color: #12b396;
+}
+.changPas {
+	position: absolute; width: 100%; height: 100%; background-color: #fff; left: 38px; top: 0px; display: none;
+}
+.changPas h2 {
+	padding: 0px 0px 8px; margin: 0px 0px 5px; border-bottom: 1px solid #dedede; font-size: 16px; font-weight: 500;
+	color: #666;
+}
+.orderWrap {
+	padding: 0px 0px; margin: 15px 0px 0px 0px; border: 1px solid #dedede;
+}
+.orderHead {
+	background-color: #f8f8f8; padding: 8px 15px; border-bottom: 1px solid #dedede;
+}
+.orderHead span {
+	float: left; display: inline-block; padding: 8px 25px 7px; text-align: center;
+	border-radius: 3px; margin: 0px; font-size: 14px; font-weight: 500; color: #666; text-transform: uppercase;
+	border: 1px solid #dedede; background-color: #fff;
+}
+.orderHead ul {
+	float: right; margin: 0px 0px; padding: 0px 0px;
+}
+.orderHead ul li {
+	list-style-type: none; float: left; font-size: 15px; font-weight: 400; color: #666; padding: 8px 30px 0px 0px;
+}
+.orderHead ul li b {
+	font-weight: 500; color: #333; padding: 0px 0px 0px 10px;
+}
+.orderHead ul li:first-child + li b {
+	color: #1B9638;
+}
+.orderHead ul li:first-child + li + li b {
+	color: #E37D25;
+}
+.orderHead ul li:first-child + li + li + li {
+	padding: 0px 0px;
+}
+.orderHead ul li a {
+	display: inline-block; padding: 7px 25px; text-align: center;
+	border-radius: 3px; margin: 0px; font-size: 14px; font-weight: 500; color: #fff; text-transform: uppercase;
+	background-color: #12b396;
+}
+.orderCta {
+	padding: 10px 10px 0px;
+}
+.orderMenu {
+	width: 33%; float: left; padding: 10px;
+}
+.orderCta span {
+	display: block; font-size: 14px; font-weight: 500; color: #999;
+}
+.orderCta p {
+	padding: 5px 0px 10px 0px; width: 100%; font-size: 14px; font-weight: 500; font-style: normal; color: #545454;
+}
+.orderCta p i {
+	display: inline-block; font-size: 14px; font-weight: 500; font-style: normal; color: #454545; padding: 0px 10px 5px 0px;
+}
+.orderCta span b {
+	display: inline-block; padding: 0px 0px 5px 5px; color: #545454;
+}
+
+.pac-container {
+	width: 300px !important; border-top: none; box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+}
+.pac-container:after {
+	display: none;
+}
+
+.citymask {
+	position: fixed; background-color: rgba(0,0,0,0.7); top: 0px; left: 0px; right: 0px; width: 100%; height: 100%;
+	display: block; z-index: 100000;
+}
+.cityPop {
+	width: 100%; background-color: #fff; position: fixed; top: 0px; right: 0px; z-index: 100000;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1); -webkit-transition: 0.2s all ease-in-out; -moz-transition: 0.2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
+}
+.cityPop.cityPopTop {
+	top: -400px;
+}
+.cityPopInn {
+	width: 1200px; margin: 0px auto; padding: 50px 0px; text-align: center;
+}
+.cityPopInn h3 {
+	padding: 0px 0px; margin: 0px 0px; font-size: 18px; font-weight: 400; color: #666;
+}
+.cityPopInn .ui-widget {
+	display: inline-block; padding: 0px 0px 0px 10px;
+}
+.cityPopInn .ui-widget input {
+	border: 1px solid #ccc; height: 34px; width: 250px; border-radius: 3px; padding: 0px 15px; font-size: 16px; font-weight: 500;
+}
+.cityPopInn ul {
+	padding: 50px 0px 0px; margin: 0px 0px;
+}
+.cityPopInn ul li {
+	list-style-type: none; display: inline-block; 
+}
+.cityPopInn ul li a {
+	display: block; font-size: 15px; width: 110px; height: 110px; border: 1px solid #fff; margin: 2px;
+	padding: 15px 0px 0px 0px; border-radius: 3px; color: #666; transition: 0.2s all;
+}
+.cityPopInn ul li a img {
+	width: 60px; display: block; margin: 0px auto 6px;
+}
+.cityPopInn ul li a:hover {
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.2); color: #12b396;
+}
+.cityPopInn ul li a.Act {
+	color: #12b396; box-shadow: 0px 2px 5px rgba(0,0,0,0.2); 
+}
+
+

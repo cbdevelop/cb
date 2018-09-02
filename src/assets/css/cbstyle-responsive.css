@@ -1,0 +1,155 @@
+@media screen and (max-width: 1210px){
+.searchOut { width: auto; margin: 0px 15px;}
+.howItWrap { width: auto; margin: 0px 10px;}
+.countWrap { width: auto; margin: 0px 10px;}
+.patWrap { width: auto; margin: 0px 10px;}
+.footInn { width: auto; margin: 0px 10px;}
+.footLogo img {width: 210px;}
+.footMenu {padding: 13px 0px 0px 20px;}
+.social a {margin: 0px 8px;}
+.hoAbText p { width:100%;}
+.atten { width: 24%;}
+.addTheme, .addTheme.addThemeEvevt  { background-size: cover;}
+.addThemeText { width: auto; margin: 0px 15px;}
+.addContInn { width: auto; margin: 0px 15px;}
+.termsWrap { width: auto; margin: 0px 15px;}
+.blogWrap { width: auto; margin: 0px 15px;}
+.contThemeText, .aboutWrap { width: auto; margin: 0px 15px;}	
+.overScroll { width:100%; overflow-x: auto;}
+.overScrollInn { width:1200px; overflow-x: auto;}
+.overScrollInnTwo { width:1200px; overflow-x: auto;}
+	
+}
+
+@media screen and (max-width: 1020px){
+	nav {
+		display: none; position: fixed; z-index: 100010; width: 85%; top: 10%; background-color: #fff; margin: 0px auto;
+		left: 0px; right: 0px;
+	}
+	nav ul { margin: 0px 0px; padding: 0px 0px 1px 0px;}
+	nav ul li { list-style-type:none; float:left; width: 100%; text-align: center; padding: 1px 0px 0px 0px;}
+	nav ul li a {
+		display:block; padding: 20px 20px 0px; margin: 0px 2px; color: #333; font-size: 15px; height: 60px; font-weight: 400;
+		border-bottom: none;
+	}
+	nav ul li a:hover, nav ul li a.Act {color:#fff;  border-bottom:none; background-color: #16af92;}	
+	.siIcon {display: block; border: none; font-size: 23px; border-radius: 0px;}
+	.menuIcon {display: block; border: none; font-size: 25px; border-radius: 0px;}
+	.scrollAct .siIcon {border: none; color: #545454;}
+	.scrollAct .menuIcon {border: none; color: #545454;}
+	.siIcon:hover, .menuIcon:hover  {border:none;}
+	.themeWrap {background-size: cover; min-height: 550px;}
+	.patWrapOut {background-size: cover;}
+	.themeText {width:90%;}
+	.homeHeading {width:90%;}
+	.howItCta {width: 46%; margin: 2%;}
+	.countCta  {width: 46%; margin: 2%; text-align: center;}
+	.countCta span {float: none;}
+	.countCta p { float: none; padding: 15px 0px 0px; width: 100%;}
+	.whyChoCta { padding:10px 0px;}
+	.footLogo { display: block; width: 100%; text-align: center;}
+	.footMenu { padding: 13px 0px 0px; width: 100%; text-align: center;}
+	.social { padding: 13px 0px 0px; width: 100%; text-align: center;}
+	.themeText {padding: 30% 0px 0px;}
+	.chefIcon {top: 45px; left: 15px; width: 80px; height: 80px; line-height: 73px;}
+	.chefIcon img {width: 60px !important;}
+	.patCta h4 {padding: 20px 15px 0px 105px;}
+	.patCta p { padding: 15px 20px 10px 105px;}
+	.resMes {display: block; font-size: 13px; padding: 0px 20px 25px 105px; font-weight: 400; color: #999;}
+	.signPop{ width: 450px; height: 90%; overflow-y: auto;}
+	.signImg { display: none;}
+	.signPopInn { width:100%;}
+	.signIn {padding: 40px 40px 40px;}
+	.forgotPass {padding: 140px 40px 40px;}
+	.addThemeText h2 { text-align: center; padding: 190px 0px 0px;}
+	.addThemeText p { text-align: center;}
+	.addForm { width: 90%; float: none; margin: 0px auto;}
+	.themIcon { width: 100px; height: 100px; bottom: 65px; line-height: 90px;}
+	.addCont { width: 90%; margin: 0px auto; float: none; position: relative; top: -50px;}
+	.recBlog { width: 100%; margin: 0px 0px 20px 0px;}
+	.recBlog h3 {background:url("../images/arrow.svg") no-repeat 94% center; background-size:15px; cursor: pointer;}
+	.recBlog ul { display: none;}
+	.blogDetails { width: 100%;}
+	.contDetails { float: none; width: 90%; margin: 20px 0px 0px 0px; padding: 10px 45px;}
+	.searchOut { width: 60%; height: 90%; bottom: auto; margin: 0px auto; position: fixed; top: 5%; z-index: 100010; display: none;
+	padding: 20px 0px 0px 0px;}
+	.searClose { display:block;}
+	.seaBtn { width: 100%;}
+	.seaButton { height: 60px; position: absolute; bottom: 0px;}
+	.select { width: 96%; padding: 15px 0px 15px 20px;}
+	.select select { width:98%;}
+	.select.time, .select.date { width: 48%;}
+	.atten { width: 100%; padding: 0px 0px 5px 20px;}
+	.atten input { width: 48%;}
+	.resSearch { display: block;}
+
+}
+
+@media screen and (max-width: 760px){
+	.howItCta {width: 96%; margin: 3% 2%; height: auto; padding: 0px 0px 10px 0px;}
+	.howItCta:hover .howItCtaInn { margin-top: 0px;}
+	.whyChoCta {width: 96%; margin: 3% 2%;}
+	.homeHeading h3 {padding: 0px 10px; font-size: 24px;}
+	.patWrap h3 {padding: 0px 10px 25px; font-size: 24px;}
+	.patCta {width: 96%; margin: 3% 2%;}
+	header { height: 60px;}
+	.logo { margin:5px 0px 0px 0px;}
+	.logoImg, .scrollAct .logoImg { background-position: left center; background-size: 78px; }
+	.signWrap { padding:12px 0px 0px 0px;}
+	.addThemeText h2 { font-size: 33px; padding: 160px 0px 0px;}
+	.addForm { width: 100%; float: none; margin: 0px auto; padding: 30px 20px;}
+	.addCont { width: 100%; padding: 10px 5px;}
+	.addForm label { width: 100%;}
+	.addInn { width: 100%;}
+	.ContWrapOut {padding: 20px 0px 30px;}
+	.contDetails { width: 100%; padding: 10px 5px;}
+	.contTheme { height: 300px;}
+	.contThemeText h2 { font-size: 28px; padding: 180px 0px 0px;}
+	.contThemeText p {font-size: 17px;}
+	.contThemeText { height:auto;}
+	.aboutTheme {height: 300px;}
+	.aboutWrap { padding:20px 0px;}
+	.aboutLeft, .aboutRight { width: 100%; text-align: center;}
+	.aboutLeft img { width: 100%;}
+	.overScrollInnTwo { width:900px; overflow-x: auto;}
+	.blogCta {width: 276px; margin: 1%;}
+	.blogCta span {height: 165px;}
+	.hoAbImg { width:100%;}
+	.hoAbText { width:100%; padding: 30px 20px 40px; text-align: center;}
+	.hoAbText p { padding: 0px 0px 20px 0px;}
+	.hoAbImg h2 { display: block;}
+	.hoAbText h3 { display: none;}
+	
+}
+
+@media screen and (max-width: 590px){
+	.footMenu a {display: block; margin: 2px 0px;}
+	.themeText { padding: 44% 0px 0px 0px;}
+	.themeText h1 { font-size: 28px;}
+	.themeText h2 { font-size: 16px; line-height: 24px;}
+	.countWrap {padding: 45px 0px 30px;}
+	.countCta {margin: 3% 2% 5%;}
+	.signPop{ width: 92%; top: 5%;}
+	.signIn {padding: 40px 25px 40px;}
+	.forgotPass {padding: 140px 25px 40px;}	
+	.addThemeText p { font-size: 17px;}
+	.termsWrap { width: 100%; margin: 0px 0px;}
+	.termsWrapCta { padding: 15px 15px 20px;}
+	.termOut { padding: 55px 0px 0px 0px;}
+	.recBlog { width: 100%; margin: 0px 0px 15px 0px;}
+	.blogOut {padding: 70px 0px 20px 0px;}
+	.blogWrap { width: auto; margin: 0px 10px;}
+	.howItWrap { padding: 80px 0px 30px;}
+	.patWrap {padding: 80px 0px 30px;}
+	.padMd { padding: 40px 0px 20px !important; margin: 0px 5px !important;}
+	.termsWrap .homeHeading {margin: 30px auto 10px;}
+	.patCta { min-height: inherit;}
+	.patCta p {padding: 20px 20px 10px 25px;}
+	.resMes {padding: 10px 20px 25px 25px;}
+	.themeWrap { height: 400px; min-height: 400px;}
+	.searchOut { width: 90%;}
+	
+}
+@media screen and (max-width: 350px){
+	.fbGo i { padding:0px;}
+}

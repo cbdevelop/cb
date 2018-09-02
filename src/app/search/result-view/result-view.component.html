@@ -1,0 +1,28 @@
+<div class="resultInn clearfix">
+
+  <div class="resultWrap">
+    <h2>Heading Text Here...</h2>
+    <ul class="">
+      <li *ngFor="let dish of dishes">
+        <div class="foodCta" [ngClass]="dish.ImageUrl =='' ? '' : 'foodCtaImg'">
+          <div class="foodImg" *ngIf="dish.ImageUrl !=''">
+            <img [src]="dish.ImageUrl" alt="" />
+          </div>
+          <h3>{{ dish.Name }}</h3>
+          <p> {{ dish.Description }} </p>
+          <div class="foodBtn clearfix">
+            
+            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.FoodCategory == 1 ? 'foodVeg' : 'foodNonVeg' ">
+            </a>
+            <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink"> {{ dish.Cuisines }} Cuisines </a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink colRed" *ngIf="dish.Restrict">Restrict Sarv</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+

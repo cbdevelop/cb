@@ -1,0 +1,75 @@
+
+
+<div class="chefHead" #cheftop>
+  <div class="chefHeadInn clearfix">
+    <ul class="clearfix">
+      <div class="scrTab clearfix" id="scrTap">
+      <li class="Act">All</li>
+      <li>Menu One</li>
+      <li>Menu One</li>
+      <li>Menu One</li>
+      <li>Menu One</li>
+      <li>Menu One</li>
+      </div>							
+      <div class="chefSearch"><input type="text" placeholder="Search"></div>				
+    </ul>
+    <div class="cartOut">
+        <div class="filter">
+          <div class="filterTp clearfix">
+            <div class="filBtn">
+              <a href="javascript:void(0)" class="Act">By Golden Chefs</a>
+              <a href="javascript:void(0)">Non-Veg</a>
+            </div>
+            <div class="MoreFil pull-right">
+              <a  id="morPop" [ngbPopover]="popContent">+ More</a>
+              <ng-template #popContent>
+              <div class="MorePop" >
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"/><i class="input-helper"></i> <span>Option 1</span>
+                    </label>
+                  </div>	
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"/><i class="input-helper"></i> <span>Option 1</span>
+                    </label>
+                  </div>	
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"/><i class="input-helper"></i> <span>Option 1</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"/><i class="input-helper"></i> <span>Option 1</span>
+                    </label>
+                  </div>	
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"/><i class="input-helper"></i> <span>Option 1</span>
+                    </label>
+                  </div>	
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"/><i class="input-helper"></i> <span>Option 1</span>
+                    </label>
+                  </div>														
+              </div>
+            </ng-template>
+            </div>							
+          </div>
+          <div class="filSeletWrap">
+            <span>Option <a href="javascript:void(0)" class="fa fa-close"></a></span>
+            <span>Option <a href="javascript:void(0)" class="fa fa-close"></a></span>
+            <span>Option <a href="javascript:void(0)" class="fa fa-close"></a></span>
+            <span>Option <a href="javascript:void(0)" class="fa fa-close"></a></span>
+          </div>
+          <p><a href="javascript:void(0)" class="modSea">Modify your search</a></p>
+        </div>
+
+
+      
+      
+    </div>
+  </div>
+</div>
