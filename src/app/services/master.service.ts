@@ -8,7 +8,7 @@ export class MasterService {
 			"Id":1,
 			"Name":"test",
 			"Description":"Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			"ImageUrl":"../../assets/images/food.png",
+			"ImageUrl":"../../assets/images/food.jpg",
 			"FoodCategory":2, //veg & non veg
 
 			"Cuisines":"2+",
@@ -49,7 +49,7 @@ export class MasterService {
 			"Id":5,
 			"Name":"test",
 			"Description":"Caterbinge is an on-demand food catering service and your personal chef for party orders.",
-			"ImageUrl":"",
+			"ImageUrl":" ../../assets/images/food.jpg",
 			"FoodCategory":1,
 			"Cuisines":"6+",
 			"Restrict":"",

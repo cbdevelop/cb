@@ -41,17 +41,14 @@
       <input type="text" placeholder="000" class="non" formControlName="nonVegAttnd"/>
       </div>  	
       <div class="select date">
-        <label>Date</label>
-        <input type="text" placeholder="DD/MM/YY" class="datePic" formControlName="datetime"/>
+          <label>Date - Time</label>
+          <input type="text" placeholder="DD/MM/YY HH:MM" class="datePic" formControlName="datetime"
+           [owlDateTime]="dt1" hour12Timer="true" [owlDateTimeTrigger]="dt1">
+          <owl-date-time #dt1></owl-date-time> 
       </div>
-      <!-- <div class="select time">
-        <label>Time</label>
-        <input type="text" placeholder="HH/MM" class="date timePic" />
-      </div> -->
       <div class="seaBtn">
         <input type="button" value="Search" (click)="onSearch(searchObj)" class="seaButton"/>
       </div>  	 	  	  	
-    </div>
     </form>
 </section>
 <!-- Theme -->

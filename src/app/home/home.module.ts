@@ -5,8 +5,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { FooterModule, HeaderModule } from '../shared/index';
-import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
+import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime'
 
 
 @NgModule({
@@ -17,8 +17,10 @@ import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2
     HomeRoutingModule,
     FooterModule,
     HeaderModule,
-    NgbDatepickerModule,
     AngularMultiSelectModule
+    OwlDateTimeModule, 
+    OwlNativeDateTimeModule,
+    
   ],
   declarations: [HomeComponent],
   schemas: [
