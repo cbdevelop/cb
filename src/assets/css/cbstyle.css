@@ -126,7 +126,7 @@ nav ul li a:focus {
 	color: #1bb99b; cursor: pointer;
 }
 .select.time {
-	width: 13%;
+	width: 15%;
 }
 .select select {
 	-webkit-appearance:none; -moz-appearance:none; -o-appearance:none; appearance:none; border:none; padding:0px 20px 0px 0px; width:90%;
@@ -143,6 +143,16 @@ nav ul li a:focus {
 }
 .select input.loca {
 	padding:0px 0px 0px 0px; background-image: none;
+}
+/*edited */
+.session{
+	text-transform: uppercase;
+    display: inline-block;
+    padding: 5px 0px 0px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1bb99b;
+    cursor: pointer;
 }
 .atten {
 	float: left; padding: 15px 0px 0px 20px; width: 22%;

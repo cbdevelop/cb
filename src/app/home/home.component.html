@@ -40,17 +40,20 @@
       <input type="text" placeholder="000" class="non" />
     </div>
     <div class="select date">
-      <label>Date</label>
-      <input type="text" placeholder="DD/MM/YY" class="datePic"  ngbDatepicker #d="ngbDatepicker" />
-      <button class="datePic" (click)="d.toggle()" type="button"></button>     
-      
+      <label>Date - Time</label>
+      <input type="text" placeholder="DD/MM/YY HH:MM" class="datePic" [owlDateTime]="dt1" hour12Timer="true" [owlDateTimeTrigger]="dt1">
+      <owl-date-time #dt1></owl-date-time>
+
     </div>
     <div class="select time">
-      <label>Time</label>
-      <input type="text" placeholder="HH/MM" class="date timePic" />
+      <label>You're ordering for </label>
+      <div class="session">
+        <strong>Dinner</strong>
+      </div>
+      <!-- <input type="text" placeholder="HH/MM" class="date timePic" /> -->
     </div>
     <div class="seaBtn">
-      <input type="button" value="Search" class="seaButton" (click)="onSearch(searchObj)" />
+      <input type="button" value="Dishes" class="seaButton" (click)="onSearch(searchObj)" />
     </div>
   </div>
 </section>

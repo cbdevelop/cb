@@ -5,8 +5,8 @@ import { HomeComponent } from './home.component';
 import { FormsModule } from '@angular/forms';
 import { HomeRoutingModule } from './home-routing.module';
 import { FooterModule, HeaderModule } from '../shared/index';
-import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
+ 
+import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime'
 
 
 @NgModule({
@@ -16,7 +16,9 @@ import { NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
     HomeRoutingModule,
     FooterModule,
     HeaderModule,
-    NgbDatepickerModule,
+    OwlDateTimeModule, 
+    OwlNativeDateTimeModule,
+    
   ],
   declarations: [HomeComponent],
   schemas: [

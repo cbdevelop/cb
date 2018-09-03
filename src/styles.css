@@ -5,5 +5,23 @@
 @import "./assets/css/cbstyle.css" ; 
 @import "./assets/css/cbstyle-responsive.css";
 @import "./assets/css/datepicker.css";
+@import "~ng-pick-datetime/assets/style/picker.min.css";
 
 
+/* datepicker */
+
+.owl-dt-container {
+    font-size: 16px !important;
+}
+.owl-dt-calendar-table .owl-dt-calendar-cell-content {
+    color: #6a6666c7 !important;
+}
+
+.owl-dt-timer {
+    color: #6a6666c7 !important;
+}
+
+.owl-dt-calendar-table .owl-dt-calendar-cell-selected {
+    color: rgb(243, 243, 243) !important;
+    background-color: #73c89c;
+}
