@@ -4,52 +4,50 @@
 
 <!-- Theme -->
 <section class="themeOut" id="home">
-    <div class="themeWrap">
-      <div class="themeText">
-        <h1>Welcome to Caterbinge</h1>
-        <h2>Lorem Ipsum is simply dummy text of the simply dummy text of the  printing and typesetting industry Lorem Ipsum has been the industry's</h2>
-      </div>
+  <div class="themeWrap">
+    <div class="themeText">
+      <h1>Welcome to Caterbinge</h1>
+      <h2>Lorem Ipsum is simply dummy text of the simply dummy text of the printing and typesetting industry Lorem Ipsum
+        has been the industry's</h2>
     </div>
-    <div class="resSearch clearfix">
-        <input type="text" placeholder="Search" />
-        <button>Search</button>
-    </div>	
+  </div>
+  <div class="resSearch clearfix">
+    <input type="text" placeholder="Search" />
+    <button>Search</button>
+  </div>
 
-    <form [formGroup]="homeForm" novalidate>
+  <form [formGroup]="homeForm" novalidate>
     <div class="searchOut">
       <div class="searClose"><i class="fa fa-close"></i></div>
 
       <div class="select">
         <label>Location<span id="cityPop">Change</span></label>
-        <angular2-multiselect class="loca" [data]="location"
-        [settings]="settings" 
-        (onSelect)="LocationSelect($event)"
-        (onDeSelect)="LocationDeSelect($event)" formControlName="location" >
-        </angular2-multiselect>     
+        <angular2-multiselect class="loca" [data]="location" [settings]="settings" (onSelect)="LocationSelect($event)" (onDeSelect)="LocationDeSelect($event)"
+          formControlName="location">
+        </angular2-multiselect>
       </div>
       <div class="select">
         <label>Service Type</label>
-        <angular2-multiselect class="loca" [data]="serviceType" 
-        [settings]="settings" 
-        (onSelect)="ServiceSelect($event)"
-        (onDeSelect)="ServiceDeSelect($event)" formControlName="serviceType" >
+        <angular2-multiselect class="loca" [data]="serviceType" [settings]="settings" (onSelect)="ServiceSelect($event)" (onDeSelect)="ServiceDeSelect($event)"
+          formControlName="serviceType">
         </angular2-multiselect>
       </div>
       <div class="atten">
-      <label>Attendees - <b>000</b> (Veg - Nonveg)</label>
-      <input type="text" placeholder="000" formControlName="vegAttnd"/>
-      <input type="text" placeholder="000" class="non" formControlName="nonVegAttnd"/>
-      </div>  	
+        <label>Attendees - <b>000</b> (Veg - Nonveg)</label>
+        <input type="text" placeholder="000" formControlName="vegAttnd" />
+        <input type="text" placeholder="000" class="non" formControlName="nonVegAttnd" />
+      </div>
       <div class="select date">
-          <label>Date - Time</label>
-          <input type="text" placeholder="DD/MM/YY HH:MM" class="datePic" formControlName="datetime"
-           [owlDateTime]="dt1" hour12Timer="true" [owlDateTimeTrigger]="dt1">
-          <owl-date-time #dt1></owl-date-time> 
+        <label>Date - Time</label>
+        <input type="text" placeholder="DD/MM/YY HH:MM" class="datePic" formControlName="datetime" [owlDateTime]="dt1" hour12Timer="true"
+          [owlDateTimeTrigger]="dt1">
+        <owl-date-time #dt1></owl-date-time>
       </div>
       <div class="seaBtn">
-        <input type="button" value="Search" (click)="onSearch(searchObj)" class="seaButton"/>
-      </div>  	 	  	  	
-    </form>
+        <input type="button" value="Search" (click)="onSearch(searchObj)" class="seaButton" />
+      </div>
+    </div>
+  </form>
 </section>
 <!-- Theme -->
 
@@ -83,8 +81,8 @@
       </span>
       <div class="howItCtaInn">
         <b>Step 3</b>
-        <p>Review who is cooking your menu and assign a manager for a great service on the whole to your order or you may simple
-          checkout to self organize your event by just hiring chefs alone.</p>
+        <p>Review who is cooking your menu and assign a manager for a great service on the whole to your order or you may
+          simple checkout to self organize your event by just hiring chefs alone.</p>
       </div>
     </div>
     <div class="howItCta">
@@ -209,8 +207,8 @@
           </div>
         </span>
         <h4>Chef</h4>
-        <p>Lorem Ipsum is simply dummy text of the simply dummy text of the printing and typesetting industry Lorem Ipsum has
-          been the industry's</p>
+        <p>Lorem Ipsum is simply dummy text of the simply dummy text of the printing and typesetting industry Lorem Ipsum
+          has been the industry's</p>
         <div class="resMes">Click here to become a Chef</div>
       </a>
     </div>
@@ -223,8 +221,8 @@
           </div>
         </span>
         <h4>Event Manager</h4>
-        <p>Lorem Ipsum is simply dummy text of the simply dummy text of the printing and typesetting industry Lorem Ipsum has
-          been the industry's</p>
+        <p>Lorem Ipsum is simply dummy text of the simply dummy text of the printing and typesetting industry Lorem Ipsum
+          has been the industry's</p>
         <div class="resMes">Click here to become a Event Manager</div>
       </a>
     </div>
@@ -296,8 +294,8 @@
             <i class="fa fa-star"></i>
           </span>
           <h3>Outstanding quality</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is
-            simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
+          <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
+            is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
           <h4>Mahesh V</h4>
         </div>
         <div class="testiCta">
@@ -309,8 +307,8 @@
             <i class="fa fa-star"></i>
           </span>
           <h3>Outstanding quality</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is
-            simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
+          <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
+            is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
           <h4>Mahesh V</h4>
         </div>
         <div class="testiCta">
@@ -322,8 +320,8 @@
             <i class="fa fa-star"></i>
           </span>
           <h3>Outstanding quality</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is
-            simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
+          <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
+            is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
           <h4>Mahesh V</h4>
         </div>
         <div class="testiCta">
@@ -335,8 +333,8 @@
             <i class="fa fa-star"></i>
           </span>
           <h3>Outstanding quality</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is
-            simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
+          <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
+            is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
           <h4>Mahesh V</h4>
         </div>
       </div>
