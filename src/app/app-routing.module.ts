@@ -6,10 +6,10 @@ import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 const appRoutes: Routes = [
 
   { path: '', loadChildren: './home/home.module#HomeModule' },
-  {
-    path: '',
-    loadChildren: './search/search.module#SearchModule'
-  },
+  { path: '', loadChildren: './search/search.module#SearchModule' },
+  { path: 'addchef', loadChildren: './addchef/addchef.module#AddchefModule' },
+  { path: 'addmanager', loadChildren: './addmanager/addmanager.module#AddmanagerModule' },
+  { path: 'contact', loadChildren: './shared/contact/contact.module#ContactModule' }
 ]
 @NgModule({
   imports: [

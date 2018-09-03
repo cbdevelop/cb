@@ -3,7 +3,7 @@
 <header  class="staticHead scrollAct">
   <section class="headInn clearfix">
     <div class="logo">
-      <a href="index.html"  class="logoImg"></a>
+      <a [routerLink]="'/'" class="logoImg"></a>
     </div>
     <div class="signWrap clearfix">
       <span class="fa fa-user-o siIcon"></span>
@@ -24,10 +24,10 @@
           <a [ngx-scroll-to]="'#choose'" [routerLink]="'/'">Choose Us</a>
         </li>
         <li>
-          <a [ngx-scroll-to]="'#patner'" [routerLink]="'/'">Patners</a>
+          <a [ngx-scroll-to]="'#partner'" [routerLink]="'/'">Partners</a>
         </li>
         <li>
-          <a>Contact</a>
+          <a [routerLink]="['/contact']">Contact</a>
         </li>
       </ul>
     </nav>

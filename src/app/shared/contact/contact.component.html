@@ -1,0 +1,126 @@
+<!-- Header -->
+<div id="home"></div>
+<header #head>
+  <section class="headInn clearfix">
+    <div class="logo">
+      <a [routerLink]="'/'" class="logoImg"></a>
+    </div>
+    <div class="signWrap clearfix">
+      <span class="fa fa-user-o siIcon"></span>
+      <span class="fa fa-bars menuIcon"></span>
+    </div>
+    <nav>
+      <ul class="clearfix">
+        <li>
+          <a [ngx-scroll-to]="'#home'" [routerLink]="'/'"  class="Act">Home</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#howitworks'" [routerLink]="'/'">How it Works</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#about'" [routerLink]="'/'">About Us</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#choose'" [routerLink]="'/'">Choose Us</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#partner'" [routerLink]="'/'">Partners</a>
+        </li>
+        <li>
+          <a>Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+</header>
+
+<!-- Theme -->
+<section class="addTheme contTheme">
+	<div class="contThemeText">
+	  <h2>Get in touch with us</h2>
+	  <p>Submit your Query to get full details</p>
+  </div>
+</section>
+<!-- Theme -->
+
+<!-- Queries -->
+
+<section class="addContWrap ContWrapOut">
+	<div class="addContInn clearfix">
+
+	<form [formGroup]="queryForm" class="form-horizontal" (ngSubmit)="onQueries()" novalidate>	
+		<div class="addForm">
+
+			<div class="clearfix">
+				<label for="fullname">Full Name</label>
+				<div class="addInn">
+				  <input type="text" placeholder="Enter Full Name" [ngClass]="{'validate': showRequiredFieldError('fullname') }" formControlName="fullname"/>
+				  <em *ngIf="showRequiredFieldError('fullname')">Full Name is required</em>
+				</div>
+			</div>
+
+			<div class="clearfix">
+				<label for="phone">Phone</label>
+				<div class="addInn">
+				  <input type="text" placeholder="0000 000 000" [ngClass]="{'validate': showRequiredFieldError('phone') }" formControlName="phone"/>
+				  <em *ngIf="showRequiredFieldError('phone')">Phone is required</em>
+				</div>
+			</div>
+
+			<div class="clearfix">
+				<label for="email">Email</label>
+				<div class="addInn">
+					<input type="email" placeholder="name@domain.com" [ngClass]="{'validate': showRequiredFieldError('email') }" formControlName="email"/>
+				  <em *ngIf="showRequiredFieldError('email')">Email is required</em>
+				</div>
+			</div>
+
+			<div class="clearfix">
+				<label for="state">State</label>
+				<div class="addInn">
+				  <input type="text" placeholder="Enter State" [ngClass]="{'validate': showRequiredFieldError('state') }" formControlName="state"/>
+				  <em *ngIf="showRequiredFieldError('state')">State is required</em>
+				</div>
+			</div>	
+
+			<div class="clearfix">
+				<label for="city">City</label>
+				<div class="addInn">
+				  <input type="text" placeholder="Enter City" [ngClass]="{'validate': showRequiredFieldError('city') }" formControlName="city"/>
+				  <em *ngIf="showRequiredFieldError('city')">City is required</em>
+				</div>
+			</div>		
+			
+			<div class="clearfix">
+				<label for="about">About yourself</label>
+				<div class="addInn">
+				  <textarea placeholder="Enter here.." [ngClass]="{'validate': showRequiredFieldError('about') }" formControlName="about"></textarea>
+				  <em *ngIf="showRequiredFieldError('about')">About yourself is required</em>
+				</div>
+			</div>	
+
+			<div class="clearfix">
+				<label>&nbsp;</label>
+				<div class="addInn">			
+					<button class="siBtn" [disabled]="loading">Submit</button>
+				</div>
+			</div>																														
+		</div>
+	</form>
+
+		<div class="contDetails">
+			<h3> Caterbinge</h3>
+			<p>Address Text Here...</p>
+			<p>Address Text Here...</p>
+			<p>Address Text Here...</p>
+			<p>Address Text Here...</p>
+			<span><a href="javascript:void(0)"><i class="fa fa-envelope-o"></i> info@caterbinge.com</a></span>
+			<span><a href="javascript:void(0)"><i class="fa fa-envelope-o"></i> suport@caterbinge.com</a></span>
+			<span><a href="javascript:void(0)"><i class="fa fa-phone"></i> 040 2233 4455</a></span>
+			<span><a href="javascript:void(0)"><i class="fa fa-mobile"></i> +91 9000 000 000</a></span>
+		</div>
+	</div>
+</section>
+
+<!-- Footer -->
+<app-footer></app-footer>
