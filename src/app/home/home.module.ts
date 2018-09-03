@@ -17,7 +17,7 @@ import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime'
     HomeRoutingModule,
     FooterModule,
     HeaderModule,
-    AngularMultiSelectModule
+    AngularMultiSelectModule,
     OwlDateTimeModule, 
     OwlNativeDateTimeModule,
     
