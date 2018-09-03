@@ -1,61 +1,62 @@
+<!-- Header -->
 <app-header>
 </app-header>
 
-
 <!-- Theme -->
 <section class="themeOut" id="home">
-  <div class="themeWrap">
-    <div class="themeText">
-      <h1>Welcome to Caterbinge</h1>
-      <h2>Lorem Ipsum is simply dummy text of the simply dummy text of the printing and typesetting industry Lorem Ipsum has
-        been the industry's</h2>
+    <div class="themeWrap">
+      <div class="themeText">
+        <h1>Welcome to Caterbinge</h1>
+        <h2>Lorem Ipsum is simply dummy text of the simply dummy text of the  printing and typesetting industry Lorem Ipsum has been the industry's</h2>
+      </div>
     </div>
-  </div>
-  <div class="resSearch clearfix">
-    <input type="text" placeholder="Search" />
-    <button>Search</button>
-  </div>
-  <div class="searchOut">
-    <div class="searClose">
-      <i class="fa fa-close"></i>
+    <div class="resSearch clearfix">
+        <input type="text" placeholder="Search" />
+        <button>Search</button>
+    </div>	
+
+    <form [formGroup]="homeForm" novalidate>
+    <div class="searchOut">
+      <div class="searClose"><i class="fa fa-close"></i></div>
+
+      <div class="select">
+        <label>Location<span id="cityPop">Change</span></label>
+        <angular2-multiselect class="loca" [data]="location"
+        [settings]="settings" 
+        (onSelect)="LocationSelect($event)"
+        (onDeSelect)="LocationDeSelect($event)" formControlName="location" >
+        </angular2-multiselect>     
+      </div>
+      <div class="select">
+        <label>Service Type</label>
+        <angular2-multiselect class="loca" [data]="serviceType" 
+        [settings]="settings" 
+        (onSelect)="ServiceSelect($event)"
+        (onDeSelect)="ServiceDeSelect($event)" formControlName="serviceType" >
+        </angular2-multiselect>
+      </div>
+      <div class="atten">
+      <label>Attendees - <b>000</b> (Veg - Nonveg)</label>
+      <input type="text" placeholder="000" formControlName="vegAttnd"/>
+      <input type="text" placeholder="000" class="non" formControlName="nonVegAttnd"/>
+      </div>  	
+      <div class="select date">
+        <label>Date</label>
+        <input type="text" placeholder="DD/MM/YY" class="datePic" formControlName="datetime"/>
+      </div>
+      <!-- <div class="select time">
+        <label>Time</label>
+        <input type="text" placeholder="HH/MM" class="date timePic" />
+      </div> -->
+      <div class="seaBtn">
+        <input type="button" value="Search" (click)="onSearch(searchObj)" class="seaButton"/>
+      </div>  	 	  	  	
     </div>
-    <div class="select">
-      <label>Hyderabad
-        <span id="cityPop">Change</span>
-      </label>
-      <input type="text" placeholder="Choose Location" class="loca" id="searchTextField" />
-    </div>
-    <div class="select">
-      <label>Service Type</label>
-      <select>
-        <option>Buffet</option>
-        <option>Lunch</option>
-        <option>Dinner</option>
-      </select>
-    </div>
-    <div class="atten">
-      <label>Attendees -
-        <b>000</b> (Veg - Nonveg)</label>
-      <input type="text" placeholder="000" />
-      <input type="text" placeholder="000" class="non" />
-    </div>
-    <div class="select date">
-      <label>Date</label>
-      <input type="text" placeholder="DD/MM/YY" class="datePic"  ngbDatepicker #d="ngbDatepicker" />
-      <button class="datePic" (click)="d.toggle()" type="button"></button>     
-      
-    </div>
-    <div class="select time">
-      <label>Time</label>
-      <input type="text" placeholder="HH/MM" class="date timePic" />
-    </div>
-    <div class="seaBtn">
-      <input type="button" value="Search" class="seaButton" (click)="onSearch(searchObj)" />
-    </div>
-  </div>
+    </form>
 </section>
 <!-- Theme -->
 
+<!-- How it works -->
 <section class="howItOut" id="howitworks">
   <div class="howItWrap clearfix">
     <span class="homeHeading">
@@ -102,6 +103,8 @@
   </div>
 </section>
 
+
+<!-- About -->
 <section class="hoAbWrap clearfix" id="about">
   <div class="hoAbImg">
     <img src="./assets/images/about.jpg" alt="" />
@@ -120,6 +123,7 @@
     <a href="about.html" class="">View more...</a>
   </div>
 </section>
+<!-- About -->
 
 <!--   Why choose us  -->
 <section class="howItOut" id="choose">
@@ -150,6 +154,7 @@
     </div>
   </div>
 </section>
+<!--   Why choose us  -->
 
 <!--  countWrap  -->
 <section class="countWrapOut">
@@ -192,13 +197,14 @@
     </div>
   </div>
 </section>
+<!--  countWrap  -->
 
-<!--   Parters Wrap  -->
-<section class="patWrapOut" id="patner">
+<!--   Partners Wrap  -->
+<section class="patWrapOut" id="partner">
   <div class="patWrap clearfix">
-    <h3>Become a patner</h3>
+    <h3>Become a partner</h3>
     <div class="patCta">
-      <a href="add-chef.html">
+      <a [routerLink]="['/addchef']">
         <span>
           <img src="./assets/images/chef.jpg" alt="" />
           <div class="chefIcon">
@@ -212,7 +218,7 @@
       </a>
     </div>
     <div class="patCta">
-      <a href="add-manager.html">
+      <a [routerLink]="['/addmanager']">
         <span>
           <img src="./assets/images/event.jpg" alt="" />
           <div class="chefIcon">
@@ -227,6 +233,7 @@
     </div>
   </div>
 </section>
+<!--   Partners Wrap  -->
 
 <!--   Blogs  -->
 <section class="howItOut bgTwo">
@@ -273,6 +280,7 @@
     </div>
   </div>
 </section>
+<!--   Blogs  -->
 
 <!--  Testimonials  -->
 <section class="howItOut overScroll">
@@ -338,5 +346,7 @@
     </div>
   </div>
 </section>
+<!-- Testimonials -->
 
+<!-- Footer -->
 <app-footer></app-footer>

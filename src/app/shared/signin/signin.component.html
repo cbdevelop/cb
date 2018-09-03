@@ -1,5 +1,113 @@
 <div class="mask"></div>
-<section class="signPop clearfix">
+<!-- SignIn -->
+
+<section class="signPop clearfix" id="signPop">
+	<span class="fa fa-times closePop" (click)="onClose()"></span>
+	<div class="signImg" id="slideshow">
+		<div class="sldImg"><img src="../assets/images/sign-1.jpg" alt=""/></div>
+		<div class="sldImg"><img src="../assets/images/sign-3.jpg" alt=""/></div>
+		<div class="sldImg"><img src="../assets/images/sign-2.jpg" alt=""/></div>
+	</div>
+
+	<div class="signPopInn" id="signIn">
+		<div class="signIn">
+			<h2>Sign in</h2>
+			<p>Not registered? <a href="javascript:void(0)" id="siup" (click)="showsignup()"></a>sign up</a></p>
+
+			<form [formGroup]="signInForm" class="form-horizontal" (ngSubmit)="onsignIn()" novalidate>
+			<div class="signFiled">
+
+				<div class="md-form1">
+				<input type="text" class="sinput  mail" placeholder="Email" [ngClass]="{'validate': showRequiredFieldError('email') }" formControlName="email"/>
+				<em *ngIf="showRequiredFieldError('email')">Email is required</em>
+				</div>
+
+				<div class="md-form2">
+				<input type="password" class="sinput pass" placeholder="Password" [ngClass]="{'validate': showRequiredFieldError('password') }" formControlName="password"/>
+				<em *ngIf="showRequiredFieldError('password')">Password is required</em>
+				</div>
+
+				<b id="foPas"><a (click)="showforgot()">Forgot Password</a></b>
+				<button class="siBtn" [disabled]="loading">Sign In</button>
+			</div>
+			</form>
+			<h4><i>(OR)</i></h4>
+			<div class="fbGo clearfix">
+				<a href="javascript:void(0)" class="fb"><i class="fa fa-facebook"></i> facebook</a>
+				<a href="javascript:void(0)" class="gp"><i class="fa fa-google-plus"></i> Google</a>
+			</div>
+		</div>
+  </div>
+
+  <!-- SignUp -->
+  
+  <div class="signPopInn" id="signUp">
+	<div class="signIn signUp">
+		<h2>Sign Up</h2>
+		<p>Already  registered? <a href="javascript:void(0)" id="siIn">sign In</a></p>
+
+		<form [formGroup]="signUpForm" class="form-horizontal" (ngSubmit)="onsignUp()" novalidate>
+		<div class="signFiled">
+		
+			<div class="md-form1">
+			  <input type="text" class="sinput" placeholder="Full Name" [ngClass]="{'validate': showRequiredFieldError('username') }" formControlName="username"/>
+			  <em *ngIf="showRequiredFieldError('username')">Name is required</em>
+			</div>
+
+			<div class="md-form2">
+			  <input type="text" class="sinput  mail" placeholder="Email" [ngClass]="{'validate': showRequiredFieldError('email') }" formControlName="email"/>
+			  <em *ngIf="showRequiredFieldError('email')">Email is required</em>
+			</div>
+
+			<div class="md-form3">
+			  <input type="text" class="sinput  phone" placeholder="Phone" [ngClass]="{'validate': showRequiredFieldError('phone') }" formControlName="phone"/>
+			  <em *ngIf="showRequiredFieldError('phone')">Phone Number is required</em>
+			</div>
+			
+			<div class="md-form3">
+			  <input type="password" class="sinput  pass" placeholder="Password" [ngClass]="{'validate': showRequiredFieldError('password') }" formControlName="password"/>
+			  <em *ngIf="showRequiredFieldError('password')">Password is required</em>
+			</div>
+
+			<div class="md-form3">
+			  <input type="password" class="sinput  pass" placeholder="Confirm Password" [ngClass]="{'validate': showRequiredFieldError('password') }" formControlName="password"/>
+			  <em *ngIf="showRequiredFieldError('password')">Confirm Password is required</em>
+			  <em *ngIf="comparePasswords()">Password and Confirm Password must be same</em>
+			</div>
+			
+			<div class="termTxt">By Signing up you will agree <a href="terms.html" target="_blank">Terms</a> and <a href="privacy.html" target="_blank">Policy</a></div>
+			<button class="siBtn" [disabled]="loading">Sign Up</button>
+		</div>
+		</form>
+		<h4><i>(OR)</i></h4>
+		<div class="fbGo clearfix">
+			<a href="javascript:void(0)" class="fb"><i class="fa fa-facebook"></i> facebook</a>
+			<a href="javascript:void(0)" class="gp"><i class="fa fa-google-plus"></i> Google</a>
+  </div>
+</div>
+</div>	
+
+<!-- Forgot Password -->
+
+<div class="signPopInn" id="forgotPass">
+	<div class="signIn forgotPass">
+	  <h2>Forgot Password</h2>
+	  <form [formGroup]="forgotForm" class="form-horizontal" (ngSubmit)="onForgot()" novalidate>
+	  <div class="signFiled">
+		<div class="md-form1">
+		<input type="text" class="sinput  mail" placeholder="Email" [ngClass]="{'validate': showRequiredFieldError('email') }" formControlName="email"/>
+		<em *ngIf="showRequiredFieldError('email')">Email is required</em>
+		</div>
+		<button class="siBtn">Submit</button>
+		<div class="forback"><i class="fa fa-arrow-left"></i><a>Back</a></div>
+	  </div>
+	  </form>
+	</div>
+</div>
+
+</section>
+
+<!--<section class="signPop clearfix">
 	<span class="fa fa-times closePop"></span>
 	<div class="signImg" id="slideshow">
 		<div class="sldImg"><img src="./assets/images/sign-1.jpg" alt=""/></div>
@@ -56,4 +164,5 @@
 			</div>
 		</div>
 	</div>	
-</section>
+</section> -->
+

@@ -137,7 +137,7 @@ nav ul li a:focus {
 	background:url("../images/cale.svg") no-repeat 97% 7px; background-size:16px; font-family: 'Roboto';
 	font-size: 15px; font-weight: 500; color: #333; text-indent: 0px; height: 32px; width:90%;
 	-webkit-appearance:none; -moz-appearance:none; -o-appearance:none; appearance:none; border:none; padding:0px 20px 0px 0px;
-}
+} 
 .select input.date {
 	background:url("../images/time.svg") no-repeat 97% 7px; background-size:16px;
 }
@@ -1994,5 +1994,3 @@ footer {
 .cityPopInn ul li a.Act {
 	color: #12b396; box-shadow: 0px 2px 5px rgba(0,0,0,0.2); 
 }
-
-

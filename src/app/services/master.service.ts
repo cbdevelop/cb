@@ -116,8 +116,7 @@ export interface searchModel {
   serviceType: string;
   vegAttnd: number;
   nonVegAttnd: number;
-  date: Date;
-  time: string
+  datetime: Date;
 
   // constructor(){
   //   this.location = "";

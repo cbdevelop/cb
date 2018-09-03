@@ -1,7 +1,7 @@
 <header  #head>
   <section class="headInn clearfix">
     <div class="logo">
-      <a href="index.html"  class="logoImg"></a>
+      <a href="index.html" class="logoImg"></a>
     </div>
     <div class="signWrap clearfix">
       <span class="fa fa-user-o siIcon"></span>
@@ -22,10 +22,10 @@
           <a [ngx-scroll-to]="'#choose'">Choose Us</a>
         </li>
         <li>
-          <a [ngx-scroll-to]="'#patner'">Patners</a>
+          <a [ngx-scroll-to]="'#partner'">Partners</a>
         </li>
         <li>
-          <a>Contact</a>
+          <a [routerLink]="['/contact']">Contact</a>
         </li>
       </ul>
     </nav>

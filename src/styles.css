@@ -7,3 +7,24 @@
 @import "./assets/css/datepicker.css";
 
 
+/* Validations */
+em {float: left; color: #E05C; padding-left: 10px; } 
+
+/* Footer Additional */
+.seqHome {
+	background-color: transparent; width: 100%; display: block; margin: 0px auto; 
+}
+.seqHome ul {
+	margin: 0px auto; width: 1200px; background-color: #fff; border-radius: 5px; padding: 30px 15px 20px; 
+}
+.seqHome ul li {
+	list-style-type: none; float: left; width: 16%;
+}
+.seqHome ul li img {
+	float: left; width: 55px; padding: 0px 10px 0px 0px;
+}
+.seqHome ul li p {
+	float: left; width: 60%; font-size: 13px; font-weight: 500; color: #787878; padding: 5px 0px 0px 0px;
+}
+
+/* Footer Additional */

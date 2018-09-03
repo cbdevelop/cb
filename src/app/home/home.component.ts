@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 import { searchModel } from '../services/master.service';
+import { FormsModule, ReactiveFormsModule, ValidatorFn } from '@angular/forms';
+import { FormControl, FormGroup, FormBuilder, AbstractControl, Validators } from '@angular/forms';
+import { isNullOrUndefined } from 'util';
 
 @Component({
   selector: 'app-home',
@@ -9,12 +13,75 @@ import { searchModel } from '../services/master.service';
 })
 export class HomeComponent implements OnInit {
 
-  searchObj: searchModel = {
-    location: "Hyderabad", serviceType: "Buffet", vegAttnd: 0, nonVegAttnd: 0, date: new Date(), time: ""
-  };
-  constructor(private routerObj:Router) { }
+  private searchObj: searchModel;
+
+  homeForm: FormGroup;
+
+  location = [];
+
+  serviceType = [];
+  
+  settings = {};
+
+  constructor( private routerObj:Router, private fb: FormBuilder ) { }
 
   ngOnInit() {
+
+    this.location = [ 
+    {"id":1,"itemName":"Ameerpet"}, 
+    {"id":2,"itemName":"Dilsuknagar"},
+    {"id":3,"itemName":"SR Nagar"},
+    {"id":4,"itemName":"Athapur"},
+    {"id":5,"itemName":"Koti"},
+    {"id":6,"itemName":"Khairathabad"},
+    {"id":7,"itemName":"Kothapet"},
+    {"id":8,"itemName":"Secundrabad"}  
+  ];
+
+    this.serviceType = [ 
+    {"id":1,"itemName":"Buffet"},
+    {"id":2,"itemName":"Lunch"},
+    {"id":3,"itemName":"Dinner"} 
+  ];
+
+    this.settings = { 
+      singleSelection: true, 
+      text:"Select",
+      enableSearchFilter: true };
+
+      this.homeForm = this.fb.group({
+        location: [[], Validators.required],
+        serviceType: [[], Validators.required],
+        vegAttnd: [''],
+        nonVegAttnd: [''],
+        datetime: []
+      });
+
+    // this.homeForm = this.fb.group({
+
+    //   location: ['', this.locations[0]],
+    //   service: ['', this.serviceType[0]],
+    //   veg: [''],
+    //   nonVeg: [''],
+    //   date: [''],
+    //   time: ['']
+    // })
+  }
+
+  // Locations
+  LocationSelect(item:any){
+    console.log(item);
+  }
+  LocationDeSelect(item:any){
+    console.log(item);
+  }
+
+  // Services
+  ServiceSelect(item:any){
+    console.log(item);
+  }
+  ServiceDeSelect(item:any){
+    console.log(item);
   }
 
   onSearch(evt) {
