@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "./assets/css/bootstrap.min.css";
+/* @import "./assets/css/bootstrap.min.css"; */
+@import "~bootstrap/dist/css/bootstrap.min.css";
 @import "./assets/css/font-awesome.min.css";
 @import "./assets/css/cbstyle.css" ; 
 @import "./assets/css/cbstyle-responsive.css";
-@import "./assets/css/datepicker.css";
 @import "~ng-pick-datetime/assets/style/picker.min.css";
 
 

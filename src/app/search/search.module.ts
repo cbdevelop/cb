@@ -14,7 +14,7 @@ import { HeaderModule, FooterModule } from '../shared/index';
 import { MasterService } from '../services/master.service';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
-import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalModule,NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
@@ -24,7 +24,8 @@ import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
     HeaderModule,
     FooterModule,
     ScrollToModule,
-    NgbPopoverModule
+    NgbPopoverModule,
+    NgbModalModule
   ],
   declarations: [
     SearchComponent,
@@ -38,6 +39,9 @@ import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
+  ],
+  entryComponents:[
+    ChefCatPopupComponent
   ]
 })
 export class SearchModule { }

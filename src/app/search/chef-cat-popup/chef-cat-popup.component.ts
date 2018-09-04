@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { MasterService } from '../../services/master.service';
 
 @Component({
   selector: 'app-chef-cat-popup',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChefCatPopupComponent implements OnInit {
 
-  constructor() { }
+  @Input() id;
+  dishDetails:any;
+  constructor(
+    public activeModal: NgbActiveModal,
+    private masterService:MasterService
+  ) { 
+
+  }
 
   ngOnInit() {
+    
+    this.dishDetails = this.masterService.dishes.filter(x => x.Id == this.id);
+    console.log(this.id,this.dishDetails);
+  }
+
+  oncancel(){
+    this.activeModal.close();
+  }
+
+  onAdd(){
+    this.activeModal.close();
   }
 
 }

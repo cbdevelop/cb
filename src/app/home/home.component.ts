@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   serviceType = [];
   
   settings = {};
-
+  session = "dinner"
   constructor( private routerObj:Router, private fb: FormBuilder ) { }
 
   ngOnInit() {

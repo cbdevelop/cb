@@ -4,13 +4,13 @@
     <h2>Heading Text Here...</h2>
     <ul class="">
       <li *ngFor="let dish of dishes">
-        <div class="foodCta" [ngClass]="dish.ImageUrl =='' ? '' : 'foodCtaImg'">
+        <div class="foodCta" [ngClass]="dish.ImageUrl =='' ? '' : 'foodCtaImg'" (click)="openchef(dish.Id)">
           <div class="foodImg" *ngIf="dish.ImageUrl !=''">
             <img [src]="dish.ImageUrl" alt="" />
           </div>
           <h3>{{ dish.Name }}</h3>
           <p> {{ dish.Description }} </p>
-          <div class="foodBtn clearfix">
+          <div class="foodBtn clearfix" >
             
             <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.FoodCategory == 1 ? 'foodVeg' : 'foodNonVeg' ">
             </a>
