@@ -20,55 +20,13 @@
             <a href="javascript:void(0)" class="Act">By Golden Chefs</a>
             <a href="javascript:void(0)">Non-Veg</a>
           </div>
-          <div class="MoreFil pull-right">
-            <a id="morPop" [ngbPopover]="popContent">+ More</a>
-            <ng-template #popContent>
-              <div class="MorePop">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" />
-                    <i class="input-helper"></i>
-                    <span>Option 1</span>
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" />
-                    <i class="input-helper"></i>
-                    <span>Option 1</span>
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" />
-                    <i class="input-helper"></i>
-                    <span>Option 1</span>
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" />
-                    <i class="input-helper"></i>
-                    <span>Option 1</span>
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" />
-                    <i class="input-helper"></i>
-                    <span>Option 1</span>
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" />
-                    <i class="input-helper"></i>
-                    <span>Option 1</span>
-                  </label>
-                </div>
-              </div>
-            </ng-template>
-          </div>
+          <div class="MorePop">
+            <a class="checkbox">
+            <angular2-multiselect [data]="menuList" [(ngModel)]="selectedItems"  [settings]="settings" (onSelect)="menuSelect($event)" 
+                (onDeSelect)="menuDeSelect($event)" (onSelectAll)="SelectAll($event)"
+                (onDeSelectAll)="DeSelectAll($event)">
+            </angular2-multiselect></a>
+          </div>  
         </div>
         <div class="filSeletWrap">
           <span>Option
@@ -85,7 +43,7 @@
           </span>
         </div>
         <p>
-          <a href="javascript:void(0)" class="modSea">Modify your search</a>
+          <a class="modSea" (click)="openModified()">Modify your search</a>
         </p>
       </div>
 
@@ -94,4 +52,4 @@
 
     </div>
   </div>
-</div>
+</div>    

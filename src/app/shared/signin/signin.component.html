@@ -1,24 +1,35 @@
-<div class="mask"></div>
 <!-- SignIn -->
 
 <section class="signPop clearfix" id="signPop">
 	<span class="fa fa-times closePop" (click)="onClose()"></span>
+	<!-- <ngb-carousel>
+		<ng-template ngbSlide>
+			<img src="../assets/images/sign-1.jpg" alt="Random first slide">
+		</ng-template>
+		<ng-template ngbSlide>
+			<img src="../assets/images/sign-3.jpg" alt="Random second slide">
+		</ng-template>
+		<ng-template ngbSlide>
+			<img src="../assets/images/sign-2.jpg" alt="Random third slide">
+		</ng-template>
+	</ngb-carousel> -->
+
 	<div class="signImg" id="slideshow">
 		<div class="sldImg"><img src="../assets/images/sign-1.jpg" alt=""/></div>
 		<div class="sldImg"><img src="../assets/images/sign-3.jpg" alt=""/></div>
 		<div class="sldImg"><img src="../assets/images/sign-2.jpg" alt=""/></div>
 	</div>
 
-	<div class="signPopInn" id="signIn">
+	<div class="signPopInn" id="signIn" #signIn>
 		<div class="signIn">
 			<h2>Sign in</h2>
-			<p>Not registered? <a href="javascript:void(0)" id="siup" (click)="showsignup()"></a>sign up</a></p>
+			<p>Not registered? <a href="javascript:void(0)" id="siup" (click)="showsignup()">sign up</a></p>
 
 			<form [formGroup]="signInForm" class="form-horizontal" (ngSubmit)="onsignIn()" novalidate>
 			<div class="signFiled">
 
 				<div class="md-form1">
-				<input type="text" class="sinput  mail" placeholder="Email" [ngClass]="{'validate': showRequiredFieldError('email') }" formControlName="email"/>
+				<input type="email" class="sinput  mail" placeholder="Email" [ngClass]="{'validate': showRequiredFieldError('email') }" formControlName="email"/>
 				<em *ngIf="showRequiredFieldError('email')">Email is required</em>
 				</div>
 
@@ -27,7 +38,7 @@
 				<em *ngIf="showRequiredFieldError('password')">Password is required</em>
 				</div>
 
-				<b id="foPas"><a (click)="showforgot()">Forgot Password</a></b>
+				<b id="foPas"><a href="javascript:void(0)" (click)="showforgot()">Forgot Password</a></b>
 				<button class="siBtn" [disabled]="loading">Sign In</button>
 			</div>
 			</form>
@@ -37,14 +48,14 @@
 				<a href="javascript:void(0)" class="gp"><i class="fa fa-google-plus"></i> Google</a>
 			</div>
 		</div>
-  </div>
+  </div> 
 
   <!-- SignUp -->
   
-  <div class="signPopInn" id="signUp">
+  <div class="signPopInn" id="signUp" #signUp>
 	<div class="signIn signUp">
 		<h2>Sign Up</h2>
-		<p>Already  registered? <a href="javascript:void(0)" id="siIn">sign In</a></p>
+		<p>Already  registered? <a href="javascript:void(0)" id="siIn" (click)="showsignin()">sign In</a></p>
 
 		<form [formGroup]="signUpForm" class="form-horizontal" (ngSubmit)="onsignUp()" novalidate>
 		<div class="signFiled">
@@ -89,13 +100,13 @@
 
 <!-- Forgot Password -->
 
-<div class="signPopInn" id="forgotPass">
+<div class="signPopInn" id="forgotPass" #forgot>
 	<div class="signIn forgotPass">
 	  <h2>Forgot Password</h2>
 	  <form [formGroup]="forgotForm" class="form-horizontal" (ngSubmit)="onForgot()" novalidate>
 	  <div class="signFiled">
 		<div class="md-form1">
-		<input type="text" class="sinput  mail" placeholder="Email" [ngClass]="{'validate': showRequiredFieldError('email') }" formControlName="email"/>
+		<input type="email" class="sinput  mail" placeholder="Email" [ngClass]="{'validate': showRequiredFieldError('email') }" formControlName="email"/>
 		<em *ngIf="showRequiredFieldError('email')">Email is required</em>
 		</div>
 		<button class="siBtn">Submit</button>
@@ -103,11 +114,12 @@
 	  </div>
 	  </form>
 	</div>
-</div>
-
+</div> 
 </section>
 
-<!--<section class="signPop clearfix">
+
+<!-- 
+<section class="signPop clearfix">
 	<span class="fa fa-times closePop"></span>
 	<div class="signImg" id="slideshow">
 		<div class="sldImg"><img src="./assets/images/sign-1.jpg" alt=""/></div>
@@ -115,7 +127,7 @@
 		<div class="sldImg"><img src="./assets/images/sign-2.jpg" alt=""/></div>
 	</div>
 	
-	<div class="signPopInn" id="signIn">
+	<div class="signPopInn" #signIn>
 		<div class="signIn">
 			<h2>Sign in</h2>
 			<p>Not registered? <a href="javascript:void(0)" id="siup">sign up</a></p>
@@ -133,7 +145,7 @@
 		</div>
 	</div>
 	
-	<div class="signPopInn" id="forgotPass">
+	<div class="signPopInn" #forgotPass>
 		<div class="signIn forgotPass">
 			<h2>Forgot Password</h2>
 			<div class="signFiled">
@@ -144,7 +156,7 @@
 		</div>
 	</div>	
 	
-	<div class="signPopInn" id="signUp">
+	<div class="signPopInn" #signUp>
 		<div class="signIn signUp">
 			<h2>Sign Up</h2>
 			<p>Already  registered?  <a href="javascript:void(0)" id="siIn">sign In</a></p>
@@ -164,5 +176,5 @@
 			</div>
 		</div>
 	</div>	
-</section> -->
-
+</section> 
+ -->
