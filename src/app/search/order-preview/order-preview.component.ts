@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MasterService } from '../../services/master.service';
 
 @Component({
   selector: 'app-order-preview',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderPreviewComponent implements OnInit {
 
-  constructor() { }
+  constructor(public masterObj:MasterService) { }
 
   ngOnInit() {
   }
-
+  remove(id){
+    this.masterObj.selectedDishes.splice(this.masterObj.selectedDishes.indexOf(id) , 1);
+    console.log(this.masterObj.selectedDishes);
+  }
 }

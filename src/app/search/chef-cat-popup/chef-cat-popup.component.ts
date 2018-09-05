@@ -20,7 +20,7 @@ export class ChefCatPopupComponent implements OnInit {
 
   ngOnInit() {
     
-    this.dishDetails = this.masterService.dishes.filter(x => x.Id == this.id);
+    this.dishDetails = this.masterService.dishes.filter(x => x.Id == this.id)[0];
     console.log(this.id,this.dishDetails);
   }
 
@@ -29,6 +29,7 @@ export class ChefCatPopupComponent implements OnInit {
   }
 
   onAdd(){
+    this.masterService.selectedDishes.push(this.dishDetails);
     this.activeModal.close();
   }
 
