@@ -1,29 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { searchModel } from '../services/master.service';
-import { FormsModule, ReactiveFormsModule, ValidatorFn } from '@angular/forms';
-import { FormControl, FormGroup, FormBuilder, AbstractControl, Validators } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { searchModel } from '../../services/master.service';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-modify-search',
+  templateUrl: './modify-search.component.html',
+  styleUrls: ['./modify-search.component.css']
 })
-export class HomeComponent implements OnInit {
+export class ModifySearchComponent implements OnInit {
 
-  private searchObj: searchModel;
+  searchObj: searchModel;
 
-  homeForm: FormGroup;
-
+  modifiedForm: FormGroup;
+  
   location = [];
-
   serviceType = [];
   
   settings = {};
   session = "dinner"
-  constructor( private routerObj:Router, private fb: FormBuilder ) { }
+
+  @ViewChild("modify") modify;
+
+  constructor( private routerObj: Router, private fb: FormBuilder, public activeModal: NgbActiveModal ) { }
 
   ngOnInit() {
 
@@ -47,9 +50,10 @@ export class HomeComponent implements OnInit {
     this.settings = { 
       singleSelection: true, 
       text:"Select",
-      enableSearchFilter: true };
+      enableSearchFilter: true 
+    };
 
-      this.homeForm = this.fb.group({
+      this.modifiedForm = this.fb.group({
         location: [[], Validators.required],
         serviceType: [[], Validators.required],
         vegAttnd: [''],
@@ -75,8 +79,14 @@ export class HomeComponent implements OnInit {
     console.log(item);
   }
 
-  onSearch(evt) {
-    console.log(evt);
-    this.routerObj.navigate(['../search'])
+  // OnClose of Modified_Search
+  onClose() {
+    this.activeModal.close();
   }
+
+  onModified() {
+    // console.log(evt);
+    // this.routerObj.navigate(['../search'])
+  }
+
 }

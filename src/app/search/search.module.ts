@@ -1,6 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { SearchComponent } from './search.component';
 
@@ -13,35 +14,45 @@ import { ChefCatPopupComponent } from './chef-cat-popup/chef-cat-popup.component
 import { HeaderModule, FooterModule } from '../shared/index';
 import { MasterService } from '../services/master.service';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
+import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime'
 
-import { NgbModalModule,NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalModule, NgbPopoverModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { ModifySearchComponent } from './modify-search/modify-search.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     SearchRoutingModule,
     HeaderModule,
     FooterModule,
     ScrollToModule,
     NgbPopoverModule,
-    NgbModalModule
+    NgbModalModule,
+    AngularMultiSelectModule,
+    OwlDateTimeModule,
+    OwlNativeDateTimeModule    
   ],
   declarations: [
     SearchComponent,
     MenuComponent,
-     ResultViewComponent,
+    ResultViewComponent,
     OrderPreviewComponent, 
-    ChefCatPopupComponent
+    ChefCatPopupComponent, 
+    ModifySearchComponent
   ],
   providers:[
-    MasterService
+    MasterService,
+    NgbActiveModal
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],
   entryComponents:[
-    ChefCatPopupComponent
+    ChefCatPopupComponent,
+    ModifySearchComponent
   ]
 })
 export class SearchModule { }

@@ -13,7 +13,7 @@ export class ChefCatPopupComponent implements OnInit {
   dishDetails:any;
   constructor(
     public activeModal: NgbActiveModal,
-    private masterService:MasterService
+    private masterService: MasterService
   ) { 
 
   }
@@ -25,7 +25,7 @@ export class ChefCatPopupComponent implements OnInit {
   }
 
   oncancel(){
-    this.activeModal.close();
+    this.activeModal.dismiss();
   }
 
   onAdd(){

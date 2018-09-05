@@ -27,10 +27,9 @@ em {float: left; color: #E05C; padding-left: 10px; }
 .seqHome ul li p {
 	float: left; width: 60%; font-size: 13px; font-weight: 500; color: #787878; padding: 5px 0px 0px 0px;
 }
-
 /* Footer Additional */
-/* datepicker */
 
+/* datepicker */
 .owl-dt-container {
     font-size: 16px !important;
 }

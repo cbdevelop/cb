@@ -1,5 +1,10 @@
 import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SigninComponent } from '../signin/signin.component';
+import { User } from '../models/user.model';
+
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,10 +12,18 @@ import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  user: User[];
+
   @ViewChild("head") header;
-  constructor() { }
+
+  constructor( private signinModel: NgbModal ) { }
 
   ngOnInit() {
+  }
+
+  // Sign-in
+  openSign() {
+    this.signinModel.open(SigninComponent);
   }
 
   @HostListener("window:scroll", [])
