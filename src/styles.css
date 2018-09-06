@@ -1,38 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* @import "./assets/css/bootstrap.min.css"; */
+
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "./assets/css/font-awesome.min.css";
-@import "./assets/css/cbstyle.css" ; 
+@import "./assets/css/cbstyle.css";
 @import "./assets/css/cbstyle-responsive.css";
 @import "~ng-pick-datetime/assets/style/picker.min.css";
-
-
 /* Validations */
-em {float: left; color: #E05C; padding-left: 10px; } 
+
+em {
+    float: left;
+    color: #E05C;
+    padding: 0 0 7px 9px;
+    font-size: 12px;
+}
 
 /* Footer Additional */
+
 .seqHome {
-	background-color: transparent; width: 100%; display: block; margin: 0px auto; 
+    background-color: transparent;
+    width: 100%;
+    display: block;
+    margin: 0px auto;
 }
+
 .seqHome ul {
-	margin: 0px auto; width: 1200px; background-color: #fff; border-radius: 5px; padding: 30px 15px 20px; 
+    margin: 0px auto;
+    width: 1200px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 15px 20px;
 }
+
 .seqHome ul li {
-	list-style-type: none; float: left; width: 16%;
+    list-style-type: none;
+    float: left;
+    width: 16%;
 }
+
 .seqHome ul li img {
-	float: left; width: 55px; padding: 0px 10px 0px 0px;
+    float: left;
+    width: 55px;
+    padding: 0px 10px 0px 0px;
 }
+
 .seqHome ul li p {
-	float: left; width: 60%; font-size: 13px; font-weight: 500; color: #787878; padding: 5px 0px 0px 0px;
+    float: left;
+    width: 60%;
+    font-size: 13px;
+    font-weight: 500;
+    color: #787878;
+    padding: 5px 0px 0px 0px;
 }
+
 /* Footer Additional */
 
 /* datepicker */
+
 .owl-dt-container {
     font-size: 16px !important;
 }
+
 .owl-dt-calendar-table .owl-dt-calendar-cell-content {
     color: #6a6666c7 !important;
 }

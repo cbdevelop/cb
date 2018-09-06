@@ -2,6 +2,7 @@ import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
 
 import { NgbPopoverConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ModifySearchComponent } from '../modify-search/modify-search.component';
+import { MasterService } from '../../services/master.service';
 
 @Component({
   selector: 'app-menu',
@@ -17,14 +18,14 @@ export class MenuComponent implements OnInit {
 
   @ViewChild('cheftop') cheftop;
 
-  constructor(public modifiedService: NgbModal, public config: NgbPopoverConfig) {
+  constructor(  private service: MasterService,public modifiedService: NgbModal, public config: NgbPopoverConfig) {
 
     // customize default values of popovers used by this component tree
     config.placement = 'bottom';
     config.triggers = 'click';
   }
   ngOnInit() {
-
+    // this.all_categories = this.service.alldishes;
     this.menuList = [
       { "id": 1, "itemName": "India" },
       { "id": 2, "itemName": "Singapore" },
@@ -37,19 +38,14 @@ export class MenuComponent implements OnInit {
       { "id": 9, "itemName": "Italy" },
       { "id": 10, "itemName": "Sweden" }
     ];
-    // this.selectedItems = [
-    //     {"id":2,"itemName":"Singapore"},
-    //     {"id":3,"itemName":"Australia"},
-    //     {"id":4,"itemName":"Canada"},
-    //     {"id":5,"itemName":"South Korea"}
-    // ];
+   
     this.settings = {
       singleSelection: false,
       text: "+ More",
       enableSearchFilter: true
     };
   }
-
+  
 
   menuSelect(item: any) {
     console.log(item);

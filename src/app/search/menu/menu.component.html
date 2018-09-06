@@ -1,13 +1,13 @@
 <div class="chefHead" #cheftop>
   <div class="chefHeadInn clearfix">
-    <ul class="clearfix">
+    <ul class="clearfix head">
       <div class="scrTab clearfix" id="scrTap">
         <li class="Act">All</li>
+        <li *ngFor="let category of service.alldishes" [id]="category.dishType"><a [href]=""></a> {{category.dishType}}</li>
+        <!-- <li>Menu One</li>
         <li>Menu One</li>
         <li>Menu One</li>
-        <li>Menu One</li>
-        <li>Menu One</li>
-        <li>Menu One</li>
+        <li>Menu One</li> -->
       </div>
       <div class="chefSearch">
         <input type="text" placeholder="Search">
@@ -20,15 +20,20 @@
             <a href="javascript:void(0)" class="Act">By Golden Chefs</a>
             <a href="javascript:void(0)">Non-Veg</a>
           </div>
-          <div class="MorePop">
-            <a class="checkbox">
-            <angular2-multiselect [data]="menuList" [(ngModel)]="selectedItems"  [settings]="settings" (onSelect)="menuSelect($event)" 
+          <div class="">
+            
+            <angular2-multiselect [data]="menuList"    [(ngModel)]="selectedItems"     [settings]="settings" (onSelect)="menuSelect($event)" 
                 (onDeSelect)="menuDeSelect($event)" (onSelectAll)="SelectAll($event)"
                 (onDeSelectAll)="DeSelectAll($event)">
-            </angular2-multiselect></a>
+            </angular2-multiselect> 
           </div>  
         </div>
-        <div class="filSeletWrap">
+
+        <!-- <angular2-multiselect class="loca" [data]="location" [settings]="settings"
+           (onSelect)="LocationSelect($event)" (onDeSelect)="LocationDeSelect($event)"
+          formControlName="location">
+        </angular2-multiselect> -->
+        <!-- <div class="filSeletWrap">
           <span>Option
             <a href="javascript:void(0)" class="fa fa-close"></a>
           </span>
@@ -41,7 +46,7 @@
           <span>Option
             <a href="javascript:void(0)" class="fa fa-close"></a>
           </span>
-        </div>
+        </div> -->
         <p>
           <a class="modSea" (click)="openModified()">Modify your search</a>
         </p>

@@ -68,7 +68,7 @@ header {
     background: none;
     height: 68px;
     position: fixed;
-    z-index: 10000;
+    z-index: 1000;
     left: 0px;
     right: 0px;
     top: 0px;
@@ -126,7 +126,7 @@ nav ul li a {
     display: block;
     padding: 23px 20px 0px;
     margin: 0px 2px;
-    color: #fff;
+    color: #fff !important;
     font-size: 15px;
     height: 68px;
     font-weight: 400;
@@ -135,7 +135,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.Act {
-    color: #fff;
+    color: #fff !important;
     border-bottom: 4px solid #16af92;
 }
 
@@ -192,7 +192,7 @@ nav ul li a:focus {
 }
 
 .scrollAct nav ul li a {
-    color: #454545;
+    color: #454545 !important;
 }
 
 .scrollAct .siIcon {
@@ -202,7 +202,7 @@ nav ul li a:focus {
 
 .scrollAct .menuIcon {
     border: 1px solid #ccc;
-    color: #545454;
+    color: #545454 ;
 }
 
 .scrollAct .logoImg {
@@ -950,7 +950,7 @@ footer {
     cursor: pointer;
     display: none;
     outline: none !important;
-    z-index: 3000;
+    z-index: 1000;
     text-align: center;
     animation: bounce 1s infinite;
     -webkit-animation: bounce 1s infinite;
@@ -1364,6 +1364,7 @@ footer {
 .addInn {
     float: right;
     width: 63%;
+    margin-bottom: 5px;
 }
 
 .addInn input,
@@ -1376,7 +1377,7 @@ footer {
     background-color: #fdfdfd;
     font-size: 14px;
     font-weight: 400;
-    margin: 0px 0px 15px 0px;
+    margin: 0px 0px 0px 0px;
     color: #333;
     font-family: 'Roboto';
 }
@@ -1913,7 +1914,7 @@ footer {
     position: relative;
 }
 
-.chefHeadInn ul {
+.chefHeadInn .head {
     margin: 0px 0px;
     padding: 0px 190px 0px 0px;
     position: relative;
@@ -3258,6 +3259,7 @@ footer {
 
 .filBtn {
     float: left;
+    margin: 8px;
 }
 
 .filBtn a {

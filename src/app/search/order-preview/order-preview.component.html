@@ -4,8 +4,8 @@
     <h3>Starters</h3>
     <ul>
       <li *ngFor="let item of masterObj.selectedDishes">
-        <span> {{ item.Name}}
-          <i class="fa fa-close" (click)="remove(item.Id)"></i>
+        <span> {{ item.dishName}}
+          <i class="fa fa-close" (click)="remove(item.dishId)"></i>
         </span>
       </li>
 
@@ -13,8 +13,8 @@
     <h3>Main Course</h3>
     <ul>
       <li *ngFor="let item of masterObj.selectedDishes">
-        <span> {{ item.Name}}
-          <i class="fa fa-close" (click)="remove(item.Id)"></i>
+        <span> {{ item.dishName}}
+          <i class="fa fa-close" (click)="remove(item.dishId)"></i>
         </span>
       </li>
     </ul>

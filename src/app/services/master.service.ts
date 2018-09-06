@@ -1,8 +1,181 @@
 import { Injectable } from '@angular/core';
+import { Menu } from '../shared/models/menu.mode';
+import { Dish } from '../shared/models/dish.model';
+
 
 @Injectable()
 export class MasterService {
+	alldishes: Menu[] = [];
 
+	startersArr: Dish[] = [
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:1,
+			ImageUrl: "../../assets/images/food.jpg",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:1,
+			ImageUrl: "",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:2,
+			ImageUrl: "",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:1,
+			ImageUrl: "../../assets/images/food.jpg",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+	];
+
+	tiffins: Dish[] = [
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:1,
+			ImageUrl: "../../assets/images/food.jpg",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:1,
+			ImageUrl: "",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:1,
+			ImageUrl: "",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:1,
+			ImageUrl: "../../assets/images/food.jpg",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+	];
+
+	maincourse: Dish[] = [
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:2,
+			ImageUrl: "../../assets/images/food.jpg",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:2,
+			ImageUrl: "",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:1,
+			ImageUrl: "",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:1,
+			ImageUrl: "../../assets/images/food.jpg",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+	];
+	desserts: Dish[] = [
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:1,
+			ImageUrl: "../../assets/images/food.jpg",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:2,
+			ImageUrl: "",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:1,
+			ImageUrl: "",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:2,
+			ImageUrl: "../../assets/images/food.jpg",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+	];
+
+	beverges: Dish[] = [
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:1,
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:2,
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:2,
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+		{
+			dishId: 1,
+			dishName: "panipuri",foodCategory:1,
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+		},
+	];
 	dishes: Array<any> = [
 		{
 			"Id": 1,
@@ -107,10 +280,19 @@ export class MasterService {
 		}
 	];
 
-	selectedDishes = [];
+	selectedDishes:Dish[] = [];
 
 
-	constructor() { }
+	constructor() {
+		console.log(this.alldishes);
+		this.alldishes = [
+			{ dishTypeId: 1, dishType: "tiffins", dishes: this.tiffins },
+			{ dishTypeId: 2, dishType: "startes&snacka", dishes: this.startersArr },
+			{ dishTypeId: 3, dishType: "main course", dishes: this.maincourse },
+			{ dishTypeId: 4, dishType: "desserts", dishes: this.desserts },
+			{ dishTypeId: 5, dishType: "beverges", dishes: this.beverges }
+		];
+	}
 
 }
 
