@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  // Sign-in
+  // Sign-in Open
   openSign() {
     this.signinModel.open(SigninComponent);
   }

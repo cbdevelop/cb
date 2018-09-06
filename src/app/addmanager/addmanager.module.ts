@@ -1,13 +1,15 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddmanagerComponent } from './addmanager.component';
+import { SigninComponent } from '../shared/signin/signin.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddmanagerRoutingModule } from './addmanager-routing.module';
-import { FooterModule } from '../shared/index';
+import { FooterModule, SigninModule } from '../shared/index';
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbPopoverModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -18,9 +20,12 @@ import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
         AddmanagerRoutingModule,
         FooterModule,
         ScrollToModule,
-        NgbPopoverModule 
+        NgbPopoverModule,
+        NgbModalModule,
+        SigninModule 
     ],
     declarations: [ AddmanagerComponent ],
+    entryComponents:[ SigninComponent ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA
       ]

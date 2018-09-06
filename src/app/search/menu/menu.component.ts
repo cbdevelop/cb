@@ -18,7 +18,9 @@ export class MenuComponent implements OnInit {
 
   @ViewChild('cheftop') cheftop;
 
-  constructor(  private service: MasterService,public modifiedService: NgbModal, public config: NgbPopoverConfig) {
+  constructor(  private service: MasterService,
+    public modifiedService: NgbModal, 
+    public config: NgbPopoverConfig ) {
 
     // customize default values of popovers used by this component tree
     config.placement = 'bottom';

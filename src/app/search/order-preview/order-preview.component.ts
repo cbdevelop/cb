@@ -20,8 +20,6 @@ export class OrderPreviewComponent implements OnInit {
     console.log(this.masterObj.selectedDishes);
   }
 
-
- 
   // Comments Model Popup
   onNotePopup(comment) {
     this.commentService.open(comment)

@@ -2,7 +2,8 @@
 
 <section class="signPop clearfix" id="signPop">
 	<span class="fa fa-times closePop" (click)="onClose()"></span>
-	<!-- <ngb-carousel>
+	<div class="signImg" id="slideshow">
+	<ngb-carousel>
 		<ng-template ngbSlide>
 			<img src="../assets/images/sign-1.jpg" alt="Random first slide">
 		</ng-template>
@@ -12,13 +13,14 @@
 		<ng-template ngbSlide>
 			<img src="../assets/images/sign-2.jpg" alt="Random third slide">
 		</ng-template>
-	</ngb-carousel> -->
+	</ngb-carousel>
+	</div>
 
-	<div class="signImg" id="slideshow">
+	<!-- <div class="signImg" id="slideshow">
 		<div class="sldImg"><img src="../assets/images/sign-1.jpg" alt=""/></div>
 		<div class="sldImg"><img src="../assets/images/sign-3.jpg" alt=""/></div>
 		<div class="sldImg"><img src="../assets/images/sign-2.jpg" alt=""/></div>
-	</div>
+	</div> -->
 
 	<div class="signPopInn" id="signIn" #signIn>
 		<div class="signIn">
@@ -110,7 +112,7 @@
 		<em *ngIf="showRequiredFieldError('email')">Email is required</em>
 		</div>
 		<button class="siBtn">Submit</button>
-		<div class="forback"><i class="fa fa-arrow-left"></i><a>Back</a></div>
+		<div class="forback"><i class="fa fa-arrow-left"></i><a (click)="onBack()">Back</a></div>
 	  </div>
 	  </form>
 	</div>
