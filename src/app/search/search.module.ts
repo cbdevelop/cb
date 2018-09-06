@@ -12,6 +12,7 @@ import { OrderPreviewComponent } from './order-preview/order-preview.component';
 import { ChefCatPopupComponent } from './chef-cat-popup/chef-cat-popup.component';
 import { ModifySearchComponent } from './modify-search/modify-search.component';
 import { SigninComponent } from '../shared/signin/signin.component';
+import { CommentsComponent } from '../shared/comments/comments.component';
 
 import { HeaderModule, FooterModule, SigninModule } from '../shared/index';
 import { MasterService } from '../services/master.service';
@@ -43,7 +44,8 @@ import { NgbModalModule, NgbPopoverModule, NgbActiveModal } from '@ng-bootstrap/
     ResultViewComponent,
     OrderPreviewComponent, 
     ChefCatPopupComponent, 
-    ModifySearchComponent
+    ModifySearchComponent,
+    CommentsComponent
   ],
   providers:[
     MasterService,
@@ -55,7 +57,8 @@ import { NgbModalModule, NgbPopoverModule, NgbActiveModal } from '@ng-bootstrap/
   entryComponents:[
     ChefCatPopupComponent,
     ModifySearchComponent,
-    SigninComponent
+    SigninComponent,
+    CommentsComponent
   ]
 })
 export class SearchModule { }

@@ -74,3 +74,15 @@ em {
     color: rgb(243, 243, 243) !important;
     background-color: #73c89c;
 }
+
+/* Comments */
+.modal-dialog {
+    max-width: fit-content;
+    margin: 1.75rem auto;
+}
+
+.modal.show .modal-dialog {
+    -webkit-transform: inherit;
+    padding: 40px;
+}
+/* Comments */
