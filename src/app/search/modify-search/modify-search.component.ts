@@ -81,7 +81,7 @@ export class ModifySearchComponent implements OnInit {
 
   // OnClose of Modified_Search
   onClose() {
-    this.activeModal.close();
+    this.activeModal.dismiss();
   }
 
   onModified() {

@@ -14,10 +14,12 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
 import { MasterService } from './services/master.service';
+// import { CommentsComponent } from './shared/comments/comments.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    // CommentsComponent
   ],
   imports: [
 

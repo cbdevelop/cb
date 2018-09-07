@@ -112,3 +112,14 @@ em {
     color:  #6a6666c7 !important;
 
 }
+/* Comments */
+.modal-dialog {
+    max-width: fit-content;
+    margin: 1.75rem auto;
+}
+
+.modal.show .modal-dialog {
+    -webkit-transform: inherit;
+    padding: 40px;
+}
+/* Comments */

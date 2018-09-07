@@ -33,8 +33,8 @@ export class SigninComponent implements OnInit {
     private activeModal: NgbActiveModal) {
 
     config.interval = 3000;
-    config.wrap = true;
-    config.keyboard = true;
+    // config.wrap = true;
+    // config.keyboard = true;
   }
 
   ngOnInit() {
@@ -103,7 +103,7 @@ export class SigninComponent implements OnInit {
     this.signIn.nativeElement.setAttribute('style', 'display:none');
     this.signUp.nativeElement.setAttribute('style', 'display:none');
     this.forgot.nativeElement.setAttribute('style', 'display:none');
-    this.activeModal.close();
+    this.activeModal.dismiss();
   }
 
   onsignIn(): void {
@@ -169,6 +169,12 @@ export class SigninComponent implements OnInit {
     this.signIn.nativeElement.setAttribute('style', 'display:none');
     this.signUp.nativeElement.setAttribute('style', 'display:none');
     this.forgot.nativeElement.setAttribute('style', 'display:block');
+  }
+
+  onBack() {
+    this.signIn.nativeElement.setAttribute('style', 'display:block');
+    this.signUp.nativeElement.setAttribute('style', 'display:none');
+    this.forgot.nativeElement.setAttribute('style', 'display:none');
   }
 
 

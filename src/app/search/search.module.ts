@@ -10,15 +10,17 @@ import { MenuComponent } from './menu/menu.component';
 import { ResultViewComponent } from './result-view/result-view.component';
 import { OrderPreviewComponent } from './order-preview/order-preview.component';
 import { ChefCatPopupComponent } from './chef-cat-popup/chef-cat-popup.component';
+import { ModifySearchComponent } from './modify-search/modify-search.component';
+import { SigninComponent } from '../shared/signin/signin.component';
+import { CommentsComponent } from '../shared/comments/comments.component';
 
-import { HeaderModule, FooterModule } from '../shared/index';
+import { HeaderModule, FooterModule, SigninModule } from '../shared/index';
 import { MasterService } from '../services/master.service';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime'
-
 import { NgbModalModule, NgbPopoverModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-import { ModifySearchComponent } from './modify-search/modify-search.component';
+
 
 @NgModule({
   imports: [
@@ -33,7 +35,8 @@ import { ModifySearchComponent } from './modify-search/modify-search.component';
     NgbModalModule,
     AngularMultiSelectModule,
     OwlDateTimeModule,
-    OwlNativeDateTimeModule    
+    OwlNativeDateTimeModule,
+    SigninModule    
   ],
   declarations: [
     SearchComponent,
@@ -41,7 +44,8 @@ import { ModifySearchComponent } from './modify-search/modify-search.component';
     ResultViewComponent,
     OrderPreviewComponent, 
     ChefCatPopupComponent, 
-    ModifySearchComponent
+    ModifySearchComponent,
+    CommentsComponent
   ],
   providers:[
     MasterService,
@@ -52,7 +56,9 @@ import { ModifySearchComponent } from './modify-search/modify-search.component';
   ],
   entryComponents:[
     ChefCatPopupComponent,
-    ModifySearchComponent
+    ModifySearchComponent,
+    SigninComponent,
+    CommentsComponent
   ]
 })
 export class SearchModule { }

@@ -5,9 +5,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactComponent } from './contact.component';
 import { ContactRoutingModule } from './contact-routing.module';
 import { FooterModule } from '../footer/footer.module';
+import { SigninModule } from '../signin/signin.module';
+import { SigninComponent } from '../signin/signin.component';
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -18,9 +21,12 @@ import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
         ContactRoutingModule,
         FooterModule,
         ScrollToModule,
-        NgbPopoverModule 
+        NgbPopoverModule,
+        NgbModalModule,
+        SigninModule
     ],
     declarations: [ ContactComponent ],
+    entryComponents: [ SigninComponent ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA
       ]

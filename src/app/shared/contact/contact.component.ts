@@ -1,9 +1,11 @@
-import { Component, OnInit, HostListener, ViewChild} from '@angular/core';
+import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
 
 import { FormsModule, ReactiveFormsModule, ValidatorFn } from '@angular/forms';
 import { FormControl, FormGroup, FormBuilder, AbstractControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { isNullOrUndefined } from 'util';
+import { SigninComponent } from '../signin/signin.component';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-contact',
@@ -18,7 +20,8 @@ export class ContactComponent implements OnInit {
   @ViewChild("head") header;
 
   constructor( private fb: FormBuilder,
-    private router: Router ) {}
+    private router: Router, 
+    private signinModel: NgbModal ) {}
 
   ngOnInit() {
 
@@ -56,6 +59,12 @@ export class ContactComponent implements OnInit {
   onQueries() {
 
   }
+
+   // Sign-in Open
+   openSign() {
+    this.signinModel.open(SigninComponent);
+  }
+
 
 @HostListener("window:scroll", [])
 onWindowScroll() {

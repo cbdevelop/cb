@@ -5,6 +5,9 @@ import { FormControl, FormGroup, FormBuilder, AbstractControl, Validators } from
 import { Router } from '@angular/router';
 import { isNullOrUndefined } from 'util';
 
+import { SigninComponent } from '../shared/signin/signin.component';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 @Component({
   selector: 'app-addmanager',
   templateUrl: './addmanager.component.html',
@@ -21,7 +24,8 @@ export class AddmanagerComponent implements OnInit {
   @ViewChild("head") header;
   
   constructor( private fb: FormBuilder,
-    private router: Router ) {}
+    private router: Router,
+    private signinModel: NgbModal ) {}
 
   ngOnInit() {
 
@@ -64,6 +68,11 @@ showRequiredFieldError(control: string) {
 onManager() {
 
 }
+
+  // Sign-in Open
+  openSign() {
+    this.signinModel.open(SigninComponent);
+  }
 
 @HostListener("window:scroll", [])
 onWindowScroll() {

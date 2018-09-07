@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+
 import { MasterService } from '../../services/master.service';
-import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { CommentsComponent } from '../../shared';
 
 @Component({
   selector: 'app-order-preview',
@@ -10,8 +14,7 @@ import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 export class OrderPreviewComponent implements OnInit {
 
   constructor(public masterObj:MasterService,
-    private commentService: NgbModal, 
-    public activeModal: NgbActiveModal) { }
+    private commentService: NgbModal ) { }
 
   ngOnInit() {
   }
@@ -20,19 +23,9 @@ export class OrderPreviewComponent implements OnInit {
     console.log(this.masterObj.selectedDishes);
   }
 
-
- 
   // Comments Model Popup
-  onNotePopup(comment) {
-    this.commentService.open(comment)
-  }
-
-  onCancel() {
-    this.activeModal.dismiss();
-  }
-
-  onSave() {
-    this.activeModal.close();
+  onCommentPopup() {
+    this.commentService.open(CommentsComponent);    
   }
 
 }
