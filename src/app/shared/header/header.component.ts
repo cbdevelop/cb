@@ -3,6 +3,7 @@ import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { SigninComponent } from '../signin/signin.component';
 import { User } from '../models/user.model';
+import { MasterService } from '../../services/master.service';
 
 
 @Component({
@@ -16,7 +17,10 @@ export class HeaderComponent implements OnInit {
 
   @ViewChild("head") header;
 
-  constructor( private signinModel: NgbModal ) { }
+  constructor(
+    private signinModel: NgbModal,
+    public masterObj: MasterService
+  ) { }
 
   ngOnInit() {
   }

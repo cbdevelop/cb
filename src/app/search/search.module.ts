@@ -14,7 +14,7 @@ import { ModifySearchComponent } from './modify-search/modify-search.component';
 import { SigninComponent } from '../shared/signin/signin.component';
 import { CommentsComponent } from '../shared/comments/comments.component';
 
-import { HeaderModule, FooterModule, SigninModule } from '../shared/index';
+import { HeaderModule, FooterModule, SigninModule, DirectiveModule } from '../shared/index';
 import { MasterService } from '../services/master.service';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
@@ -36,7 +36,8 @@ import { NgbModalModule, NgbPopoverModule, NgbActiveModal } from '@ng-bootstrap/
     AngularMultiSelectModule,
     OwlDateTimeModule,
     OwlNativeDateTimeModule,
-    SigninModule    
+    SigninModule  ,
+    DirectiveModule  
   ],
   declarations: [
     SearchComponent,

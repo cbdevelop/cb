@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+
+
 import { Router } from '@angular/router';
 
-import { searchModel } from '../services/master.service';
+import { searchModel, MasterService } from '../services/master.service';
 import { FormsModule, ReactiveFormsModule, ValidatorFn } from '@angular/forms';
 import { FormControl, FormGroup, FormBuilder, AbstractControl, Validators } from '@angular/forms';
 
@@ -22,8 +24,33 @@ export class HomeComponent implements OnInit {
   serviceType = [];
 
   settings = {};
-  session = "dinner"
-  constructor(private routerObj: Router, private fb: FormBuilder) { }
+  session = "dinner";
+  barwidth = 0
+
+  public spiedTags = [];
+
+    private currentSection: string;
+
+
+  constructor(
+    private routerObj: Router,
+    private fb: FormBuilder,
+    public masterObj: MasterService
+  ) {
+    this.barwidth = 0;
+
+    let interval = setInterval(() => {
+      this.barwidth += 10;
+      if (this.barwidth >= 1200) clearInterval(interval);
+    }, 10)
+
+  }
+
+
+
+  onSectionChange(sectionId: string) {
+    this.masterObj.currentSection = sectionId;
+  }
 
   ngOnInit() {
 
@@ -80,4 +107,26 @@ export class HomeComponent implements OnInit {
     console.log(evt);
     this.routerObj.navigate(['../search'])
   }
+
+ /* @HostListener("window:scroll", ["$event"])
+  onWindowScroll(event: any) {
+      console.log('sad');
+        let currentSection: string;
+        const children = this._el.nativeElement.children;
+        const scrollTop = event.target.scrollTop;
+        const parentOffset = event.target.offsetTop;
+        for (let i = 0; i < children.length; i++) {
+            const element = children[i];
+            if (this.spiedTags.some(spiedTag => spiedTag === element.tagName)) {
+                if ((element.offsetTop - parentOffset) <= scrollTop) {
+                    currentSection = element.id;
+                }
+            }
+        }
+        if (currentSection !== this.currentSection) {
+            this.currentSection = currentSection;
+            this.masterObj.currentSection =currentSection;
+        }
+    }
+    */
 }

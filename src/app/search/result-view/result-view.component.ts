@@ -21,8 +21,14 @@ export class ResultViewComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.service.alldishes);
+    // console.log(this.service.alldishes);
     this.all_categories = this.service.alldishes;
+  }
+
+  onSectionChange(sectionId: string) {
+    console.log(sectionId)
+    this.service.currentSection = sectionId;
+
   }
 
   openchef(menucategoryid,disId) {

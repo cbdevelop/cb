@@ -5,6 +5,9 @@ import { Dish } from '../shared/models/dish.model';
 
 @Injectable()
 export class MasterService {
+
+
+	currentSection = 'home';
 	alldishes: Menu[] = [];
 
 	startersArr: Dish[] = [
@@ -287,8 +290,8 @@ export class MasterService {
 		console.log(this.alldishes);
 		this.alldishes = [
 			{ dishTypeId: 1, dishType: "tiffins", dishes: this.tiffins },
-			{ dishTypeId: 2, dishType: "startes&snacka", dishes: this.startersArr },
-			{ dishTypeId: 3, dishType: "main course", dishes: this.maincourse },
+			{ dishTypeId: 2, dishType: "starrters", dishes: this.startersArr },
+			{ dishTypeId: 3, dishType: "maincourse", dishes: this.maincourse },
 			{ dishTypeId: 4, dishType: "desserts", dishes: this.desserts },
 			{ dishTypeId: 5, dishType: "beverges", dishes: this.beverges }
 		];

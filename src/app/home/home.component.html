@@ -1,351 +1,358 @@
 <!-- Header -->
+ 
 <app-header>
 </app-header>
-
+<section id="parentDiv" scrollSpy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
 <!-- Theme -->
-<section class="themeOut" id="home">
-  <div class="themeWrap">
-    <div class="themeText">
-      <h1>Welcome to Caterbinge</h1>
-      <h2>Lorem Ipsum is simply dummy text of the simply dummy text of the printing and typesetting industry Lorem Ipsum
-        has been the industry's</h2>
+  <section class="themeOut" id="home">
+    <div class="themeWrap">
+      <div class="themeText">
+        <h1>Welcome to Caterbinge</h1>
+        <h2>Lorem Ipsum is simply dummy text of the simply dummy text of the printing and typesetting industry Lorem Ipsum has
+          been the industry's</h2>
+      </div>
     </div>
-  </div>
-  <div class="resSearch clearfix">
-    <input type="text" placeholder="Search" />
-    <button>Search</button>
-  </div>
+    <div class="resSearch clearfix">
+      <input type="text" placeholder="Search" />
+      <button>Search</button>
+    </div>
 
-  <form [formGroup]="homeForm" novalidate>
-    <div class="searchOut">
-      <div class="searClose"><i class="fa fa-close"></i></div>
+    <form [formGroup]="homeForm" novalidate>
+      <div class="searchOut">
+        <div class="searClose">
+          <i class="fa fa-close"></i>
+        </div>
 
-      <div class="select">
-        <label>Location<span id="cityPop">Change</span></label>
-        <angular2-multiselect class="loca" [data]="location" [settings]="settings" (onSelect)="LocationSelect($event)" (onDeSelect)="LocationDeSelect($event)"
-          formControlName="location">
-        </angular2-multiselect>
+        <div class="select">
+          <label>Location
+            <span id="cityPop">Change</span>
+          </label>
+          <angular2-multiselect class="loca" [data]="location" [settings]="settings" (onSelect)="LocationSelect($event)" (onDeSelect)="LocationDeSelect($event)"
+            formControlName="location">
+          </angular2-multiselect>
+        </div>
+        <div class="select">
+          <label>Service Type</label>
+          <angular2-multiselect class="loca" [data]="serviceType" [settings]="settings" (onSelect)="ServiceSelect($event)" (onDeSelect)="ServiceDeSelect($event)"
+            formControlName="serviceType">
+          </angular2-multiselect>
+        </div>
+        <div class="atten">
+          <label>Attendees -
+            <b>000</b> (Veg - Nonveg)</label>
+          <input type="text" placeholder="000" formControlName="vegAttnd" />
+          <input type="text" placeholder="000" class="non" formControlName="nonVegAttnd" />
+        </div>
+        <div class="select date">
+          <label>Date - Time</label>
+          <input type="text" placeholder="DD/MM/YY HH:MM" class="datePic" formControlName="datetime" [owlDateTime]="dt1" hour12Timer="true"
+            [owlDateTimeTrigger]="dt1">
+          <owl-date-time #dt1></owl-date-time>
+        </div>
+        <div class="select time" *ngIf="session !== ''">
+          <label>You're ordering for</label>
+          <div class="session"> {{ session }}</div>
+        </div>
+        <div class="seaBtn">
+          <input type="button" value="Search" (click)="onSearch(searchObj)" class="seaButton" />
+        </div>
       </div>
-      <div class="select">
-        <label>Service Type</label>
-        <angular2-multiselect class="loca" [data]="serviceType" [settings]="settings" (onSelect)="ServiceSelect($event)" (onDeSelect)="ServiceDeSelect($event)"
-          formControlName="serviceType">
-        </angular2-multiselect>
-      </div>
-      <div class="atten">
-        <label>Attendees - <b>000</b> (Veg - Nonveg)</label>
-        <input type="text" placeholder="000" formControlName="vegAttnd" />
-        <input type="text" placeholder="000" class="non" formControlName="nonVegAttnd" />
-      </div>
-      <div class="select date">
-        <label>Date - Time</label>
-        <input type="text" placeholder="DD/MM/YY HH:MM" class="datePic" formControlName="datetime" [owlDateTime]="dt1" hour12Timer="true"
-          [owlDateTimeTrigger]="dt1">
-        <owl-date-time #dt1></owl-date-time>
-      </div>
-      <div class="select time" *ngIf="session !== ''">
-        <label>You're ordering for</label>
-        <div class="session"> {{ session }}</div>
-      </div>
-      <div class="seaBtn">
-        <input type="button" value="Search" (click)="onSearch(searchObj)" class="seaButton" />
-      </div>
-    </div>
-  </form>
-</section>
-<!-- Theme -->
+    </form>
+  </section>
+  <!-- Theme -->
 
-<!-- How it works -->
-<section class="howItOut" id="howitworks">
-  <div class="howItWrap clearfix">
-    <span class="homeHeading">
-      <h3>How it Works</h3>
-    </span>
-    <div class="howItCta">
-      <span>
-        <img src="./assets/images/howit-1.jpg" alt="" />
+  <!-- How it works -->
+  <section class="howItOut" id="howitworks">
+    <div class="howItWrap clearfix">
+      <span class="homeHeading">
+        <h3>How it Works</h3>
       </span>
-      <div class="howItCtaInn">
-        <b>Step 1</b>
-        <p>Enter the Location where the event have to be hosted.</p>
-      </div>
-    </div>
-    <div class="howItCta">
-      <span>
-        <img src="./assets/images/howit-2.jpg" alt="" />
-      </span>
-      <div class="howItCtaInn">
-        <b>Step 2</b>
-        <p>Build your menu for your event by selecting different dishes according to your preference of choice.</p>
-      </div>
-    </div>
-    <div class="howItCta">
-      <span>
-        <img src="./assets/images/howit-3.jpg" alt="" />
-      </span>
-      <div class="howItCtaInn">
-        <b>Step 3</b>
-        <p>Review who is cooking your menu and assign a manager for a great service on the whole to your order or you may
-          simple checkout to self organize your event by just hiring chefs alone.</p>
-      </div>
-    </div>
-    <div class="howItCta">
-      <span>
-        <img src="./assets/images/howit-4.jpg" alt="" />
-      </span>
-      <div class="howItCtaInn">
-        <b>Step 4</b>
-        <p>Zero wastage
-          <br> - our cutting edge technology analysis how much food material is required as per your dynamic selected menu.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- About -->
-<section class="hoAbWrap clearfix" id="about">
-  <div class="hoAbImg">
-    <img src="./assets/images/about.jpg" alt="" />
-    <h2>About Caterbinge</h2>
-  </div>
-  <div class="hoAbText">
-    <h3>About
-      <span>Caterbinge</span>
-    </h3>
-    <p>Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior
-      quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your
-      custom built menu, not just that we provide delicious cuisines but also assures high-quality service. At caterbinge.com
-      we strive to achieve the highest level of Customer Satisfaction and are committed giving the best service regardless
-      of the size of the order or combination of cuisines in the menu we have been blessed to be a part of thousand of wedding,
-      debuts, corporate events.</p>
-    <a href="about.html" class="">View more...</a>
-  </div>
-</section>
-<!-- About -->
-
-<!--   Why choose us  -->
-<section class="howItOut" id="choose">
-  <div class="howItWrap clearfix">
-    <span class="homeHeading">
-      <h3>Why You Choose Us</h3>
-    </span>
-    <div class="whyChoCta">
-      <span>
-        <img src="./assets/images/whycho-1.png" alt="" />
-      </span>
-      <h4>Taste assurance</h4>
-      <p>Selects only the top notch chefs who are specialized to cook the best taste of their respective cuisines.</p>
-    </div>
-    <div class="whyChoCta">
-      <span>
-        <img src="./assets/images/whycho-2.png" alt="" />
-      </span>
-      <h4>Hygienic & halal food</h4>
-      <p>Food materials are purchased from authorized suppliers, to serve fresh where only halal meat is used.</p>
-    </div>
-    <div class="whyChoCta">
-      <span>
-        <img src="./assets/images/whycho-3.png" alt="" />
-      </span>
-      <h4>Cost effective & stand alone in service</h4>
-      <p>More than 25% of price difference when compared with others catering services and high professional in service.</p>
-    </div>
-  </div>
-</section>
-<!--   Why choose us  -->
-
-<!--  countWrap  -->
-<section class="countWrapOut">
-  <div class="countWrap clearfix" id="counter">
-    <div class="countCta clearfix">
-      <span>
-        <img src="./assets/images/count.png" alt="" />
-      </span>
-      <p>
-        Events Served
-        <i class="counter-value" data-count="1250">0000</i>
-      </p>
-    </div>
-    <div class="countCta clearfix">
-      <span>
-        <img src="./assets/images/count2.png" alt="" />
-      </span>
-      <p>
-        Chef's
-        <i class="counter-value" data-count="1520">0000</i>
-      </p>
-    </div>
-    <div class="countCta clearfix">
-      <span>
-        <img src="./assets/images/count3.png" alt="" />
-      </span>
-      <p>
-        Event Manager's
-        <i class="counter-value" data-count="1180">0000</i>
-      </p>
-    </div>
-    <div class="countCta clearfix">
-      <span>
-        <img src="./assets/images/count4.png" alt="" />
-      </span>
-      <p>
-        Users Sign Up
-        <i class="counter-value" data-count="2150">0000</i>
-      </p>
-    </div>
-  </div>
-</section>
-<!--  countWrap  -->
-
-<!--   Partners Wrap  -->
-<section class="patWrapOut" id="partner">
-  <div class="patWrap clearfix">
-    <h3>Become a partner</h3>
-    <div class="patCta">
-      <a [routerLink]="['/addchef']">
+      <div class="howItCta">
         <span>
-          <img src="./assets/images/chef.jpg" alt="" />
-          <div class="chefIcon">
-            <img src="./assets/images/chef-i.png" alt="" />
-          </div>
+          <img src="./assets/images/howit-1.jpg" alt="" />
         </span>
-        <h4>Chef</h4>
-        <p>Lorem Ipsum is simply dummy text of the simply dummy text of the printing and typesetting industry Lorem Ipsum
-          has been the industry's</p>
-        <div class="resMes">Click here to become a Chef</div>
-      </a>
-    </div>
-    <div class="patCta">
-      <a [routerLink]="['/addmanager']">
+        <div class="howItCtaInn">
+          <b>Step 1</b>
+          <p>Enter the Location where the event have to be hosted.</p>
+        </div>
+      </div>
+      <div class="howItCta">
         <span>
-          <img src="./assets/images/event.jpg" alt="" />
-          <div class="chefIcon">
-            <img src="./assets/images/event-i.png" alt="" />
-          </div>
+          <img src="./assets/images/howit-2.jpg" alt="" />
         </span>
-        <h4>Event Manager</h4>
-        <p>Lorem Ipsum is simply dummy text of the simply dummy text of the printing and typesetting industry Lorem Ipsum
-          has been the industry's</p>
-        <div class="resMes">Click here to become a Event Manager</div>
-      </a>
-    </div>
-  </div>
-</section>
-<!--   Partners Wrap  -->
-
-<!--   Blogs  -->
-<section class="howItOut bgTwo">
-  <div class="howItWrap padMd clearfix">
-    <span class="homeHeading">
-      <h3>Blogs</h3>
-    </span>
-    <div class="overScroll">
-      <div class="overScrollInnTwo">
-        <div class="blogCta">
-          <a href="blogdetails.html">
-            <span>
-              <img src="./assets/images/blog.jpg" alt="" />
-            </span>
-            <h4>Blog Heading Text Here...</h4>
-            <p>Lorem Ipsum is simply dummy text of the fdkjl lkjlkdsj printing Lorem Ipsum is simply dummy text of the printing
-              Lorem Ipsum is simply dummy text of the printing Lorem Ipsum</p>
-            <a class="viBl" href="blogdetails.html">View</a>
-          </a>
+        <div class="howItCtaInn">
+          <b>Step 2</b>
+          <p>Build your menu for your event by selecting different dishes according to your preference of choice.</p>
         </div>
-        <div class="blogCta">
-          <a href="blogdetails.html">
-            <span>
-              <img src="./assets/images/blog.jpg" alt="" />
-            </span>
-            <h4>Blog Heading Text Here...</h4>
-            <p>Lorem Ipsum is simply dummy text of the fdljfl lkjflsd printing Lorem Ipsum is simply dummy text of the printing
-              Lorem Ipsum is simply dummy text of the printing Lorem Ipsum</p>
-            <a class="viBl" href="blogdetails.html">View</a>
-          </a>
+      </div>
+      <div class="howItCta">
+        <span>
+          <img src="./assets/images/howit-3.jpg" alt="" />
+        </span>
+        <div class="howItCtaInn">
+          <b>Step 3</b>
+          <p>Review who is cooking your menu and assign a manager for a great service on the whole to your order or you may
+            simple checkout to self organize your event by just hiring chefs alone.</p>
         </div>
-        <div class="blogCta">
-          <a href="blogdetails.html">
-            <span>
-              <img src="./assets/images/blog.jpg" alt="" />
-            </span>
-            <h4>Blog Heading Text Here...</h4>
-            <p>Lorem Ipsum is simply dummy text of fjlksdjl jfldjs the printing Lorem Ipsum is simply dummy text of the printing
-              Lorem Ipsum is simply dummy text of the printing Lorem Ipsum</p>
-            <a class="viBl" href="blogdetails.html">View</a>
-          </a>
+      </div>
+      <div class="howItCta">
+        <span>
+          <img src="./assets/images/howit-4.jpg" alt="" />
+        </span>
+        <div class="howItCtaInn">
+          <b>Step 4</b>
+          <p>Zero wastage
+            <br> - our cutting edge technology analysis how much food material is required as per your dynamic selected menu.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!--   Blogs  -->
+  </section>
 
-<!--  Testimonials  -->
-<section class="howItOut overScroll">
-  <div class="howItWrap padMd clearfix">
-    <span class="homeHeading">
-      <h3>Word on the street</h3>
-    </span>
-    <div class="overScroll">
-      <div class="overScrollInn">
-        <div class="testiCta">
+
+  <!-- About -->
+  <section class="hoAbWrap clearfix" id="about">
+    <div class="hoAbImg">
+      <img src="./assets/images/about.jpg" alt="" />
+      <h2>About Caterbinge</h2>
+    </div>
+    <div class="hoAbText">
+      <h3>About
+        <span>Caterbinge</span>
+      </h3>
+      <p>Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior
+        quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your
+        custom built menu, not just that we provide delicious cuisines but also assures high-quality service. At caterbinge.com
+        we strive to achieve the highest level of Customer Satisfaction and are committed giving the best service regardless
+        of the size of the order or combination of cuisines in the menu we have been blessed to be a part of thousand of
+        wedding, debuts, corporate events.</p>
+      <a href="about.html" class="">View more...</a>
+    </div>
+  </section>
+  <!-- About -->
+
+  <!--   Why choose us  -->
+  <section class="howItOut" id="choose">
+    <div class="howItWrap clearfix">
+      <span class="homeHeading">
+        <h3>Why You Choose Us</h3>
+      </span>
+      <div class="whyChoCta">
+        <span>
+          <img src="./assets/images/whycho-1.png" alt="" />
+        </span>
+        <h4>Taste assurance</h4>
+        <p>Selects only the top notch chefs who are specialized to cook the best taste of their respective cuisines.</p>
+      </div>
+      <div class="whyChoCta">
+        <span>
+          <img src="./assets/images/whycho-2.png" alt="" />
+        </span>
+        <h4>Hygienic & halal food</h4>
+        <p>Food materials are purchased from authorized suppliers, to serve fresh where only halal meat is used.</p>
+      </div>
+      <div class="whyChoCta">
+        <span>
+          <img src="./assets/images/whycho-3.png" alt="" />
+        </span>
+        <h4>Cost effective & stand alone in service</h4>
+        <p>More than 25% of price difference when compared with others catering services and high professional in service.</p>
+      </div>
+    </div>
+  </section>
+  <!--   Why choose us  -->
+
+  <!--  countWrap  -->
+  <section class="countWrapOut">
+    <div class="countWrap clearfix" id="counter">
+      <div class="countCta clearfix">
+        <span>
+          <img src="./assets/images/count.png" alt="" />
+        </span>
+        <p>
+          Events Served
+          <i class="counter-value" data-count="1250">{{ barwidth }}</i>
+        </p>
+      </div>
+      <div class="countCta clearfix">
+        <span>
+          <img src="./assets/images/count2.png" alt="" />
+        </span>
+        <p>
+          Chef's
+          <i class="counter-value" data-count="1520"> {{ barwidth }} </i>
+        </p>
+      </div>
+      <div class="countCta clearfix">
+        <span>
+          <img src="./assets/images/count3.png" alt="" />
+        </span>
+        <p>
+          Event Manager's
+          <i class="counter-value" data-count="1180">{{ barwidth }}</i>
+        </p>
+      </div>
+      <div class="countCta clearfix">
+        <span>
+          <img src="./assets/images/count4.png" alt="" />
+        </span>
+        <p>
+          Users Sign Up
+          <i class="counter-value" data-count="2150">{{ barwidth }}</i>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--  countWrap  -->
+
+  <!--   Partners Wrap  -->
+  <section class="patWrapOut" id="partner">
+    <div class="patWrap clearfix">
+      <h3>Become a partner</h3>
+      <div class="patCta">
+        <a [routerLink]="['/addchef']">
           <span>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
+            <img src="./assets/images/chef.jpg" alt="" />
+            <div class="chefIcon">
+              <img src="./assets/images/chef-i.png" alt="" />
+            </div>
           </span>
-          <h3>Outstanding quality</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
-            is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
-          <h4>Mahesh V</h4>
-        </div>
-        <div class="testiCta">
+          <h4>Chef</h4>
+          <p>Lorem Ipsum is simply dummy text of the simply dummy text of the printing and typesetting industry Lorem Ipsum
+            has been the industry's</p>
+          <div class="resMes">Click here to become a Chef</div>
+        </a>
+      </div>
+      <div class="patCta">
+        <a [routerLink]="['/addmanager']">
           <span>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
+            <img src="./assets/images/event.jpg" alt="" />
+            <div class="chefIcon">
+              <img src="./assets/images/event-i.png" alt="" />
+            </div>
           </span>
-          <h3>Outstanding quality</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
-            is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
-          <h4>Mahesh V</h4>
-        </div>
-        <div class="testiCta">
-          <span>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </span>
-          <h3>Outstanding quality</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
-            is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
-          <h4>Mahesh V</h4>
-        </div>
-        <div class="testiCta">
-          <span>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-          </span>
-          <h3>Outstanding quality</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
-            is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
-          <h4>Mahesh V</h4>
+          <h4>Event Manager</h4>
+          <p>Lorem Ipsum is simply dummy text of the simply dummy text of the printing and typesetting industry Lorem Ipsum
+            has been the industry's</p>
+          <div class="resMes">Click here to become a Event Manager</div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--   Partners Wrap  -->
+
+  <!--   Blogs  -->
+  <section class="howItOut bgTwo">
+    <div class="howItWrap padMd clearfix">
+      <span class="homeHeading">
+        <h3>Blogs</h3>
+      </span>
+      <div class="overScroll">
+        <div class="overScrollInnTwo">
+          <div class="blogCta">
+            <a href="blogdetails.html">
+              <span>
+                <img src="./assets/images/blog.jpg" alt="" />
+              </span>
+              <h4>Blog Heading Text Here...</h4>
+              <p>Lorem Ipsum is simply dummy text of the fdkjl lkjlkdsj printing Lorem Ipsum is simply dummy text of the printing
+                Lorem Ipsum is simply dummy text of the printing Lorem Ipsum</p>
+              <a class="viBl" href="blogdetails.html">View</a>
+            </a>
+          </div>
+          <div class="blogCta">
+            <a href="blogdetails.html">
+              <span>
+                <img src="./assets/images/blog.jpg" alt="" />
+              </span>
+              <h4>Blog Heading Text Here...</h4>
+              <p>Lorem Ipsum is simply dummy text of the fdljfl lkjflsd printing Lorem Ipsum is simply dummy text of the printing
+                Lorem Ipsum is simply dummy text of the printing Lorem Ipsum</p>
+              <a class="viBl" href="blogdetails.html">View</a>
+            </a>
+          </div>
+          <div class="blogCta">
+            <a href="blogdetails.html">
+              <span>
+                <img src="./assets/images/blog.jpg" alt="" />
+              </span>
+              <h4>Blog Heading Text Here...</h4>
+              <p>Lorem Ipsum is simply dummy text of fjlksdjl jfldjs the printing Lorem Ipsum is simply dummy text of the printing
+                Lorem Ipsum is simply dummy text of the printing Lorem Ipsum</p>
+              <a class="viBl" href="blogdetails.html">View</a>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- Testimonials -->
+  </section>
+  <!--   Blogs  -->
 
-<!-- Footer -->
-<app-footer></app-footer>
+  <!--  Testimonials  -->
+  <section class="howItOut overScroll">
+    <div class="howItWrap padMd clearfix">
+      <span class="homeHeading">
+        <h3>Word on the street</h3>
+      </span>
+      <div class="overScroll">
+        <div class="overScrollInn">
+          <div class="testiCta">
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </span>
+            <h3>Outstanding quality</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
+              is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
+            <h4>Mahesh V</h4>
+          </div>
+          <div class="testiCta">
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </span>
+            <h3>Outstanding quality</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
+              is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
+            <h4>Mahesh V</h4>
+          </div>
+          <div class="testiCta">
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </span>
+            <h3>Outstanding quality</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
+              is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
+            <h4>Mahesh V</h4>
+          </div>
+          <div class="testiCta">
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </span>
+            <h3>Outstanding quality</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
+              is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
+            <h4>Mahesh V</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials -->
+
+</section>
+  <!-- Footer -->
+  <app-footer></app-footer>

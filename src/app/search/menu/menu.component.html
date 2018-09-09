@@ -2,8 +2,14 @@
   <div class="chefHeadInn clearfix">
     <ul class="clearfix head">
       <div class="scrTab clearfix" id="scrTap">
-        <li class="Act">All</li>
-        <li *ngFor="let category of service.alldishes" [id]="category.dishType"><a [href]=""></a> {{category.dishType}}</li>
+        <li class="Act">
+            <a [ngx-scroll-to]="'#all'" [ngClass]="service.currentSection == 'All' ? 'Act' : ''">All</a>
+            
+          </li>
+        <li *ngFor="let category of service.alldishes" 
+       >
+          <a [ngx-scroll-to]="'#'+category.dishType"  [ngClass]="service.currentSection == 'category.dishType' ? 'Act' : ''">{{ category.dishType }}</a>
+        </li>
         <!-- <li>Menu One</li>
         <li>Menu One</li>
         <li>Menu One</li>
@@ -21,12 +27,11 @@
             <a href="javascript:void(0)">Non-Veg</a>
           </div>
           <div class="">
-            
-            <angular2-multiselect [data]="menuList"    [(ngModel)]="selectedItems"     [settings]="settings" (onSelect)="menuSelect($event)" 
-                (onDeSelect)="menuDeSelect($event)" (onSelectAll)="SelectAll($event)"
-                (onDeSelectAll)="DeSelectAll($event)">
-            </angular2-multiselect> 
-          </div>  
+
+            <angular2-multiselect [data]="menuList" [(ngModel)]="selectedItems" [settings]="settings" (onSelect)="menuSelect($event)"
+              (onDeSelect)="menuDeSelect($event)" (onSelectAll)="SelectAll($event)" (onDeSelectAll)="DeSelectAll($event)">
+            </angular2-multiselect>
+          </div>
         </div>
 
         <!-- <angular2-multiselect class="loca" [data]="location" [settings]="settings"
@@ -57,4 +62,4 @@
 
     </div>
   </div>
-</div>    
+</div>

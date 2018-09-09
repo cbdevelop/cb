@@ -1,6 +1,7 @@
-<div class="resultInn clearfix">
+<div class="resultInn clearfix"
+id="parentDiv" scrollSpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)">
 
-  <div class="resultWrap" *ngFor="let category of all_categories" [id]="category.dishType">
+<div class="resultWrap" *ngFor="let category of all_categories" [id]="category.dishType" >
     <h2>{{ category.dishType }}...</h2>
     <ul class="">
       <li *ngFor="let dish of category.dishes">
