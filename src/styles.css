@@ -139,3 +139,25 @@ html [type=button], a {
     padding: 40px;
 }
 /* Comments */
+
+/* Popup's padding */
+.chPopWrap {
+    padding: none !important;
+}
+
+/* Add More */
+.estMesg {
+    font-size: 14px;
+    font-weight: 400;
+    color: #686767;
+    padding: 0px 0px 15px;
+}
+
+.estMesg h3 {
+    padding: 0px 0px 8px;
+    margin: 0px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+}
+
