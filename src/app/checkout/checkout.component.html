@@ -1,14 +1,24 @@
-<!-- <app-header #shead></app-header> -->
 <div id="home"></div>
 <header  class="staticHead scrollAct">
   <section class="headInn clearfix">
     <div class="logo">
       <a [routerLink]="'/'" class="logoImg"></a>
     </div>
-    <div class="signWrap clearfix"><a (click)="openSign()">
+
+    <div class="nav-item dropdown" ngbDropdown>
+
+    <div class="signWrap clearfix"><a ngbDropdownToggle>
       <span class="fa fa-user-o siIcon"></span></a>
       <span class="fa fa-bars menuIcon"></span>
     </div>
+    <div class="logInInn" ngbDropdownMenu>
+        <a href="profile.html">Profile</a>
+        <a href="orders.html">Orders</a>
+        <a href="javascript:void(0)" class="logout">Log Out</a>
+    </div>
+    
+    </div>
+
     <nav>
       <ul class="clearfix">
         <li>
@@ -33,21 +43,20 @@
     </nav>
   </section>
 </header>
+
+
 <section class="resultOut">
   <app-menu></app-menu>
-  <app-result-view></app-result-view>
+  <router-outlet></router-outlet>
 </section>
 
 <div class="stepWrap">
-  <ul>
-    <li title="Title Text Here..." class="Act"><a href="javascript:void(0)"><span>Step</span>1</a></li>
-    <li title="Title Text Here..."><a href="javascript:void(0)"><span>Step</span>2</a></li>
-    <li title="Title Text Here..."><a href="javascript:void(0)"><span>Step</span>3</a></li>
-    <li title="Title Text Here..."><a href="javascript:void(0)"><span>Step</span>4</a></li>
-  </ul>
+    <ul>
+      <li title="Title Text Here..." class="Act"><a href="javascript:void(0)"><span>Step</span>1</a></li>
+      <li title="Title Text Here..."><a href="javascript:void(0)"><span>Step</span>2</a></li>
+      <li title="Title Text Here..."><a href="javascript:void(0)"><span>Step</span>3</a></li>
+      <li title="Title Text Here..."><a href="javascript:void(0)"><span>Step</span>4</a></li>
+    </ul>
 </div>
 
-
 <app-footer></app-footer>
-
-

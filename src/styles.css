@@ -7,6 +7,7 @@
 @import "./assets/css/cbstyle.css";
 @import "./assets/css/cbstyle-responsive.css";
 @import "~ng-pick-datetime/assets/style/picker.min.css";
+
 /* Validations */
 
 em {
@@ -129,6 +130,7 @@ html [type=button], a {
 
 }
 /* Comments */
+
 .modal-dialog {
     max-width: fit-content;
     margin: 1.75rem auto;
@@ -138,14 +140,17 @@ html [type=button], a {
     -webkit-transform: inherit;
     padding: 40px;
 }
+
 /* Comments */
 
 /* Popup's padding */
+
 .chPopWrap {
     padding: none !important;
 }
 
 /* Add More */
+
 .estMesg {
     font-size: 14px;
     font-weight: 400;
@@ -161,3 +166,83 @@ html [type=button], a {
     color: #666;
 }
 
+.down_count {
+    margin-right: -4px;
+    height: 32px;
+    padding: 0px 0px;
+    border-top-right-radius: 0px;
+    background-color: #f9f9f9;
+    color: #0fab8f;
+    border: 1px solid #0fab8f;
+    border-bottom-right-radius: 0px;
+}
+
+.down_count i {
+    padding: 3px 0px;
+    color: #0fab8f;
+    font-size: 14px;
+}
+
+.counter {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #0fab8f;
+    position: relative;
+    top: 2px;
+    border-radius: 0px !important;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #454545;
+}
+
+.up_count {
+    margin-left: -5px;
+    widows: 30px;
+    height: 32px;
+    padding: 0px 0px;
+    border-top-left-radius: 0px;
+    background-color: #f9f9f9;
+    color: #0fab8f;
+    border: 1px solid #0fab8f;
+    border-bottom-left-radius: 0px;
+}
+
+.up_count i {
+    padding: 3px 0px;
+    color: #0fab8f;
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border-radius: 4px;
+}
+
+/* Add More */
+
+/* Profile Dropdown */
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-menu {
+    position: relative;
+    z-index: 100000;
+}
+
+/* Profile Dropdown */

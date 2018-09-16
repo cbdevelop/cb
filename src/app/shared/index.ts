@@ -6,5 +6,5 @@ export * from './contact/contact.module';
 export * from './directives/directive.module';
 export * from './guard/auth.guard';
 export * from './models/user.model';
-export * from './comments/comments.component';
+export * from './comments/comments.module';
 // export * from './topbar/topbar.module'

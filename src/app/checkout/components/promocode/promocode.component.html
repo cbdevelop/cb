@@ -1,0 +1,69 @@
+<div class="promPop">
+	<div class="promtaps">
+
+		<!-- <div class="chPopTab">
+			<a href="javascript:void(0)" class="Act" id="promo1">Promo code</a>
+			<a href="javascript:void(0)" id="promo2">Sponsors</a>
+        </div> -->
+		
+		<ngb-tabset>
+			<ngb-tab title="Promo code">
+				<ng-template ngbTabContent>
+						<div class="promoInn">
+								<div class="promEnt clearfix">
+									<input type="text" placeholder="Enter your code">
+									<button>Apply</button>
+									<p>Error message here..</p>
+								</div>
+								<b>(or)</b>
+							<ul>
+								<li class="clearfix">
+									<p>
+										<span>CB2540</span>
+										Promocode text here. Promocode text here.
+									</p>
+									<a href="javascript:void(0)">Apply</a>
+								</li>
+								<li class="clearfix act">
+									<p>
+										<span>CB2540</span>
+										Promocode text here. Promocode text here.
+									</p>
+									<a href="javascript:void(0)">Applied</a>
+								</li>
+								<li class="clearfix">
+									<p>
+										<span>CB2540</span>
+										Promocode text here. Promocode text here.
+									</p>
+									<a href="javascript:void(0)">Apply</a>
+								</li>
+								<li class="clearfix">
+									<p>
+										<span>CB2540</span>
+										Promocode text here. Promocode text here.
+									</p>
+									<a href="javascript:void(0)">Apply</a>
+								</li>									
+							</ul>			
+							</div>
+			    </ng-template>
+			</ngb-tab>
+
+			<ngb-tab title="Sponsors">
+				<ng-template ngbTabContent>
+						<div class="sponsWrap">
+								<div class="noSpon">
+									<img src="../../../../assets/images/rupee.png" alt="" />NO SPONSORS FOUND!
+								</div>
+						</div>
+				</ng-template>
+			</ngb-tab>
+		</ngb-tabset>				
+		
+	</div>	
+	<div class="foodPopBtn text-right">
+	  	<a href="javascript:void(0)" class="foodClose" (click)="onCancel()">Cancel</a>		
+	  	<a href="javascript:void(0)" class="add" (click)="onAdd()">Submit</a>
+  	</div>	
+</div>

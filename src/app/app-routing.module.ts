@@ -7,6 +7,8 @@ const appRoutes: Routes = [
 
   { path: '', loadChildren: './home/home.module#HomeModule' },
   { path: '', loadChildren: './search/search.module#SearchModule' },
+  { path: '', loadChildren: './checkout/checkout.module#CheckoutModule' },
+  { path: '', loadChildren: './payment/payment.module#PaymentModule' },
   { path: 'addchef', loadChildren: './addchef/addchef.module#AddchefModule' },
   { path: 'addmanager', loadChildren: './addmanager/addmanager.module#AddmanagerModule' },
   { path: 'contact', loadChildren: './shared/contact/contact.module#ContactModule' }
