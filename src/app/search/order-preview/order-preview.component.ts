@@ -4,7 +4,8 @@ import { MasterService } from '../../services/master.service';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { CommentsComponent } from '../../shared';
+import { CommentsComponent } from '../../shared/comments/comments.component';
+
 
 @Component({
   selector: 'app-order-preview',

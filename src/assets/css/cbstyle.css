@@ -2702,7 +2702,7 @@ footer {
     position: fixed;
     z-index: 100010;
     background-color: #fff;
-    display: none;
+    display: block;
     box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
     top: 5%;
     left: 0px;
@@ -2717,7 +2717,7 @@ footer {
     width: 600px;
     min-height: 50%;
     max-height: 90%;
-    display: none;
+    display: block;
     padding: 20px;
 }
 
@@ -2738,11 +2738,11 @@ footer {
 }
 
 .estCta {
-    padding: 10px 10px;
+    padding: 10px 5px;
 }
 
 .estCta span {
-    padding: 0px 25px 0px 0px;
+    padding: 0px 15px 0px 0px;
 }
 
 .estCta span img {
@@ -2754,7 +2754,7 @@ footer {
 .estCta b {
     padding: 5px 20px 0px 0px;
     margin: 0px 0px;
-    width: 300px;
+    width: 42%;
     font-size: 15px;
     font-weight: 500;
     color: #545454;
@@ -2766,19 +2766,20 @@ footer {
     -o-appearance: none;
     appearance: none;
     padding: 0px 20px 0px 5px;
-    width: 100px;
+    width: 115px;
     background-image: url("../images/arrow.svg");
     background-repeat: no-repeat;
     background-size: 9px;
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
-    color: #333;
+    color: #666;
     text-indent: 0px;
-    height: 32px;
-    background-position: 94% center;
+    height: 34px;
+    background-position: 92% center;
     border: 1px solid #ededed;
     border-radius: 3px;
+    margin: 1px 15px 0px 0px;
 }
 
 .estCta i {
@@ -3130,7 +3131,7 @@ footer {
 
 .PopTabTwo,
 .PopTabThree {
-    display: none;
+    display: block;
 }
 
 .review {
@@ -3572,7 +3573,7 @@ footer {
 
 .tab-content {
     padding: 20px 10px 25px;
-    display: none;
+    display: block;
 }
 
 .card_details {
@@ -3838,7 +3839,7 @@ footer {
     position: fixed;
     z-index: 100010;
     background-color: #fff;
-    display: none;
+    display: block;
     box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
     top: 5%;
     left: 0px;
@@ -3974,7 +3975,7 @@ footer {
 .sponsWrap {
     padding: 20px;
     margin: 0px 0px;
-    display: none;
+    display: block;
     min-height: 200px;
 }
 
