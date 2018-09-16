@@ -33,17 +33,30 @@ export class ResultViewComponent implements OnInit {
 
   }
 
-  openchef(menucategoryid, disId) {
-    var arr = this.all_categories[menucategoryid-1].dishes.filter(x => x.dishId == disId)
-    if(arr[0].cusines.count){
+  openchef(menucategoryid: number, disId) {
+    var arr = this.all_categories[menucategoryid - 1].dishes.filter(x => x.dishId == disId)
+    if (arr[0].cusines.length) {
       const modalRef = this.modalService.open(ChefCatPopupComponent);
       modalRef.componentInstance.cat_id = menucategoryid;
       modalRef.componentInstance.dishId = disId;
-    }else {
-      this.service.selectedDishes.push(arr[0]);
-    
+    } else {
+      // {ca  menucategoryid,arr[0]}
+      if (menucategoryid == 1) {
+        this.service.selectedDishes.best.push(arr[0]);
+      } else if (menucategoryid == 2) {
+        this.service.selectedDishes.starter.push(arr[0]);
+      } else if (menucategoryid == 3) {
+        this.service.selectedDishes.main.push(arr[0]);
+      } else if (menucategoryid == 4) {
+        this.service.selectedDishes.biryani.push(arr[0]);
+      } else if (menucategoryid == 5) {
+        this.service.selectedDishes.beverges.push(arr[0]);
+      } else if (menucategoryid == 6) {
+      }
+
+
     }
-   
+
   }
 
   openRes(menucategoryid, disId) {

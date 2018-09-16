@@ -15,40 +15,40 @@ export class MasterService {
 		{
 			dishId: 1,
 			dishName: "upma",
-			foodCategory:1,
+			foodCategory: 1,
 			ImageUrl: "../../assets/images/food.jpg",
 			description: "Caterbinge is an on-demand food catering service and your personal chef",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 0, rs_arr: [] },
+			cusines: ['hyderabadi'],
+			restricted_ser: [],
 			cost: 50
 		},
 		{
 			dishId: 2,
 			dishName: "panipuri",
-			foodCategory:1,
+			foodCategory: 1,
 			ImageUrl: "",
 			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+			cusines: ['hyderabadi'],
+			restricted_ser: ['hyderabadi'],
 			cost: 30
 		},
 		{
 			dishId: 3,
-			dishName: "paysam",foodCategory:2,
+			dishName: "paysam", foodCategory: 2,
 			ImageUrl: "",
 			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+			cusines: ['hyderabadi'],
+			restricted_ser: ['hyderabadi'],
 			cost: 100
 		},
 		{
 			dishId: 4,
-			dishName: "purnalu",foodCategory:1,
+			dishName: "purnalu", foodCategory: 1,
 			ImageUrl: "../../assets/images/food.jpg",
 			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 0, cusines_type: [] },
-			restricted_ser: { count: 0, rs_arr: [] },
-			cost:60
+			cusines: [],
+			restricted_ser: [],
+			cost: 60
 		},
 	];
 
@@ -56,30 +56,30 @@ export class MasterService {
 		{
 			dishId: 5,
 			dishName: "Biryani",
-			foodCategory:2,
+			foodCategory: 2,
 			ImageUrl: "../../assets/images/food.jpg",
 			description: "Caterbinge is an on-demand food catering service and your personal chef",
-			cusines: { count: 2, cusines_type: ['hyderabadi','rayala semma'] },
-			restricted_ser: { count: 0, rs_arr: [] },
+			cusines: ['hyderabadi', 'rayala semma'],
+			restricted_ser: [],
 			cost: 250
 		},
 		{
 			dishId: 6,
 			dishName: "chicken marag",
-			foodCategory:2,
+			foodCategory: 2,
 			ImageUrl: "",
 			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 1, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 0, rs_arr: [] },
+			cusines: ['hyderabadi'],
+			restricted_ser: [],
 			cost: 300
 		},
 		{
 			dishId: 7,
-			dishName: "prawns",foodCategory:2,
+			dishName: "prawns", foodCategory: 2,
 			ImageUrl: "",
 			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 0, cusines_type: [] },
-			restricted_ser: { count: 0, rs_arr: [] },
+			cusines: [],
+			restricted_ser: [],
 			cost: 100
 		},
 	];
@@ -88,58 +88,77 @@ export class MasterService {
 		{
 			dishId: 8,
 			dishName: "pulav",
-			foodCategory:1,
+			foodCategory: 1,
 			ImageUrl: "../../assets/images/food.jpg",
 			description: "Caterbinge is an on-demand food catering service and your personal chef",
-			cusines: { count: 0, cusines_type: [] },
-			restricted_ser: { count: 0, rs_arr: [] },
+			cusines: [],
+			restricted_ser: [],
 			cost: 50
 		},
 		{
 			dishId: 9,
 			dishName: "chciken biryani",
-			foodCategory:2,
+			foodCategory: 2,
 			ImageUrl: "",
 			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 0, rs_arr: [] },
+			cusines: ['hyderabadi'],
+			restricted_ser: [],
 			cost: 30
 		},
 		{
 			dishId: 10,
-			dishName: "paysam",foodCategory:1,
+			dishName: "paysam", foodCategory: 1,
 			ImageUrl: "",
 			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 0, cusines_type: [] },
-			restricted_ser: { count: 1, rs_arr: ['veg only'] },
+			cusines: [],
+			restricted_ser: ['veg only'],
 			cost: 100
 		},
 		{
 			dishId: 11,
-			dishName: "",foodCategory:2,
+			dishName: "", foodCategory: 2,
 			ImageUrl: "../../assets/images/food.jpg",
 			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
-			cost:500
+			cusines: ['hyderabadi'],
+			restricted_ser: ['hyderabadi'],
+			cost: 500
 		},
 	];
 
 	beverges: Dish[] = [];
 
 
-	selectedDishes:Dish[] = [];
+	selectedDishes: {
+		best: Dish[] ,
+		starter: Dish[],
+		main: Dish[] ,
+		biryani: Dish[], 
+		beverges: Dish[]
+	} = {
+		best: [] ,
+		starter: [],
+		main: [] ,
+		biryani: [], 
+		beverges: []
+	}
 
 
 	constructor() {
-		console.log(this.alldishes);
+
 		this.alldishes = [
 			{ dishTypeId: 1, dishType: "Best", dishes: this.Best },
-			{ dishTypeId: 2, dishType: "starrters", dishes: this.startersArr },
+			{ dishTypeId: 1, dishType: "starrters", dishes: this.startersArr },
 			{ dishTypeId: 3, dishType: "maincourse", dishes: this.maincourse },
 			{ dishTypeId: 4, dishType: "Biryani", dishes: [] },
 			{ dishTypeId: 5, dishType: "beverges", dishes: this.beverges }
 		];
+		console.log(this.selectedDishes)
+		this.selectedDishes.best =[];
+		this.selectedDishes.main =[];
+		this.selectedDishes.starter =[];
+		this.selectedDishes.biryani =[];
+		this.selectedDishes.beverges =[];
+
 	}
 
 }

@@ -3,8 +3,6 @@
 </div>
 
 
-
-
 <div class="resultInn clearfix" id="parentDiv" scrollSpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)">
 
   <div class="resultWrap"  id="favourite">
@@ -22,9 +20,9 @@
             <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.FoodCategory == 1 ? 'foodVeg' : 'foodNonVeg' ">
             </a>
             <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
-            <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.count"> {{ dish.cusines.count }}+ Cuisines </a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.length"> {{ dish.cusines.length }}+ Cuisines </a>
             <a href="javascript:void(0)" title="Title test" class="foodLink colRed" 
-            *ngIf="dish.restricted_ser.count" (click)="openRes(1,dish.dishId)"
+            *ngIf="dish.restricted_ser.length" (click)="openRes(1,dish.dishId)"
             >Restrict Sarv</a>
           </div>
         </div>
@@ -47,9 +45,9 @@
             <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.FoodCategory == 1 ? 'foodVeg' : 'foodNonVeg' ">
             </a>
             <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
-            <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.count"> {{ dish.cusines.count }}+ Cuisines </a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.length"> {{ dish.cusines.length }}+ Cuisines </a>
             <a href="javascript:void(0)" title="Title test" class="foodLink colRed"
-             *ngIf="dish.restricted_ser.count" (click)="openRes(2,dish.dishId)">Restrict Sarv</a>
+             *ngIf="dish.restricted_ser.length" (click)="openRes(2,dish.dishId)">Restrict Sarv</a>
           </div>
         </div>
       </li>
@@ -71,9 +69,9 @@
             <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.FoodCategory == 1 ? 'foodVeg' : 'foodNonVeg' ">
             </a>
             <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
-            <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.count"> {{ dish.cusines.count }}+ Cuisines </a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.length"> {{ dish.cusines.length }}+ Cuisines </a>
             <a href="javascript:void(0)" title="Title test" class="foodLink colRed" 
-            *ngIf="dish.restricted_ser.count" (click)="openRes(3,dish.dishId)"> Restrict Sarv</a>
+            *ngIf="dish.restricted_ser.length" (click)="openRes(3,dish.dishId)"> Restrict Sarv</a>
           </div>
         </div>
       </li>
@@ -95,9 +93,9 @@
             <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.FoodCategory == 1 ? 'foodVeg' : 'foodNonVeg' ">
             </a>
             <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
-            <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.count"> {{ dish.cusines.count }}+ Cuisines </a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.length"> {{ dish.cusines.length }}+ Cuisines </a>
             <a href="javascript:void(0)" title="Title test" class="foodLink colRed" 
-            *ngIf="dish.restricted_ser.count" (click)="openRes(5,dish.dishId)">Restrict Sarv</a>
+            *ngIf="dish.restricted_ser.length" (click)="openRes(5,dish.dishId)">Restrict Sarv</a>
           </div>
         </div>
       </li>
@@ -119,9 +117,9 @@
             <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.FoodCategory == 1 ? 'foodVeg' : 'foodNonVeg' ">
             </a>
             <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
-            <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.count"> {{ dish.cusines.count }}+ Cuisines </a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.length"> {{ dish.cusines.length }}+ Cuisines </a>
             <a href="javascript:void(0)" title="Title test" class="foodLink colRed"
-             *ngIf="dish.restricted_ser.count" (click)="openRes(4,dish.dishId)">Restrict Sarv</a>
+             *ngIf="dish.restricted_ser.length" (click)="openRes(4,dish.dishId)">Restrict Sarv</a>
           </div>
         </div>
       </li>

@@ -41,8 +41,23 @@ export class ChefCatPopupComponent implements OnInit {
   }
 
   onAdd() {
-    this.masterService.selectedDishes.push(this.dishDetails);
+    
+    if (this.cat_id == 1) {
+      this.masterService.selectedDishes.best.push(this.dishDetails);
+    } else if (this.cat_id == 2) {
+      this.masterService.selectedDishes.starter.push(this.dishDetails);
+    } else if (this.cat_id == 3) {
+      this.masterService.selectedDishes.main.push(this.dishDetails);
+    } else if (this.cat_id == 4) {
+      this.masterService.selectedDishes.biryani.push(this.dishDetails);
+    } else if (this.cat_id == 5) {
+      this.masterService.selectedDishes.beverges.push(this.dishDetails);
+    } else if (this.cat_id == 6) {
+    }
     this.activeModal.close();
   }
 
+  onchecked(evt) {
+    console.log(evt);
+  }
 }

@@ -1,28 +1,77 @@
 <div class="cartWpar">
-  <a  class="cartBtn">Proceed to Checkout</a>
-  <div class="cartOver">
-    <h3>Starters</h3>
-    <ul>
-      <li *ngFor="let item of masterObj.selectedDishes">
-        <span> {{ item.dishName}}
-          <i class="fa fa-close" (click)="remove(item.dishId)"></i>
-        </span>
-      </li>
+  <a class="cartBtn">Proceed to Checkout</a>
 
-    </ul>
+  <div class="cartOver" *ngIf="  masterObj.selectedDishes.best.length ||masterObj.selectedDishes.starter.length ||
+     masterObj.selectedDishes.main.length ||masterObj.selectedDishes.biryani.length ||
+      masterObj.selectedDishes.beverges.length ; else nocart">
+    <div *ngIf="  masterObj.selectedDishes.best.length ">
+
+
+      <h3>Best Seller</h3>
+      <ul>
+        <li *ngFor="let item of masterObj.selectedDishes.best">
+          <span> {{ item.dishName}}
+            <i class="fa fa-close" (click)="remove(1,item.dishId)"></i>
+          </span>
+        </li>
+
+      </ul>
+    </div>
+    <div *ngIf="  masterObj.selectedDishes.starter.length ">
+
+      <h3>Starters</h3>
+      <ul>
+        <li *ngFor="let item of masterObj.selectedDishes.starter">
+          <span> {{ item.dishName}}
+            <i class="fa fa-close" (click)="remove(2,item.dishId)"></i>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="  masterObj.selectedDishes.main.length ">
     <h3>Main Course</h3>
     <ul>
-      <li *ngFor="let item of masterObj.selectedDishes">
+      <li *ngFor="let item of masterObj.selectedDishes.main">
         <span> {{ item.dishName}}
-          <i class="fa fa-close" (click)="remove(item.dishId)"></i>
+          <i class="fa fa-close" (click)="remove(3,item.dishId)"></i>
         </span>
       </li>
     </ul>
   </div>
+  <div *ngIf="  masterObj.selectedDishes.biryani.length ">
+    <h3>Biryani's & Rice</h3>
+    <ul>
+      <li *ngFor="let item of masterObj.selectedDishes.biryani">
+        <span> {{ item.dishName}}
+          <i class="fa fa-close" (click)="remove(4,item.dishId)"></i>
+        </span>
+      </li>
+
+    </ul>
+  </div>
+
+  <div *ngIf="  masterObj.selectedDishes.beverges.length ">
+    <h3>Beverges</h3>
+    <ul>
+      <li *ngFor="let item of masterObj.selectedDishes.beverges">
+        <span> {{ item.dishName}}
+          <i class="fa fa-close" (click)="remove(5,item.dishId)"></i>
+        </span>
+      </li>
+
+    </ul>
+  </div>
+  </div>
+  <ng-template #nocart>
+    <div class="cartOver">
+
+      <h3>Your cat is empty</h3>
+    </div>
+  </ng-template>
 
   <div class="note" (click)="onCommentPopup()">
     <span>Comments..</span>
     <i class="fa fa-comment-o"></i>
   </div>
-  
-</div> 
+
+</div>

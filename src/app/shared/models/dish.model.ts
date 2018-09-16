@@ -7,8 +7,8 @@ export class Dish {
     public foodCategory: number;
     public ImageUrl?:string;
     public description: string;
-    public cusines : Cusines;
-    public restricted_ser:ResSer;
+    public cusines : string[];
+    public restricted_ser:string[];
     public cost: number
 
 }
