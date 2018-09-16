@@ -8,280 +8,125 @@ export class MasterService {
 
 
 	currentSection = 'home';
+	searchmenu_selection = "all";
 	alldishes: Menu[] = [];
 
 	startersArr: Dish[] = [
 		{
 			dishId: 1,
-			dishName: "panipuri",foodCategory:1,
+			dishName: "upma",
+			foodCategory:1,
 			ImageUrl: "../../assets/images/food.jpg",
-			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			description: "Caterbinge is an on-demand food catering service and your personal chef",
 			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+			restricted_ser: { count: 0, rs_arr: [] },
+			cost: 50
 		},
 		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:1,
+			dishId: 2,
+			dishName: "panipuri",
+			foodCategory:1,
 			ImageUrl: "",
 			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
 			cusines: { count: 2, cusines_type: ['hyderabadi'] },
 			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+			cost: 30
 		},
 		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:2,
+			dishId: 3,
+			dishName: "paysam",foodCategory:2,
 			ImageUrl: "",
 			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
 			cusines: { count: 2, cusines_type: ['hyderabadi'] },
 			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+			cost: 100
 		},
 		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:1,
+			dishId: 4,
+			dishName: "purnalu",foodCategory:1,
 			ImageUrl: "../../assets/images/food.jpg",
 			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+			cusines: { count: 0, cusines_type: [] },
+			restricted_ser: { count: 0, rs_arr: [] },
+			cost:60
 		},
 	];
 
-	tiffins: Dish[] = [
+	Best: Dish[] = [
 		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:1,
+			dishId: 5,
+			dishName: "Biryani",
+			foodCategory:2,
 			ImageUrl: "../../assets/images/food.jpg",
-			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+			description: "Caterbinge is an on-demand food catering service and your personal chef",
+			cusines: { count: 2, cusines_type: ['hyderabadi','rayala semma'] },
+			restricted_ser: { count: 0, rs_arr: [] },
+			cost: 250
 		},
 		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:1,
+			dishId: 6,
+			dishName: "chicken marag",
+			foodCategory:2,
 			ImageUrl: "",
 			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+			cusines: { count: 1, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 0, rs_arr: [] },
+			cost: 300
 		},
 		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:1,
+			dishId: 7,
+			dishName: "prawns",foodCategory:2,
 			ImageUrl: "",
 			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
-		},
-		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:1,
-			ImageUrl: "../../assets/images/food.jpg",
-			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+			cusines: { count: 0, cusines_type: [] },
+			restricted_ser: { count: 0, rs_arr: [] },
+			cost: 100
 		},
 	];
 
 	maincourse: Dish[] = [
 		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:2,
+			dishId: 8,
+			dishName: "pulav",
+			foodCategory:1,
+			ImageUrl: "../../assets/images/food.jpg",
+			description: "Caterbinge is an on-demand food catering service and your personal chef",
+			cusines: { count: 0, cusines_type: [] },
+			restricted_ser: { count: 0, rs_arr: [] },
+			cost: 50
+		},
+		{
+			dishId: 9,
+			dishName: "chciken biryani",
+			foodCategory:2,
+			ImageUrl: "",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 2, cusines_type: ['hyderabadi'] },
+			restricted_ser: { count: 0, rs_arr: [] },
+			cost: 30
+		},
+		{
+			dishId: 10,
+			dishName: "paysam",foodCategory:1,
+			ImageUrl: "",
+			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
+			cusines: { count: 0, cusines_type: [] },
+			restricted_ser: { count: 1, rs_arr: ['veg only'] },
+			cost: 100
+		},
+		{
+			dishId: 11,
+			dishName: "",foodCategory:2,
 			ImageUrl: "../../assets/images/food.jpg",
 			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
 			cusines: { count: 2, cusines_type: ['hyderabadi'] },
 			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
-		},
-		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:2,
-			ImageUrl: "",
-			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
-		},
-		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:1,
-			ImageUrl: "",
-			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
-		},
-		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:1,
-			ImageUrl: "../../assets/images/food.jpg",
-			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
-		},
-	];
-	desserts: Dish[] = [
-		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:1,
-			ImageUrl: "../../assets/images/food.jpg",
-			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
-		},
-		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:2,
-			ImageUrl: "",
-			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
-		},
-		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:1,
-			ImageUrl: "",
-			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
-		},
-		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:2,
-			ImageUrl: "../../assets/images/food.jpg",
-			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
+			cost:500
 		},
 	];
 
-	beverges: Dish[] = [
-		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:1,
-			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
-		},
-		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:2,
-			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
-		},
-		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:2,
-			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
-		},
-		{
-			dishId: 1,
-			dishName: "panipuri",foodCategory:1,
-			description: "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			cusines: { count: 2, cusines_type: ['hyderabadi'] },
-			restricted_ser: { count: 2, rs_arr: ['hyderabadi'] },
-		},
-	];
-	dishes: Array<any> = [
-		{
-			"Id": 1,
-			"Name": "test",
-			"Description": "Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu",
-			"ImageUrl": "../../assets/images/food.jpg",
-			"FoodCategory": 2, //veg & non veg
+	beverges: Dish[] = [];
 
-			"Cuisines": "2",
-			"Restrict": 0,
-			"MenuCategory": "2"
-		},
-		{
-			"Id": 2,
-			"Name": "dsfsdkfs",
-			"Description": "Caterbinge is an on-demand food catering service and your personal chef for party orders.",
-			"ImageUrl": "",
-			"FoodCategory": 1,
-			"Cuisines": "2",
-			"Restrict": 1,
-			"MenuCategory": "2"
-		},
-		{
-			"Id": 3,
-			"Name": "test",
-			"Description": "Caterbinge is an on-demand food catering service and your personal chef for party orders.",
-			"ImageUrl": "",
-			"FoodCategory": 1,
-			"Cuisines": "2",
-			"Restrict": "",
-			"MenuCategory": "3"
-		},
-		{
-			"Id": 4,
-			"Name": "test",
-			"Description": "Caterbinge is an on-demand food catering service and your personal chef for party orders.",
-			"ImageUrl": "",
-			"FoodCategory": 1,
-			"Cuisines": "1",
-			"Restrict": "",
-			"MenuCategory": "3"
-		},
-		{
-			"Id": 5,
-			"Name": "test",
-			"Description": "Caterbinge is an on-demand food catering service and your personal chef for party orders.",
-			"ImageUrl": " ../../assets/images/food.jpg",
-			"FoodCategory": 1,
-			"Cuisines": "6",
-			"Restrict": "",
-			"MenuCategory": "2"
-		},
-		{
-			"Id": 6,
-			"Name": "test",
-			"Description": "Caterbinge is an on-demand food catering service and your personal chef for party orders.",
-			"ImageUrl": "",
-			"FoodCategory": 1,
-			"Cuisines": "1",
-			"Restrict": "",
-			"MenuCategory": "1"
-		},
-		{
-			"Id": 7,
-			"Name": "test",
-			"Description": "Caterbinge is an on-demand food catering service and your personal chef for party orders.",
-			"ImageUrl": "",
-			"FoodCategory": 1,
-			"Cuisines": "5",
-			"Restrict": "",
-			"MenuCategory": "2"
-		},
-		{
-			"Id": 8,
-			"Name": "test",
-			"Description": "Caterbinge is an on-demand food catering service and your personal chef for party orders.",
-			"ImageUrl": "",
-			"FoodCategory": 1,
-			"Cuisines": "4",
-			"Restrict": "",
-			"MenuCategory": "3"
-		},
-		{
-			"Id": 9,
-			"Name": "test",
-			"Description": "",
-			"ImageUrl": "",
-			"FoodCategory": 1,
-			"Cuisines": "2",
-			"Restrict": "",
-			"MenuCategory": "2"
-		},
-		{
-			"Id": 10,
-			"Name": "test",
-			"Description": "",
-			"ImageUrl": "",
-			"FoodCategory": 1,
-			"Cuisines": "3",
-			"Restrict": "",
-			"MenuCategory": "1"
-		}
-	];
 
 	selectedDishes:Dish[] = [];
 
@@ -289,10 +134,10 @@ export class MasterService {
 	constructor() {
 		console.log(this.alldishes);
 		this.alldishes = [
-			{ dishTypeId: 1, dishType: "tiffins", dishes: this.tiffins },
+			{ dishTypeId: 1, dishType: "Best", dishes: this.Best },
 			{ dishTypeId: 2, dishType: "starrters", dishes: this.startersArr },
 			{ dishTypeId: 3, dishType: "maincourse", dishes: this.maincourse },
-			{ dishTypeId: 4, dishType: "desserts", dishes: this.desserts },
+			{ dishTypeId: 4, dishType: "Biryani", dishes: [] },
 			{ dishTypeId: 5, dishType: "beverges", dishes: this.beverges }
 		];
 	}

@@ -1,5 +1,5 @@
-<div class="cartWpar">
-  <a  class="cartBtn">Proceed to Checkout</a>
+<div class="cartWpar cartWparRes">
+
   <div class="cartOver">
     <h3>Starters</h3>
     <ul>
@@ -19,10 +19,8 @@
       </li>
     </ul>
   </div>
-
-  <div class="note" (click)="onCommentPopup()">
-    <span>Comments..</span>
-    <i class="fa fa-comment-o"></i>
+  <div class="foodPopBtn text-right">
+    <a href="javascript:void(0)" class="foodClose" (click)="onClose()">Cancel</a>
+    <a  class="add" (click)="onCheckout()">Check out</a>
   </div>
-  
-</div> 
+</div>

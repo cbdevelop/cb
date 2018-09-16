@@ -50,7 +50,8 @@ export class ModifySearchComponent implements OnInit {
     this.settings = { 
       singleSelection: true, 
       text:"Select",
-      enableSearchFilter: true 
+      enableSearchFilter: true ,
+      showCheckbox: false
     };
 
       this.modifiedForm = this.fb.group({

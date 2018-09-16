@@ -20,6 +20,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime'
 import { NgbModalModule, NgbPopoverModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { FilterComponent } from './filter/filter.component';
+import { MobilePreviewComponent } from './mobile-preview/mobile-preview.component';
 
 
 @NgModule({
@@ -46,7 +48,9 @@ import { NgbModalModule, NgbPopoverModule, NgbActiveModal } from '@ng-bootstrap/
     OrderPreviewComponent, 
     ChefCatPopupComponent, 
     ModifySearchComponent,
-    CommentsComponent
+    CommentsComponent,
+    FilterComponent,
+    MobilePreviewComponent
   ],
   providers:[
     MasterService,
@@ -59,7 +63,8 @@ import { NgbModalModule, NgbPopoverModule, NgbActiveModal } from '@ng-bootstrap/
     ChefCatPopupComponent,
     ModifySearchComponent,
     SigninComponent,
-    CommentsComponent
+    CommentsComponent,
+    MobilePreviewComponent
   ]
 })
 export class SearchModule { }

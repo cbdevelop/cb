@@ -13,10 +13,11 @@ export class ScrollSpyDirective {
     @HostListener("window:scroll", ["$event"])
     onScroll(event: any) {
         let currentSection: string;
-        console.log("hihi")
         const children = this._el.nativeElement.children;
         const scrollTop = event.currentTarget.scrollY;
-        const parentOffset = event.currentTarget.pageYOffset;
+        console.log(event.target,event.currentTarget)
+        const parentOffset = event.currentTarget.offsetTop;
+        
         for (let i = 0; i < children.length; i++) {
             const element = children[i];
             if (this.spiedTags.some(spiedTag => spiedTag === element.tagName)) {

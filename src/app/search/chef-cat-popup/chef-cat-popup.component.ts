@@ -19,13 +19,13 @@ export class ChefCatPopupComponent implements OnInit {
     public activeModal: NgbActiveModal,
     private masterService: MasterService
   ) {
-    console.log(this.cat_id,this.dishId)
+    
   }
 
   ngOnInit() {
 
     this.dishDetails = this.findDish();
-    console.log(this.cat_id, this.dishId,this.dishDetails);
+    
   }
 
 

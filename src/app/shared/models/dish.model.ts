@@ -8,8 +8,7 @@ export class Dish {
     public ImageUrl?:string;
     public description: string;
     public cusines : Cusines;
-    public restricted_ser:ResSer
-
-    
+    public restricted_ser:ResSer;
+    public cost: number
 
 }

@@ -74,7 +74,8 @@ export class HomeComponent implements OnInit {
     this.settings = {
       singleSelection: true,
       text: "Select",
-      enableSearchFilter: true
+      enableSearchFilter: true,
+      showCheckbox: false
     };
 
     this.homeForm = this.fb.group({
