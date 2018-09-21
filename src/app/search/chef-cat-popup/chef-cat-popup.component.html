@@ -7,9 +7,9 @@
     <p> {{ dishDetails.description }} </p>
     <div class="foodCheck">
       <h3>Cuisines..</h3>
-      <div class="checkbox" *ngFor="let cus of dishDetails.cusines.cusines_type">
+      <div class="checkbox" *ngFor="let cus of dishDetails.cusines">
         <label>
-          <input type="checkbox" class="check" />
+          <input type="checkbox" class="check" [value]="cus" (change)="onchecked($event)" />
           <i class="input-helper"></i>
           <span>{{ cus }}</span>
         </label>
@@ -18,9 +18,9 @@
     </div>
     <div class="foodCheck">
       <h3>Served Only For..</h3>
-      <div class="checkbox" *ngFor="let ser  of dishDetails.cusines.cusines_type">
+      <div class="checkbox" *ngFor="let ser  of dishDetails.restricted_ser">
         <label>
-          <input type="checkbox" class="check" />
+          <input type="checkbox" class="check" [value]="ser" (change)="onchecked($event)" />
           <i class="input-helper"></i>
           <span> {{ ser }}</span>
         </label>

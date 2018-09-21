@@ -1,11 +1,15 @@
-<div class="resultInn clearfix">
+<div class="filter filterRes">
+  <app-filter></app-filter>
+</div>
 
-  <div class="resultWrap" *ngFor="let category of all_categories" [id]="category.dishType">
-    <h2>{{ category.dishType }}...</h2>
+
+<div class="resultInn clearfix" id="parentDiv" scrollSpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)">
+
+  <div class="resultWrap"  id="favourite">
+    <h2>Best Sellers...</h2>
     <ul class="">
-      <li *ngFor="let dish of category.dishes">
-        <div class="foodCta" [ngClass]="dish.ImageUrl =='' ? '' : 'foodCtaImg'" 
-            (click)="openchef(category.dishTypeId,dish.dishId)">
+      <li *ngFor="let dish of all_categories[0].dishes">
+        <div class="foodCta" [ngClass]="dish.ImageUrl =='' ? '' : 'foodCtaImg'" (click)="openchef(1,dish.dishId)">
           <div class="foodImg" *ngIf="dish.ImageUrl !=''">
             <img [src]="dish.ImageUrl" alt="" />
           </div>
@@ -16,12 +20,123 @@
             <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.FoodCategory == 1 ? 'foodVeg' : 'foodNonVeg' ">
             </a>
             <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
-            <a href="javascript:void(0)" title="Title test" class="foodLink"> {{ dish.cusines.count }}+ Cuisines </a>
-            <a href="javascript:void(0)" title="Title test" class="foodLink colRed" *ngIf="dish.restricted_ser.count">Restrict Sarv</a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.length"> {{ dish.cusines.length }}+ Cuisines </a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink colRed" 
+            *ngIf="dish.restricted_ser.length" (click)="openRes(1,dish.dishId)"
+            >Restrict Sarv</a>
           </div>
         </div>
       </li>
     </ul>
   </div>
 
+  <div class="resultWrap"  id="starters">
+    <h2>Starters...</h2>
+    <ul class="">
+      <li *ngFor="let dish of all_categories[1].dishes">
+        <div class="foodCta" [ngClass]="dish.ImageUrl =='' ? '' : 'foodCtaImg'" (click)="openchef(2,dish.dishId)">
+          <div class="foodImg" *ngIf="dish.ImageUrl !=''">
+            <img [src]="dish.ImageUrl" alt="" />
+          </div>
+          <h3>{{ dish.dishName }}</h3>
+          <p> {{ dish.description }} </p>
+          <div class="foodBtn clearfix">
+
+            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.FoodCategory == 1 ? 'foodVeg' : 'foodNonVeg' ">
+            </a>
+            <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.length"> {{ dish.cusines.length }}+ Cuisines </a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink colRed"
+             *ngIf="dish.restricted_ser.length" (click)="openRes(2,dish.dishId)">Restrict Sarv</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="resultWrap"  id="main">
+    <h2>Main Course...</h2>
+    <ul class="">
+      <li *ngFor="let dish of all_categories[2].dishes">
+        <div class="foodCta" [ngClass]="dish.ImageUrl =='' ? '' : 'foodCtaImg'" (click)="openchef(3,dish.dishId)">
+          <div class="foodImg" *ngIf="dish.ImageUrl !=''">
+            <img [src]="dish.ImageUrl" alt="" />
+          </div>
+          <h3>{{ dish.dishName }}</h3>
+          <p> {{ dish.description }} </p>
+          <div class="foodBtn clearfix">
+
+            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.FoodCategory == 1 ? 'foodVeg' : 'foodNonVeg' ">
+            </a>
+            <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.length"> {{ dish.cusines.length }}+ Cuisines </a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink colRed" 
+            *ngIf="dish.restricted_ser.length" (click)="openRes(3,dish.dishId)"> Restrict Sarv</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="resultWrap"  id="biryani">
+    <h2>Rice & Biryani's...</h2>
+    <ul class="">
+      <li *ngFor="let dish of all_categories[3].dishes">
+        <div class="foodCta" [ngClass]="dish.ImageUrl =='' ? '' : 'foodCtaImg'" (click)="openchef(4,dish.dishId)">
+          <div class="foodImg" *ngIf="dish.ImageUrl !=''">
+            <img [src]="dish.ImageUrl" alt="" />
+          </div>
+          <h3>{{ dish.dishName }}</h3>
+          <p> {{ dish.description }} </p>
+          <div class="foodBtn clearfix">
+
+            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.FoodCategory == 1 ? 'foodVeg' : 'foodNonVeg' ">
+            </a>
+            <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.length"> {{ dish.cusines.length }}+ Cuisines </a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink colRed" 
+            *ngIf="dish.restricted_ser.length" (click)="openRes(5,dish.dishId)">Restrict Sarv</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="resultWrap"  id="dessert">
+    <h2>Desserts & Beverges...</h2>
+    <ul class="">
+      <li *ngFor="let dish of all_categories[4].dishes">
+        <div class="foodCta" [ngClass]="dish.ImageUrl =='' ? '' : 'foodCtaImg'" 
+        (click)="openchef(4,dish.dishId)">
+          <div class="foodImg" *ngIf="dish.ImageUrl !=''">
+            <img [src]="dish.ImageUrl" alt="" />
+          </div>
+          <h3>{{ dish.dishName }}</h3>
+          <p> {{ dish.description }} </p>
+          <div class="foodBtn clearfix">
+
+            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.FoodCategory == 1 ? 'foodVeg' : 'foodNonVeg' ">
+            </a>
+            <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.length"> {{ dish.cusines.length }}+ Cuisines </a>
+            <a href="javascript:void(0)" title="Title test" class="foodLink colRed"
+             *ngIf="dish.restricted_ser.length" (click)="openRes(4,dish.dishId)">Restrict Sarv</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+
 </div>
+
+
+<!--responsive cart for small devices-->
+<div class="responsiveCart">
+	<!--<div class="resPro">Have a Promo code</div>-->
+	<div class="clearfix">
+		<a href="" class="resBtn"><span>20</span>Check out</a>
+		<a href="javascript:void(0)" class="resCart" (click)="openCart()"><img src="./assets/images/cart.svg" alt=""/></a>
+		<a href="javascript:void(0)" class="resCom" (click)="openComment()"><img src="./assets/images/commenting.svg" alt=""/></a>
+	</div>
+</div>
+

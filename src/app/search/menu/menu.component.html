@@ -2,12 +2,22 @@
   <div class="chefHeadInn clearfix">
     <ul class="clearfix head">
       <div class="scrTab clearfix" id="scrTap">
-        <li class="Act">All</li>
-        <li *ngFor="let category of service.alldishes" [id]="category.dishType"><a [href]=""></a> {{category.dishType}}</li>
-        <!-- <li>Menu One</li>
-        <li>Menu One</li>
-        <li>Menu One</li>
-        <li>Menu One</li> -->
+        <li [ngClass]="service.searchmenu_selection == 'favourite' ? 'Act' : ''">
+          <a [ngx-scroll-to]="'#favourite'">Best Sellers</a>
+        </li>
+        <li [ngClass]="service.searchmenu_selection == 'starters' ? 'Act' : ''">
+          <a [ngx-scroll-to]="'#starters'">Starters</a>
+        </li>
+        <li [ngClass]="service.searchmenu_selection == 'main' ? 'Act' : ''">
+          <a [ngx-scroll-to]="'#main'">Main Course</a>
+        </li>
+        <li [ngClass]="service.searchmenu_selection == 'biryani' ? 'Act' : ''">
+          <a [ngx-scroll-to]="'#biryani'">Rice & Biryani's</a>
+        </li>
+        <li [ngClass]="service.searchmenu_selection == 'dessert' ? 'Act' : ''">
+          <a [ngx-scroll-to]="'#dessert'">Desserts & Beverges</a>
+        </li>
+
       </div>
       <div class="chefSearch">
         <input type="text" placeholder="Search">
@@ -15,46 +25,9 @@
     </ul>
     <div class="cartOut">
       <div class="filter">
-        <div class="filterTp clearfix">
-          <div class="filBtn">
-            <a href="javascript:void(0)" class="Act">By Golden Chefs</a>
-            <a href="javascript:void(0)">Non-Veg</a>
-          </div>
-          <div class="">
-            
-            <angular2-multiselect [data]="menuList"    [(ngModel)]="selectedItems"     [settings]="settings" (onSelect)="menuSelect($event)" 
-                (onDeSelect)="menuDeSelect($event)" (onSelectAll)="SelectAll($event)"
-                (onDeSelectAll)="DeSelectAll($event)">
-            </angular2-multiselect> 
-          </div>  
-        </div>
-
-        <!-- <angular2-multiselect class="loca" [data]="location" [settings]="settings"
-           (onSelect)="LocationSelect($event)" (onDeSelect)="LocationDeSelect($event)"
-          formControlName="location">
-        </angular2-multiselect> -->
-        <!-- <div class="filSeletWrap">
-          <span>Option
-            <a href="javascript:void(0)" class="fa fa-close"></a>
-          </span>
-          <span>Option
-            <a href="javascript:void(0)" class="fa fa-close"></a>
-          </span>
-          <span>Option
-            <a href="javascript:void(0)" class="fa fa-close"></a>
-          </span>
-          <span>Option
-            <a href="javascript:void(0)" class="fa fa-close"></a>
-          </span>
-        </div> -->
-        <p>
-          <a class="modSea" (click)="openModified()">Modify your search</a>
-        </p>
+        <app-filter></app-filter>
       </div>
-
-
       <app-order-preview></app-order-preview>
-
     </div>
   </div>
-</div>    
+</div>

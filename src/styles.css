@@ -17,6 +17,19 @@ em {
     font-size: 12px;
 }
 
+
+html [type=button], a {
+    cursor: pointer;
+}
+
+/* counter  */
+
+.bar {
+    transition: width 0.5s;
+    background-color:green;
+    overflow:hidden;
+  }
+
 /* Footer Additional */
 
 .seqHome {
@@ -57,6 +70,9 @@ em {
 
 /* Footer Additional */
 
+.cdk-overlay-container {
+    z-index: 10000;
+}
 /* datepicker */
 
 .owl-dt-container {
@@ -76,6 +92,43 @@ em {
     background-color: #73c89c;
 }
 
+
+/* multi selection drop dow */
+
+.selected-list .c-btn {
+    width: 100%;
+    box-shadow: 0px 0px 0px #fff !important;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+}
+
+
+.c-btn {
+    display: inline-block;
+    background: #fff;
+    border: 0px solid #ccc !important;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #12b396 !important;
+}
+
+
+.selected-list .c-list .c-token {
+
+    background: #fff !important;
+    color:  #6a6666c7 !important;
+    border-radius: 40px !important;
+
+    border: 1px solid #ddd !important;
+}
+.selected-list .c-list .c-remove svg{
+    fill: #6a6666c7 !important;
+
+    color:  #6a6666c7 !important;
+
+}
 /* Comments */
 
 .modal-dialog {

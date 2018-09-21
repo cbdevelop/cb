@@ -1,25 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-
 import { MasterService } from '../../services/master.service';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
-
-import { CommentsComponent } from '../../shared/comments/comments.component';
-
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-order-preview',
-  templateUrl: './order-preview.component.html',
-  styleUrls: ['./order-preview.component.css']
+  selector: 'app-mobile-preview',
+  templateUrl: './mobile-preview.component.html',
+  styleUrls: ['./mobile-preview.component.css']
 })
-export class OrderPreviewComponent implements OnInit {
+export class MobilePreviewComponent implements OnInit {
 
   constructor(public masterObj:MasterService,
-    private commentService: NgbModal ) { }
+    private activeModal: NgbActiveModal ) { }
 
   ngOnInit() {
   }
-  
   remove(cat_id,id){
     if (cat_id == 1) {
       this.masterObj.selectedDishes.best.splice(this.masterObj.selectedDishes.best.indexOf(id) , 1);
@@ -35,11 +29,13 @@ export class OrderPreviewComponent implements OnInit {
     }
     // this.masterObj.selectedDishes.splice(this.masterObj.selectedDishes.indexOf(id) , 1);
     console.log(this.masterObj.selectedDishes);
-  } 
-
-  // Comments Model Popup
-  onCommentPopup() {
-    this.commentService.open(CommentsComponent);    
   }
 
+  onClose() {
+    this.activeModal.dismiss();
+  }
+
+  onCheckout(){
+    
+  }
 }

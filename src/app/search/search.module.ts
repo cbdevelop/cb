@@ -14,12 +14,14 @@ import { ModifySearchComponent } from './modify-search/modify-search.component';
 import { SigninComponent } from '../shared/signin/signin.component';
 import { CommentsComponent } from '../shared/comments/comments.component';
 
-import { HeaderModule, FooterModule, SigninModule, CommentsModule } from '../shared/index';
+import { HeaderModule, FooterModule, SigninModule, DirectiveModule, CommentsModule } from '../shared/index';
 import { MasterService } from '../services/master.service';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime'
 import { NgbModalModule, NgbPopoverModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { FilterComponent } from './filter/filter.component';
+import { MobilePreviewComponent } from './mobile-preview/mobile-preview.component';
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { NgbModalModule, NgbPopoverModule, NgbActiveModal } from '@ng-bootstrap/
     AngularMultiSelectModule,
     OwlDateTimeModule,
     OwlNativeDateTimeModule,
-    SigninModule,
+    SigninModule  ,
+    DirectiveModule,
     CommentsModule    
   ],
   declarations: [
@@ -45,7 +48,10 @@ import { NgbModalModule, NgbPopoverModule, NgbActiveModal } from '@ng-bootstrap/
     ResultViewComponent,
     OrderPreviewComponent, 
     ChefCatPopupComponent, 
-    ModifySearchComponent
+    ModifySearchComponent,
+    CommentsComponent,
+    FilterComponent,
+    MobilePreviewComponent
   ],
   providers:[
     MasterService,
@@ -59,7 +65,7 @@ import { NgbModalModule, NgbPopoverModule, NgbActiveModal } from '@ng-bootstrap/
     ModifySearchComponent,
     SigninComponent,
     CommentsComponent,
-    
+    MobilePreviewComponent
   ]
 })
 export class SearchModule { }

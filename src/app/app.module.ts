@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
 /* 3rd party tools */
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ScrollToModule } from "@nicky-lenaers/ngx-scroll-to";
 
 /* components*/
@@ -14,15 +14,19 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
 import { MasterService } from './services/master.service';
-
+import { DirectiveModule } from './shared/index';
+// import { CommentsComponent } from './shared/comments/comments.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    // ScrollSpyDirective
+    // CommentsComponent
   ],
   imports: [
 
     CommonModule,
+    DirectiveModule,
     BrowserModule,
     BrowserAnimationsModule,
     NgbModule.forRoot(),
@@ -30,14 +34,17 @@ import { MasterService } from './services/master.service';
     HttpClientModule,
     AppRoutingModule,
     // SharedModule
-    
+
   ],
   providers: [
     MasterService
   ],
   bootstrap: [AppComponent],
-  schemas:[
+  schemas: [
     CUSTOM_ELEMENTS_SCHEMA
+  ],
+  exports: [
+
   ]
 })
 export class AppModule { }

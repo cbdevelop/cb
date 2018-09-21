@@ -2,8 +2,12 @@
 <div class="modifySearch" id="modified" #modify>
 
   <form [formGroup]="modifiedForm" novalidate>
-  <div class="searchOut clearfix">
-      <div class="searClose"><a (click)="onClose(id)"><i class="fa fa-close"></i></a></div>
+    <div class="searchOut clearfix">
+      <div class="searClose">
+        <a (click)="onClose(id)">
+          <i class="fa fa-close"></i>
+        </a>
+      </div>
 
       <div class="select">
         <label>Location</label>
@@ -18,7 +22,8 @@
         </angular2-multiselect>
       </div>
       <div class="atten">
-        <label>Attendees - <b>000</b> (Veg - Nonveg)</label>
+        <label>Attendees -
+          <b>000</b> (Veg - Nonveg)</label>
         <input type="text" placeholder="000" formControlName="vegAttnd" />
         <input type="text" placeholder="000" class="non" formControlName="nonVegAttnd" />
       </div>
@@ -36,8 +41,7 @@
         <input type="button" value="Search" (click)="onModified(searchObj)" class="seaButton" />
       </div>
 
-  </div>	
+    </div>
   </form>
 
 </div>
-

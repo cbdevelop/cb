@@ -1,24 +1,22 @@
-import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
-
-import { NgbPopoverConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit } from '@angular/core';
 import { ModifySearchComponent } from '../modify-search/modify-search.component';
-import { MasterService } from '../../services/master.service';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal/modal';
+import { NgbPopoverConfig } from '@ng-bootstrap/ng-bootstrap/popover/popover-config';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css'],
-  providers: [NgbPopoverConfig]
+  selector: 'app-filter',
+  templateUrl: './filter.component.html',
+  styleUrls: ['./filter.component.css']
 })
-export class MenuComponent implements OnInit {
+export class FilterComponent implements OnInit {
 
   menuList = [];
   selectedItems = [];
   settings = {};
 
-  @ViewChild('cheftop') cheftop;
+ 
 
-  constructor(  private service: MasterService,
+  constructor( 
     public modifiedService: NgbModal, 
     public config: NgbPopoverConfig ) {
 
@@ -72,15 +70,5 @@ export class MenuComponent implements OnInit {
 
   }
 
-  @HostListener("window:scroll", [])
-  onWindowScroll() {
-    const number = window.pageYOffset || window.scrollY || 0;
-
-    if (number > 100) {
-      this.cheftop.nativeElement.classList.add('chefHeadFixed');
-    } else {
-      this.cheftop.nativeElement.classList.remove('chefHeadFixed');
-    }
-  };
 
 }
