@@ -4270,7 +4270,7 @@ footer {
     background-color: #fff;
     left: 38px;
     top: 0px;
-    display: none;
+    display: block;
 }
 
 .changPas h2 {

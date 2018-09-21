@@ -4,31 +4,31 @@
     <form [formGroup]="addForm" class="form-horizontal" (ngSubmit)="onAdd()" novalidate>
     <div class="address clearfix" *ngIf="visible">
         <div class="addressInn">
-            <label>Full Name</label>
+            <label for="fullname" class="required">Full Name</label>
             <input type="text" placeholder="Full Name" class="addfild" formControlName="fullname">
         </div>
         <div class="addressInn">
-            <label>Mobile</label>
+            <label for="mobile" class="required">Mobile</label>
             <input type="text" placeholder="Mobile" class="addfild" formControlName="mobile">
         </div>   
         <div class="addressInn addressInnFull">
-            <label>Address</label>
+            <label for="address" class="required">Address</label>
             <textarea placeholder="Address" class="addfild addfildFull" formControlName="address"></textarea>
         </div>                       
         <div class="addressInn">
-            <label>Landmark</label>
+            <label for="landmark" class="required">Landmark</label>
             <input type="text" placeholder="Landmark" class="addfild" formControlName="landmark">
         </div>
         <div class="addressInn">
-            <label>City</label>
+            <label for="city" class="required">City</label>
             <input type="text" placeholder="City" class="addfild" formControlName="city">
         </div> 
         <div class="addressInn">
-            <label>State</label>
+            <label for="state" class="required">State</label>
             <input type="text" placeholder="State" class="addfild" formControlName="state">
         </div>
         <div class="addressInn">
-            <label>Pincode</label>
+            <label for="pincode" class="required">Pincode</label>
             <input type="text" placeholder="Pincode" class="addfild" formControlName="pincode">
         </div>  
         <div class="addressInn addressInnFull">

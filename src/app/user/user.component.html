@@ -44,19 +44,17 @@
   </section>
 </header>
 
+<section class="profileOut">
+    <div class="profileWrap">
+        <div class="profileTabs">
+            <a href="profile.html" class="Act" routerLink="/profile">Profile</a>
+            <a href="orders.html" routerLink="/orders">Orders</a>
+        </div>
+        
+        <router-outlet></router-outlet>
 
-<section class="resultOut">
-  <app-menu></app-menu>
-  <router-outlet></router-outlet>
-</section>
+    </div>
+</section>        
 
-<div class="stepWrap">
-    <ul>
-      <li title="Title Text Here..." class="Act"><a href="javascript:void(0)"><span>Step</span>1</a></li>
-      <li title="Title Text Here..."><a href="javascript:void(0)"><span>Step</span>2</a></li>
-      <li title="Title Text Here..."><a href="javascript:void(0)"><span>Step</span>3</a></li>
-      <li title="Title Text Here..."><a href="javascript:void(0)"><span>Step</span>4</a></li>
-    </ul>
-</div>
 
 <app-footer></app-footer>
