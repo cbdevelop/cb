@@ -49,7 +49,6 @@ import { MobilePreviewComponent } from './mobile-preview/mobile-preview.componen
     OrderPreviewComponent, 
     ChefCatPopupComponent, 
     ModifySearchComponent,
-    CommentsComponent,
     FilterComponent,
     MobilePreviewComponent
   ],
