@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CheckoutRoutingModule } from './checkout-routing.module';
 import { ChefRoutingModule } from './chef/chef-routing.module';
 
-import { CheckoutComponent } from './checkout.component'; 
+import { CheckoutComponent } from './checkout.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CommentsComponent } from '../shared/comments/comments.component';
 import { OrderCheckoutComponent } from './components/order-checkout/order-checkout.component';
@@ -19,7 +19,6 @@ import { MenuModule } from './components/menu/menu.module';
 import { ChefModule } from './chef/chef.module';
 import { EventManagerModule } from './event-manager/event-manager.module';
 
-import { MasterService } from '../services/master.service';
 
 
 @NgModule({
@@ -37,20 +36,20 @@ import { MasterService } from '../services/master.service';
     NgbModule.forRoot(),
     NgbDropdownModule
   ],
-  declarations: [ 
+  declarations: [
     CheckoutComponent
   ],
   providers: [
-    MasterService,
+
     NgbActiveModal
   ],
-  entryComponents:[
+  entryComponents: [
     CommentsComponent,
     MenuComponent,
     OrderCheckoutComponent,
     ChefProfileComponent,
     ProfileComponent,
-    AddMoreComponent 
+    AddMoreComponent
   ]
 })
 

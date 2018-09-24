@@ -70,5 +70,13 @@ export class FilterComponent implements OnInit {
 
   }
 
+  onlyGoldchef() {
+
+  }
+
+  onlyNonveg() {
+    
+  }
+
 
 }

@@ -10,7 +10,6 @@ import { EventManagerRoutingModule } from './event-manager-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms'; 
 
-import { MasterService } from '../../services/master.service';
 
 
 @NgModule({
@@ -27,7 +26,6 @@ import { MasterService } from '../../services/master.service';
     AddMoreComponent
   ],
   providers:[
-    MasterService
   ]
 })
 export class EventManagerModule { }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { MasterService } from '../../services/master.service';
 
 @Component({
   selector: 'app-comments',
@@ -9,9 +10,17 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class CommentsComponent implements OnInit {
 
-  constructor( public activeModal: NgbActiveModal ) { }
+  comment: string;
+  constructor(
+    private masterObj: MasterService,
+    public activeModal: NgbActiveModal) { 
+      
+    }
 
   ngOnInit() {
+    console.log(this.masterObj.comments);
+    if(this.masterObj.comments !="")
+       this.comment = this.masterObj.comments ;
   }
 
   onCancel() {
@@ -19,6 +28,7 @@ export class CommentsComponent implements OnInit {
   }
 
   onSave() {
+    this.masterObj.comments = this.comment;
     this.activeModal.close();
   }
 

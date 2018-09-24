@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 
 import { CommentsComponent } from '../../../shared/comments/comments.component';
 import { PromocodeComponent } from '../promocode/promocode.component';
+import { MasterService } from '../../../services/master.service';
 
 @Component({
   selector: 'app-order-checkout',
@@ -13,9 +14,13 @@ import { PromocodeComponent } from '../promocode/promocode.component';
 })
 export class OrderCheckoutComponent implements OnInit {
 
-  constructor( private commentService: NgbModal ) { }
+  constructor( 
+    private commentService: NgbModal,
+    private masterObj:MasterService
+  ) { }
 
   ngOnInit() {
+    console.log(this.masterObj.selectedDishes);
   }
 
   // Comments Model Popup
@@ -28,4 +33,7 @@ export class OrderCheckoutComponent implements OnInit {
     this.commentService.open(PromocodeComponent)
   }
 
+  onproceed() {
+    
+  }
 }

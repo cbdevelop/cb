@@ -2656,7 +2656,6 @@ footer {
     font-weight: 400;
     display: inline-block;
     padding: 0px 1px;
-    color: #ffa200;
 }
 
 .chefDet {
@@ -2701,7 +2700,7 @@ footer {
 
 .chPopOut,
 .estPopOut {
-    width: 800px;
+    max-width: 800px;
     margin: 0px auto;
     position: fixed;
     z-index: 100010;
@@ -2826,7 +2825,7 @@ footer {
     display: inline-block;
     padding: 0px 1px 0px 0px;
     font-size: 15px;
-    color: #ffa200;
+    /* color: #ffa200; */
     margin: 0px 1px;
 }
 
@@ -2972,17 +2971,17 @@ footer {
 }
 
 .notePop {
+    width: 90%;
     max-width: 400px;
     margin: 0px auto;
-    position: inherit;
+    position: fixed;
     z-index: 100010;
     background-color: #fff;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    height: 252px;
     left: 0px;
     right: 0px;
     top: 10%;
-    display: block;
+
     border-radius: 5px;
 }
 
@@ -4721,7 +4720,7 @@ footer {
 }
 
 .filterRes .filSeletWrap {
-    padding:  10px;
+    padding: 10px;
 }
 
 .filterRes p {

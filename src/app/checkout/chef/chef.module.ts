@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MasterService } from '../../services/master.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ChefRoutingModule } from './chef-routing.module';
@@ -23,7 +22,6 @@ import { ChefProfileComponent } from './chef-profile/chef-profile.component';
     ChefProfileComponent
    ],
   providers:[
-    MasterService
   ]
 })
 export class ChefModule { }

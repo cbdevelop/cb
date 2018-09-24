@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { MasterService } from '../../../services/master.service';
 
 @Component({
   selector: 'app-chef-profile',
@@ -9,9 +10,18 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ChefProfileComponent implements OnInit {
 
-  constructor( public activeModal: NgbActiveModal ) { }
+  @Input() che_index;
+  chefDetails:any = [];
+  constructor(
+    public activeModal: NgbActiveModal,
+    private masterObj: MasterService
+  ) { 
+   
+  }
 
   ngOnInit() {
+    this.chefDetails = this.masterObj.filteredchefList[this.che_index];
+    console.log(this.chefDetails.Rating);
   }
 
   onCrossClose() {
@@ -26,4 +36,7 @@ export class ChefProfileComponent implements OnInit {
     this.activeModal.close();
   }
 
+  changeChef() {
+
+  }
 }

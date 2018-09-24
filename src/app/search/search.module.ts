@@ -12,10 +12,9 @@ import { OrderPreviewComponent } from './order-preview/order-preview.component';
 import { ChefCatPopupComponent } from './chef-cat-popup/chef-cat-popup.component';
 import { ModifySearchComponent } from './modify-search/modify-search.component';
 import { SigninComponent } from '../shared/signin/signin.component';
-import { CommentsComponent } from '../shared/comments/comments.component';
+
 
 import { HeaderModule, FooterModule, SigninModule, DirectiveModule, CommentsModule } from '../shared/index';
-import { MasterService } from '../services/master.service';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime'
@@ -49,12 +48,12 @@ import { MobilePreviewComponent } from './mobile-preview/mobile-preview.componen
     OrderPreviewComponent, 
     ChefCatPopupComponent, 
     ModifySearchComponent,
-    CommentsComponent,
+    
     FilterComponent,
     MobilePreviewComponent
   ],
   providers:[
-    MasterService,
+
     NgbActiveModal
   ],
   schemas: [
@@ -64,7 +63,7 @@ import { MobilePreviewComponent } from './mobile-preview/mobile-preview.componen
     ChefCatPopupComponent,
     ModifySearchComponent,
     SigninComponent,
-    CommentsComponent,
+
     MobilePreviewComponent
   ]
 })

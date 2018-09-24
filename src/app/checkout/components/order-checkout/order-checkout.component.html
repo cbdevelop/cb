@@ -1,23 +1,76 @@
 <div class="cartOut">
-    <div class="cartWpar">
-      <a class="cartBtn clearfix cartBtnEmpty" routerLink="/payment"><b>Total 25000</b><span>Proceed to Checkout</span></a>
-      <div class="cartOver">
-      <h3>Starters</h3>
-      <ul>
-        <li><span>Add Item One</span></li>
-        <li><span>Add Item One</span></li>
-        <li><span>Add Item One</span></li>
-        <li><span>Add Item One</span></li>
-      </ul>
-      <h3>Main Course</h3>
-      <ul>
-        <li><span>Add Item One</span></li>
-        <li><span>Add Item One</span></li>
-        <li><span>Add Item One</span></li>
-        <li><span>Add Item One</span></li>
-      </ul>	
+  <div class="cartWpar">
+    <a class="cartBtn clearfix cartBtnEmpty" (click)="onproceed()">
+      <b>Total {{ masterObj.totalCost }}</b>
+      <span>Proceed to Checkout</span>
+    </a>
+
+    <div class="cartOver" *ngIf="masterObj.selectedDishes.best.length ||masterObj.selectedDishes.starter.length ||
+    masterObj.selectedDishes.main.length ||masterObj.selectedDishes.biryani.length ||
+     masterObj.selectedDishes.beverges.length ; else nocart">
+      <div *ngIf="  masterObj.selectedDishes.best.length ">
+        <h3>Best Seller</h3>
+        <ul>
+          <li *ngFor="let item of masterObj.selectedDishes.best;let index= index">
+            <span> {{ item.dishName}}
+            </span>
+          </li>
+
+        </ul>
+      </div>
+      <div *ngIf="  masterObj.selectedDishes.starter.length ">
+
+        <h3>Starters</h3>
+        <ul>
+          <li *ngFor="let item of masterObj.selectedDishes.starter;let index= index">
+            <span> {{ item.dishName}}
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div *ngIf="masterObj.selectedDishes.main.length ">
+        <h3>Main Course</h3>
+        <ul>
+          <li *ngFor="let item of masterObj.selectedDishes.main;let index= index">
+            <span> {{ item.dishName}}
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div *ngIf="masterObj.selectedDishes.biryani.length ">
+        <h3>Biryani's & Rice</h3>
+        <ul>
+          <li *ngFor="let item of masterObj.selectedDishes.biryani;let index= index">
+            <span> {{ item.dishName}}
+            </span>
+          </li>
+
+        </ul>
+      </div>
+
+      <div *ngIf="masterObj.selectedDishes.beverges.length ">
+        <h3>Beverges</h3>
+        <ul>
+          <li *ngFor="let item of masterObj.selectedDishes.beverges;let index= index">
+            <span> {{ item.dishName}}
+            </span>
+          </li>
+
+        </ul>
+      </div>
     </div>
-      <p class="promoText" (click)="openPromo()">Have a Promocode</p>				
-      <div class="note noteAct" (click)="onCommentPopup()"><span>Lorem Ipsum is simply dummy text of the printing</span><i class="fa fa-comment-o"></i></div>
-    </div>                  
+
+    <ng-template #nocart>
+      <div class="cartOver">
+      
+        <h3>Your cart is empty</h3>
+      </div>
+    </ng-template>
+
+    <p class="promoText" (click)="openPromo()">Have a Promocode</p>
+    <div class="note noteAct" (click)="onCommentPopup()">
+      <span></span>
+      <i class="fa fa-comment-o"></i>
+    </div>
+  </div>
 </div>

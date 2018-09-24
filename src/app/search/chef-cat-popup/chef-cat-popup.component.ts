@@ -14,6 +14,9 @@ export class ChefCatPopupComponent implements OnInit {
   @Input() cat_id;
   @Input() dishId;
 
+  res=[];
+  cus=[];
+
   dishDetails: Dish;
   constructor(
     public activeModal: NgbActiveModal,
@@ -31,8 +34,6 @@ export class ChefCatPopupComponent implements OnInit {
 
   findDish() {
     var arr:Menu[] = this.masterService.alldishes.filter(x => x.dishTypeId == this.cat_id);
-    console.log(arr);
-    
     return arr[0].dishes.filter(x => x.dishId == this.dishId)[0]
   }
 
@@ -41,7 +42,10 @@ export class ChefCatPopupComponent implements OnInit {
   }
 
   onAdd() {
-    
+    console.log(this.masterService.totalCost);
+    this.dishDetails.cusines = this.cus;
+    this.dishDetails.restricted_ser = this.res;
+    this.masterService.totalCost += this.dishDetails.cost;
     if (this.cat_id == 1) {
       this.masterService.selectedDishes.best.push(this.dishDetails);
     } else if (this.cat_id == 2) {
@@ -57,7 +61,23 @@ export class ChefCatPopupComponent implements OnInit {
     this.activeModal.close();
   }
 
-  onchecked(evt) {
+  onReschecked(evt) {
     console.log(evt);
+    if(evt.target.checked){
+      this.res.push(evt.target.value);
+    }else {
+    this.res.splice(this.res.indexOf(evt.target.value),1);
+    }
+  }
+
+  onCusChecked(evt) {
+    console.log(evt);
+    if(evt.target.checked){
+      this.cus.push(evt.target.value);
+    }else {
+      this.cus.splice(this.cus.indexOf(evt.target.value),1);
+     
+    }
+    console.log(this.cus);
   }
 }

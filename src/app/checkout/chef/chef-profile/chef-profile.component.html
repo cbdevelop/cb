@@ -1,179 +1,196 @@
 <div class="chPopOut">
-  <div class="chPop clearfix"><a (click)="onCrossClose()">
-  <span class="fa fa-close popClose"></span></a>
-      <div class="chPopImg">
-          <img src="../../../../assets/images/chef-de.png" alt="" />
-          <h3>Chef Name Here</h3>
-          <span>
-            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-          </span>
-    <a href="javascript:void(0)" class="addBtn">Change</a>
-    <ul class="ceri clearfix">
-      <li><img src="../../../../assets/images/whycho-1.png" alt="">CB Certified</li>
-      <li><img src="../../../../assets/images/whycho-1.png" alt="">CB Certified</li>
-    </ul>
-    <div class="changeMask"></div>
-      </div>
-      <div class="chPopText">
+  <div class="chPop clearfix">
+    <a (click)="onCrossClose()">
+      <span class="fa fa-close popClose"></span>
+    </a>
+    <div class="chPopImg">
+      <img src="../../../../assets/images/chef-de.png" alt="" />
+      <h3>{{ chefDetails.Name }}</h3>
+      <span>
+          <i class="fa fa-star" [ngClass]="chefDetails.Rating >= 1 ? 'review': ''"></i>
+          <i class="fa fa-star" [ngClass]="chefDetails.Rating >= 2 ? 'review': ''"></i>
+          <i class="fa fa-star" [ngClass]="chefDetails.Rating >= 3 ? 'review': ''"></i>
+          <i class="fa fa-star" [ngClass]="chefDetails.Rating >= 4 ? 'review': ''"></i>
+          <i class="fa fa-star" [ngClass]="chefDetails.Rating >= 5 ? 'review': ''"></i>
+        <!-- <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> -->
+      </span>
+      <a href="javascript:void(0)" class="addBtn" (click)="changeChef()" >Change</a>
+      <ul class="ceri clearfix">
+        <li>
+          <img src="../../../../assets/images/whycho-1.png" alt="">CB Certified</li>
+        <li>
+          <img src="../../../../assets/images/whycho-1.png" alt="">CB Certified</li>
+      </ul>
+      <div class="changeMask"></div>
+    </div>
+    <div class="chPopText">
 
-          <!-- <div class="chPopTab">
+      <!-- <div class="chPopTab">
               <a href="javascript:void(0)" class="Act" id="tab1">Profile</a>
               <a href="javascript:void(0)" id="tab2">Reviews</a>
           </div> -->
 
-          <div class="chPopWrap">
+      <div class="chPopWrap">
 
-              <ngb-tabset>
-                  <ngb-tab title="Profile">
-                    <ng-template ngbTabContent>
-                        <div class="PopTabOne">
-                            <div class="clearfix">
-                              <span>Full Name</span>: <p>Vannam Mahesh</p>
-                            </div>
-                            <div class="clearfix">
-                              <span>Cooking Exp</span>: <p>4 Years</p>
-                            </div>					
-                            <div class="clearfix">
-                              <span>Total events served</span>: <p>152</p>
-                            </div>
-                            <div class="clearfix">
-                              <span>Locality</span>: <p>Locality text here..</p>
-                            </div>
-                            <div class="clearfix">
-                              <span>Proficiency</span>: <p>Proficiency</p>
-                            </div>
-                            <div class="clearfix">
-                                <span>Cook for you</span>: <p>
-                                  <i>Menu 1,</i> <i>Menu 1,</i> <i>Menu 1,</i> <i>Menu 1,</i> <i>Menu 1</i>
-                                </p>
-                              </div>					
-                            <div class="clearfix">
-                              <span>About Chef:</span><br>
-                            <b>4 YearsLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                              </b>
-                            </div>																				
-                        </div>
-                    </ng-template>
-                  </ngb-tab>    
-      
-            <!-- Review Popup -->
-            <ngb-tab title="Reviews">
-                <ng-template ngbTabContent>
-                    <div class="PopTabTwo">
-                        <div class="review">
-                          <h2>Heading Text Here...</h2>
-                          <div class="ratChef">
-                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                          </div>
-                          <p>
-                            YearsLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            YearsLorem Ipsum is simply dummy text of the printing and 
-                          </p>					
-                        </div>
-                        <div class="review">
-                          <h2>Heading Text Here...</h2>
-                          <div class="ratChef">
-                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                          </div>
-                          <p>
-                            YearsLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                          </p>					
-                        </div>
-                        <div class="review">
-                          <h2>Heading Text Here...</h2>
-                          <div class="ratChef">
-                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                          </div>
-                          <p>
-                            YearsLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            YearsLorem Ipsum is simply dummy text of the printing and 
-                          </p>					
-                        </div>
-                        <div class="review">
-                          <h2>Heading Text Here...</h2>
-                          <div class="ratChef">
-                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                          </div>
-                          <p>
-                            YearsLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
-                          </p>					
-                        </div>															
-                    </div>
-                 </ng-template> 
-             </ngb-tab> 
-            </ngb-tabset>
-          
-          </div>
+        <ngb-tabset>
+          <ngb-tab title="Profile">
+            <ng-template ngbTabContent>
+              <div class="PopTabOne">
+                <div class="clearfix">
+                  <span>Full Name</span>:
+                  <p>{{ chefDetails.Name  }}</p>
+                </div>
+                <div class="clearfix">
+                  <span>Cooking Exp</span>:
+                  <p>{{ chefDetails.Experience  }} Years</p>
+                </div>
+                <div class="clearfix">
+                  <span>Total events served</span>:
+                  <p>{{ chefDetails.total_event_served }}</p>
+                </div>
+                <div class="clearfix">
+                  <span>Locality</span>:
+                  <p>{{ chefDetails.From }}</p>
+                </div>
+                <div class="clearfix">
+                  <span>Proficiency</span>:
+                  <p>{{ chefDetails.Proficiency }}</p>
+                </div>
+                <div class="clearfix">
+                  <span>Cook for you</span>:
+                  <p>
+                      <i *ngFor="let menu of chefDetails.menu">{{ menu }},</i>
+                   
+                  </p>
+                </div>
+                <div class="clearfix">
+                  <span>About Chef:</span>
+                  <br>
+                  <b>
+                      {{ chefDetails.About }}
+                  </b>
+                </div>
+              </div>
+            </ng-template>
+          </ngb-tab>
 
-          <!-- Change Popup -->
-          <div class="changeChPop">
-            <table>
-              <tr>
-                <th></th>
-                <th>Chef name</th>
-                <th>Rating</th>
-                <th></th>
-              </tr>
-              <tr>
-                <td>
-                  <input id="radio11" name="radio" checked="" type="radio">
-                    <label for="radio11" class="radio"></label>
-                </td>
-                <td>Chef Name Here..</td>
-                <td>
+          <!-- Review Popup -->
+          <ngb-tab title="Reviews">
+            <ng-template ngbTabContent>
+              <div class="PopTabTwo">
+                <div class="review" *ngFor="let rev of chefDetails.Reviews">
+                  <h2>{{ rev.name }}</h2>
                   <div class="ratChef">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                  </div>							
-                </td>
-                <td><i class="fa fa-info" title="info text will show here..."></i></td>
-              </tr>
-              <tr>
-                <td>
-                  <input id="radio5" name="radio" checked="" type="radio">
-                    <label for="radio5" class="radio"></label>
-                </td>
-                <td>Chef Name Here..</td>
-                <td>
-                  <div class="ratChef">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                  </div>							
-                </td>
-                <td><i class="fa fa-info" title="info text will show here..."></i></td>
-              </tr>
-              <tr>
-                <td>
-                  <input id="radio2" name="radio" checked="" type="radio">
-                    <label for="radio2" class="radio"></label>
-                </td>
-                <td>Chef Name Here..</td>
-                <td>
-                  <div class="ratChef">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                  </div>							
-                </td>
-                <td><i class="fa fa-info" title="info text will show here..."></i></td>
-              </tr>
-              <tr>
-                <td>
-                  <input id="radio1" name="radio" checked="" type="radio">
-                    <label for="radio1" class="radio"></label>
-                </td>
-                <td>Chef Name Here..</td>
-                <td>
-                  <div class="ratChef">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                  </div>							
-                </td>
-                <td><i class="fa fa-info" title="info text will show here..."></i></td>
-              </tr>															
-            </table>
-            <div class="foodPopBtn text-right">
-              <a href="javascript:void(0)" class="Can" (click)="onClose()">Cancel</a>		
-              <a href="javascript:void(0)" class="add Can" (click)="onChange()">Change</a>
-            </div>
-          </div>
+                    <i class="fa fa-star" [ngClass]="rev.rating >= 1 ? 'review': ''"></i>
+                    <i class="fa fa-star" [ngClass]="rev.rating >= 2 ? 'review': ''"></i>
+                    <i class="fa fa-star" [ngClass]="rev.rating >= 3 ? 'review': ''"></i>
+                    <i class="fa fa-star" [ngClass]="rev.rating >= 4 ? 'review': ''"></i>
+                    <i class="fa fa-star" [ngClass]="rev.rating >= 5 ? 'review': ''"></i>
+                  </div>
+                  <p>
+                      {{ rev.text }}
+                  </p>
+                </div>
+                
+              </div>
+            </ng-template>
+          </ngb-tab>
+        </ngb-tabset>
 
       </div>
+
+      <!-- Change Popup -->
+      <div class="changeChPop">
+        <table>
+          <tr>
+            <th></th>
+            <th>Chef name</th>
+            <th>Rating</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>
+              <input id="radio11" name="radio" checked="" type="radio">
+              <label for="radio11" class="radio"></label>
+            </td>
+            <td>Chef Name Here..</td>
+            <td>
+              <div class="ratChef">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </td>
+            <td>
+              <i class="fa fa-info" title="info text will show here..."></i>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input id="radio5" name="radio" checked="" type="radio">
+              <label for="radio5" class="radio"></label>
+            </td>
+            <td>Chef Name Here..</td>
+            <td>
+              <div class="ratChef">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </td>
+            <td>
+              <i class="fa fa-info" title="info text will show here..."></i>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input id="radio2" name="radio" checked="" type="radio">
+              <label for="radio2" class="radio"></label>
+            </td>
+            <td>Chef Name Here..</td>
+            <td>
+              <div class="ratChef">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </td>
+            <td>
+              <i class="fa fa-info" title="info text will show here..."></i>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input id="radio1" name="radio" checked="" type="radio">
+              <label for="radio1" class="radio"></label>
+            </td>
+            <td>Chef Name Here..</td>
+            <td>
+              <div class="ratChef">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </td>
+            <td>
+              <i class="fa fa-info" title="info text will show here..."></i>
+            </td>
+          </tr>
+        </table>
+        <div class="foodPopBtn text-right">
+          <a href="javascript:void(0)" class="Can" (click)="onClose()">Cancel</a>
+          <a href="javascript:void(0)" class="add Can" (click)="onChange()">Change</a>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>

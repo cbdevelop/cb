@@ -22,6 +22,9 @@ html [type=button], a {
     cursor: pointer;
 }
 
+.review{
+    color: #ffa200;
+}
 /* counter  */
 
 .bar {

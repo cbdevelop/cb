@@ -5,6 +5,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { CommentsComponent } from '../../shared/comments/comments.component';
+import { Router, ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -14,32 +15,65 @@ import { CommentsComponent } from '../../shared/comments/comments.component';
 })
 export class OrderPreviewComponent implements OnInit {
 
-  constructor(public masterObj:MasterService,
-    private commentService: NgbModal ) { }
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    public masterObj: MasterService,
+    private commentService: NgbModal) { }
 
   ngOnInit() {
   }
-  
-  remove(cat_id,id){
+
+  remove(cat_id, index) {
     if (cat_id == 1) {
-      this.masterObj.selectedDishes.best.splice(this.masterObj.selectedDishes.best.indexOf(id) , 1);
+      this.masterObj.totalCost -= this.masterObj.selectedDishes.best[index].cost;
+      this.masterObj.selectedDishes.best.splice(index, 1);
     } else if (cat_id == 2) {
-      this.masterObj.selectedDishes.starter.splice(this.masterObj.selectedDishes.best.indexOf(id) , 1);
+      this.masterObj.totalCost -= this.masterObj.selectedDishes.starter[index].cost;
+      this.masterObj.selectedDishes.starter.splice(index, 1);
     } else if (cat_id == 3) {
-      this.masterObj.selectedDishes.main.splice(this.masterObj.selectedDishes.best.indexOf(id) , 1);
+      this.masterObj.totalCost -= this.masterObj.selectedDishes.main[index].cost;
+      this.masterObj.selectedDishes.main.splice(index, 1);
     } else if (cat_id == 4) {
-      this.masterObj.selectedDishes.biryani.splice(this.masterObj.selectedDishes.best.indexOf(id) , 1);
+      this.masterObj.totalCost -= this.masterObj.selectedDishes.biryani[index].cost;
+      this.masterObj.selectedDishes.biryani.splice(index, 1);
     } else if (cat_id == 5) {
-      this.masterObj.selectedDishes.beverges.splice(this.masterObj.selectedDishes.best.indexOf(id) , 1);
+      this.masterObj.totalCost -= this.masterObj.selectedDishes.beverges[index].cost;
+      this.masterObj.selectedDishes.beverges.splice(index, 1);
     } else if (cat_id == 6) {
     }
-    // this.masterObj.selectedDishes.splice(this.masterObj.selectedDishes.indexOf(id) , 1);
-    console.log(this.masterObj.selectedDishes);
-  } 
 
+  }
+
+  getcus(cusines,restricted_ser) {
+    var sub="";
+    if(cusines.length){
+      sub = cusines[0];
+      for(var i=1;i<cusines.length;i++){
+        sub = sub+"," + cusines[i];
+      }
+    }
+
+    if(restricted_ser.length){
+      sub = sub=="" ? restricted_ser[0] : ","+restricted_ser[0];
+      for(var i=1;i<cusines.length;i++){
+        sub = sub+"," + restricted_ser[i];
+      }
+    }
+
+    return sub == "" ? "" : "("+ sub +")";
+  }
   // Comments Model Popup
   onCommentPopup() {
-    this.commentService.open(CommentsComponent);    
+    this.commentService.open(CommentsComponent);
+  }
+
+  onCheckout() {
+    if (this.masterObj.selectedDishes.best.length || this.masterObj.selectedDishes.starter.length ||
+      this.masterObj.selectedDishes.main.length || this.masterObj.selectedDishes.biryani.length ||
+      this.masterObj.selectedDishes.beverges.length) {
+      this.router.navigate(['../chef'], { relativeTo: this.route });
+    }
   }
 
 }

@@ -1,220 +1,1074 @@
-@media screen and (max-width: 1210px){
-	.searchOut { width: auto; margin: 0px 15px;}
-	.howItWrap { width: auto; margin: 0px 10px;}
-	.countWrap { width: auto; margin: 0px 10px;}
-	.patWrap { width: auto; margin: 0px 10px;}
-	.footInn { width: auto; margin: 0px 10px;}
-	.footLogo img {width: 210px;}
-	.footMenu {padding: 13px 0px 0px 20px;}
-	.social a {margin: 0px 8px;}
-	.hoAbText p { width:100%;}
-	.atten { width: 24%;}
-	.addTheme, .addTheme.addThemeEvevt  { background-size: cover;}
-	.addThemeText { width: auto; margin: 0px 15px;}
-	.addContInn { width: auto; margin: 0px 15px;}
-	.termsWrap { width: auto; margin: 0px 15px;}
-	.blogWrap { width: auto; margin: 0px 15px;}
-	.contThemeText, .aboutWrap { width: auto; margin: 0px 15px;}	
-	.overScroll { width:100%; overflow-x: auto;}
-	.overScrollInn { width:1200px; overflow-x: auto;}
-	.overScrollInnTwo { width:1200px; overflow-x: auto;}
-	.cityPopInn { width:100%;}
-	.seqHome ul { width: auto; margin: 0px 15px;}
-	.chefHeadInn  { width: auto; margin: 0px 10px;}
-	.resultInn { width: auto; margin: 0px 10px;}
-	.filBtn a { padding:5px 12px;}
-	.scrTab { width: 100%;}
-		
-	}
-	
-	@media screen and (max-width: 1020px){
-		nav {
-			display: none; position: fixed; z-index: 100010; width: 85%; top: 10%; background-color: #fff; margin: 0px auto;
-			left: 0px; right: 0px;
-		}
-		nav ul { margin: 0px 0px; padding: 0px 0px 1px 0px;}
-		nav ul li { list-style-type:none; float:left; width: 100%; text-align: center; padding: 1px 0px 0px 0px;}
-		nav ul li a {
-			display:block; padding: 20px 20px 0px; margin: 0px 2px; color: #333; font-size: 15px; height: 60px; font-weight: 400;
-			border-bottom: none;
-		}
-		nav ul li a:hover, nav ul li a.Act {color:#fff;  border-bottom:none; background-color: #16af92;}	
-		.siIcon {display: block; border: none; font-size: 23px; border-radius: 0px;}
-		.menuIcon {display: block; border: none; font-size: 25px; border-radius: 0px;}
-		.scrollAct .siIcon {border: none; color: #545454;}
-		.scrollAct .menuIcon {border: none; color: #545454;}
-		.siIcon:hover, .menuIcon:hover  {border:none;}
-		.themeWrap {background-size: cover; min-height: 550px;}
-		.patWrapOut {background-size: cover;}
-		.themeText {width:90%;}
-		.homeHeading {width:90%;}
-		.howItCta {width: 46%; margin: 2%;}
-		.countCta  {width: 46%; margin: 2%; text-align: center;}
-		.countCta span {float: none;}
-		.countCta p { float: none; padding: 15px 0px 0px; width: 100%;}
-		.whyChoCta { padding:10px 0px;}
-		.footLogo { display: block; width: 100%; text-align: center;}
-		.footMenu { padding: 13px 0px 0px; width: 100%; text-align: center;}
-		.social { padding: 13px 0px 0px; width: 100%; text-align: center;}
-		.themeText {padding: 30% 0px 0px;}
-		.chefIcon {top: 45px; left: 15px; width: 80px; height: 80px; line-height: 73px;}
-		.chefIcon img {width: 60px !important;}
-		.patCta h4 {padding: 20px 15px 0px 105px;}
-		.patCta p { padding: 15px 20px 10px 105px;}
-		.resMes {display: block; font-size: 13px; padding: 0px 20px 25px 105px; font-weight: 400; color: #999;}
-		.signPop{ width: 450px; height: 90%; overflow-y: auto;}
-		.signImg { display: none;}
-		.signPopInn { width:100%;}
-		.signIn {padding: 40px 40px 40px;}
-		.forgotPass {padding: 140px 40px 40px;}
-		.addThemeText h2 { text-align: center; padding: 190px 0px 0px;}
-		.addThemeText p { text-align: center;}
-		.addForm { width: 90%; float: none; margin: 0px auto;}
-		.themIcon { width: 100px; height: 100px; bottom: 65px; line-height: 90px;}
-		.addCont { width: 90%; margin: 0px auto; float: none; position: relative; top: -50px;}
-		.recBlog { width: 100%; margin: 0px 0px 20px 0px;}
-		.recBlog h3 {background:url("../images/arrow.svg") no-repeat 94% center; background-size:15px; cursor: pointer;}
-		.recBlog ul { display: none;}
-		.blogDetails { width: 100%;}
-		.contDetails { float: none; width: 90%; margin: 20px 0px 0px 0px; padding: 10px 45px;}
-		.modifySearch { width: 60%; height: 90%; bottom: auto; margin: 0px auto; position: fixed; top: 5%; z-index: 100010;}
-		.modifySearch .searchOut { display: block; box-shadow: 0px 0px 0px rgba(0,0,0,0);}
-		.searchOut { width: 60%; height: 90%; bottom: auto; margin: 0px auto; position: fixed; top: 5%; z-index: 100010; display: none;
-		padding: 20px 0px 0px 0px; border-radius: 5px;}
-		.searClose { display:block;}
-		.seaBtn { width: 100%;}
-		.seaButton { height: 60px; position: absolute; bottom: 0px;}
-		.select { width: 96%; padding: 15px 0px 15px 20px;}
-		.select select { width:98%;}
-		.select.time, .select.date { width: 48%;}
-		.atten { width: 100%; padding: 0px 0px 5px 20px;}
-		.atten input { width: 48%;}
-		.resSearch { display: block;}
-		.seqHome ul { text-align: center;}
-		.seqHome ul li {float: none; width: auto; display: inline-block;}
-		.seqHome ul li p {display:none;}
-		.cartOut, .resFootHide { display:none;}
-		.chefHeadInn .head { width:99%;}
-		.resultWrap { width:100%;}
-		.resultOut {padding: 72px 0px 70px;}
-		.responsiveCart { display: block;}
-		
-		.filterRes { display: block;}
-		.MorePop {width: 95%; right: 2.5%; top: 112px;}
-		.stepWrap {right: 0px; width: 42px; display: none;}
-		.stepWrap ul li {width: 40px; height: 40px; font-size: 14px;}
-		.stepWrap ul li span {padding: 6px 0px 1px 0px;}
-		
-		
-	
-	/*  scrollbar */
-	::-webkit-scrollbar-track{
-		background-color: transparent !important;
-	}
-	::-webkit-scrollbar{
-		width: auto!important; height: auto !important; background-color: transparent !important;
-	}
-	::-webkit-scrollbar-thumb{
-		background-color: transparent !important; border-radius:none !important;
-	}
-	/*  scrollbar */	
-	
-	}
-	
-	@media screen and (max-width: 760px){
-		.howItCta {width: 96%; margin: 3% 2%; height: auto; padding: 0px 0px 10px 0px;}
-		.howItCta:hover .howItCtaInn { margin-top: 0px;}
-		.whyChoCta {width: 96%; margin: 3% 2%;}
-		.homeHeading h3 {padding: 0px 10px; font-size: 24px;}
-		.patWrap h3 {padding: 0px 10px 25px; font-size: 24px;}
-		.patCta {width: 96%; margin: 3% 2%;}
-		header { height: 60px;}
-		.logo { margin:5px 0px 0px 0px;}
-		.logoImg, .scrollAct .logoImg { background-position: left center; background-size: 78px; }
-		.signWrap { padding:12px 0px 0px 0px;}
-		.addThemeText h2 { font-size: 33px; padding: 160px 0px 0px;}
-		.addForm { width: 100%; float: none; margin: 0px auto; padding: 30px 20px;}
-		.addCont { width: 100%; padding: 10px 5px;}
-		.addForm label { width: 100%;}
-		.addInn { width: 100%;}
-		.ContWrapOut {padding: 20px 0px 30px;}
-		.contDetails { width: 100%; padding: 10px 5px;}
-		.contTheme { height: 300px;}
-		.contThemeText h2 { font-size: 28px; padding: 180px 0px 0px;}
-		.contThemeText p {font-size: 17px;}
-		.contThemeText { height:auto;}
-		.aboutTheme {height: 300px;}
-		.aboutWrap { padding:20px 0px;}
-		.aboutLeft, .aboutRight { width: 100%; text-align: center;}
-		.aboutLeft img { width: 100%;}
-		.overScrollInnTwo { width:900px; overflow-x: auto;}
-		.blogCta {width: 276px; margin: 1%;}
-		.blogCta span {height: 165px;}
-		.hoAbImg { width:100%;}
-		.hoAbText { width:100%; padding: 30px 20px 40px; text-align: center;}
-		.hoAbText p { padding: 0px 0px 20px 0px;}
-		.hoAbImg h2 { display: block;}
-		.hoAbText h3 { display: none;}
-		.resultWrap ul li { flex: 0 1 100%; margin-bottom: 10px; padding: 16px 12px;}
-		.chefHead { height: 60px; box-shadow: 0px 3px 3px rgba(0,0,0,0.07);}
-		.chefHeadInn { height: 60px;}
-		.scrTab { height: 68px;}
-		.chefHeadInn .head li { height: 60px;padding: 20px 12px;}
-		.chefHeadInn .head {padding: 0px 50px 0px 0px;}
-		.chefSearch { height: 59px; width: 55px; text-align: right;}
-		.chefSearch input {margin: 12px 0px 0px 10%; width: 30px; padding: 0px 25px 0px 15px; background-position: center;}
-		.chefSearchFull { height: 60px; width: 100%;}
-		.chefSearchFull input{ background-image:url("../images/search.png"); background-size:15px; background-position: 98% center; margin: 12px 0px 0px 0px; 
-		width: 100%; }
-		.resultWrap h2 {padding: 4px 0px 12px 0px; font-size: 15px;}
-		
-		.backtotop {
-			width: 30px; right: 5px; bottom:40px;
-		}
-		
-	}
-	
-	@media screen and (max-width: 590px){
-		.footMenu a {display: block; margin: 2px 0px;}
-		.themeText { padding: 44% 0px 0px 0px;}
-		.themeText h1 { font-size: 28px;}
-		.themeText h2 { font-size: 16px; line-height: 24px;}
-		.countWrap {padding: 45px 0px 30px;}
-		.countCta {margin: 3% 2% 5%;}
-		.signPop{ width: 92%; top: 5%;}
-		.signIn {padding: 40px 25px 40px;}
-		.forgotPass {padding: 140px 25px 40px;}	
-		.addThemeText p { font-size: 17px;}
-		.termsWrap { width: 100%; margin: 0px 0px;}
-		.termsWrapCta { padding: 15px 15px 20px;}
-		.termOut { padding: 55px 0px 0px 0px;}
-		.recBlog { width: 100%; margin: 0px 0px 15px 0px;}
-		.blogOut {padding: 70px 0px 20px 0px;}
-		.blogWrap { width: auto; margin: 0px 10px;}
-		.howItWrap { padding: 80px 0px 30px;}
-		.patWrap {padding: 80px 0px 30px;}
-		.padMd { padding: 40px 0px 20px !important; margin: 0px 5px !important;}
-		.termsWrap .homeHeading {margin: 30px auto 10px;}
-		.patCta { min-height: inherit;}
-		.patCta p {padding: 20px 20px 10px 25px;}
-		.resMes {padding: 10px 20px 25px 25px;}
-		.themeWrap { height: 400px; min-height: 400px;}
-		.searchOut { width: 90%;}
-		.modifySearch { width: 90%;}
-		.cityPopInn { padding:30px 5px;}
-		.cityPopInn h3 { font-size: 14px;}
-		.cityPopInn .ui-widget input { width:175px;}
-		.cityPopInn ul {padding: 40px 0px 0px;}
-		.cityPopInn ul li a { width: 78px; height: 78px; padding: 12px 0px 0px 0px; font-size: 13px;}
-		.cityPopInn ul li a img { width:44px;}
-		.cityPopInn ul li a.Act {box-shadow: 0px 1px 4px rgba(0,0,0,0.2);}
-		.seqHome ul{padding: 15px 0px 0px; margin: 0px 5px;}
-		.seqHome ul li img { padding: 0px 3px; width: 46px;}
-		.copyRight { padding: 10px 0px 0px 0px;}
-		.filBtn a { padding: 5px 20px;}
-		.foodPopInn { padding: 12px 12px; max-height: 420px;}
-		.foodPopInn h2 {padding: 5px 0px 5px; font-size: 16px;}
-	}
-	@media screen and (max-width: 350px){
-		.fbGo i { padding:0px;}
-	}
+@media screen and (max-width: 1210px) {
+    .searchOut {
+        width: auto;
+        margin: 0px 15px;
+    }
+    .howItWrap {
+        width: auto;
+        margin: 0px 10px;
+    }
+    .countWrap {
+        width: auto;
+        margin: 0px 10px;
+    }
+    .patWrap {
+        width: auto;
+        margin: 0px 10px;
+    }
+    .footInn {
+        width: auto;
+        margin: 0px 10px;
+    }
+    .footLogo img {
+        width: 210px;
+    }
+    .footMenu {
+        padding: 13px 0px 0px 20px;
+    }
+    .social a {
+        margin: 0px 8px;
+    }
+    .hoAbText p {
+        width: 100%;
+    }
+    .atten {
+        width: 24%;
+    }
+    .addTheme,
+    .addTheme.addThemeEvevt {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment: inherit !important;
+    }
+    .addThemeText {
+        width: auto;
+        margin: 0px 15px;
+    }
+    .addContInn {
+        width: auto;
+        margin: 0px 15px;
+    }
+    .termsWrap {
+        width: auto;
+        margin: 0px 15px;
+    }
+    .blogWrap {
+        width: auto;
+        margin: 0px 15px;
+    }
+    .contThemeText,
+    .aboutWrap {
+        width: auto;
+        margin: 0px 15px;
+    }
+    .overScroll {
+        width: 100%;
+        overflow-x: auto;
+    }
+    .overScrollInn {
+        width: 1200px;
+        overflow-x: auto;
+    }
+    .overScrollInnTwo {
+        width: 1200px;
+        overflow-x: auto;
+    }
+    .cityPopInn {
+        width: 100%;
+    }
+    .seqHome ul {
+        width: auto;
+        margin: 0px 15px;
+    }
+    .chefHeadInn {
+        width: auto;
+        margin: 0px 10px;
+    }
+    .resultInn {
+        width: auto;
+        margin: 0px 10px;
+    }
+    .filBtn a {
+        padding: 5px 12px;
+    }
+    .scrTab {
+        width: 100%;
+    }
+    .chefMorePop {
+        right: 34%;
+    }
+    .stepWrap {
+        right: 0px;
+        width: 42px;
+        display: none;
+    }
+    .stepWrap ul li {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .stepWrap ul li span {
+        padding: 6px 0px 1px 0px;
+    }
+    .profileWrap {
+        width: auto;
+        margin: 0px 10px;
+    }
+    .profileLeft {
+        display: none;
+    }
+    .profileRight {
+        width: 100%;
+        padding: 0px;
+    }
+    .changPas {
+        left: 0px;
+    }
+    .chefDet p,
+    .chefDet p.menu {
+        width: 110px;
+    }
+    .careerTheme {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment: inherit !important;
+    }
+    .footLogo {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .footMenu {
+        padding: 13px 0px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .social {
+        padding: 13px 0px 0px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    nav {
+        position: fixed;
+        z-index: 100010;
+        width: 280px;
+        top: 0px;
+        background-color: #fff;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        left: -300px;
+        height: 100%;
+        overflow: auto;
+        -webkit-transition: 0.2s all;
+        -moz-transition: 0.2s all;
+        transition: 0.2s all;
+    }
+    nav.navAct {
+        left: 0px;
+    }
+    .menuLogo {
+        display: block;
+    }
+    nav ul {
+        margin: 0px 0px;
+        padding: 0px
+    }
+    nav ul li {
+        list-style-type: none;
+        float: left;
+        width: 100%;
+        text-align: left;
+        padding: 1px 0px 0px 0px;
+    }
+    nav ul li a {
+        display: block;
+        padding: 15px 20px 0px;
+        margin: 0px;
+        color: #333;
+        font-size: 14px;
+        height: 50px;
+        font-weight: 400;
+        border-bottom: none;
+    }
+    nav ul li a:hover,
+    nav ul li a.Act {
+        color: #fff;
+        border-bottom: none;
+        background-color: #16af92;
+    }
+    .siIcon {
+        display: block;
+        border: none;
+        font-size: 23px;
+        border-radius: 0px;
+    }
+    .menuIcon {
+        display: block;
+        border: none;
+        font-size: 25px;
+        border-radius: 0px;
+    }
+    .scrollAct .siIcon {
+        border: none;
+        color: #545454;
+    }
+    .scrollAct .menuIcon {
+        border: none;
+        color: #545454;
+    }
+    .siIcon:hover,
+    .menuIcon:hover {
+        border: none;
+    }
+    .themeWrap {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment: inherit !important;
+        min-height: 550px;
+    }
+    .patWrapOut {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment: inherit !important;
+    }
+    .themeText {
+        width: 90%;
+    }
+    .homeHeading {
+        width: 90%;
+    }
+    .howItCta {
+        width: 46%;
+        margin: 2%;
+    }
+    .countCta {
+        width: 46%;
+        margin: 2%;
+        text-align: center;
+    }
+    .countCta span {
+        float: none;
+    }
+    .countCta p {
+        float: none;
+        padding: 15px 0px 0px;
+        width: 100%;
+    }
+    .whyChoCta {
+        padding: 10px 0px;
+    }
+    .themeText {
+        padding: 30% 0px 0px;
+    }
+    .chefIcon {
+        top: 45px;
+        left: 15px;
+        width: 80px;
+        height: 80px;
+        line-height: 73px;
+    }
+    .chefIcon img {
+        width: 60px !important;
+    }
+    .patCta h4 {
+        padding: 20px 15px 0px 105px;
+    }
+    .patCta p {
+        padding: 15px 20px 10px 105px;
+    }
+    .resMes {
+        display: block;
+        font-size: 13px;
+        padding: 0px 20px 25px 105px;
+        font-weight: 400;
+        color: #999;
+    }
+    .signPop {
+        width: 450px;
+        height: 90%;
+        overflow-y: auto;
+    }
+    .signImg {
+        display: none;
+    }
+    .signPopInn {
+        width: 100%;
+    }
+    .signIn {
+        padding: 40px 40px 40px;
+    }
+    .forgotPass {
+        padding: 140px 40px 40px;
+    }
+    .addThemeText h2 {
+        text-align: center;
+        padding: 190px 0px 0px;
+    }
+    .addThemeText p {
+        text-align: center;
+    }
+    .addForm {
+        width: 90%;
+        float: none;
+        margin: 0px auto;
+    }
+    .themIcon {
+        width: 100px;
+        height: 100px;
+        bottom: 65px;
+        line-height: 90px;
+    }
+    .addCont {
+        width: 90%;
+        margin: 0px auto;
+        float: none;
+        position: relative;
+        top: -50px;
+    }
+    .recBlog {
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+    .recBlog h3 {
+        background: url("../images/arrow.svg") no-repeat 94% center;
+        background-size: 15px;
+        cursor: pointer;
+    }
+    .recBlog ul {
+        display: none;
+    }
+    .blogDetails {
+        width: auto;
+        margin: 0px 10px;
+    }
+    .contDetails {
+        float: none;
+        width: 90%;
+        margin: 20px 0px 0px 0px;
+        padding: 10px 45px;
+    }
+    .modifySearch {
+        width: 60%;
+        height: 90%;
+        bottom: auto;
+        margin: 0px auto;
+        position: fixed;
+        top: 5%;
+        z-index: 100010;
+    }
+    .modifySearch .searchOut {
+        display: block;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+    .searchOut {
+        display: none;
+    }
+    .resSearchOut .searchOut {
+        display: block;
+    }
+    .resSearch {
+        display: block;
+    }
+    .seqHome ul {
+        text-align: center;
+    }
+    .seqHome ul li {
+        float: none;
+        width: auto;
+        display: inline-block;
+    }
+    .seqHome ul li p {
+        display: none;
+    }
+    .cartOut,
+    .resFootHide {
+        display: none;
+    }
+    .chefHeadInn .head {
+        width: 99%;
+    }
+    .resultWrap {
+        width: 100%;
+    }
+    .resultOut {
+        padding: 72px 0px 70px;
+    }
+    .resultOutRes {
+        padding: 72px 0px 95px;
+    }
+    .responsiveCart {
+        display: block;
+    }
+    .filterRes {
+        display: block;
+    }
+    .MorePop {
+        width: 95%;
+        right: 2.5%;
+        top: 112px;
+    }
+    .chefMorePop {
+        right: 2%;
+    }
+    .chefText {
+        width: 68%;
+    }
+    .chefDet div {
+        font-size: 12px;
+        color: #666;
+    }
+    .chefDet p {
+        width: 144px;
+        font-size: 14px;
+        color: #454545;
+    }
+    .chefDet p.menu {
+        width: 100%;
+        padding: 0px;
+    }
+    .paymentWrapInn {
+        width: 100%;
+    }
+    .secuPayRes {
+        display: block;
+        margin: 0px 0px;
+    }
+    .checkOut {
+        padding: 70px 0px 20px;
+    }
+    .userDetails {
+        width: 55%;
+    }
+    .logInpop {
+        right: 39px;
+    }
+    .logInInn {
+        width: 200px;
+    }
+    .chPopText {
+        width: 62%;
+    }
+    .chefDet p {
+        width: 65%;
+    }
+    .chefDet p.menu {
+        width: 78%;
+        overflow: auto;
+    }
+    .resInfo {
+        display: block;
+    }
+    .careerInn h3 {
+        width: 90%;
+    }
+    /*  scrollbar */
+    ::-webkit-scrollbar-track {
+        background-color: transparent !important;
+    }
+    ::-webkit-scrollbar {
+        width: auto !important;
+        height: auto !important;
+        background-color: transparent !important;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent !important;
+        border-radius: none !important;
+    }
+    /*  scrollbar */
+}
+
+@media screen and (max-width: 760px) {
+    .howItCta {
+        width: 96%;
+        margin: 3% 2%;
+        height: auto;
+        padding: 0px 0px 10px 0px;
+    }
+    .howItCta:hover .howItCtaInn {
+        margin-top: 0px;
+    }
+    .whyChoCta {
+        width: 96%;
+        margin: 3% 2%;
+    }
+    .homeHeading h3 {
+        padding: 0px 10px;
+        font-size: 24px;
+    }
+    .patWrap h3 {
+        padding: 0px 10px 25px;
+        font-size: 24px;
+    }
+    .patCta {
+        width: 96%;
+        margin: 3% 2%;
+    }
+    header {
+        height: 60px;
+    }
+    .logo {
+        margin: 5px 0px 0px 0px;
+    }
+    .logoImg,
+    .scrollAct .logoImg {
+        background-position: left center;
+        background-size: 78px;
+    }
+    .signWrap {
+        padding: 12px 0px 0px 0px;
+    }
+    .addThemeText h2 {
+        font-size: 33px;
+        padding: 160px 0px 0px;
+    }
+    .addForm {
+        width: 100%;
+        float: none;
+        margin: 0px auto;
+        padding: 30px 20px;
+    }
+    .addCont {
+        width: 100%;
+        padding: 10px 5px;
+    }
+    .addForm label {
+        width: 100%;
+    }
+    .addInn {
+        width: 100%;
+    }
+    .ContWrapOut {
+        padding: 20px 0px 30px;
+    }
+    .contDetails {
+        width: 100%;
+        padding: 10px 5px;
+    }
+    .contTheme {
+        height: 300px;
+    }
+    .contThemeText h2 {
+        font-size: 28px;
+        padding: 180px 0px 0px;
+    }
+    .contThemeText p {
+        font-size: 17px;
+    }
+    .contThemeText {
+        height: auto;
+    }
+    .aboutTheme {
+        height: 300px;
+    }
+    .aboutWrap {
+        padding: 20px 0px;
+    }
+    .aboutLeft,
+    .aboutRight {
+        width: 100%;
+        text-align: center;
+    }
+    .aboutLeft img {
+        width: 100%;
+    }
+    .overScrollInnTwo {
+        width: 900px;
+        overflow-x: auto;
+    }
+    .blogCta {
+        width: 276px;
+        margin: 1%;
+    }
+    .blogCta span {
+        height: 165px;
+    }
+    .hoAbImg {
+        width: 100%;
+    }
+    .hoAbText {
+        width: 100%;
+        padding: 30px 20px 40px;
+        text-align: center;
+    }
+    .hoAbText p {
+        padding: 0px 0px 20px 0px;
+    }
+    .hoAbImg h2 {
+        display: block;
+    }
+    .hoAbText h3 {
+        display: none;
+    }
+    .resultWrap ul li {
+        flex: 0 1 100%;
+        margin-bottom: 10px;
+        padding: 16px 12px;
+    }
+    .chefHead {
+        height: 60px;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.07);
+    }
+    .chefHeadInn {
+        height: 60px;
+    }
+    .scrTab {
+        height: 68px;
+    }
+    .chefHeadInn .head li {
+        height: 60px;
+        padding: 20px 12px;
+    }
+    .chefHeadInn .head {
+        padding: 0px 50px 0px 0px;
+    }
+    .chefSearch {
+        height: 59px;
+        width: 55px;
+        text-align: right;
+    }
+    .chefSearch input {
+        margin: 12px 0px 0px 10%;
+        width: 30px;
+        padding: 0px 25px 0px 15px;
+        background-position: center;
+    }
+    .chefSearchFull {
+        height: 60px;
+        width: 100%;
+    }
+    .chefSearchFull input {
+        background-image: url("../images/search.png");
+        background-size: 15px;
+        background-position: 98% center;
+        margin: 12px 0px 0px 0px;
+        width: 100%;
+    }
+    .resultWrap h2 {
+        padding: 4px 0px 12px 0px;
+        font-size: 15px;
+    }
+    .backtotop {
+        width: 30px;
+        right: 5px;
+        bottom: 40px;
+    }
+    .chefMoreWrap {
+        width: 85px;
+    }
+    .popClose {
+        right: 0px;
+        top: -6px;
+        z-index: 100;
+    }
+    .chPopImg {
+        width: 100%;
+        padding: 0px;
+        clear: both;
+    }
+    .chPopImg img {
+        width: 100px;
+        float: left;
+    }
+    .chPopImg h3 {
+        float: left;
+        padding: 11px 0px 5px 10px;
+        font-size: 17px;
+        width: 60%;
+        text-align: left;
+    }
+    .chPopImg span {
+        float: left;
+        padding: 0px 0px 5px 10px;
+        width: 60%;
+        text-align: left;
+    }
+    .addBtn {
+        float: left;
+        width: 120px;
+        margin: 0px 10px;
+        line-height: 30px;
+        height: 32px;
+        font-size: 15px;
+    }
+    .ceri {
+        display: none;
+    }
+    .resCeri {
+        display: block;
+        text-align: center;
+    }
+    .chPopText {
+        width: 100%;
+        padding: 10px 0px 0px 0px;
+    }
+    .chPopTab a {
+        padding: 6px 15px 0px 15px;
+        font-size: 13px;
+    }
+    .estMesg h3 {
+        font-size: 17px;
+        padding: 0px 0px 5px;
+    }
+    .estMesg h3 span {
+        font-size: 24px;
+    }
+    .estMesg {
+        font-size: 12px;
+        padding: 0px 0px 10px;
+    }
+    .estCta {
+        padding: 10px 0px;
+    }
+    .estCta b {
+        width: 75%;
+        padding: 0px 20px 4px 0px;
+    }
+    .estCta select {
+        width: 80px;
+        margin: 1px 10px 0px 0px;
+    }
+    .address {
+        padding: 15px 20px;
+        width: 100%;
+    }
+    .addressInn {
+        padding: 0px 15px 10px 0px;
+    }
+    .order-pop {
+        text-align: center;
+    }
+    .order-pop p,
+    .order-pop i {
+        width: 100%;
+    }
+    .payLogo img {
+        max-height: 46px;
+    }
+    .orderMenu {
+        width: 100%;
+        padding: 10px 5px 0px;
+    }
+    .orderCta {
+        padding: 10px 10px 20px;
+    }
+    .orderWrap {
+        margin: 0px;
+        border: none;
+    }
+    .orderHead ul {
+        width: 100%;
+        padding: 6px 0px 0px 0px;
+    }
+    .orderHead ul li {
+        padding: 5px 7px 5px 0px;
+        font-size: 14px;
+    }
+    .orderHead ul li b {
+        padding: 0px 0px 0px 4px;
+    }
+    .orderHead span {
+        padding: 8px 15px 7px;
+    }
+    .resHide {
+        display: none;
+    }
+    .resBtnPay {
+        display: block;
+    }
+    .blogDetails h2 {
+        font-size: 19px;
+        padding: 5px 0px 10px 0px;
+    }
+    .blogWrap h2 {
+        font-size: 18px;
+    }
+    .chPopInn,
+    .promPopInn {
+        padding: 15px;
+    }
+    .foodPopBtn a {
+        padding: 6px 5px;
+    }
+    .counter {
+        border: none;
+    }
+    .up_count {
+        margin-left: -3px;
+        border-radius: 6px;
+    }
+    .down_count {
+        margin-right: -3px;
+        border-radius: 6px;
+    }
+    .careerCta {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .footMenu a {
+        display: block;
+        margin: 2px 0px;
+    }
+    .themeText {
+        padding: 44% 0px 0px 0px;
+    }
+    .themeText h1 {
+        font-size: 28px;
+    }
+    .themeText h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .countWrap {
+        padding: 45px 0px 30px;
+    }
+    .countCta {
+        margin: 3% 2% 5%;
+    }
+    .signPop {
+        width: 92%;
+        top: 5%;
+    }
+    .signIn {
+        padding: 40px 25px 40px;
+    }
+    .forgotPass {
+        padding: 140px 25px 40px;
+    }
+    .addThemeText p {
+        font-size: 17px;
+    }
+    .termsWrap {
+        width: 100%;
+        margin: 0px 0px;
+    }
+    .termsWrapCta {
+        padding: 15px 15px 20px;
+    }
+    .termOut {
+        padding: 55px 0px 0px 0px;
+    }
+    .recBlog {
+        width: 100%;
+        margin: 0px 0px 15px 0px;
+    }
+    .blogOut {
+        padding: 70px 0px 20px 0px;
+    }
+    .blogWrap {
+        width: auto;
+        margin: 0px 10px;
+    }
+    .howItWrap {
+        padding: 80px 0px 30px;
+    }
+    .patWrap {
+        padding: 80px 0px 30px;
+    }
+    .padMd {
+        padding: 40px 0px 20px !important;
+        margin: 0px 5px !important;
+    }
+    .termsWrap .homeHeading {
+        margin: 30px auto 10px;
+    }
+    .patCta {
+        min-height: inherit;
+    }
+    .patCta p {
+        padding: 20px 20px 10px 25px;
+    }
+    .resMes {
+        padding: 10px 20px 25px 25px;
+    }
+    .themeWrap {
+        height: 400px;
+        min-height: 400px;
+    }
+    .searchOut {
+        width: 90%;
+        min-height: 350px;
+    }
+    .modifySearch {
+        width: 90%;
+    }
+    .cityPopInn {
+        padding: 30px 5px;
+    }
+    .cityPopInn h3 {
+        font-size: 14px;
+    }
+    .cityPopInn .ui-widget input {
+        width: 175px;
+    }
+    .cityPopInn ul {
+        padding: 40px 0px 0px;
+    }
+    .cityPopInn ul li a {
+        width: 78px;
+        height: 78px;
+        padding: 12px 0px 0px 0px;
+        font-size: 13px;
+    }
+    .cityPopInn ul li a img {
+        width: 44px;
+    }
+    .cityPopInn ul li a.Act {
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    }
+    .seqHome ul {
+        padding: 15px 0px 0px;
+        margin: 0px 5px;
+    }
+    .seqHome ul li img {
+        padding: 0px 3px;
+        width: 46px;
+    }
+    .copyRight {
+        padding: 10px 0px 0px 0px;
+    }
+    .filBtn a {
+        padding: 5px 20px;
+    }
+    .foodPopInn {
+        padding: 12px 12px;
+    }
+    .foodPopInn h2 {
+        padding: 5px 0px 5px;
+        font-size: 16px;
+    }
+    .promEnt {
+        width: auto;
+    }
+    .promoInn ul li p {
+        width: 75%;
+    }
+    .promoInn ul li a {
+        width: 24%;
+    }
+    .rateWrap {
+        left: -15px;
+    }
+    .review h2 {
+        font-size: 15px;
+    }
+    .secuPayInn {
+        padding: 0px 0px;
+    }
+    .address {
+        padding: 15px 15px;
+    }
+    .addressInn {
+        padding: 0px 5px 10px 0px;
+    }
+    .tabs-menu {
+        width: 100%;
+        min-height: auto;
+        overflow: auto;
+        padding: 5px 0px;
+    }
+    .tabs-menu li {
+        display: table-cell;
+    }
+    .tabs-menu li a {
+        padding: 12px 0px;
+        text-align: center;
+        width: 100px;
+    }
+    .tab {
+        width: 100%;
+        min-height: auto;
+        padding: 0px 0px;
+    }
+    .card_details label,
+    .card_filds label {
+        font-size: 13px;
+    }
+    .payInn {
+        width: 50%;
+    }
+    .tab-content {
+        padding: 10px 10px 25px;
+    }
+    .profileOut {
+        padding: 70px 0px 20px 0px;
+    }
+    .profileWrap {
+        padding: 15px 0px 0px;
+    }
+    .userDetails {
+        width: 100%;
+    }
+    .userBtn a {
+        padding: 0px 0px;
+        color: #12b396;
+        background-color: #fff;
+        border: 1px solid #fff;
+        text-transform: capitalize;
+    }
+    .resCarousel .item {
+        width: 100% !important;
+    }
+    .resCarousel .blogCta span {
+        height: auto;
+        max-height: none;
+    }
+    .changeChPop input[type="radio"]:checked+label::before {
+        font-size: 28px;
+    }
+    .careerTheme {
+        padding: 120px 0px 100px;
+    }
+    .careerTheme h2 {
+        font-size: 24px !important;
+    }
+    .careerInn h3 span {
+        font-size: 22px;
+        padding: 0px 20px;
+    }
+    .careerInn p.carWid {
+        width: 90%;
+    }
+    .careerForm {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .fbGo i {
+        padding: 0px;
+    }
+    .estCta i {
+        padding: 12px 0px 0px 0px;
+        width: 22px;
+    }
+    .resBtnPay {
+        padding: 8px 7px;
+    }
+    .orderHead span {
+        padding: 8px 7px;
+    }
+    .chefDet p {
+        width: 60%;
+    }
+    .chefDet p.menu {
+        width: 75%;
+    }
+    .filBtn a {
+        padding: 5px 12px;
+    }
+    .chPopTab a {
+        padding: 6px 10px 0px 10px;
+    }
+}
