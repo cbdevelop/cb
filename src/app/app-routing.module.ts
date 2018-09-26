@@ -12,7 +12,11 @@ const appRoutes: Routes = [
   { path: '', loadChildren: './user/user.module#UserModule' },
   { path: 'addchef', loadChildren: './addchef/addchef.module#AddchefModule' },
   { path: 'addmanager', loadChildren: './addmanager/addmanager.module#AddmanagerModule' },
-  { path: 'contact', loadChildren: './shared/contact/contact.module#ContactModule' }
+  { path: 'contact', loadChildren: './shared/contact/contact.module#ContactModule' },
+  { path: 'terms', loadChildren: './shared/terms/terms.module#TermsModule' },
+  { path: 'privacy', loadChildren: './shared/privacy/privacy.module#PrivacyModule' },
+  { path: 'about', loadChildren: './shared/about/about.module#AboutModule' },
+  { path: 'career', loadChildren: './shared/career/career.module#CareerModule' }
 ]
 @NgModule({
   imports: [

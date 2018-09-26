@@ -2,11 +2,13 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { MasterService } from '../../services/master.service';
 
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { ChefCatPopupComponent } from '../chef-cat-popup/chef-cat-popup.component';
 import { Menu } from '../../shared/models/menu.mode';
-import { CommentsComponent } from '../../shared/index';
+
 import { OrderPreviewComponent } from '../order-preview/order-preview.component';
 import { MobilePreviewComponent } from '../mobile-preview/mobile-preview.component';
+import { ChefCatPopupComponent } from '../chef-cat-popup/chef-cat-popup.component';
+import { CommentsComponent } from '../../shared/comments/comments.component';
+
 @Component({
   selector: 'app-result-view',
   templateUrl: './result-view.component.html',

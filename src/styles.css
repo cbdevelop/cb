@@ -129,6 +129,7 @@ html [type=button], a {
     color:  #6a6666c7 !important;
 
 }
+
 /* Comments */
 
 .modal-dialog {
@@ -140,7 +141,6 @@ html [type=button], a {
     -webkit-transform: inherit;
     padding: 40px;
 }
-
 /* Comments */
 
 /* Popup's padding */
@@ -255,6 +255,20 @@ html [type=button], a {
     font-size: 16px;
     font-weight: 500;
     color: #666;
+}
+
+/* about */
+.backWhite {
+    background-color: #fff;
+}
+
+/* positions */
+.careerForm {
+    position: static !important;
+    width: 100%;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
+    padding: 10px 10px;
+    float: none;
 }
 
 /* Validations Error */

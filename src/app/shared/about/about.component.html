@@ -1,0 +1,57 @@
+<div id="home"></div>
+<header #head>
+  <section class="headInn clearfix">
+    <div class="logo">
+      <a [routerLink]="'/'" class="logoImg"></a>
+    </div>
+    <div class="signWrap clearfix"><a (click)="openSign()">
+      <span class="fa fa-user-o siIcon"></span></a>
+      <span class="fa fa-bars menuIcon"></span>
+    </div>
+    <nav>
+      <ul class="clearfix">
+        <li>
+          <a [ngx-scroll-to]="'#home'" [routerLink]="'/'"  class="Act">Home</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#howitworks'" [routerLink]="'/'">How it Works</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#about'" [routerLink]="'/'">About Us</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#choose'" [routerLink]="'/'">Choose Us</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#partner'" [routerLink]="'/'">Partners</a>
+        </li>
+        <li>
+          <a [routerLink]="['/contact']">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+</header>
+
+
+<!-- Theme -->
+<section class="addTheme aboutTheme">
+	<div class="contThemeText">
+	  <h2>About  Caterbinge</h2>
+	  <p>Tasty and Beautiful</p>
+  </div>
+</section>
+<!-- Theme -->
+
+<section class="backWhite">
+	<div class="aboutWrap clearfix">
+		<div class="aboutLeft"><img src="../../assets/images/about1.jpg" alt=""/></div>
+		<div class="aboutRight">
+	  	 <h2>Who We Are</h2>
+		  <p>Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu, not just that we provide delicious cuisines but also assures high-quality service. At caterbinge.com we strive to achieve the highest level of Customer Satisfaction and are committed giving the best service regardless of the size of the order or combination of cuisines in the menu.</p>
+		  <p>Caterbinge is an on-demand food catering service and your personal chef for party orders. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu, not just that we provide delicious cuisines but also assures high-quality service. At caterbinge.com we strive to achieve the highest level of Customer Satisfaction and are committed giving the best service regardless of the size of the order or combination of cuisines in the menu.</p>
+		</div>
+	</div>
+</section>
+
+<app-footer></app-footer>

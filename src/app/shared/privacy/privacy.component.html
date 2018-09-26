@@ -1,0 +1,69 @@
+<div id="home"></div>
+<header  class="staticHead scrollAct">
+  <section class="headInn clearfix">
+    <div class="logo">
+      <a [routerLink]="'/'" class="logoImg"></a>
+    </div>
+    <div class="signWrap clearfix"><a (click)="openSign()">
+      <span class="fa fa-user-o siIcon"></span></a>
+      <span class="fa fa-bars menuIcon"></span>
+    </div>
+    <nav>
+      <ul class="clearfix">
+        <li>
+          <a [ngx-scroll-to]="'#home'" [routerLink]="'/'"  class="Act">Home</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#howitworks'" [routerLink]="'/'">How it Works</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#about'" [routerLink]="'/'">About Us</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#choose'" [routerLink]="'/'">Choose Us</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#partner'" [routerLink]="'/'">Partners</a>
+        </li>
+        <li>
+          <a [routerLink]="['/contact']">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+</header>
+
+
+<section class="termsWrap">
+    <span class="homeHeading"><h3>Terms of Use</h3></span>
+    <div class="termsWrapCta">
+        <h3>Heading One</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text 
+            of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum
+            Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text 
+            of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
+        <h3>Heading Two</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text 
+                of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum
+                Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text 
+                of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum </p> 
+                
+        <h3>Heading One</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text 
+                of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum
+                Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text 
+                of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum </p>            
+        <li>1. of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</li>
+        <li>2. of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</li>
+        <li>3. of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</li>
+        <li>4. of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</li>
+        <li>5. of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</li>
+        <li>6. of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</li><br>
+        <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text 
+                of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum
+                Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text 
+                of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum </p>              
+    </div>
+</section>
+
+<app-footer></app-footer>
