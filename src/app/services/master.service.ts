@@ -6,12 +6,243 @@ import { Dish } from '../shared/models/dish.model';
 @Injectable()
 export class MasterService {
 
-
+	dishCount :number =0;
 	totalCost: number = 0;
 	currentSection = 'home';
 	searchmenu_selection = "all";
 	alldishes: Menu[] = [];
-	filteredchefList = []
+	filteredchefList = [];
+	evntManagerSelFlag = false;
+	selectedEvtManager=[]
+	eventManagerList = [
+		{
+		  "id": 1,
+		  "Name": "Ahmed",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "10",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": [{
+			  "name":"ram","Rating":5,"text":"jdshlksdhai"
+		  }],
+		  "Portfolio": [],
+		  "Price": 4000
+		},
+		{
+		  "id": 2,
+		  "Name": "Srikar Rao",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": "",
+		  "Portfolio": "",
+		  "Price": 3000
+		},
+		{
+		  "id": 3,
+		  "Name": "Shivam Pant",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": "",
+		  "Portfolio": "",
+		  "Price": 3000
+		},
+		{
+		  "id": 4,
+		  "Name": "Absar hussain",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": "",
+		  "Portfolio": "",
+		  "Price": 3000
+		},
+		{
+		  "id": 5,
+		  "Name": "Kaushik Rao",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": "",
+		  "Portfolio": "",
+		  "Price": 3000
+		},
+		{
+		  "id": 6,
+		  "Name": "Raju Narsimha",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": "",
+		  "Portfolio": "",
+		  "Price": 3000
+		},
+		{
+		  "id": 7,
+		  "Name": "Mani Sai",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": "",
+		  "Portfolio": "",
+		  "Price": 3000
+		},
+		{
+		  "id": 8,
+		  "Name": "Sai Kiran",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": "",
+		  "Portfolio": "",
+		  "Price": 3000
+		},
+		{
+		  "id": 9,
+		  "Name": "Zakir Sheik",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": "",
+		  "Portfolio": "",
+		  "Price": 3000
+		},
+		{
+		  "id": 10,
+		  "Name": "Rama Krishna",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": "",
+		  "Portfolio": "",
+		  "Price": 3000
+		},
+		{
+		  "id": 11,
+		  "Name": "Anil N",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": "",
+		  "Portfolio": "",
+		  "Price": 3000
+		},
+		{
+		  "id": 12,
+		  "Name": "Srinivas",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": "",
+		  "Portfolio": "",
+		  "Price": 3000
+		},
+		{
+		  "id": 13,
+		  "Name": "Imran Sheik",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": "",
+		  "Portfolio": "",
+		  "Price": 3000
+		},
+		{
+		  "id": 14,
+		  "Name": "Viswanath",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": "",
+		  "Portfolio": "",
+		  "Price": 3000
+		},
+		{
+		  "id": 15,
+		  "Name": "Ziyad Ahmed",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": "",
+		  "Portfolio": "",
+		  "Price": 3000
+		},
+		{
+		  "id": 16,
+		  "Name": "Abdul Moid",
+		  "Experience": "",
+		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
+		  "Events_Managed": "",
+		  "Proficiency": "",
+		  "About": "",
+		  "Rating": "4",
+		  "CB_Certified": "",
+		  "Reviews": "",
+		  "Portfolio": "",
+		  "Price": 3000
+		}
+	  ]
+
 	startersArr: Dish[] = [
 		{
 			dishId: 1,
@@ -482,6 +713,14 @@ export class MasterService {
 		this.selectedDishes.biryani = [];
 		this.selectedDishes.beverges = [];
 
+		if(localStorage.length){
+			if(localStorage.getItem("selDises"))
+				this.selectedDishes = JSON.parse(localStorage.getItem("selDises"));
+			if(localStorage.getItem("cost"))
+				this.totalCost = parseInt(localStorage.getItem("cost"),10);
+			if(localStorage.getItem("selManager"))
+				this.selectedEvtManager = JSON.parse(localStorage.getItem("selManager"));
+		}
 	}
 
 

@@ -16,7 +16,8 @@ export class OrderCheckoutComponent implements OnInit {
 
   constructor( 
     private commentService: NgbModal,
-    private masterObj:MasterService
+    private masterObj:MasterService,
+    private router:Router
   ) { }
 
   ngOnInit() {
@@ -34,6 +35,16 @@ export class OrderCheckoutComponent implements OnInit {
   }
 
   onproceed() {
-    
+    if(this.masterObj.evntManagerSelFlag || this.masterObj.selectedEvtManager.length){
+      this.router.navigate(['./payment']); 
+    }
+  }
+
+  remove(i){
+    this.masterObj.totalCost -= this.masterObj.selectedEvtManager[i].Price;
+    this.masterObj.selectedEvtManager.splice(i);
+    var selManager = JSON.stringify(this.masterObj.selectedEvtManager);
+    localStorage.setItem("selManager", selManager);
+    localStorage.setItem("cost",this.masterObj.totalCost.toString());
   }
 }

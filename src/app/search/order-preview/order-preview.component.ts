@@ -42,7 +42,9 @@ export class OrderPreviewComponent implements OnInit {
       this.masterObj.selectedDishes.beverges.splice(index, 1);
     } else if (cat_id == 6) {
     }
-
+    var selectedDish = JSON.stringify(this.masterObj.selectedDishes);
+    localStorage.setItem("cost",this.masterObj.totalCost.toString());
+    localStorage.setItem("selDises", selectedDish);
   }
 
   getcus(cusines,restricted_ser) {

@@ -58,6 +58,17 @@
 
         </ul>
       </div>
+
+      <div *ngIf="masterObj.selectedEvtManager.length ">
+        <h3>Event Manager</h3>
+        <ul>
+          <li *ngFor="let item of masterObj.selectedEvtManager;let i= index">
+            <span> {{ item.Name}} <i class="fa fa-close" (click)="remove(i)"></i>
+            </span>
+          </li>
+
+        </ul>
+      </div>
     </div>
 
     <ng-template #nocart>

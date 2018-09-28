@@ -4,6 +4,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { ProfileComponent } from '../profile/profile.component';
 import { AddMoreComponent } from '../addMore/addMore.component';
+import { MasterService } from '../../../services/master.service';
 
 @Component({
   selector: 'app-list',
@@ -14,13 +15,17 @@ export class ListComponent implements OnInit {
 
   checkboxValue: boolean = false;
 
-  constructor( private eventService: NgbModal ) { }
+  constructor(
+     private eventService: NgbModal,
+  private masterobj:MasterService
+  ) { }
 
   ngOnInit() {
   }
 
-  eventProfile() {
-    this.eventService.open(ProfileComponent);
+  eventProfile(id) {
+    const modalRef =this.eventService.open(ProfileComponent);
+    modalRef.componentInstance.id = id;
   }
 
   openAddMore() {

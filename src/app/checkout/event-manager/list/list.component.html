@@ -3,39 +3,45 @@
   <div class="resultWrap">
 
     <div class="noteMesg">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        <p>your estimate fare for the service is <span>25000</span> 
-        Lorem Ipsum is simply dummy text of the printing<span>25000</span><a href="javascript:void(0)" (click)="openAddMore()">Add More..</a>
+        
+        <p>Your estimate fare for the service is Rs. <span>0</span> 
+        <!-- Lorem Ipsum is simply dummy text of the printing<span>25000</span> -->
+        <a href="javascript:void(0)" (click)="openAddMore()">Add More..</a>
         </p>
     </div>
 
     <div class="eventCheck">
       <div class="checkbox">
         <label>
-          <input type="checkbox" [(ngModel)]="checkBoxValue"><i class="input-helper"></i> <span>I can manage this event without a event maganer </span>
+          <input type="checkbox" [(ngModel)]="masterobj.evntManagerSelFlag">
+          <i class="input-helper"></i> <span>I can manage this event without a event maganer </span>
         </label>
       </div>					
     </div>
     <ul class="">
 
-      <li>
-        <div class="chefCta clearfix" (click)="eventProfile()">
-          <div class="chefImg"><img src="../../../../assets/images/mana-de.png" alt="" /></div>
+      <li *ngFor="let item of masterobj.eventManagerList;let i= index">
+        <div class="chefCta clearfix" (click)="eventProfile(item.id)">
+          <div class="chefImg"><img [src]="item.Profile_Image" alt="" /></div>
             <div class="chefText">
-               <h3>Manager name here..</h3>
+               <h3>{{ item.Name }}</h3>
                <div class="ratChef">
-                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <i class="fa fa-star" [ngClass]="item.Rating >= 1 ? 'review': ''"></i>
+                <i class="fa fa-star" [ngClass]="item.Rating >= 2 ? 'review': ''"></i>
+                <i class="fa fa-star" [ngClass]="item.Rating >= 3 ? 'review': ''"></i>
+                <i class="fa fa-star" [ngClass]="item.Rating >= 4 ? 'review': ''"></i>
+                <i class="fa fa-star" [ngClass]="item.Rating >= 5 ? 'review': ''"></i>
                 </div>
                 <div class="chefDet">
-                  <div class="clearfix"><b>Experience</b>:<p> 5 Years</p></div>
+                  <div class="clearfix"><b>Experience</b>:<p> {{ item.Experience }}</p></div>
                 </div>
                 <div class="managerPrice">
-                  3500.00
+                  {{ item.Price }}.00
                 </div>
             </div>			
         </div>
       </li>
-
+<!-- 
       <li>
           <div class="chefCta clearfix">
             <div class="chefImg"><img src="../../../../assets/images/mana-de.png" alt="" /></div>
@@ -125,7 +131,7 @@
               </div>			
           </div>
       </li>
-               															
+               															 -->
     </ul>
 
   </div>

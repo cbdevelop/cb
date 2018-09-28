@@ -249,3 +249,17 @@ html [type=button], a {
 }
 
 /* Profile Dropdown */
+
+
+/* mobile cart */
+
+.resCart span {
+        /* display: none; */
+        padding: 0px 19px;
+        color: #057e68; 
+        border-radius: 4px;
+        margin: 0px 12px 0p;
+        position: absolute;
+        /* z-index: 100000; */
+        margin: -7px;
+}

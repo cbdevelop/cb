@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { MasterService } from '../../../services/master.service';
 
 @Component({
   selector: 'app-profile',
@@ -9,12 +10,27 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor( public activeModal: NgbActiveModal ) { }
+  managerDetails:any= {};
+  @Input() id;
+  constructor( public activeModal: NgbActiveModal,
+  private masterObj:MasterService ) { }
 
   ngOnInit() {
+    this.managerDetails =this.masterObj.eventManagerList.filter(d => d.id==this.id)[0];
+    
   }
 
   onCrossClose() {
+    this.activeModal.dismiss();
+  }
+
+  addManager(){
+    console.log(this.masterObj.totalCost,this.managerDetails.Price);
+    this.masterObj.totalCost += this.managerDetails.Price;
+    this.masterObj.selectedEvtManager.push(this.managerDetails);
+    var selManager = JSON.stringify(this.masterObj.selectedEvtManager);
+    localStorage.setItem("selManager", selManager);
+    localStorage.setItem("cost",this.masterObj.totalCost.toString());
     this.activeModal.dismiss();
   }
 

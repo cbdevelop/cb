@@ -19,7 +19,7 @@
 
             <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.FoodCategory == 1 ? 'foodVeg' : 'foodNonVeg' ">
             </a>
-            <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
+            <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"  (click)="fav($event)"></a>
             <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="dish.cusines.length"> {{ dish.cusines.length }}+ Cuisines </a>
             <a href="javascript:void(0)" title="Title test" class="foodLink colRed" 
             *ngIf="dish.restricted_ser.length" (click)="openRes(1,dish.dishId)"
@@ -134,8 +134,10 @@
 <div class="responsiveCart">
 	<!--<div class="resPro">Have a Promo code</div>-->
 	<div class="clearfix">
-		<a href="" class="resBtn"><span>20</span>Check out</a>
-		<a href="javascript:void(0)" class="resCart" (click)="openCart()"><img src="./assets/images/cart.svg" alt=""/></a>
+		<a href="" class="resBtn"><span> {{ service.dishCount }}</span>Check out</a>
+		<a href="javascript:void(0)" class="resCart" (click)="openCart()">
+      <span >{{ service.dishCount }}</span>
+      <img src="./assets/images/cart.svg" alt=""/></a>
 		<a href="javascript:void(0)" class="resCom" (click)="openComment()"><img src="./assets/images/commenting.svg" alt=""/></a>
 	</div>
 </div>

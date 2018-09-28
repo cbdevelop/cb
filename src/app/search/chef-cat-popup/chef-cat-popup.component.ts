@@ -14,26 +14,26 @@ export class ChefCatPopupComponent implements OnInit {
   @Input() cat_id;
   @Input() dishId;
 
-  res=[];
-  cus=[];
+  res = [];
+  cus = [];
 
   dishDetails: Dish;
   constructor(
     public activeModal: NgbActiveModal,
     private masterService: MasterService
   ) {
-    
+
   }
 
   ngOnInit() {
 
     this.dishDetails = this.findDish();
-    
+
   }
 
 
   findDish() {
-    var arr:Menu[] = this.masterService.alldishes.filter(x => x.dishTypeId == this.cat_id);
+    var arr: Menu[] = this.masterService.alldishes.filter(x => x.dishTypeId == this.cat_id);
     return arr[0].dishes.filter(x => x.dishId == this.dishId)[0]
   }
 
@@ -58,25 +58,28 @@ export class ChefCatPopupComponent implements OnInit {
       this.masterService.selectedDishes.beverges.push(this.dishDetails);
     } else if (this.cat_id == 6) {
     }
+    var selectedDish = JSON.stringify(this.masterService.selectedDishes);
+    localStorage.setItem("cost",this.masterService.totalCost.toString());
+    localStorage.setItem("selDises", selectedDish);
     this.activeModal.close();
   }
 
   onReschecked(evt) {
     console.log(evt);
-    if(evt.target.checked){
+    if (evt.target.checked) {
       this.res.push(evt.target.value);
-    }else {
-    this.res.splice(this.res.indexOf(evt.target.value),1);
+    } else {
+      this.res.splice(this.res.indexOf(evt.target.value), 1);
     }
   }
 
   onCusChecked(evt) {
     console.log(evt);
-    if(evt.target.checked){
+    if (evt.target.checked) {
       this.cus.push(evt.target.value);
-    }else {
-      this.cus.splice(this.cus.indexOf(evt.target.value),1);
-     
+    } else {
+      this.cus.splice(this.cus.indexOf(evt.target.value), 1);
+
     }
     console.log(this.cus);
   }

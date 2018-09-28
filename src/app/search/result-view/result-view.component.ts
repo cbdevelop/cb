@@ -41,8 +41,6 @@ export class ResultViewComponent implements OnInit {
     if (this.isSelected(menucategoryid, disId)) {
 
     } else {
-
-
       var arr = this.all_categories[menucategoryid - 1].dishes.filter(x => x.dishId == disId)
       if (arr[0].cusines.length) {
         const modalRef = this.modalService.open(ChefCatPopupComponent);
@@ -65,8 +63,9 @@ export class ResultViewComponent implements OnInit {
           this.service.selectedDishes.beverges.push(arr[0]);
         } else if (menucategoryid == 6) {
         }
-
-
+        var selectedDish = JSON.stringify(this.service.selectedDishes);
+        localStorage.setItem("selDises",selectedDish);
+        localStorage.setItem("cost",this.service.totalCost.toString());
       }
     }
 
@@ -110,6 +109,10 @@ export class ResultViewComponent implements OnInit {
       this.service.selectedDishes.beverges.length) {
       this.router.navigate(['../chef'], { relativeTo: this.route });
     }
+  }
+
+  fav(evt) {
+    console.log(evt);
   }
 
 }

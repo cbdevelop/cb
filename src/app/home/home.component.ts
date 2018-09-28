@@ -26,10 +26,13 @@ export class HomeComponent implements OnInit {
   settings = {};
   session = "dinner";
   barwidth = 0
-
+  eventServed = 1254;
+  no_chefs = 470;
+  no_eventManager = 210;
+  users = 2150;
   public spiedTags = [];
 
-    private currentSection: string;
+  private currentSection: string;
 
 
   constructor(
@@ -109,25 +112,25 @@ export class HomeComponent implements OnInit {
     this.routerObj.navigate(['../search'])
   }
 
- /* @HostListener("window:scroll", ["$event"])
-  onWindowScroll(event: any) {
-      console.log('sad');
-        let currentSection: string;
-        const children = this._el.nativeElement.children;
-        const scrollTop = event.target.scrollTop;
-        const parentOffset = event.target.offsetTop;
-        for (let i = 0; i < children.length; i++) {
-            const element = children[i];
-            if (this.spiedTags.some(spiedTag => spiedTag === element.tagName)) {
-                if ((element.offsetTop - parentOffset) <= scrollTop) {
-                    currentSection = element.id;
-                }
-            }
-        }
-        if (currentSection !== this.currentSection) {
-            this.currentSection = currentSection;
-            this.masterObj.currentSection =currentSection;
-        }
-    }
-    */
+  /* @HostListener("window:scroll", ["$event"])
+   onWindowScroll(event: any) {
+       console.log('sad');
+         let currentSection: string;
+         const children = this._el.nativeElement.children;
+         const scrollTop = event.target.scrollTop;
+         const parentOffset = event.target.offsetTop;
+         for (let i = 0; i < children.length; i++) {
+             const element = children[i];
+             if (this.spiedTags.some(spiedTag => spiedTag === element.tagName)) {
+                 if ((element.offsetTop - parentOffset) <= scrollTop) {
+                     currentSection = element.id;
+                 }
+             }
+         }
+         if (currentSection !== this.currentSection) {
+             this.currentSection = currentSection;
+             this.masterObj.currentSection =currentSection;
+         }
+     }
+     */
 }
