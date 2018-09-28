@@ -88,7 +88,7 @@
 			  <em *ngIf="comparePasswords()">Password and Confirm Password must be same</em>
 			</div>
 			
-			<div class="termTxt">By Signing up you will agree <a href="terms.html" target="_blank">Terms</a> and <a href="privacy.html" target="_blank">Policy</a></div>
+			<div class="termTxt">By Signing up you will agree <a href="" [routerLink]="['/terms']" target="_blank">Terms</a> and <a href="" [routerLink]="['/privacy']" target="_blank">Policy</a></div>
 			<button class="siBtn" [disabled]="loading">Sign Up</button>
 		</div>
 		</form>
