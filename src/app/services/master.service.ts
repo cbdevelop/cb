@@ -1,247 +1,262 @@
 import { Injectable } from '@angular/core';
 import { Menu } from '../shared/models/menu.mode';
-import { Dish } from '../shared/models/dish.model';
+import { Dish, DishModel } from '../shared/models/dish.model';
+import { Observable } from 'rxjs/Observable';
+import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment.prod';
 
 
 @Injectable()
 export class MasterService {
 
-	dishCount :number =0;
+	ApiUrl = "";
+	dishCount: number = 0;
 	totalCost: number = 0;
 	currentSection = 'home';
 	searchmenu_selection = "all";
+	dishArray: DishModel[] = [];
+	startersArray: DishModel[] = []; // menutype =1
+	snackArray: DishModel[] = []; // menutype =2
+	beverges_drinkArray: DishModel[] = []; // menutype =3
+	breadsArray: DishModel[] = []; // menutype =4
+	soupArray: DishModel[] = []; // menutype =5
+	saladsArray: DishModel[] = []; // menutype =6
+	MainCourseArray: DishModel[] = []; // menutype =7
+	desertsArray: DishModel[] = []; // menutype =8
+	stallsArray: DishModel[] = []; // menutype =9
+
 	alldishes: Menu[] = [];
 	filteredchefList = [];
 	evntManagerSelFlag = false;
-	selectedEvtManager=[]
+	selectedEvtManager = []
 	eventManagerList = [
 		{
-		  "id": 1,
-		  "Name": "Ahmed",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "10",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": [{
-			  "name":"ram","Rating":5,"text":"jdshlksdhai"
-		  }],
-		  "Portfolio": [],
-		  "Price": 4000
+			"id": 1,
+			"Name": "Ahmed",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "10",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": [{
+				"name": "ram", "Rating": 5, "text": "jdshlksdhai"
+			}],
+			"Portfolio": [],
+			"Price": 4000
 		},
 		{
-		  "id": 2,
-		  "Name": "Srikar Rao",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": "",
-		  "Portfolio": "",
-		  "Price": 3000
+			"id": 2,
+			"Name": "Srikar Rao",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": "",
+			"Portfolio": "",
+			"Price": 3000
 		},
 		{
-		  "id": 3,
-		  "Name": "Shivam Pant",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": "",
-		  "Portfolio": "",
-		  "Price": 3000
+			"id": 3,
+			"Name": "Shivam Pant",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": "",
+			"Portfolio": "",
+			"Price": 3000
 		},
 		{
-		  "id": 4,
-		  "Name": "Absar hussain",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": "",
-		  "Portfolio": "",
-		  "Price": 3000
+			"id": 4,
+			"Name": "Absar hussain",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": "",
+			"Portfolio": "",
+			"Price": 3000
 		},
 		{
-		  "id": 5,
-		  "Name": "Kaushik Rao",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": "",
-		  "Portfolio": "",
-		  "Price": 3000
+			"id": 5,
+			"Name": "Kaushik Rao",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": "",
+			"Portfolio": "",
+			"Price": 3000
 		},
 		{
-		  "id": 6,
-		  "Name": "Raju Narsimha",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": "",
-		  "Portfolio": "",
-		  "Price": 3000
+			"id": 6,
+			"Name": "Raju Narsimha",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": "",
+			"Portfolio": "",
+			"Price": 3000
 		},
 		{
-		  "id": 7,
-		  "Name": "Mani Sai",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": "",
-		  "Portfolio": "",
-		  "Price": 3000
+			"id": 7,
+			"Name": "Mani Sai",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": "",
+			"Portfolio": "",
+			"Price": 3000
 		},
 		{
-		  "id": 8,
-		  "Name": "Sai Kiran",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": "",
-		  "Portfolio": "",
-		  "Price": 3000
+			"id": 8,
+			"Name": "Sai Kiran",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": "",
+			"Portfolio": "",
+			"Price": 3000
 		},
 		{
-		  "id": 9,
-		  "Name": "Zakir Sheik",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": "",
-		  "Portfolio": "",
-		  "Price": 3000
+			"id": 9,
+			"Name": "Zakir Sheik",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": "",
+			"Portfolio": "",
+			"Price": 3000
 		},
 		{
-		  "id": 10,
-		  "Name": "Rama Krishna",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": "",
-		  "Portfolio": "",
-		  "Price": 3000
+			"id": 10,
+			"Name": "Rama Krishna",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": "",
+			"Portfolio": "",
+			"Price": 3000
 		},
 		{
-		  "id": 11,
-		  "Name": "Anil N",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": "",
-		  "Portfolio": "",
-		  "Price": 3000
+			"id": 11,
+			"Name": "Anil N",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": "",
+			"Portfolio": "",
+			"Price": 3000
 		},
 		{
-		  "id": 12,
-		  "Name": "Srinivas",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": "",
-		  "Portfolio": "",
-		  "Price": 3000
+			"id": 12,
+			"Name": "Srinivas",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": "",
+			"Portfolio": "",
+			"Price": 3000
 		},
 		{
-		  "id": 13,
-		  "Name": "Imran Sheik",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": "",
-		  "Portfolio": "",
-		  "Price": 3000
+			"id": 13,
+			"Name": "Imran Sheik",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": "",
+			"Portfolio": "",
+			"Price": 3000
 		},
 		{
-		  "id": 14,
-		  "Name": "Viswanath",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": "",
-		  "Portfolio": "",
-		  "Price": 3000
+			"id": 14,
+			"Name": "Viswanath",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": "",
+			"Portfolio": "",
+			"Price": 3000
 		},
 		{
-		  "id": 15,
-		  "Name": "Ziyad Ahmed",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": "",
-		  "Portfolio": "",
-		  "Price": 3000
+			"id": 15,
+			"Name": "Ziyad Ahmed",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": "",
+			"Portfolio": "",
+			"Price": 3000
 		},
 		{
-		  "id": 16,
-		  "Name": "Abdul Moid",
-		  "Experience": "",
-		  "Profile_Image": "./assets/images/mana-de.png","locality":"",
-		  "Events_Managed": "",
-		  "Proficiency": "",
-		  "About": "",
-		  "Rating": "4",
-		  "CB_Certified": "",
-		  "Reviews": "",
-		  "Portfolio": "",
-		  "Price": 3000
+			"id": 16,
+			"Name": "Abdul Moid",
+			"Experience": "",
+			"Profile_Image": "./assets/images/mana-de.png", "locality": "",
+			"Events_Managed": "",
+			"Proficiency": "",
+			"About": "",
+			"Rating": "4",
+			"CB_Certified": "",
+			"Reviews": "",
+			"Portfolio": "",
+			"Price": 3000
 		}
-	  ]
+	]
 
 	startersArr: Dish[] = [
 		{
@@ -697,8 +712,10 @@ export class MasterService {
 
 	comments: string;
 
-	constructor() {
-
+	constructor(
+		private http: HttpClient
+	) {
+		this.ApiUrl = environment.apiUrl;
 		this.alldishes = [
 			{ dishTypeId: 1, dishType: "Best", dishes: this.Best },
 			{ dishTypeId: 2, dishType: "starrters", dishes: this.startersArr },
@@ -713,20 +730,73 @@ export class MasterService {
 		this.selectedDishes.biryani = [];
 		this.selectedDishes.beverges = [];
 
-		if(localStorage.length){
-			if(localStorage.getItem("selDises"))
+		if (localStorage.length) {
+			if (localStorage.getItem("selDises"))
 				this.selectedDishes = JSON.parse(localStorage.getItem("selDises"));
-			if(localStorage.getItem("cost"))
-				this.totalCost = parseInt(localStorage.getItem("cost"),10);
-			if(localStorage.getItem("selManager"))
+			if (localStorage.getItem("cost"))
+				this.totalCost = parseInt(localStorage.getItem("cost"), 10);
+			if (localStorage.getItem("selManager"))
 				this.selectedEvtManager = JSON.parse(localStorage.getItem("selManager"));
 		}
 	}
 
 
-	randomInt(min, max){
+	randomInt(min, max) {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
-	 }
+	}
+
+
+	public getJSONofDishes(): Observable<any> {
+		return this.http.get<DishModel>("./assets/dishes.json")
+
+	}
+
+	getDishesByMenuID(id) {
+		return this.dishArray.filter(d => d.Menu_Type == id);
+	}
+
+	getCuisinesArr(id): Array<any> {
+		var arr = this.dishArray.filter(d => d.id == id);
+
+		var res: string[];
+		if (arr.length) {
+			if (arr[0].Cuisine.includes(","))
+				return arr[0].Cuisine.split(",");
+			else {
+				if (arr[0].Cuisine == "")
+					return [];
+
+				res.push(arr[0].Cuisine);
+				return res;
+			}
+		}
+
+
+		return arr.length ? arr[0].Cuisine.split(",") : [];
+
+	}
+
+	getRestrictArr(id): Array<any> {
+		var arr = this.dishArray.filter(d => d.id == id);
+		var res: string[];
+		if (arr.length) {
+			if (arr[0].Restrictions.includes(","))
+				return arr[0].Restrictions.split(",");
+			else {
+				if (arr[0].Restrictions == "")
+					return [];
+				res.push(arr[0].Restrictions);
+				return res;
+			}
+		}
+
+		return arr.length ? arr[0].Restrictions.split(",") : [];
+
+	}
+
+	registerChef(options) {
+		return this.http.post(this.ApiUrl + "/register",options).pipe()
+	}
 
 }
 
@@ -737,12 +807,4 @@ export interface searchModel {
 	nonVegAttnd: number;
 	datetime: Date;
 
-	// constructor(){
-	//   this.location = "";
-	//   this.serviceType="";
-	//   this.vegAttnd = 0;
-	//   this.nonVegAttnd = 0;
-	//   this.date= new Date();
-	//   this.time=""
-	// }
 };

@@ -1,0 +1,58 @@
+<!--  Popop  -->
+<div class="foodPop">
+        <div class="foodPopWrap">
+        <div class="foodPopInn clearfix">
+    
+            <form [formGroup]="positionsForm" class="form-horizontal" novalidate>
+            <div class="addForm careerForm">
+                <div class="clearfix">
+                    <label for="fullname">Full Name</label>
+                    <div class="addInn"><input type="text" placeholder="Enter Full Name" formControlName="fullname"/></div>
+                </div>
+                <div class="clearfix">
+                    <label for="age">Age</label>
+                    <div class="addInn"><input type="text" placeholder="Enter Age" formControlName="age"/></div>
+                </div>
+                <div class="clearfix">
+                    <label for="gender">Gender</label>
+                    <div class="addInn">
+                        <select formControlName="gender">
+                            <option *ngFor="let gender of genders" [value]="gender">{{ gender }}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <label for="phone">Phone</label>
+                    <div class="addInn"><input type="text" placeholder="0000 000 000" formControlName="phone"/></div>
+                </div>
+                <div class="clearfix">
+                    <label for="email">Email</label>
+                    <div class="addInn"><input type="text" placeholder="name@domain.com" formControlName="email"/></div>
+                </div>
+                <div class="clearfix mb">
+                    <label for="resume">Resume</label>
+                    <div class="addInn">
+                    <div class="input-group col-md-12" style="margin:0 auto">
+                        <b class="input-group-btn"> <span class="btn btn-primary"><i class="fa fa-folder-open-o"></i>&nbsp;Browse File
+                        <input type="file" style="display: none;" multiple id="uploadBtn" class="upload" formControlName="resume">
+                        </span> </b>
+                        <input type="text" class="form-control" readonly id="uploadFile" placeholder="Attachment" formControlName="resume">
+                    </div>
+                    </div>
+                </div>	
+                <div class="clearfix">
+                    <label for="about">About yourself</label>
+                    <div class="addInn"><textarea placeholder="Enter here.." formControlName="about"></textarea></div>
+                </div>																													
+            </div>
+            </form>	
+                    
+        <div class="foodPopBtn careerBtn text-right">
+            <a href="javascript:void(0)" class="foodClose" (click)="onCancel()">Cancel</a>		
+            <a href="javascript:void(0)" class="add" (click)="onAdd()">Submit</a>
+        </div>
+        </div>
+        </div>
+</div>
+               
+<!--  Popop  -->	  

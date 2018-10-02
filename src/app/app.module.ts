@@ -34,6 +34,7 @@ import { DirectiveModule } from './shared/index';
     HttpClientModule,
     AppRoutingModule,
     // SharedModule
+    HttpClientModule
 
   ],
   providers: [

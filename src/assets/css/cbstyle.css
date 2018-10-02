@@ -878,13 +878,13 @@ footer {
 
 .footMenu {
     float: left;
-    padding: 13px 0px 0px 100px;
+    padding: 13px 0px 0px 65px;
 }
 
 .footMenu a {
     display: inline-block;
     padding: 1px 5px;
-    margin: 0px 12px;
+    margin: 0px 10px;
     text-transform: uppercase;
     color: #5a5959;
     font-size: 14px;
@@ -901,7 +901,7 @@ footer {
 
 .social a {
     display: inline-block;
-    padding: 0px 4px;
+    /* padding: 0px 4px; */
     margin: 0px 10px;
     opacity: 0.5;
     -webkit-transition: 0.15s all;
@@ -4272,7 +4272,7 @@ footer {
     background-color: #fff;
     left: 38px;
     top: 0px;
-    display: none;
+    display: block;
 }
 
 .changPas h2 {
@@ -4745,3 +4745,96 @@ footer {
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
+
+/* Career */
+.careerTheme {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 200px 0px 160px;
+    text-transform: uppercase;
+    background-image: url(../images/careertheme.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0px 6px 6px rgba(0,0,0,0.1);
+}
+
+.careerWrap {
+    background-color: #fff;
+}
+
+.careerInn {
+    max-width: 1150px;
+    width: 92%;
+    padding: 50px 0px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.careerInn h3 {
+    text-align: center;
+    background: url(../images/bg-head.png) repeat-x center;
+    padding: 0px 0px;
+    display: block;
+    width: 600px;
+    margin: 0px auto 20px;
+}
+
+.careerInn h3 span {
+    display: inline-block;
+    background-color: #fff;
+    padding: 0px 35px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #404c58;
+    text-transform: uppercase;
+}
+
+.careerInn p.carWid {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.bgTwo, .bgTwo h3 span {
+    background-color: #f5f5f5;
+}
+
+.careerCta {
+    width: 31.333%;
+    margin: 1%;
+    border-radius: 3px;
+    padding: 15px;
+    float: left;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    background-color: #fff;
+    text-align: left;
+    cursor: pointer;
+}
+
+.careerCta h4 {
+    padding: 0px 0px;
+    margin: 0px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+.careerCta p {
+    padding: 2px 0px;
+    margin: 0px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #545454;
+    line-height: 23px;
+}
+
+.careerCta a {
+    font-size: 13px;
+    color: #999;
+}
+
+/* Career */

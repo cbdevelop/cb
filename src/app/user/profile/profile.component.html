@@ -1,0 +1,37 @@
+<div class="profileInn clearfix">
+    <div class="profileLeft"><img src="../../assets/images/user.svg" alt=""/></div>
+    <div class="profileRight clearfix">
+
+        <div class="userDetails">
+        <form [formGroup]="profileForm" class="form-horizontal" (ngSubmit)="onProfile()" novalidate>
+    
+            <div class="clearfix">
+                <label for="fullName" class="required">Full Name</label>
+                <input type="text" placeholder="Enter Full Name" class="addfild" formControlName="fullName"/>
+            </div>
+            <div class="clearfix">
+                <label for="email" class="required">Email</label>
+                <input type="text" placeholder="Enter Email" class="addfild" formControlName="email"/>
+            </div>
+            <div class="clearfix">
+                <label for="mobile" class="required">Mobile</label>
+                <input type="text" placeholder="Enter Mobile Number" class="addfild" formControlName="mobile"/>
+            </div>
+            <div class="clearfix">
+                <label for="gender" class="required">Gender</label>
+                <select id="gender" formControlName="gender">
+                    <option *ngFor="let gender of genders" [value]="gender">{{ gender }}</option>
+                </select>
+            </div>  
+            <div class="clearfix">
+                <input class="detEdit" value="Edit" type="button"/>
+            </div>  
+            
+        </form>                                                                              
+        </div>
+        <div class="userBtn">
+            <a href="" routerLink="/change">Change Password</a>
+       </div>
+        
+    </div>
+</div> 

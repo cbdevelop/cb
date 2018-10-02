@@ -3,11 +3,14 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { MasterService } from '../../services/master.service';
 
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { ChefCatPopupComponent } from '../chef-cat-popup/chef-cat-popup.component';
 import { Menu } from '../../shared/models/menu.mode';
+
+
 import { OrderPreviewComponent } from '../order-preview/order-preview.component';
 import { MobilePreviewComponent } from '../mobile-preview/mobile-preview.component';
+import { ChefCatPopupComponent } from '../chef-cat-popup/chef-cat-popup.component';
 import { CommentsComponent } from '../../shared/comments/comments.component';
+
 @Component({
   selector: 'app-result-view',
   templateUrl: './result-view.component.html',
@@ -20,7 +23,7 @@ export class ResultViewComponent implements OnInit {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private service: MasterService,
+    public service: MasterService,
     private modalService: NgbModal
   ) {
 
@@ -29,6 +32,30 @@ export class ResultViewComponent implements OnInit {
   ngOnInit() {
     this.all_categories = this.service.alldishes;
     console.log(this.all_categories);
+    this.getDishList();
+  }
+
+  getDishList() {
+    this.service.getJSONofDishes().subscribe(
+      (data) => {
+        console.log(data);
+        this.service.dishArray = data;
+        this.service.stallsArray = this.service.getDishesByMenuID(1);
+        this.service.snackArray = this.service.getDishesByMenuID(2);
+        this.service.beverges_drinkArray = this.service.getDishesByMenuID(3);
+        this.service.breadsArray = this.service.getDishesByMenuID(4);
+        this.service.soupArray = this.service.getDishesByMenuID(5);
+        this.service.saladsArray = this.service.getDishesByMenuID(6);
+        this.service.MainCourseArray = this.service.getDishesByMenuID(7);
+        this.service.desertsArray = this.service.getDishesByMenuID(8);
+        this.service.stallsArray = this.service.getDishesByMenuID(9);
+
+      }
+    );
+  }
+
+  getCuisinesArr(id){
+    return this.service.getCuisinesArr(id).length;
   }
 
   onSectionChange(sectionId: string) {
@@ -64,8 +91,8 @@ export class ResultViewComponent implements OnInit {
         } else if (menucategoryid == 6) {
         }
         var selectedDish = JSON.stringify(this.service.selectedDishes);
-        localStorage.setItem("selDises",selectedDish);
-        localStorage.setItem("cost",this.service.totalCost.toString());
+        localStorage.setItem("selDises", selectedDish);
+        localStorage.setItem("cost", this.service.totalCost.toString());
       }
     }
 
@@ -76,13 +103,13 @@ export class ResultViewComponent implements OnInit {
     if (menucategoryid == 1) {
       return this.service.selectedDishes.best.findIndex(d => d.dishId == dishId) == -1 ? false : true;
     } else if (menucategoryid == 2) {
-      return this.service.selectedDishes.starter.findIndex(d => d.dishId == dishId) ==-1 ? false : true;
+      return this.service.selectedDishes.starter.findIndex(d => d.dishId == dishId) == -1 ? false : true;
     } else if (menucategoryid == 3) {
-      return this.service.selectedDishes.main.findIndex(d => d.dishId == dishId) ==-1 ? false : true;
+      return this.service.selectedDishes.main.findIndex(d => d.dishId == dishId) == -1 ? false : true;
     } else if (menucategoryid == 4) {
-      return this.service.selectedDishes.biryani.findIndex(d => d.dishId == dishId) ==-1 ? false : true;
+      return this.service.selectedDishes.biryani.findIndex(d => d.dishId == dishId) == -1 ? false : true;
     } else if (menucategoryid == 5) {
-      return this.service.selectedDishes.beverges.findIndex(d => d.dishId == dishId) ==-1 ? false : true;
+      return this.service.selectedDishes.beverges.findIndex(d => d.dishId == dishId) == -1 ? false : true;
     } else if (menucategoryid == 6) {
     }
   }

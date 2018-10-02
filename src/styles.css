@@ -132,6 +132,7 @@ html [type=button], a {
     color:  #6a6666c7 !important;
 
 }
+
 /* Comments */
 
 .modal-dialog {
@@ -143,7 +144,6 @@ html [type=button], a {
     -webkit-transform: inherit;
     padding: 40px;
 }
-
 /* Comments */
 
 /* Popup's padding */
@@ -262,4 +262,35 @@ html [type=button], a {
         position: absolute;
         /* z-index: 100000; */
         margin: -7px;
+}
+/* Change Password */
+.userDetails h2 {
+    padding: 0px 0px 8px;
+    margin: 0px 0px 5px;
+    border-bottom: 1px solid #dedede;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+}
+
+/* about */
+.backWhite {
+    background-color: #fff;
+}
+
+/* positions */
+.careerForm {
+    position: static !important;
+    width: 100%;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
+    padding: 10px 10px;
+    float: none;
+}
+
+/* Validations Error */
+.addfild.ng-invalid {border-left:5px solid red;}
+
+.required:after, .form-control.ng-invalid {
+    content: " *";
+    color: red;
 }
