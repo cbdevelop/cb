@@ -17,7 +17,7 @@ export class ListComponent implements OnInit {
 
   constructor(
      private eventService: NgbModal,
-  private masterobj:MasterService
+  public masterobj:MasterService
   ) { }
 
   ngOnInit() {

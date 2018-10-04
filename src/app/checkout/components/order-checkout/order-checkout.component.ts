@@ -16,7 +16,7 @@ export class OrderCheckoutComponent implements OnInit {
 
   constructor( 
     private commentService: NgbModal,
-    private masterObj:MasterService,
+    public masterObj:MasterService,
     private router:Router
   ) { }
 

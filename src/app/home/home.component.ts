@@ -15,7 +15,7 @@ import { FormControl, FormGroup, FormBuilder, AbstractControl, Validators } from
 })
 export class HomeComponent implements OnInit {
 
-  private searchObj: searchModel;
+  public searchObj: searchModel;
 
   homeForm: FormGroup;
 

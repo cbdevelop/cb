@@ -21,8 +21,8 @@ export class AddmanagerComponent implements OnInit {
   public genders : string[] = [ 'Male', 'Female', 'Other' ];
   public experiences: string[] = [ 'Yes', 'No' ];
   alert: alert = { type: 'success', message: '' };
-  private managerForm: FormGroup;
-  private loading: Boolean;
+  public managerForm: FormGroup;
+  public loading: Boolean;
 
   @ViewChild("head") header;
   

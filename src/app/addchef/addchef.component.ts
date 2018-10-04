@@ -22,8 +22,8 @@ export class AddchefComponent implements OnInit {
   public genders: string[] = ['Male', 'Female', 'Other'];
   public experiences: string[] = ['Yes', 'No'];
 
-  private chefForm: FormGroup;
-  private loading: Boolean;
+  public chefForm: FormGroup;
+  public loading: Boolean;
   alert: alert = { type: 'success', message: '' };
 
   @ViewChild("head") header;

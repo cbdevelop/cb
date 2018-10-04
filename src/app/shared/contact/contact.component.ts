@@ -14,8 +14,8 @@ import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ContactComponent implements OnInit {
 
-  private queryForm: FormGroup;
-  private loading: Boolean;
+  public queryForm: FormGroup;
+  public loading: Boolean;
 
   @ViewChild("head") header;
 

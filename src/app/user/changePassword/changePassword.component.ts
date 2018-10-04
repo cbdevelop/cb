@@ -33,4 +33,7 @@ export class ChangePasswordComponent implements OnInit {
     this.router.navigate(['/profile'])
   }
 
+  onPassword() {
+    
+  }
 }

@@ -85,7 +85,7 @@ export class ModifySearchComponent implements OnInit {
     this.activeModal.dismiss();
   }
 
-  onModified() {
+  onModified(searchObj) {
     // console.log(evt);
     // this.routerObj.navigate(['../search'])
   }
