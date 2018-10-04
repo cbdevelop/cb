@@ -8,6 +8,8 @@ import { RouterModule } from '@angular/router';
 
 import { SigninComponent } from './signin.component';
 import { AuthService } from '../../services/auth_service/auth.service';
+import { AlertsComponent } from '../alerts/alerts.component';
+import { AlertsModule } from '../alerts/alerts.module';
 
 
 @NgModule({
@@ -16,12 +18,13 @@ import { AuthService } from '../../services/auth_service/auth.service';
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
+    AlertsModule,
     HttpModule,
     NgbModule.forRoot()
   ],
   declarations: [ SigninComponent ],
   exports: [ SigninComponent ],
-  entryComponents: [ SigninComponent ],
+  entryComponents: [ AlertsComponent ],
   providers: [ AuthService ]
 })
 export class SigninModule { }

@@ -11,6 +11,7 @@ import { FooterModule, SigninModule } from '../shared/index';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { AlertsModule } from '../shared/alerts/alerts.module';
 
 
 
@@ -24,7 +25,8 @@ import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
         ScrollToModule,
         NgbPopoverModule,
         NgbModalModule,
-        SigninModule
+        SigninModule,
+        AlertsModule
     ],
     declarations: [ AddchefComponent ],
     entryComponents:[ SigninComponent ],

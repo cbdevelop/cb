@@ -78,18 +78,24 @@
 			</div>
 			
 			<div class="md-form3">
-			  <input type="password" class="sinput  pass" placeholder="Password" [ngClass]="{'validate': showRequiredFieldError('password') }" formControlName="password"/>
+			  <input type="password" class="sinput  pass" placeholder="Password" 
+			  [ngClass]="{'validate': showRequiredFieldError('password') }" formControlName="password"/>
 			  <em *ngIf="showRequiredFieldError('password')">Password is required</em>
+			  <em *ngIf="signUpForm.get('password').errors?.pattern"> Password shoud contain atlease One capital ,One special charachter and number</em>
 			</div>
 
 			<div class="md-form3">
-			  <input type="password" class="sinput  pass" placeholder="Confirm Password" [ngClass]="{'validate': showRequiredFieldError('password') }" formControlName="password"/>
-			  <em *ngIf="showRequiredFieldError('password')">Confirm Password is required</em>
+			  <input type="password" class="sinput  pass" placeholder="Confirm Password"
+			   [ngClass]="{'validate': showRequiredFieldError('confirmPassword') }" formControlName="confirmPassword"/>
+			  <em *ngIf="showRequiredFieldError('confirmPassword')">Confirm Password is required</em>
+			  <!-- <em *ngIf="signUpForm.get('confirmPassword').errors?.pattern">Password and Confirm Password must be same</em> -->
 			  <em *ngIf="comparePasswords()">Password and Confirm Password must be same</em>
 			</div>
 			
 			<div class="termTxt">By Signing up you will agree <a href="" [routerLink]="['/terms']" target="_blank">Terms</a> and <a href="" [routerLink]="['/privacy']" target="_blank">Policy</a></div>
 			<button class="siBtn" [disabled]="loading">Sign Up</button>
+
+			<em *ngIf="errMsg != ''">{{ errMsg }}</em>
 		</div>
 		</form>
 		<h4><i>(OR)</i></h4>

@@ -798,6 +798,13 @@ export class MasterService {
 		return this.http.post(this.ApiUrl + "/register",options).pipe()
 	}
 
+	registerUser(options) {
+		return this.http.post(this.ApiUrl + "/userregister",options)
+	}
+
+	registerManager(options) {
+		return this.http.post(this.ApiUrl + "/registerManager",options)
+	}
 }
 
 export interface searchModel {

@@ -10,6 +10,7 @@ import { FooterModule, SigninModule } from '../shared/index';
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { NgbPopoverModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { AlertsModule } from '../shared/alerts/alerts.module';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { NgbPopoverModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
         ScrollToModule,
         NgbPopoverModule,
         NgbModalModule,
-        SigninModule 
+        SigninModule ,
+        AlertsModule
     ],
     declarations: [ AddmanagerComponent ],
     entryComponents:[ SigninComponent ],
