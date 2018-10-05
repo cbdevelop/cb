@@ -8,6 +8,9 @@ import { isNullOrUndefined } from 'util';
 import { SigninComponent } from '../shared/signin/signin.component';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { MasterService } from '../services/master.service';
+import { Response } from '@angular/http';
+import { alert } from '../shared/models/alert.model';
+import { AlertsComponent } from '../shared/alerts/alerts.component';
 
 @Component({
   selector: 'app-addchef',
@@ -19,8 +22,9 @@ export class AddchefComponent implements OnInit {
   public genders: string[] = ['Male', 'Female', 'Other'];
   public experiences: string[] = ['Yes', 'No'];
 
-  private chefForm: FormGroup;
-  private loading: Boolean;
+  public chefForm: FormGroup;
+  public loading: Boolean;
+  alert: alert = { type: 'success', message: '' };
 
   @ViewChild("head") header;
 
@@ -36,7 +40,7 @@ export class AddchefComponent implements OnInit {
     this.chefForm = this.fb.group({
 
       fullname: ['', [Validators.required]],
-      age: ['', [Validators.required]],
+      age: ['', [Validators.required, Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$')]],
       gender: [this.genders[0]],
       phone: ['', [Validators.required, Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$')]],
       email: ['', [Validators.required, this.email()]],
@@ -75,8 +79,8 @@ export class AddchefComponent implements OnInit {
   // register chef
 
   registerChef() {
-var str:string;
-// str.toUpperCase
+    var str: string;
+    // str.toUpperCase
     if (this.chefForm.valid) {
 
       var options = {
@@ -93,8 +97,22 @@ var str:string;
       }
       console.log(options);
       this.masterObj.registerChef(options).subscribe(
-        (data) => {
-          console.log(data);
+        (res: Response) => {
+          console.log(res);
+          if (res.status) {
+            this.chefForm.reset();
+            const modalRef = this.signinModel.open(AlertsComponent);
+            this.alert.message = 'Successfully registred.We will revert back to you';
+            this.alert.type = 'success';
+            modalRef.componentInstance.alert = this.alert;
+          }
+        },
+        (err) => {
+          console.log(err);
+          const modalRef = this.signinModel.open(AlertsComponent);
+          this.alert.type = 'danger';
+          this.alert.message = err.error.message;
+          modalRef.componentInstance.alert = this.alert;
         }
       );
     }

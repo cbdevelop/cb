@@ -141,4 +141,22 @@ export class PayComponent implements OnInit {
     this.other.nativeElement.setAttribute('style', 'display:block');
   }
 
+  onSaved() {
+
+  }
+  onCredit() {
+
+  }
+
+  onDebit() {
+
+  }
+  onNet(){
+
+  }
+
+  onOther() {
+    
+  }
+
 }

@@ -7,8 +7,8 @@ import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms'
 
 @Component({
   selector: 'app-changepassword',
-  templateUrl: './changepassword.component.html',
-  styleUrls: ['./changepassword.component.css']
+  templateUrl: './changePassword.component.html',
+  styleUrls: ['./changePassword.component.css']
 })
 export class ChangePasswordComponent implements OnInit {
 
@@ -33,4 +33,7 @@ export class ChangePasswordComponent implements OnInit {
     this.router.navigate(['/profile'])
   }
 
+  onPassword() {
+    
+  }
 }

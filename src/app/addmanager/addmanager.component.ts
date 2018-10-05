@@ -7,6 +7,9 @@ import { isNullOrUndefined } from 'util';
 
 import { SigninComponent } from '../shared/signin/signin.component';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { MasterService } from '../services/master.service';
+import { AlertsComponent } from '../shared/alerts/alerts.component';
+import { alert } from '../shared/models/alert.model';
 
 @Component({
   selector: 'app-addmanager',
@@ -17,13 +20,15 @@ export class AddmanagerComponent implements OnInit {
 
   public genders : string[] = [ 'Male', 'Female', 'Other' ];
   public experiences: string[] = [ 'Yes', 'No' ];
-
-  private managerForm: FormGroup;
-  private loading: Boolean;
+  alert: alert = { type: 'success', message: '' };
+  public managerForm: FormGroup;
+  public loading: Boolean;
 
   @ViewChild("head") header;
   
-  constructor( private fb: FormBuilder,
+  constructor( 
+    private masterSerObj:MasterService,
+    private fb: FormBuilder,
     private router: Router,
     private signinModel: NgbModal ) {}
 
@@ -66,6 +71,43 @@ showRequiredFieldError(control: string) {
 }
 
 onManager() {
+    var str: string;
+    // str.toUpperCase
+    if (this.managerForm.valid) {
+
+      var options = {
+        "fullName": this.managerForm.controls.fullname.value,
+        "phoneNumber": this.managerForm.controls.phone.value,
+        "age": this.managerForm.controls.age.value,
+        "gender": this.managerForm.controls.gender.value.toUpperCase(),
+        "email": this.managerForm.controls.email.value,
+        "state": this.managerForm.controls.state.value,
+        "city": this.managerForm.controls.city.value,
+        "experienceInEvents": this.managerForm.controls.experience.value.toUpperCase(),
+        "aboutYourSelf": this.managerForm.controls.about.value,
+      }
+      console.log(options);
+      this.masterSerObj.registerManager(options).subscribe(
+        (res: Response) => {
+          console.log(res);
+          if (res.status) {
+
+            const modalRef = this.signinModel.open(AlertsComponent);
+            this.alert.message = 'Successfully registred.We will revert back to you';
+            this.alert.type = 'success';
+            modalRef.componentInstance.alert = this.alert;
+            this.managerForm.reset();
+          }
+        },
+        (err) => {
+          console.log(err);
+          const modalRef = this.signinModel.open(AlertsComponent);
+          this.alert.type = 'danger';
+          this.alert.message = err.error.message;
+          modalRef.componentInstance.alert = this.alert;
+        }
+      );
+    }
 
 }
 

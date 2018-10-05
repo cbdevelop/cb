@@ -18,7 +18,7 @@ export class MenuComponent implements OnInit {
 
   @ViewChild('cheftop') cheftop;
 
-  constructor(  private service: MasterService,
+  constructor(  public service: MasterService,
     public modifiedService: NgbModal, 
     public config: NgbPopoverConfig ) {
 
