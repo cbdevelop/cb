@@ -8,7 +8,7 @@
     <div class="nav-item dropdown" ngbDropdown>
 
     <div class="signWrap clearfix"><a ngbDropdownToggle>
-      <span class="fa fa-user-o siIcon"></span></a>
+      <span class="fa fa-user-o siIcon siIconAct"></span></a>
       <span class="fa fa-bars menuIcon"></span>
     </div>
     <div class="logInInn" ngbDropdownMenu>
@@ -22,7 +22,7 @@
     <nav>
       <ul class="clearfix">
         <li>
-          <a [ngx-scroll-to]="'#home'" [routerLink]="'/'"  class="Act">Home</a>
+          <a [ngx-scroll-to]="'#home'" [routerLink]="'/'">Home</a>
         </li>
         <li>
           <a [ngx-scroll-to]="'#howitworks'" [routerLink]="'/'">How it Works</a>
@@ -47,8 +47,8 @@
 <section class="profileOut">
     <div class="profileWrap">
         <div class="profileTabs">
-            <a href="profile.html" class="Act" routerLink="/profile">Profile</a>
-            <a href="orders.html" routerLink="/orders">Orders</a>
+            <a href="" class="" routerLinkActive="Act" routerLink="/profile">Profile</a>
+            <a href="" routerLinkActive="Act" routerLink="/orders">Orders</a>
         </div>
         
         <router-outlet></router-outlet>

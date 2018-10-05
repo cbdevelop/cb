@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
 
   public searchObj: searchModel;
 
-  homeForm: FormGroup;
+  public homeForm: FormGroup;
 
   location = [];
 

@@ -12,9 +12,7 @@ import { MasterService } from '../../../services/master.service';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-
-  checkboxValue: boolean = false;
-
+  
   constructor(
      private eventService: NgbModal,
   public masterobj:MasterService
