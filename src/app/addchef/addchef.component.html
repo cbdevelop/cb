@@ -12,7 +12,7 @@
     <nav>
       <ul class="clearfix">
         <li>
-          <a [ngx-scroll-to]="'#home'" [routerLink]="'/'"  class="Act">Home</a>
+          <a [ngx-scroll-to]="'#home'" [routerLink]="'/'">Home</a>
         </li>
         <li>
           <a [ngx-scroll-to]="'#howitworks'" [routerLink]="'/'">How it Works</a>
@@ -24,7 +24,7 @@
           <a [ngx-scroll-to]="'#choose'" [routerLink]="'/'">Choose Us</a>
         </li>
         <li>
-          <a [ngx-scroll-to]="'#partner'" [routerLink]="'/'">Partners</a>
+          <a [ngx-scroll-to]="'#partner'" [routerLink]="'/'" class="Act">Partners</a>
         </li>
         <li>
           <a [routerLink]="['/contact']">Contact</a>
@@ -138,8 +138,8 @@
             <div class="clearfix">
                 <label>&nbsp;</label>
                 <div class="addInn">
-                <div class="termTxt">By Submiting Details you will agree <a href="javascript:void(0)">Terms</a> and 
-                <a href="javascript:void(0)">Policy</a></div>
+                <div class="termTxt">By Submiting Details you will agree <a href="" routerLink="/terms">Terms</a> and 
+                <a href="" routerLink="/privacy">Policy</a></div>
                 <button class="siBtn" [disabled]="loading">Submit</button>
                 </div>
             </div>																														
