@@ -6,9 +6,9 @@ import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 const appRoutes: Routes = [
 
   { path: '', loadChildren: './home/home.module#HomeModule' },
-  { path: '', loadChildren: './search/search.module#SearchModule' },
+  { path: 'search', loadChildren: './search/search.module#SearchModule' },
   { path: '', loadChildren: './checkout/checkout.module#CheckoutModule' },
-  { path: '', loadChildren: './payment/payment.module#PaymentModule' },
+  { path: 'payment', loadChildren: './payment/payment.module#PaymentModule' },
   { path: '', loadChildren: './user/user.module#UserModule' },
   { path: 'addchef', loadChildren: './addchef/addchef.module#AddchefModule' },
   { path: 'addmanager', loadChildren: './addmanager/addmanager.module#AddmanagerModule' },
