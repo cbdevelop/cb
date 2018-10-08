@@ -39,8 +39,9 @@ export class ResultViewComponent implements OnInit {
     this.service.getJSONofDishes().subscribe(
       (data) => {
         console.log(data);
+        this.service.masterDish = data;
         this.service.dishArray = data;
-        this.service.stallsArray = this.service.getDishesByMenuID(1);
+        this.service.startersArray = this.service.getDishesByMenuID(1);
         this.service.snackArray = this.service.getDishesByMenuID(2);
         this.service.beverges_drinkArray = this.service.getDishesByMenuID(3);
         this.service.breadsArray = this.service.getDishesByMenuID(4);
@@ -54,8 +55,22 @@ export class ResultViewComponent implements OnInit {
     );
   }
 
-  getCuisinesArr(id){
-    return this.service.getCuisinesArr(id).length;
+  getCuisinesArr(id) {
+    var arr = this.service.dishArray.filter(d => d.id == id);
+
+    var res: string[] = [];
+    if (arr.length) {
+      if (arr[0].Cuisine.includes(","))
+        return arr[0].Cuisine.split(",");
+      else {
+        if (arr[0].Cuisine == "")
+          return [];
+        res.push(arr[0].Cuisine);
+        return res;
+      }
+    }
+    return arr.length ? arr[0].Cuisine.split(",") : [];
+    // return this.service.getCuisinesArr(id).length;
   }
 
   onSectionChange(sectionId: string) {
@@ -113,11 +128,56 @@ export class ResultViewComponent implements OnInit {
     } else if (menucategoryid == 6) {
     }
   }
-  openRes(menucategoryid, disId) {
 
+  openRes(menucategoryid, disId) {
     const modalRef = this.modalService.open(ChefCatPopupComponent);
     modalRef.componentInstance.cat_id = menucategoryid;
     modalRef.componentInstance.dishId = disId;
+  }
+
+  /* open pop up if cuisnes are there*/ 
+  DishClicked(menucategoryid: number, disId) {
+    console.log(disId);
+    if (this.isDishSelected(menucategoryid, disId)) {
+      console.log('selected');
+      var arr = this.service.dishArray.filter(x => x.id == disId);
+
+      if (this.getCuisinesArr(arr[0].id)) {
+        const modalRef = this.modalService.open(ChefCatPopupComponent);
+        modalRef.componentInstance.cat_id = menucategoryid;
+        modalRef.componentInstance.dishId = disId;
+      } else if (arr.length) {
+
+      }
+
+    } else {
+      var arr = this.service.dishArray.filter(x => x.id == disId);
+      console.log(this.getCuisinesArr(arr[0].id));
+      if (this.getCuisinesArr(arr[0].id).length) {
+        const modalRef = this.modalService.open(ChefCatPopupComponent);
+        modalRef.componentInstance.cat_id = menucategoryid;
+        modalRef.componentInstance.dishId = disId;
+      } else if (arr.length) {
+        // {ca  menucategoryid,arr[0]}
+        arr[0].Restrictions = "";
+        this.service.totalCost += arr[0].Price;
+        this.service.selectedDishArr.push(arr[0]);
+        var selectedDish = JSON.stringify(this.service.selectedDishArr);
+        localStorage.setItem("selDises", selectedDish);
+        localStorage.setItem("cost", this.service.totalCost.toString());
+      }
+    }
+  }
+
+
+  openDishpopup(menucategoryid, disId) {
+    const modalRef = this.modalService.open(ChefCatPopupComponent);
+    modalRef.componentInstance.cat_id = menucategoryid;
+    modalRef.componentInstance.dishId = disId;
+  }
+
+  isDishSelected(menucategoryid: number, disId) {
+    return this.service.selectedDishArr.findIndex(d => d.id == disId) == -1 ? false : true;
   }
 
   openCart() {

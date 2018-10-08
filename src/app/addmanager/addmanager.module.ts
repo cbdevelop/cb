@@ -9,7 +9,7 @@ import { AddmanagerRoutingModule } from './addmanager-routing.module';
 import { FooterModule, SigninModule } from '../shared/index';
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { NgbPopoverModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbPopoverModule,NgbCollapseModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { AlertsModule } from '../shared/alerts/alerts.module';
 
 
@@ -23,6 +23,7 @@ import { AlertsModule } from '../shared/alerts/alerts.module';
         ScrollToModule,
         NgbPopoverModule,
         NgbModalModule,
+        NgbCollapseModule,
         SigninModule ,
         AlertsModule
     ],

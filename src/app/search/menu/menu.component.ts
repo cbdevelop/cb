@@ -1,8 +1,10 @@
 import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
 
 import { NgbPopoverConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { ModifySearchComponent } from '../modify-search/modify-search.component';
 import { MasterService } from '../../services/master.service';
+import { ModifySearchComponent } from '../../shared/modify-search/modify-search.component';
+import { Router,ActivatedRoute } from '@angular/router';
+import { CommentsComponent } from '../../shared/comments/comments.component';
 
 @Component({
   selector: 'app-menu',
@@ -18,7 +20,10 @@ export class MenuComponent implements OnInit {
 
   @ViewChild('cheftop') cheftop;
 
-  constructor(  public service: MasterService,
+  constructor(  
+    private router: Router,
+    private route: ActivatedRoute,
+    public masterObj: MasterService,
     public modifiedService: NgbModal, 
     public config: NgbPopoverConfig ) {
 
@@ -71,6 +76,19 @@ export class MenuComponent implements OnInit {
     this.modifiedService.open(ModifySearchComponent);
 
   }
+
+  // Comments Model Popup
+  onCommentPopup() {
+    this.modifiedService.open(CommentsComponent);
+  }
+
+  onCheckout() {
+    if (this.masterObj.selectedDishArr.length) {
+      this.router.navigate(['../chef'], { relativeTo: this.route });
+    }
+  }
+
+
 
   @HostListener("window:scroll", [])
   onWindowScroll() {

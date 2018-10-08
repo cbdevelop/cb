@@ -11,6 +11,7 @@ import { HttpModule } from '@angular/http';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { PaymentRoutingModule } from './payment-routing.module';
 import { FooterModule } from '../shared';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { FooterModule } from '../shared';
     ScrollToModule,
     PaymentRoutingModule,
     FooterModule,
+    NgbCollapseModule,
   ],
   declarations: [ 
     PaymentComponent, 

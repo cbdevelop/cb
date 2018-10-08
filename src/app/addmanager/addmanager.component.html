@@ -5,10 +5,13 @@
     <div class="logo">
       <a [routerLink]="'/'" class="logoImg"></a>
     </div>
-    <div class="signWrap clearfix"><a (click)="openSign()">
-      <span class="fa fa-user-o siIcon"></span></a>
-      <span class="fa fa-bars menuIcon"></span>
+    <div class="signWrap clearfix">
+      <a (click)="openSign()">
+        <span class="fa fa-user-o siIcon"></span>
+      </a>
+      <span class="fa fa-bars menuIcon" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"></span>
     </div>
+    <div id="collapseExample" [ngbCollapse]="isCollapsed">
     <nav>
       <ul class="clearfix">
         <li>
@@ -31,131 +34,152 @@
         </li>
       </ul>
     </nav>
+    </div>
+    
   </section>
 </header>
 
 <!-- Theme -->
 <section class="addTheme addThemeEvevt">
-    <div class="addThemeText">
-      <h2>Be a freelancer</h2>
-      <p>Manage the event workflow at your own convenience</p>
-      <div class="themIcon" title="Become a Event Manager"><img src="../../../assets/images/event-i.png" alt=""/></div>
+  <div class="addThemeText">
+    <h2>Be a freelancer</h2>
+    <p>Manage the event workflow at your own convenience</p>
+    <div class="themIcon" title="Become a Event Manager">
+      <img src="../../../assets/images/event-i.png" alt="" />
     </div>
-    <div class="addThemeInn"></div>
-  </section>
-  <!-- Theme -->
-  
-  <!--   Add Manager  -->
-  
-  <section class="addContWrap">
-    <div class="addContInn clearfix">
-  
-	  <form [formGroup]="managerForm" class="form-horizontal" (ngSubmit)="onManager()" novalidate>	
+  </div>
+  <div class="addThemeInn"></div>
+</section>
+<!-- Theme -->
+
+<!--   Add Manager  -->
+
+<section class="addContWrap">
+  <div class="addContInn clearfix">
+
+    <form [formGroup]="managerForm" class="form-horizontal" (ngSubmit)="onManager()" novalidate>
       <div class="addForm">
-  
-          <div class="clearfix">
-              <label for="fullname">Full Name</label>
-              <div class="addInn">
-                <input type="text" placeholder="Enter Full Name" [ngClass]="{'validate': showRequiredFieldError('fullname') }" formControlName="fullname"/>
-                <em *ngIf="showRequiredFieldError('fullname')">Full Name is required</em>
-              </div>
-          </div>
 
-          <div class="clearfix">
-              <label for="age">Age</label>
-              <div class="addInn">
-                <input type="text" placeholder="Enter Age" [ngClass]="{'validate': showRequiredFieldError('age') }" formControlName="age"/>
-                <em *ngIf="showRequiredFieldError('age')">Age is required</em>
-              </div>
+        <div class="clearfix">
+          <label for="fullname">Full Name</label>
+          <div class="addInn">
+            <input type="text" placeholder="Enter Full Name" [ngClass]="{'validate': showRequiredFieldError('fullname') }" formControlName="fullname"
+            />
+            <em *ngIf="showRequiredFieldError('fullname')">Full Name is required</em>
           </div>
+        </div>
 
-          <div class="clearfix">
-              <label for="gender">Gender</label>
-              <div class="addInn">
-              <select id="gender" formControlName="gender">
-                <option *ngFor="let gender of genders" [value]="gender">{{ gender }}</option>
-              </select>
-              </div>
+        <div class="clearfix">
+          <label for="age">Age</label>
+          <div class="addInn">
+            <input type="text" placeholder="Enter Age" [ngClass]="{'validate': showRequiredFieldError('age') }" formControlName="age"
+            />
+            <em *ngIf="showRequiredFieldError('age')">Age is required</em>
           </div>
-  
-          <div class="clearfix">
-              <label for="phone">Phone</label>
-              <div class="addInn">
-                <input type="text" placeholder="0000 000 000" [ngClass]="{'validate': showRequiredFieldError('phone') }" formControlName="phone"/>
-                <em *ngIf="showRequiredFieldError('phone')">Phone is required</em>
-              </div>
-          </div>
-  
-          <div class="clearfix">
-              <label for="email">Email</label>
-              <div class="addInn">
-                  <input type="email" placeholder="name@domain.com" [ngClass]="{'validate': showRequiredFieldError('email') }" formControlName="email"/>
-                <em *ngIf="showRequiredFieldError('email')">Email is required</em>
-              </div>
-          </div>
-  
-          <div class="clearfix">
-              <label for="state">State</label>
-              <div class="addInn">
-                <input type="text" placeholder="Enter State" [ngClass]="{'validate': showRequiredFieldError('state') }" formControlName="state"/>
-                <em *ngIf="showRequiredFieldError('state')">State is required</em>
-              </div>
-          </div>	
-  
-          <div class="clearfix">
-              <label for="city">City</label>
-              <div class="addInn">
-                <input type="text" placeholder="Enter City" [ngClass]="{'validate': showRequiredFieldError('city') }" formControlName="city"/>
-                <em *ngIf="showRequiredFieldError('city')">City is required</em>
-              </div>
-          </div>		
+        </div>
 
-          <div class="clearfix">
-              <label for="experience">Experience in  organizing events</label>
-              <div class="addInn">
-              <select id="experience" formControlName="experience">
-                <option *ngFor="let experience of experiences" [value]="experience">{{ experience }}</option>
-              </select>
-              </div>
+        <div class="clearfix">
+          <label for="gender">Gender</label>
+          <div class="addInn">
+            <select id="gender" formControlName="gender">
+              <option *ngFor="let gender of genders" [value]="gender">{{ gender }}</option>
+            </select>
           </div>
+        </div>
 
-          <div class="clearfix">
-              <label for="about">About yourself</label>
-              <div class="addInn">
-                <textarea placeholder="Enter here.." [ngClass]="{'validate': showRequiredFieldError('about') }" formControlName="about"></textarea>
-                <em *ngIf="showRequiredFieldError('about')">About yourself is required</em>
-              </div>
-          </div>	
+        <div class="clearfix">
+          <label for="phone">Phone</label>
+          <div class="addInn">
+            <input type="text" placeholder="0000 000 000" [ngClass]="{'validate': showRequiredFieldError('phone') }" formControlName="phone"
+            />
+            <em *ngIf="showRequiredFieldError('phone')">Phone is required</em>
+          </div>
+        </div>
 
-          <div class="clearfix">
-              <label>&nbsp;</label>
-              <div class="addInn">
-              <div class="termTxt">By Submiting Details you will agree <a href="" routerLink="/terms">Terms</a> and 
-              <a href="" routerLink="/privacy">Policy</a></div>
-              <button class="siBtn" [disabled]="loading">Submit</button>
-              </div>
-          </div>																														
+        <div class="clearfix">
+          <label for="email">Email</label>
+          <div class="addInn">
+            <input type="email" placeholder="name@domain.com" [ngClass]="{'validate': showRequiredFieldError('email') }" formControlName="email"
+            />
+            <em *ngIf="showRequiredFieldError('email')">Email is required</em>
+          </div>
+        </div>
+
+        <div class="clearfix">
+          <label for="state">State</label>
+          <div class="addInn">
+            <input type="text" placeholder="Enter State" [ngClass]="{'validate': showRequiredFieldError('state') }" formControlName="state"
+            />
+            <em *ngIf="showRequiredFieldError('state')">State is required</em>
+          </div>
+        </div>
+
+        <div class="clearfix">
+          <label for="city">City</label>
+          <div class="addInn">
+            <input type="text" placeholder="Enter City" [ngClass]="{'validate': showRequiredFieldError('city') }" formControlName="city"
+            />
+            <em *ngIf="showRequiredFieldError('city')">City is required</em>
+          </div>
+        </div>
+
+        <div class="clearfix">
+          <label for="experience">Experience in organizing events</label>
+          <div class="addInn">
+            <select id="experience" formControlName="experience">
+              <option *ngFor="let experience of experiences" [value]="experience">{{ experience }}</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="clearfix">
+          <label for="about">About yourself</label>
+          <div class="addInn">
+            <textarea placeholder="Enter here.." [ngClass]="{'validate': showRequiredFieldError('about') }" formControlName="about"></textarea>
+            <em *ngIf="showRequiredFieldError('about')">About yourself is required</em>
+          </div>
+        </div>
+
+        <div class="clearfix">
+          <label>&nbsp;</label>
+          <div class="addInn">
+            <div class="termTxt">By Submiting Details you will agree
+              <a href="" routerLink="/terms">Terms</a> and
+              <a href="" routerLink="/privacy">Policy</a>
+            </div>
+            <button class="siBtn" [disabled]="loading">Submit</button>
+          </div>
+        </div>
       </div>
     </form>
 
     <div class="addCont">
-        <h3>Feasible</h3>
-        <p>Schedule available time slots for any day and your profile will only be visible to book for that day, also you can fix the proximity radius as per your feasibility</p>
-        <h3>Manage</h3>
-        <p>Keep up with the client and implement the best theme for their event as per their requirement</p>
-        <h3>Work with ease. Zero hassle, no struggle</h3>
-        <p>We back you with everything butlers/ servers, crockery, tables and all necessary items. We have the access to every resource. Focus only on the conceptualize as per the customers demand and making it into reality to make the workflow smooth</p>
-        <h4>Benefits</h4>
-        <h3>Free food</h3>
-        <p>You get free food every time you manage an event cooked by our top notch chefs</p>
-        <h3>You be the priority</h3>
-        <p>First to be called for free food tasting sessions to review our partners profiles</p>
-        <h3>Extra earnings</h3>
-        <p>Feasible extra earnings</p>
+      <h3>Feasible</h3>
+      <p>Set your profiles visibility as per the scheduled time slots of your available days, also you can reduce the serviceable
+        proximity radius in order to restrict your service as per your convenience</p>
+
+      <h3>Work with ease. Zero hassle, no struggle</h3>
+      <p>We back you with everything butlers/ stewards, crockery, tables and all necessary items. We have the access to every
+        resource. Focus only on conceptualization of the event arrangement as per the customers demand and making it into
+        reality.
+      </p>
+      <h3>Zero stress</h3>
+      <p>
+        We constantly supervise and coordinate with you to make the event a success.
+      </p>
+      <h4>Benefits</h4>
+      <h3>Free food</h3>
+      <p>You get free food every time you manage an event cooked by our top notch chefs.</p>
+      <h3>You be the priority</h3>
+      <p>First to be called for free food tasting events, increase your profile visibility and be a trending food blogger in
+        the city by reviewing our partners profiles.</p>
+      <h3>Extra earnings</h3>
+      <p>Our top freelancing partners are earning above Rs. 3,000 everyday as per their available dates. Join with us and you
+        be among them too.</p>
     </div>
-    </div>
-  </section>
-  
-  <!--   Add Manager  -->
-  
-  <app-footer></app-footer>
+  </div>
+</section>
+
+<!--   Add Manager  -->
+
+<app-footer></app-footer>

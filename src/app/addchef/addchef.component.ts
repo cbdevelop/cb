@@ -26,6 +26,7 @@ export class AddchefComponent implements OnInit {
   public loading: Boolean;
   alert: alert = { type: 'success', message: '' };
 
+  isCollapsed = false;
   @ViewChild("head") header;
 
   constructor(

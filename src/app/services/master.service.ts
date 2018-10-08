@@ -12,9 +12,15 @@ export class MasterService {
 	ApiUrl = "";
 	dishCount: number = 0;
 	totalCost: number = 0;
+	totalAttendees = 0;
+	public searchObj: searchModel = { location: [], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
+
+
 	currentSection = 'home';
 	searchmenu_selection = "all";
+	masterDish: DishModel[] = [];
 	dishArray: DishModel[] = [];
+	selectedDishArr: DishModel[] = [];
 	startersArray: DishModel[] = []; // menutype =1
 	snackArray: DishModel[] = []; // menutype =2
 	beverges_drinkArray: DishModel[] = []; // menutype =3
@@ -755,23 +761,24 @@ export class MasterService {
 		return this.dishArray.filter(d => d.Menu_Type == id);
 	}
 
-	getCuisinesArr(id): Array<any> {
-		var arr = this.dishArray.filter(d => d.id == id);
+	getSelectedDishesById(menutype) {
+		return this.selectedDishArr.filter(d => d.Menu_Type == menutype);
+	}
 
-		var res: string[];
+	getCuisinesArr(did): Array<any> {
+		var arr = this.dishArray.filter(d => d.id == did);
+
+		var res: string[] = [];
 		if (arr.length) {
 			if (arr[0].Cuisine.includes(","))
 				return arr[0].Cuisine.split(",");
 			else {
 				if (arr[0].Cuisine == "")
 					return [];
-
 				res.push(arr[0].Cuisine);
 				return res;
 			}
 		}
-
-
 		return arr.length ? arr[0].Cuisine.split(",") : [];
 
 	}
@@ -795,21 +802,21 @@ export class MasterService {
 	}
 
 	registerChef(options) {
-		return this.http.post(this.ApiUrl + "/register",options).pipe()
+		return this.http.post(this.ApiUrl + "/register", options).pipe()
 	}
 
 	registerUser(options) {
-		return this.http.post(this.ApiUrl + "/userregister",options)
+		return this.http.post(this.ApiUrl + "/userregister", options)
 	}
 
 	registerManager(options) {
-		return this.http.post(this.ApiUrl + "/registerManager",options)
+		return this.http.post(this.ApiUrl + "/registerManager", options)
 	}
 }
 
 export interface searchModel {
-	location: string;
-	serviceType: string;
+	location: Array<any>;
+	serviceType: Array<any>;
 	vegAttnd: number;
 	nonVegAttnd: number;
 	datetime: Date;

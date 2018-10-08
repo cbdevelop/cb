@@ -3,12 +3,15 @@
 <header #head>
   <section class="headInn clearfix">
     <div class="logo">
-      <a [routerLink]="'/'"  class="logoImg"></a>
+      <a [routerLink]="'/'" class="logoImg"></a>
     </div>
-    <div class="signWrap clearfix"><a (click)="openSign()">
-      <span class="fa fa-user-o siIcon"></span></a>
-      <span class="fa fa-bars menuIcon"></span>
+    <div class="signWrap clearfix">
+      <a (click)="openSign()">
+        <span class="fa fa-user-o siIcon"></span>
+      </a>
+      <span class="fa fa-bars menuIcon" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"></span>
     </div>
+    <div id="collapseExample" [ngbCollapse]="isCollapsed">
     <nav>
       <ul class="clearfix">
         <li>
@@ -31,130 +34,145 @@
         </li>
       </ul>
     </nav>
+    </div>
   </section>
 </header>
 
 <!-- Theme -->
 <section class="addTheme">
-	<div class="addThemeText">
-	  <h2>Be a freelancer</h2>
-	  <p>Cook any time as per your convenience</p>
-		<div class="themIcon" title="Become a Chef"><img src="../../../assets/images/chef-i.png" alt=""/></div>
+  <div class="addThemeText">
+    <h2>Be a freelancer</h2>
+    <p>Cook any time as per your convenience</p>
+    <div class="themIcon" title="Become a Chef">
+      <img src="../../../assets/images/chef-i.png" alt="" />
+    </div>
   </div>
-	<div class="addThemeInn"></div>
+  <div class="addThemeInn"></div>
 </section>
 <!-- Theme -->
 
 <!--   Add Chef  -->
 
 <section class="addContWrap">
-	<div class="addContInn clearfix">
+  <div class="addContInn clearfix">
 
-	  <form [formGroup]="chefForm" class="form-horizontal" (ngSubmit)="registerChef()" novalidate>	
-        <div class="addForm">
-    
-            <div class="clearfix">
-                <label for="fullname">Full Name</label>
-                <div class="addInn">
-                  <input type="text" placeholder="Enter Full Name" [ngClass]="{'validate': showRequiredFieldError('fullname') }" formControlName="fullname"/>
-                  <em *ngIf="showRequiredFieldError('fullname')">Full Name is required</em>
-                </div>
-            </div>
-  
-            <div class="clearfix">
-                <label for="age">Age</label>
-                <div class="addInn">
-                  <input type="text" placeholder="Enter Age" [ngClass]="{'validate': showRequiredFieldError('age') }" formControlName="age"/>
-                  <em *ngIf="showRequiredFieldError('age')">Age is required</em>
-                </div>
-            </div>
-  
-            <div class="clearfix">
-                <label for="gender">Gender</label>
-                <div class="addInn">
-                <select id="gender" formControlName="gender">
-                  <option *ngFor="let gender of genders" [value]="gender">{{ gender }}</option>
-                </select>
-                </div>
-            </div>
-    
-            <div class="clearfix">
-                <label for="phone">Phone</label>
-                <div class="addInn">
-                  <input type="text" placeholder="0000 000 000" [ngClass]="{'validate': showRequiredFieldError('phone') }" formControlName="phone"/>
-                  <em *ngIf="showRequiredFieldError('phone')">Phone is required</em>
-                </div>
-            </div>
-    
-            <div class="clearfix">
-                <label for="email">Email</label>
-                <div class="addInn">
-                    <input type="email" placeholder="name@domain.com" [ngClass]="{'validate': showRequiredFieldError('email') }" formControlName="email"/>
-                  <em *ngIf="showRequiredFieldError('email')">Email is required</em>
-                </div>
-            </div>
-    
-            <div class="clearfix">
-                <label for="state">State</label>
-                <div class="addInn">
-                  <input type="text" placeholder="Enter State" [ngClass]="{'validate': showRequiredFieldError('state') }" formControlName="state"/>
-                  <em *ngIf="showRequiredFieldError('state')">State is required</em>
-                </div>
-            </div>	
-    
-            <div class="clearfix">
-                <label for="city">City</label>
-                <div class="addInn">
-                  <input type="text" placeholder="Enter City" [ngClass]="{'validate': showRequiredFieldError('city') }" formControlName="city"/>
-                  <em *ngIf="showRequiredFieldError('city')">City is required</em>
-                </div>
-            </div>
-            
-            <div class="clearfix">
-                <label for="cuisine">Expert in cooking which Cuisine</label>
-                <div class="addInn">
-                  <input type="text" placeholder="Enter Here.." [ngClass]="{'validate': showRequiredFieldError('cuisine') }" formControlName="cuisine"/>
-                  <em *ngIf="showRequiredFieldError('cuisine')">Cuisine is required</em>
-                </div>
-            </div>
-  
-            <div class="clearfix">
-                <label for="experience">Experience in cooking outdoor</label>
-                <div class="addInn">
-                <select id="experience" formControlName="experience">
-                  <option *ngFor="let experience of experiences" [value]="experience">{{ experience }}</option>
-                </select>
-                </div>
-            </div>
-  
-            <div class="clearfix">
-                <label for="about">About yourself</label>
-                <div class="addInn">
-                  <textarea placeholder="Enter here.." [ngClass]="{'validate': showRequiredFieldError('about') }" formControlName="about"></textarea>
-                  <em *ngIf="showRequiredFieldError('about')">About yourself is required</em>
-                </div>
-            </div>	
-  
-            <div class="clearfix">
-                <label>&nbsp;</label>
-                <div class="addInn">
-                <div class="termTxt">By Submiting Details you will agree <a href="" routerLink="/terms">Terms</a> and 
-                <a href="" routerLink="/privacy">Policy</a></div>
-                <button class="siBtn" [disabled]="loading">Submit</button>
-                </div>
-            </div>																														
+    <form [formGroup]="chefForm" class="form-horizontal" (ngSubmit)="registerChef()" novalidate>
+      <div class="addForm">
+
+        <div class="clearfix">
+          <label for="fullname">Full Name</label>
+          <div class="addInn">
+            <input type="text" placeholder="Enter Full Name" [ngClass]="{'validate': showRequiredFieldError('fullname') }" formControlName="fullname"
+            />
+            <em *ngIf="showRequiredFieldError('fullname')">Full Name is required</em>
+          </div>
         </div>
+
+        <div class="clearfix">
+          <label for="age">Age</label>
+          <div class="addInn">
+            <input type="text" placeholder="Enter Age" [ngClass]="{'validate': showRequiredFieldError('age') }" formControlName="age"
+            />
+            <em *ngIf="showRequiredFieldError('age')">Age is required</em>
+          </div>
+        </div>
+
+        <div class="clearfix">
+          <label for="gender">Gender</label>
+          <div class="addInn">
+            <select id="gender" formControlName="gender">
+              <option *ngFor="let gender of genders" [value]="gender">{{ gender }}</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="clearfix">
+          <label for="phone">Phone</label>
+          <div class="addInn">
+            <input type="text" placeholder="0000 000 000" [ngClass]="{'validate': showRequiredFieldError('phone') }" formControlName="phone"
+            />
+            <em *ngIf="showRequiredFieldError('phone')">Phone is required</em>
+          </div>
+        </div>
+
+        <div class="clearfix">
+          <label for="email">Email</label>
+          <div class="addInn">
+            <input type="email" placeholder="name@domain.com" [ngClass]="{'validate': showRequiredFieldError('email') }" formControlName="email"
+            />
+            <em *ngIf="showRequiredFieldError('email')">Email is required</em>
+          </div>
+        </div>
+
+        <div class="clearfix">
+          <label for="state">State</label>
+          <div class="addInn">
+            <input type="text" placeholder="Enter State" [ngClass]="{'validate': showRequiredFieldError('state') }" formControlName="state"
+            />
+            <em *ngIf="showRequiredFieldError('state')">State is required</em>
+          </div>
+        </div>
+
+        <div class="clearfix">
+          <label for="city">City</label>
+          <div class="addInn">
+            <input type="text" placeholder="Enter City" [ngClass]="{'validate': showRequiredFieldError('city') }" formControlName="city"
+            />
+            <em *ngIf="showRequiredFieldError('city')">City is required</em>
+          </div>
+        </div>
+
+        <div class="clearfix">
+          <label for="cuisine">Expert in cooking which Cuisine</label>
+          <div class="addInn">
+            <input type="text" placeholder="Enter Here.." [ngClass]="{'validate': showRequiredFieldError('cuisine') }" formControlName="cuisine"
+            />
+            <em *ngIf="showRequiredFieldError('cuisine')">Cuisine is required</em>
+          </div>
+        </div>
+
+        <div class="clearfix">
+          <label for="experience">Experience in cooking outdoor</label>
+          <div class="addInn">
+            <select id="experience" formControlName="experience">
+              <option *ngFor="let experience of experiences" [value]="experience">{{ experience }}</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="clearfix">
+          <label for="about">About yourself</label>
+          <div class="addInn">
+            <textarea placeholder="Enter here.." [ngClass]="{'validate': showRequiredFieldError('about') }" formControlName="about"></textarea>
+            <em *ngIf="showRequiredFieldError('about')">About yourself is required</em>
+          </div>
+        </div>
+
+        <div class="clearfix">
+          <label>&nbsp;</label>
+          <div class="addInn">
+            <div class="termTxt">By Submiting Details you will agree
+              <a href="" routerLink="/terms">Terms</a> and
+              <a href="" routerLink="/privacy">Policy</a>
+            </div>
+            <button class="siBtn" [disabled]="loading">Submit</button>
+          </div>
+        </div>
+      </div>
     </form>
 
-		<div class="addCont">
-			<h3>Select your suitable serving style</h3>
-			<p>Go to the clients location under your preferred proximity radius or we pick up the food from your place as per the type of the order</p>
-			<h3>Work with ease. Zero hassle, no struggle</h3>
-			<p>We take care of food and equipment supplies all you gotta do is cook it the most delicious</p>
-			<h3>Be an independent brand</h3>
-			<p>Represent yourself as a brand for your dishes. We get you leads and earn 30% more than the usual</p>
-		</div>
-	</div>
+    <div class="addCont">
+      <h3>Select your suitable serving style</h3>
+      <p>
+        Go to the clients location under your preferred proximity radius or we pick up the food from your place, or rather just cook
+        from our cloud kitchens. You can set up your profile as per your convenience for the type of the order you want.
+      </p>
+      <h3>Work with ease. Zero hassle, no struggle</h3>
+      <p>We take care of food and equipment supplies all you got to do is cook it the most delicious way you ever can</p>
+      <h3>Be an independent brand</h3>
+      <p>Represent yourself as a brand for your dishes you cook. We get you leads, our current partners clocking 30% more than the usual</p>
+    </div>
+  </div>
 </section>
 
 <!--   Add Chef  -->

@@ -1,8 +1,9 @@
 <div class="cartWpar cartWparRes">
 
-  <div class="cartOver" *ngIf="  masterObj.selectedDishes.best.length ||masterObj.selectedDishes.starter.length ||
-  masterObj.selectedDishes.main.length ||masterObj.selectedDishes.biryani.length ||
-  masterObj.selectedDishes.beverges.length ; else nocart">
+  <app-order-preview></app-order-preview>
+  <!-- <div class="cartOver" *ngIf="  masterObj.selectedDishes.best.length ||masterObj.selectedDishes.starter.length ||
+      masterObj.selectedDishes.main.length ||masterObj.selectedDishes.biryani.length ||
+    masterObj.selectedDishes.beverges.length ; else nocart">
     <div *ngIf="  masterObj.selectedDishes.best.length ">
       <h3>Best Seller</h3>
       <ul>
@@ -65,7 +66,7 @@
       <h1></h1>
       <h1>Your cart is empty</h1>
     </div>
-  </ng-template>
+  </ng-template> -->
   <div class="foodPopBtn text-right">
     <a href="javascript:void(0)" class="foodClose" (click)="onClose()">Cancel</a>
     <a class="add" (click)="onCheckout()">Check out</a>

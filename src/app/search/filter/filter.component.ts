@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ModifySearchComponent } from '../modify-search/modify-search.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal/modal';
 import { NgbPopoverConfig } from '@ng-bootstrap/ng-bootstrap/popover/popover-config';
+import { ModifySearchComponent } from '../../shared/modify-search/modify-search.component';
 
 @Component({
   selector: 'app-filter',

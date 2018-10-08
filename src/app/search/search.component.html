@@ -9,8 +9,9 @@
       <a (click)="openSign()">
       <span class="fa fa-user-o siIcon"></span>
     </a>
-      <span class="fa fa-bars menuIcon"></span>
-    </div>
+    <span class="fa fa-bars menuIcon" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"></span>
+  </div>
+  <div id="collapseExample" [ngbCollapse]="isCollapsed">
     <nav>
       <ul class="clearfix">
         <li>
@@ -33,6 +34,7 @@
         </li>
       </ul>
     </nav>
+  </div>
   </section>
 </header>
 <section class="resultOut">

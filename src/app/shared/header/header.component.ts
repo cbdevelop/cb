@@ -14,7 +14,7 @@ import { MasterService } from '../../services/master.service';
 export class HeaderComponent implements OnInit {
 
   user: User[];
-
+  public isCollapsed = false;
   @ViewChild("head") header;
 
   constructor(

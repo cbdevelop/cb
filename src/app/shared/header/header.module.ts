@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { SigninModule } from '../signin/signin.module';
 import { SigninComponent } from '../signin/signin.component';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
     ScrollToModule,
     RouterModule,
     NgbModalModule,
-    SigninModule
+    SigninModule,
+    NgbCollapseModule
   ],
   declarations: [
     HeaderComponent,

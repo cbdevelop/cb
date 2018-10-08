@@ -8,6 +8,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { FooterModule, HeaderModule, DirectiveModule } from '../shared/index';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
+import { ModifySearchModule } from '../shared/modify-search/modify-search.module';
 
 
 
@@ -24,11 +25,18 @@ import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
     AngularMultiSelectModule,
     OwlDateTimeModule, 
     OwlNativeDateTimeModule,
-    
+    ModifySearchModule
   ],
-  declarations: [HomeComponent],
+  declarations: [
+    HomeComponent,
+    // ModifySearchComponent
+  ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],
+  entryComponents:[
+    // ModifySearchComponent,
+
+  ]
 })
 export class HomeModule { }

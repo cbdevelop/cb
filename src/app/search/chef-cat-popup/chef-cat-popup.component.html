@@ -7,9 +7,9 @@
     <p> {{ dishDetails.description }} </p>
     <div class="foodCheck">
       <h3>Cuisines..</h3>
-      <div class="checkbox" *ngFor="let cus of dishDetails.cusines">
+      <div class="checkbox" *ngFor="let cus of getCusines()">
         <label>
-          <input type="checkbox" class="check" [value]="cus" (change)="onCusChecked($event)" />
+          <input type="checkbox" class="check" [checked]="isCusChecked(cus)" [value]="cus" (change)="onCusChecked($event)" />
           <i class="input-helper"></i>
           <span>{{ cus }}</span>
         </label>
@@ -17,10 +17,10 @@
          
     </div>
     <div class="foodCheck">
-      <h3>Served Only For..</h3>
-      <div class="checkbox" *ngFor="let ser  of dishDetails.restricted_ser">
+      <h3>Restrict your serving for</h3>
+      <div class="checkbox" *ngFor="let ser  of restrictArr">
         <label>
-          <input type="checkbox" class="check" [value]="ser" (change)="onReschecked($event)" />
+          <input type="checkbox" class="check" [checked]="isResChecked(ser)" [value]="ser" (change)="onReschecked($event)" />
           <i class="input-helper"></i>
           <span> {{ ser }}</span>
         </label>
@@ -30,6 +30,6 @@
   </div>
   <div class="foodPopBtn text-right">
     <a href="javascript:void(0)" class="foodClose" (click)="oncancel()">Cancel</a>
-    <a href="javascript:void(0)" class="add" (click)="onAdd()">Add</a>
+    <a href="javascript:void(0)" class="add" (click)="onAdd()">{{ btnText }}</a>
   </div>
 </div>

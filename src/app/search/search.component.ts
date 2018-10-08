@@ -12,7 +12,7 @@ import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 export class SearchComponent implements OnInit {
 
   @ViewChild('shead') header;
-
+  isCollapsed = false;
   constructor( private signinModel: NgbModal ) { 
     
   }

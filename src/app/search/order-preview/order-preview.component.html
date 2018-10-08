@@ -1,75 +1,167 @@
-<div class="cartWpar">
-  <a class="cartBtn" (click)="onCheckout()">Proceed to Checkout</a>
+<!-- <div class="cartWpar">
+  <a class="cartBtn" (click)="onCheckout()">Proceed to Checkout</a> -->
 
-  <div class="cartOver" *ngIf="masterObj.selectedDishes.best.length ||masterObj.selectedDishes.starter.length ||
-     masterObj.selectedDishes.main.length ||masterObj.selectedDishes.biryani.length ||
-      masterObj.selectedDishes.beverges.length ; else nocart">
-    <div *ngIf="  masterObj.selectedDishes.best.length ">
-      <h3>Best Seller</h3>
-      <ul>
-        <li *ngFor="let item of masterObj.selectedDishes.best;let index= index">
-          <span> {{ item.dishName }} {{ getcus(item.cusines,item.restricted_ser) }}
-            <i class="fa fa-close" (click)="remove(1,index)"></i>
-          </span>
-        </li>
+<div class="cartOver" *ngIf="masterObj.selectedDishArr.length ; else nocart">
+  <div *ngIf="masterObj.getSelectedDishesById(1).length ">
+    <h3>Starters</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(1);let index= index">
+        <span> {{ item.Dish_Name }}
+          <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+          <label *ngIf="item.Cuisine ==''"> - (</label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+          <label *ngIf="item.Restrictions ==''">)</label>
+          <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+          <i class="fa fa-close" (click)="remove(item.id,index)"></i>
+        </span>
+      </li>
 
-      </ul>
-    </div>
-    <div *ngIf="  masterObj.selectedDishes.starter.length ">
-
-      <h3>Starters</h3>
-      <ul>
-        <li *ngFor="let item of masterObj.selectedDishes.starter;let index= index">
-          <span> {{ item.dishName}} {{ getcus(item.cusines,item.restricted_ser) }}
-            <i class="fa fa-close" (click)="remove(2,index)"></i>
-          </span>
-        </li>
-      </ul>
-    </div>
-    <div *ngIf="masterObj.selectedDishes.main.length ">
-      <h3>Main Course</h3>
-      <ul>
-        <li *ngFor="let item of masterObj.selectedDishes.main;let index= index">
-          <span> {{ item.dishName}} {{ getcus(item.cusines,item.restricted_ser) }}
-            <i class="fa fa-close" (click)="remove(3,index)"></i>
-          </span>
-        </li>
-      </ul>
-    </div>
-    <div *ngIf="masterObj.selectedDishes.biryani.length ">
-      <h3>Biryani's & Rice</h3>
-      <ul>
-        <li *ngFor="let item of masterObj.selectedDishes.biryani;let index= index">
-          <span> {{ item.dishName}} {{ getcus(item.cusines,item.restricted_ser) }}
-            <i class="fa fa-close" (click)="remove(4,index)"></i>
-          </span>
-        </li>
-
-      </ul>
-    </div>
-
-    <div *ngIf="masterObj.selectedDishes.beverges.length ">
-      <h3>Beverges</h3>
-      <ul>
-        <li *ngFor="let item of masterObj.selectedDishes.beverges;let index= index">
-          <span> {{ item.dishName}} {{ getcus(item.cusines,item.restricted_ser) }}
-            <i class="fa fa-close" (click)="remove(5,index)"></i>
-          </span>
-        </li>
-
-      </ul>
-    </div>
+    </ul>
   </div>
-  <ng-template #nocart>
-    <div class="cartOver">
+  <div *ngIf="masterObj.getSelectedDishesById(2).length ">
 
-      <h3>Your cat is empty</h3>
-    </div>
-  </ng-template>
+    <h3>Snacks</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(2);let index= index">
+        <span> {{ item.Dish_Name }}
+            <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+            <label *ngIf="item.Cuisine ==''"> - (</label>
+            <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+            <label *ngIf="item.Restrictions ==''">)</label>
+            <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+          <i class="fa fa-close" (click)="remove(item.id,index)"></i>
+        </span>
+      </li>
 
-  <div class="note" (click)="onCommentPopup()">
+    </ul>
+  </div>
+  <div *ngIf="masterObj.getSelectedDishesById(4).length ">
+    <h3>Breads</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(4);let index= index">
+        <span> {{ item.Dish_Name }}
+            <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+            <label *ngIf="item.Cuisine ==''"> - (</label>
+            <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+            <label *ngIf="item.Restrictions ==''">)</label>
+            <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+          <i class="fa fa-close" (click)="remove(item.id,index)"></i>
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="masterObj.getSelectedDishesById(7).length ">
+    <h3>Main Course</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(7);let index= index">
+        <span> {{ item.Dish_Name }}
+            <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+            <label *ngIf="item.Cuisine ==''"> - (</label>
+            <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+            <label *ngIf="item.Restrictions ==''">)</label>
+            <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+          <i class="fa fa-close" (click)="remove(item.id,index)"></i>
+        </span>
+      </li>
+
+    </ul>
+  </div>
+
+  <div *ngIf="masterObj.getSelectedDishesById(6).length ">
+    <h3>Salads and Extras</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(6);let index= index">
+        <span> {{ item.Dish_Name }}
+            <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+            <label *ngIf="item.Cuisine ==''"> - (</label>
+            <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+            <label *ngIf="item.Restrictions ==''">)</label>
+            <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+          <i class="fa fa-close" (click)="remove(item.id,index)"></i>
+        </span>
+      </li>
+
+    </ul>
+  </div>
+
+  <div *ngIf="masterObj.getSelectedDishesById(5).length ">
+    <h3>Soups</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(5);let index= index">
+        <span> {{ item.Dish_Name }}
+            <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+            <label *ngIf="item.Cuisine ==''"> - (</label>
+            <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+            <label *ngIf="item.Restrictions ==''">)</label>
+            <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+          <i class="fa fa-close" (click)="remove(item.id,index)"></i>
+        </span>
+      </li>
+
+    </ul>
+  </div>
+
+  <div *ngIf="masterObj.getSelectedDishesById(3).length ">
+    <h3>Beverages and Drinks</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(3);let index= index">
+        <span> {{ item.Dish_Name }}
+            <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+            <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
+            <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+            <label *ngIf="item.Restrictions =='' && item.Cuisine !=''">)</label>
+            <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+          <i class="fa fa-close" (click)="remove(item.id,index)"></i>
+        </span>
+      </li>
+
+    </ul>
+  </div>
+
+  <div *ngIf="masterObj.getSelectedDishesById(8).length ">
+    <h3>Desserts and Ice creams</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(8);let index= index">
+        <span> {{ item.Dish_Name }}
+            <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+            <label *ngIf="item.Cuisine ==''"> - (</label>
+            <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+            <label *ngIf="item.Restrictions ==''">)</label>
+            <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+          <i class="fa fa-close" (click)="remove(item.id,index)"></i>
+        </span>
+      </li>
+
+    </ul>
+  </div>
+
+  <div *ngIf="masterObj.getSelectedDishesById(9).length ">
+    <h3>Stalls and Miscellaneous</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(9);let index= index">
+        <span> {{ item.Dish_Name }}
+            <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+            <label *ngIf="item.Cuisine ==''"> - (</label>
+            <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+            <label *ngIf="item.Restrictions ==''">)</label>
+            <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+          <i class="fa fa-close" (click)="remove(item.id,index)"></i>
+        </span>
+      </li>
+
+    </ul>
+  </div>
+</div>
+<ng-template #nocart>
+  <div class="cartOver">
+
+    <h3>Your cat is empty</h3>
+  </div>
+</ng-template>
+
+<!-- <div class="note" (click)="onCommentPopup()">
     <span>Comments..</span>
     <i class="fa fa-comment-o"></i>
   </div>
 
-</div>
+</div> -->

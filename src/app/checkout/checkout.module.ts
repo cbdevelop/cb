@@ -13,7 +13,7 @@ import { ProfileComponent } from './event-manager/profile/profile.component';
 import { AddMoreComponent } from './event-manager/addMore/addMore.component';
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { NgbModalModule, NgbModule, NgbActiveModal, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalModule, NgbCollapseModule,NgbModule, NgbActiveModal, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterModule, CommentsModule } from '../shared';
 import { MenuModule } from './components/menu/menu.module';
 import { ChefModule } from './chef/chef.module';
@@ -27,6 +27,7 @@ import { EventManagerModule } from './event-manager/event-manager.module';
     CheckoutRoutingModule,
     ScrollToModule,
     NgbModalModule,
+    NgbCollapseModule,
     FooterModule,
     ChefRoutingModule,
     CommentsModule,

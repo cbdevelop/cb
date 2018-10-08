@@ -11,9 +11,9 @@
         <h2>A one stop solution from hiring your chefs till complete catering your entire event. Book your order now</h2>
       </div>
     </div>
-    <div class="resSearch clearfix">
+    <div class="resSearch clearfix" (click)="onMobileSearch()">
       <input type="text" placeholder="Search" />
-      <button>Search</button>
+      <button (click)="onMobileSearch()">Search</button>
     </div>
 
     <form [formGroup]="homeForm" novalidate>
@@ -26,26 +26,28 @@
           <label>Location
             <span id="cityPop">Change</span>
           </label>
-          <angular2-multiselect class="loca" [data]="location" [settings]="settings" (onSelect)="LocationSelect($event)" (onDeSelect)="LocationDeSelect($event)"
-            formControlName="location">
+          <angular2-multiselect class="loca" [data]="location" [(ngModel)]="masterObj.searchObj.location" [settings]="settings" (onSelect)="LocationSelect($event)"
+            (onDeSelect)="LocationDeSelect($event)" formControlName="location">
           </angular2-multiselect>
         </div>
         <div class="select">
           <label>Service Type</label>
-          <angular2-multiselect class="loca" [data]="serviceType" [settings]="settings" (onSelect)="ServiceSelect($event)" (onDeSelect)="ServiceDeSelect($event)"
-            formControlName="serviceType">
+          <angular2-multiselect class="loca" [data]="serviceType" [(ngModel)]="masterObj.searchObj.serviceType" [settings]="settings" (onSelect)="ServiceSelect($event)"
+            (onDeSelect)="ServiceDeSelect($event)" formControlName="serviceType">
           </angular2-multiselect>
         </div>
         <div class="atten">
           <label>Attendees -
-            <b>000</b> (Veg - Nonveg)</label>
-          <input type="text" placeholder="000" formControlName="vegAttnd" />
-          <input type="text" placeholder="000" class="non" formControlName="nonVegAttnd" />
+            <b>{{ masterObj.totalAttendees }}</b> (Veg - Nonveg)</label>
+          <input type="text" placeholder="000" formControlName="vegAttnd" [(ngModel)]="masterObj.searchObj.vegAttnd" (blur)="getTotal()" />
+          <input type="text" placeholder="000" class="non" formControlName="nonVegAttnd" [(ngModel)]="masterObj.searchObj.nonVegAttnd" (blur)="getTotal()"
+          />
         </div>
         <div class="select date">
           <label>Date - Time</label>
-          <input type="text" placeholder="DD/MM/YY HH:MM" class="datePic" formControlName="datetime" [owlDateTime]="dt1" hour12Timer="true"
-            [owlDateTimeTrigger]="dt1">
+          <input type="text" placeholder="DD/MM/YY HH:MM" class="datePic" formControlName="datetime" 
+          [(ngModel)]="masterObj.searchObj.datetime"
+            [owlDateTime]="dt1" hour12Timer="true" [owlDateTimeTrigger]="dt1">
           <owl-date-time #dt1></owl-date-time>
         </div>
         <div class="select time" *ngIf="session !== ''">
@@ -53,7 +55,7 @@
           <div class="session"> {{ session }}</div>
         </div>
         <div class="seaBtn">
-          <input type="button" value="Search" (click)="onSearch(searchObj)" class="seaButton" />
+          <input type="button" value="Search" (click)="onSearch(masterObj.searchObj)" class="seaButton" />
         </div>
       </div>
     </form>
@@ -124,7 +126,7 @@
         achieve the highest level of Customer Satisfaction and are committed giving the best service regardless of the size
         of the order or combination of cuisines in the menu we have been blessed to be a part of hundreds of weddings, birthday,
         corporate events and social conferences.</p>
-      <a href="" class="" [routerLink]="['/about']">View more...</a>
+      <!-- <a href="" class="" [routerLink]="['/about']">View more...</a> -->
     </div>
   </section>
   <!-- About -->
@@ -140,32 +142,31 @@
           <img src="./assets/images/whycho-1.png" alt="" />
         </span>
         <h4>Taste Assurance</h4>
-        <p>Selects only the top notch chefs who are specialized to cook the best taste of their respective cuisines in which
-          they are proficient in. Hygienic & halal food Food materials are purchased from authorized suppliers, to serve
-          you fresh where only halal meat is used. Cost effective & stand alone in service More than 25% of price difference
-          when compared with others catering services plus high professional in service.</p>
+        <!-- padding added in order maintain the height with raminaing -->
+        <p class="pt-3">Selects only the top notch chefs who are specialized to cook the best taste of their respective cuisines. </p>
       </div>
       <div class="whyChoCta">
         <span>
           <img src="./assets/images/whycho-2.png" alt="" />
         </span>
-        <h4>Hygienic & halal food</h4>
-        <p>Food materials are purchased from authorized suppliers, to serve fresh where only halal meat is used.</p>
+        <h4>Hygienic & Halal food</h4>
+        <p class="pt-3">Food materials are purchased from the authorized suppliers to serve fresh, where only halal meat is used.</p>
       </div>
       <div class="whyChoCta">
         <span>
           <img src="./assets/images/whycho-3.png" alt="" />
         </span>
-        <h4>Cost effective & stand alone in service</h4>
-        <p>More than 25% of price difference when compared with others catering services and high professional in service.</p>
+        <h4>Cost effective & Stand alone in service</h4>
+        <p>More than 25% of price difference when compared with others catering services and also highly professional in service.</p>
       </div>
       <div class="whyChoCta">
         <span>
           <img src="./assets/images/wastage.png" alt="" />
         </span>
         <h4>Zero wastage </h4>
-        <p>Chefs now cannot manipulate by quoting higher quantity requirement for food material as our cutting edge technology
-          automatically analysis how much food material is required as per your dynamic selected menu in real time.</p>
+        <p>Our cutting edge technology automatically analyzes the food material required for your dynamic selected menu in real
+          time.
+        </p>
       </div>
     </div>
   </section>
@@ -180,7 +181,7 @@
         </span>
         <p>
           Events Served
-          <i class="counter-value" data-count="1250">{{ barwidth }}</i>
+          <i class="counter-value" data-count="1250">{{ cntevnt }}</i>
         </p>
       </div>
       <div class="countCta clearfix">
@@ -189,7 +190,7 @@
         </span>
         <p>
           Chef's
-          <i class="counter-value" data-count="1520"> {{ barwidth }} </i>
+          <i class="counter-value" data-count="1520"> {{ cntchef }} </i>
         </p>
       </div>
       <div class="countCta clearfix">
@@ -198,7 +199,7 @@
         </span>
         <p>
           Event Manager's
-          <i class="counter-value" data-count="1180">{{ barwidth }}</i>
+          <i class="counter-value" data-count="1180">{{ cntmanager }}</i>
         </p>
       </div>
       <div class="countCta clearfix">
@@ -207,7 +208,7 @@
         </span>
         <p>
           Users Sign Up
-          <i class="counter-value" data-count="2150">{{ barwidth }}</i>
+          <i class="counter-value" data-count="2150">{{ cntusers }}</i>
         </p>
       </div>
     </div>
@@ -229,11 +230,7 @@
           <h4>Chef</h4>
           <p>Now become Independent and enjoy cooking without being exploited by any catering agent. Get leads more than you
             can ever think of. Register with us now and brand yourself for your dishes, people are craving for your taste
-            already! Select your suitable serving style Go to the clients location under your preferred proximity radius
-            or we pick up the food from your place as per the type of the order you prefer to serve.Work with ease. Zero
-            hassle, no struggle We take care of food and equipment supplies all you got to do is cook it the most delicious
-            way you ever can.Be an independent brand Represent yourself as a brand for your dishes you cook. We get you leads,
-            our current partners are earns 30% more than the usual</p>
+            already! </p>
           <div class="resMes">Click here to become a Chef</div>
         </a>
       </div>
@@ -247,16 +244,7 @@
           </span>
           <h4>Event Manager</h4>
           <p>Got some management skills? Here is a great opportunity for you to earn some bucks out off your free time. Be among
-            the ones who are earning Rs. 3500 every day for managing a single event under our constant supervision. Make
-            your event a success too, register yourself to know more. Feasible Set your profile to be only visible for booking
-            as per the scheduled time slots of your available days, also you can reduce the serviceable proximity radius
-            in order to restrict your service as per your feasibility.Work with ease. Zero hassle, no struggle We back you
-            with everything butlers/ servers, crockery, tables and all necessary items. We have the access to every resource.
-            Focus only on the conceptualize as per the customers demand and making it into reality to make the workflow smoothBenefitsFree
-            food You get free food every time you manage an event cooked by our top notch chefsYou become our priority First
-            to eat and to be called for free food tasting events to review our partners profilesExtra earnings Our top partners
-            are earning above Rs. 3,000 everyday as a freelancer as per their available dates. Register and prove us to become
-            a freelancer yourself!</p>
+            the ones who are earning Rs. 3500 every day. Make your event a success too, register yourself to know more.</p>
           <div class="resMes">Click here to become a Event Manager</div>
         </a>
       </div>
@@ -277,9 +265,11 @@
               <span>
                 <img src="./assets/images/blog.jpg" alt="" />
               </span>
-              <h4>Blog Heading Text Here...</h4>
-              <p>Lorem Ipsum is simply dummy text of the fdkjl lkjlkdsj printing Lorem Ipsum is simply dummy text of the printing
-                Lorem Ipsum is simply dummy text of the printing Lorem Ipsum</p>
+              <h4>Tips to do catering right</h4>
+              <p>
+                There are a lot of things to consider while choosing a menu to be most suitable for all your guests, taste preferences and
+                special dietary requirements. Ordering from is Halal-certified caterer is hard these days...
+              </p>
               <a class="viBl" href="blogdetails.html">View</a>
             </a>
           </div>
@@ -288,9 +278,9 @@
               <span>
                 <img src="./assets/images/blog.jpg" alt="" />
               </span>
-              <h4>Blog Heading Text Here...</h4>
-              <p>Lorem Ipsum is simply dummy text of the fdljfl lkjflsd printing Lorem Ipsum is simply dummy text of the printing
-                Lorem Ipsum is simply dummy text of the printing Lorem Ipsum</p>
+              <h4>You are a brand to offer a great culinary experience to the audience</h4>
+              <p>Being a chef means you alone are the master of your dish. You are judged by each and every person's plate that
+                goes out of the kitchen. You will have to maintain your rating as it is important and impacts your profile...</p>
               <a class="viBl" href="blogdetails.html">View</a>
             </a>
           </div>
@@ -299,9 +289,12 @@
               <span>
                 <img src="./assets/images/blog.jpg" alt="" />
               </span>
-              <h4>Blog Heading Text Here...</h4>
-              <p>Lorem Ipsum is simply dummy text of fjlksdjl jfldjs the printing Lorem Ipsum is simply dummy text of the printing
-                Lorem Ipsum is simply dummy text of the printing Lorem Ipsum</p>
+              <h4>What it's like being a freelancer as an event manager at caterbinge</h4>
+              <p>
+                An event manager is incharge of planning, organizing and executing different sizes of events, here at Caterbinge you are
+                the manager to look after the entire workflow of serving food on the table and to ensure that everything
+                is being served timely...
+              </p>
               <a class="viBl" href="blogdetails.html">View</a>
             </a>
           </div>
@@ -325,12 +318,14 @@
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
+              <!-- <i class="fa fa-star no"></i> -->
             </span>
-            <h3>Outstanding quality</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
-              is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
-            <h4>Mahesh V</h4>
+            <!-- <h3>Outstanding quality</h3> -->
+            <p>
+              Chicken biriyani and majestic chicken were so flavoursome, but a little too spicy for my palate and was cooked truly in a
+              Hyderabadi style, the raita complemented the spiciness perfectly.
+            </p>
+            <h4> Srinivas Rao</h4>
           </div>
           <div class="testiCta">
             <span>
@@ -340,10 +335,9 @@
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
             </span>
-            <h3>Outstanding quality</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
-              is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
-            <h4>Mahesh V</h4>
+            <!-- <h3>Outstanding quality</h3> -->
+            <p>Great food.. Potato wedges, Butter garlic prawn all were delicious. Dine in experience was good.</p>
+            <h4>Durga Mahesh</h4>
           </div>
           <div class="testiCta">
             <span>
@@ -353,10 +347,10 @@
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
             </span>
-            <h3>Outstanding quality</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
-              is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
-            <h4>Mahesh V</h4>
+            <!-- <h3>Outstanding quality</h3> -->
+            <p>Amazingly hidden great aroma and spices with absolutely tender peices of mutton. When I ate the first spoon it
+              was an explosion of flavors in my mouth. It was unexpected and very good.</p>
+            <h4>Zilani</h4>
           </div>
           <div class="testiCta">
             <span>
@@ -364,12 +358,12 @@
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
+             <!--  <i class="fa fa-star"></i> -->
             </span>
-            <h3>Outstanding quality</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum
-              is simply dummy text of the printing Lorem Ipsum dummy text of the printing Lorem Ipsum</p>
-            <h4>Mahesh V</h4>
+            <!-- <h3>Outstanding quality</h3> -->
+            <p>I really loved the cilantro fish. It was well balanced, not seasoned too much, which is a good thing because
+              I could taste the fish; not just the spices.</p>
+            <h4>Kiran Kumar</h4>
           </div>
         </div>
       </div>

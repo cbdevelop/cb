@@ -2,20 +2,29 @@
   <div class="chefHeadInn clearfix">
     <ul class="clearfix head">
       <div class="scrTab clearfix" id="scrTap">
-        <li [ngClass]="service.searchmenu_selection == 'favourite' ? 'Act' : ''">
+        <!-- <li [ngClass]="masterObj.searchmenu_selection == 'favourite' ? 'Act' : ''">
           <a [ngx-scroll-to]="'#favourite'">Best Sellers</a>
-        </li>
-        <li [ngClass]="service.searchmenu_selection == 'starters' ? 'Act' : ''">
+        </li> -->
+        <li [ngClass]="masterObj.searchmenu_selection == 'starters' ? 'Act' : ''">
           <a [ngx-scroll-to]="'#starters'">Starters</a>
         </li>
-        <li [ngClass]="service.searchmenu_selection == 'main' ? 'Act' : ''">
-          <a [ngx-scroll-to]="'#main'">Main Course</a>
+        <li [ngClass]="masterObj.searchmenu_selection == 'snacks' ? 'Act' : ''">
+          <a [ngx-scroll-to]="'#main'">Snacks</a>
         </li>
-        <li [ngClass]="service.searchmenu_selection == 'biryani' ? 'Act' : ''">
-          <a [ngx-scroll-to]="'#biryani'">Rice & Biryani's</a>
+        <li [ngClass]="masterObj.searchmenu_selection == 'breads' ? 'Act' : ''">
+          <a [ngx-scroll-to]="'#biryani'">Breads</a>
         </li>
-        <li [ngClass]="service.searchmenu_selection == 'dessert' ? 'Act' : ''">
-          <a [ngx-scroll-to]="'#dessert'">Desserts & Beverges</a>
+        <li [ngClass]="masterObj.searchmenu_selection == 'main' ? 'Act' : ''">
+          <a [ngx-scroll-to]="'#dessert'">Main Course</a>
+        </li>
+        <li [ngClass]="masterObj.searchmenu_selection == 'salads' ? 'Act' : ''">
+          <a [ngx-scroll-to]="'#biryani'">Salads</a>
+        </li>
+        <li [ngClass]="masterObj.searchmenu_selection == 'desserts' ? 'Act' : ''">
+          <a [ngx-scroll-to]="'#dessert'">Desserts</a>
+        </li>
+        <li [ngClass]="masterObj.searchmenu_selection == 'stalls' ? 'Act' : ''">
+          <a [ngx-scroll-to]="'#dessert'">Stalls</a>
         </li>
 
       </div>
@@ -27,7 +36,15 @@
       <div class="filter">
         <app-filter></app-filter>
       </div>
-      <app-order-preview></app-order-preview>
+      <div class="cartWpar">
+        <a class="cartBtn" (click)="onCheckout()">Proceed to Checkout</a>
+        <app-order-preview></app-order-preview>
+        <div class="note" (click)="onCommentPopup()">
+          <span>Comments..</span>
+          <i class="fa fa-comment-o"></i>
+        </div>
+
+      </div>
     </div>
   </div>
 </div>

@@ -23,7 +23,8 @@ export class AddmanagerComponent implements OnInit {
   alert: alert = { type: 'success', message: '' };
   public managerForm: FormGroup;
   public loading: Boolean;
-
+  
+  isCollapsed = false;
   @ViewChild("head") header;
   
   constructor( 

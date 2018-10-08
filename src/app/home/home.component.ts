@@ -6,6 +6,8 @@ import { Router } from '@angular/router';
 import { searchModel, MasterService } from '../services/master.service';
 import { FormsModule, ReactiveFormsModule, ValidatorFn } from '@angular/forms';
 import { FormControl, FormGroup, FormBuilder, AbstractControl, Validators } from '@angular/forms';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal/modal';
+import { ModifySearchComponent } from '../shared/modify-search/modify-search.component';
 
 
 @Component({
@@ -15,7 +17,7 @@ import { FormControl, FormGroup, FormBuilder, AbstractControl, Validators } from
 })
 export class HomeComponent implements OnInit {
 
-  public searchObj: searchModel;
+  public searchObj: searchModel = { location: [], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
 
   public homeForm: FormGroup;
 
@@ -26,9 +28,14 @@ export class HomeComponent implements OnInit {
   settings = {};
   session = "dinner";
   barwidth = 0
+  cntevnt = 0;
   eventServed = 1254;
+
+  cntchef = 0;
   no_chefs = 470;
+  cntmanager = 0;
   no_eventManager = 210;
+  cntusers = 0;
   users = 2150;
   public spiedTags = [];
 
@@ -38,21 +45,36 @@ export class HomeComponent implements OnInit {
   constructor(
     private routerObj: Router,
     private fb: FormBuilder,
-    public masterObj: MasterService
+    public masterObj: MasterService,
+    public modalService: NgbModal,
   ) {
+    this.barwidth = 0;
+
+    this.cntevnt = this.dancingNumbers(this.eventServed);
+    this.cntchef = this.dancingNumbers(this.no_chefs);
+    this.cntmanager = this.dancingNumbers(this.no_eventManager);
+    this.cntusers = this.dancingNumbers(this.users);
+
+  }
+
+  callCounters() {
+
+  }
+  dancingNumbers(cnt) {
     this.barwidth = 0;
 
     let interval = setInterval(() => {
       this.barwidth += 10;
-      if (this.barwidth >= 1200) clearInterval(interval);
+      if (this.barwidth >= cnt) clearInterval(interval);
     }, 10)
-
+    return this.barwidth;
   }
-
 
 
   onSectionChange(sectionId: string) {
     this.masterObj.currentSection = sectionId;
+    // if(sectionId =='')
+    //   this
   }
 
   ngOnInit() {
@@ -83,35 +105,55 @@ export class HomeComponent implements OnInit {
 
     this.homeForm = this.fb.group({
       location: [[], Validators.required],
-      serviceType: [[], Validators.required],
-      vegAttnd: [''],
-      nonVegAttnd: [''],
-      datetime: []
+      serviceType: [null, Validators.required],
+      vegAttnd: [null, Validators.required],
+      nonVegAttnd: [null, Validators.required],
+      datetime: ['', Validators.required]
     });
 
   }
 
   // Locations
   LocationSelect(item: any) {
-    console.log(item);
+    // console.log(item);
   }
   LocationDeSelect(item: any) {
-    console.log(item);
+    // console.log(item);
   }
 
   // Services
   ServiceSelect(item: any) {
-    console.log(item);
+    // console.log(item);
   }
   ServiceDeSelect(item: any) {
-    console.log(item);
+    // console.log(item);
+  }
+  getTotal() {
+    this.masterObj.totalAttendees = 0;
+    let Nveg: any = this.masterObj.searchObj.nonVegAttnd;
+    let veg: any = this.masterObj.searchObj.vegAttnd;
+    if ([null, ''].indexOf(Nveg) == -1) {
+      this.masterObj.totalAttendees = this.masterObj.totalAttendees + parseInt(Nveg, 10);
+    }
+    if ([null, ''].indexOf(veg) == -1) {
+      this.masterObj.totalAttendees = this.masterObj.totalAttendees + parseInt(veg, 10);
+    }
+
+    return this.masterObj.totalAttendees;
   }
 
   onSearch(evt) {
-    console.log(evt);
-    this.routerObj.navigate(['../search'])
+
+    console.log(this.masterObj.searchObj, this.homeForm);
+    if (this.homeForm.valid) {
+      this.routerObj.navigate(['../search']);
+    }
   }
 
+  onMobileSearch() {
+    const modalref = this.modalService.open(ModifySearchComponent);
+    modalref.componentInstance.page = "home";
+  }
   /* @HostListener("window:scroll", ["$event"])
    onWindowScroll(event: any) {
        console.log('sad');

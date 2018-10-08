@@ -10,17 +10,16 @@ import { MenuComponent } from './menu/menu.component';
 import { ResultViewComponent } from './result-view/result-view.component';
 import { OrderPreviewComponent } from './order-preview/order-preview.component';
 import { ChefCatPopupComponent } from './chef-cat-popup/chef-cat-popup.component';
-import { ModifySearchComponent } from './modify-search/modify-search.component';
 import { SigninComponent } from '../shared/signin/signin.component';
-
 
 import { HeaderModule, FooterModule, SigninModule, DirectiveModule, CommentsModule } from '../shared/index';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime'
-import { NgbModalModule, NgbPopoverModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalModule,NgbCollapseModule, NgbPopoverModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { FilterComponent } from './filter/filter.component';
 import { MobilePreviewComponent } from './mobile-preview/mobile-preview.component';
+import { ModifySearchModule } from '../shared/modify-search/modify-search.module';
 
 
 @NgModule({
@@ -34,12 +33,12 @@ import { MobilePreviewComponent } from './mobile-preview/mobile-preview.componen
     ScrollToModule,
     NgbPopoverModule,
     NgbModalModule,
+    NgbCollapseModule,
     AngularMultiSelectModule,
-    OwlDateTimeModule,
-    OwlNativeDateTimeModule,
     SigninModule  ,
     DirectiveModule,
-    CommentsModule    
+    CommentsModule,
+    ModifySearchModule    
   ],
   declarations: [
     SearchComponent,
@@ -47,13 +46,10 @@ import { MobilePreviewComponent } from './mobile-preview/mobile-preview.componen
     ResultViewComponent,
     OrderPreviewComponent, 
     ChefCatPopupComponent, 
-    ModifySearchComponent,
-    
     FilterComponent,
     MobilePreviewComponent
   ],
   providers:[
-
     NgbActiveModal
   ],
   schemas: [
@@ -61,9 +57,7 @@ import { MobilePreviewComponent } from './mobile-preview/mobile-preview.componen
   ],
   entryComponents:[
     ChefCatPopupComponent,
-    ModifySearchComponent,
     SigninComponent,
-
     MobilePreviewComponent
   ]
 })
