@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+
 /* @import "./assets/css/bootstrap.min.css"; */
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
@@ -7,6 +8,9 @@
 @import "./assets/css/cbstyle.css";
 @import "./assets/css/cbstyle-responsive.css";
 @import "~ng-pick-datetime/assets/style/picker.min.css";
+
+/* @import "./assets/css/category-menu.scss"; */
+
 
 /* Validations */
 
@@ -17,26 +21,32 @@ em {
     font-size: 12px;
 }
 
-
-html [type=button], a {
+html [type=button],
+a {
     cursor: pointer;
 }
 
 button {
- cursor: pointer;
+    cursor: pointer;
 }
-.review{
+
+.review {
     color: #ffa200;
 }
+
+
 /* counter  */
 
 .bar {
     transition: width 0.5s;
-    background-color:green;
-    overflow:hidden;
-  }
+    background-color: green;
+    overflow: hidden;
+}
+
 
 /* Footer Additional */
+
+
 /* 
 .seqHome {
     background-color: transparent;
@@ -74,11 +84,14 @@ button {
     padding: 5px 0px 0px 0px;
 } */
 
+
 /* Footer Additional */
 
 .cdk-overlay-container {
     z-index: 10000;
 }
+
+
 /* datepicker */
 
 .owl-dt-container {
@@ -110,7 +123,6 @@ button {
     position: relative;
 }
 
-
 .c-btn {
     display: inline-block;
     background: #fff;
@@ -120,21 +132,18 @@ button {
     color: #12b396 !important;
 }
 
-
 .selected-list .c-list .c-token {
-
     background: #fff !important;
-    color:  #6a6666c7 !important;
+    color: #6a6666c7 !important;
     border-radius: 40px !important;
-
     border: 1px solid #ddd !important;
 }
-.selected-list .c-list .c-remove svg{
+
+.selected-list .c-list .c-remove svg {
     fill: #6a6666c7 !important;
-
-    color:  #6a6666c7 !important;
-
+    color: #6a6666c7 !important;
 }
+
 
 /* Comments */
 
@@ -147,13 +156,17 @@ button {
     -webkit-transform: inherit;
     padding: 40px;
 }
+
+
 /* Comments */
+
 
 /* Popup's padding */
 
 .chPopWrap {
     padding: none !important;
 }
+
 
 /* Add More */
 
@@ -238,7 +251,9 @@ button {
     border-radius: 4px;
 }
 
+
 /* Add More */
+
 
 /* Profile Dropdown */
 
@@ -252,22 +267,26 @@ button {
     float: right;
 }
 
+
 /* Profile Dropdown */
 
 
 /* mobile cart */
 
 .resCart span {
-        /* display: none; */
-        padding: 0px 19px;
-        color: #057e68; 
-        border-radius: 4px;
-        margin: 0px 12px 0p;
-        position: absolute;
-        /* z-index: 100000; */
-        margin: -7px;
+    /* display: none; */
+    padding: 0px 19px;
+    color: #057e68;
+    border-radius: 4px;
+    margin: 0px 12px 0p;
+    position: absolute;
+    /* z-index: 100000; */
+    margin: -7px;
 }
+
+
 /* Change Password */
+
 .userDetails h2 {
     padding: 0px 0px 8px;
     margin: 0px 0px 5px;
@@ -277,24 +296,33 @@ button {
     color: #666;
 }
 
+
 /* about */
+
 .backWhite {
     background-color: #fff;
 }
 
+
 /* positions */
+
 .careerForm {
     position: static !important;
     width: 100%;
-    box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
     padding: 10px 10px;
     float: none;
 }
 
-/* Validations Error */
-.addfild.ng-invalid {border-left:5px solid red;}
 
-.required:after, .form-control.ng-invalid {
+/* Validations Error */
+
+.addfild.ng-invalid {
+    border-left: 5px solid red;
+}
+
+.required:after,
+.form-control.ng-invalid {
     content: " *";
     color: red;
 }
