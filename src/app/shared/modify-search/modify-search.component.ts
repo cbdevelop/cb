@@ -94,6 +94,11 @@ export class ModifySearchComponent implements OnInit {
     console.log(this.masterObj.searchObj, this.modifiedForm);
     if (this.modifiedForm.valid) {
       if (this.page == "home") {
+        this.masterObj.totalCost =0;
+        this.masterObj.selectedDishArr= [];
+        var selectedDish = JSON.stringify(this.masterObj.selectedDishArr);
+        localStorage.setItem("cost", this.masterObj.totalCost.toString());
+        localStorage.setItem("selDises", selectedDish);
         this.routerObj.navigate(['../search']);
       } else
         this.activeModal.close();

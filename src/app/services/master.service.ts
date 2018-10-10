@@ -17,7 +17,7 @@ export class MasterService {
 
 
 	currentSection = 'home';
-	searchmenu_selection = "all";
+	searchmenu_selection = "starters";
 	masterDish: DishModel[] = [];
 	dishArray: DishModel[] = [];
 	selectedDishArr: DishModel[] = [];
@@ -32,7 +32,7 @@ export class MasterService {
 	stallsArray: DishModel[] = []; // menutype =9
 
 	alldishes: Menu[] = [];
-	filteredchefList = [];
+	filteredchefList:Array<any> = [];
 	evntManagerSelFlag = false;
 	selectedEvtManager = []
 	eventManagerList = [

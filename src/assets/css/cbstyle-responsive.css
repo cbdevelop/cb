@@ -1,4 +1,7 @@
 @media screen and (max-width: 1210px) {
+    .nav-hide {
+        display: block;
+    }
     .searchOut {
         width: auto;
         margin: 0px 15px;
@@ -155,6 +158,9 @@
 }
 
 @media screen and (max-width: 1020px) {
+    .nav-hide {
+        display: none;
+    }
     nav {
         position: fixed;
         z-index: 100010;

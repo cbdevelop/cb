@@ -39,8 +39,11 @@
         <div class="atten">
           <label>Attendees -
             <b>{{ masterObj.totalAttendees }}</b> (Veg - Nonveg)</label>
-          <input type="text" placeholder="000" formControlName="vegAttnd" [(ngModel)]="masterObj.searchObj.vegAttnd" (blur)="getTotal()" />
-          <input type="text" placeholder="000" class="non" formControlName="nonVegAttnd" [(ngModel)]="masterObj.searchObj.nonVegAttnd" (blur)="getTotal()"
+          <input type="text" placeholder="000" formControlName="vegAttnd" 
+          [(ngModel)]="masterObj.searchObj.vegAttnd" (keypress)="onlyNumberKey($event)"
+           (blur)="getTotal()" />
+          <input type="text" placeholder="000" class="non" formControlName="nonVegAttnd"
+           [(ngModel)]="masterObj.searchObj.nonVegAttnd" (blur)="getTotal()" (keypress)="onlyNumberKey($event)"
           />
         </div>
         <div class="select date">

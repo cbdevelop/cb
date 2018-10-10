@@ -12,30 +12,30 @@
       <span class="fa fa-bars menuIcon" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"></span>
     </div>
     <div id="collapseExample" [ngbCollapse]="isCollapsed">
-    <nav>
-      <ul class="clearfix">
-        <li>
-          <a [ngx-scroll-to]="'#home'" [routerLink]="'/'">Home</a>
-        </li>
-        <li>
-          <a [ngx-scroll-to]="'#howitworks'" [routerLink]="'/'">How it Works</a>
-        </li>
-        <li>
-          <a [ngx-scroll-to]="'#about'" [routerLink]="'/'">About Us</a>
-        </li>
-        <li>
-          <a [ngx-scroll-to]="'#choose'" [routerLink]="'/'">Choose Us</a>
-        </li>
-        <li>
-          <a [ngx-scroll-to]="'#partner'" [routerLink]="'/'" class="Act">Partners</a>
-        </li>
-        <li>
-          <a [routerLink]="['/contact']">Contact</a>
-        </li>
-      </ul>
-    </nav>
+      <nav>
+        <ul class="clearfix">
+          <li>
+            <a [ngx-scroll-to]="'#home'" [routerLink]="'/'">Home</a>
+          </li>
+          <li>
+            <a [ngx-scroll-to]="'#howitworks'" [routerLink]="'/'">How it Works</a>
+          </li>
+          <li>
+            <a [ngx-scroll-to]="'#about'" [routerLink]="'/'">About Us</a>
+          </li>
+          <li>
+            <a [ngx-scroll-to]="'#choose'" [routerLink]="'/'">Choose Us</a>
+          </li>
+          <li>
+            <a [ngx-scroll-to]="'#partner'" [routerLink]="'/'" class="Act">Partners</a>
+          </li>
+          <li>
+            <a [routerLink]="['/contact']">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    
+
   </section>
 </header>
 

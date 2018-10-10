@@ -11,10 +11,10 @@ import { AfterViewInit } from '@angular/core/src/metadata/lifecycle_hooks';
   templateUrl: './chef-list.component.html',
   styleUrls: ['./chef-list.component.css']
 })
-export class ChefListComponent implements OnInit,AfterViewInit {
+export class ChefListComponent implements OnInit, AfterViewInit {
 
   chefList = [];
-  length=0;
+  length = 0;
   constructor(
     private chefService: NgbModal,
     public masterObj: MasterService
@@ -25,27 +25,27 @@ export class ChefListComponent implements OnInit,AfterViewInit {
     // this.getlist();
   }
 
-  getlist(){
-    var min = this.masterObj.selectedDishes.best.length+ this.masterObj.selectedDishes.starter.length+ 
-    this.masterObj.selectedDishes.main.length+ this.masterObj.selectedDishes.biryani.length;
+  getlist() {
+    var min = this.masterObj.selectedDishes.best.length + this.masterObj.selectedDishes.starter.length +
+      this.masterObj.selectedDishes.main.length + this.masterObj.selectedDishes.biryani.length;
 
     min = min < 3 ? 3 : 5;
-    this.length = this.masterObj.randomInt(1,min);
+    this.length = this.masterObj.randomInt(1, min);
 
-    for(var i =0;i<this.length;i++){
-      var index = this.masterObj.randomInt(1,this.masterObj.ChefData.length);
+    for (var i = 0; i < this.length; i++) {
+      var index = this.masterObj.randomInt(1, this.masterObj.ChefData.length);
       this.chefList.push(this.masterObj.ChefData[index]);
     }
-    
+
   }
 
   ngOnInit() {
     console.log(this.chefList);
-    this.chefList = this.masterObj.filteredchefList 
+    this.chefList = this.masterObj.filteredchefList
   }
 
   ngAfterViewInit() {
-    this.chefList = this.masterObj.filteredchefList ;
+    this.chefList = this.masterObj.filteredchefList;
   }
 
   chefProfile(id) {

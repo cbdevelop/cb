@@ -105,14 +105,20 @@ export class HomeComponent implements OnInit {
 
     this.homeForm = this.fb.group({
       location: [[], Validators.required],
-      serviceType: [null, Validators.required],
-      vegAttnd: [null, Validators.required],
-      nonVegAttnd: [null, Validators.required],
+      serviceType: [null,  Validators.required],
+      vegAttnd: [null, [ Validators.pattern('^[0-9]+[1-9]*$'),Validators.required]],
+      nonVegAttnd: [null,[ Validators.required, Validators.pattern('^[1-9]+[0-9]*$')]],
       datetime: ['', Validators.required]
     });
 
   }
-
+  onlyNumberKey(event) {
+    const pattern = /[0-9]/;
+    const inputChar = String.fromCharCode(event.charCode);
+    if (event.keyCode !== 8 && event.keyCode !== 13 && !pattern.test(inputChar)) {
+      event.preventDefault();
+    }
+  }
   // Locations
   LocationSelect(item: any) {
     // console.log(item);
@@ -146,6 +152,11 @@ export class HomeComponent implements OnInit {
 
     console.log(this.masterObj.searchObj, this.homeForm);
     if (this.homeForm.valid) {
+      this.masterObj.totalCost =0;
+      this.masterObj.selectedDishArr= [];
+      var selectedDish = JSON.stringify(this.masterObj.selectedDishArr);
+      localStorage.setItem("cost", this.masterObj.totalCost.toString());
+      localStorage.setItem("selDises", selectedDish);
       this.routerObj.navigate(['../search']);
     }
   }

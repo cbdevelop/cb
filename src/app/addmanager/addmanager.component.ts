@@ -87,10 +87,10 @@ onManager() {
         "experienceInEvents": this.managerForm.controls.experience.value.toUpperCase(),
         "aboutYourSelf": this.managerForm.controls.about.value,
       }
-      console.log(options);
+      
       this.masterSerObj.registerManager(options).subscribe(
         (res: Response) => {
-          console.log(res);
+          
           if (res.status) {
 
             const modalRef = this.signinModel.open(AlertsComponent);
@@ -101,7 +101,7 @@ onManager() {
           }
         },
         (err) => {
-          console.log(err);
+          
           const modalRef = this.signinModel.open(AlertsComponent);
           this.alert.type = 'danger';
           this.alert.message = err.error.message;

@@ -9,7 +9,7 @@
       </a>
       <span class="fa fa-bars menuIcon" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"></span>
     </div>
-    <div id="collapseExample" [ngbCollapse]="isCollapsed">
+    <div id="collapseExample" class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
       <nav>
         <ul class="clearfix">
           <li>

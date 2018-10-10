@@ -3282,6 +3282,7 @@ footer {
 }
 
 .filBtn a {
+    cursor: pointer;
     display: inline-block;
     border: 1px solid #cccc;
     padding: 5px 22px;

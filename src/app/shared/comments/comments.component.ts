@@ -12,15 +12,14 @@ export class CommentsComponent implements OnInit {
 
   comment: string;
   constructor(
-    private masterObj: MasterService,
+    public masterObj: MasterService,
     public activeModal: NgbActiveModal) { 
       
     }
 
   ngOnInit() {
-    console.log(this.masterObj.comments);
-    if(this.masterObj.comments !="")
-       this.comment = this.masterObj.comments ;
+    // console.log(this.masterObj.comments);
+    
   }
 
   onCancel() {

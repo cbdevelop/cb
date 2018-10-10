@@ -22,15 +22,11 @@ export class CheckoutComponent implements OnInit {
   getlist() {
     // this.masterObj.filteredchefList = [];
 
-
-
     var min = this.masterObj.selectedDishes.best.length + this.masterObj.selectedDishes.starter.length +
       this.masterObj.selectedDishes.main.length + this.masterObj.selectedDishes.biryani.length;
 
-    console.log(min)
     min = min < 3 ? 3 : 5;
     var length = this.masterObj.randomInt(1, min);
-    console.log(length);
     if (this.masterObj.filteredchefList.length < length) {
       this.masterObj.filteredchefList = [];
       for (var i = 0; i < length; i++) {
