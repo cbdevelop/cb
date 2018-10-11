@@ -10,7 +10,7 @@ import { SigninComponent } from '../signin/signin.component';
   styleUrls: ['./terms.component.css']
 })
 export class TermsComponent implements OnInit {
-
+  isCollapsed = false;
   constructor( private signinModel: NgbModal ) { }
 
   ngOnInit() {

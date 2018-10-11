@@ -29,7 +29,7 @@ export class OrderPreviewComponent implements OnInit {
     if (ind !== -1) {
       this.masterObj.totalCost = this.masterObj.totalCost - this.masterObj.selectedDishArr[ind].Price;
       this.masterObj.selectedDishArr.splice(ind,1);
-      var selectedDish = JSON.stringify(this.masterObj.selectedDishes);
+      var selectedDish = JSON.stringify(this.masterObj.selectedDishArr);
       localStorage.setItem("cost", this.masterObj.totalCost.toString());
       localStorage.setItem("selDises", selectedDish);
     }

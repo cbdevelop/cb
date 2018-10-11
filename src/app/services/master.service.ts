@@ -32,7 +32,7 @@ export class MasterService {
 	stallsArray: DishModel[] = []; // menutype =9
 
 	alldishes: Menu[] = [];
-	filteredchefList:Array<any> = [];
+	filteredchefList: Array<any> = [];
 	evntManagerSelFlag = false;
 	selectedEvtManager = []
 	eventManagerList = [
@@ -738,11 +738,15 @@ export class MasterService {
 
 		if (localStorage.length) {
 			if (localStorage.getItem("selDises"))
-				this.selectedDishes = JSON.parse(localStorage.getItem("selDises"));
+				this.selectedDishArr = JSON.parse(localStorage.getItem("selDises"));
 			if (localStorage.getItem("cost"))
 				this.totalCost = parseInt(localStorage.getItem("cost"), 10);
 			if (localStorage.getItem("selManager"))
 				this.selectedEvtManager = JSON.parse(localStorage.getItem("selManager"));
+			if (localStorage.getItem("comment") != undefined)
+				this.comments = localStorage.getItem("comment");
+			if (localStorage.getItem("searchObj") != undefined)
+				this.searchObj = JSON.parse(localStorage.getItem("searchObj"));
 		}
 	}
 

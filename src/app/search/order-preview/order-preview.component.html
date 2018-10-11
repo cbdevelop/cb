@@ -7,10 +7,10 @@
     <ul class="head">
       <li *ngFor="let item of masterObj.getSelectedDishesById(1);let index= index">
         <span> {{ item.Dish_Name }}
-          <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-          <label *ngIf="item.Cuisine ==''"> - (</label>
+          <label *ngIf="item.Cuisine !=''"> - ( {{ item.Cuisine }} </label>
+          <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
           <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-          <label *ngIf="item.Restrictions ==''">)</label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
           <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
           <i class="fa fa-close" (click)="remove(item.id,index)"></i>
         </span>
@@ -25,9 +25,9 @@
       <li *ngFor="let item of masterObj.getSelectedDishesById(2);let index= index">
         <span> {{ item.Dish_Name }}
             <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-            <label *ngIf="item.Cuisine ==''"> - (</label>
+            <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
             <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-            <label *ngIf="item.Restrictions ==''">)</label>
+            <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
             <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
           <i class="fa fa-close" (click)="remove(item.id,index)"></i>
         </span>
@@ -73,9 +73,9 @@
       <li *ngFor="let item of masterObj.getSelectedDishesById(6);let index= index">
         <span> {{ item.Dish_Name }}
             <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-            <label *ngIf="item.Cuisine ==''"> - (</label>
+            <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
             <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-            <label *ngIf="item.Restrictions ==''">)</label>
+            <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
             <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
           <i class="fa fa-close" (click)="remove(item.id,index)"></i>
         </span>
@@ -90,9 +90,9 @@
       <li *ngFor="let item of masterObj.getSelectedDishesById(5);let index= index">
         <span> {{ item.Dish_Name }}
             <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-            <label *ngIf="item.Cuisine ==''"> - (</label>
+            <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
             <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-            <label *ngIf="item.Restrictions ==''">)</label>
+            <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
             <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
           <i class="fa fa-close" (click)="remove(item.id,index)"></i>
         </span>
@@ -124,9 +124,9 @@
       <li *ngFor="let item of masterObj.getSelectedDishesById(8);let index= index">
         <span> {{ item.Dish_Name }}
             <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-            <label *ngIf="item.Cuisine ==''"> - (</label>
+            <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
             <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-            <label *ngIf="item.Restrictions ==''">)</label>
+            <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
             <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
           <i class="fa fa-close" (click)="remove(item.id,index)"></i>
         </span>
@@ -141,9 +141,9 @@
       <li *ngFor="let item of masterObj.getSelectedDishesById(9);let index= index">
         <span> {{ item.Dish_Name }}
             <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-            <label *ngIf="item.Cuisine ==''"> - (</label>
+            <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
             <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-            <label *ngIf="item.Restrictions ==''">)</label>
+            <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
             <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
           <i class="fa fa-close" (click)="remove(item.id,index)"></i>
         </span>

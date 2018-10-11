@@ -11,15 +11,15 @@ import { PositionsComponent } from './positions/positions.component';
 })
 export class CareerComponent implements OnInit {
 
-    @ViewChild("head") header;
-
-  constructor( private activeModel: NgbModal ) { }
+  @ViewChild("head") header;
+  isCollapsed = false;
+  constructor(private activeModel: NgbModal) { }
 
   ngOnInit() {
   }
 
-   // Sign-in Open
-   openSign() {
+  // Sign-in Open
+  openSign() {
     this.activeModel.open(SigninComponent);
   }
 
@@ -30,14 +30,14 @@ export class CareerComponent implements OnInit {
 
   // header scroll
   @HostListener("window:scroll", [])
-onWindowScroll() {
-  const number = window.pageYOffset || window.scrollY || 0;
+  onWindowScroll() {
+    const number = window.pageYOffset || window.scrollY || 0;
 
-  if (number >= 100) {
-    this.header.nativeElement.classList.add("scrollAct");
-  } else if (number < 200) {
-    this.header.nativeElement.classList.remove("scrollAct");
+    if (number >= 100) {
+      this.header.nativeElement.classList.add("scrollAct");
+    } else if (number < 200) {
+      this.header.nativeElement.classList.remove("scrollAct");
+    }
   }
-}
 
 }

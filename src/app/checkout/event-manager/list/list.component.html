@@ -13,7 +13,7 @@
     <div class="eventCheck">
       <div class="checkbox">
         <label>
-          <input type="checkbox" [(ngModel)]="masterobj.evntManagerSelFlag">
+          <input type="checkbox" [(ngModel)]="masterobj.evntManagerSelFlag" (click)="onNoManager()">
           <i class="input-helper"></i> <span>I can manage this event without a event maganer </span>
         </label>
       </div>					

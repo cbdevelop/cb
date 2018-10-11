@@ -9,7 +9,7 @@
 
     <div class="signWrap clearfix"><a ngbDropdownToggle>
       <span class="fa fa-user-o siIcon"></span></a>
-      <span class="fa fa-bars menuIcon"></span>
+      <span class="fa fa-bars menuIcon" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"></span>
     </div>
     <div class="logInInn" ngbDropdownMenu>
         <a href="" routerLink="/profile">Profile</a>
@@ -19,7 +19,7 @@
     
     </div>
 
-    <nav>
+    <nav  [ngClass]="isCollapsed ? 'show' : ''">
       <ul class="clearfix">
         <li>
           <a [ngx-scroll-to]="'#home'" [routerLink]="'/'" >Home</a>

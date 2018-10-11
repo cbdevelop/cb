@@ -19,6 +19,7 @@ export class ListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.masterobj.evntManagerSelFlag = localStorage.getItem('noManager') == 'yes' ? true : false;
   }
 
   eventProfile(id) {
@@ -30,4 +31,12 @@ export class ListComponent implements OnInit {
     this.eventService.open(AddMoreComponent);
   }
 
+  onNoManager() {
+    console.log(this.masterobj.evntManagerSelFlag);
+    if (this.masterobj.evntManagerSelFlag) {
+      localStorage.setItem('noManager', 'yes');
+      this.masterobj.selectedEvtManager = [];
+    }else
+      localStorage.setItem('noManager', 'no');
+  }
 }

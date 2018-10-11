@@ -152,11 +152,11 @@ export class HomeComponent implements OnInit {
 
     console.log(this.masterObj.searchObj, this.homeForm);
     if (this.homeForm.valid) {
-      this.masterObj.totalCost =0;
+      this.masterObj.totalCost = 0;
       this.masterObj.selectedDishArr= [];
       var selectedDish = JSON.stringify(this.masterObj.selectedDishArr);
-      localStorage.setItem("cost", this.masterObj.totalCost.toString());
-      localStorage.setItem("selDises", selectedDish);
+
+      localStorage.setItem("searchObj", JSON.stringify(this.masterObj.searchObj));
       this.routerObj.navigate(['../search']);
     }
   }

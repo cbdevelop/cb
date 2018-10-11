@@ -5,7 +5,7 @@
       <span>Proceed to Checkout</span>
     </a>
 
-    <div class="cartOver" >
+    <div class="cartOver">
       <div *ngIf="masterObj.getSelectedDishesById(1).length ">
         <h3>Starters</h3>
         <ul class="head">
@@ -156,7 +156,7 @@
         </ul>
       </div>
 
-      <div *ngIf="masterObj.selectedEvtManager.length ">
+      <div *ngIf="masterObj.selectedEvtManager.length">
         <h3>Event Manager</h3>
         <ul>
           <li *ngFor="let item of masterObj.selectedEvtManager;let i= index">
@@ -171,14 +171,13 @@
 
     <ng-template #nocart>
       <div class="cartOver">
-
         <h3>Your cart is empty</h3>
       </div>
     </ng-template>
 
     <p class="promoText" (click)="openPromo()">Have a Promocode</p>
     <div class="note noteAct" (click)="onCommentPopup()">
-      <span></span>
+      <span> {{ masterObj.comments }}</span>
       <i class="fa fa-comment-o"></i>
     </div>
   </div>

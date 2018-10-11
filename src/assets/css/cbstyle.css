@@ -111,6 +111,10 @@ nav {
     float: right;
 }
 
+.show {
+    display: block;
+}
+
 nav ul {
     margin: 0px 0px;
     padding: 0px 10px 0px 0px;
@@ -2324,7 +2328,7 @@ footer {
 
 .cartBtn.cartBtnEmpty {
     background-color: #999;
-    color: #fff;
+    color: #fff !important;
 }
 
 .emptyCart {
