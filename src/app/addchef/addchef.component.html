@@ -11,8 +11,8 @@
       </a>
       <span class="fa fa-bars menuIcon" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"></span>
     </div>
-    <div id="collapseExample" [ngbCollapse]="isCollapsed">
-    <nav>
+    <div id="collapseExample" >
+    <nav [ngClass]="isCollapsed ? 'show' : ''">
       <ul class="clearfix">
         <li>
           <a [ngx-scroll-to]="'#home'" [routerLink]="'/'">Home</a>

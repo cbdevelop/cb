@@ -23,11 +23,12 @@ export class CommentsComponent implements OnInit {
   }
 
   onCancel() {
+
     this.activeModal.dismiss();
   }
 
   onSave() {
-    this.masterObj.comments = this.comment;
+    localStorage.setItem("comment", this.masterObj.comments);
     this.activeModal.close();
   }
 

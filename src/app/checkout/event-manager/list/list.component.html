@@ -3,45 +3,59 @@
   <div class="resultWrap">
 
     <div class="noteMesg">
-        
-        <p>Your estimate fare for the service is Rs. <span>0</span> 
+
+      <p>Your estimate fare for the service is Rs.
+        <span>0</span>
         <!-- Lorem Ipsum is simply dummy text of the printing<span>25000</span> -->
         <a href="javascript:void(0)" (click)="openAddMore()">Add More..</a>
-        </p>
+      </p>
     </div>
 
     <div class="eventCheck">
       <div class="checkbox">
         <label>
-          <input type="checkbox" [(ngModel)]="masterobj.evntManagerSelFlag">
-          <i class="input-helper"></i> <span>I can manage this event without a event maganer </span>
+          <input type="checkbox" [(ngModel)]="masterobj.evntManagerSelFlag" (click)="onNoManager()">
+          <i class="input-helper"></i>
+          <span>I can manage this event without a event maganer </span>
         </label>
-      </div>					
+      </div>
     </div>
     <ul class="">
 
       <li *ngFor="let item of masterobj.eventManagerList;let i= index">
         <div class="chefCta clearfix" (click)="eventProfile(item.id)">
-          <div class="chefImg"><img [src]="item.Profile_Image" alt="" /></div>
-            <div class="chefText">
-               <h3>{{ item.Name }}</h3>
-               <div class="ratChef">
-                <i class="fa fa-star" [ngClass]="item.Rating >= 1 ? 'review': ''"></i>
+          <div class="chefImg">
+            <img [src]="item.Profile_Image" alt="" />
+          </div>
+          <div class="chefText">
+            <h3>{{ item.Name }}</h3>
+            <div class="ratChef">
+              <ngb-rating [(rate)]="item.Rating" [readonly]="true" max="5">
+                <ng-template let-fill="fill" let-index="index">
+                  <span class="star" [class.filled]="fill === 100">
+                    <span class="half" [style.width.%]="fill">&#9733;</span> &#9733;
+                  </span>
+                </ng-template>
+              </ngb-rating>
+              <!-- <i class="fa fa-star" [ngClass]="item.Rating >= 1 ? 'review': ''"></i>
                 <i class="fa fa-star" [ngClass]="item.Rating >= 2 ? 'review': ''"></i>
                 <i class="fa fa-star" [ngClass]="item.Rating >= 3 ? 'review': ''"></i>
                 <i class="fa fa-star" [ngClass]="item.Rating >= 4 ? 'review': ''"></i>
-                <i class="fa fa-star" [ngClass]="item.Rating >= 5 ? 'review': ''"></i>
-                </div>
-                <div class="chefDet">
-                  <div class="clearfix"><b>Experience</b>:<p> {{ item.Experience }}</p></div>
-                </div>
-                <div class="managerPrice">
-                  {{ item.Price }}.00
-                </div>
-            </div>			
+                <i class="fa fa-star" [ngClass]="item.Rating >= 5 ? 'review': ''"></i> -->
+            </div>
+            <div class="chefDet">
+              <div class="clearfix">
+                <b>Experience</b>:
+                <p> {{ item.Experience }}</p>
+              </div>
+            </div>
+            <div class="managerPrice">
+              {{ item.Price }}.00
+            </div>
+          </div>
         </div>
       </li>
-<!-- 
+      <!-- 
       <li>
           <div class="chefCta clearfix">
             <div class="chefImg"><img src="../../../../assets/images/mana-de.png" alt="" /></div>

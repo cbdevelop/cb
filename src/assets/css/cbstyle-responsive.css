@@ -162,6 +162,7 @@
         display: none;
     }
     nav {
+        display: none;
         position: fixed;
         z-index: 100010;
         width: 280px;
@@ -365,7 +366,7 @@
     }
     .modifySearch {
         width: 60%;
-        height: 90%;
+        /* height: 90%; */
         bottom: auto;
         margin: 0px auto;
         position: fixed;
@@ -494,6 +495,9 @@
 }
 
 @media screen and (max-width: 760px) {
+    .nav-hide {
+        display: none;
+    }
     .howItCta {
         width: 96%;
         margin: 3% 2%;
@@ -822,6 +826,9 @@
 }
 
 @media screen and (max-width: 590px) {
+    .nav-hide {
+        display: none;
+    }
     .footMenu a {
         display: block;
         margin: 2px 0px;
@@ -1052,6 +1059,9 @@
 }
 
 @media screen and (max-width: 350px) {
+    .nav-hide {
+        display: none;
+    }
     .fbGo i {
         padding: 0px;
     }

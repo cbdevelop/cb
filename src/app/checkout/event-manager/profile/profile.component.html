@@ -50,19 +50,19 @@
                   <span>Base Price</span>:
                   <p>{{ managerDetails.Price }}</p>
                 </div>
-                <div class="clearfix">
+                <div class="clearfix" *ngIf="managerDetails.Events_Managed !== ''">
                   <span>Total events served</span>:
                   <p>{{ managerDetails.Events_Managed }}</p>
                 </div>
-                <div class="clearfix">
+                <div class="clearfix" *ngIf="managerDetails.locality !== ''">
                   <span>Locality</span>:
                   <p> {{ managerDetails.locality }}</p>
                 </div>
-                <div class="clearfix">
+                <div class="clearfix" *ngIf="managerDetails.Proficiency !== ''">
                   <span>Proficiency</span>:
                   <p>{{ managerDetails.Proficiency }}</p>
                 </div>
-                <div class="clearfix">
+                <div class="clearfix" *ngIf="managerDetails.About !== ''">
                   <span>About Chef:</span>
                   <br>
                   <b>

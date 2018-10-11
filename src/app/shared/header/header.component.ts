@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, ViewChild,ElementRef, HostListener } from '@angular/core';
 
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { SigninComponent } from '../signin/signin.component';
@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   user: User[];
   public isCollapsed = false;
   @ViewChild("head") header;
-
+  @ViewChild('navbarText') navbar: ElementRef;
   constructor(
     private signinModel: NgbModal,
     public masterObj: MasterService

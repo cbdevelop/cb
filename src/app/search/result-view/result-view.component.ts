@@ -31,7 +31,7 @@ export class ResultViewComponent implements OnInit {
 
   ngOnInit() {
     this.all_categories = this.service.alldishes;
-    console.log(this.all_categories);
+    console.log(this.service.searchmenu_selection);
     this.getDishList();
   }
 

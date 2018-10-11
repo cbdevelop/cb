@@ -21,7 +21,7 @@ export class OrderCheckoutComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log(this.masterObj.selectedDishes);
+    console.log(this.masterObj.selectedDishArr);
   }
 
   // Comments Model Popup

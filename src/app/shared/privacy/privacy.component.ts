@@ -10,7 +10,7 @@ import { SigninComponent } from '../signin/signin.component';
   styleUrls: ['./privacy.component.css']
 })
 export class PrivacyComponent implements OnInit {
-
+  isCollapsed = false;
   constructor( private signinModel: NgbModal ) { }
 
   ngOnInit() {

@@ -12,7 +12,7 @@ import { SigninComponent } from '../signin/signin.component';
 export class AboutComponent implements OnInit {
 
     @ViewChild("head") header;
-
+    isCollapsed = false;
   constructor( private signinModel: NgbModal ) { }
 
   ngOnInit() {

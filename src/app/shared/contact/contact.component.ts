@@ -16,7 +16,7 @@ export class ContactComponent implements OnInit {
 
   public queryForm: FormGroup;
   public loading: Boolean;
-
+  isCollapsed = false;
   @ViewChild("head") header;
 
   constructor( private fb: FormBuilder,
