@@ -817,8 +817,8 @@ export class MasterService {
 	registerManager(options) {
 		return this.http.post(this.ApiUrl + '/registerManager', options);
 	}
-	proceedToPayalPayment() {
-		return this.http.post(this.ApiUrl + '/paynow').pipe();
+	proceedToPayalPayment(options) {
+		return this.http.post(this.ApiUrl + '/paynow', options).pipe();
 	}
 }
 
