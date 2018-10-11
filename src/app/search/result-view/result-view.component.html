@@ -1,10 +1,10 @@
 <div class="filter filterRes">
-  <app-filter></app-filter>
+    <app-filter></app-filter>
 </div>
 
 
 <div class="resultInn clearfix" id="parentDiv" scrollSpy [spiedTags]="['DIV']" 
-(sectionChange)="onSectionChange($event)">
+    (sectionChange)="onSectionChange($event)">
 
   <!-- new code 
   -->
@@ -221,16 +221,16 @@
 
 <!--responsive cart for small devices-->
 <div class="responsiveCart">
-  <!--<div class="resPro">Have a Promo code</div>-->
-  <div class="clearfix">
-    <a href="" class="resBtn">
-      <span> {{ service.dishCount }}</span>Check out</a>
-    <a href="javascript:void(0)" class="resCart" (click)="openCart()">
-      <span>{{ service.dishCount }}</span>
-      <img src="./assets/images/cart.svg" alt="" />
-    </a>
-    <a href="javascript:void(0)" class="resCom" (click)="openComment()">
-      <img src="./assets/images/commenting.svg" alt="" />
-    </a>
-  </div>
+    <!--<div class="resPro">Have a Promo code</div>-->
+    <div class="clearfix">
+        <a href="" class="resBtn">
+            <span> {{ service.selectedDishArr.length }}</span>Check out</a>
+        <a href="javascript:void(0)" class="resCart" (click)="openCart()">
+            <span>{{ service.selectedDishArr.length }}</span>
+            <img src="./assets/images/cart.svg" alt="" />
+        </a>
+        <a href="javascript:void(0)" class="resCom" (click)="openComment()">
+            <img src="./assets/images/commenting.svg" alt="" />
+        </a>
+    </div>
 </div>

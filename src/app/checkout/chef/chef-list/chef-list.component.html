@@ -12,11 +12,19 @@
           <div class="chefText">
             <h3> {{ chef.Name }}</h3>
             <div class="ratChef">
-              <i class="fa fa-star" [ngClass]="chef.Rating >=1 ? 'review': ''"></i>
+
+              <ngb-rating [(rate)]="chef.Rating" [readonly]="true" max="5">
+                <ng-template let-fill="fill" let-index="index">
+                  <span class="star" [class.filled]="fill === 100">
+                    <span class="half" [style.width.%]="fill">&#9733;</span> &#9733;
+                  </span>
+                </ng-template>
+              </ngb-rating>
+              <!-- <i class="fa fa-star" [ngClass]="chef.Rating >=1 ? 'review': ''"></i>
               <i class="fa fa-star" [ngClass]="chef.Rating >=2 ? 'review': ''"></i>
               <i class="fa fa-star" [ngClass]="chef.Rating >=3 ? 'review': ''"></i>
               <i class="fa fa-star" [ngClass]="chef.Rating >=4 ? 'review': ''"></i>
-              <i class="fa fa-star" [ngClass]="chef.Rating >=5 ? 'review': ''"></i>
+              <i class="fa fa-star" [ngClass]="chef.Rating >=5 ? 'review': ''"></i> -->
             </div>
             <div class="chefDet">
               <div class="clearfix">
@@ -31,7 +39,7 @@
                 <b>Menu</b>:
                 <p class="menu">
                   <i *ngFor="let menu of chef.menu">{{ menu }},</i>
-                 
+
                 </p>
               </div>
             </div>

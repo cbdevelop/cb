@@ -366,7 +366,7 @@
     }
     .modifySearch {
         width: 60%;
-        height: 90%;
+        /* height: 90%; */
         bottom: auto;
         margin: 0px auto;
         position: fixed;

@@ -1,0 +1,2 @@
+"postinstall": "ng build --aot -prod"
+web: node ./src/server.js

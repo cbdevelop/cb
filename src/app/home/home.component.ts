@@ -27,14 +27,17 @@ export class HomeComponent implements OnInit {
 
   settings = {};
   session = "dinner";
-  barwidth = 0
+  barwidth = 0;
+
   cntevnt = 0;
   eventServed = 1254;
 
   cntchef = 0;
   no_chefs = 470;
+
   cntmanager = 0;
   no_eventManager = 210;
+
   cntusers = 0;
   users = 2150;
   public spiedTags = [];
@@ -50,31 +53,49 @@ export class HomeComponent implements OnInit {
   ) {
     this.barwidth = 0;
 
-    this.cntevnt = this.dancingNumbers(this.eventServed);
-    this.cntchef = this.dancingNumbers(this.no_chefs);
-    this.cntmanager = this.dancingNumbers(this.no_eventManager);
-    this.cntusers = this.dancingNumbers(this.users);
-
+    // this.cntevnt = this.dancingNumbers(this.eventServed);
+    // this.cntchef = this.dancingNumbers(this.no_chefs);
+    // this.cntmanager = this.dancingNumbers(this.no_eventManager);
+    // this.cntusers = this.dancingNumbers(this.users);
+    this.dancingNumbers();
   }
 
-  callCounters() {
 
-  }
-  dancingNumbers(cnt) {
-    this.barwidth = 0;
+  dancingNumbers() {
+    this.cntevnt = 0;
 
     let interval = setInterval(() => {
-      this.barwidth += 10;
-      if (this.barwidth >= cnt) clearInterval(interval);
-    }, 10)
-    return this.barwidth;
+      this.cntevnt += 10;
+      if (this.cntevnt >= this.eventServed) clearInterval(interval);
+    }, 50);
+
+    this.cntchef = 0;
+
+    let chefinterval = setInterval(() => {
+      this.cntchef += 10;
+      if (this.cntchef >= this.no_chefs) clearInterval(chefinterval);
+    }, 50);
+
+    this.cntusers = 0;
+    let userinterval = setInterval(() => {
+      this.cntusers += 10;
+      if (this.cntusers >= this.users) clearInterval(userinterval);
+    }, 50);
+
+    this.cntmanager = 0;
+
+    let mangerinterval = setInterval(() => {
+      this.cntmanager += 10;
+      if (this.cntmanager >= this.no_eventManager) clearInterval(mangerinterval);
+    }, 50);
+    
   }
 
 
   onSectionChange(sectionId: string) {
     this.masterObj.currentSection = sectionId;
-    // if(sectionId =='')
-    //   this
+    if (sectionId == 'counter')
+      this.dancingNumbers();
   }
 
   ngOnInit() {
@@ -105,9 +126,9 @@ export class HomeComponent implements OnInit {
 
     this.homeForm = this.fb.group({
       location: [[], Validators.required],
-      serviceType: [null,  Validators.required],
-      vegAttnd: [null, [ Validators.pattern('^[0-9]+[1-9]*$'),Validators.required]],
-      nonVegAttnd: [null,[ Validators.required, Validators.pattern('^[1-9]+[0-9]*$')]],
+      serviceType: [null, Validators.required],
+      vegAttnd: [null, [Validators.pattern('^[0-9]+[1-9]*$'), Validators.required]],
+      nonVegAttnd: [null, [Validators.required, Validators.pattern('^[1-9]+[0-9]*$')]],
       datetime: ['', Validators.required]
     });
 
@@ -153,7 +174,7 @@ export class HomeComponent implements OnInit {
     console.log(this.masterObj.searchObj, this.homeForm);
     if (this.homeForm.valid) {
       this.masterObj.totalCost = 0;
-      this.masterObj.selectedDishArr= [];
+      this.masterObj.selectedDishArr = [];
       var selectedDish = JSON.stringify(this.masterObj.selectedDishArr);
 
       localStorage.setItem("searchObj", JSON.stringify(this.masterObj.searchObj));

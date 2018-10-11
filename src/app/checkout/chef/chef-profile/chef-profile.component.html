@@ -7,14 +7,20 @@
       <img src="../../../../assets/images/chef-de.png" alt="" />
       <h3>{{ chefDetails.Name }}</h3>
       <span>
-          <i class="fa fa-star" [ngClass]="chefDetails.Rating >= 1 ? 'review': ''"></i>
+        <ngb-rating [(rate)]="chefDetails.Rating" [readonly]="true" max="5">
+          <ng-template let-fill="fill" let-index="index">
+            <span class="star" [class.filled]="fill === 100">
+              <span class="half" [style.width.%]="fill">&#9733;</span> &#9733;
+            </span>
+          </ng-template>
+        </ngb-rating>
+        <!-- <i class="fa fa-star" [ngClass]="chefDetails.Rating >= 1 ? 'review': ''"></i>
           <i class="fa fa-star" [ngClass]="chefDetails.Rating >= 2 ? 'review': ''"></i>
           <i class="fa fa-star" [ngClass]="chefDetails.Rating >= 3 ? 'review': ''"></i>
           <i class="fa fa-star" [ngClass]="chefDetails.Rating >= 4 ? 'review': ''"></i>
-          <i class="fa fa-star" [ngClass]="chefDetails.Rating >= 5 ? 'review': ''"></i>
-        <!-- <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> -->
+          <i class="fa fa-star" [ngClass]="chefDetails.Rating >= 5 ? 'review': ''"></i> -->
       </span>
-      <a href="javascript:void(0)" class="addBtn" (click)="changeChef()" >Change</a>
+      <a href="javascript:void(0)" class="addBtn" (click)="changeChef()">Change</a>
       <ul class="ceri clearfix">
         <li>
           <img src="../../../../assets/images/certified.jpg" alt="">CB Certified</li>
@@ -38,11 +44,11 @@
               <div class="PopTabOne">
                 <div class="clearfix">
                   <span>Full Name</span>:
-                  <p>{{ chefDetails.Name  }}</p>
+                  <p>{{ chefDetails.Name }}</p>
                 </div>
                 <div class="clearfix">
                   <span>Cooking Exp</span>:
-                  <p>{{ chefDetails.Experience  }} Years</p>
+                  <p>{{ chefDetails.Experience }} Years</p>
                 </div>
                 <div class="clearfix">
                   <span>Total events served</span>:
@@ -59,15 +65,15 @@
                 <div class="clearfix">
                   <span>Cook for you</span>:
                   <p>
-                      <i *ngFor="let menu of chefDetails.menu">{{ menu }},</i>
-                   
+                    <i *ngFor="let menu of chefDetails.menu">{{ menu }},</i>
+
                   </p>
                 </div>
                 <div class="clearfix">
                   <span>About Chef:</span>
                   <br>
                   <b>
-                      {{ chefDetails.About }}
+                    {{ chefDetails.About }}
                   </b>
                 </div>
               </div>
@@ -88,10 +94,10 @@
                     <i class="fa fa-star" [ngClass]="rev.rating >= 5 ? 'review': ''"></i>
                   </div>
                   <p>
-                      {{ rev.text }}
+                    {{ rev.text }}
                   </p>
                 </div>
-                
+
               </div>
             </ng-template>
           </ngb-tab>
