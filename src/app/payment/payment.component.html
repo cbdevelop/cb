@@ -1,56 +1,99 @@
 <div id="home"></div>
 <section class="resultOut checkOut">
-    <div class="chefHead">
-        <div class="chefHeadInn clearfix">
-            <div class="payLogo"><a [routerLink]="'/'"><img src="../../assets/images/logo.png" alt="" class="payImg"/></a></div>
-            <div class="cartOut">
-              <div class="cartWpar">
-                <a href="javascript:void(0)" class="cartBtn clearfix"><b>Total 25000</b><span>Per Plate 500</span></a>
-                <div class="cartOver">
-                <h3>Menu</h3>
+  <div class="chefHead">
+    <div class="chefHeadInn clearfix">
+      <div class="payLogo">
+        <a [routerLink]="'/'">
+          <img src="../../assets/images/logo.png" alt="" class="payImg" />
+        </a>
+      </div>
+      <div class="cartOut">
+        <div class="cartWpar">
+          <a href="javascript:void(0)" class="cartBtn clearfix">
+            <b>Total 25000</b>
+            <span>Per Plate 500</span>
+          </a>
+          <div class="cartOver">
+            <h3>Menu</h3>
+            <ul>
+
+              <li *ngFor="let item of masterObj.selectedDishArr;let index= index">
+                <span> {{ item.Dish_Name }}
+                  <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+                  <label *ngIf="item.Cuisine ==''"> - (</label>
+                  <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+                  <label *ngIf="item.Restrictions ==''">)</label>
+                  <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+
+                </span>
+              </li>
+              <!-- <li><span>Add Item One </span></li>
+                    <li><span>Add Item One </span></li>
+                    <li><span>Add Item One </span></li>
+                    <li><span>Add Item One </span></li>
+                    <li><span>Add Item One </span></li>
+                    <li><span>Add Item One </span></li>
+                    <li><span>Add Item One </span></li>
+                 -->
+              <div *ngIf="masterObj.selectedEvtManager.length">
+                <h3>Event Manager</h3>
                 <ul>
-                    <li><span>Add Item One </span></li>
-                    <li><span>Add Item One </span></li>
-                    <li><span>Add Item One </span></li>
-                    <li><span>Add Item One </span></li>
-                    <li><span>Add Item One </span></li>
-                    <li><span>Add Item One </span></li>
-                    <li><span>Add Item One </span></li>
-                    <li><span>Add Item One </span></li>
-                </ul>	
-                </div>			
-              </div>  
-      
-              <div class="promoApp">
-                You have successfully applied Promo code <b>CBP54555</b> Your total discount <b>2500</b>
-             </div>
-                          
-            </div>          	
-              
+                  <li *ngFor="let item of masterObj.selectedEvtManager;let i= index">
+                    <span> {{ item.Name}}
+                      <i class="fa fa-close" (click)="remove(i)"></i>
+                    </span>
+                  </li>
+
+                </ul>
+              </div>
+            </ul>
+          </div>
         </div>
+
+        <div class="promoApp">
+          You have successfully applied Promo code
+          <b>CBP54555</b> Your total discount
+          <b>2500</b>
+        </div>
+
       </div>
 
-      <div class="resultInn clearfix">
-          <div class="paymentWrapInn">
-      
-            <app-address></app-address>
-            
-            <app-pay></app-pay>
-      
-          </div>
-      </div>
+    </div>
+  </div>
+
+  <div class="resultInn clearfix">
+    <div class="paymentWrapInn">
+
+      <app-address></app-address>
+
+      <app-pay></app-pay>
+
+    </div>
+  </div>
 
 </section>
 
 
 <!-- Steps -->
 <div class="stepWrap">
-    <ul>
-      <li title="Title Text Here..." class="Act"><a href="javascript:void(0)"><span>Step</span>1</a></li>
-      <li title="Title Text Here..." class="Act"><a href="javascript:void(0)"><span>Step</span>2</a></li>
-      <li title="Title Text Here..." class="Act"><a href="javascript:void(0)"><span>Step</span>3</a></li>
-      <li title="Title Text Here..." class="Act"><a href="javascript:void(0)"><span>Step</span>4</a></li>
-    </ul>
+  <ul>
+    <li title="Title Text Here..." class="Act">
+      <a href="javascript:void(0)">
+        <span>Step</span>1</a>
+    </li>
+    <li title="Title Text Here..." class="Act">
+      <a href="javascript:void(0)">
+        <span>Step</span>2</a>
+    </li>
+    <li title="Title Text Here..." class="Act">
+      <a href="javascript:void(0)">
+        <span>Step</span>3</a>
+    </li>
+    <li title="Title Text Here..." class="Act">
+      <a href="javascript:void(0)">
+        <span>Step</span>4</a>
+    </li>
+  </ul>
 </div>
 
 

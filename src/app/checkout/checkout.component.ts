@@ -33,7 +33,9 @@ export class CheckoutComponent implements OnInit {
         var index = this.masterObj.randomInt(1, this.masterObj.ChefData.length);
         this.masterObj.filteredchefList.push(this.masterObj.ChefData[index]);
       }
+      
     }
+    console.log( this.masterObj.filteredchefList);
   }
 
 

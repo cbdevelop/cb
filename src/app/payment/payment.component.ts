@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MasterService } from '../services/master.service';
 
 @Component({
   selector: 'app-payment',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaymentComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private masterObj: MasterService
+  ) { }
 
   ngOnInit() {
+    console.log(this.masterObj.selectedDishArr, this.masterObj.eventManagerList, this.masterObj.searchObj);
   }
 
 }
