@@ -13,7 +13,7 @@ export class MasterService {
 	dishCount = 0;
 	totalCost = 0;
 	totalAttendees = 0;
-	public searchObj: searchModel = { location: [], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
+	public searchObj: SearchModel = { location: [], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
 
 
 	currentSection = 'home';
@@ -264,7 +264,7 @@ export class MasterService {
 		}
 	];
 
-	
+
 	ChefData = [
 		{
 			'Name': 'Faheem',
@@ -564,7 +564,7 @@ export class MasterService {
 		private http: HttpClient
 	) {
 		this.ApiUrl = environment.apiUrl;
-		
+
 
 		this.selectedDishes.best = [];
 		this.selectedDishes.main = [];
@@ -573,16 +573,21 @@ export class MasterService {
 		this.selectedDishes.beverges = [];
 
 		if (localStorage.length) {
-			if (localStorage.getItem("selDises"))
-				this.selectedDishArr = JSON.parse(localStorage.getItem("selDises"));
-			if (localStorage.getItem("cost"))
-				this.totalCost = parseInt(localStorage.getItem("cost"), 10);
-			if (localStorage.getItem("selManager"))
-				this.selectedEvtManager = JSON.parse(localStorage.getItem("selManager"));
-			if (localStorage.getItem("comment") != undefined)
-				this.comments = localStorage.getItem("comment");
-			if (localStorage.getItem("searchObj") != undefined)
-				this.searchObj = JSON.parse(localStorage.getItem("searchObj"));
+			if (localStorage.getItem('selDises')) {
+				this.selectedDishArr = JSON.parse(localStorage.getItem('selDises'));
+			}
+			if (localStorage.getItem('cost')) {
+				this.totalCost = parseInt(localStorage.getItem('cost'), 10);
+			}
+			if (localStorage.getItem('selManager')) {
+				this.selectedEvtManager = JSON.parse(localStorage.getItem('selManager'));
+			}
+			if (localStorage.getItem('comment') !== undefined) {
+				this.comments = localStorage.getItem('comment');
+			}
+			if (localStorage.getItem('searchObj') !== undefined) {
+				this.searchObj = JSON.parse(localStorage.getItem('searchObj'));
+			}
 		}
 	}
 
@@ -655,11 +660,12 @@ export class MasterService {
 		return this.http.post(this.ApiUrl + '/registerManager', options);
 	}
 	proceedToPayalPayment(options) {
-		return this.http.post(this.ApiUrl + '/paynow',options).pipe();
+		console.log('paypal service');
+		return this.http.post(this.ApiUrl + '/v1/paynow', options).pipe();
 	}
 }
 
-export interface searchModel {
+export interface SearchModel {
 	location: Array<any>;
 	serviceType: Array<any>;
 	vegAttnd: number;

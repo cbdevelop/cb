@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Router } from '@angular/router';
 
-import { searchModel, MasterService } from '../services/master.service';
+import { SearchModel, MasterService } from '../services/master.service';
 import { FormsModule, ReactiveFormsModule, ValidatorFn } from '@angular/forms';
 import { FormControl, FormGroup, FormBuilder, AbstractControl, Validators } from '@angular/forms';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal/modal';
@@ -17,7 +17,7 @@ import { ModifySearchComponent } from '../shared/modify-search/modify-search.com
 })
 export class HomeComponent implements OnInit {
 
-  public searchObj: searchModel = { location: [], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
+  public searchObj: SearchModel = { location: [], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
 
   public homeForm: FormGroup;
 
@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
   serviceType = [];
 
   settings = {};
-  session = "dinner";
+  session = 'dinner';
   barwidth = 0;
 
   cntevnt = 0;
@@ -64,62 +64,63 @@ export class HomeComponent implements OnInit {
   dancingNumbers() {
     this.cntevnt = 0;
 
-    let interval = setInterval(() => {
+    const interval = setInterval(() => {
       this.cntevnt += 10;
-      if (this.cntevnt >= this.eventServed) clearInterval(interval);
+      if (this.cntevnt >= this.eventServed) { clearInterval(interval); }
     }, 50);
 
     this.cntchef = 0;
 
-    let chefinterval = setInterval(() => {
+    const chefinterval = setInterval(() => {
       this.cntchef += 10;
-      if (this.cntchef >= this.no_chefs) clearInterval(chefinterval);
+      if (this.cntchef >= this.no_chefs) { clearInterval(chefinterval); }
     }, 50);
 
     this.cntusers = 0;
-    let userinterval = setInterval(() => {
+    const userinterval = setInterval(() => {
       this.cntusers += 10;
-      if (this.cntusers >= this.users) clearInterval(userinterval);
+      if (this.cntusers >= this.users) { clearInterval(userinterval); }
     }, 50);
 
     this.cntmanager = 0;
 
-    let mangerinterval = setInterval(() => {
+    const mangerinterval = setInterval(() => {
       this.cntmanager += 10;
-      if (this.cntmanager >= this.no_eventManager) clearInterval(mangerinterval);
+      if (this.cntmanager >= this.no_eventManager) { clearInterval(mangerinterval); }
     }, 50);
-    
+
   }
 
 
   onSectionChange(sectionId: string) {
     this.masterObj.currentSection = sectionId;
-    if (sectionId == 'counter')
+    if (sectionId === 'counter') {
       this.dancingNumbers();
+    }
   }
 
   ngOnInit() {
 
     this.location = [
-      { "id": 1, "itemName": "Ameerpet" },
-      { "id": 2, "itemName": "Dilsuknagar" },
-      { "id": 3, "itemName": "SR Nagar" },
-      { "id": 4, "itemName": "Athapur" },
-      { "id": 5, "itemName": "Koti" },
-      { "id": 6, "itemName": "Khairathabad" },
-      { "id": 7, "itemName": "Kothapet" },
-      { "id": 8, "itemName": "Secundrabad" }
+      { 'id': 1, 'itemName': 'Ameerpet' },
+      { 'id': 2, 'itemName': 'Dilsuknagar' },
+      { 'id': 3, 'itemName': 'SR Nagar' },
+      { 'id': 4, 'itemName': 'Athapur' },
+      { 'id': 5, 'itemName': 'Koti' },
+      { 'id': 6, 'itemName': 'Khairathabad' },
+      { 'id': 7, 'itemName': 'Kothapet' },
+      { 'id': 8, 'itemName': 'Secundrabad' }
     ];
 
     this.serviceType = [
-      { "id": 1, "itemName": "Buffet" },
-      { "id": 2, "itemName": "Lunch" },
-      { "id": 3, "itemName": "Dinner" }
+      { 'id': 1, 'itemName': 'Buffet' },
+      { 'id': 2, 'itemName': 'Lunch' },
+      { 'id': 3, 'itemName': 'Dinner' }
     ];
 
     this.settings = {
       singleSelection: true,
-      text: "Select",
+      text: 'Select',
       enableSearchFilter: true,
       showCheckbox: false
     };
@@ -157,12 +158,12 @@ export class HomeComponent implements OnInit {
   }
   getTotal() {
     this.masterObj.totalAttendees = 0;
-    let Nveg: any = this.masterObj.searchObj.nonVegAttnd;
-    let veg: any = this.masterObj.searchObj.vegAttnd;
-    if ([null, ''].indexOf(Nveg) == -1) {
+    const Nveg: any = this.masterObj.searchObj.nonVegAttnd;
+    const veg: any = this.masterObj.searchObj.vegAttnd;
+    if ([null, ''].indexOf(Nveg) === -1) {
       this.masterObj.totalAttendees = this.masterObj.totalAttendees + parseInt(Nveg, 10);
     }
-    if ([null, ''].indexOf(veg) == -1) {
+    if ([null, ''].indexOf(veg) === -1) {
       this.masterObj.totalAttendees = this.masterObj.totalAttendees + parseInt(veg, 10);
     }
 
@@ -175,16 +176,16 @@ export class HomeComponent implements OnInit {
     if (this.homeForm.valid) {
       this.masterObj.totalCost = 0;
       this.masterObj.selectedDishArr = [];
-      var selectedDish = JSON.stringify(this.masterObj.selectedDishArr);
+      const selectedDish = JSON.stringify(this.masterObj.selectedDishArr);
 
-      localStorage.setItem("searchObj", JSON.stringify(this.masterObj.searchObj));
+      localStorage.setItem('searchObj', JSON.stringify(this.masterObj.searchObj));
       this.routerObj.navigate(['../search']);
     }
   }
 
   onMobileSearch() {
     const modalref = this.modalService.open(ModifySearchComponent);
-    modalref.componentInstance.page = "home";
+    modalref.componentInstance.page = 'home';
   }
   /* @HostListener("window:scroll", ["$event"])
    onWindowScroll(event: any) {
