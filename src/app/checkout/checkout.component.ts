@@ -33,7 +33,7 @@ export class CheckoutComponent implements OnInit {
     if (this.masterObj.filteredchefList.length < length) {
       this.masterObj.filteredchefList = [];
       for (var i = 0; i < length; i++) {
-        let index = this.masterObj.randomInt(1, this.masterObj.ChefData.length);
+        let index = this.masterObj.randomInt(1, this.masterObj.ChefData.length-1);
         let arr = this.masterObj.ChefData[index];
         console.log(index,arr);
         if(arr !== undefined)
