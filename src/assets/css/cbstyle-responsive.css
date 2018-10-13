@@ -365,11 +365,11 @@
         padding: 10px 45px;
     }
     .modifySearch {
-        width: 60%;
+        /* width: 60%; */
         /* height: 90%; */
         bottom: auto;
         margin: 0px auto;
-        position: fixed;
+        /* position: fixed; */
         top: 5%;
         z-index: 100010;
     }
@@ -479,15 +479,15 @@
         width: 90%;
     }
     /*  scrollbar */
-    ::-webkit-scrollbar-track {
+     ::-webkit-scrollbar-track {
         background-color: transparent !important;
     }
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         width: auto !important;
         height: auto !important;
         background-color: transparent !important;
     }
-    ::-webkit-scrollbar-thumb {
+     ::-webkit-scrollbar-thumb {
         background-color: transparent !important;
         border-radius: none !important;
     }

@@ -353,6 +353,7 @@ nav ul li a:focus {
     background-image: none;
 }
 
+
 /*edited */
 
 .session {
@@ -956,6 +957,7 @@ footer {
     padding: 55px 0px 50px;
 }
 
+
 /*   Back to top  */
 
 .backtotop {
@@ -1461,6 +1463,7 @@ footer {
     line-height: 22px;
 }
 
+
 /* terms */
 
 .termOut {
@@ -1528,6 +1531,7 @@ footer {
     font-weight: 500;
     color: #333;
 }
+
 
 /* blogs */
 
@@ -1809,7 +1813,7 @@ footer {
 .searClose i {
     position: absolute;
     right: 4px;
-    top: -18px;
+    top: -10px;
     font-size: 20px;
     color: #999;
     padding: 10px 15px;
@@ -1819,6 +1823,7 @@ footer {
 .searClose i:hover {
     color: #ec5a5a;
 }
+
 
 /* check boxcss*/
 
@@ -1833,6 +1838,7 @@ footer {
 .checkboxAct {
     border: 1px solid #12b396;
 }
+
 
 /* edited */
 
@@ -1904,6 +1910,7 @@ footer {
     transform: scale(0);
     opacity: 0;
 }
+
 
 /* changed */
 
@@ -2355,6 +2362,7 @@ footer {
     overflow: auto;
 }
 
+
 /*changed */
 
 .cartWpar .head {
@@ -2407,29 +2415,40 @@ footer {
 }
 
 .modifySearch {
-    position: fixed;
+    /* position: fixed; */
     width: 450px;
     margin: 0px auto;
     top: 10%;
     left: 0px;
     right: 0px;
-    background-color: #fff;
+    /* background-color: #fff; */
     z-index: 100010;
     /* display: none; */
-    box-shadow: 0px 16px 18px 0px rgba(46, 51, 51, 0.2);
-    border-radius: 6px;
+    /* box-shadow: 0px 16px 18px 0px rgba(46, 51, 51, 0.2); */
 }
 
 .modifySearch .searchOut {
-    width: auto;
+    /* width: 92%; */
+    max-width: 480px;
+    margin: 0px auto 20px;
+    left: 0px;
+    right: 0px;
+    top: 3%;
+    border-radius: 6px;
     height: auto;
-    margin: 0px auto;
-    position: static;
     padding: 5px;
+    position: relative;
 }
 
 .modifySearch .searClose {
     display: block;
+    position: absolute;
+    right: 4px;
+    top: 10px;
+    font-size: 20px;
+    color: #999;
+    padding: 10px 15px;
+    cursor: pointer;
 }
 
 .modifySearch .seaBtn {
@@ -2468,7 +2487,9 @@ footer {
     border-radius: 2px;
 }
 
+
 /*changed */
+
 
 /*
 .foodPop {
@@ -2487,11 +2508,11 @@ footer {
     display: block;
 }
 */
+
 .foodPopInn {
     width: auto;
     padding: 16px 20px;
 }
-
 
 .foodPop {
     position: fixed;
@@ -2516,7 +2537,6 @@ footer {
     background-color: #fff;
     box-shadow: 0px 16px 18px 0px rgba(46, 51, 51, 0.2);
 }
-
 
 .foodPopInnImg {
     width: 100%;
@@ -2943,6 +2963,7 @@ footer {
     color: #e95555;
 }
 
+
 /*  scrollbar */
 
 ::-webkit-scrollbar-track {
@@ -2959,6 +2980,7 @@ footer {
     background-color: #606f7e;
     border-radius: 4px;
 }
+
 
 /*  scrollbar */
 
@@ -4145,13 +4167,15 @@ footer {
 .logInpop {
     position: absolute;
     z-index: 100000;
+    /* 
     top: 60px;
     right: -20px;
+    */
     display: none;
 }
 
 .logInInn {
-    width: 250px;
+    /* width: 250px; */
     background-color: #fff;
     position: relative;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
@@ -4575,6 +4599,7 @@ footer {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+
 /* added */
 
 .order-pop {
@@ -4815,6 +4840,7 @@ footer {
     border-radius: 5px;
 }
 
+
 /* Career */
 
 .careerTheme {
@@ -4944,4 +4970,14 @@ footer {
     padding: 5px 0px 0px 0px;
 }
 
+
 /* Career */
+
+.modal-content {
+    background-color: transparent !important;
+}
+
+..dropdown-menu {
+    background-color: transparent !important;
+    border: none !important;
+}

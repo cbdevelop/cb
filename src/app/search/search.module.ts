@@ -21,6 +21,8 @@ import { FilterComponent } from './filter/filter.component';
 import { MobilePreviewComponent } from './mobile-preview/mobile-preview.component';
 import { ModifySearchModule } from '../shared/modify-search/modify-search.module';
 import { AlertsModule } from '../shared/alerts/alerts.module';
+// import { DragScrollModule } from 'ngx-drag-scroll';
+
 
 
 @NgModule({
@@ -40,7 +42,8 @@ import { AlertsModule } from '../shared/alerts/alerts.module';
     DirectiveModule,
     CommentsModule,
     ModifySearchModule,
-    AlertsModule   
+    AlertsModule,
+   // DragScrollModule
   ],
   declarations: [
     SearchComponent,

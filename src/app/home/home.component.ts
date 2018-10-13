@@ -18,16 +18,16 @@ import { alert } from '../shared/models/alert.model';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  alert: alert= { type: 'success', message: '' };
+  alert: alert = { type: 'success', message: '' };
   public searchObj: SearchModel = { location: [
   ], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
 
   public homeForm: FormGroup;
 
-  location = [  ];
+  locationArr = [  ];
 
-  serviceType = [
-   
+  serviceTypeArr = [
+
   ];
 
   settings = {};
@@ -49,8 +49,8 @@ export class HomeComponent implements OnInit {
 
   private currentSection: string;
 
-  min= new Date();
-  max = new Date(2019,12);
+  min = new Date();
+  max = new Date(2019, 12);
   constructor(
     private routerObj: Router,
     private fb: FormBuilder,
@@ -64,6 +64,13 @@ export class HomeComponent implements OnInit {
     // this.cntmanager = this.dancingNumbers(this.no_eventManager);
     // this.cntusers = this.dancingNumbers(this.users);
     this.dancingNumbers();
+    this.homeForm = this.fb.group({
+      location: [[], Validators.required],
+      serviceType: [[], Validators.required],
+      vegAttnd: [null, [Validators.pattern('^[0-9]+[1-9]*$'), Validators.required]],
+      nonVegAttnd: [null, [Validators.required, Validators.pattern('^[1-9]+[0-9]*$')]],
+      datetime: ['', Validators.required]
+    });
   }
 
 
@@ -106,8 +113,8 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-
-    this.location = [
+    console.log('locationData', this.masterObj.searchObj.location);
+    this.locationArr = [
       { 'id': 1, 'itemName': 'Ameerpet' },
       { 'id': 2, 'itemName': 'Dilsuknagar' },
       { 'id': 3, 'itemName': 'SR Nagar' },
@@ -118,7 +125,7 @@ export class HomeComponent implements OnInit {
       { 'id': 8, 'itemName': 'Secundrabad' }
     ];
 
-    this.serviceType = [
+    this.serviceTypeArr = [
       { 'id': 1, 'itemName': 'Buffet' },
       { 'id': 2, 'itemName': 'Lunch' },
       { 'id': 3, 'itemName': 'Dinner' }
@@ -130,14 +137,6 @@ export class HomeComponent implements OnInit {
       enableSearchFilter: true,
       showCheckbox: false
     };
-
-    this.homeForm = this.fb.group({
-      location: [[], Validators.required],
-      serviceType: [[], Validators.required],
-      vegAttnd: [null, [Validators.pattern('^[0-9]+[1-9]*$'), Validators.required]],
-      nonVegAttnd: [null, [Validators.required, Validators.pattern('^[1-9]+[0-9]*$')]],
-      datetime: ['', Validators.required]
-    });
 
   }
   onlyNumberKey(event) {
@@ -194,7 +193,7 @@ export class HomeComponent implements OnInit {
 
       localStorage.setItem('searchObj', JSON.stringify(this.masterObj.searchObj));
       this.routerObj.navigate(['../search']);
-    }else {
+    } else {
       const modalRef = this.modalService.open(AlertsComponent);
       this.alert.message = 'Please fill all the fields';
       this.alert.type = 'error';

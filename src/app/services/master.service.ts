@@ -9,15 +9,17 @@ import { environment } from '../../environments/environment.prod';
 @Injectable()
 export class MasterService {
 
+	// tslint:disable-next-line:indent
+	// tslint:disable-next-line:indent
 	ApiUrl = '';
 	dishCount = 0;
 	totalCost = 0;
 	totalAttendees = 0;
-	public searchObj: SearchModel = { location: [
-		{ 'id': 0, 'itemName': '' },
-	], serviceType: [
-		{ 'id': 0, 'itemName': '' },
-	], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
+	searchObj: SearchModel = {
+		location: [
+		], serviceType: [
+		], nonVegAttnd: null, vegAttnd: null, datetime: new Date()
+	};
 
 
 	currentSection = 'home';
@@ -589,7 +591,7 @@ export class MasterService {
 			if (localStorage.getItem('comment') !== undefined) {
 				this.comments = localStorage.getItem('comment');
 			}
-			if (localStorage.getItem('searchObj') !== undefined) {
+			if (localStorage.getItem('searchObj') !== undefined && localStorage.getItem('searchObj') != null) {
 				this.searchObj = JSON.parse(localStorage.getItem('searchObj'));
 			}
 		}

@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { FooterModule, HeaderModule, DirectiveModule } from '../shared/index';
-import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { ModifySearchModule } from '../shared/modify-search/modify-search.module';
 import { AlertsModule } from '../shared/alerts/alerts.module';
@@ -24,7 +24,7 @@ import { AlertsModule } from '../shared/alerts/alerts.module';
     FooterModule,
     HeaderModule,
     AngularMultiSelectModule,
-    OwlDateTimeModule, 
+    OwlDateTimeModule,
     OwlNativeDateTimeModule,
     ModifySearchModule,
     AlertsModule
@@ -36,7 +36,7 @@ import { AlertsModule } from '../shared/alerts/alerts.module';
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],
-  entryComponents:[
+  entryComponents: [
     // ModifySearchComponent,
 
   ]
