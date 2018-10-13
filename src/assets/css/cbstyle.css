@@ -2123,7 +2123,7 @@ footer {
     font-weight: 400;
     color: #787878;
     /* max-height: 90px; */
-    height: 74px;
+    min-height: 74px;
     overflow: hidden;
 }
 
@@ -2350,7 +2350,7 @@ footer {
 }
 
 .cartOver {
-    max-height: 380px;
+    max-height: 300px;
     min-height: 250px;
     overflow: auto;
 }

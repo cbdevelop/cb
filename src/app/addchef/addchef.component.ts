@@ -27,7 +27,7 @@ export class AddchefComponent implements OnInit {
   alert: alert = { type: 'success', message: '' };
 
   isCollapsed = false;
-  @ViewChild("head") header;
+  @ViewChild('head') header;
 
   constructor(
     private masterObj: MasterService,
@@ -56,19 +56,19 @@ export class AddchefComponent implements OnInit {
 
   private email(): ValidatorFn {
     return (control) => {
-      let email = control.value ? control.value : null;
-      let pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      const email = control.value ? control.value : null;
+      const pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
       if (!isNullOrUndefined(email)) {
         if (!pattern.test(email)) {
           return { 'email': true };
         }
       }
-      return null
+      return null;
     };
   }
 
   showRequiredFieldError(control: string) {
-    let formcontrol: AbstractControl = this.chefForm.get(control);
+    const formcontrol: AbstractControl = this.chefForm.get(control);
     if (formcontrol.touched && !formcontrol.valid) {
       return true;
     }
@@ -80,22 +80,21 @@ export class AddchefComponent implements OnInit {
   // register chef
 
   registerChef() {
-    var str: string;
     // str.toUpperCase
     if (this.chefForm.valid) {
 
-      var options = {
-        "fullName": this.chefForm.controls.fullname.value,
-        "phoneNumber": this.chefForm.controls.phone.value,
-        "age": this.chefForm.controls.age.value,
-        "gender": this.chefForm.controls.gender.value.toUpperCase(),
-        "email": this.chefForm.controls.email.value,
-        "state": this.chefForm.controls.state.value,
-        "city": this.chefForm.controls.city.value,
-        "expertiseIn": this.chefForm.controls.cuisine.value,
-        "experienceInOutdoor": this.chefForm.controls.experience.value.toUpperCase(),
-        "aboutYourSelf": this.chefForm.controls.about.value,
-      }
+      const options = {
+        'fullName': this.chefForm.controls.fullname.value,
+        'phoneNumber': this.chefForm.controls.phone.value,
+        'age': this.chefForm.controls.age.value,
+        'gender': this.chefForm.controls.gender.value.toUpperCase(),
+        'email': this.chefForm.controls.email.value,
+        'state': this.chefForm.controls.state.value,
+        'city': this.chefForm.controls.city.value,
+        'expertiseIn': this.chefForm.controls.cuisine.value,
+        'experienceInOutdoor': this.chefForm.controls.experience.value.toUpperCase(),
+        'aboutYourSelf': this.chefForm.controls.about.value,
+      };
       console.log(options);
       this.masterObj.registerChef(options).subscribe(
         (res: Response) => {
@@ -130,16 +129,16 @@ export class AddchefComponent implements OnInit {
 
 
 
-  @HostListener("window:scroll", [])
+  @HostListener('window:scroll', [])
   onWindowScroll() {
     const number = window.pageYOffset || window.scrollY || 0;
 
     if (number >= 100) {
-      this.header.nativeElement.classList.add("scrollAct");
+      this.header.nativeElement.classList.add('scrollAct');
       // document.getElementById('header').classList.add("scrollAct");
     } else if (number < 200) {
       // document.getElementById('header').classList.remove("scrollAct");
-      this.header.nativeElement.classList.remove("scrollAct");
+      this.header.nativeElement.classList.remove('scrollAct');
     }
   }
 

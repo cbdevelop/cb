@@ -9,7 +9,7 @@ import { MasterService } from '../services/master.service';
 export class PaymentComponent implements OnInit {
 
   constructor(
-    private masterObj: MasterService
+    public masterObj: MasterService
   ) { }
 
   ngOnInit() {

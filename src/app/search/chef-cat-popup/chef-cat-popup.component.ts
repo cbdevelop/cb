@@ -1,8 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal,NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { MasterService } from '../../services/master.service';
 import { Dish, DishModel } from '../../shared/models/dish.model';
 import { Menu } from '../../shared/models/menu.mode';
+import { AlertsComponent } from '../../shared/alerts/alerts.component';
+import { alert } from '../../shared/models/alert.model';
 
 @Component({
   selector: 'app-chef-cat-popup',
@@ -10,6 +12,8 @@ import { Menu } from '../../shared/models/menu.mode';
   styleUrls: ['./chef-cat-popup.component.css']
 })
 export class ChefCatPopupComponent implements OnInit {
+
+  alert: alert= { type: 'success', message: '' };
 
   @Input() cat_id;
   @Input() dishId;
@@ -23,6 +27,7 @@ export class ChefCatPopupComponent implements OnInit {
     'Only for vegetarian', 'Mostly for vegetarian', 'Only for main table(25% of total Attendees)'
   ];
   constructor(
+    public modalService: NgbModal,
     public activeModal: NgbActiveModal,
     private masterService: MasterService
   ) {
@@ -66,6 +71,10 @@ export class ChefCatPopupComponent implements OnInit {
       for (let i = 1; i < this.cus.length; i++)
         cusine = cusine + ',' + this.cus[i];
     } else {
+      const modalRef = this.modalService.open(AlertsComponent);
+      this.alert.message = 'Please select atleast one cuisine';
+      this.alert.type = 'warning';
+      modalRef.componentInstance.alert = this.alert;
       return;
     };
 

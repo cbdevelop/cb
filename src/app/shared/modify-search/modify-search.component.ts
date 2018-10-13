@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { searchModel, MasterService } from '../../services/master.service';
+import { SearchModel, MasterService } from '../../services/master.service';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -14,7 +14,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ModifySearchComponent implements OnInit {
 
-  searchObj: searchModel;
+  searchObj: SearchModel;
 
   modifiedForm: FormGroup;
 

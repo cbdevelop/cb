@@ -49,9 +49,10 @@
         <div class="select date">
           <label>Date - Time</label>
           <input type="text" placeholder="DD/MM/YY HH:MM" class="datePic" formControlName="datetime" 
-          [(ngModel)]="masterObj.searchObj.datetime"
+          [(ngModel)]="masterObj.searchObj.datetime" [min]="min" [max]="max"
+          
             [owlDateTime]="dt1" hour12Timer="true" [owlDateTimeTrigger]="dt1">
-          <owl-date-time #dt1></owl-date-time>
+          <owl-date-time #dt1 (afterPickerClosed)="selectedTime()"></owl-date-time>
         </div>
         <div class="select time" *ngIf="session !== ''">
           <label>You're ordering for</label>

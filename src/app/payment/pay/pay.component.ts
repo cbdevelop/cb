@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 
 import { FormsModule, ReactiveFormsModule, ValidatorFn } from '@angular/forms';
 import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
-
+import { MasterService } from '../../services/master.service';
 
 @Component({
   selector: 'app-pay',
@@ -29,7 +29,8 @@ export class PayComponent implements OnInit {
   @ViewChild('other') other;
 
   constructor( private fb: FormBuilder,
-    private router: Router ) { }
+    private router: Router,
+    public _masterService: MasterService ) { }
 
   ngOnInit() {
 
@@ -39,7 +40,7 @@ export class PayComponent implements OnInit {
         totalAmount: ['', Validators.required],
         savedCard: ['', Validators.required],
         cvv: ['', Validators.required]
-      })
+      });
     }
 
     {
@@ -52,7 +53,7 @@ export class PayComponent implements OnInit {
         expirationYear: [this.years[0]],
         saveCard: ['', Validators.required],
         cvv: ['', Validators.required]
-      })
+      });
     }
 
     {
@@ -65,7 +66,7 @@ export class PayComponent implements OnInit {
         expirationYear: [this.years[0]],
         saveCard: ['', Validators.required],
         cvv: ['', Validators.required]
-      })
+      });
     }
 
     {
@@ -79,7 +80,7 @@ export class PayComponent implements OnInit {
         yesBank: ['', Validators.required],
         sbiBank: ['', Validators.required],
         otherBank: [this.banks[0]]
-      })
+      });
     }
 
     {
@@ -92,7 +93,7 @@ export class PayComponent implements OnInit {
         phonePe: ['', Validators.required],
         payU: ['', Validators.required],
         amazonPay: ['', Validators.required]
-      })
+      });
     }
 
     this.save.nativeElement.setAttribute('style', 'display:none');
@@ -122,7 +123,7 @@ export class PayComponent implements OnInit {
     this.credit.nativeElement.setAttribute('style', 'display:none');
     this.debit.nativeElement.setAttribute('style', 'display:block');
     this.net.nativeElement.setAttribute('style', 'display:none');
-    this.other.nativeElement.setAttribute('style', 'display:none');    
+    this.other.nativeElement.setAttribute('style', 'display:none');
   }
 
   netBanking() {
@@ -145,18 +146,29 @@ export class PayComponent implements OnInit {
 
   }
   onCredit() {
-
+this.onMakePayment();
   }
 
   onDebit() {
-
+    this.onMakePayment();
   }
-  onNet(){
-
+  onNet() {
+    this.onMakePayment();
   }
 
   onOther() {
-    
+    this.onMakePayment();
+  }
+
+  onMakePayment() {
+    alert('payment');
+    const options = {};
+    this._masterService.proceedToPayalPayment(options).subscribe(
+      (res: Response) => {
+
+        let data:any = res;
+        window.open(data.payUrl, '_blank');
+    });
   }
 
 }
