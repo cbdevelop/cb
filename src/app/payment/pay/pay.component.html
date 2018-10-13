@@ -14,7 +14,7 @@
 
                 <div id="tab-6" class="tab-content" #save>
 
-                    <form [formGroup]="savedForm" class="form-horizontal" (ngSubmit)="onSaved()" novalidate>
+                    <form class="form-horizontal" method="post" action="localhost:4200/v1/paynow">
 
                         <div class="payAmout clearfix">
                             <div class="payInn">
@@ -52,7 +52,7 @@
                                 <span>Note:</span>After clicking on the "Make Payment" button you might be taken to your bank's website for 3D secure authentication using a pop - up window.
                             </div>
                             <div class="donate_btn donate_btn_p"><img src="../../../assets/images/payment-logo.png" alt="" />
-                                <input type="button" value="Make Payment" /></div>
+                                <input type="submit" value="Make Payment" /></div>
                         </div>
 
                     </form>
@@ -61,7 +61,7 @@
 
                 <div id="tab-1" class="tab-content" #credit>
 
-                    <form [formGroup]="creditForm" class="form-horizontal" (ngSubmit)="onCredit()" novalidate>
+                    <form [formGroup]="creditForm" class="form-horizontal" method="post" action="/paynow" novalidate>
 
                         <div class="payAmout clearfix">
                             <div class="payInn">
@@ -109,7 +109,7 @@
                                 <span>Note:</span>After clicking on the "Make Payment" button you might be taken to your bank's website for 3D secure authentication using a pop - up window.
                             </div>
                             <div class="donate_btn clearfix">
-                                <input type="button" value="Make Payment" (click)="onMakePayment()" /></div>
+                                <input type="submit" value="Make Payment" /></div>
 
                         </div>
 
