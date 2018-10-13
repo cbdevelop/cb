@@ -2123,7 +2123,7 @@ footer {
     font-weight: 400;
     color: #787878;
     /* max-height: 90px; */
-    min-height: 74px;
+    max-height: 74px;
     overflow: hidden;
 }
 

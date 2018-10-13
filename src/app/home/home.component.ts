@@ -19,13 +19,16 @@ import { alert } from '../shared/models/alert.model';
 })
 export class HomeComponent implements OnInit {
   alert: alert= { type: 'success', message: '' };
-  public searchObj: SearchModel = { location: [], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
+  public searchObj: SearchModel = { location: [
+  ], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
 
   public homeForm: FormGroup;
 
-  location = [];
+  location = [  ];
 
-  serviceType = [];
+  serviceType = [
+   
+  ];
 
   settings = {};
   session = 'dinner';
@@ -130,7 +133,7 @@ export class HomeComponent implements OnInit {
 
     this.homeForm = this.fb.group({
       location: [[], Validators.required],
-      serviceType: [null, Validators.required],
+      serviceType: [[], Validators.required],
       vegAttnd: [null, [Validators.pattern('^[0-9]+[1-9]*$'), Validators.required]],
       nonVegAttnd: [null, [Validators.required, Validators.pattern('^[1-9]+[0-9]*$')]],
       datetime: ['', Validators.required]
@@ -146,18 +149,22 @@ export class HomeComponent implements OnInit {
   }
   // Locations
   LocationSelect(item: any) {
-    // console.log(item);
+    console.log(item);
+    // this.masterObj.searchObj.location = item;
   }
   LocationDeSelect(item: any) {
-    // console.log(item);
+    console.log(item);
+    // this.masterObj.searchObj.location = item;
   }
 
   // Services
   ServiceSelect(item: any) {
     // console.log(item);
+    // this.masterObj.searchObj.serviceType = item;
   }
   ServiceDeSelect(item: any) {
     // console.log(item);
+    // this.masterObj.searchObj.serviceType = item;
   }
 
   selectedTime() {

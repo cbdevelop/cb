@@ -13,7 +13,11 @@ export class MasterService {
 	dishCount = 0;
 	totalCost = 0;
 	totalAttendees = 0;
-	public searchObj: SearchModel = { location: [], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
+	public searchObj: SearchModel = { location: [
+		{ 'id': 0, 'itemName': '' },
+	], serviceType: [
+		{ 'id': 0, 'itemName': '' },
+	], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
 
 
 	currentSection = 'home';
