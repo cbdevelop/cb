@@ -11,7 +11,7 @@ module.exports = () => {
             res.status(500).send({ message: 'Sorry Bro!!', });
         });
     }
-    global.app.get('/v1', (req, res, next) => {
+    global.app.get('/', (req, res, next) => {
         clientsiteFootPrint(req)
         res.status(200).send({ message: 'Hello World', });
     }, (error) => {

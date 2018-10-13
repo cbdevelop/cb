@@ -2123,7 +2123,7 @@ footer {
     font-weight: 400;
     color: #787878;
     /* max-height: 90px; */
-    height: 74px;
+    max-height: 74px;
     overflow: hidden;
 }
 
@@ -2350,7 +2350,7 @@ footer {
 }
 
 .cartOver {
-    max-height: 380px;
+    max-height: 300px;
     min-height: 250px;
     overflow: auto;
 }
@@ -2470,8 +2470,9 @@ footer {
 
 /*changed */
 
+/*
 .foodPop {
-    /* position: fixed; */
+    
     width: 92%;
     max-width: 580px;
     margin: 0px auto;
@@ -2485,13 +2486,37 @@ footer {
     z-index: 1000;
     display: block;
 }
-
+*/
 .foodPopInn {
     width: auto;
-    max-height: 520px;
-    overflow: auto;
     padding: 16px 20px;
 }
+
+
+.foodPop {
+    position: fixed;
+    z-index: 100010;
+    padding: 20px 0px;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.foodPopWrap {
+    width: 92%;
+    max-width: 580px;
+    margin: 0px auto 20px;
+    left: 0px;
+    right: 0px;
+    top: 3%;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0px 16px 18px 0px rgba(46, 51, 51, 0.2);
+}
+
 
 .foodPopInnImg {
     width: 100%;
@@ -2862,12 +2887,13 @@ footer {
 .chPopImg span {
     display: block;
     padding: 0px 0px 10px 0px;
+    font-size: 20px;
 }
 
 .chPopImg span i {
     display: inline-block;
     padding: 0px 1px 0px 0px;
-    font-size: 15px;
+    font-size: 20px;
     /* color: #ffa200; */
     margin: 0px 1px;
 }

@@ -20,6 +20,7 @@ import { NgbModalModule,NgbCollapseModule, NgbPopoverModule, NgbActiveModal } fr
 import { FilterComponent } from './filter/filter.component';
 import { MobilePreviewComponent } from './mobile-preview/mobile-preview.component';
 import { ModifySearchModule } from '../shared/modify-search/modify-search.module';
+import { AlertsModule } from '../shared/alerts/alerts.module';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { ModifySearchModule } from '../shared/modify-search/modify-search.module
     SigninModule  ,
     DirectiveModule,
     CommentsModule,
-    ModifySearchModule    
+    ModifySearchModule,
+    AlertsModule   
   ],
   declarations: [
     SearchComponent,

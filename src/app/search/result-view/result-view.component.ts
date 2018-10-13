@@ -10,6 +10,7 @@ import { OrderPreviewComponent } from '../order-preview/order-preview.component'
 import { MobilePreviewComponent } from '../mobile-preview/mobile-preview.component';
 import { ChefCatPopupComponent } from '../chef-cat-popup/chef-cat-popup.component';
 import { CommentsComponent } from '../../shared/comments/comments.component';
+import { UserService } from '../../services/user_service/user.service';
 
 @Component({
   selector: 'app-result-view',
@@ -24,6 +25,7 @@ export class ResultViewComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     public service: MasterService,
+    private userSerObj:UserService,
     private modalService: NgbModal
   ) {
 
@@ -191,9 +193,10 @@ export class ResultViewComponent implements OnInit {
   }
 
   onCheckout() {
-    if (this.service.selectedDishes.best.length || this.service.selectedDishes.starter.length ||
-      this.service.selectedDishes.main.length || this.service.selectedDishes.biryani.length ||
-      this.service.selectedDishes.beverges.length) {
+    if(this.userSerObj.userId){
+      
+    }
+    if (this.service.selectedDishArr.length) {
       this.router.navigate(['../chef'], { relativeTo: this.route });
     }
   }

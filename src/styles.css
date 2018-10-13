@@ -26,6 +26,7 @@ a {
     cursor: pointer;
 }
 
+
 button {
     cursor: pointer;
 }
@@ -125,7 +126,7 @@ button {
 
 .c-btn {
     display: inline-block;
-    background: #fff;
+    background:inherit !important;
     border: 0px solid #ccc !important;
     border-radius: 3px;
     font-size: 14px;

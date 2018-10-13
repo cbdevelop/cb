@@ -8,11 +8,18 @@
       <img [src]="managerDetails.Profile_Image" alt="" />
       <h3>{{ managerDetails.Name }}</h3>
       <span>
-        <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 1 ? 'review': ''"></i>
+        <ngb-rating [(rate)]="managerDetails.Rating" [readonly]="true" max="5">
+          <ng-template let-fill="fill" let-index="index">
+            <span class="star" [class.filled]="fill === 100">
+              <span class="half" [style.width.%]="fill">&#9733;</span> &#9733;
+            </span>
+          </ng-template>
+        </ngb-rating>
+        <!-- <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 1 ? 'review': ''"></i>
         <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 2 ? 'review': ''"></i>
         <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 3 ? 'review': ''"></i>
         <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 4 ? 'review': ''"></i>
-        <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 5 ? 'review': ''"></i>
+        <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 5 ? 'review': ''"></i> -->
       </span>
       <a href="javascript:void(0)" class="addBtn" (click)="addManager()">Add</a>
       <ul class="ceri clearfix">
@@ -80,11 +87,11 @@
                 <div class="review" *ngFor="let rev of managerDetails.Rating">
                   <h2>{{ rev.name }}</h2>
                   <div class="ratChef">
-                      <i class="fa fa-star" [ngClass]="rev.Rating >= 1 ? 'review': ''"></i>
-                      <i class="fa fa-star" [ngClass]="rev.Rating >= 2 ? 'review': ''"></i>
-                      <i class="fa fa-star" [ngClass]="rev.Rating >= 3 ? 'review': ''"></i>
-                      <i class="fa fa-star" [ngClass]="rev.Rating >= 4 ? 'review': ''"></i>
-                      <i class="fa fa-star" [ngClass]="rev.Rating >= 5 ? 'review': ''"></i>
+                    <i class="fa fa-star" [ngClass]="rev.Rating >= 1 ? 'review': ''"></i>
+                    <i class="fa fa-star" [ngClass]="rev.Rating >= 2 ? 'review': ''"></i>
+                    <i class="fa fa-star" [ngClass]="rev.Rating >= 3 ? 'review': ''"></i>
+                    <i class="fa fa-star" [ngClass]="rev.Rating >= 4 ? 'review': ''"></i>
+                    <i class="fa fa-star" [ngClass]="rev.Rating >= 5 ? 'review': ''"></i>
                   </div>
                   <p>
                     {{ rev.text }}

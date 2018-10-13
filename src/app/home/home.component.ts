@@ -8,6 +8,8 @@ import { FormsModule, ReactiveFormsModule, ValidatorFn } from '@angular/forms';
 import { FormControl, FormGroup, FormBuilder, AbstractControl, Validators } from '@angular/forms';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal/modal';
 import { ModifySearchComponent } from '../shared/modify-search/modify-search.component';
+import { AlertsComponent } from '../shared/alerts/alerts.component';
+import { alert } from '../shared/models/alert.model';
 
 
 @Component({
@@ -16,14 +18,17 @@ import { ModifySearchComponent } from '../shared/modify-search/modify-search.com
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  public searchObj: SearchModel = { location: [], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
+  alert: alert= { type: 'success', message: '' };
+  public searchObj: SearchModel = { location: [
+  ], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
 
   public homeForm: FormGroup;
 
-  location = [];
+  location = [  ];
 
-  serviceType = [];
+  serviceType = [
+   
+  ];
 
   settings = {};
   session = 'dinner';
@@ -44,7 +49,8 @@ export class HomeComponent implements OnInit {
 
   private currentSection: string;
 
-
+  min= new Date();
+  max = new Date(2019,12);
   constructor(
     private routerObj: Router,
     private fb: FormBuilder,
@@ -127,7 +133,7 @@ export class HomeComponent implements OnInit {
 
     this.homeForm = this.fb.group({
       location: [[], Validators.required],
-      serviceType: [null, Validators.required],
+      serviceType: [[], Validators.required],
       vegAttnd: [null, [Validators.pattern('^[0-9]+[1-9]*$'), Validators.required]],
       nonVegAttnd: [null, [Validators.required, Validators.pattern('^[1-9]+[0-9]*$')]],
       datetime: ['', Validators.required]
@@ -143,18 +149,26 @@ export class HomeComponent implements OnInit {
   }
   // Locations
   LocationSelect(item: any) {
-    // console.log(item);
+    console.log(item);
+    // this.masterObj.searchObj.location = item;
   }
   LocationDeSelect(item: any) {
-    // console.log(item);
+    console.log(item);
+    // this.masterObj.searchObj.location = item;
   }
 
   // Services
   ServiceSelect(item: any) {
     // console.log(item);
+    // this.masterObj.searchObj.serviceType = item;
   }
   ServiceDeSelect(item: any) {
     // console.log(item);
+    // this.masterObj.searchObj.serviceType = item;
+  }
+
+  selectedTime() {
+    console.log(this.searchObj.datetime);
   }
   getTotal() {
     this.masterObj.totalAttendees = 0;
@@ -180,6 +194,11 @@ export class HomeComponent implements OnInit {
 
       localStorage.setItem('searchObj', JSON.stringify(this.masterObj.searchObj));
       this.routerObj.navigate(['../search']);
+    }else {
+      const modalRef = this.modalService.open(AlertsComponent);
+      this.alert.message = 'Please fill all the fields';
+      this.alert.type = 'error';
+      modalRef.componentInstance.alert = this.alert;
     }
   }
 

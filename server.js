@@ -8,6 +8,7 @@ const appConfig = require('./include/appconfig');
 const path = require('path');
 global.app = express();
 
+var server = require('http').createServer(global.app )
 /*********************************************************************/
 console.log(appConfig.consoleMsg); // Logs environment in which server is running Or which configuration was loaded.
 /********************************************************************/
@@ -76,19 +77,20 @@ global.app.use(function(req, res, next) {
 });
 /********************************************************************/
 
-global.app.use(express.static(__dirname + '/dist/'));
+// global.app.use(express.static(__dirname + '/dist/'));
 
 /***************************REST APIs******************/
 (function() {
+    require('./express')();
     require('./router')();
     require('./apis/chef.registration')();
+    require('./apis/eventmanager')();
+    require('./apis/user')();
     require('./apis/paypal')();
 })();
 /********************************************************************/
 
-global.app.use('/*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/dist/index.html'));
-});
+
 
 global.app.get('*', (req, res) => {
     res.status(404).send({ message: '404', });
@@ -98,6 +100,7 @@ global.app.get('*', (req, res) => {
 var server = global.app.listen(appConfig.serverConfig.port, listen);
 
 function listen() {
+    // server.listen(appConfig.serverConfig.port)
     console.log('Server is listening on ' + appConfig.serverConfig.port);
 }
 /********************************************************************/

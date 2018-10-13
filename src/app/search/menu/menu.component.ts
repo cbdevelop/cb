@@ -5,6 +5,7 @@ import { MasterService } from '../../services/master.service';
 import { ModifySearchComponent } from '../../shared/modify-search/modify-search.component';
 import { Router,ActivatedRoute } from '@angular/router';
 import { CommentsComponent } from '../../shared/comments/comments.component';
+import { UserService } from '../../services/user_service/user.service';
 
 @Component({
   selector: 'app-menu',
@@ -20,7 +21,8 @@ export class MenuComponent implements OnInit {
 
   @ViewChild('cheftop') cheftop;
 
-  constructor(  
+  constructor(
+    private userSerObj:UserService,
     private router: Router,
     private route: ActivatedRoute,
     public masterObj: MasterService,
@@ -83,6 +85,9 @@ export class MenuComponent implements OnInit {
   }
 
   onCheckout() {
+    if(this.userSerObj.userId){
+      
+    }
     if (this.masterObj.selectedDishArr.length) {
       this.router.navigate(['../chef'], { relativeTo: this.route });
     }

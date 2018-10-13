@@ -5,7 +5,7 @@
     <ul class="">
 
       <li *ngFor="let chef of masterObj.filteredchefList;let index= index">
-        <div class="chefCta clearfix" (click)="chefProfile(index)">
+        <div class="chefCta clearfix" (click)="chefProfile(index)" *ngIf="chef != undefined">
           <div class="chefImg">
             <img src="../../../assets/images/chef-de.png" alt="" />
           </div>
@@ -35,7 +35,7 @@
                 <b>Proficiency</b>:
                 <p> {{ chef.Proficiency }}..</p>
               </div>
-              <div class="clearfix">
+              <div class="clearfix" *ngIf="menu !=''">
                 <b>Menu</b>:
                 <p class="menu">
                   <i *ngFor="let menu of chef.menu">{{ menu }},</i>

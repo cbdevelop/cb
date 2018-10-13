@@ -1,4 +1,5 @@
 <div class="payAddWrap">
+<<<<<<< HEAD
     <h2>Choose a payment method</h2>
     <div class="paymentWrap">
         <div class="pay-tabs clearfix">
@@ -294,3 +295,299 @@
         </div>
     </div>
 </div>
+=======
+  <h2>Choose a payment method</h2>
+  <div class="paymentWrap">
+      <div class="pay-tabs clearfix">
+          <ul class="tabs-menu">
+              <li><a (click)="savedCard()">Saved Card</a></li>
+              <li class="current"><a (click)="creditCard()">Credit Card</a></li>
+              <li><a (click)="debitCard()">Debit Card</a></li>
+              <li><a (click)="netBanking()">Net Banking</a></li>
+              <li><a (click)="otherWallets()">Other Wallets</a></li>
+          </ul>
+
+      <div class="tab">
+
+          <div id="tab-6" class="tab-content" #save>
+
+              <form [formGroup]="savedForm" class="form-horizontal" (ngSubmit)="onSaved()" novalidate>
+                  
+              <div class="payAmout clearfix">
+                  <div class="payInn">
+                      <input id="radio1" type="radio"  formControlName="amountType">
+                      <label for="radio1" class="radio">Total Amount</label>
+                  </div>
+                  <div class="payInn">
+                      <input id="radio2" type="radio"  formControlName="amountType">
+                      <label for="radio2" class="radio">Other Amount</label>
+                  </div>   
+                  <div class="payInn payInnMd">
+                      <input type="text" class="amountFild" formControlName="totalAmount"/>
+                  </div>                                                             
+              </div>
+  
+              <div class="card_details">
+                  <div class="save_card clearfix">
+                      <span>
+                        <input id="radio2f" type="radio"  formControlName="savedCard">
+                        <label for="radio2f" class="radio">Card No <b>#### #### #### 5497</b></label>                                            
+                      </span>
+                      <span>
+                        <input id="radio2g" type="radio"  formControlName="savedCard">
+                        <label for="radio2g" class="radio">Card No <b>#### #### #### 5497</b></label>                                            
+                      </span>             
+                  </div> 
+  
+                  <div class="card_filds">
+                      <label class="lab_sm">CVV</label>
+                      <input type="text" class="cardfild cardfild_cvv" formControlName="cvv">
+                      <span class="sm_img_a"><img src="../../../assets/images/cvv.png" alt=""/></span>
+                  </div>            
+                          
+                  <div class="note_text">
+                      <span>Note:</span>After clicking on the "Make Payment" button you might be taken to your bank's website for 3D secure authentication using a pop - up window.
+                  </div>
+                  <div class="donate_btn donate_btn_p"><img src="../../../assets/images/payment-logo.png" alt=""/>
+                      <input type="button" value="Make Payment" /></div>
+              </div>
+
+              </form>
+                      
+          </div>
+                  
+          <div id="tab-1" class="tab-content" #credit>
+
+              <form [formGroup]="creditForm" class="form-horizontal" (ngSubmit)="onCredit()" novalidate>
+             
+              <div class="payAmout clearfix">
+                  <div class="payInn">
+                          <input id="radio11" type="radio"  formControlName="amountType">
+                          <label for="radio11" class="radio">Total Amount</label>
+                  </div>
+                  <div class="payInn">
+                          <input id="radio21" type="radio"  formControlName="amountType">
+                          <label for="radio21" class="radio">Other Amount</label>
+                  </div>   
+                  <div class="payInn payInnMd">
+                      <input type="text" class="amountFild" formControlName="totalAmount"/>
+                  </div>                                                             
+              </div>
+
+              <div class="card_details">
+                  <div class="card_filds">
+                      <label>Card No</label><input type="text" class="cardfild cardfild_small" formControlName="cardNumber">
+                      <span><img src="../../../assets/images/card-1.png" alt=""/></span>
+                  </div>
+                  <div class="card_filds">
+                      <label>Name on card</label><input type="text" class="cardfild" formControlName="cardName">
+                  </div>
+                  <div class="card_filds">
+                      <label>Expiration Date</label>
+                      <select class="cardfild cardfild_select" formControlName="expirationDate">
+                          <option *ngFor="let date of dates" [value]="date">{{ date }}</option>
+                      </select>
+                      <select class="cardfild cardfild_select" formControlName="expirationYear">
+                          <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+                      </select> 
+                      <label class="lab_sm">CVV</label>
+                      <input type="text" class="cardfild cardfild_cvv" formControlName="cvv">
+                      <span class="sm_img"><img src="../../../assets/images/cvv.png" alt=""/></span>
+                   </div> 
+                   <div class="cvv_text"><b>What's this(?)</b></div>
+                   <div class="save_c">
+                      <div class="checkbox">
+                          <label>
+                              <input type="checkbox" formControlName="saveCard"><i class="input-helper"></i> <span>Save this card for next payments</span>
+                          </label>
+                      </div>
+                   </div>
+                   <div class="note_text">
+                       <span>Note:</span>After clicking on the "Make Payment" button you might be taken to your bank's website for 3D secure authentication using a pop - up window.
+                   </div>
+                   <div class="donate_btn clearfix">
+                     <input type="button" value="Make Payment" /></div>
+                     
+              </div>  
+
+              </form>
+                 
+          </div>       
+
+          
+          <div id="tab-2" class="tab-content" #debit>
+
+              <form [formGroup]="debitForm" class="form-horizontal" (ngSubmit)="onDebit()" novalidate>
+                  
+              <div class="payAmout clearfix">
+                  <div class="payInn">
+                          <input id="radio11" type="radio"  formControlName="amountType">
+                          <label for="radio11" class="radio">Total Amount</label>
+                  </div>
+                  <div class="payInn">
+                          <input id="radio21" type="radio"  formControlName="amountType">
+                          <label for="radio21" class="radio">Other Amount</label>
+                  </div>   
+                  <div class="payInn payInnMd">
+                      <input type="text" class="amountFild" formControlName="totalAmount"/>
+                  </div>                                                             
+              </div>
+
+              <div class="card_details">
+
+                  <div class="card_filds">
+                      <label>Card No</label><input type="text" class="cardfild cardfild_small" formControlName="cardNumber">
+                      <span><img src="../../../assets/images/card-1.png" alt=""/></span>
+                  </div>
+                  <div class="card_filds">
+                      <label>Name on card</label><input type="text" class="cardfild" formControlName="cardName">
+                  </div>
+                  <div class="card_filds">
+                      <label>Expiration Date</label>
+                      <select class="cardfild cardfild_select" formControlName="expirationDate">
+                          <option *ngFor="let date of dates" [value]="date">{{ date }}</option>
+                      </select>
+                      <select class="cardfild cardfild_select" formControlName="expirationYear">
+                          <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+                      </select> 
+                      <label class="lab_sm">CVV</label>
+                      <input type="text" class="cardfild cardfild_cvv" formControlName="cvv">
+                      <span class="sm_img"><img src="../../../assets/images/cvv.png" alt=""/></span>
+                   </div> 
+                   <div class="cvv_text"><b>What's this(?)</b></div>
+                   <div class="save_c">
+                      <div class="checkbox">
+                          <label>
+                              <input type="checkbox" formControlName="saveCard"><i class="input-helper"></i> <span>Save this card for next payments</span>
+                          </label>
+                      </div>
+                   </div>           
+                   <div class="note_text">
+                       <span>Note</span>After clicking on the "Make Payment" button you might be taken to your bank's website for 3D secure authentication using a pop - up window.
+                   </div>
+                   <div class="donate_btn">
+                     <input type="button" value="Make Payment" /></div>
+
+              </div>    
+              
+              </form>
+              
+          </div>
+                  
+          <div id="tab-3" class="tab-content" #net>
+
+              <form [formGroup]="netForm" class="form-horizontal" (ngSubmit)="onNet()" novalidate>
+                  
+              <div class="payAmout clearfix">
+                  <div class="payInn">
+                          <input id="radio11" type="radio"  formControlName="amountType">
+                          <label for="radio11" class="radio">Total Amount</label>
+                  </div>
+                  <div class="payInn">
+                          <input id="radio21" type="radio"  formControlName="amountType">
+                          <label for="radio21" class="radio">Other Amount</label>
+                  </div>   
+                  <div class="payInn payInnMd">
+                      <input type="text" class="amountFild" formControlName="totalAmount"/>
+                  </div>                                                             
+              </div>
+
+              <div class="net_bank">
+                  <div class="net_bank_inn">
+                      <div class="net_bank_inn_cta"><input type="radio" id="b1"  formControlName="axisBank">
+                      <label for="b1"><img src="../../../assets/images/axis-b.jpg" alt=""/></label>
+                      </div>
+                      <div class="net_bank_inn_cta"><input type="radio" id="b2"  formControlName="iciciBank">
+                      <label for="b2"><img src="../../../assets/images/icici-b.jpg" alt=""/></label>
+                      </div>
+                      <div class="net_bank_inn_cta"><input type="radio" id="b3"  formControlName="hdfcBank">
+                      <label for="b3"><img src="../../../assets/images/hdfc-b.jpg" alt=""/></label>
+                      </div>
+                      <div class="net_bank_inn_cta"><input type="radio" id="b4"  formControlName="andhraBank">
+                      <label for="b4"><img src="../../../assets/images/ad-b.jpg" alt=""/></label>
+                      </div>
+                      <div class="net_bank_inn_cta"><input type="radio" id="b5"  formControlName="yesBank">
+                      <label for="b5"><img src="../../../assets/images/bab-b.jpg" alt=""/></label>
+                      </div>
+                      <div class="net_bank_inn_cta"><input type="radio" id="b6"  formControlName="sbiBank">
+                      <label for="b6"><img src="../../../assets/images/sbi-b.jpg" alt=""/></label>
+                      </div>
+                      <div class="clear"></div>
+                  </div>
+                  
+                      <div class="card_filds card_filds_a">
+                          <label>Other Banks</label>
+                          <select class="cardfild cardfild_bank" formControlName="otherBank">
+                              <option *ngFor="let bank of banks" [value]="bank">{{ bank }}</option>
+                          </select><div class="clear"></div>
+                      </div>
+                      <div class="note_text">
+                          <span>Note</span>After clicking on the "Make Payment" button you might be taken to your bank's website for 3D secure authentication using a pop - up window.
+                      </div>                                    
+                  <div class="donate_btn"><input type="button" value="Make Payment" /></div> 
+
+              </div>  
+              
+              </form>
+                  
+          </div>
+
+          <div id="tab-4" class="tab-content" #other>
+
+             <form [formGroup]="otherForm" class="form-horizontal" (ngSubmit)="onOther()" novalidate>
+                  
+              <div class="payAmout clearfix">
+                  <div class="payInn">
+                          <input id="radio11" type="radio"  formControlName="amountType">
+                          <label for="radio11" class="radio">Total Amount</label>
+                  </div>
+                  <div class="payInn">
+                          <input id="radio21" type="radio"  formControlName="amountType">
+                          <label for="radio21" class="radio">Other Amount</label>
+                  </div>   
+                  <div class="payInn payInnMd">
+                      <input type="text" class="amountFild" formControlName="totalAmount"/>
+                  </div>                                                             
+              </div>  
+              
+              <div class="net_bank">
+
+                  <div class="net_bank_inn">
+                      <div class="net_bank_inn_cta pop-wal"><input type="radio" id="w1"  formControlName="mobiKwik">
+                      <label for="w1"><img src="../../../assets/images/mobi.jpg" alt=""/></label>
+                      </div>
+                      <div class="net_bank_inn_cta pop-wal"><input type="radio" id="w2"  formControlName="jio">
+                      <label for="w2"><img src="../../../assets/images/jio.jpg" alt=""/></label>
+                      </div>
+                      <div class="net_bank_inn_cta pop-wal"><input type="radio" id="w3"  formControlName="paytm">
+                      <label for="w3"><img src="../../../assets/images/itz-cash.jpg" alt=""/></label>
+                      </div>
+                      <div class="net_bank_inn_cta pop-wal"><input type="radio" id="w4"  formControlName="phonePe">
+                      <label for="w4"><img src="../../../assets/images/i-cash.jpg" alt=""/></label>
+                      </div>
+                      <div class="net_bank_inn_cta pop-wal"><input type="radio" id="w5"  formControlName="payU">
+                      <label for="w5"><img src="../../../assets/images/pay-cash.jpg" alt=""/></label>
+                      </div>
+                      <div class="net_bank_inn_cta pop-wal"><input type="radio" id="w6"  formControlName="amazonPay">
+                      <label for="w6"><img src="../../../assets/images/ypay-cash.jpg" alt=""/></label>
+                      </div>
+                      <div class="clear"></div>
+                  </div>         
+                  <div class="note_text">
+                      <span>Note</span>After clicking on the "Make Payment" button you might be taken to your bank's website for 3D secure authentication using a pop - up window.
+                  </div>                                    
+                 <div class="donate_btn"><input type="button" value="Make Payment" /></div>  
+
+              </div>
+
+              </form>
+
+          </div> 
+          
+          
+          </div>
+
+      </div>                    
+  </div>
+</div> 
+>>>>>>> 3cc4555d9fad6651a55b7800b16043da673bc8c2

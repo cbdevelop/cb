@@ -52,7 +52,7 @@ if (process.env.NODE_ENV == 'development') {
     appConfig = {
         consoleMsg: 'Production configuration loaded.',
         serverConfig: {
-            address: '//server.caterbinge.com',
+            address: 'https://ramki.herokuapp.com/',  //'//server.caterbinge.com',
             port: process.env.PORT || 3600,
             options: {
                 CORS: {
@@ -61,7 +61,8 @@ if (process.env.NODE_ENV == 'development') {
             }
         },
         databaseConfig: {
-            url: 'mongodb://***:***@127.0.0.1:****/caterbinge',
+            url: 'mongodb://caterbinge-rk:caterbinge123@ds251889.mlab.com:51889/caterbinge', 
+            //'mongodb://***:***@127.0.0.1:****/caterbinge',
         },
         sessionConfig: {
             sessionPayload: {

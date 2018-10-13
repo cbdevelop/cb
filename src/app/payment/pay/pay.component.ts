@@ -30,7 +30,7 @@ export class PayComponent implements OnInit {
 
   constructor( private fb: FormBuilder,
     private router: Router,
-    private _masterService: MasterService ) { }
+    public _masterService: MasterService ) { }
 
   ngOnInit() {
 
@@ -146,18 +146,18 @@ export class PayComponent implements OnInit {
 
   }
   onCredit() {
-
+this.onMakePayment();
   }
 
   onDebit() {
-
+    this.onMakePayment();
   }
   onNet() {
-
+    this.onMakePayment();
   }
 
   onOther() {
-
+    this.onMakePayment();
   }
 
   onMakePayment() {
@@ -165,7 +165,9 @@ export class PayComponent implements OnInit {
     const options = {};
     this._masterService.proceedToPayalPayment(options).subscribe(
       (res: Response) => {
-        console.log(res);
+
+        let data:any = res;
+        window.open(data.payUrl, '_blank');
     });
   }
 

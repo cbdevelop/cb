@@ -1,35 +1,37 @@
 <div class="foodPop">
-  <div class="foodPopInn">
-    <div class="foodPopInnImg">
-      <img src="./assets/images/addtheme.jpg" alt="" />
-    </div>
-    <h2> {{ dishDetails.Dish_Name }}</h2>
-    <p> {{ dishDetails.Description }} </p>
-    <div class="foodCheck">
-      <h3>Cuisines..</h3>
-      <div class="checkbox" *ngFor="let cus of getCusines()">
-        <label>
-          <input type="checkbox" class="check" [checked]="isCusChecked(cus)" [value]="cus" (change)="onCusChecked($event)" />
-          <i class="input-helper"></i>
-          <span>{{ cus }}</span>
-        </label>
+  <div class="foodPopWrap">
+    <div class="foodPopInn">
+      <div class="foodPopInnImg">
+        <img src="./assets/images/addtheme.jpg" alt="" />
       </div>
+      <h2> {{ dishDetails.Dish_Name }}</h2>
+      <p> {{ dishDetails.Description }} </p>
+      <div class="foodCheck">
+        <h3>Cuisines..</h3>
+        <div class="checkbox" *ngFor="let cus of getCusines()">
+          <label>
+            <input type="checkbox" class="check" [checked]="isCusChecked(cus)" [value]="cus" (change)="onCusChecked($event)" />
+            <i class="input-helper"></i>
+            <span>{{ cus }}</span>
+          </label>
+        </div>
 
-    </div>
-    <div class="foodCheck">
-      <h3>Restrict your serving for</h3>
-      <div class="checkbox" *ngFor="let ser  of restrictArr">
-        <label>
-          <input type="checkbox" class="check" [checked]="isResChecked(ser)" [value]="ser" (change)="onReschecked($event)" />
-          <i class="input-helper"></i>
-          <span> {{ ser }}</span>
-        </label>
       </div>
+      <div class="foodCheck">
+        <h3>Restrict your serving for</h3>
+        <div class="checkbox" *ngFor="let ser  of restrictArr">
+          <label>
+            <input type="checkbox" class="check" [checked]="isResChecked(ser)" [value]="ser" (change)="onReschecked($event)" />
+            <i class="input-helper"></i>
+            <span> {{ ser }}</span>
+          </label>
+        </div>
 
+      </div>
     </div>
-  </div>
-  <div class="foodPopBtn text-right">
-    <a href="javascript:void(0)" class="foodClose" (click)="oncancel()">Cancel</a>
-    <a href="javascript:void(0)" class="add" (click)="onAdd()">{{ btnText }}</a>
+    <div class="foodPopBtn text-right">
+      <a href="javascript:void(0)" class="foodClose" (click)="oncancel()">Cancel</a>
+      <a href="javascript:void(0)" class="add" (click)="onAdd()">{{ btnText }}</a>
+    </div>
   </div>
 </div>

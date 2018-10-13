@@ -13,7 +13,11 @@ export class MasterService {
 	dishCount = 0;
 	totalCost = 0;
 	totalAttendees = 0;
-	public searchObj: SearchModel = { location: [], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
+	public searchObj: SearchModel = { location: [
+		{ 'id': 0, 'itemName': '' },
+	], serviceType: [
+		{ 'id': 0, 'itemName': '' },
+	], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
 
 
 	currentSection = 'home';
@@ -649,15 +653,15 @@ export class MasterService {
 	}
 
 	registerChef(options) {
-		return this.http.post(this.ApiUrl + '/register', options).pipe();
+		return this.http.post(this.ApiUrl + '/v1/register', options).pipe();
 	}
 
 	registerUser(options) {
-		return this.http.post(this.ApiUrl + '/userregister', options);
+		return this.http.post(this.ApiUrl + '/v1/userregister', options);
 	}
 
 	registerManager(options) {
-		return this.http.post(this.ApiUrl + '/registerManager', options);
+		return this.http.post(this.ApiUrl + '/v1/registerManager', options);
 	}
 	proceedToPayalPayment(options) {
 		console.log('paypal service');

@@ -9,6 +9,7 @@ import { FooterModule, HeaderModule, DirectiveModule } from '../shared/index';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { ModifySearchModule } from '../shared/modify-search/modify-search.module';
+import { AlertsModule } from '../shared/alerts/alerts.module';
 
 
 
@@ -25,7 +26,8 @@ import { ModifySearchModule } from '../shared/modify-search/modify-search.module
     AngularMultiSelectModule,
     OwlDateTimeModule, 
     OwlNativeDateTimeModule,
-    ModifySearchModule
+    ModifySearchModule,
+    AlertsModule
   ],
   declarations: [
     HomeComponent,

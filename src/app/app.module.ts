@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
 import { MasterService } from './services/master.service';
 import { DirectiveModule } from './shared/index';
+import { UserService } from './services/user_service/user.service';
 // import { CommentsComponent } from './shared/comments/comments.component';
 
 @NgModule({
@@ -38,7 +39,7 @@ import { DirectiveModule } from './shared/index';
 
   ],
   providers: [
-    MasterService
+    MasterService,UserService
   ],
   bootstrap: [AppComponent],
   schemas: [
