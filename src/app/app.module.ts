@@ -16,6 +16,8 @@ import { CommonModule } from '@angular/common';
 import { MasterService } from './services/master.service';
 import { DirectiveModule } from './shared/index';
 import { UserService } from './services/user_service/user.service';
+import { AlertsService } from './services/alerts.service';
+import { AlertsModule } from './shared/alerts/alerts.module';
 // import { CommentsComponent } from './shared/comments/comments.component';
 
 @NgModule({
@@ -35,11 +37,12 @@ import { UserService } from './services/user_service/user.service';
     HttpClientModule,
     AppRoutingModule,
     // SharedModule
-    HttpClientModule
+    HttpClientModule,
+    AlertsModule
 
   ],
   providers: [
-    MasterService,UserService
+    MasterService, UserService,AlertsService
   ],
   bootstrap: [AppComponent],
   schemas: [

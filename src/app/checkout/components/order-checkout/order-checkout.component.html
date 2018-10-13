@@ -1,9 +1,9 @@
-<div class="cartOut">
+<!-- <div class="cartOut">
   <div class="cartWpar">
     <a class="cartBtn clearfix cartBtnEmpty" (click)="onproceed()">
       <b>Total {{ masterObj.totalCost }}</b>
       <span>Proceed to Checkout</span>
-    </a>
+    </a> -->
 
     <div class="cartOver">
       <div *ngIf="masterObj.getSelectedDishesById(1).length ">
@@ -175,10 +175,4 @@
       </div>
     </ng-template>
 
-    <p class="promoText" (click)="openPromo()">Have a Promocode</p>
-    <div class="note noteAct" (click)="onCommentPopup()">
-      <span> {{ masterObj.comments }}</span>
-      <i class="fa fa-comment-o"></i>
-    </div>
-  </div>
-</div>
+   

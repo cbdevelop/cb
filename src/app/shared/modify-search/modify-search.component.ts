@@ -1,10 +1,13 @@
 import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { DatePipe } from '@angular/common';
+import { FormGroup, FormBuilder, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+
 import { SearchModel, MasterService } from '../../services/master.service';
-import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { AlertsComponent } from '../alerts/alerts.component';
+import { alert } from '../models/alert.model';
 
 
 @Component({
@@ -22,14 +25,18 @@ export class ModifySearchComponent implements OnInit {
   serviceType = [];
 
   settings = {};
-  session = "dinner"
+  session = "dinner";
+  alert: alert = { type: 'success', message: '' };
   @Input() page;
   @ViewChild("modify") modify;
 
   constructor(
-    private routerObj: Router, private fb: FormBuilder,
+    private routerObj: Router,
+    private fb: FormBuilder,
     public activeModal: NgbActiveModal,
-    public masterObj: MasterService
+    public modalService: NgbModal,
+    public masterObj: MasterService,
+    private datepipe: DatePipe
   ) { }
 
   ngOnInit() {
@@ -70,18 +77,18 @@ export class ModifySearchComponent implements OnInit {
 
   // Locations
   LocationSelect(item: any) {
-    console.log(item);
+
   }
   LocationDeSelect(item: any) {
-    console.log(item);
+
   }
 
   // Services
   ServiceSelect(item: any) {
-    console.log(item);
+
   }
   ServiceDeSelect(item: any) {
-    console.log(item);
+
   }
 
   // OnClose of Modified_Search
@@ -89,19 +96,42 @@ export class ModifySearchComponent implements OnInit {
     this.activeModal.dismiss();
   }
 
-  onSearch(evt) {
+  selectedTime(evt) {
+    console.log(evt, this.masterObj.searchObj.datetime < new Date());
 
+    if (this.masterObj.searchObj.datetime < new Date()) {
+      const modalRef = this.modalService.open(AlertsComponent);
+      this.alert.message = 'Selected Event Date & Time should be upcoming date';
+      this.alert.type = 'warning';
+      modalRef.componentInstance.alert = this.alert;
+    } else {
+      let time = this.datepipe.transform(this.masterObj.searchObj.datetime, 'hh');
+      let tt = parseInt(time, 10);
+      if (tt > 7 && tt < 11)
+        this.masterObj.session = 'Break Fast';
+      else if (tt > 12 && tt < 15)
+        this.masterObj.session = 'Lunch';
+      else if (tt > 19 && tt < 22)
+        this.masterObj.session = 'Dinner';
+      else if (tt > 16 && tt < 18)
+        this.masterObj.session = 'Snack Time';
+      else {
+        this.masterObj.session = 'other';
+      }
+    }
+  }
+
+  onSearch(evt) {
     console.log(this.masterObj.searchObj, this.modifiedForm);
     if (this.modifiedForm.valid) {
-      if (this.page == "home") {
-        this.masterObj.totalCost =0;
-        this.masterObj.selectedDishArr= [];
-        var selectedDish = JSON.stringify(this.masterObj.selectedDishArr);
-        localStorage.setItem("cost", this.masterObj.totalCost.toString());
-        localStorage.setItem("selDises", selectedDish);
-        this.routerObj.navigate(['../search']);
-      } else
-        this.activeModal.close();
+      // if (this.page == "home") {
+      this.masterObj.clearData();
+      localStorage.setItem('searchObj', JSON.stringify(this.masterObj.searchObj));
+      localStorage.setItem('session', this.masterObj.session);
+      this.routerObj.navigate(['../search']);
+      this.activeModal.close();
+      // } else
+      //   this.activeModal.close();
     }
   }
   getTotal() {

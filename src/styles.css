@@ -329,5 +329,5 @@ button {
 }
 
 .cartBtn a {
-    color: white;
+    color: white !important;
 }

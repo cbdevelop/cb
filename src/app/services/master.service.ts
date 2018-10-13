@@ -16,10 +16,9 @@ export class MasterService {
 	totalCost = 0;
 	totalAttendees = 0;
 	searchObj: SearchModel = {
-		location: [
-		], serviceType: [
-		], nonVegAttnd: null, vegAttnd: null, datetime: new Date()
+		location: [], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: null
 	};
+	session = '';
 
 
 	currentSection = 'home';
@@ -571,13 +570,6 @@ export class MasterService {
 	) {
 		this.ApiUrl = environment.apiUrl;
 
-
-		this.selectedDishes.best = [];
-		this.selectedDishes.main = [];
-		this.selectedDishes.starter = [];
-		this.selectedDishes.biryani = [];
-		this.selectedDishes.beverges = [];
-
 		if (localStorage.length) {
 			if (localStorage.getItem('selDises')) {
 				this.selectedDishArr = JSON.parse(localStorage.getItem('selDises'));
@@ -594,9 +586,19 @@ export class MasterService {
 			if (localStorage.getItem('searchObj') !== undefined && localStorage.getItem('searchObj') != null) {
 				this.searchObj = JSON.parse(localStorage.getItem('searchObj'));
 			}
+			if (localStorage.getItem('session') !== undefined && localStorage.getItem('session')) {
+				this.session = localStorage.getItem('session');
+			}
 		}
 	}
 
+	clearData() {
+		this.totalCost = 0;
+		this.selectedDishArr = [];
+		this.selectedEvtManager =[];
+		localStorage.clear();
+		
+	}
 
 	randomInt(min, max) {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -669,6 +671,9 @@ export class MasterService {
 		console.log('paypal service');
 		return this.http.post(this.ApiUrl + '/v1/paynow', options).pipe();
 	}
+
+	
+	
 }
 
 export interface SearchModel {

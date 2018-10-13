@@ -1,21 +1,38 @@
 <div class="chefHead" #chefHead>
-    <div class="chefHeadInn clearfix">
-      <ul class="clearfix head">
-          <li routerLinkActive="Act"><a routerLink="/chef">Chefs</a></li>
-          <li routerLinkActive="Act"><a routerLink="/manager">Event Managers</a></li>
-        <div class="chefSearch clearfix" >
+  <div class="chefHeadInn clearfix">
+    <ul class="clearfix head">
+      <li routerLinkActive="Act">
+        <a routerLink="/chef">Chefs</a>
+      </li>
+      <li routerLinkActive="Act">
+        <a routerLink="/manager">Event Managers</a>
+      </li>
+      <!-- <div class="chefSearch clearfix" >
           <a href="javascript:void(0)" class="chefMoreWrap">More..<i class="fa fa-caret-down"></i></a>
-        </div>				
-      </ul>
-      <!-- <div class="chefMorePop">
+        </div>				 -->
+    </ul>
+    <!-- <div class="chefMorePop">
           <div>
               <a href="javascript:void(0)">Option 1</a>
               <a href="javascript:void(0)">Option 1</a>
               <a href="javascript:void(0)">Option 1</a>
           </div>
       </div> -->
+    <div class="cartOut">
+      <div class="cartWpar">
+        <a class="cartBtn clearfix cartBtnEmpty" (click)="onproceed()">
+          <b>Total {{ masterObj.totalCost }}</b>
+          <span>Proceed to Checkout</span>
+        </a>
 
-      <app-order-checkout></app-order-checkout>
-
+        <app-order-checkout></app-order-checkout>
+        <p class="promoText" (click)="openPromo()">Have a Promocode</p>
+        <div class="note noteAct" (click)="onCommentPopup()">
+          <span> {{ masterObj.comments }}</span>
+          <i class="fa fa-comment-o"></i>
+        </div>
+      </div>
     </div>
-</div> 
+
+  </div>
+</div>

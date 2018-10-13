@@ -1,5 +1,5 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule,DatePipe } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
@@ -10,6 +10,7 @@ import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { ModifySearchModule } from '../shared/modify-search/modify-search.module';
 import { AlertsModule } from '../shared/alerts/alerts.module';
+import {  } from '@angular/common/src/pipes/date_pipe';
 
 
 
@@ -39,6 +40,9 @@ import { AlertsModule } from '../shared/alerts/alerts.module';
   entryComponents: [
     // ModifySearchComponent,
 
+  ],
+  providers:[
+    DatePipe
   ]
 })
 export class HomeModule { }

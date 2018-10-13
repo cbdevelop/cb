@@ -1,4 +1,5 @@
 <div class="chPopOut">
+  <div class="chPopInn">
   <div class="chPop clearfix">
     <a (click)="onCrossClose()">
       <span class="fa fa-close popClose"></span>
@@ -6,7 +7,7 @@
     <div class="chPopImg">
       <img src="../../../../assets/images/chef-de.png" alt="" />
       <h3>{{ chefDetails.Name }}</h3>
-      <span>
+      <div class="pl-2">
         <ngb-rating [(rate)]="chefDetails.Rating" [readonly]="true" max="5">
           <ng-template let-fill="fill" let-index="index">
             <span class="star" [class.filled]="fill === 100">
@@ -19,7 +20,7 @@
           <i class="fa fa-star" [ngClass]="chefDetails.Rating >= 3 ? 'review': ''"></i>
           <i class="fa fa-star" [ngClass]="chefDetails.Rating >= 4 ? 'review': ''"></i>
           <i class="fa fa-star" [ngClass]="chefDetails.Rating >= 5 ? 'review': ''"></i> -->
-      </span>
+        </div>
       <a href="javascript:void(0)" class="addBtn" (click)="changeChef()">Change</a>
       <ul class="ceri clearfix">
         <li>
@@ -54,22 +55,22 @@
                   <span>Total events served</span>:
                   <p>{{ chefDetails.total_event_served }}</p>
                 </div>
-                <div class="clearfix">
+                <div class="clearfix" *ngIf=" chefDetails.From != ''">
                   <span>Locality</span>:
                   <p>{{ chefDetails.From }}</p>
                 </div>
-                <div class="clearfix">
+                <div class="clearfix"  *ngIf=" chefDetails.Proficiency != ''">
                   <span>Proficiency</span>:
                   <p>{{ chefDetails.Proficiency }}</p>
                 </div>
-                <div class="clearfix">
+                <div class="clearfix"  *ngIf=" chefDetails.menu != ''">
                   <span>Cook for you</span>:
                   <p>
                     <i *ngFor="let menu of chefDetails.menu">{{ menu }},</i>
 
                   </p>
                 </div>
-                <div class="clearfix">
+                <div class="clearfix"  *ngIf=" chefDetails.About != ''">
                   <span>About Chef:</span>
                   <br>
                   <b>
@@ -199,4 +200,5 @@
 
     </div>
   </div>
+</div>
 </div>

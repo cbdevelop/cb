@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { MasterService } from '../services/master.service';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { PromocodeComponent } from './components/promocode/promocode.component';
+import { Router } from '@angular/router';
+import { CommentsComponent } from '../shared/comments/comments.component';
+import { MobilePreviewComponent } from './components/mobile-preview/mobile-preview.component';
+import { SigninComponent } from '../shared/signin/signin.component';
 
 @Component({
   selector: 'app-checkout',
@@ -9,7 +15,11 @@ import { MasterService } from '../services/master.service';
 export class CheckoutComponent implements OnInit {
 
   isCollapsed = false;
-  constructor(private masterObj: MasterService) {
+  constructor(
+    private masterObj: MasterService,
+    private commentService: NgbModal,
+    private router:Router
+  ) {
     this.getlist();
   }
 
@@ -44,5 +54,27 @@ export class CheckoutComponent implements OnInit {
     console.log( this.masterObj.filteredchefList);
   }
 
+  openPromo() {
+    this.commentService.open(PromocodeComponent)
+  }
+  onproceed(){
+    if(this.masterObj.evntManagerSelFlag || this.masterObj.selectedEvtManager.length){
+      this.router.navigate(['./payment']); 
+    }
+  }
+
+   // Comments Model Popup
+   onCommentPopup() {
+    this.commentService.open(CommentsComponent);    
+  }
+
+  opencat(){
+    this.commentService.open(MobilePreviewComponent); 
+  }
+
+   // Sign-in Open
+   openSign() {
+    this.commentService.open(SigninComponent);
+  }
 
 }

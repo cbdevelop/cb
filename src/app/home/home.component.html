@@ -3,351 +3,409 @@
 <app-header>
 </app-header>
 <section id="parentDiv" scrollSpy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
-    <!-- Theme -->
-    <section class="themeOut" id="home">
-        <div class="themeWrap">
-            <div class="themeText">
-                <h1>Welcome to Caterbinge</h1>
-                <h2>A one stop solution from hiring your chefs till complete catering your entire event. Book your order now</h2>
-            </div>
-        </div>
-        <div class="resSearch clearfix" (click)="onMobileSearch()">
-            <input type="text" placeholder="Search" />
-            <button>Search</button>
+  <!-- Theme -->
+  <section class="themeOut" id="home">
+    <div class="themeWrap">
+      <div class="themeText">
+        <h1>Welcome to Caterbinge</h1>
+        <h2>A one stop solution from hiring your chefs till complete catering your entire event. Book your order now</h2>
+      </div>
+    </div>
+    <div class="resSearch clearfix" (click)="onMobileSearch()">
+      <input type="text" placeholder="Search" />
+      <button>Search</button>
+    </div>
+
+    <form [formGroup]="homeForm" novalidate>
+      <div class="searchOut">
+        <div class="searClose">
+          <i class="fa fa-close"></i>
         </div>
 
-        <form [formGroup]="homeForm" novalidate>
-            <div class="searchOut">
-                <div class="searClose">
-                    <i class="fa fa-close"></i>
-                </div>
-
-                <div class="select">
-                    <label>Location
+        <div class="select">
+          <label>Location
             <span id="cityPop">Change</span>
           </label>
-                    <angular2-multiselect class="loca" [data]="locationArr" [(ngModel)]="masterObj.searchObj.location" [settings]="settings" (onSelect)="LocationSelect($event)" (onDeSelect)="LocationDeSelect($event)" formControlName="location">
-                    </angular2-multiselect>
-                </div>
-                <div class="select">
-                    <label>Service Type</label>
-                    <angular2-multiselect class="loca" [data]="serviceTypeArr" [(ngModel)]="masterObj.searchObj.serviceType" [settings]="settings" (onSelect)="ServiceSelect($event)" (onDeSelect)="ServiceDeSelect($event)" formControlName="serviceType">
-                    </angular2-multiselect>
-                </div>
-                <div class="atten">
-                    <label>Attendees -
+          <angular2-multiselect class="loca" [data]="locationArr" [(ngModel)]="masterObj.searchObj.location" [settings]="settings"
+            (onSelect)="LocationSelect($event)" (onDeSelect)="LocationDeSelect($event)" formControlName="location">
+          </angular2-multiselect>
+        </div>
+        <div class="select">
+          <label>Service Type</label>
+          <angular2-multiselect class="loca" [data]="serviceTypeArr" [(ngModel)]="masterObj.searchObj.serviceType" [settings]="settings"
+            (onSelect)="ServiceSelect($event)" (onDeSelect)="ServiceDeSelect($event)" formControlName="serviceType">
+          </angular2-multiselect>
+        </div>
+        <div class="atten">
+          <label>Attendees -
             <b>{{ masterObj.totalAttendees }}</b> (Veg - Nonveg)</label>
-                    <input type="text" placeholder="000" formControlName="vegAttnd" [(ngModel)]="masterObj.searchObj.vegAttnd" (keypress)="onlyNumberKey($event)" (blur)="getTotal()" />
-                    <input type="text" placeholder="000" class="non" formControlName="nonVegAttnd" [(ngModel)]="masterObj.searchObj.nonVegAttnd" (blur)="getTotal()" (keypress)="onlyNumberKey($event)" />
-                </div>
-                <div class="select date">
-                    <label>Date - Time</label>
-                    <input type="text" placeholder="DD/MM/YY HH:MM" class="datePic" formControlName="datetime" [(ngModel)]="masterObj.searchObj.datetime" [min]="min" [max]="max" [owlDateTime]="dt1" hour12Timer="true" [owlDateTimeTrigger]="dt1">
-                    <owl-date-time #dt1 (afterPickerClosed)="selectedTime()"></owl-date-time>
-                </div>
-                <div class="select time" *ngIf="session !== ''">
-                    <label>You're ordering for</label>
-                    <div class="session"> {{ session }}</div>
-                </div>
-                <div class="seaBtn">
-                    <input type="button" value="Search" (click)="onSearch(masterObj.searchObj)" class="seaButton" />
-                </div>
-            </div>
-        </form>
-    </section>
-    <!-- Theme -->
+          <input type="text" placeholder="000" formControlName="vegAttnd" [(ngModel)]="masterObj.searchObj.vegAttnd" (keypress)="onlyNumberKey($event)"
+            (blur)="getTotal()" />
+          <input type="text" placeholder="000" class="non" formControlName="nonVegAttnd" [(ngModel)]="masterObj.searchObj.nonVegAttnd"
+            (blur)="getTotal()" (keypress)="onlyNumberKey($event)" />
+        </div>
+        <div class="select date">
+          <label>Date - Time</label>
+          <input type="text" placeholder="DD/MM/YY HH:MM" class="datePic" formControlName="datetime" [(ngModel)]="masterObj.searchObj.datetime"
+            [min]="min" [max]="max" [owlDateTime]="dt1" hour12Timer="true" [owlDateTimeTrigger]="dt1">
+          <owl-date-time #dt1 (afterPickerClosed)="selectedTime()"></owl-date-time>
+        </div>
+        <div class="select time" *ngIf="session !== ''">
+          <label>You're ordering for</label>
+          <div class="session"> {{ session }}</div>
+        </div>
+        <div class="seaBtn">
+          <input type="button" value="Search" (click)="onSearch(masterObj.searchObj)" class="seaButton" />
+        </div>
+      </div>
+    </form>
+  </section>
+  <!-- Theme -->
 
-    <!-- How it works -->
-    <section class="howItOut" id="howitworks">
-        <div class="howItWrap clearfix">
-            <span class="homeHeading">
+  <!-- How it works -->
+  <section class="howItOut" id="howitworks">
+    <div class="howItWrap clearfix">
+      <span class="homeHeading">
         <h3>How it Works</h3>
       </span>
-            <div class="howItCta">
-                <span>
+      <div class="howItCta">
+        <span>
           <img src="./assets/images/howit-1.jpg" alt="" />
         </span>
-                <div class="howItCtaInn">
-                    <b>Step 1</b>
-                    <p>Enter when and where you want the catering to be executed.</p>
-                </div>
-            </div>
-            <div class="howItCta">
-                <span>
+        <div class="howItCtaInn">
+          <b>Step 1</b>
+          <p>Enter when and where you want the catering to be executed.</p>
+        </div>
+      </div>
+      <div class="howItCta">
+        <span>
           <img src="./assets/images/howit-2.jpg" alt="" />
         </span>
-                <div class="howItCtaInn">
-                    <b>Step 2</b>
-                    <p>Start building your menu from the vast collection of dishes we serve. Choose as many dishes as you can, diversity is never a problem, Our wide range of chefs represents their excellence in your food.</p>
-                </div>
-            </div>
-            <div class="howItCta">
-                <span>
+        <div class="howItCtaInn">
+          <b>Step 2</b>
+          <p>Start building your menu from the vast collection of dishes we serve. Choose as many dishes as you can, diversity
+            is never a problem, Our wide range of chefs represents their excellence in your food.</p>
+        </div>
+      </div>
+      <div class="howItCta">
+        <span>
           <img src="./assets/images/howit-3.jpg" alt="" />
         </span>
-                <div class="howItCtaInn">
-                    <b>Step 3</b>
-                    <p>Review the selected professional chefs chosen as per their proficiency to cook your customized menu, change the chefs after going through the review history of each individual chefs involved in cooking your menu.</p>
-                </div>
-            </div>
-            <div class="howItCta">
-                <span>
+        <div class="howItCtaInn">
+          <b>Step 3</b>
+          <p>Review the selected professional chefs chosen as per their proficiency to cook your customized menu, change the
+            chefs after going through the review history of each individual chefs involved in cooking your menu.</p>
+        </div>
+      </div>
+      <div class="howItCta">
+        <span>
           <img src="./assets/images/Event-Management-home.jpg" alt="" />
         </span>
-                <div class="howItCtaInn">
-                    <b>Step 4</b>
-                    <p>Select an event organizer to take care of the service or simply proceed to payment to self-organize your event.</p>
-                </div>
-            </div>
+        <div class="howItCtaInn">
+          <b>Step 4</b>
+          <p>Select an event organizer to take care of the service or simply proceed to payment to self-organize your event.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
 
-    <!-- About -->
-    <section class="hoAbWrap clearfix" id="about">
-        <div class="hoAbImg">
-            <img src="./assets/images/about.jpg" alt="" />
-            <h2>About Caterbinge</h2>
-        </div>
-        <div class="hoAbText">
-            <h3>About
-                <span>Caterbinge</span>
-            </h3>
-            <p>Caterbinge is an on-demand food catering service and your personal chef. We aim to provide superior quality food by allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu, not just
-                that we provide delicious cuisines but also assures high-quality service. At caterbinge.com we strive to achieve the highest level of Customer Satisfaction and are committed giving the best service regardless of the size of the order or
-                combination of cuisines in the menu we have been blessed to be a part of hundreds of weddings, birthday, corporate events and social conferences.</p>
-            <!-- <a href="" class="" [routerLink]="['/about']">View more...</a> -->
-        </div>
-    </section>
-    <!-- About -->
+  <!-- About -->
+  <section class="hoAbWrap clearfix" id="about">
+    <div class="hoAbImg">
+      <img src="./assets/images/about.jpg" alt="" />
+      <h2>About Caterbinge</h2>
+    </div>
+    <div class="hoAbText">
+      <h3>About
+        <span>Caterbinge</span>
+      </h3>
+      <p>Caterbinge is an on-demand food catering service and your personal chef. We aim to provide superior quality food by
+        allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu,
+        not just that we provide delicious cuisines but also assures high-quality service. At caterbinge.com we strive to
+        achieve the highest level of Customer Satisfaction and are committed giving the best service regardless of the size
+        of the order or combination of cuisines in the menu we have been blessed to be a part of hundreds of weddings, birthday,
+        corporate events and social conferences.</p>
+      <!-- <a href="" class="" [routerLink]="['/about']">View more...</a> -->
+    </div>
+  </section>
+  <!-- About -->
 
-    <!--   Why choose us  -->
-    <section class="howItOut" id="choose">
-        <div class="howItWrap clearfix">
-            <span class="homeHeading">
+  <!--   Why choose us  -->
+  <section class="howItOut" id="choose">
+    <div class="howItWrap clearfix">
+      <span class="homeHeading">
         <h3>Why You Choose Us</h3>
       </span>
-            <div class="whyChoCta">
-                <span>
+      <div class="whyChoCta">
+        <span>
           <img src="./assets/images/whycho-1.png" alt="" />
         </span>
-                <h4>Taste Assurance</h4>
-                <!-- padding added in order maintain the height with raminaing -->
-                <p class="pt-3">Selects only the top notch chefs who are specialized to cook the best taste of their respective cuisines. </p>
-            </div>
-            <div class="whyChoCta">
-                <span>
+        <h4>Taste Assurance</h4>
+        <!-- padding added in order maintain the height with raminaing -->
+        <p class="pt-3">Selects only the top notch chefs who are specialized to cook the best taste of their respective cuisines. </p>
+      </div>
+      <div class="whyChoCta">
+        <span>
           <img src="./assets/images/whycho-2.png" alt="" />
         </span>
-                <h4>Hygienic & Halal food</h4>
-                <p class="pt-3">Food materials are purchased from the authorized suppliers to serve fresh, where only halal meat is used.</p>
-            </div>
-            <div class="whyChoCta">
-                <span>
+        <h4>Hygienic & Halal food</h4>
+        <p class="pt-3">Food materials are purchased from the authorized suppliers to serve fresh, where only halal meat is used.</p>
+      </div>
+      <div class="whyChoCta">
+        <span>
           <img src="./assets/images/whycho-3.png" alt="" />
         </span>
-                <h4>Cost effective & Stand alone in service</h4>
-                <p>More than 25% of price difference when compared with others catering services and also highly professional in service.</p>
-            </div>
-            <div class="whyChoCta">
-                <span>
+        <h4>Cost effective & Stand alone in service</h4>
+        <p>More than 25% of price difference when compared with others catering services and also highly professional in service.</p>
+      </div>
+      <div class="whyChoCta">
+        <span>
           <img src="./assets/images/wastage.png" alt="" />
         </span>
-                <h4>Zero wastage </h4>
-                <p>Our cutting edge technology automatically analyzes the food material required for your dynamic selected menu in real time.
-                </p>
-            </div>
-        </div>
-    </section>
-    <!--   Why choose us  -->
+        <h4>Zero wastage </h4>
+        <p>Our cutting edge technology automatically analyzes the food material required for your dynamic selected menu in real
+          time.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--   Why choose us  -->
 
-    <!--  countWrap  -->
+  <<<<<<< Updated upstream <!-- countWrap -->
     <section class="countWrapOut" id="counter">
-        <div class="countWrap clearfix">
-            <div class="countCta clearfix">
-                <span>
-          <img src="./assets/images/count.png" alt="" />
-        </span>
-                <p>
+      <div class="countWrap clearfix">
+        <div class="countCta clearfix">
+          <span>
+            =======
+            <!--  countWrap  -->
+            <section class="countWrapOut" id="counter">
+              <div class="countWrap clearfix">
+                <div class="countCta clearfix">
+                  <span>
+                    >>>>>>> Stashed changes
+                    <img src="./assets/images/count.png" alt="" />
+                  </span>
+                  <p>
                     Events Served
                     <i class="counter-value">{{ cntevnt }}</i>
-                </p>
-            </div>
-            <div class="countCta clearfix">
-                <span>
-          <img src="./assets/images/count2.png" alt="" />
-        </span>
-                <p>
+                  </p>
+                </div>
+                <div class="countCta clearfix">
+                  <span>
+                    <img src="./assets/images/count2.png" alt="" />
+                  </span>
+                  <<<<<<< Updated upstream <p>
                     Chef's
                     <i class="counter-value"> {{ cntchef }} </i>
-                </p>
-            </div>
-            <div class="countCta clearfix">
-                <span>
-          <img src="./assets/images/count3.png" alt="" />
-        </span>
-                <p>
+                    </p>
+                </div>
+                <div class="countCta clearfix">
+                  <span>
+                    <img src="./assets/images/count3.png" alt="" />
+                  </span>
+                  <p>
                     Event Manager's
                     <i class="counter-value">{{ cntmanager }}</i>
-                </p>
-            </div>
-            <div class="countCta clearfix">
-                <span>
-          <img src="./assets/images/count4.png" alt="" />
-        </span>
-                <p>
+                  </p>
+                </div>
+                <div class="countCta clearfix">
+                  <span>
+                    <img src="./assets/images/count4.png" alt="" />
+                  </span>
+                  <p>
                     Users Sign Up
                     <i class="counter-value">{{ cntusers }}</i>
-                </p>
-            </div>
+                  </p>
+                </div>
+              </div>
+            </section>
+            <!--  countWrap  -->
+            =======
+            <p>
+              Chef's
+              <i class="counter-value"> {{ cntchef }} </i>
+            </p>
         </div>
+        <div class="countCta clearfix">
+          <span>
+            <img src="./assets/images/count3.png" alt="" />
+          </span>
+          <p>
+            Event Manager's
+            <i class="counter-value">{{ cntmanager }}</i>
+          </p>
+        </div>
+        <div class="countCta clearfix">
+          <span>
+            <img src="./assets/images/count4.png" alt="" />
+          </span>
+          <p>
+            Users Sign Up
+            <i class="counter-value">{{ cntusers }}</i>
+          </p>
+        </div>
+      </div>
     </section>
     <!--  countWrap  -->
+    >>>>>>> Stashed changes
 
     <!--   Partners Wrap  -->
     <section class="patWrapOut" id="partner">
-        <div class="patWrap clearfix">
-            <h3>Become a partner</h3>
-            <div class="patCta">
-                <a [routerLink]="['/addchef']">
-                    <span>
-            <img src="./assets/images/chef.jpg" alt="" />
-            <div class="chefIcon">
-              <img src="./assets/images/chef-i.png" alt="" />
-            </div>
-          </span>
-                    <h4>Chef</h4>
-                    <p>Now become Independent and enjoy cooking without being exploited by any catering agent. Get leads more than you can ever think of. Register with us now and brand yourself for your dishes, people are craving for your taste already!
-                    </p>
-                    <div class="resMes">Click here to become a Chef</div>
-                </a>
-            </div>
-            <div class="patCta">
-                <a [routerLink]="['/addmanager']">
-                    <span>
-            <img src="./assets/images/event.jpg" alt="" />
-            <div class="chefIcon">
-              <img src="./assets/images/event-i.png" alt="" />
-            </div>
-          </span>
-                    <h4>Event Manager</h4>
-                    <p>Got some management skills? Here is a great opportunity for you to earn some bucks out off your free time. Be among the ones who are earning Rs. 3500 every day. Make your event a success too, register yourself to know more.</p>
-                    <div class="resMes">Click here to become a Event Manager</div>
-                </a>
-            </div>
+      <div class="patWrap clearfix">
+        <h3>Become a partner</h3>
+        <div class="patCta">
+          <a [routerLink]="['/addchef']">
+            <span>
+              <img src="./assets/images/chef.jpg" alt="" />
+              <div class="chefIcon">
+                <img src="./assets/images/chef-i.png" alt="" />
+              </div>
+            </span>
+            <h4>Chef</h4>
+            <p>Now become Independent and enjoy cooking without being exploited by any catering agent. Get leads more than you
+              can ever think of. Register with us now and brand yourself for your dishes, people are craving for your taste
+              already!
+            </p>
+            <div class="resMes">Click here to become a Chef</div>
+          </a>
         </div>
+        <div class="patCta">
+          <a [routerLink]="['/addmanager']">
+            <span>
+              <img src="./assets/images/event.jpg" alt="" />
+              <div class="chefIcon">
+                <img src="./assets/images/event-i.png" alt="" />
+              </div>
+            </span>
+            <h4>Event Manager</h4>
+            <p>Got some management skills? Here is a great opportunity for you to earn some bucks out off your free time. Be
+              among the ones who are earning Rs. 3500 every day. Make your event a success too, register yourself to know
+              more.</p>
+            <div class="resMes">Click here to become a Event Manager</div>
+          </a>
+        </div>
+      </div>
     </section>
     <!--   Partners Wrap  -->
 
     <!--   Blogs  -->
     <section class="howItOut bgTwo">
-        <div class="howItWrap padMd clearfix">
-            <span class="homeHeading">
-        <h3>Blogs</h3>
-      </span>
-            <div class="overScroll">
-                <div class="overScrollInnTwo">
-                    <div class="blogCta">
-                        <a href="blogdetails.html">
-                            <span>
-                <img src="./assets/images/blog.jpg" alt="" />
-              </span>
-                            <h4>Tips to do catering right</h4>
-                            <p>
-                                There are a lot of things to consider while choosing a menu to be most suitable for all your guests, taste preferences and special dietary requirements. Ordering from is Halal-certified caterer is hard these days...
-                            </p>
-                            <a class="viBl" href="blogdetails.html">View</a>
-                        </a>
-                    </div>
-                    <div class="blogCta">
-                        <a href="blogdetails.html">
-                            <span>
-                <img src="./assets/images/blog.jpg" alt="" />
-              </span>
-                            <h4>You are a brand to offer a great culinary experience to the audience</h4>
-                            <p>Being a chef means you alone are the master of your dish. You are judged by each and every person's plate that goes out of the kitchen. You will have to maintain your rating as it is important and impacts your profile...</p>
-                            <a class="viBl" href="blogdetails.html">View</a>
-                        </a>
-                    </div>
-                    <div class="blogCta">
-                        <a href="blogdetails.html">
-                            <span>
-                <img src="./assets/images/blog.jpg" alt="" />
-              </span>
-                            <h4>What it's like being a freelancer as an event manager at caterbinge</h4>
-                            <p>
-                                An event manager is incharge of planning, organizing and executing different sizes of events, here at Caterbinge you are the manager to look after the entire workflow of serving food on the table and to ensure that everything is being served timely...
-                            </p>
-                            <a class="viBl" href="blogdetails.html">View</a>
-                        </a>
-                    </div>
-                </div>
+      <div class="howItWrap padMd clearfix">
+        <span class="homeHeading">
+          <h3>Blogs</h3>
+        </span>
+        <div class="overScroll">
+          <div class="overScrollInnTwo">
+            <div class="blogCta">
+              <a href="blogdetails.html">
+                <span>
+                  <img src="./assets/images/blog.jpg" alt="" />
+                </span>
+                <h4>Tips to do catering right</h4>
+                <p>
+                  There are a lot of things to consider while choosing a menu to be most suitable for all your guests, taste preferences and
+                  special dietary requirements. Ordering from is Halal-certified caterer is hard these days...
+                </p>
+                <a class="viBl" href="blogdetails.html">View</a>
+              </a>
             </div>
+            <div class="blogCta">
+              <a href="blogdetails.html">
+                <span>
+                  <img src="./assets/images/blog.jpg" alt="" />
+                </span>
+                <h4>You are a brand to offer a great culinary experience to the audience</h4>
+                <p>Being a chef means you alone are the master of your dish. You are judged by each and every person's plate
+                  that goes out of the kitchen. You will have to maintain your rating as it is important and impacts your
+                  profile...</p>
+                <a class="viBl" href="blogdetails.html">View</a>
+              </a>
+            </div>
+            <div class="blogCta">
+              <a href="blogdetails.html">
+                <span>
+                  <img src="./assets/images/blog.jpg" alt="" />
+                </span>
+                <h4>What it's like being a freelancer as an event manager at caterbinge</h4>
+                <p>
+                  An event manager is incharge of planning, organizing and executing different sizes of events, here at Caterbinge you are
+                  the manager to look after the entire workflow of serving food on the table and to ensure that everything
+                  is being served timely...
+                </p>
+                <a class="viBl" href="blogdetails.html">View</a>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--   Blogs  -->
 
     <!--  Testimonials  -->
     <section class="howItOut overScroll">
-        <div class="howItWrap padMd clearfix">
-            <span class="homeHeading">
-        <h3>Word on the street</h3>
-      </span>
-            <div class="overScroll">
-                <div class="overScrollInn">
-                    <div class="testiCta">
-                        <span>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <!-- <i class="fa fa-star no"></i> -->
-            </span>
-                        <!-- <h3>Outstanding quality</h3> -->
-                        <p>
-                            Chicken biriyani and majestic chicken were so flavoursome, but a little too spicy for my palate and was cooked truly in a Hyderabadi style, the raita complemented the spiciness perfectly.
-                        </p>
-                        <h4> Srinivas Rao</h4>
-                    </div>
-                    <div class="testiCta">
-                        <span>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </span>
-                        <!-- <h3>Outstanding quality</h3> -->
-                        <p>Great food.. Potato wedges, Butter garlic prawn all were delicious. Dine in experience was good.</p>
-                        <h4>Durga Mahesh</h4>
-                    </div>
-                    <div class="testiCta">
-                        <span>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </span>
-                        <!-- <h3>Outstanding quality</h3> -->
-                        <p>Amazingly hidden great aroma and spices with absolutely tender peices of mutton. When I ate the first spoon it was an explosion of flavors in my mouth. It was unexpected and very good.</p>
-                        <h4>Zilani</h4>
-                    </div>
-                    <div class="testiCta">
-                        <span>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-             <!--  <i class="fa fa-star"></i> -->
-            </span>
-                        <!-- <h3>Outstanding quality</h3> -->
-                        <p>I really loved the cilantro fish. It was well balanced, not seasoned too much, which is a good thing because I could taste the fish; not just the spices.</p>
-                        <h4>Kiran Kumar</h4>
-                    </div>
-                </div>
+      <div class="howItWrap padMd clearfix">
+        <span class="homeHeading">
+          <h3>Word on the street</h3>
+        </span>
+        <div class="overScroll">
+          <div class="overScrollInn">
+            <div class="testiCta">
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <!-- <i class="fa fa-star no"></i> -->
+              </span>
+              <!-- <h3>Outstanding quality</h3> -->
+              <p>
+                Chicken biriyani and majestic chicken were so flavoursome, but a little too spicy for my palate and was cooked truly in a
+                Hyderabadi style, the raita complemented the spiciness perfectly.
+              </p>
+              <h4> Srinivas Rao</h4>
             </div>
+            <div class="testiCta">
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </span>
+              <!-- <h3>Outstanding quality</h3> -->
+              <p>Great food.. Potato wedges, Butter garlic prawn all were delicious. Dine in experience was good.</p>
+              <h4>Durga Mahesh</h4>
+            </div>
+            <div class="testiCta">
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </span>
+              <!-- <h3>Outstanding quality</h3> -->
+              <p>Amazingly hidden great aroma and spices with absolutely tender peices of mutton. When I ate the first spoon
+                it was an explosion of flavors in my mouth. It was unexpected and very good.</p>
+              <h4>Zilani</h4>
+            </div>
+            <div class="testiCta">
+              <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <!--  <i class="fa fa-star"></i> -->
+              </span>
+              <!-- <h3>Outstanding quality</h3> -->
+              <p>I really loved the cilantro fish. It was well balanced, not seasoned too much, which is a good thing because
+                I could taste the fish; not just the spices.</p>
+              <h4>Kiran Kumar</h4>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Testimonials -->
 

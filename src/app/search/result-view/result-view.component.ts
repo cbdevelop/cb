@@ -11,6 +11,7 @@ import { MobilePreviewComponent } from '../mobile-preview/mobile-preview.compone
 import { ChefCatPopupComponent } from '../chef-cat-popup/chef-cat-popup.component';
 import { CommentsComponent } from '../../shared/comments/comments.component';
 import { UserService } from '../../services/user_service/user.service';
+import { AlertsService } from '../../services/alerts.service';
 
 @Component({
   selector: 'app-result-view',
@@ -25,8 +26,9 @@ export class ResultViewComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     public service: MasterService,
-    private userSerObj:UserService,
-    private modalService: NgbModal
+    private userSerObj: UserService,
+    private modalService: NgbModal,
+    private alertsObj: AlertsService
   ) {
 
   }
@@ -137,24 +139,28 @@ export class ResultViewComponent implements OnInit {
     modalRef.componentInstance.dishId = disId;
   }
 
-  /* open pop up if cuisnes are there*/ 
+  /* open pop up if cuisnes are there*/
   DishClicked(menucategoryid: number, disId) {
     console.log(disId);
     if (this.isDishSelected(menucategoryid, disId)) {
       console.log('selected');
       var arr = this.service.dishArray.filter(x => x.id == disId);
 
-      if (this.getCuisinesArr(arr[0].id)) {
+      if (arr[0].Cuisine != "" && this.getCuisinesArr(arr[0].id).length) {
         const modalRef = this.modalService.open(ChefCatPopupComponent);
         modalRef.componentInstance.cat_id = menucategoryid;
         modalRef.componentInstance.dishId = disId;
       } else if (arr.length) {
+        this.alertsObj.openAlert({ message: 'This Dish already added', type: 'warning' });
 
+        // const modalRef = this.modalService.open(AlertsComponent);
+        
+        // modalRef.componentInstance.alert = {message:'Already Added',type:'warning'};
       }
 
     } else {
       var arr = this.service.dishArray.filter(x => x.id == disId);
-      console.log(this.getCuisinesArr(arr[0].id));
+
       if (this.getCuisinesArr(arr[0].id).length) {
         const modalRef = this.modalService.open(ChefCatPopupComponent);
         modalRef.componentInstance.cat_id = menucategoryid;
@@ -193,8 +199,8 @@ export class ResultViewComponent implements OnInit {
   }
 
   onCheckout() {
-    if(this.userSerObj.userId){
-      
+    if (this.userSerObj.userId) {
+
     }
     if (this.service.selectedDishArr.length) {
       this.router.navigate(['../chef'], { relativeTo: this.route });

@@ -1,7 +1,7 @@
 <div class="foodPop">
   <div class="foodPopWrap">
     <div class="foodPopInn">
-      <div class="foodPopInnImg">
+      <div class="foodPopInnImg" *ngIf="dishDetails.Logo !=''">
         <img src="./assets/images/addtheme.jpg" alt="" />
       </div>
       <h2> {{ dishDetails.Dish_Name }}</h2>

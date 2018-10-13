@@ -37,9 +37,9 @@
           [owlDateTime]="dt1" hour12Timer="true" [owlDateTimeTrigger]="dt1">
         <owl-date-time #dt1></owl-date-time>
       </div>
-      <div class="select time" *ngIf="session !== ''">
+      <div class="select time" *ngIf="masterObj.session !== ''">
         <label>You're ordering for</label>
-        <div class="session"> {{ session }}</div>
+        <div class="session"> {{ masterObj.session }}</div>
       </div>
       <div class="seaBtn">
         <input type="button" value="Search" (click)="onSearch(masterObj.searchObj)" class="seaButton" />

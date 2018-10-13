@@ -1,17 +1,18 @@
 <div class="filterTp clearfix">
-    <div class="filBtn">
-      <a  [ngClass]="goldFlag ? 'Act' : ''" (click)="onlyGoldchef()">By Golden Chefs</a>
-      <a [ngClass]="nonVegFlag ? 'Act' : ''" (click)="onlyNonveg()" >Non-Veg</a>
-    </div>
-    <div class="">
-
-      <angular2-multiselect [data]="menuList" [(ngModel)]="selectedItems" [settings]="settings" (onSelect)="menuSelect($event)"
-        (onDeSelect)="menuDeSelect($event)" (onSelectAll)="SelectAll($event)" (onDeSelectAll)="DeSelectAll($event)">
-      </angular2-multiselect>
-    </div>
+  <div class="filBtn">
+ 
+    <a  (click)="onlyGoldchef()">By Golden Chefs</a>
+    <a [ngClass]="nonVegFlag ? 'Act' : ''" (click)="onlyNonveg()">Non-Veg</a>
   </div>
+  <div class="">
+
+    <angular2-multiselect [data]="menuList" [(ngModel)]="selectedItems" [settings]="settings" (onSelect)="menuSelect($event)"
+      (onDeSelect)="menuDeSelect($event)" (onSelectAll)="SelectAll($event)" (onDeSelectAll)="DeSelectAll($event)">
+    </angular2-multiselect>
+  </div>
+</div>
 
 
-  <p>
-    <a class="modSea" (click)="openModified()">Modify your search</a>
-  </p>
+<p>
+  <a class="modSea" (click)="openModified()">Modify your search</a>
+</p>

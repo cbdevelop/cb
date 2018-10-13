@@ -9,7 +9,7 @@
   <!-- new code 
   -->
 
-  <div class="resultWrap" id="starters">
+  <div class="resultWrap" id="starters" *ngIf="service.startersArray.length">
     <h2>Starters...</h2>
     <ul class="">
       <li *ngFor="let dish of service.startersArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
@@ -21,7 +21,7 @@
           <p> {{ dish.Description }} </p>
           <div class="foodBtn clearfix">
 
-            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' : 'foodNonVeg' ">
+            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' :  (dish.Category_Type == 2 ? 'foodNonVeg' :'') ">
             </a>
             <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
             <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="getCuisinesArr(dish.id).length"> {{ getCuisinesArr(dish.id).length }}+ Cuisines </a>
@@ -32,7 +32,7 @@
     </ul>
   </div>
 
-  <div class="resultWrap" id="snacks">
+  <div class="resultWrap" id="snacks" *ngIf="service.snackArray.length">
     <h2>Snacks ...</h2>
     <ul class="">
       <li *ngFor="let dish of service.snackArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
@@ -44,7 +44,7 @@
           <p> {{ dish.Description }} </p>
           <div class="foodBtn clearfix">
 
-            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' : 'foodNonVeg' ">
+            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' : (dish.Category_Type == 2 ? 'foodNonVeg' :'') ">
             </a>
             <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
             <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="getCuisinesArr(dish.id).length"> {{ getCuisinesArr(dish.id).length }}+ Cuisines </a>
@@ -55,7 +55,7 @@
     </ul>
   </div>
 
-  <div class="resultWrap" id="breads">
+  <div class="resultWrap" id="breads" *ngIf="service.breadsArray.length">
     <h2>Breads...</h2>
     <ul class="">
       <li *ngFor="let dish of service.breadsArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
@@ -67,7 +67,7 @@
           <p> {{ dish.Description }} </p>
           <div class="foodBtn clearfix">
 
-            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' : 'foodNonVeg' ">
+            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' :  (dish.Category_Type == 2 ? 'foodNonVeg' :'') ">
             </a>
             <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
             <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="getCuisinesArr(dish.id).length"> {{ getCuisinesArr(dish.id).length }}+ Cuisines </a>
@@ -78,7 +78,7 @@
     </ul>
   </div>
 
-  <div class="resultWrap" id="main">
+  <div class="resultWrap" id="main" *ngIf="service.MainCourseArray.length">
     <h2>Main Course...</h2>
     <ul class="">
       <li *ngFor="let dish of service.MainCourseArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
@@ -90,7 +90,7 @@
           <p> {{ dish.Description }} </p>
           <div class="foodBtn clearfix">
 
-            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' : 'foodNonVeg' ">
+            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' :  (dish.Category_Type == 2 ? 'foodNonVeg' :'') ">
             </a>
             <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
             <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="getCuisinesArr(dish.id).length"> {{ getCuisinesArr(dish.id).length }}+ Cuisines </a>
@@ -101,7 +101,7 @@
     </ul>
   </div>
 
-  <div class="resultWrap" id="salads">
+  <div class="resultWrap" id="salads" *ngIf="service.saladsArray.length">
     <h2>Salads and Extras...</h2>
     <ul class="">
       <li *ngFor="let dish of service.saladsArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
@@ -113,7 +113,7 @@
           <p> {{ dish.Description }} </p>
           <div class="foodBtn clearfix">
 
-            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' : 'foodNonVeg' ">
+            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' :  (dish.Category_Type == 2 ? 'foodNonVeg' :'') ">
             </a>
             <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
             <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="getCuisinesArr(dish.id).length"> {{ getCuisinesArr(dish.id).length }}+ Cuisines </a>
@@ -124,7 +124,7 @@
     </ul>
   </div>
 
-  <div class="resultWrap" id="soup">
+  <div class="resultWrap" id="soup" *ngIf="service.soupArray.length">
     <h2>Soups...</h2>
     <ul class="">
       <li *ngFor="let dish of service.soupArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
@@ -136,7 +136,7 @@
           <p> {{ dish.Description }} </p>
           <div class="foodBtn clearfix">
 
-            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' : 'foodNonVeg' ">
+            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' :  (dish.Category_Type == 2 ? 'foodNonVeg' :'') ">
             </a>
             <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
             <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="getCuisinesArr(dish.id).length"> {{ getCuisinesArr(dish.id).length }}+ Cuisines </a>
@@ -147,7 +147,7 @@
     </ul>
   </div>
 
-  <div class="resultWrap" id="beverges">
+  <div class="resultWrap" id="beverges" *ngIf="service.beverges_drinkArray.length">
     <h2>Beverages and Drinks...</h2>
     <ul class="">
       <li *ngFor="let dish of service.beverges_drinkArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
@@ -159,7 +159,7 @@
           <p> {{ dish.Description }} </p>
           <div class="foodBtn clearfix">
 
-            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' : 'foodNonVeg' ">
+            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' :  (dish.Category_Type == 2 ? 'foodNonVeg' :'') ">
             </a>
             <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
             <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="getCuisinesArr(dish.id).length"> {{ getCuisinesArr(dish.id).length }}+ Cuisines </a>
@@ -170,7 +170,7 @@
     </ul>
   </div>
 
-  <div class="resultWrap" id="desserts">
+  <div class="resultWrap" id="desserts" *ngIf="service.desertsArray.length">
     <h2>Desserts and Ice cream...</h2>
     <ul class="">
       <li *ngFor="let dish of service.desertsArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
@@ -182,7 +182,7 @@
           <p> {{ dish.Description }} </p>
           <div class="foodBtn clearfix">
 
-            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' : 'foodNonVeg' ">
+            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' :  (dish.Category_Type == 2 ? 'foodNonVeg' :'') ">
             </a>
             <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
             <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="getCuisinesArr(dish.id).length"> {{ getCuisinesArr(dish.id).length }}+ Cuisines </a>
@@ -193,7 +193,7 @@
     </ul>
   </div>
 
-  <div class="resultWrap" id="stalls">
+  <div class="resultWrap" id="stalls" *ngIf="service.stallsArray.length">
     <h2>Stalls and Miscellaneous...</h2>
     <ul class="">
       <li *ngFor="let dish of service.stallsArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
@@ -205,7 +205,7 @@
           <p> {{ dish.Description }} </p>
           <div class="foodBtn clearfix">
 
-            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' : 'foodNonVeg' ">
+            <a href="javascript:void(0)" title="Veg" [ngClass]=" dish.Category_Type == 1 ? 'foodVeg' :  (dish.Category_Type == 2 ? 'foodNonVeg' :'') ">
             </a>
             <a href="javascript:void(0)" title="Fevarete" class="fa fa-heart-o favIcon"></a>
             <a href="javascript:void(0)" title="Title test" class="foodLink" *ngIf="getCuisinesArr(dish.id).length"> {{ getCuisinesArr(dish.id).length }}+ Cuisines </a>

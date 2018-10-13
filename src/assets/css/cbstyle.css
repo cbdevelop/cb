@@ -2767,7 +2767,7 @@ footer {
 .chefDet p {
     display: inline-block;
     padding: 0px 0px 0px 5px;
-    width: 150px;
+    width: 100px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -2788,7 +2788,7 @@ footer {
 
 .chPopOut,
 .estPopOut {
-    max-width: 800px;
+    /* max-width: 800px;
     margin: 0px auto;
     position: fixed;
     z-index: 100010;
@@ -2801,7 +2801,45 @@ footer {
     min-height: 50%;
     max-height: 90%;
     border-radius: 5px;
-    padding: 30px;
+    padding: 30px; */
+
+    position: fixed;
+    z-index: 100010;
+
+    padding: 20px 0px;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.chPopInn {
+    width: 92%;
+    max-width: 800px;
+    margin: 0px auto 20px;
+    left: 0px;
+    right: 0px;
+    top: 3%;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0px 16px 18px 0px rgba(46,51,51,0.2);
+    padding: 25px;
+}
+
+.promPopInn {
+    width: 92%;
+    max-width: 550px;
+    margin: 0px auto 20px;
+    left: 0px;
+    right: 0px;
+    top: 3%;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0px 16px 18px 0px rgba(46,51,51,0.2);
+    padding: 25px 25px 10px;
 }
 
 .estPopOut {
@@ -3354,6 +3392,8 @@ footer {
 .filBtn {
     float: left;
     margin: 8px;
+    z-index: 9999;
+    position: relative;
 }
 
 .filBtn a {
@@ -3927,6 +3967,7 @@ footer {
 }
 
 .promPop {
+    /*
     width: 550px;
     margin: 0px auto;
     position: fixed;
@@ -3941,6 +3982,17 @@ footer {
     max-height: 90%;
     border-radius: 5px;
     padding: 20px 20px 10px 20px;
+    */
+    position: fixed;
+    z-index: 100010;
+
+    padding: 20px 0px;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 .promtaps {

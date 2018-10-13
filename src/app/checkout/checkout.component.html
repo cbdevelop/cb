@@ -1,49 +1,49 @@
 <div id="home"></div>
-<header class="staticHead scrollAct">
-    <section class="headInn clearfix">
-        <div class="logo">
-            <a [routerLink]="'/'" class="logoImg"></a>
-        </div>
+<header  class="staticHead scrollAct">
+  <section class="headInn clearfix">
+    <div class="logo">
+      <a [routerLink]="'/'" class="logoImg"></a>
+    </div>
 
-        <div class="nav-item dropdown">
+    <div class="nav-item dropdown" ngbDropdown>
 
-            <div class="signWrap d-inline-block clearfix" ngbDropdown role="group">
-                <a>
-                    <span class="fa fa-user-o siIcon" ngbDropdownToggle></span>
-                </a>
-                <span class="fa fa-bars menuIcon" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"></span>
-                <div class="dropdown-menu" ngbDropdownMenu>
-                    <a href="" class="dropdown-item" routerLink="/profile">Profile</a>
-                    <a href="" class="dropdown-item" routerLink="/orders">Orders</a>
-                    <a href="javascript:void(0)" class="dropdown-item logout">Log Out</a>
-                </div>
-            </div>
-        </div>
+    <div class="signWrap clearfix">
+      <a  (click)="openSign()">
+      <span class="fa fa-user-o siIcon"></span>
+    </a>
+      <span class="fa fa-bars menuIcon" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"></span>
+    </div>
+    <!-- <div class="logInInn" ngbDropdownMenu>
+        <a href="" routerLink="/profile">Profile</a>
+        <a href="" routerLink="/orders">Orders</a>
+        <a href="javascript:void(0)" class="logout">Log Out</a>
+    </div> -->
+    
+    </div>
 
-        <nav [ngClass]="isCollapsed ? 'show' : ''">
-            <ul class="clearfix">
-                <li>
-                    <a [ngx-scroll-to]="'#home'" [routerLink]="'/'">Home</a>
-                </li>
-                <li>
-                    <a [ngx-scroll-to]="'#howitworks'" [routerLink]="'/'">How it Works</a>
-                </li>
-                <li>
-                    <a [ngx-scroll-to]="'#about'" [routerLink]="'/'">About Us</a>
-                </li>
-                <li>
-                    <a [ngx-scroll-to]="'#choose'" [routerLink]="'/'">Choose Us</a>
-                </li>
-                <li>
-                    <a [ngx-scroll-to]="'#partner'" [routerLink]="'/'">Partners</a>
-                </li>
-                <li>
-                    <a [routerLink]="['/contact']">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
-    </section>
+    <nav  [ngClass]="isCollapsed ? 'show' : ''">
+      <ul class="clearfix">
+        <li>
+          <a [ngx-scroll-to]="'#home'" [routerLink]="'/'" >Home</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#howitworks'" [routerLink]="'/'">How it Works</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#about'" [routerLink]="'/'">About Us</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#choose'" [routerLink]="'/'">Choose Us</a>
+        </li>
+        <li>
+          <a [ngx-scroll-to]="'#partner'" [routerLink]="'/'">Partners</a>
+        </li>
+        <li>
+          <a [routerLink]="['/contact']">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
 </header>
 
 
@@ -51,13 +51,25 @@
     <app-menu></app-menu>
     <router-outlet></router-outlet>
 </section>
-
+<div class="responsiveCart">
+    <div class="resPro" (click)="openPromo()">Have a Promo code</div>
+    <div class="clearfix">
+      <a (click)="onproceed()" class="resBtn"><span>{{ masterObj.selectedDishArr.length }}</span>Check out</a>
+      <a href="javascript:void(0)" class="resCart" (click)="opencat()">
+          <span>{{ masterObj.selectedDishArr.length }}</span>
+        <img src="./assets/images/cart.svg" alt=""/>
+      </a>
+      <a href="javascript:void(0)" class="resCom"  (click)="onCommentPopup()">
+        <img src="./assets/images/commenting.svg" alt=""/>
+      </a>
+    </div>
+  </div>
 <div class="stepWrap">
     <ul>
-        <li title="Title Text Here..."><a href="javascript:void(0)"><span>Step</span>1</a></li>
-        <li title="Title Text Here..." class="Act"><a href="javascript:void(0)"><span>Step</span>2</a></li>
-        <li title="Title Text Here..."><a href="javascript:void(0)"><span>Step</span>3</a></li>
-        <li title="Title Text Here..."><a href="javascript:void(0)"><span>Step</span>4</a></li>
+      <li title="Title Text Here..."  class="Act"><a href="javascript:void(0)"><span>Step</span>1</a></li>
+      <li title="Title Text Here..."  class="Act"><a href="javascript:void(0)"><span>Step</span>2</a></li>
+      <li title="Title Text Here..."><a href="javascript:void(0)"><span>Step</span>3</a></li>
+      <li title="Title Text Here..."><a href="javascript:void(0)"><span>Step</span>4</a></li>
     </ul>
 </div>
 

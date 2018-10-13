@@ -25,9 +25,6 @@ export class FilterComponent implements OnInit {
     // customize default values of popovers used by this component tree
     config.placement = 'bottom';
     config.triggers = 'click';
-  }
-  ngOnInit() {
-    // this.all_categories = this.service.alldishes;
     this.menuList = [
       { 'id': 1, 'itemName': 'India' },
       { 'id': 2, 'itemName': 'Singapore' },
@@ -47,6 +44,12 @@ export class FilterComponent implements OnInit {
       badgeShowLimit: 2,
       enableSearchFilter: true
     };
+  }
+  ngOnInit() {
+    // this.all_categories = this.service.alldishes;
+
+
+    console.log(this.nonVegFlag)
   }
 
 
@@ -70,11 +73,11 @@ export class FilterComponent implements OnInit {
   }
 
   onlyGoldchef() {
-    this.nonVegFlag = !this.nonVegFlag;
+    this.goldFlag = !this.goldFlag;
   }
 
   onlyNonveg() {
-    console.log(this.nonVegFlag);
+
     this.nonVegFlag = !this.nonVegFlag;
     if (this.nonVegFlag) {
       this.masterObj.dishArray = this.masterObj.masterDish.filter(x => x.Category_Type === 2);

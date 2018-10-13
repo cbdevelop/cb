@@ -10,6 +10,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal/modal';
 import { ModifySearchComponent } from '../shared/modify-search/modify-search.component';
 import { AlertsComponent } from '../shared/alerts/alerts.component';
 import { alert } from '../shared/models/alert.model';
+import { DatePipe } from '@angular/common';
 
 
 @Component({
@@ -19,12 +20,14 @@ import { alert } from '../shared/models/alert.model';
 })
 export class HomeComponent implements OnInit {
   alert: alert = { type: 'success', message: '' };
-  public searchObj: SearchModel = { location: [
-  ], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: new Date() };
+  public searchObj: SearchModel = {
+    location: [
+    ], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: new Date()
+  };
 
   public homeForm: FormGroup;
 
-  locationArr = [  ];
+  locationArr = [];
 
   serviceTypeArr = [
 
@@ -56,14 +59,11 @@ export class HomeComponent implements OnInit {
     private fb: FormBuilder,
     public masterObj: MasterService,
     public modalService: NgbModal,
+    private datepipe: DatePipe
   ) {
     this.barwidth = 0;
-
-    // this.cntevnt = this.dancingNumbers(this.eventServed);
-    // this.cntchef = this.dancingNumbers(this.no_chefs);
-    // this.cntmanager = this.dancingNumbers(this.no_eventManager);
-    // this.cntusers = this.dancingNumbers(this.users);
     this.dancingNumbers();
+
     this.homeForm = this.fb.group({
       location: [[], Validators.required],
       serviceType: [[], Validators.required],
@@ -71,6 +71,63 @@ export class HomeComponent implements OnInit {
       nonVegAttnd: [null, [Validators.required, Validators.pattern('^[1-9]+[0-9]*$')]],
       datetime: ['', Validators.required]
     });
+
+    this.locationArr = [
+      { 'id': 1, 'itemName': 'Ameerpet' },
+      { 'id': 2, 'itemName': 'Dilsuknagar' },
+      { 'id': 3, 'itemName': 'SR Nagar' },
+      { 'id': 4, 'itemName': 'Athapur' },
+      { 'id': 5, 'itemName': 'Koti' },
+      { 'id': 6, 'itemName': 'Khairathabad' },
+      { 'id': 7, 'itemName': 'Kothapet' },
+      { 'id': 8, 'itemName': 'Secundrabad' }
+    ];
+
+    this.serviceTypeArr = [
+      { 'id': 1, 'itemName': 'Buffet' },
+      { 'id': 2, 'itemName': 'Lunch' },
+      { 'id': 3, 'itemName': 'Dinner' }
+    ];
+
+    this.settings = {
+      singleSelection: true,
+      text: 'Select',
+      enableSearchFilter: true,
+      showCheckbox: false
+    };
+  }
+
+
+  ngOnInit() {
+    this.selectedTime(null);
+
+  }
+
+  onlyNumberKey(event) {
+    const pattern = /[0-9]/;
+    const inputChar = String.fromCharCode(event.charCode);
+    if (event.keyCode !== 9 && event.keyCode !== 8 && event.keyCode !== 13 && !pattern.test(inputChar)) {
+      event.preventDefault();
+    }
+  }
+  // Locations
+  LocationSelect(item: any) {
+    console.log(item);
+    // this.masterObj.searchObj.location = item;
+  }
+  LocationDeSelect(item: any) {
+    console.log(item);
+    // this.masterObj.searchObj.location = item;
+  }
+
+  // Services
+  ServiceSelect(item: any) {
+    // console.log(item);
+    // this.masterObj.searchObj.serviceType = item;
+  }
+  ServiceDeSelect(item: any) {
+    // console.log(item);
+    // this.masterObj.searchObj.serviceType = item;
   }
 
 
@@ -112,62 +169,30 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  ngOnInit() {
-    console.log('locationData', this.masterObj.searchObj.location);
-    this.locationArr = [
-      { 'id': 1, 'itemName': 'Ameerpet' },
-      { 'id': 2, 'itemName': 'Dilsuknagar' },
-      { 'id': 3, 'itemName': 'SR Nagar' },
-      { 'id': 4, 'itemName': 'Athapur' },
-      { 'id': 5, 'itemName': 'Koti' },
-      { 'id': 6, 'itemName': 'Khairathabad' },
-      { 'id': 7, 'itemName': 'Kothapet' },
-      { 'id': 8, 'itemName': 'Secundrabad' }
-    ];
 
-    this.serviceTypeArr = [
-      { 'id': 1, 'itemName': 'Buffet' },
-      { 'id': 2, 'itemName': 'Lunch' },
-      { 'id': 3, 'itemName': 'Dinner' }
-    ];
+  selectedTime(evt) {
+    console.log(evt, this.masterObj.searchObj.datetime < new Date());
 
-    this.settings = {
-      singleSelection: true,
-      text: 'Select',
-      enableSearchFilter: true,
-      showCheckbox: false
-    };
-
-  }
-  onlyNumberKey(event) {
-    const pattern = /[0-9]/;
-    const inputChar = String.fromCharCode(event.charCode);
-    if (event.keyCode !== 8 && event.keyCode !== 13 && !pattern.test(inputChar)) {
-      event.preventDefault();
+    if (this.masterObj.searchObj.datetime < new Date()) {
+      const modalRef = this.modalService.open(AlertsComponent);
+      this.alert.message = 'Selected Event Date & Time should be upcoming date';
+      this.alert.type = 'warning';
+      modalRef.componentInstance.alert = this.alert;
+    } else {
+      let time = this.datepipe.transform(this.masterObj.searchObj.datetime, 'hh');
+      let tt = parseInt(time, 10);
+      if (tt > 7 && tt < 11)
+        this.masterObj.session = 'Break Fast';
+      else if (tt > 12 && tt < 15)
+        this.masterObj.session = 'Lunch';
+      else if (tt > 19 && tt < 22)
+        this.masterObj.session = 'Dinner';
+      else if (tt > 16 && tt < 18)
+        this.masterObj.session = 'Snack Time';
+      else {
+        this.masterObj.session = 'other';
+      }
     }
-  }
-  // Locations
-  LocationSelect(item: any) {
-    console.log(item);
-    // this.masterObj.searchObj.location = item;
-  }
-  LocationDeSelect(item: any) {
-    console.log(item);
-    // this.masterObj.searchObj.location = item;
-  }
-
-  // Services
-  ServiceSelect(item: any) {
-    // console.log(item);
-    // this.masterObj.searchObj.serviceType = item;
-  }
-  ServiceDeSelect(item: any) {
-    // console.log(item);
-    // this.masterObj.searchObj.serviceType = item;
-  }
-
-  selectedTime() {
-    console.log(this.searchObj.datetime);
   }
   getTotal() {
     this.masterObj.totalAttendees = 0;
@@ -187,11 +212,10 @@ export class HomeComponent implements OnInit {
 
     console.log(this.masterObj.searchObj, this.homeForm);
     if (this.homeForm.valid) {
-      this.masterObj.totalCost = 0;
-      this.masterObj.selectedDishArr = [];
-      const selectedDish = JSON.stringify(this.masterObj.selectedDishArr);
-
+      this.masterObj.clearData();
       localStorage.setItem('searchObj', JSON.stringify(this.masterObj.searchObj));
+      localStorage.setItem('session', this.masterObj.session);
+      
       this.routerObj.navigate(['../search']);
     } else {
       const modalRef = this.modalService.open(AlertsComponent);

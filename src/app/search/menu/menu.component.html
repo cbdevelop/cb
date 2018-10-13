@@ -2,31 +2,31 @@
     <div class="chefHeadInn clearfix">
         <ul class="clearfix head">
             <div class="scrTab clearfix" id="scrTap">
-                <li [ngClass]="masterObj.searchmenu_selection == 'starters' ? 'Act' : ''">
+                <li [ngClass]="masterObj.searchmenu_selection == 'starters' ? 'Act' : ''" *ngIf="masterObj.startersArray.length">
                     <a [ngx-scroll-to]="'#starters'">Starters</a>
                 </li>
-                <li [ngClass]="masterObj.searchmenu_selection == 'snacks' ? 'Act' : ''">
+                <li [ngClass]="masterObj.searchmenu_selection == 'snacks' ? 'Act' : ''" *ngIf="masterObj.snackArray.length">
                     <a [ngx-scroll-to]="'#snacks'">Snacks</a>
                 </li>
-                <li [ngClass]="masterObj.searchmenu_selection == 'breads' ? 'Act' : ''">
+                <li [ngClass]="masterObj.searchmenu_selection == 'breads' ? 'Act' : ''" *ngIf="masterObj.breadsArray.length">
                     <a [ngx-scroll-to]="'#breads'">Breads</a>
                 </li>
-                <li [ngClass]="masterObj.searchmenu_selection == 'main' ? 'Act' : ''">
+                <li [ngClass]="masterObj.searchmenu_selection == 'main' ? 'Act' : ''"  *ngIf="masterObj.MainCourseArray.length">
                     <a [ngx-scroll-to]="'#main'">Main Course</a>
                 </li>
-                <li [ngClass]="masterObj.searchmenu_selection == 'salads' ? 'Act' : ''">
+                <li [ngClass]="masterObj.searchmenu_selection == 'salads' ? 'Act' : ''" *ngIf="masterObj.saladsArray.length">
                     <a [ngx-scroll-to]="'#salads'">Salads</a>
                 </li>
-                <li [ngClass]="masterObj.searchmenu_selection == 'soup' ? 'Act' : ''">
+                <li [ngClass]="masterObj.searchmenu_selection == 'soup' ? 'Act' : ''" *ngIf="masterObj.soupArray.length">
                     <a [ngx-scroll-to]="'#soup'">Soups</a>
                 </li>
-                <li [ngClass]="masterObj.searchmenu_selection == 'beverges' ? 'Act' : ''">
+                <li [ngClass]="masterObj.searchmenu_selection == 'beverges' ? 'Act' : ''" *ngIf="masterObj.beverges_drinkArray.length">
                     <a [ngx-scroll-to]="'#beverges'">Beverages</a>
                 </li>
-                <li [ngClass]="masterObj.searchmenu_selection == 'desserts' ? 'Act' : ''">
+                <li [ngClass]="masterObj.searchmenu_selection == 'desserts' ? 'Act' : ''" *ngIf="masterObj.desertsArray.length">
                     <a [ngx-scroll-to]="'#desserts'">Desserts</a>
                 </li>
-                <li [ngClass]="masterObj.searchmenu_selection == 'stalls' ? 'Act' : ''">
+                <li [ngClass]="masterObj.searchmenu_selection == 'stalls' ? 'Act' : ''" *ngIf="masterObj.stallsArray.length">
                     <a [ngx-scroll-to]="'#stalls'">Stalls</a>
                 </li>
 

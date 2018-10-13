@@ -1,103 +1,104 @@
 <div class="chPopOut">
-  <div class="chPop clearfix">
-    <a (click)="onCrossClose()">
-      <span class="fa fa-close popClose"></span>
-    </a>
+  <div class="chPopInn">
+    <div class="chPop clearfix">
+      <a (click)="onCrossClose()">
+        <span class="fa fa-close popClose"></span>
+      </a>
 
-    <div class="chPopImg">
-      <img [src]="managerDetails.Profile_Image" alt="" />
-      <h3>{{ managerDetails.Name }}</h3>
-      <span>
-        <ngb-rating [(rate)]="managerDetails.Rating" [readonly]="true" max="5">
-          <ng-template let-fill="fill" let-index="index">
-            <span class="star" [class.filled]="fill === 100">
-              <span class="half" [style.width.%]="fill">&#9733;</span> &#9733;
-            </span>
-          </ng-template>
-        </ngb-rating>
-        <!-- <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 1 ? 'review': ''"></i>
+      <div class="chPopImg">
+        <img [src]="managerDetails.Profile_Image" alt="" />
+        <h3>{{ managerDetails.Name }}</h3>
+        <div>
+          <ngb-rating [(rate)]="managerDetails.Rating" [readonly]="true" max="5">
+            <ng-template let-fill="fill" let-index="index">
+              <span class="star" [class.filled]="fill === 100">
+                <span class="half" [style.width.%]="fill">&#9733;</span> &#9733;
+              </span>
+            </ng-template>
+          </ngb-rating>
+          <!-- <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 1 ? 'review': ''"></i>
         <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 2 ? 'review': ''"></i>
         <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 3 ? 'review': ''"></i>
         <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 4 ? 'review': ''"></i>
         <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 5 ? 'review': ''"></i> -->
-      </span>
-      <a href="javascript:void(0)" class="addBtn" (click)="addManager()">Add</a>
-      <ul class="ceri clearfix">
-        <li>
-          <img src="../../../../assets/images/whycho-1.png" alt="">CB Certified</li>
-        <li>
-          <img src="../../../../assets/images/whycho-1.png" alt="">CB Certified</li>
-      </ul>
-    </div>
+          </div>
+        <a href="javascript:void(0)" class="addBtn" (click)="addManager()">Add</a>
+        <ul class="ceri clearfix">
+          <li>
+            <img src="../../../../assets/images/whycho-1.png" alt="">CB Certified</li>
+          <li>
+            <img src="../../../../assets/images/whycho-1.png" alt="">CB Certified</li>
+        </ul>
+      </div>
 
-    <!-- Profile -->
-    <div class="chPopText">
+      <!-- Profile -->
+      <div class="chPopText">
 
-      <!-- <div class="chPopTab">
+        <!-- <div class="chPopTab">
         <a href="javascript:void(0)" class="Act" id="tab1">Profile</a>
         <a href="javascript:void(0)" id="tab2">Reviews</a>
         <a href="javascript:void(0)" id="tab3">Portfolio</a>
       </div> -->
 
-      <div class="chPopWrap">
+        <div class="chPopWrap">
 
-        <ngb-tabset>
-          <ngb-tab title="Profile" class="Act" id="tab1">
-            <ng-template ngbTabContent>
-              <div class="PopTabOne">
-                <div class="clearfix">
-                  <span>Full Name</span>:
-                  <p>{{ managerDetails.Name }}</p>
-                </div>
-                <div class="clearfix">
-                  <span>Cooking Exp</span>:
-                  <p>{{ managerDetails.Experience }} Years</p>
-                </div>
-                <div class="clearfix">
-                  <span>Base Price</span>:
-                  <p>{{ managerDetails.Price }}</p>
-                </div>
-                <div class="clearfix" *ngIf="managerDetails.Events_Managed !== ''">
-                  <span>Total events served</span>:
-                  <p>{{ managerDetails.Events_Managed }}</p>
-                </div>
-                <div class="clearfix" *ngIf="managerDetails.locality !== ''">
-                  <span>Locality</span>:
-                  <p> {{ managerDetails.locality }}</p>
-                </div>
-                <div class="clearfix" *ngIf="managerDetails.Proficiency !== ''">
-                  <span>Proficiency</span>:
-                  <p>{{ managerDetails.Proficiency }}</p>
-                </div>
-                <div class="clearfix" *ngIf="managerDetails.About !== ''">
-                  <span>About Chef:</span>
-                  <br>
-                  <b>
-                    {{ managerDetails.About }}
-                  </b>
-                </div>
-              </div>
-            </ng-template>
-          </ngb-tab>
-
-          <!-- Reviews -->
-          <ngb-tab title="Reviews" id="tab2">
-            <ng-template ngbTabContent>
-              <div class="PopTabTwo">
-                <div class="review" *ngFor="let rev of managerDetails.Rating">
-                  <h2>{{ rev.name }}</h2>
-                  <div class="ratChef">
-                    <i class="fa fa-star" [ngClass]="rev.Rating >= 1 ? 'review': ''"></i>
-                    <i class="fa fa-star" [ngClass]="rev.Rating >= 2 ? 'review': ''"></i>
-                    <i class="fa fa-star" [ngClass]="rev.Rating >= 3 ? 'review': ''"></i>
-                    <i class="fa fa-star" [ngClass]="rev.Rating >= 4 ? 'review': ''"></i>
-                    <i class="fa fa-star" [ngClass]="rev.Rating >= 5 ? 'review': ''"></i>
+          <ngb-tabset>
+            <ngb-tab title="Profile" class="Act" id="tab1">
+              <ng-template ngbTabContent>
+                <div class="PopTabOne">
+                  <div class="clearfix">
+                    <span>Full Name</span>:
+                    <p>{{ managerDetails.Name }}</p>
                   </div>
-                  <p>
-                    {{ rev.text }}
-                  </p>
+                  <div class="clearfix">
+                    <span>Cooking Exp</span>:
+                    <p>{{ managerDetails.Experience }} Years</p>
+                  </div>
+                  <div class="clearfix">
+                    <span>Base Price</span>:
+                    <p>{{ managerDetails.Price }}</p>
+                  </div>
+                  <div class="clearfix" *ngIf="managerDetails.Events_Managed !== ''">
+                    <span>Total events served</span>:
+                    <p>{{ managerDetails.Events_Managed }}</p>
+                  </div>
+                  <div class="clearfix" *ngIf="managerDetails.locality !== ''">
+                    <span>Locality</span>:
+                    <p> {{ managerDetails.locality }}</p>
+                  </div>
+                  <div class="clearfix" *ngIf="managerDetails.Proficiency !== ''">
+                    <span>Proficiency</span>:
+                    <p>{{ managerDetails.Proficiency }}</p>
+                  </div>
+                  <div class="clearfix" *ngIf="managerDetails.About !== ''">
+                    <span>About Chef:</span>
+                    <br>
+                    <b>
+                      {{ managerDetails.About }}
+                    </b>
+                  </div>
                 </div>
-                <!-- <div class="review">
+              </ng-template>
+            </ngb-tab>
+
+            <!-- Reviews -->
+            <ngb-tab title="Reviews" id="tab2">
+              <ng-template ngbTabContent>
+                <div class="PopTabTwo">
+                  <div class="review" *ngFor="let rev of managerDetails.Rating">
+                    <h2>{{ rev.name }}</h2>
+                    <div class="ratChef">
+                      <i class="fa fa-star" [ngClass]="rev.Rating >= 1 ? 'review': ''"></i>
+                      <i class="fa fa-star" [ngClass]="rev.Rating >= 2 ? 'review': ''"></i>
+                      <i class="fa fa-star" [ngClass]="rev.Rating >= 3 ? 'review': ''"></i>
+                      <i class="fa fa-star" [ngClass]="rev.Rating >= 4 ? 'review': ''"></i>
+                      <i class="fa fa-star" [ngClass]="rev.Rating >= 5 ? 'review': ''"></i>
+                    </div>
+                    <p>
+                      {{ rev.text }}
+                    </p>
+                  </div>
+                  <!-- <div class="review">
                   <h2>Heading Text Here...</h2>
                   <div class="ratChef">
                     <i class="fa fa-star"></i>
@@ -137,32 +138,33 @@
                     YearsLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
                   </p>
                 </div> -->
-              </div>
-            </ng-template>
-          </ngb-tab>
-
-          <!-- PortFolio -->
-          <div class="PopTabThree">
-
-            <ngb-tab title="Portfolio" id="tab3">
-              <ng-template ngbTabContent>
-                <div class="Portfolio">
-                  <img class="jbox-img" src="../../../../assets/images/port1.jpg" alt=" vannam mahesh" />
-                  <img class="jbox-img" src="../../../../assets/images/port2.jpg" alt="" />
-                  <img class="jbox-img" src="../../../../assets/images/port3.jpg" alt="" />
-                  <img class="jbox-img" src="../../../../assets/images/port4.jpg" alt="" />
-                  <img class="jbox-img" src="../../../../assets/images/port1.jpg" alt="" />
-                  <img class="jbox-img" src="../../../../assets/images/port2.jpg" alt="" />
-                  <img class="jbox-img" src="../../../../assets/images/port3.jpg" alt="" />
-                  <img class="jbox-img" src="../../../../assets/images/port4.jpg" alt="" />
                 </div>
               </ng-template>
             </ngb-tab>
 
-          </div>
+            <!-- PortFolio -->
+            <div class="PopTabThree">
 
-        </ngb-tabset>
+              <ngb-tab title="Portfolio" id="tab3">
+                <ng-template ngbTabContent>
+                  <div class="Portfolio">
+                    <img class="jbox-img" src="../../../../assets/images/port1.jpg" alt=" vannam mahesh" />
+                    <img class="jbox-img" src="../../../../assets/images/port2.jpg" alt="" />
+                    <img class="jbox-img" src="../../../../assets/images/port3.jpg" alt="" />
+                    <img class="jbox-img" src="../../../../assets/images/port4.jpg" alt="" />
+                    <img class="jbox-img" src="../../../../assets/images/port1.jpg" alt="" />
+                    <img class="jbox-img" src="../../../../assets/images/port2.jpg" alt="" />
+                    <img class="jbox-img" src="../../../../assets/images/port3.jpg" alt="" />
+                    <img class="jbox-img" src="../../../../assets/images/port4.jpg" alt="" />
+                  </div>
+                </ng-template>
+              </ngb-tab>
 
+            </div>
+
+          </ngb-tabset>
+
+        </div>
       </div>
     </div>
   </div>

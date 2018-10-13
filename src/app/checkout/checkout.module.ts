@@ -13,11 +13,13 @@ import { ProfileComponent } from './event-manager/profile/profile.component';
 import { AddMoreComponent } from './event-manager/addMore/addMore.component';
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { NgbModalModule, NgbCollapseModule,NgbModule, NgbActiveModal, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
-import { FooterModule, CommentsModule } from '../shared';
+import { NgbModalModule, NgbCollapseModule, NgbModule, NgbActiveModal, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { FooterModule, CommentsModule, SigninModule } from '../shared';
 import { MenuModule } from './components/menu/menu.module';
 import { ChefModule } from './chef/chef.module';
 import { EventManagerModule } from './event-manager/event-manager.module';
+import { MobilePreviewModule } from './components/mobile-preview/mobile-preview.module';
+import { SigninComponent } from '../shared/signin/signin.component';
 
 
 
@@ -35,7 +37,8 @@ import { EventManagerModule } from './event-manager/event-manager.module';
     EventManagerModule,
     MenuModule,
     NgbModule.forRoot(),
-    NgbDropdownModule
+    NgbDropdownModule, MobilePreviewModule,
+    SigninModule
   ],
   declarations: [
     CheckoutComponent
@@ -50,7 +53,8 @@ import { EventManagerModule } from './event-manager/event-manager.module';
     OrderCheckoutComponent,
     ChefProfileComponent,
     ProfileComponent,
-    AddMoreComponent
+    AddMoreComponent,
+    SigninComponent
   ]
 })
 
