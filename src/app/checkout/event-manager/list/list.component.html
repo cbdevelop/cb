@@ -22,7 +22,8 @@
     </div>
     <ul class="">
 
-      <li *ngFor="let item of masterobj.eventManagerList;let i= index">
+      <li *ngFor="let item of masterobj.eventManagerList;let i= index"
+      [ngClass]="isEvtSelected(item.id) ? 'foodAct' : '' ">
         <div class="chefCta clearfix" (click)="eventProfile(item.id)">
           <div class="chefImg">
             <img [src]="item.Profile_Image" alt="" />

@@ -42,7 +42,7 @@ export class OrderCheckoutComponent implements OnInit {
 
   remove(i){
     this.masterObj.totalCost -= this.masterObj.selectedEvtManager[i].Price;
-    this.masterObj.selectedEvtManager.splice(i);
+    this.masterObj.selectedEvtManager.splice(i,1);
     var selManager = JSON.stringify(this.masterObj.selectedEvtManager);
     localStorage.setItem("selManager", selManager);
     localStorage.setItem("cost",this.masterObj.totalCost.toString());

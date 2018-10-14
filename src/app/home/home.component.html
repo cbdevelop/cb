@@ -48,7 +48,7 @@
           <label>Date - Time</label>
           <input type="text" placeholder="DD/MM/YY HH:MM" class="datePic" formControlName="datetime" [(ngModel)]="masterObj.searchObj.datetime"
             [min]="min" [max]="max" [owlDateTime]="dt1" hour12Timer="true" [owlDateTimeTrigger]="dt1">
-          <owl-date-time #dt1 (afterPickerClosed)="selectedTime()"></owl-date-time>
+          <owl-date-time #dt1 (afterPickerClosed)="selectedTime($event)"></owl-date-time>
         </div>
         <div class="select time" *ngIf="session !== ''">
           <label>You're ordering for</label>
@@ -172,242 +172,210 @@
   </section>
   <!--   Why choose us  -->
 
-  <<<<<<< Updated upstream <!-- countWrap -->
-    <section class="countWrapOut" id="counter">
-      <div class="countWrap clearfix">
-        <div class="countCta clearfix">
-          <span>
-            =======
-            <!--  countWrap  -->
-            <section class="countWrapOut" id="counter">
-              <div class="countWrap clearfix">
-                <div class="countCta clearfix">
-                  <span>
-                    >>>>>>> Stashed changes
-                    <img src="./assets/images/count.png" alt="" />
-                  </span>
-                  <p>
-                    Events Served
-                    <i class="counter-value">{{ cntevnt }}</i>
-                  </p>
-                </div>
-                <div class="countCta clearfix">
-                  <span>
-                    <img src="./assets/images/count2.png" alt="" />
-                  </span>
-                  <<<<<<< Updated upstream <p>
-                    Chef's
-                    <i class="counter-value"> {{ cntchef }} </i>
-                    </p>
-                </div>
-                <div class="countCta clearfix">
-                  <span>
-                    <img src="./assets/images/count3.png" alt="" />
-                  </span>
-                  <p>
-                    Event Manager's
-                    <i class="counter-value">{{ cntmanager }}</i>
-                  </p>
-                </div>
-                <div class="countCta clearfix">
-                  <span>
-                    <img src="./assets/images/count4.png" alt="" />
-                  </span>
-                  <p>
-                    Users Sign Up
-                    <i class="counter-value">{{ cntusers }}</i>
-                  </p>
-                </div>
-              </div>
-            </section>
-            <!--  countWrap  -->
-            =======
-            <p>
-              Chef's
-              <i class="counter-value"> {{ cntchef }} </i>
-            </p>
-        </div>
-        <div class="countCta clearfix">
-          <span>
-            <img src="./assets/images/count3.png" alt="" />
-          </span>
-          <p>
-            Event Manager's
-            <i class="counter-value">{{ cntmanager }}</i>
-          </p>
-        </div>
-        <div class="countCta clearfix">
-          <span>
-            <img src="./assets/images/count4.png" alt="" />
-          </span>
-          <p>
-            Users Sign Up
-            <i class="counter-value">{{ cntusers }}</i>
-          </p>
-        </div>
-      </div>
-    </section>
-    <!--  countWrap  -->
-    >>>>>>> Stashed changes
+ 
+  <!--  countWrap  -->
+  <section class="countWrapOut" id="counter">
+    <div class="countWrap clearfix">
+      <div class="countCta clearfix">
+        <span>
 
-    <!--   Partners Wrap  -->
-    <section class="patWrapOut" id="partner">
-      <div class="patWrap clearfix">
-        <h3>Become a partner</h3>
-        <div class="patCta">
-          <a [routerLink]="['/addchef']">
-            <span>
-              <img src="./assets/images/chef.jpg" alt="" />
-              <div class="chefIcon">
-                <img src="./assets/images/chef-i.png" alt="" />
-              </div>
-            </span>
-            <h4>Chef</h4>
-            <p>Now become Independent and enjoy cooking without being exploited by any catering agent. Get leads more than you
-              can ever think of. Register with us now and brand yourself for your dishes, people are craving for your taste
-              already!
-            </p>
-            <div class="resMes">Click here to become a Chef</div>
-          </a>
-        </div>
-        <div class="patCta">
-          <a [routerLink]="['/addmanager']">
-            <span>
-              <img src="./assets/images/event.jpg" alt="" />
-              <div class="chefIcon">
-                <img src="./assets/images/event-i.png" alt="" />
-              </div>
-            </span>
-            <h4>Event Manager</h4>
-            <p>Got some management skills? Here is a great opportunity for you to earn some bucks out off your free time. Be
-              among the ones who are earning Rs. 3500 every day. Make your event a success too, register yourself to know
-              more.</p>
-            <div class="resMes">Click here to become a Event Manager</div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!--   Partners Wrap  -->
-
-    <!--   Blogs  -->
-    <section class="howItOut bgTwo">
-      <div class="howItWrap padMd clearfix">
-        <span class="homeHeading">
-          <h3>Blogs</h3>
+          <img src="./assets/images/count.png" alt="" />
         </span>
-        <div class="overScroll">
-          <div class="overScrollInnTwo">
-            <div class="blogCta">
-              <a href="blogdetails.html">
-                <span>
-                  <img src="./assets/images/blog.jpg" alt="" />
-                </span>
-                <h4>Tips to do catering right</h4>
-                <p>
-                  There are a lot of things to consider while choosing a menu to be most suitable for all your guests, taste preferences and
-                  special dietary requirements. Ordering from is Halal-certified caterer is hard these days...
-                </p>
-                <a class="viBl" href="blogdetails.html">View</a>
-              </a>
-            </div>
-            <div class="blogCta">
-              <a href="blogdetails.html">
-                <span>
-                  <img src="./assets/images/blog.jpg" alt="" />
-                </span>
-                <h4>You are a brand to offer a great culinary experience to the audience</h4>
-                <p>Being a chef means you alone are the master of your dish. You are judged by each and every person's plate
-                  that goes out of the kitchen. You will have to maintain your rating as it is important and impacts your
-                  profile...</p>
-                <a class="viBl" href="blogdetails.html">View</a>
-              </a>
-            </div>
-            <div class="blogCta">
-              <a href="blogdetails.html">
-                <span>
-                  <img src="./assets/images/blog.jpg" alt="" />
-                </span>
-                <h4>What it's like being a freelancer as an event manager at caterbinge</h4>
-                <p>
-                  An event manager is incharge of planning, organizing and executing different sizes of events, here at Caterbinge you are
-                  the manager to look after the entire workflow of serving food on the table and to ensure that everything
-                  is being served timely...
-                </p>
-                <a class="viBl" href="blogdetails.html">View</a>
-              </a>
-            </div>
-          </div>
-        </div>
+        <p>
+          Events Served
+          <i class="counter-value">{{ cntevnt }}</i>
+        </p>
       </div>
-    </section>
-    <!--   Blogs  -->
-
-    <!--  Testimonials  -->
-    <section class="howItOut overScroll">
-      <div class="howItWrap padMd clearfix">
-        <span class="homeHeading">
-          <h3>Word on the street</h3>
+      <div class="countCta clearfix">
+        <span>
+          <img src="./assets/images/count2.png" alt="" />
         </span>
-        <div class="overScroll">
-          <div class="overScrollInn">
-            <div class="testiCta">
+        <p>
+          Chef's
+          <i class="counter-value"> {{ cntchef }} </i>
+        </p>
+      </div>
+      <div class="countCta clearfix">
+        <span>
+          <img src="./assets/images/count3.png" alt="" />
+        </span>
+        <p>
+          Event Manager's
+          <i class="counter-value">{{ cntmanager }}</i>
+        </p>
+      </div>
+      <div class="countCta clearfix">
+        <span>
+          <img src="./assets/images/count4.png" alt="" />
+        </span>
+        <p>
+          Users Sign Up
+          <i class="counter-value">{{ cntusers }}</i>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--  countWrap  -->
+
+
+  <!--   Partners Wrap  -->
+  <section class="patWrapOut" id="partner">
+    <div class="patWrap clearfix">
+      <h3>Become a partner</h3>
+      <div class="patCta">
+        <a [routerLink]="['/addchef']">
+          <span>
+            <img src="./assets/images/chef.jpg" alt="" />
+            <div class="chefIcon">
+              <img src="./assets/images/chef-i.png" alt="" />
+            </div>
+          </span>
+          <h4>Chef</h4>
+          <p>Now become Independent and enjoy cooking without being exploited by any catering agent. Get leads more than you
+            can ever think of. Register with us now and brand yourself for your dishes, people are craving for your taste
+            already!
+          </p>
+          <div class="resMes">Click here to become a Chef</div>
+        </a>
+      </div>
+      <div class="patCta">
+        <a [routerLink]="['/addmanager']">
+          <span>
+            <img src="./assets/images/event.jpg" alt="" />
+            <div class="chefIcon">
+              <img src="./assets/images/event-i.png" alt="" />
+            </div>
+          </span>
+          <h4>Event Manager</h4>
+          <p>Got some management skills? Here is a great opportunity for you to earn some bucks out off your free time. Be among
+            the ones who are earning Rs. 3500 every day. Make your event a success too, register yourself to know more.
+          </p>
+          <div class="resMes">Click here to become a Event Manager</div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--   Partners Wrap  -->
+
+  <!--   Blogs  -->
+  <section class="howItOut bgTwo">
+    <div class="howItWrap padMd clearfix">
+      <span class="homeHeading">
+        <h3>Blogs</h3>
+      </span>
+      <div class="overScroll">
+        <div class="overScrollInnTwo">
+          <div class="blogCta">
+            <a href="blogdetails.html">
               <span>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <!-- <i class="fa fa-star no"></i> -->
+                <img src="./assets/images/blog.jpg" alt="" />
               </span>
-              <!-- <h3>Outstanding quality</h3> -->
+              <h4>Tips to do catering right</h4>
               <p>
-                Chicken biriyani and majestic chicken were so flavoursome, but a little too spicy for my palate and was cooked truly in a
-                Hyderabadi style, the raita complemented the spiciness perfectly.
+                There are a lot of things to consider while choosing a menu to be most suitable for all your guests, taste preferences and
+                special dietary requirements. Ordering from is Halal-certified caterer is hard these days...
               </p>
-              <h4> Srinivas Rao</h4>
-            </div>
-            <div class="testiCta">
+              <a class="viBl" href="blogdetails.html">View</a>
+            </a>
+          </div>
+          <div class="blogCta">
+            <a href="blogdetails.html">
               <span>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+                <img src="./assets/images/blog.jpg" alt="" />
               </span>
-              <!-- <h3>Outstanding quality</h3> -->
-              <p>Great food.. Potato wedges, Butter garlic prawn all were delicious. Dine in experience was good.</p>
-              <h4>Durga Mahesh</h4>
-            </div>
-            <div class="testiCta">
+              <h4>You are a brand to offer a great culinary experience to the audience</h4>
+              <p>Being a chef means you alone are the master of your dish. You are judged by each and every person's plate that
+                goes out of the kitchen. You will have to maintain your rating as it is important and impacts your profile...
+              </p>
+              <a class="viBl" href="blogdetails.html">View</a>
+            </a>
+          </div>
+          <div class="blogCta">
+            <a href="blogdetails.html">
               <span>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+                <img src="./assets/images/blog.jpg" alt="" />
               </span>
-              <!-- <h3>Outstanding quality</h3> -->
-              <p>Amazingly hidden great aroma and spices with absolutely tender peices of mutton. When I ate the first spoon
-                it was an explosion of flavors in my mouth. It was unexpected and very good.</p>
-              <h4>Zilani</h4>
-            </div>
-            <div class="testiCta">
-              <span>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <!--  <i class="fa fa-star"></i> -->
-              </span>
-              <!-- <h3>Outstanding quality</h3> -->
-              <p>I really loved the cilantro fish. It was well balanced, not seasoned too much, which is a good thing because
-                I could taste the fish; not just the spices.</p>
-              <h4>Kiran Kumar</h4>
-            </div>
+              <h4>What it's like being a freelancer as an event manager at caterbinge</h4>
+              <p>
+                An event manager is incharge of planning, organizing and executing different sizes of events, here at Caterbinge you are
+                the manager to look after the entire workflow of serving food on the table and to ensure that everything
+                is being served timely...
+              </p>
+              <a class="viBl" href="blogdetails.html">View</a>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Testimonials -->
+    </div>
+  </section>
+  <!--   Blogs  -->
+
+  <!--  Testimonials  -->
+  <section class="howItOut overScroll">
+    <div class="howItWrap padMd clearfix">
+      <span class="homeHeading">
+        <h3>Word on the street</h3>
+      </span>
+      <div class="overScroll">
+        <div class="overScrollInn">
+          <div class="testiCta">
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <!-- <i class="fa fa-star no"></i> -->
+            </span>
+            <!-- <h3>Outstanding quality</h3> -->
+            <p>
+              Chicken biriyani and majestic chicken were so flavoursome, but a little too spicy for my palate and was cooked truly in a
+              Hyderabadi style, the raita complemented the spiciness perfectly.
+            </p>
+            <h4> Srinivas Rao</h4>
+          </div>
+          <div class="testiCta">
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </span>
+            <!-- <h3>Outstanding quality</h3> -->
+            <p>Great food.. Potato wedges, Butter garlic prawn all were delicious. Dine in experience was good.</p>
+            <h4>Durga Mahesh</h4>
+          </div>
+          <div class="testiCta">
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </span>
+            <!-- <h3>Outstanding quality</h3> -->
+            <p>Amazingly hidden great aroma and spices with absolutely tender peices of mutton. When I ate the first spoon it
+              was an explosion of flavors in my mouth. It was unexpected and very good.</p>
+            <h4>Zilani</h4>
+          </div>
+          <div class="testiCta">
+            <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <!--  <i class="fa fa-star"></i> -->
+            </span>
+            <!-- <h3>Outstanding quality</h3> -->
+            <p>I really loved the cilantro fish. It was well balanced, not seasoned too much, which is a good thing because
+              I could taste the fish; not just the spices.</p>
+            <h4>Kiran Kumar</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials -->
 
 </section>
 <!-- Footer -->

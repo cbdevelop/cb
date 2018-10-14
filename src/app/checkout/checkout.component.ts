@@ -16,7 +16,7 @@ export class CheckoutComponent implements OnInit {
 
   isCollapsed = false;
   constructor(
-    private masterObj: MasterService,
+    public masterObj: MasterService,
     private commentService: NgbModal,
     private router:Router
   ) {

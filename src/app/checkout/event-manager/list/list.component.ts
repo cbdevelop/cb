@@ -30,7 +30,11 @@ export class ListComponent implements OnInit {
   openAddMore() {
     this.eventService.open(AddMoreComponent);
   }
+  isEvtSelected(id) {
+    let index = this.masterobj.selectedEvtManager.findIndex(x=> x.id==id);
+    return index == -1 ? false: true;
 
+  }
   onNoManager() {
     console.log(this.masterobj.evntManagerSelFlag);
     if (this.masterobj.evntManagerSelFlag) {
