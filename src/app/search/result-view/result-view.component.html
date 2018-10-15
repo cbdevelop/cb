@@ -10,7 +10,7 @@
   -->
 
   <div class="resultWrap" id="starters" *ngIf="service.startersArray.length">
-    <h2>Starters...</h2>
+    <h2>Starters</h2>
     <ul class="">
       <li *ngFor="let dish of service.startersArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
         <div class="foodCta" [ngClass]="dish.Logo =='' ? '' : 'foodCtaImg'" (click)="DishClicked(dish.Menu_Type,dish.id)">
@@ -33,7 +33,7 @@
   </div>
 
   <div class="resultWrap" id="snacks" *ngIf="service.snackArray.length">
-    <h2>Snacks ...</h2>
+    <h2>Snacks </h2>
     <ul class="">
       <li *ngFor="let dish of service.snackArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
         <div class="foodCta" [ngClass]="dish.Logo =='' ? '' : 'foodCtaImg'" (click)="DishClicked(dish.Menu_Type,dish.id)">
@@ -56,7 +56,7 @@
   </div>
 
   <div class="resultWrap" id="breads" *ngIf="service.breadsArray.length">
-    <h2>Breads...</h2>
+    <h2>Breads</h2>
     <ul class="">
       <li *ngFor="let dish of service.breadsArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
         <div class="foodCta" [ngClass]="dish.Logo =='' ? '' : 'foodCtaImg'" (click)="DishClicked(dish.Menu_Type,dish.id)">
@@ -79,7 +79,7 @@
   </div>
 
   <div class="resultWrap" id="main" *ngIf="service.MainCourseArray.length">
-    <h2>Main Course...</h2>
+    <h2>Main Course</h2>
     <ul class="">
       <li *ngFor="let dish of service.MainCourseArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
         <div class="foodCta" [ngClass]="dish.Logo =='' ? '' : 'foodCtaImg'" (click)="DishClicked(dish.Menu_Type,dish.id)">
@@ -102,7 +102,7 @@
   </div>
 
   <div class="resultWrap" id="salads" *ngIf="service.saladsArray.length">
-    <h2>Salads and Extras...</h2>
+    <h2>Salads and Extras</h2>
     <ul class="">
       <li *ngFor="let dish of service.saladsArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
         <div class="foodCta" [ngClass]="dish.Logo =='' ? '' : 'foodCtaImg'" (click)="DishClicked(dish.Menu_Type,dish.id)">
@@ -125,7 +125,7 @@
   </div>
 
   <div class="resultWrap" id="soup" *ngIf="service.soupArray.length">
-    <h2>Soups...</h2>
+    <h2>Soups</h2>
     <ul class="">
       <li *ngFor="let dish of service.soupArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
         <div class="foodCta" [ngClass]="dish.Logo =='' ? '' : 'foodCtaImg'" (click)="DishClicked(dish.Menu_Type,dish.id)">
@@ -148,7 +148,7 @@
   </div>
 
   <div class="resultWrap" id="beverges" *ngIf="service.beverges_drinkArray.length">
-    <h2>Beverages and Drinks...</h2>
+    <h2>Beverages and Drinks</h2>
     <ul class="">
       <li *ngFor="let dish of service.beverges_drinkArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
         <div class="foodCta" [ngClass]="dish.Logo =='' ? '' : 'foodCtaImg'" (click)="DishClicked(dish.Menu_Type,dish.id)">
@@ -171,7 +171,7 @@
   </div>
 
   <div class="resultWrap" id="desserts" *ngIf="service.desertsArray.length">
-    <h2>Desserts and Ice cream...</h2>
+    <h2>Desserts and Ice cream</h2>
     <ul class="">
       <li *ngFor="let dish of service.desertsArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
         <div class="foodCta" [ngClass]="dish.Logo =='' ? '' : 'foodCtaImg'" (click)="DishClicked(dish.Menu_Type,dish.id)">
@@ -194,7 +194,7 @@
   </div>
 
   <div class="resultWrap" id="stalls" *ngIf="service.stallsArray.length">
-    <h2>Stalls and Miscellaneous...</h2>
+    <h2>Stalls and Miscellaneous</h2>
     <ul class="">
       <li *ngFor="let dish of service.stallsArray" [ngClass]="isDishSelected(dish.Menu_Type,dish.id) ? 'foodAct' : '' ">
         <div class="foodCta" [ngClass]="dish.Logo =='' ? '' : 'foodCtaImg'" (click)="DishClicked(dish.Menu_Type,dish.id)">
@@ -223,7 +223,7 @@
 <div class="responsiveCart">
     <!--<div class="resPro">Have a Promo code</div>-->
     <div class="clearfix">
-        <a href="" class="resBtn" (click)="onCheckout()">
+        <a href="javascript:void(0)" class="resBtn" (click)="onCheckout()">
             <span> {{ service.selectedDishArr.length }}</span>Check out
           </a>
         <a href="javascript:void(0)" class="resCart" (click)="openCart()">

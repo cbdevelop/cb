@@ -23,24 +23,8 @@ export class MobilePreviewComponent implements OnInit {
   }
 
   remove(cat_id, index) {
-    if (cat_id == 1) {
-      this.masterObj.totalCost -= this.masterObj.selectedDishes.best[index].cost;
-      this.masterObj.selectedDishes.best.splice(index, 1);
-    } else if (cat_id == 2) {
-      this.masterObj.totalCost -= this.masterObj.selectedDishes.starter[index].cost;
-      this.masterObj.selectedDishes.starter.splice(index, 1);
-    } else if (cat_id == 3) {
-      this.masterObj.totalCost -= this.masterObj.selectedDishes.main[index].cost;
-      this.masterObj.selectedDishes.main.splice(index, 1);
-    } else if (cat_id == 4) {
-      this.masterObj.totalCost -= this.masterObj.selectedDishes.biryani[index].cost;
-      this.masterObj.selectedDishes.biryani.splice(index, 1);
-    } else if (cat_id == 5) {
-      this.masterObj.totalCost -= this.masterObj.selectedDishes.beverges[index].cost;
-      this.masterObj.selectedDishes.beverges.splice(index, 1);
-    } else if (cat_id == 6) {
-    }
-    var selectedDish = JSON.stringify(this.masterObj.selectedDishes);
+   
+    var selectedDish = JSON.stringify(this.masterObj.selectedDishArr);
     localStorage.setItem("cost", this.masterObj.totalCost.toString());
     localStorage.setItem("selDises", selectedDish);
   }
@@ -74,7 +58,11 @@ export class MobilePreviewComponent implements OnInit {
 
     }
     if (this.masterObj.selectedDishArr.length) {
-      this.router.navigate(['../chef'], { relativeTo: this.route });
+      this.activeModal.close();
+      if(this.masterObj.selCity.ID == 6){
+
+      }else 
+        this.router.navigate(['../chef'], { relativeTo: this.route });
     }
 
   }

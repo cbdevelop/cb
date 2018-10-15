@@ -10,7 +10,7 @@ import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { ModifySearchModule } from '../shared/modify-search/modify-search.module';
 import { AlertsModule } from '../shared/alerts/alerts.module';
-import {  } from '@angular/common/src/pipes/date_pipe';
+import { CityPopupModule } from '../shared/city-popup/city-popup.module';
 
 
 
@@ -28,7 +28,8 @@ import {  } from '@angular/common/src/pipes/date_pipe';
     OwlDateTimeModule,
     OwlNativeDateTimeModule,
     ModifySearchModule,
-    AlertsModule
+    AlertsModule,
+    CityPopupModule
   ],
   declarations: [
     HomeComponent,

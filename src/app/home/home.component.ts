@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Router } from '@angular/router';
 
-import { SearchModel, MasterService } from '../services/master.service';
+import { SearchModel, MasterService, locationModel, cityModel } from '../services/master.service';
 import { FormsModule, ReactiveFormsModule, ValidatorFn } from '@angular/forms';
 import { FormControl, FormGroup, FormBuilder, AbstractControl, Validators } from '@angular/forms';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal/modal';
@@ -11,6 +11,7 @@ import { ModifySearchComponent } from '../shared/modify-search/modify-search.com
 import { AlertsComponent } from '../shared/alerts/alerts.component';
 import { alert } from '../shared/models/alert.model';
 import { DatePipe } from '@angular/common';
+import { CityPopupComponent } from '../shared/city-popup/city-popup.component';
 
 
 @Component({
@@ -27,13 +28,12 @@ export class HomeComponent implements OnInit {
 
   public homeForm: FormGroup;
 
-  locationArr = [];
+  locationArr: locationModel[] = [];
 
-  serviceTypeArr = [
-
-  ];
+  serviceTypeArr = [];
 
   settings = {};
+  serTypeSettings = {};
   session = 'dinner';
   barwidth = 0;
 
@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
   public spiedTags = [];
 
   private currentSection: string;
-
+  today = new Date()
   min = new Date();
   max = new Date(2019, 12);
   constructor(
@@ -63,46 +63,51 @@ export class HomeComponent implements OnInit {
   ) {
     this.barwidth = 0;
     this.dancingNumbers();
-
+    this.masterObj.clearData();
+    const modalRef = this.modalService.open(CityPopupComponent);
     this.homeForm = this.fb.group({
       location: [[], Validators.required],
       serviceType: [[], Validators.required],
-      vegAttnd: [null, [Validators.pattern('^[0-9]+[1-9]*$'), Validators.required]],
-      nonVegAttnd: [null, [Validators.required, Validators.pattern('^[1-9]+[0-9]*$')]],
+      vegAttnd: [null, [Validators.pattern('^[0-9]+[1-9]*$')]],
+      nonVegAttnd: [null, [Validators.pattern('^[1-9]+[0-9]*$')]],
       datetime: ['', Validators.required]
     });
 
-    this.locationArr = [
-      { 'id': 1, 'itemName': 'Ameerpet' },
-      { 'id': 2, 'itemName': 'Dilsuknagar' },
-      { 'id': 3, 'itemName': 'SR Nagar' },
-      { 'id': 4, 'itemName': 'Athapur' },
-      { 'id': 5, 'itemName': 'Koti' },
-      { 'id': 6, 'itemName': 'Khairathabad' },
-      { 'id': 7, 'itemName': 'Kothapet' },
-      { 'id': 8, 'itemName': 'Secundrabad' }
-    ];
 
-    this.serviceTypeArr = [
-      { 'id': 1, 'itemName': 'Buffet' },
-      { 'id': 2, 'itemName': 'Lunch' },
-      { 'id': 3, 'itemName': 'Dinner' }
-    ];
 
     this.settings = {
       singleSelection: true,
       text: 'Select',
       enableSearchFilter: true,
-      showCheckbox: false
+      showCheckbox: false,
+      labelKey: "location",
+      primaryKey: "postalcode"
     };
+    this.serTypeSettings = {
+      singleSelection: true,
+      text: 'Select',
+      enableSearchFilter: true,
+      showCheckbox: false,
+      labelKey: "type",
+      primaryKey: "id"
+    };
+    // console.log(new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 5)
+    this.min = new Date(
+      new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 5
+    )
   }
 
 
   ngOnInit() {
-    this.selectedTime(null);
-
+    // this.selectedTime(null);
+    this.serviceTypeArr = this.masterObj.masterServiceType;
+    // console.log(this.min)
   }
 
+  cityPopup() {
+    // alert('city');
+    const modalRef = this.modalService.open(CityPopupComponent);
+  }
   onlyNumberKey(event) {
     const pattern = /[0-9]/;
     const inputChar = String.fromCharCode(event.charCode);
@@ -112,11 +117,11 @@ export class HomeComponent implements OnInit {
   }
   // Locations
   LocationSelect(item: any) {
-    console.log(item);
+    // console.log(item);
     // this.masterObj.searchObj.location = item;
   }
   LocationDeSelect(item: any) {
-    console.log(item);
+    // console.log(item);
     // this.masterObj.searchObj.location = item;
   }
 
@@ -135,27 +140,27 @@ export class HomeComponent implements OnInit {
     this.cntevnt = 0;
 
     const interval = setInterval(() => {
-      this.cntevnt += 10;
+      this.cntevnt += 20;
       if (this.cntevnt >= this.eventServed) { clearInterval(interval); }
     }, 50);
 
     this.cntchef = 0;
 
     const chefinterval = setInterval(() => {
-      this.cntchef += 10;
+      this.cntchef += 20;
       if (this.cntchef >= this.no_chefs) { clearInterval(chefinterval); }
     }, 50);
 
     this.cntusers = 0;
     const userinterval = setInterval(() => {
-      this.cntusers += 10;
+      this.cntusers += 20;
       if (this.cntusers >= this.users) { clearInterval(userinterval); }
     }, 50);
 
     this.cntmanager = 0;
 
     const mangerinterval = setInterval(() => {
-      this.cntmanager += 10;
+      this.cntmanager += 20;
       if (this.cntmanager >= this.no_eventManager) { clearInterval(mangerinterval); }
     }, 50);
 
@@ -171,28 +176,37 @@ export class HomeComponent implements OnInit {
 
 
   selectedTime(evt) {
-    console.log(evt, this.masterObj.searchObj.datetime < new Date());
+    // console.log(evt, this.masterObj.searchObj.datetime < new Date());
 
-    if (this.masterObj.searchObj.datetime < new Date()) {
+    if (this.masterObj.searchObj.datetime < this.min) {
       const modalRef = this.modalService.open(AlertsComponent);
       this.alert.message = 'Selected Event Date & Time should be upcoming date';
       this.alert.type = 'warning';
       modalRef.componentInstance.alert = this.alert;
+      return false;
     } else {
       let time = this.datepipe.transform(this.masterObj.searchObj.datetime, 'hh');
       let tt = parseInt(time, 10);
       if (tt > 7 && tt < 11)
         this.masterObj.session = 'Break Fast';
-      else if (tt > 12 && tt < 15)
+      else if (tt > 12 && tt < 16)
         this.masterObj.session = 'Lunch';
       else if (tt > 19 && tt < 22)
         this.masterObj.session = 'Dinner';
       else if (tt > 16 && tt < 18)
         this.masterObj.session = 'Snack Time';
       else {
-        this.masterObj.session = 'other';
+        
+        const modalRef = this.modalService.open(AlertsComponent);
+        this.alert.message = 'We are not serving at this time';
+        this.alert.type = 'warning';
+        modalRef.componentInstance.alert = this.alert;
+        this.masterObj.session = ''
+        return false;        
+        // this.masterObj.session = 'other';
       }
     }
+    return true;
   }
   getTotal() {
     this.masterObj.totalAttendees = 0;
@@ -210,17 +224,26 @@ export class HomeComponent implements OnInit {
 
   onSearch(evt) {
 
-    console.log(this.masterObj.searchObj, this.homeForm);
+    // console.log(this.masterObj.searchObj, this.homeForm);
     if (this.homeForm.valid) {
-      this.masterObj.clearData();
-      localStorage.setItem('searchObj', JSON.stringify(this.masterObj.searchObj));
-      localStorage.setItem('session', this.masterObj.session);
-      
-      this.routerObj.navigate(['../search']);
+      if (this.masterObj.totalAttendees > 0) {
+        if(!this.selectedTime(null))
+            return;
+        localStorage.setItem('searchObj', JSON.stringify(this.masterObj.searchObj));
+        localStorage.setItem('session', this.masterObj.session);
+        localStorage.setItem('totalAttnd', this.masterObj.totalAttendees.toString());
+        this.routerObj.navigate(['../search']);
+      } else {
+        const modalRef = this.modalService.open(AlertsComponent);
+        this.alert.message = 'Please fill out no of Attendees.';
+        this.alert.type = 'warning';
+        modalRef.componentInstance.alert = this.alert;
+        
+      }
     } else {
       const modalRef = this.modalService.open(AlertsComponent);
       this.alert.message = 'Please fill all the fields';
-      this.alert.type = 'error';
+      this.alert.type = 'warning';
       modalRef.componentInstance.alert = this.alert;
     }
   }

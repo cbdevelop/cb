@@ -1,7 +1,7 @@
 <div class="filterTp clearfix">
   <div class="filBtn">
  
-    <a  (click)="onlyGoldchef()">By Golden Chefs</a>
+    <a   [ngClass]="goldFlag ? 'Act' : ''" (click)="onlyGoldchef()">By Golden Chefs</a>
     <a [ngClass]="nonVegFlag ? 'Act' : ''" (click)="onlyNonveg()">Non-Veg</a>
   </div>
   <div class="">

@@ -14,7 +14,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
 import { MasterService } from './services/master.service';
-import { DirectiveModule } from './shared/index';
+import { DirectiveModule, CommentsModule } from './shared/index';
 import { UserService } from './services/user_service/user.service';
 import { AlertsService } from './services/alerts.service';
 import { AlertsModule } from './shared/alerts/alerts.module';
@@ -38,7 +38,8 @@ import { AlertsModule } from './shared/alerts/alerts.module';
     AppRoutingModule,
     // SharedModule
     HttpClientModule,
-    AlertsModule
+    AlertsModule,
+    CommentsModule
 
   ],
   providers: [

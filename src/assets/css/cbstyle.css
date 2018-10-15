@@ -2063,7 +2063,7 @@ footer {
     margin: 0px 0px;
     font-size: 17px;
     font-weight: 500;
-    color: #12b396;
+    color: #454545;
     text-transform: capitalize;
 }
 
@@ -2428,7 +2428,7 @@ footer {
 }
 
 .modifySearch .searchOut {
-    /* width: 92%; */
+    width: 100%;
     max-width: 480px;
     margin: 0px auto 20px;
     left: 0px;
@@ -2442,7 +2442,7 @@ footer {
 
 .modifySearch .searClose {
     display: block;
-    position: absolute;
+    /* position: absolute; */
     right: 4px;
     top: 10px;
     font-size: 20px;
@@ -3392,7 +3392,7 @@ footer {
 .filBtn {
     float: left;
     margin: 8px;
-    z-index: 9999;
+    z-index: 1000;
     position: relative;
 }
 

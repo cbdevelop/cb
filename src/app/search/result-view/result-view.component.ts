@@ -30,7 +30,9 @@ export class ResultViewComponent implements OnInit {
     private modalService: NgbModal,
     private alertsObj: AlertsService
   ) {
-
+    if(this.service.searchObj.location.length < 1  || this.service.searchObj.datetime == null){
+      this.router.navigate(['/']);
+    }
   }
 
   ngOnInit() {
@@ -82,57 +84,10 @@ export class ResultViewComponent implements OnInit {
 
   }
 
-  openchef(menucategoryid: number, disId) {
-    console.log(this.isSelected(menucategoryid, disId));
-    if (this.isSelected(menucategoryid, disId)) {
-
-    } else {
-      var arr = this.all_categories[menucategoryid - 1].dishes.filter(x => x.dishId == disId)
-      if (arr[0].cusines.length) {
-        const modalRef = this.modalService.open(ChefCatPopupComponent);
-        modalRef.componentInstance.cat_id = menucategoryid;
-        modalRef.componentInstance.dishId = disId;
-      } else if (arr.length) {
-        // {ca  menucategoryid,arr[0]}
-        arr[0].restricted_ser = [];
-        this.service.totalCost += arr[0].cost;
-        console.log(this.service.totalCost);
-        if (menucategoryid == 1) {
-          this.service.selectedDishes.best.push(arr[0]);
-        } else if (menucategoryid == 2) {
-          this.service.selectedDishes.starter.push(arr[0]);
-        } else if (menucategoryid == 3) {
-          this.service.selectedDishes.main.push(arr[0]);
-        } else if (menucategoryid == 4) {
-          this.service.selectedDishes.biryani.push(arr[0]);
-        } else if (menucategoryid == 5) {
-          this.service.selectedDishes.beverges.push(arr[0]);
-        } else if (menucategoryid == 6) {
-        }
-        var selectedDish = JSON.stringify(this.service.selectedDishes);
-        localStorage.setItem("selDises", selectedDish);
-        localStorage.setItem("cost", this.service.totalCost.toString());
-      }
-    }
-
-  }
+ 
 
   /* check if laredy selected this dish */
-  isSelected(menucategoryid, dishId) {
-    if (menucategoryid == 1) {
-      return this.service.selectedDishes.best.findIndex(d => d.dishId == dishId) == -1 ? false : true;
-    } else if (menucategoryid == 2) {
-      return this.service.selectedDishes.starter.findIndex(d => d.dishId == dishId) == -1 ? false : true;
-    } else if (menucategoryid == 3) {
-      return this.service.selectedDishes.main.findIndex(d => d.dishId == dishId) == -1 ? false : true;
-    } else if (menucategoryid == 4) {
-      return this.service.selectedDishes.biryani.findIndex(d => d.dishId == dishId) == -1 ? false : true;
-    } else if (menucategoryid == 5) {
-      return this.service.selectedDishes.beverges.findIndex(d => d.dishId == dishId) == -1 ? false : true;
-    } else if (menucategoryid == 6) {
-    }
-  }
-
+  
   openRes(menucategoryid, disId) {
     const modalRef = this.modalService.open(ChefCatPopupComponent);
     modalRef.componentInstance.cat_id = menucategoryid;
@@ -203,7 +158,11 @@ export class ResultViewComponent implements OnInit {
 
     }
     if (this.service.selectedDishArr.length) {
-      this.router.navigate(['../chef'], { relativeTo: this.route });
+      if(this.service.selCity.ID == 2){
+
+      }else 
+        this.router.navigate(['../chef'], { relativeTo: this.route });
+      // this.router.navigate(['../chef'], { relativeTo: this.route });
     }
   }
 

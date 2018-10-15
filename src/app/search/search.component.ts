@@ -21,6 +21,7 @@ export class SearchComponent implements OnInit {
     // console.log(this.header);
     // this.header.header.nativeElement.classList.add('staticHead');
     // this.header.header.nativeElement.classList.add('scrollAct');
+    
   }
 
   // Sign-in Open

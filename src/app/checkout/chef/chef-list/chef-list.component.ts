@@ -26,8 +26,7 @@ export class ChefListComponent implements OnInit, AfterViewInit {
   }
 
   getlist() {
-    var min = this.masterObj.selectedDishes.best.length + this.masterObj.selectedDishes.starter.length +
-      this.masterObj.selectedDishes.main.length + this.masterObj.selectedDishes.biryani.length;
+    var min = this.masterObj.selectedDishArr.length
 
     min = min < 3 ? 3 : 5;
     this.length = this.masterObj.randomInt(1, min);

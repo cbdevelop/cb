@@ -6,7 +6,7 @@
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 15,
-    "Description": "Upma is a dish originating from the Indian subcontinent, most common in South Indian,Maharashtrian, and SriLankan Tamilbreakfast; cooked as a thick porridge from dry roasted semolina or coarse rice flour.Various seasonings and/or 1etables are often added during the cooking, depending on individual preferences.",
+    "Description": "Upma is a dish originating from the Indian subcontinent, most common in South Indian,Maharashtrian, and Sri Lankan Tamilbreakfast; cooked as a thick porridge from dry roasted semolina or coarse rice flour.Various seasonings and/or vegetables are often added during the cooking, depending on individual preferences.",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -78,7 +78,7 @@
     "Menu_Type": 8,
     "Category_Type": 1,
     "Price": 15,
-    "Description": "Gavvalu sweet is a festaval traditional Indian sweet. This sweet is normally prepared during festival celebrations and other special occasions. These are also used as evening 2.",
+    "Description": "Gavvalu sweet is a traditional Indian sweet. This sweet is normally prepared during festival celebrations and other special occasions.",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -102,7 +102,7 @@
     "Menu_Type": 8,
     "Category_Type": 1,
     "Price": 15,
-    "Description": "Chakkara pongali or chakra pongali rice recipe is a very famous south indian pongal recipe. it is also called as chakkera pongali, chekkara pongali orsweet pongali. chakkara pongali or chakra pongalican be prepared with gaggery andsugar",
+    "Description": "Chakkara pongali or chakra pongali rice recipe is a very famous south indian pongal recipe. it is also called as chakkera pongali, chekkara pongali orsweet pongali. chakkara pongali or chakra pongalican be prepared with gaggery and sugar",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -114,7 +114,7 @@
     "Menu_Type": 8,
     "Category_Type": 1,
     "Price": 15,
-    "Description": "Boondi or Bundiya is an Indian dessert made from sweetened, fried chickpea flour. Being very sweet, it can only be stored for a week or so. Due to the need for preserving food in arid regions of Rajasthan, boondi laddu are preferred",
+    "Description": "Boondi or Bundiya is an Indian dessert made from sweetened, fried chickpea flour.",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -138,7 +138,7 @@
     "Menu_Type": 8,
     "Category_Type": 1,
     "Price": 15,
-    "Description": "A quick South Indian dessert made of semolina, sugar, ghee and nuts. This recipe will yield you delicious, flavorful, soft and fluffy rava kesari just under 25 mins.",
+    "Description": "A quick South Indian dessert made of semolina, sugar, ghee and nuts. This recipe will yield you delicious, flavorful, soft and fluffy rava kesari.",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -222,7 +222,7 @@
     "Menu_Type": 1,
     "Category_Type": 2,
     "Price": 25,
-    "Description": "The filling of a spring roll is light, full of tender-crisp 1etables and you should be able to taste and distinguish every single ingredient in the filling.",
+    "Description": "The filling of a spring roll is light, full of tender-crisp vegetables and chicken, you should be able to taste and distinguish every single ingredient in the filling.",
     "Cuisine": "Indo Chinese",
     "Restrictions": "Only for main table",
     "is_active": 1
@@ -265,7 +265,7 @@
   },
   {
     "id": 23,
-    "Dish_Name": "1etable Haleem",
+    "Dish_Name": "vegetable Haleem",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 2,
@@ -282,7 +282,7 @@
     "Menu_Type": 1,
     "Category_Type": 2,
     "Price": 16,
-    "Description": "Lukhmi is a typical mince savoury or starter of the cuisine of Hyderabad, Telangana, India. It is a local variation of samosa. The snack's authentic preparation includes stuffing with mutton-mince kheema.",
+    "Description": "Lukhmi is a typical mince savoury starter, a cuisine of Hyderabad. It is a local variation of samosa. The snack's authentic preparation includes stuffing with mutton-mince kheema.",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for main table",
     "is_active": 1
@@ -292,7 +292,7 @@
     "Dish_Name": "Chicken Luqhmi",
     "Logo": "",
     "Menu_Type": 1,
-    "Category_Type": 2,
+    "Category_Type": 1,
     "Price": 13,
     "Description": "",
     "Cuisine": "Hyderabadi",
@@ -354,7 +354,7 @@
     "Menu_Type": 1,
     "Category_Type": 2,
     "Price": 25,
-    "Description": "Hyderabadi Marag or Marag is a spicy mutton soup served as a starter in Hyderabad, India and part of Hyderabadi cuisine. It is prepared from tender mutton with bone. It is thin soup. The soup has become one of the 1 at Hyderabadi weddings.",
+    "Description": "Marag is a spicy mutton soup served as a starter in Hyderabad. It is prepared from tender mutton. The soup has become one of the best serving dish at Hyderabadi weddings.",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for main table",
     "is_active": 1
@@ -378,7 +378,7 @@
     "Menu_Type": 7,
     "Category_Type": 2,
     "Price": 40,
-    "Description": "Mutton seekh kebab is a delighting non-1etarian starter popularly relished as side dish in India. You can find it across street stalls or dhabas in most of the parts of Delhi, Punjab and Srinagar.",
+    "Description": "Mutton seekh kebab is a delighting non-vegetarian starter popularly relished as side dish in India. You can find it across street stalls or dhabas in most of the parts of Delhi, Punjab and Srinagar.",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for main table",
     "is_active": 1
@@ -474,7 +474,7 @@
     "Menu_Type": 7,
     "Category_Type": 2,
     "Price": 35,
-    "Description": "Tandoori spiced chicken drumsticks are grilled to juicy perfection in the oven. Tangdi kebabs make great appetizers, side or main for your Indian dinner.",
+    "Description": "Tandoori spiced chicken drumsticks are grilled to juicy perfection in the oven. Tangdi kebabs make great appetizers, side or main for your menu.",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for main table",
     "is_active": 1
@@ -546,7 +546,7 @@
     "Menu_Type": 7,
     "Category_Type": 2,
     "Price": 45,
-    "Description": "One of the most common dishes at seafood restaurants across Mumbai will always include Tandoori Pomfret. Pomfret was the preferred choice fish when I grew in the city. A flat fish, delicate and flaky which takes to the marinade and charred smokey tandoor flavours really well.",
+    "Description": "A flat fish, delicate and flaky which takes to the marinade and charred smokey tandoor flavouring.",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for main table",
     "is_active": 1
@@ -570,7 +570,7 @@
     "Menu_Type": 4,
     "Category_Type": 1,
     "Price": 8,
-    "Description": "A typical naan recipe involves mixing white flour with salt, a yeast culture, and enough yogurt to make a smooth, elastic dough.",
+    "Description": "A typical naan involves mixing white flour with salt, a yeast culture, and enough yogurt to make a smooth, elastic dough.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -594,7 +594,7 @@
     "Menu_Type": 4,
     "Category_Type": 1,
     "Price": 8,
-    "Description": "Naan is made out of leavened dough (fermented with yeast), while Tandoori Roti is made of plain dough. Naan is often stuffed with other ingredients while a Tandoori Roti usually comes without any filling. Because Naan is made of maida, it may not be as healthy as a Tandoori Roti which has wheat flour in it.",
+    "Description": "Naan is made out of leavened dough (fermented with yeast), while Tandoori Roti is made of plain dough. Naan is often stuffed with other ingredients while a Tandoori Roti usually comes without any filling.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -606,7 +606,7 @@
     "Menu_Type": 4,
     "Category_Type": 1,
     "Price": 6,
-    "Description": "Rumali roti is a thin flat4 originating from the Indian subcontinent, popular in India and in Punjab, Pakistan. It is eaten with tandoori dishes.",
+    "Description": "Rumali roti is a thin flatbread originating from the Indian subcontinent, popular in India and in Punjab, Pakistan. It is eaten with tandoori dishes.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -618,7 +618,7 @@
     "Menu_Type": 4,
     "Category_Type": 1,
     "Price": 7,
-    "Description": "A paratha is a flat4 that originated in the Indian subcontinent. It is still prevalent throughout India, Pakistan, Nepal and Bangladesh, where wheat is grown and is the traditional staple of the area.",
+    "Description": "A paratha is a flatbread that originated in the Indian subcontinent. It is still prevalent throughout India, Pakistan, Nepal and Bangladesh, where wheat is grown and is the traditional staple of the area.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -630,7 +630,7 @@
     "Menu_Type": 4,
     "Category_Type": 1,
     "Price": 6,
-    "Description": "Chapati, also known as roti, safati, shabaati, phulka and roshi, is an unleavened flat4 from the Indian Subcontinent and staple in India, Nepal, Bangladesh, Pakistan, Sri Lanka..",
+    "Description": "Chapati, also known as roti, safati, shabaati, phulka and roshi, is an unleavened flatbread from the Indian Subcontinent and staple in India, Nepal, Bangladesh, Pakistan, Sri Lanka..",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -654,7 +654,7 @@
     "Menu_Type": 6,
     "Category_Type": 1,
     "Price": 3,
-    "Description": "Onion raita recipe for biryani a side dish to accompany biryani or pulao.. Raita is a side dish made with yogurt and is often served with biryani and any kind of pulao. Ingredients like onion, chili, mint or coriander leaves are used to make it.",
+    "Description": "Raita is a side dish made with yogurt and is often served with biryani and any kind of pulao. Ingredients like onion, chili, mint or coriander leaves are used to make it.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -666,14 +666,14 @@
     "Menu_Type": 6,
     "Category_Type": 1,
     "Price": 3,
-    "Description": "simple yet delicious raita made with roasted crushed cumin.",
+    "Description": "Simple yet delicious raita made with roasted crushed cumin.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
     "id": 57,
-    "Dish_Name": "1etable Raita",
+    "Dish_Name": "vegetable Raita",
     "Logo": "",
     "Menu_Type": 6,
     "Category_Type": 1,
@@ -690,7 +690,7 @@
     "Menu_Type": 6,
     "Category_Type": 1,
     "Price": 3,
-    "Description": "Olivier salad is a traditional salad dish in Russian cuisine, which is also popular in other post-Soviet countries, many European countries, Iran, Israel, Mongolia and also throughout Latin America",
+    "Description": "",
     "Cuisine": "Russian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -709,42 +709,30 @@
   },
   {
     "id": 60,
-    "Dish_Name": "Onion",
+    "Dish_Name": "Cucumber",
     "Logo": "",
     "Menu_Type": 6,
     "Category_Type": 1,
     "Price": 2,
-    "Description": "The onion, also known as the bulb onion or common onion, is a 1etable that is the most widely cultivated species of the genus Allium. Its close relatives include the garlic, leek, chive, and Chinese onion.",
+    "Description": "The cucumber, or less formally cuke, is a widely cultivated plant in the gourd family, Cucurbitaceae. It is a creeping vine that bears cucumiform fruits that are used as vegetables.",
     "Cuisine": "",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
     "id": 61,
-    "Dish_Name": "Cucumber",
+    "Dish_Name": "French Fries",
     "Logo": "",
-    "Menu_Type": 6,
+    "Menu_Type": 1,
     "Category_Type": 1,
-    "Price": 2,
-    "Description": "The cucumber, or less formally cuke, is a widely cultivated plant in the gourd family, Cucurbitaceae. It is a creeping vine that bears cucumiform fruits that are used as 1etables.",
+    "Price": 8,
+    "Description": "French fries, or also called just fries, finger chips, are potatoes batonnet or allumette-cut and deep-fried.",
     "Cuisine": "",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
     "id": 62,
-    "Dish_Name": "French Fries",
-    "Logo": "",
-    "Menu_Type": 1,
-    "Category_Type": 1,
-    "Price": 8,
-    "Description": "French fries, or just fries; chips, finger chips, or French-fried potatoes are batonnet or allumette-cut deep-fried potatoes",
-    "Cuisine": "",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 63,
     "Dish_Name": "Mixed Fruit Salad",
     "Logo": "",
     "Menu_Type": 6,
@@ -756,7 +744,7 @@
     "is_active": 1
   },
   {
-    "id": 64,
+    "id": 63,
     "Dish_Name": "Chicken Biryani (boneless)",
     "Logo": "",
     "Menu_Type": 7,
@@ -768,19 +756,19 @@
     "is_active": 1
   },
   {
-    "id": 65,
+    "id": 64,
     "Dish_Name": "Mutton Biryani",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 2,
     "Price": 35,
-    "Description": "Mutton Biryani is yet another biryani recipe, which is a perfect fusion of taste and aroma. ... This easy non-1etarian biryani recipe is prepared with rice and marinated mutton with spices like cumin powder, coriander powder and star anise powder.",
+    "Description": "Mutton Biryani is a perfect fusion of taste and aroma. This non-vegetarian biryani recipe is prepared with rice and marinated mutton with spices like cumin powder, coriander powder and star anise powder.",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for main table",
     "is_active": 1
   },
   {
-    "id": 66,
+    "id": 65,
     "Dish_Name": "Prawn Biryani",
     "Logo": "",
     "Menu_Type": 7,
@@ -792,7 +780,7 @@
     "is_active": 1
   },
   {
-    "id": 67,
+    "id": 66,
     "Dish_Name": "Kaju Biryani",
     "Logo": "",
     "Menu_Type": 7,
@@ -804,7 +792,7 @@
     "is_active": 1
   },
   {
-    "id": 68,
+    "id": 67,
     "Dish_Name": "Egg Biryani",
     "Logo": "",
     "Menu_Type": 7,
@@ -816,8 +804,8 @@
     "is_active": 1
   },
   {
-    "id": 69,
-    "Dish_Name": "Mix 1etables Biryani",
+    "id": 68,
+    "Dish_Name": "Mix vegetables Biryani",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 1,
@@ -828,7 +816,7 @@
     "is_active": 1
   },
   {
-    "id": 70,
+    "id": 69,
     "Dish_Name": "Pulao",
     "Logo": "",
     "Menu_Type": 7,
@@ -840,19 +828,19 @@
     "is_active": 1
   },
   {
-    "id": 71,
+    "id": 70,
     "Dish_Name": "Bagara Khana",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 1,
     "Price": 20,
-    "Description": "Bagara khana or Bagara annam is a spiced rice delicacy prepared in Hyderabad, Telangana, India. Bagar, meaning tempering, is a plain Biryani recipe without any 1etables or masala powders.",
+    "Description": "Bagara khana or Bagara annam is a spiced rice delicacy prepared in Hyderabad, India. Bagar, meaning tempering, is a plain Biryani recipe with or without any vegetables or masala powders.",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 72,
+    "id": 71,
     "Dish_Name": "Jeera Rice",
     "Logo": "",
     "Menu_Type": 7,
@@ -864,7 +852,7 @@
     "is_active": 1
   },
   {
-    "id": 73,
+    "id": 72,
     "Dish_Name": "Khichdi",
     "Logo": "",
     "Menu_Type": 7,
@@ -876,7 +864,7 @@
     "is_active": 1
   },
   {
-    "id": 74,
+    "id": 73,
     "Dish_Name": "White Rice",
     "Logo": "",
     "Menu_Type": 7,
@@ -888,7 +876,7 @@
     "is_active": 1
   },
   {
-    "id": 75,
+    "id": 74,
     "Dish_Name": "Pulihora",
     "Logo": "",
     "Menu_Type": 7,
@@ -900,7 +888,7 @@
     "is_active": 1
   },
   {
-    "id": 76,
+    "id": 75,
     "Dish_Name": "Mutton Pasinda",
     "Logo": "",
     "Menu_Type": 7,
@@ -912,7 +900,7 @@
     "is_active": 1
   },
   {
-    "id": 77,
+    "id": 76,
     "Dish_Name": "Mutton Tikka Masala",
     "Logo": "",
     "Menu_Type": 7,
@@ -924,19 +912,19 @@
     "is_active": 1
   },
   {
-    "id": 78,
+    "id": 77,
     "Dish_Name": "Mutton Kadai",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 2,
     "Price": 40,
-    "Description": "Mutton Kadai is a Mughlai recipe, which is ideal for lunch as well as dinner. Prepared with cumin seeds and bay leaves sauteed in a ginger-garlic onion paste gives this non-1etarian recipe an amazing flavour. This mutton recipe is a flavourful dish which will be a bliss for all the non-1 lovers.",
+    "Description": "Mutton Kadai is a Mughlai recipe, which is ideal for lunch as well as dinner. Prepared with cumin seeds and bay leaves sauteed in a ginger-garlic onion paste gives this non-vegetarian recipe an amazing flavour. This mutton recipe is a flavourful dish which will be a bliss for all the non-veg lovers.",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for main table",
     "is_active": 1
   },
   {
-    "id": 79,
+    "id": 78,
     "Dish_Name": "Mutton Fry",
     "Logo": "",
     "Menu_Type": 7,
@@ -948,7 +936,7 @@
     "is_active": 1
   },
   {
-    "id": 80,
+    "id": 79,
     "Dish_Name": "Dum Mutton",
     "Logo": "",
     "Menu_Type": 7,
@@ -960,19 +948,19 @@
     "is_active": 1
   },
   {
-    "id": 81,
+    "id": 80,
     "Dish_Name": "Pathar ka Gosht",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 2,
     "Price": 40,
-    "Description": "Pathar-ka-Gosht - is a popular lamb dish, especially prepared in Hyderabad, Telangana, India. This dish is prepared with mutton by heating it on a wide stone, on a flame",
+    "Description": "Pathar-ka-Gosht - is a popular lamb dish, especially prepared in Hyderabad, India. This dish is prepared with mutton by heating it on a wide stone, on a flame",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for main table",
     "is_active": 1
   },
   {
-    "id": 82,
+    "id": 81,
     "Dish_Name": "Kali Mirchi ka Gosht",
     "Logo": "",
     "Menu_Type": 7,
@@ -984,7 +972,7 @@
     "is_active": 1
   },
   {
-    "id": 83,
+    "id": 82,
     "Dish_Name": "Mutton Masala",
     "Logo": "",
     "Menu_Type": 7,
@@ -996,7 +984,7 @@
     "is_active": 1
   },
   {
-    "id": 84,
+    "id": 83,
     "Dish_Name": "Mutton Kofta Masala",
     "Logo": "",
     "Menu_Type": 7,
@@ -1008,7 +996,7 @@
     "is_active": 1
   },
   {
-    "id": 85,
+    "id": 84,
     "Dish_Name": "Mutton Hyderabadi Khorma",
     "Logo": "",
     "Menu_Type": 7,
@@ -1020,7 +1008,7 @@
     "is_active": 1
   },
   {
-    "id": 86,
+    "id": 85,
     "Dish_Name": "Nahari",
     "Logo": "",
     "Menu_Type": 7,
@@ -1032,7 +1020,7 @@
     "is_active": 1
   },
   {
-    "id": 87,
+    "id": 86,
     "Dish_Name": "Chicken Drumsticks",
     "Logo": "",
     "Menu_Type": 7,
@@ -1044,7 +1032,7 @@
     "is_active": 1
   },
   {
-    "id": 88,
+    "id": 87,
     "Dish_Name": "Chicken Tikka Masala",
     "Logo": "",
     "Menu_Type": 7,
@@ -1056,19 +1044,19 @@
     "is_active": 1
   },
   {
-    "id": 89,
+    "id": 88,
     "Dish_Name": "Chicken Kadai",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 2,
     "Price": 30,
-    "Description": "Chicken karahi, also known as gosht karahi, and kadai chicken, is a dish from the Indian subcontinent noted for its spicy taste; it is notable in Pakistani and North Indian cuisine",
+    "Description": "Chicken kadai, also known as gosht karahi, and kadai chicken, is a dish from the Indian subcontinent noted for its spicy taste; it is notable in Pakistani and North Indian cuisine",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for main table",
     "is_active": 1
   },
   {
-    "id": 90,
+    "id": 89,
     "Dish_Name": "Butter Chicken",
     "Logo": "",
     "Menu_Type": 7,
@@ -1080,7 +1068,7 @@
     "is_active": 1
   },
   {
-    "id": 91,
+    "id": 90,
     "Dish_Name": "Chicken Afghani",
     "Logo": "",
     "Menu_Type": 7,
@@ -1092,31 +1080,31 @@
     "is_active": 1
   },
   {
-    "id": 92,
+    "id": 91,
     "Dish_Name": "Chicken Masala",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 2,
     "Price": 30,
-    "Description": "Chicken tikka masala is a dish of chunks of roasted marinated chicken in a spiced curry sauce. The sauce is usually creamy and orange-coloured.Wikipedia",
+    "Description": "Chicken tikka masala is a dish of chunks of roasted marinated chicken in a spiced curry sauce. The sauce is usually creamy and orange-coloured.",
+    "Cuisine": "Hyderabadi",
+    "Restrictions": "Only for main table",
+    "is_active": 1
+  },
+  {
+    "id": 92,
+    "Dish_Name": "Chicken Khorma",
+    "Logo": "",
+    "Menu_Type": 7,
+    "Category_Type": 2,
+    "Price": 30,
+    "Description": "Korma is a dish originating in the Indian subcontinent, consisting of meat or vegetables braised with yogurt or cream, water or stock, and spices to produce a thick sauce or glaze",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for main table",
     "is_active": 1
   },
   {
     "id": 93,
-    "Dish_Name": "Chicken Khorma",
-    "Logo": "",
-    "Menu_Type": 7,
-    "Category_Type": 2,
-    "Price": 30,
-    "Description": "Korma is a dish originating in the Indian subcontinent, consisting of meat or 1etables braised with yogurt or cream, water or stock, and spices to produce a thick sauce or glaze",
-    "Cuisine": "Hyderabadi",
-    "Restrictions": "Only for main table",
-    "is_active": 1
-  },
-  {
-    "id": 94,
     "Dish_Name": "Chicken Achari",
     "Logo": "",
     "Menu_Type": 7,
@@ -1128,19 +1116,19 @@
     "is_active": 1
   },
   {
-    "id": 95,
+    "id": 94,
     "Dish_Name": "Chicken Majestic",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 2,
     "Price": 35,
-    "Description": "Chicken Majestic is a dry chicken dish marinated with Indian spices, onions and capsicum. It is normally taken as a starter. ... Take a bowl add marinated chicken add corn flour, salt, egg, ginger garlic paste, oil, mix it well and rest for 2 hours then deep fry the chicken till cooked.",
+    "Description": "Chicken Majestic is a dry chicken dish marinated with Indian spices, onions and capsicum. It is normally taken as a starter.",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for main table",
     "is_active": 1
   },
   {
-    "id": 96,
+    "id": 95,
     "Dish_Name": "Shahi Chicken",
     "Logo": "",
     "Menu_Type": 7,
@@ -1152,7 +1140,7 @@
     "is_active": 1
   },
   {
-    "id": 97,
+    "id": 96,
     "Dish_Name": "Dum Chicken",
     "Logo": "",
     "Menu_Type": 7,
@@ -1164,7 +1152,7 @@
     "is_active": 1
   },
   {
-    "id": 98,
+    "id": 97,
     "Dish_Name": "Ginger Chicken",
     "Logo": "",
     "Menu_Type": 7,
@@ -1176,19 +1164,19 @@
     "is_active": 1
   },
   {
-    "id": 99,
+    "id": 98,
     "Dish_Name": "Chicken Fry (Sukka)",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 2,
     "Price": 30,
-    "Description": "A Mangalorean special chicken recipe, made using fresh chicken, host of masalas and grated fresh coconut cooked to perfection. it is a dry dish that can make any dinner party menu look exotic",
+    "Description": "A Mangalorean special recipe, made using fresh chicken, host of masalas and grated fresh coconut cooked to perfection. It is a dry dish that can make any dinner party menu look exotic",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for main table",
     "is_active": 1
   },
   {
-    "id": 100,
+    "id": 99,
     "Dish_Name": "Chicken broast",
     "Logo": "",
     "Menu_Type": 1,
@@ -1200,7 +1188,7 @@
     "is_active": 1
   },
   {
-    "id": 101,
+    "id": 100,
     "Dish_Name": "Chicken Roast",
     "Logo": "",
     "Menu_Type": 1,
@@ -1212,7 +1200,7 @@
     "is_active": 1
   },
   {
-    "id": 102,
+    "id": 101,
     "Dish_Name": "Murgh Musallam",
     "Logo": "",
     "Menu_Type": 7,
@@ -1224,19 +1212,19 @@
     "is_active": 1
   },
   {
-    "id": 103,
+    "id": 102,
     "Dish_Name": "Prawn Masala",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 2,
     "Price": 40,
-    "Description": "Spicy prawn masala is an amazing coastal delicacy that delights any non-1etarian seafood fan. The prawn curry is spicy, tangy and palate pleasing. The tropical Indian signature food, prawn masala is made with stewing the prawns.",
+    "Description": "Spicy prawn masala is an amazing coastal delicacy that delights any non-vegetarian seafood fan. The prawn curry is spicy, tangy and palate pleasing. The tropical Indian signature food, prawn masala is made with stewing the prawns.",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for main table",
     "is_active": 1
   },
   {
-    "id": 104,
+    "id": 103,
     "Dish_Name": "Dum ke Prawn",
     "Logo": "",
     "Menu_Type": 7,
@@ -1248,7 +1236,7 @@
     "is_active": 1
   },
   {
-    "id": 105,
+    "id": 104,
     "Dish_Name": "Dum ki Machli",
     "Logo": "",
     "Menu_Type": 7,
@@ -1260,7 +1248,7 @@
     "is_active": 1
   },
   {
-    "id": 106,
+    "id": 105,
     "Dish_Name": "Fish Khorma",
     "Logo": "",
     "Menu_Type": 7,
@@ -1272,7 +1260,7 @@
     "is_active": 1
   },
   {
-    "id": 107,
+    "id": 106,
     "Dish_Name": "Dum Aaloo",
     "Logo": "",
     "Menu_Type": 7,
@@ -1284,7 +1272,7 @@
     "is_active": 1
   },
   {
-    "id": 108,
+    "id": 107,
     "Dish_Name": "Miloni Tarkari",
     "Logo": "",
     "Menu_Type": 7,
@@ -1296,19 +1284,19 @@
     "is_active": 1
   },
   {
-    "id": 109,
-    "Dish_Name": "1etable Khorma",
+    "id": 108,
+    "Dish_Name": "vegetable Khorma",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 1,
     "Price": 17,
-    "Description": "Korma is a dish originating in the Indian subcontinent, consisting of meat or 1etables braised with yogurt or cream, water or stock, and spices to produce a thick sauce or glaze.",
+    "Description": "Korma is a dish originating in the Indian subcontinent, consisting of meat or vegetables braised with yogurt or cream, water or stock, and spices to produce a thick sauce or glaze.",
     "Cuisine": "North Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 110,
+    "id": 109,
     "Dish_Name": "Navratan Chutney",
     "Logo": "",
     "Menu_Type": 6,
@@ -1320,19 +1308,19 @@
     "is_active": 1
   },
   {
-    "id": 111,
+    "id": 110,
     "Dish_Name": "Palak Paneer",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 1,
     "Price": 15,
-    "Description": "Palak paneer is a 1etarian dish from the Indian subcontinent, consisting of paneer in a thick paste made from pured spinach and seasoned with garlic, garam masala, and other spices.",
+    "Description": "Palak paneer is a vegetarian dish from the Indian subcontinent, consisting of paneer in a thick paste made from puréed spinach and seasoned with garlic, garam masala, and other spices.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 112,
+    "id": 111,
     "Dish_Name": "vegetable Cutlet",
     "Logo": "",
     "Menu_Type": 1,
@@ -1344,19 +1332,19 @@
     "is_active": 1
   },
   {
-    "id": 113,
+    "id": 112,
     "Dish_Name": "vegetable Samosa",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 10,
-    "Description": "1etable Samosa is a healthy snack recipe that you can try at home for your loved ones. Enjoy this samosa with freshly-brewed tea or coffee of your choice. You can also also pair it with tangy tomato ketchup and green chutney made of coriander and mint leaves.",
+    "Description": "vegetable Samosa is a healthy snack recipe that you can try at home for your loved ones. Enjoy this samosa with freshly-brewed tea or coffee of your choice. You can also also pair it with tangy tomato ketchup and green chutney made of coriander and mint leaves.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 114,
+    "id": 113,
     "Dish_Name": "Chana Masala",
     "Logo": "",
     "Menu_Type": 1,
@@ -1368,7 +1356,7 @@
     "is_active": 1
   },
   {
-    "id": 115,
+    "id": 114,
     "Dish_Name": "Mirch ka Saalan",
     "Logo": "",
     "Menu_Type": 7,
@@ -1380,7 +1368,7 @@
     "is_active": 1
   },
   {
-    "id": 116,
+    "id": 115,
     "Dish_Name": "Bagare Baigan",
     "Logo": "",
     "Menu_Type": 7,
@@ -1392,7 +1380,7 @@
     "is_active": 1
   },
   {
-    "id": 117,
+    "id": 116,
     "Dish_Name": "Tomato Chutney",
     "Logo": "",
     "Menu_Type": 7,
@@ -1404,7 +1392,7 @@
     "is_active": 1
   },
   {
-    "id": 118,
+    "id": 117,
     "Dish_Name": "Dalcha",
     "Logo": "",
     "Menu_Type": 7,
@@ -1416,7 +1404,7 @@
     "is_active": 1
   },
   {
-    "id": 119,
+    "id": 118,
     "Dish_Name": "TILL Ka Khatta",
     "Logo": "",
     "Menu_Type": 7,
@@ -1428,7 +1416,7 @@
     "is_active": 1
   },
   {
-    "id": 120,
+    "id": 119,
     "Dish_Name": "Dahi Vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -1440,31 +1428,31 @@
     "is_active": 1
   },
   {
-    "id": 121,
+    "id": 120,
     "Dish_Name": "Chicken 65",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 2,
     "Price": 25,
-    "Description": "Chicken 65 is a spicy, deep-fried chicken dish originating from Tamilnadu, India, as an entree, or quick snack. The flavour of the dish can be attributed to red chillies but the exact set of ingredients for the recipe can vary.",
+    "Description": "Chicken 65 is a spicy, deep-fried chicken dish originating from Tamilnadu, India, as an entrée, or quick snack. The flavour of the dish can be attributed to red chillies but the exact set of ingredients for the recipe can vary.",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for main table",
     "is_active": 1
   },
   {
-    "id": 122,
+    "id": 121,
     "Dish_Name": "Chicken Manchurian",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 2,
     "Price": 25,
-    "Description": "Chicken Manchurian is a popular starter recipe, which is relished by people of all age groups. This all time favourite Chinese recipe can be served with Fried Rice, Pan Fried Noodles, Hakka Noodles. ... Chicken Manchurian has half cooked 1etables and thick gravy which adds on to its unique texture.",
+    "Description": "Chicken Manchurian is a popular starter recipe, which is relished by people of all age groups. This all time favourite Chinese recipe can be served with Fried Rice, Pan Fried Noodles, Hakka Noodles. ... Chicken Manchurian has half cooked vegetables and thick gravy which adds on to its unique texture.",
     "Cuisine": "Indo Chinese",
     "Restrictions": "Only for main table",
     "is_active": 1
   },
   {
-    "id": 123,
+    "id": 122,
     "Dish_Name": "Chicken Noodles",
     "Logo": "",
     "Menu_Type": 7,
@@ -1476,7 +1464,7 @@
     "is_active": 1
   },
   {
-    "id": 124,
+    "id": 123,
     "Dish_Name": "Mutton Noodle",
     "Logo": "",
     "Menu_Type": 7,
@@ -1488,7 +1476,7 @@
     "is_active": 1
   },
   {
-    "id": 125,
+    "id": 124,
     "Dish_Name": "Chicken Fried Rice",
     "Logo": "",
     "Menu_Type": 7,
@@ -1500,7 +1488,7 @@
     "is_active": 1
   },
   {
-    "id": 126,
+    "id": 125,
     "Dish_Name": "Prawn Fried Rice",
     "Logo": "",
     "Menu_Type": 7,
@@ -1512,7 +1500,7 @@
     "is_active": 1
   },
   {
-    "id": 127,
+    "id": 126,
     "Dish_Name": "Fried Fish",
     "Logo": "",
     "Menu_Type": 1,
@@ -1524,7 +1512,7 @@
     "is_active": 1
   },
   {
-    "id": 128,
+    "id": 127,
     "Dish_Name": "Fried Prawns",
     "Logo": "",
     "Menu_Type": 1,
@@ -1536,19 +1524,19 @@
     "is_active": 1
   },
   {
-    "id": 129,
+    "id": 128,
     "Dish_Name": "Veg Manchurian",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 25,
-    "Description": "1etable manchurian is a super tasty and popular indo chinese recipe. the 1 manchurian recipe shared here is a the gravy version and is really delicious.",
+    "Description": "",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 130,
+    "id": 129,
     "Dish_Name": "Veg Soft Noodles",
     "Logo": "",
     "Menu_Type": 7,
@@ -1560,7 +1548,7 @@
     "is_active": 1
   },
   {
-    "id": 131,
+    "id": 130,
     "Dish_Name": "Veg Fried Rice",
     "Logo": "",
     "Menu_Type": 7,
@@ -1572,19 +1560,19 @@
     "is_active": 1
   },
   {
-    "id": 132,
+    "id": 131,
     "Dish_Name": "Aloo 65",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 20,
-    "Description": "Aloo 65 is an amazingly tasty and easy snack recipe..!! In this recipe, the cooked potatoes are mixed with a spicy mixture consisting of coriander pwd, red chilly pwd & ginger garlic paste. ... Wash and cook potatoes until it is three-fourth done.",
+    "Description": "Made from potato being mixed with a spicy mixture of coriander powder, red chilly powder and ginger garlic paste.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 133,
+    "id": 132,
     "Dish_Name": "Aloo Manchurian",
     "Logo": "",
     "Menu_Type": 1,
@@ -1596,7 +1584,7 @@
     "is_active": 1
   },
   {
-    "id": 134,
+    "id": 133,
     "Dish_Name": "Gobi 65",
     "Logo": "",
     "Menu_Type": 1,
@@ -1608,7 +1596,7 @@
     "is_active": 1
   },
   {
-    "id": 135,
+    "id": 134,
     "Dish_Name": "Dry Fruits with ice cream",
     "Logo": "",
     "Menu_Type": 8,
@@ -1620,19 +1608,19 @@
     "is_active": 1
   },
   {
-    "id": 136,
+    "id": 135,
     "Dish_Name": "Fruit Salad",
     "Logo": "",
     "Menu_Type": 8,
     "Category_Type": 1,
     "Price": 30,
-    "Description": "Fruit salad is a dish consisting of various kinds of fruit, sometimes served in a liquid, either in their own juices or a syrup. When served as an appetizer or as a dessert, a fruit salad is sometimes known as a fruit cocktail or fruit cup.",
+    "Description": "",
     "Cuisine": "",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 137,
+    "id": 136,
     "Dish_Name": "Qubaani",
     "Logo": "",
     "Menu_Type": 8,
@@ -1644,7 +1632,7 @@
     "is_active": 1
   },
   {
-    "id": 138,
+    "id": 137,
     "Dish_Name": "3 in 1 Meetha",
     "Logo": "",
     "Menu_Type": 8,
@@ -1656,7 +1644,7 @@
     "is_active": 1
   },
   {
-    "id": 139,
+    "id": 138,
     "Dish_Name": "Kesar Kheer",
     "Logo": "",
     "Menu_Type": 8,
@@ -1668,7 +1656,7 @@
     "is_active": 1
   },
   {
-    "id": 140,
+    "id": 139,
     "Dish_Name": "Kaddu Kheer",
     "Logo": "",
     "Menu_Type": 8,
@@ -1680,7 +1668,7 @@
     "is_active": 1
   },
   {
-    "id": 141,
+    "id": 140,
     "Dish_Name": "Kaddu Ka Resha",
     "Logo": "",
     "Menu_Type": 8,
@@ -1692,7 +1680,7 @@
     "is_active": 1
   },
   {
-    "id": 142,
+    "id": 141,
     "Dish_Name": "Gul-e-Firdous",
     "Logo": "",
     "Menu_Type": 8,
@@ -1704,31 +1692,31 @@
     "is_active": 1
   },
   {
-    "id": 143,
+    "id": 142,
     "Dish_Name": "Double ka Meetha",
     "Logo": "",
     "Menu_Type": 8,
     "Category_Type": 1,
     "Price": 26,
-    "Description": "Double ka meetha is a 4 pudding Indian sweet of fried 4 slices soaked in hot milk with spices, including saffron and cardamom. Double ka meetha is a dessert of Hyderabad, Telangana.",
+    "Description": "Double ka meetha is a bread pudding Indian sweet of fried bread slices soaked in hot milk with spices, including saffron and cardamom. Double ka meetha is a popular dessert of Hyderabad.",
+    "Cuisine": "Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 143,
+    "Dish_Name": "Shahi Tukda",
+    "Logo": "",
+    "Menu_Type": 8,
+    "Category_Type": 1,
+    "Price": 26,
+    "Description": "Shahi Tukra (with Condensed Milk), a popular hyderabadi special sweet is a royal treat to taste buds at anytime. To make this sweet in authentic style, the bread pieces are deep fried in ghee until crispy and then topped with creamy rabri.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
     "id": 144,
-    "Dish_Name": "Shahi Tukda",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": 1,
-    "Price": 26,
-    "Description": "Shahi Tukra (with Condensed Milk), a popular hyderabadi special sweet is a royal treat to taste buds at anytime. To make this sweet in authentic style, 4 pieces are deep fried in ghee until crispy and then topped with creamy rabri. In this recipe, 4 pieces are shallow fried (toasted) to reduce the calorie and condensed milk and grated paneer are used to make the rich and creamy rabri. This simple and easy to prepare dessert cum sweet has nice flavor of saffron and cardamom and tastes delicious either warm or chilled.",
-    "Cuisine": "Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 145,
     "Dish_Name": "Rabdi",
     "Logo": "",
     "Menu_Type": 8,
@@ -1740,7 +1728,7 @@
     "is_active": 1
   },
   {
-    "id": 146,
+    "id": 145,
     "Dish_Name": "Gajar ka Halwa",
     "Logo": "",
     "Menu_Type": 8,
@@ -1752,7 +1740,7 @@
     "is_active": 1
   },
   {
-    "id": 147,
+    "id": 146,
     "Dish_Name": "Egg Pudding",
     "Logo": "",
     "Menu_Type": 8,
@@ -1764,7 +1752,7 @@
     "is_active": 1
   },
   {
-    "id": 148,
+    "id": 147,
     "Dish_Name": "Pista Kheer",
     "Logo": "",
     "Menu_Type": 8,
@@ -1776,7 +1764,7 @@
     "is_active": 1
   },
   {
-    "id": 149,
+    "id": 148,
     "Dish_Name": "Rasmalai",
     "Logo": "",
     "Menu_Type": 8,
@@ -1788,7 +1776,7 @@
     "is_active": 1
   },
   {
-    "id": 150,
+    "id": 149,
     "Dish_Name": "Gulab Jamun",
     "Logo": "",
     "Menu_Type": 8,
@@ -1800,7 +1788,7 @@
     "is_active": 1
   },
   {
-    "id": 151,
+    "id": 150,
     "Dish_Name": "Jilebi",
     "Logo": "",
     "Menu_Type": 8,
@@ -1812,7 +1800,7 @@
     "is_active": 1
   },
   {
-    "id": 152,
+    "id": 151,
     "Dish_Name": "Laddu",
     "Logo": "",
     "Menu_Type": 8,
@@ -1824,7 +1812,7 @@
     "is_active": 1
   },
   {
-    "id": 153,
+    "id": 152,
     "Dish_Name": "Irani Chai (Tea)",
     "Logo": "",
     "Menu_Type": 3,
@@ -1836,7 +1824,7 @@
     "is_active": 1
   },
   {
-    "id": 154,
+    "id": 153,
     "Dish_Name": "Coffee",
     "Logo": "",
     "Menu_Type": 3,
@@ -1848,7 +1836,7 @@
     "is_active": 1
   },
   {
-    "id": 155,
+    "id": 154,
     "Dish_Name": "Sulemani (Black Tea)",
     "Logo": "",
     "Menu_Type": 3,
@@ -1860,7 +1848,7 @@
     "is_active": 1
   },
   {
-    "id": 156,
+    "id": 155,
     "Dish_Name": "Seasonal Fruit Juices",
     "Logo": "",
     "Menu_Type": 3,
@@ -1872,7 +1860,7 @@
     "is_active": 1
   },
   {
-    "id": 157,
+    "id": 156,
     "Dish_Name": "Mineral Water bottle",
     "Logo": "",
     "Menu_Type": 3,
@@ -1884,7 +1872,7 @@
     "is_active": 1
   },
   {
-    "id": 158,
+    "id": 157,
     "Dish_Name": "Badam Milk",
     "Logo": "",
     "Menu_Type": 3,
@@ -1896,7 +1884,7 @@
     "is_active": 1
   },
   {
-    "id": 159,
+    "id": 158,
     "Dish_Name": "Grape Juice",
     "Logo": "",
     "Menu_Type": 3,
@@ -1908,7 +1896,7 @@
     "is_active": 1
   },
   {
-    "id": 160,
+    "id": 159,
     "Dish_Name": "Pine apple juice",
     "Logo": "",
     "Menu_Type": 3,
@@ -1920,19 +1908,19 @@
     "is_active": 1
   },
   {
-    "id": 161,
+    "id": 160,
     "Dish_Name": "Fruit Punch",
     "Logo": "",
     "Menu_Type": 3,
     "Category_Type": "",
     "Price": 7,
-    "Description": "The term punch refers a wide assortment of drinks, both non-alcoholic and alcoholic, generally containing fruit or fruit juice",
+    "Description": "",
     "Cuisine": "",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 162,
+    "id": 161,
     "Dish_Name": "Mango Juice",
     "Logo": "",
     "Menu_Type": 3,
@@ -1944,19 +1932,19 @@
     "is_active": 1
   },
   {
-    "id": 163,
+    "id": 162,
     "Dish_Name": "Mosambi Juice",
     "Logo": "",
     "Menu_Type": 3,
     "Category_Type": "",
     "Price": 7,
-    "Description": "The juice is a hot favorite in India which is consumed not only for its taste but also for an array of health benefits it offers.",
+    "Description": "",
     "Cuisine": "",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 164,
+    "id": 163,
     "Dish_Name": "Orange Juice",
     "Logo": "",
     "Menu_Type": 3,
@@ -1968,7 +1956,7 @@
     "is_active": 1
   },
   {
-    "id": 165,
+    "id": 164,
     "Dish_Name": "Water Melon",
     "Logo": "",
     "Menu_Type": 3,
@@ -1980,19 +1968,19 @@
     "is_active": 1
   },
   {
-    "id": 166,
+    "id": 165,
     "Dish_Name": "Sapota Shake",
     "Logo": "",
     "Menu_Type": 3,
     "Category_Type": "",
     "Price": 7,
-    "Description": "This is very delicious chikoo (Sapota) juice or chikoo milk shake,",
+    "Description": "",
     "Cuisine": "",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 167,
+    "id": 166,
     "Dish_Name": "Lichii juice",
     "Logo": "",
     "Menu_Type": 3,
@@ -2004,7 +1992,7 @@
     "is_active": 1
   },
   {
-    "id": 168,
+    "id": 167,
     "Dish_Name": "Vanilla juice",
     "Logo": "",
     "Menu_Type": 3,
@@ -2016,7 +2004,7 @@
     "is_active": 1
   },
   {
-    "id": 169,
+    "id": 168,
     "Dish_Name": "Strawberry juice",
     "Logo": "",
     "Menu_Type": 3,
@@ -2028,31 +2016,31 @@
     "is_active": 1
   },
   {
-    "id": 170,
+    "id": 169,
     "Dish_Name": "Paneer Tikka",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": "",
     "Price": 10,
-    "Description": "Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor. It is a 1etarian alternative to chicken tikka and other meat dishes",
+    "Description": "Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor. It is a vegetarian alternative to chicken tikka and other meat dishes",
     "Cuisine": "",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 171,
+    "id": 170,
     "Dish_Name": "Tiranga Burfi",
     "Logo": "",
     "Menu_Type": 8,
     "Category_Type": "",
     "Price": 12,
-    "Description": "tiranga burfi recipe with detailed photo and video recipe. a simple all purpose flour based fudge or barfi recipe which is heavily popular in many south indian households because of its easiness and taste. it is mainly prepared during religious ceremony and festival seasons like diwali, janmashtami and navaratri.",
+    "Description": "A simple all purpose flour based fudge or barfi is heavily popular in many south indian households. It is mainly prepared during religious ceremony and festival seasons like diwali, janmashtami and navaratri.",
     "Cuisine": "Indian",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 172,
+    "id": 171,
     "Dish_Name": "Anjeer Roll",
     "Logo": "",
     "Menu_Type": 8,
@@ -2064,19 +2052,19 @@
     "is_active": 1
   },
   {
-    "id": 173,
+    "id": 172,
     "Dish_Name": "Mini Rasgulla",
     "Logo": "",
     "Menu_Type": 8,
     "Category_Type": "",
     "Price": 12,
-    "Description": "Rasgulla or Rasogolla is a traditional Bengali sweet. ... These soft and spongy sweet balls are made with fresh cottage cheese and soaked in sugar syrup that you can't resist yourself to eat them.",
+    "Description": "Rasgulla or Rasogolla is a traditional Bengali sweet. These soft and spongy sweet balls are made with fresh cottage cheese and soaked in sugar syrup that you can't resist yourself to eat them.",
     "Cuisine": "Indian",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 174,
+    "id": 173,
     "Dish_Name": "Malai Sandwich",
     "Logo": "",
     "Menu_Type": 8,
@@ -2088,7 +2076,7 @@
     "is_active": 1
   },
   {
-    "id": 175,
+    "id": 174,
     "Dish_Name": "Kaju Burfi",
     "Logo": "",
     "Menu_Type": 8,
@@ -2100,7 +2088,7 @@
     "is_active": 1
   },
   {
-    "id": 176,
+    "id": 175,
     "Dish_Name": "Kaju Roll",
     "Logo": "",
     "Menu_Type": 1,
@@ -2112,31 +2100,31 @@
     "is_active": 1
   },
   {
-    "id": 177,
+    "id": 176,
     "Dish_Name": "Green Salad",
     "Logo": "",
     "Menu_Type": 6,
     "Category_Type": "",
     "Price": 3,
-    "Description": "A salad is a dish consisting of a mixture of small pieces of food, usually 1etables. However, different varieties of salad may contain virtually any type of ready-to-eat food",
+    "Description": "",
     "Cuisine": "Indian",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 178,
+    "id": 177,
     "Dish_Name": "Sprouts Salad",
     "Logo": "",
     "Menu_Type": 6,
     "Category_Type": "",
     "Price": 3,
-    "Description": "In a bowl, add Moong Dal sprouts, cow pea sprouts, alpha alpha sprouts, spring onions, Chinese cabbage and keep a side. 2. In a blender, put Paneer, milk, salt, and make it like a thin paste, to this and pepper powder, lemon juice, salt and mix well and add this mixture to sprouts and mix well and serve.",
+    "Description": "A salad consisting of Moong Dal, cow pea sprouts, alpha alpha sprouts, spring onions, Chinese cabbage and other spices.",
     "Cuisine": "",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 179,
+    "id": 178,
     "Dish_Name": "Kandvi Docla",
     "Logo": "",
     "Menu_Type": 1,
@@ -2148,7 +2136,7 @@
     "is_active": 1
   },
   {
-    "id": 180,
+    "id": 179,
     "Dish_Name": "Khova Burfi",
     "Logo": "",
     "Menu_Type": 8,
@@ -2160,7 +2148,7 @@
     "is_active": 1
   },
   {
-    "id": 181,
+    "id": 180,
     "Dish_Name": "Bobbatlu Burelu",
     "Logo": "",
     "Menu_Type": 8,
@@ -2172,19 +2160,19 @@
     "is_active": 1
   },
   {
-    "id": 182,
+    "id": 181,
     "Dish_Name": "Gummadi Halwa",
     "Logo": "",
     "Menu_Type": 8,
     "Category_Type": "",
     "Price": 8,
-    "Description": "Gummadikaya Halwa is a traditional sweet dish. Unlike Carrot / Gazar ka Halwa, this delicacy is prepared with a Ash Gourd 1etable.",
+    "Description": "Gummadikaya Halwa is a traditional sweet dish. Unlike gajar ka Halwa, this delicacy is prepared with a Ash Gourd vegetable.",
     "Cuisine": "Indian",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 183,
+    "id": 182,
     "Dish_Name": "Jahangiri Jilebi",
     "Logo": "",
     "Menu_Type": 8,
@@ -2196,19 +2184,19 @@
     "is_active": 1
   },
   {
-    "id": 184,
+    "id": 183,
     "Dish_Name": "Kaddu Halwa",
     "Logo": "",
     "Menu_Type": 8,
     "Category_Type": "",
     "Price": 9,
-    "Description": "Kaddu ka halwa tastes much more delicious than any other savoury dish prepared from pumpkin. ...",
+    "Description": "Kaddu ka halwa tastes much more delicious than any other savoury dish prepared from pumpkin.",
     "Cuisine": "Indian",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 185,
+    "id": 184,
     "Dish_Name": "Kakinada",
     "Logo": "",
     "Menu_Type": 8,
@@ -2220,7 +2208,7 @@
     "is_active": 1
   },
   {
-    "id": 186,
+    "id": 185,
     "Dish_Name": "Khaja Madatha",
     "Logo": "",
     "Menu_Type": 8,
@@ -2232,7 +2220,7 @@
     "is_active": 1
   },
   {
-    "id": 187,
+    "id": 186,
     "Dish_Name": "Khaja Finger",
     "Logo": "",
     "Menu_Type": 8,
@@ -2244,7 +2232,7 @@
     "is_active": 1
   },
   {
-    "id": 188,
+    "id": 187,
     "Dish_Name": "Jamun",
     "Logo": "",
     "Menu_Type": 8,
@@ -2256,19 +2244,19 @@
     "is_active": 1
   },
   {
-    "id": 189,
+    "id": 188,
     "Dish_Name": "Angoor Jamun",
     "Logo": "",
     "Menu_Type": 8,
     "Category_Type": "",
     "Price": 12,
-    "Description": "Angoori Gulab Jamun is a well-known and loved Indian dessert that is very popular to people regardless of age.",
+    "Description": "",
     "Cuisine": "Indian",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 190,
+    "id": 189,
     "Dish_Name": "Mysore Pak",
     "Logo": "",
     "Menu_Type": 8,
@@ -2280,7 +2268,7 @@
     "is_active": 1
   },
   {
-    "id": 191,
+    "id": 190,
     "Dish_Name": "Milk Mysore Pak",
     "Logo": "",
     "Menu_Type": 8,
@@ -2292,7 +2280,7 @@
     "is_active": 1
   },
   {
-    "id": 192,
+    "id": 191,
     "Dish_Name": "Qubani Ka Meetha",
     "Logo": "",
     "Menu_Type": 8,
@@ -2304,7 +2292,7 @@
     "is_active": 1
   },
   {
-    "id": 193,
+    "id": 192,
     "Dish_Name": "Anjeer Dry Fruit Burfi",
     "Logo": "",
     "Menu_Type": 8,
@@ -2316,7 +2304,7 @@
     "is_active": 1
   },
   {
-    "id": 194,
+    "id": 193,
     "Dish_Name": "Buttorscotch Roll",
     "Logo": "",
     "Menu_Type": 8,
@@ -2328,19 +2316,7 @@
     "is_active": 1
   },
   {
-    "id": 195,
-    "Dish_Name": "Buttorscotch Sandwich cookies",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": "",
-    "Price": 15,
-    "Description": "Butterscotch Sandwich Cookies, an easy holiday and Christmas homemade cookie recipe with lots of butterscotch flavor.",
-    "Cuisine": "",
-    "Restrictions": "",
-    "is_active": 1
-  },
-  {
-    "id": 196,
+    "id": 194,
     "Dish_Name": "Chenna Triveni",
     "Logo": "",
     "Menu_Type": 8,
@@ -2352,7 +2328,7 @@
     "is_active": 1
   },
   {
-    "id": 197,
+    "id": 195,
     "Dish_Name": "Chocolate Rasgulla",
     "Logo": "",
     "Menu_Type": 8,
@@ -2364,7 +2340,7 @@
     "is_active": 1
   },
   {
-    "id": 198,
+    "id": 196,
     "Dish_Name": "Dhood Rasgulla",
     "Logo": "",
     "Menu_Type": 8,
@@ -2376,19 +2352,19 @@
     "is_active": 1
   },
   {
-    "id": 199,
+    "id": 197,
     "Dish_Name": "Fruit Burfi",
     "Logo": "",
     "Menu_Type": 8,
     "Category_Type": "",
     "Price": 15,
-    "Description": "Dry fruits khajur burfi is a rich, delicious recipe of barfi prepare with dates, coconut and loads of dry fruits. ... Chop down the cashews, almonds, walnuts and dates.Thinly slice the pistachios Stone grind the green cardamom seeds and nutmeg into fine powder.",
+    "Description": "fruit burfi is a rich, delicious recipe of barfi prepare with loads of fruits.",
     "Cuisine": "Indian",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 200,
+    "id": 198,
     "Dish_Name": "Indra Puri",
     "Logo": "",
     "Menu_Type": 8,
@@ -2400,7 +2376,7 @@
     "is_active": 1
   },
   {
-    "id": 201,
+    "id": 199,
     "Dish_Name": "Dry Fruit Burfi",
     "Logo": "",
     "Menu_Type": 8,
@@ -2412,7 +2388,7 @@
     "is_active": 1
   },
   {
-    "id": 202,
+    "id": 200,
     "Dish_Name": "Dry Fruit Sandwich",
     "Logo": "",
     "Menu_Type": 8,
@@ -2424,7 +2400,7 @@
     "is_active": 1
   },
   {
-    "id": 203,
+    "id": 201,
     "Dish_Name": "Kaju Anjeer Roll",
     "Logo": "",
     "Menu_Type": 8,
@@ -2436,19 +2412,19 @@
     "is_active": 1
   },
   {
-    "id": 204,
+    "id": 202,
     "Dish_Name": "Kaju Pista Roll",
     "Logo": "",
     "Menu_Type": 8,
     "Category_Type": "",
     "Price": 25,
-    "Description": "Kaju Pista roll is an amazing combination of nutty flavors of cashews and pistachios rolled into one. The amazing cashew and pistachio are rich in taste and texture. You can serve it to your guests or relish its amazing taste during your festivities. Everyone will savor its amazing taste for sure.",
+    "Description": "Kaju Pista roll is an amazing combination of nutty flavors of cashews and pistachios rolled into one. The amazing cashew and pistachio are rich in taste and texture. You can serve it to your guests or relish its amazing taste during your festivities.",
     "Cuisine": "Indian",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 205,
+    "id": 203,
     "Dish_Name": "Lichi Gulla",
     "Logo": "",
     "Menu_Type": 8,
@@ -2460,7 +2436,7 @@
     "is_active": 1
   },
   {
-    "id": 206,
+    "id": 204,
     "Dish_Name": "Jilebi With Rabdi",
     "Logo": "",
     "Menu_Type": 8,
@@ -2472,7 +2448,7 @@
     "is_active": 1
   },
   {
-    "id": 207,
+    "id": 205,
     "Dish_Name": "Maal Puri",
     "Logo": "",
     "Menu_Type": 8,
@@ -2484,7 +2460,7 @@
     "is_active": 1
   },
   {
-    "id": 208,
+    "id": 206,
     "Dish_Name": "Maal Khova",
     "Logo": "",
     "Menu_Type": 8,
@@ -2496,19 +2472,19 @@
     "is_active": 1
   },
   {
-    "id": 209,
+    "id": 207,
     "Dish_Name": "Moong Halwa",
     "Logo": "",
     "Menu_Type": 8,
     "Category_Type": "",
     "Price": 10,
-    "Description": "A classic recipe that is relished throughout Rajasthan during the winter months, as it is supposed to keep the body warm and protect it from the bitter winter cold. It is considered to be auspicious, and is often prepared during Holi, Diwali and weddings too. It takes a long time and lots of patience to saut the dal and prepare the Moong Dal Halwa, and it will probably require a little extra ghee too! However, the outcome is worth every minute of extra effort you put into it. You can make a larger quantity of this recipe and store it refrigerated for several weeks. Just add a little milk to the halwa before reheating it.",
+    "Description": "A classic recipe that is relished throughout Rajasthan, and is often prepared during Holi, Diwali and weddings too. It takes a long time and lots of patience to sauté the dal by adding a little milk before reheating it.",
     "Cuisine": "Indian",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 210,
+    "id": 208,
     "Dish_Name": "Orange Roll",
     "Logo": "",
     "Menu_Type": 8,
@@ -2520,7 +2496,7 @@
     "is_active": 1
   },
   {
-    "id": 211,
+    "id": 209,
     "Dish_Name": "Peda Sandwich",
     "Logo": "",
     "Menu_Type": 8,
@@ -2532,7 +2508,7 @@
     "is_active": 1
   },
   {
-    "id": 212,
+    "id": 210,
     "Dish_Name": "Panpeta",
     "Logo": "",
     "Menu_Type": 8,
@@ -2544,19 +2520,19 @@
     "is_active": 1
   },
   {
-    "id": 213,
+    "id": 211,
     "Dish_Name": "Paneer Jalebi",
     "Logo": "",
     "Menu_Type": 8,
     "Category_Type": "",
     "Price": 8,
-    "Description": "Paneer Jalebi is a great desi dessert for Paneer lovers.Paneer, as you know is counted as a premium ingredient for 1etarians; we thought of trying this recipe to re-create the same restaurant taste at home. We used pretty basic ingredients again and have come up with this recipe.",
+    "Description": "Paneer Jalebi is a great desi dessert for Paneer lovers. Paneer, as you know is counted as a premium ingredient for vegetarians.",
     "Cuisine": "Indian",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 214,
+    "id": 212,
     "Dish_Name": "Pineapple Jalebi",
     "Logo": "",
     "Menu_Type": 8,
@@ -2568,7 +2544,7 @@
     "is_active": 1
   },
   {
-    "id": 215,
+    "id": 213,
     "Dish_Name": "Rasmadhuri",
     "Logo": "",
     "Menu_Type": 8,
@@ -2580,7 +2556,7 @@
     "is_active": 1
   },
   {
-    "id": 216,
+    "id": 214,
     "Dish_Name": "Raj Bhog",
     "Logo": "",
     "Menu_Type": 8,
@@ -2592,31 +2568,31 @@
     "is_active": 1
   },
   {
-    "id": 217,
+    "id": 215,
     "Dish_Name": "Seethapal Sweet",
     "Logo": "",
     "Menu_Type": 8,
     "Category_Type": "",
     "Price": 10,
-    "Description": "Sitaphal Halwa is a fruit flavoured sweet dish recipe with mashed sitaphal orcustard apple added to milk along with sugar. Serve sitafal Halwa as a sweet dish on fasting days , garnished with chopped nuts.",
+    "Description": "Sitaphal Halwa is a fruit flavoured sweet dish recipe with mashed sitaphal orcustard apple added to milk along with sugar. It is often served on fasting days, garnished with chopped nuts.",
     "Cuisine": "Indian",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 218,
+    "id": 216,
     "Dish_Name": "Strawberry Rasmalai",
     "Logo": "",
     "Menu_Type": 8,
     "Category_Type": "",
     "Price": 10,
-    "Description": "A fruit-ilicious presentation of fresh strawberries sandwiched between slices of juicy rasmalai, this is indeed a delightfully innovative dessert. What is more, strawberry rasmalai is also quick and easy to make. A garnishing of sliced almonds will perk up every serving, so keep some handy. As a variation, you can also use mangoes instead of strawberries.",
+    "Description": "A fruit-ilicious presentation of fresh strawberries sandwiched between slices of juicy rasmalai, this is indeed a delightfully innovative dessert garnished with sliced almonds.",
     "Cuisine": "Indian",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 219,
+    "id": 217,
     "Dish_Name": "Tavva Sweet",
     "Logo": "",
     "Menu_Type": 8,
@@ -2628,7 +2604,7 @@
     "is_active": 1
   },
   {
-    "id": 220,
+    "id": 218,
     "Dish_Name": "Tavva Dry Fruit Sweet",
     "Logo": "",
     "Menu_Type": 8,
@@ -2640,7 +2616,7 @@
     "is_active": 1
   },
   {
-    "id": 221,
+    "id": 219,
     "Dish_Name": "Apple Sweet",
     "Logo": "",
     "Menu_Type": 8,
@@ -2652,7 +2628,7 @@
     "is_active": 1
   },
   {
-    "id": 222,
+    "id": 220,
     "Dish_Name": "Basundhii",
     "Logo": "",
     "Menu_Type": 8,
@@ -2664,31 +2640,31 @@
     "is_active": 1
   },
   {
-    "id": 223,
+    "id": 221,
     "Dish_Name": "Baby Corn Manchuria",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 10,
-    "Description": "Baby corn manchurian recipe  One of the delicious manchurian recipes from the Indo chinese cuisine. Manchurian recipes are not from the authentic Chinese cuisine but are a fusion of the Indian & chinese cuisines",
+    "Description": "One of the delicious manchurian recipes from the Indo chinese cuisine. Manchurian recipes are not from the authentic Chinese cuisine but are a fusion of the Indian & chinese cuisines.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 224,
+    "id": 222,
     "Dish_Name": "Paneer Manchuria",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 10,
-    "Description": "Dry and spicy Paneer Manchurian is one of the best Indo Chinese recipes.",
+    "Description": "",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 225,
+    "id": 223,
     "Dish_Name": "Chinese Bhel",
     "Logo": "",
     "Menu_Type": 1,
@@ -2700,7 +2676,7 @@
     "is_active": 1
   },
   {
-    "id": 226,
+    "id": 224,
     "Dish_Name": "American Chopsey",
     "Logo": "",
     "Menu_Type": 7,
@@ -2712,7 +2688,7 @@
     "is_active": 1
   },
   {
-    "id": 227,
+    "id": 225,
     "Dish_Name": "Aalu Tokri",
     "Logo": "",
     "Menu_Type": 1,
@@ -2724,19 +2700,19 @@
     "is_active": 1
   },
   {
-    "id": 228,
+    "id": 226,
     "Dish_Name": "Bhel Puri",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 8,
-    "Description": "Bhelpuri is a savoury snack, originating from the Indian subcontinent, and is also a type of chaat. It is made of puffed rice, 1etables and a tangy tamarind sauce. Bhel is often identified with the beaches of Mumbai, such as Chowpatty or Juhu",
+    "Description": "Bhelpuri is a savoury snack, originating from the Indian subcontinent, and is also a type of chaat. It is made of puffed rice, vegetables and a tangy tamarind sauce. Bhel is often identified with the beaches of Mumbai, such as Chowpatty or Juhu",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 229,
+    "id": 227,
     "Dish_Name": "Canfi Chat",
     "Logo": "",
     "Menu_Type": 1,
@@ -2748,7 +2724,7 @@
     "is_active": 1
   },
   {
-    "id": 230,
+    "id": 228,
     "Dish_Name": "Karela Papidi",
     "Logo": "",
     "Menu_Type": 1,
@@ -2760,7 +2736,7 @@
     "is_active": 1
   },
   {
-    "id": 231,
+    "id": 229,
     "Dish_Name": "Marwadi Dahi vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -2772,7 +2748,7 @@
     "is_active": 1
   },
   {
-    "id": 232,
+    "id": 230,
     "Dish_Name": "Panipuri",
     "Logo": "",
     "Menu_Type": 8,
@@ -2784,19 +2760,19 @@
     "is_active": 1
   },
   {
-    "id": 233,
+    "id": 231,
     "Dish_Name": "Pav Bhaji",
     "Logo": "",
     "Menu_Type": 8,
     "Category_Type": 1,
     "Price": 10,
-    "Description": "Pav bhaji is a fast food dish from India, consisting of a thick 1etable curry, fried and served with a soft 4 roll.",
+    "Description": "Pav bhaji is a fast food dish from India, consisting of a thick vegetable curry, fried and served with a soft bread roll.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 234,
+    "id": 232,
     "Dish_Name": "Ragada Cutlet",
     "Logo": "",
     "Menu_Type": 1,
@@ -2808,19 +2784,19 @@
     "is_active": 1
   },
   {
-    "id": 235,
+    "id": 233,
     "Dish_Name": "Ragada Samosa",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 8,
-    "Description": "Chaat and Tikki, Maharashtrian, 2. One can make many Indian 2 and variety of Indian chaats with hot and spicy ragada. The thick and spicy ragda made with dried green/white peas is a key for making tempting ragda patties, ragda samosa and ragda cutlet among many other Indian 2",
+    "Description": "Thick and spicy ragda made with dried green/white peas is a key for making tempting ragda patties, ragda samosa and ragda cutlet among many other Indian 2",
     "Cuisine": "North Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 236,
+    "id": 234,
     "Dish_Name": "Ragada Kachori",
     "Logo": "",
     "Menu_Type": 1,
@@ -2832,7 +2808,7 @@
     "is_active": 1
   },
   {
-    "id": 237,
+    "id": 235,
     "Dish_Name": "Ragada Cutmirchi",
     "Logo": "",
     "Menu_Type": 1,
@@ -2844,7 +2820,7 @@
     "is_active": 1
   },
   {
-    "id": 238,
+    "id": 236,
     "Dish_Name": "Mutter Tikka",
     "Logo": "",
     "Menu_Type": 7,
@@ -2856,7 +2832,7 @@
     "is_active": 1
   },
   {
-    "id": 239,
+    "id": 237,
     "Dish_Name": "Dry Fruit Tikka",
     "Logo": "",
     "Menu_Type": 7,
@@ -2868,31 +2844,31 @@
     "is_active": 1
   },
   {
-    "id": 240,
+    "id": 238,
     "Dish_Name": "Ice Cream Fry",
     "Logo": "",
     "Menu_Type": 8,
     "Category_Type": 1,
     "Price": 30,
-    "Description": "Fried ice cream is a dessert made from a 4ed scoop of ice cream that is quickly deep-fried creating a warm, crispy shell around the still-cold ice cream.",
+    "Description": "Fried ice cream is a dessert made from a scoop of ice cream that is quickly deep-fried creating a warm, crispy shell around the still-cold ice cream.",
     "Cuisine": "",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 241,
-    "Dish_Name": "4 Pakoda",
+    "id": 239,
+    "Dish_Name": "Pakoda",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 8,
-    "Description": "4 pakora is an Indian fried snack. It is also known as 4 bhaji. A common street food, it is made from 4 slices, gram flour, and spices among other ingredients.",
+    "Description": "pakora is an Indian fried snack.A common street food, it is made from onions, gram flour, and spices among other ingredients.",
     "Cuisine": "",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 242,
+    "id": 240,
     "Dish_Name": "Moong Pakoda",
     "Logo": "",
     "Menu_Type": 1,
@@ -2904,19 +2880,19 @@
     "is_active": 1
   },
   {
-    "id": 243,
-    "Dish_Name": "Sandwich",
+    "id": 241,
+    "Dish_Name": "Veg Sandwich",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 8,
-    "Description": "A sandwich is a food typically consisting of 1etables, sliced cheese or meat, placed on or between slices of 4, or more generally any dish wherein two or more pieces of 4 serve as a container or wrapper for another food type",
+    "Description": "",
     "Cuisine": "North Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 244,
+    "id": 242,
     "Dish_Name": "Sevpuri",
     "Logo": "",
     "Menu_Type": 1,
@@ -2928,7 +2904,7 @@
     "is_active": 1
   },
   {
-    "id": 245,
+    "id": 243,
     "Dish_Name": "Mini Pizza",
     "Logo": "",
     "Menu_Type": 1,
@@ -2940,7 +2916,7 @@
     "is_active": 1
   },
   {
-    "id": 246,
+    "id": 244,
     "Dish_Name": "Mini Burger",
     "Logo": "",
     "Menu_Type": 1,
@@ -2952,19 +2928,19 @@
     "is_active": 1
   },
   {
-    "id": 247,
+    "id": 245,
     "Dish_Name": "Dahi Gujia",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 8,
-    "Description": "Dahi Gujiya is a 1etarian snack which is very famous in the Northern parts of India. It is very popularly made during festivals, a specialty of Holi festival too. It is made from thick urad dal batter. The batter is shaped into Gujiyas and are stuffed with some pepper corns, roasted cumin powder and grated ginger. This recipe is a burst of tang, spice, sweet and salt in your mouth. Try these delicious Dahi Gujiyas for this Holi festival and treat your family and friends a colorful plate of deliciousness.",
+    "Description": "Dahi Gujiya is a vegetarian snack which is very famous in the Northern parts of India. It is very popularly made during festivals, a specialty of Holi festival too. It is made from thick urad dal batter. The batter is shaped into Gujiyas and are stuffed with some pepper corns, roasted cumin powder and grated ginger. This recipe is a burst of tang, spice, sweet and salt in your mouth. Try these delicious Dahi Gujiyas for this Holi festival and treat your family and friends a colorful plate of deliciousness.",
     "Cuisine": "North Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 248,
+    "id": 246,
     "Dish_Name": "Aalu Basket",
     "Logo": "",
     "Menu_Type": 1,
@@ -2976,7 +2952,7 @@
     "is_active": 1
   },
   {
-    "id": 249,
+    "id": 247,
     "Dish_Name": "Soyabean Dosa",
     "Logo": "",
     "Menu_Type": 1,
@@ -2988,7 +2964,7 @@
     "is_active": 1
   },
   {
-    "id": 250,
+    "id": 248,
     "Dish_Name": "Manchuria Dosa",
     "Logo": "",
     "Menu_Type": 1,
@@ -3000,19 +2976,19 @@
     "is_active": 1
   },
   {
-    "id": 251,
+    "id": 249,
     "Dish_Name": "masala dosa",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 20,
-    "Description": "Masala dosa or masale dose is a variation of the popular South Indian food dosa, which has its origins in Tuluva Mangalorean cuisine.",
+    "Description": "Masala dosa is a variation of the popular South Indian food dosa, which contains potato masala within, it originated fromTuluva Mangalorean cuisine.",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 252,
+    "id": 250,
     "Dish_Name": "butter masala dosa",
     "Logo": "",
     "Menu_Type": 1,
@@ -3024,31 +3000,31 @@
     "is_active": 1
   },
   {
-    "id": 253,
+    "id": 251,
     "Dish_Name": "Idly",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 8,
-    "Description": "idly are a type of savoury rice cake, originating from the Indian subcontinent, popular as breakfast foods throughout India and northern Sri Lanka. The cakes are made by steaming a batter consisting of fermented black lentils and rice",
+    "Description": "idly is a type of savoury rice cake, originating from the Indian subcontinent, popular as breakfast foods throughout India and northern Sri Lanka. The cakes are made by steaming a batter consisting of fermented black lentils and rice",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 254,
+    "id": 252,
     "Dish_Name": "vada",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 8,
-    "Description": "Vada is a category of savoury fried 2 from India. Different types of vadas can be described variously as fritters, cutlets, doughnuts, or dumplings.",
+    "Description": "Vada can be categorized as savoury fried fritters, cutlets, doughnuts, or dumplings.",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 255,
+    "id": 253,
     "Dish_Name": "Button Idly",
     "Logo": "",
     "Menu_Type": 1,
@@ -3060,7 +3036,7 @@
     "is_active": 1
   },
   {
-    "id": 256,
+    "id": 254,
     "Dish_Name": "Button vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -3072,7 +3048,7 @@
     "is_active": 1
   },
   {
-    "id": 257,
+    "id": 255,
     "Dish_Name": "Mysore Bajji",
     "Logo": "",
     "Menu_Type": 1,
@@ -3084,7 +3060,7 @@
     "is_active": 1
   },
   {
-    "id": 258,
+    "id": 256,
     "Dish_Name": "Mirchi Bajji",
     "Logo": "",
     "Menu_Type": 1,
@@ -3096,7 +3072,7 @@
     "is_active": 1
   },
   {
-    "id": 259,
+    "id": 257,
     "Dish_Name": "Aratikaya Bajji",
     "Logo": "",
     "Menu_Type": 1,
@@ -3108,7 +3084,7 @@
     "is_active": 1
   },
   {
-    "id": 260,
+    "id": 258,
     "Dish_Name": "Nellore Gare",
     "Logo": "",
     "Menu_Type": 1,
@@ -3120,7 +3096,7 @@
     "is_active": 1
   },
   {
-    "id": 261,
+    "id": 259,
     "Dish_Name": "Amristar Naan",
     "Logo": "",
     "Menu_Type": 1,
@@ -3132,19 +3108,19 @@
     "is_active": 1
   },
   {
-    "id": 262,
+    "id": 260,
     "Dish_Name": "Sarsonki Saag",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 8,
-    "Description": "Sarson ka saag is a popular 1etarian dish from the Punjab and Rajasthan regions of the Indian subcontinent, made from mustard greens and Indian spices.",
+    "Description": "Sarson ka saag is a popular vegetarian dish from the Punjab and Rajasthan regions of the Indian subcontinent, made from mustard greens and Indian spices.",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 263,
+    "id": 261,
     "Dish_Name": "Dal Makani",
     "Logo": "",
     "Menu_Type": 1,
@@ -3156,19 +3132,19 @@
     "is_active": 1
   },
   {
-    "id": 264,
+    "id": 262,
     "Dish_Name": "Moong Ki Dal",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 8,
-    "Description": "Moong Dal (yellow dal) is a healthy Indian comfort food prepared from yellow split lentil (green split gram without skin) and many spices. It is rich in protein and a staple food in India and main source of protein for 1etarians. Serve it with rice and roti for healthy wholesome meal.",
+    "Description": "Moong Dal (yellow dal) is a healthy Indian comfort food prepared from yellow split lentil (green split gram without skin) and many spices. It is rich in protein and a staple food in India and main source of protein for vegetarians. Serve it with rice and roti for healthy wholesome meal.",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 265,
+    "id": 263,
     "Dish_Name": "Tadka Dal",
     "Logo": "",
     "Menu_Type": 1,
@@ -3180,31 +3156,31 @@
     "is_active": 1
   },
   {
-    "id": 266,
+    "id": 264,
     "Dish_Name": "Kurchan Paneer",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 12,
-    "Description": "the dish is basically scraped paneer in a semi dry sauce or gravy of onion, tomatoes and bell pepper.",
+    "Description": "The dish is basically scraped paneer in a semi dry sauce or gravy of onion, tomatoes and bell pepper.",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 267,
+    "id": 265,
     "Dish_Name": "Amritsar Chole",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 10,
-    "Description": "this dish is from the Amritsar, Punjab. It is usually served with amritsari kulcha. The chole kulcha is the most popular combo that is served in many restaurants or street stalls",
+    "Description": "This dish is from the Amritsar, Punjab. It is usually served with amritsari kulcha. The chole kulcha is the most popular combo that is served in many restaurants or street stalls",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 268,
+    "id": 266,
     "Dish_Name": "Onion Ring",
     "Logo": "",
     "Menu_Type": 1,
@@ -3216,7 +3192,7 @@
     "is_active": 1
   },
   {
-    "id": 269,
+    "id": 267,
     "Dish_Name": "Capsicum Ring",
     "Logo": "",
     "Menu_Type": 1,
@@ -3228,7 +3204,7 @@
     "is_active": 1
   },
   {
-    "id": 270,
+    "id": 268,
     "Dish_Name": "Tomata Ring",
     "Logo": "",
     "Menu_Type": 1,
@@ -3240,7 +3216,7 @@
     "is_active": 1
   },
   {
-    "id": 271,
+    "id": 269,
     "Dish_Name": "Cheese Ball",
     "Logo": "",
     "Menu_Type": 1,
@@ -3252,67 +3228,67 @@
     "is_active": 1
   },
   {
-    "id": 272,
+    "id": 270,
     "Dish_Name": "Baby Naan",
     "Logo": "",
     "Menu_Type": 4,
     "Category_Type": 1,
     "Price": 7,
-    "Description": "Baby Naan is very popular in Bengal and is often served in any occasion or a get together",
+    "Description": "“Baby Naan” is very popular in Bengal and is often served in any occasion or a get together",
     "Cuisine": "",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 273,
+    "id": 271,
     "Dish_Name": "Latcha Parota",
     "Logo": "",
     "Menu_Type": 4,
     "Category_Type": 1,
     "Price": 10,
-    "Description": "Lachha Paratha, a multi layered shallow fried north Indian flat 4, is an epitome of cooking art which tells us how one can make delicious and tempting food from common unassuming ingredients by just deploying a new technique in its preparation. This layered paratha is also popular as kerala parotta in malabar region of kerala. This step by step photo recipe employs extremely easy and unique technique and provides detailed instructions to help you make perfectly layered paratha.",
+    "Description": "Lachha Paratha, a multi layered shallow fried north Indian flat bread, is an epitome of cooking art which tells us how one can make delicious and tempting food from common unassuming ingredients by just deploying a new technique in its preparation. This layered paratha is also popular as kerala parotta in malabar region of kerala. This step by step photo recipe employs extremely easy and unique technique and provides detailed instructions to help you make perfectly layered paratha.",
     "Cuisine": "",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 274,
+    "id": 272,
     "Dish_Name": "Pudhina Parota",
     "Logo": "",
     "Menu_Type": 4,
     "Category_Type": 1,
     "Price": 10,
-    "Description": "For making pudina paratha, heat a pan over medium flame. Dry roast the mint leaves and then grind them to a fine powder. Once converted into fine powder, mix it with wheat flour and salt.",
+    "Description": "Pudina paratha contains dry roasted powdered mint leaves mixed along with wheat flour and salt.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 275,
+    "id": 273,
     "Dish_Name": "Masala Puri",
     "Logo": "",
     "Menu_Type": 4,
     "Category_Type": 1,
     "Price": 12,
-    "Description": "masalpuri, is an Indian snack which is especially popular in the southern states of Karnataka, Tamil Nadu, Telangana and Andhra Pradesh.",
+    "Description": "Masalpuri, is an Indian snack spicy gravy made from dried peas which is similar to ragda chaat but tastes totally different than that of a chaat. It's especially popular in the southern states of Karnataka, Tamil Nadu, Telangana and Andhra Pradesh.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 276,
+    "id": 274,
     "Dish_Name": "Makki Ka Roti",
     "Logo": "",
     "Menu_Type": 4,
     "Category_Type": 1,
     "Price": 8,
-    "Description": "Makki ki roti is a flat, unleavened Punjabi 4 made from corn meal, primarily eaten in Punjab region of the Indian subcontinent. Like most rotis in the Indian subcontinent, it is baked on a tava.",
+    "Description": "Makki ki roti is a flat, unleavened hand made roti originated in the Indian subcontinent and is baked on a tava.",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 277,
+    "id": 275,
     "Dish_Name": "Paneer Kulcha",
     "Logo": "",
     "Menu_Type": 1,
@@ -3324,7 +3300,7 @@
     "is_active": 1
   },
   {
-    "id": 278,
+    "id": 276,
     "Dish_Name": "Palak Rumali",
     "Logo": "",
     "Menu_Type": 4,
@@ -3336,7 +3312,7 @@
     "is_active": 1
   },
   {
-    "id": 279,
+    "id": 277,
     "Dish_Name": "Puri",
     "Logo": "",
     "Menu_Type": 4,
@@ -3348,7 +3324,7 @@
     "is_active": 1
   },
   {
-    "id": 280,
+    "id": 278,
     "Dish_Name": "Palak Puri",
     "Logo": "",
     "Menu_Type": 4,
@@ -3360,7 +3336,7 @@
     "is_active": 1
   },
   {
-    "id": 281,
+    "id": 279,
     "Dish_Name": "Phulka",
     "Logo": "",
     "Menu_Type": 4,
@@ -3372,7 +3348,7 @@
     "is_active": 1
   },
   {
-    "id": 282,
+    "id": 280,
     "Dish_Name": "Mushroom Mutter",
     "Logo": "",
     "Menu_Type": 7,
@@ -3384,7 +3360,7 @@
     "is_active": 1
   },
   {
-    "id": 283,
+    "id": 281,
     "Dish_Name": "Mushroom Baby Corn",
     "Logo": "",
     "Menu_Type": 7,
@@ -3396,7 +3372,7 @@
     "is_active": 1
   },
   {
-    "id": 284,
+    "id": 282,
     "Dish_Name": "Mushroom Paneer",
     "Logo": "",
     "Menu_Type": 7,
@@ -3408,7 +3384,7 @@
     "is_active": 1
   },
   {
-    "id": 285,
+    "id": 283,
     "Dish_Name": "Mushroom Capsicum",
     "Logo": "",
     "Menu_Type": 7,
@@ -3420,7 +3396,7 @@
     "is_active": 1
   },
   {
-    "id": 286,
+    "id": 284,
     "Dish_Name": "Mushroom Dopazia",
     "Logo": "",
     "Menu_Type": 7,
@@ -3432,19 +3408,19 @@
     "is_active": 1
   },
   {
-    "id": 287,
+    "id": 285,
     "Dish_Name": "Palak Aalu",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 1,
     "Price": 9,
-    "Description": "Aloo palak is a very easy and simple recipe with a combination of cubed potatoes and chopped spinach cooked with masalas and red dry chillies. Serve this subzi hot with rotis or parathas.",
+    "Description": "Aloo palak is a very easy and simple recipe with a combination of cubed potatoes and chopped spinach cooked with masalas and red dry chillies which is often served with rotis or parathas.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 288,
+    "id": 286,
     "Dish_Name": "Paneer Butter Masala",
     "Logo": "",
     "Menu_Type": 7,
@@ -3456,19 +3432,19 @@
     "is_active": 1
   },
   {
-    "id": 289,
+    "id": 287,
     "Dish_Name": "Paneer Tikka masala",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 1,
     "Price": 14,
-    "Description": "Paneer tikka masala is an Indian dish of marinated paneer cheese served in a spiced gravy. It is a 1etarian alternative to chicken tikka masala.",
+    "Description": "Paneer tikka masala is an Indian dish of marinated paneer cheese served in a spiced gravy. It is a vegetarian alternative to chicken tikka masala.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 290,
+    "id": 288,
     "Dish_Name": "Paneer Dopazia",
     "Logo": "",
     "Menu_Type": 7,
@@ -3480,7 +3456,7 @@
     "is_active": 1
   },
   {
-    "id": 291,
+    "id": 289,
     "Dish_Name": "Paneer Asthana",
     "Logo": "",
     "Menu_Type": 7,
@@ -3492,7 +3468,7 @@
     "is_active": 1
   },
   {
-    "id": 292,
+    "id": 290,
     "Dish_Name": "Paneer Koftha",
     "Logo": "",
     "Menu_Type": "",
@@ -3504,7 +3480,7 @@
     "is_active": 1
   },
   {
-    "id": 293,
+    "id": 291,
     "Dish_Name": "Paneer Chatpati",
     "Logo": "",
     "Menu_Type": 7,
@@ -3516,7 +3492,7 @@
     "is_active": 1
   },
   {
-    "id": 294,
+    "id": 292,
     "Dish_Name": "Paneer Makhani",
     "Logo": "",
     "Menu_Type": 7,
@@ -3528,7 +3504,7 @@
     "is_active": 1
   },
   {
-    "id": 295,
+    "id": 293,
     "Dish_Name": "Paneer Dilbar",
     "Logo": "",
     "Menu_Type": 7,
@@ -3540,19 +3516,19 @@
     "is_active": 1
   },
   {
-    "id": 296,
+    "id": 294,
     "Dish_Name": "Shahi Paneer",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 1,
     "Price": 15,
-    "Description": "Shahi paneer is a preparation of paneer in a thick gravy made up of cream, tomatoes and spices from the Indian subcontinent. It is mainly eaten with roti, naan, rice, other 4",
+    "Description": "Shahi paneer is a preparation of paneer in a thick gravy made up of cream, tomatoes and spices from the Indian subcontinent. It is mainly eaten with roti, naan, or rice.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 297,
+    "id": 295,
     "Dish_Name": "Stuffed Tomato",
     "Logo": "",
     "Menu_Type": 7,
@@ -3564,31 +3540,31 @@
     "is_active": 1
   },
   {
-    "id": 298,
+    "id": 296,
     "Dish_Name": "Veg Jal Frize",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 1,
     "Price": 12,
-    "Description": "Jalfrezi is a cooking method known the world-over. It is basically a preparation of 1etables or meat in a saucy base.",
+    "Description": "Jalfrezi is a cooking method known the world-over. It is basically a preparation of vegetables or meat in a saucy base.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 299,
+    "id": 297,
     "Dish_Name": "Veg Koftha",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 1,
     "Price": 16,
-    "Description": "Koftas are essentially meatballs or fried dumplings in a curry. But why should 1etarian people not enjoy this delicious dish.",
+    "Description": "Koftas are essentially meatballs or fried dumplings in a curry.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 300,
+    "id": 298,
     "Dish_Name": "Veg.Asthana",
     "Logo": "",
     "Menu_Type": 7,
@@ -3600,7 +3576,7 @@
     "is_active": 1
   },
   {
-    "id": 301,
+    "id": 299,
     "Dish_Name": "Veg.Chatpati",
     "Logo": "",
     "Menu_Type": 7,
@@ -3612,7 +3588,7 @@
     "is_active": 1
   },
   {
-    "id": 302,
+    "id": 300,
     "Dish_Name": "Veg.Harabara",
     "Logo": "",
     "Menu_Type": 7,
@@ -3624,31 +3600,31 @@
     "is_active": 1
   },
   {
-    "id": 303,
+    "id": 301,
     "Dish_Name": "Veg Jaipuri",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 1,
     "Price": 17,
-    "Description": "1etable Jaipuri is a delicious mixed 1etable curry.",
+    "Description": "vegetable Jaipuri is a delicious mixed vegetable curry.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 304,
+    "id": 302,
     "Dish_Name": "Veg.Rajma",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 1,
     "Price": 17,
-    "Description": "is a popular 1etarian dish, originating from the Indian subcontinent, consisting of red kidney beans in a thick gravy with many Indian whole spices and usually served with rice.",
+    "Description": "Rajma is a popular vegetarian dish, originating from the Indian subcontinent, consisting of red kidney beans in a thick gravy with many Indian whole spices and usually served with rice.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 305,
+    "id": 303,
     "Dish_Name": "Mini Jamun Curry",
     "Logo": "",
     "Menu_Type": 7,
@@ -3660,7 +3636,7 @@
     "is_active": 1
   },
   {
-    "id": 306,
+    "id": 304,
     "Dish_Name": "Tavva Sabji",
     "Logo": "",
     "Menu_Type": 7,
@@ -3672,31 +3648,31 @@
     "is_active": 1
   },
   {
-    "id": 307,
+    "id": 305,
     "Dish_Name": "Zeera Paneer",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 1,
     "Price": 17,
-    "Description": "Jeera Paneer Fry is one of the most easiest and fastest recipe you can prepare for dinner.",
+    "Description": "",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 308,
+    "id": 306,
     "Dish_Name": "Kaju Paneer",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 1,
     "Price": 20,
-    "Description": "the kaju butter masala gravy or curry is rich, creamy and on the sweeter side. its also mild and not spicy",
+    "Description": "The kaju butter masala gravy or curry is rich, creamy and on the sweeter side. its also mild and not spicy",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 309,
+    "id": 307,
     "Dish_Name": "Aalu Fry",
     "Logo": "",
     "Menu_Type": 7,
@@ -3708,7 +3684,7 @@
     "is_active": 1
   },
   {
-    "id": 310,
+    "id": 308,
     "Dish_Name": "Arati Fry",
     "Logo": "",
     "Menu_Type": 7,
@@ -3720,19 +3696,19 @@
     "is_active": 1
   },
   {
-    "id": 311,
+    "id": 309,
     "Dish_Name": "Bhendi Fry",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 1,
     "Price": 12,
-    "Description": "Bhendi Fry is stir fried okra that is slit and stuffed with spice mix such as garam masala and other locally available ground spices.",
+    "Description": "Bhendi Fry is stir fried okra that is slit and stuffed with spice mix such as garam masala and other ground spices.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 312,
+    "id": 310,
     "Dish_Name": "chana Fry",
     "Logo": "",
     "Menu_Type": 7,
@@ -3744,7 +3720,7 @@
     "is_active": 1
   },
   {
-    "id": 313,
+    "id": 311,
     "Dish_Name": "Coconut Donda",
     "Logo": "",
     "Menu_Type": 7,
@@ -3756,7 +3732,7 @@
     "is_active": 1
   },
   {
-    "id": 314,
+    "id": 312,
     "Dish_Name": "Kanda Fry",
     "Logo": "",
     "Menu_Type": 7,
@@ -3768,7 +3744,7 @@
     "is_active": 1
   },
   {
-    "id": 315,
+    "id": 313,
     "Dish_Name": "Vankaya Pakodi",
     "Logo": "",
     "Menu_Type": 7,
@@ -3780,7 +3756,7 @@
     "is_active": 1
   },
   {
-    "id": 316,
+    "id": 314,
     "Dish_Name": "Stuffed Bendi",
     "Logo": "",
     "Menu_Type": 7,
@@ -3792,7 +3768,7 @@
     "is_active": 1
   },
   {
-    "id": 317,
+    "id": 315,
     "Dish_Name": "Avvial",
     "Logo": "",
     "Menu_Type": 7,
@@ -3804,19 +3780,19 @@
     "is_active": 1
   },
   {
-    "id": 318,
+    "id": 316,
     "Dish_Name": "Aalu Tomata Curry",
     "Logo": "",
     "Menu_Type": 7,
     "Category_Type": 1,
     "Price": 17,
-    "Description": "loo Tamatar Ki Sabzi is a simple, comforting and easy to make dish which is regularly cooked in North Indian households.",
+    "Description": "",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 319,
+    "id": 317,
     "Dish_Name": "Panasapottu Kura",
     "Logo": "",
     "Menu_Type": 7,
@@ -3828,7 +3804,7 @@
     "is_active": 1
   },
   {
-    "id": 320,
+    "id": 318,
     "Dish_Name": "Aalu Capsicum",
     "Logo": "",
     "Menu_Type": 7,
@@ -3840,7 +3816,7 @@
     "is_active": 1
   },
   {
-    "id": 321,
+    "id": 319,
     "Dish_Name": "Mulakada Tomato",
     "Logo": "",
     "Menu_Type": 7,
@@ -3852,7 +3828,7 @@
     "is_active": 1
   },
   {
-    "id": 322,
+    "id": 320,
     "Dish_Name": "Fruit Stall",
     "Logo": "",
     "Menu_Type": 9,
@@ -3864,7 +3840,7 @@
     "is_active": 1
   },
   {
-    "id": 323,
+    "id": 321,
     "Dish_Name": "Mock Tail Counter",
     "Logo": "",
     "Menu_Type": 9,
@@ -3876,7 +3852,7 @@
     "is_active": 1
   },
   {
-    "id": 324,
+    "id": 322,
     "Dish_Name": "Sugar Candy",
     "Logo": "",
     "Menu_Type": 9,
@@ -3888,7 +3864,7 @@
     "is_active": 1
   },
   {
-    "id": 325,
+    "id": 323,
     "Dish_Name": "Ice Gola",
     "Logo": "",
     "Menu_Type": 9,
@@ -3900,7 +3876,7 @@
     "is_active": 1
   },
   {
-    "id": 326,
+    "id": 324,
     "Dish_Name": "American Sweet Corn",
     "Logo": "",
     "Menu_Type": 9,
@@ -3912,7 +3888,7 @@
     "is_active": 1
   },
   {
-    "id": 327,
+    "id": 325,
     "Dish_Name": "Pop Corn",
     "Logo": "",
     "Menu_Type": 9,
@@ -3924,7 +3900,7 @@
     "is_active": 1
   },
   {
-    "id": 328,
+    "id": 326,
     "Dish_Name": "Pan Stall",
     "Logo": "",
     "Menu_Type": 9,
@@ -3936,7 +3912,7 @@
     "is_active": 1
   },
   {
-    "id": 329,
+    "id": 327,
     "Dish_Name": "Medu vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -3948,7 +3924,7 @@
     "is_active": 1
   },
   {
-    "id": 330,
+    "id": 328,
     "Dish_Name": "uddina vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -3960,7 +3936,7 @@
     "is_active": 1
   },
   {
-    "id": 331,
+    "id": 329,
     "Dish_Name": "Masala vada/",
     "Logo": "",
     "Menu_Type": 1,
@@ -3972,7 +3948,7 @@
     "is_active": 1
   },
   {
-    "id": 332,
+    "id": 330,
     "Dish_Name": "Parippu Vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -3984,7 +3960,7 @@
     "is_active": 1
   },
   {
-    "id": 333,
+    "id": 331,
     "Dish_Name": "Batata Vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -3996,7 +3972,7 @@
     "is_active": 1
   },
   {
-    "id": 334,
+    "id": 332,
     "Dish_Name": "Maddur Vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -4008,7 +3984,7 @@
     "is_active": 1
   },
   {
-    "id": 335,
+    "id": 333,
     "Dish_Name": "Neem Flower Vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -4020,7 +3996,7 @@
     "is_active": 1
   },
   {
-    "id": 336,
+    "id": 334,
     "Dish_Name": "Palak Vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -4032,7 +4008,7 @@
     "is_active": 1
   },
   {
-    "id": 337,
+    "id": 335,
     "Dish_Name": "Bellam Garelu",
     "Logo": "",
     "Menu_Type": 1,
@@ -4044,7 +4020,7 @@
     "is_active": 1
   },
   {
-    "id": 338,
+    "id": 336,
     "Dish_Name": "Rava Garelu",
     "Logo": "",
     "Menu_Type": 1,
@@ -4056,7 +4032,7 @@
     "is_active": 1
   },
   {
-    "id": 339,
+    "id": 337,
     "Dish_Name": "Ulli Garelu",
     "Logo": "",
     "Menu_Type": 1,
@@ -4068,37 +4044,25 @@
     "is_active": 1
   },
   {
-    "id": 340,
-    "Dish_Name": "ulundu vadam",
-    "Logo": "",
-    "Menu_Type": 1,
-    "Category_Type": 1,
-    "Price": 12,
-    "Description": "",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 341,
+    "id": 338,
     "Dish_Name": "pulla Garelu",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 12,
-    "Description": "pulla  is a type of 4 flavored with cardamom.",
+    "Description": "It is an Indian fritter made from Vigna mungo (black lentil or urad dal). It is usually made in a doughnut shape, with a crispy exterior and soft interior",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 342,
+    "id": 339,
     "Dish_Name": "Perugu gaare",
     "Logo": "",
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 12,
-    "Description": "Perugu Garelu, an Andhra style recipe, is prepared during festival times in our home.",
+    "Description": "Perugu Garelu, an Andhra style recipe, is prepared during often during festival times, Its a similar process as one would prepare Dahi Vada or Tamil style Thayir Vada.",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1

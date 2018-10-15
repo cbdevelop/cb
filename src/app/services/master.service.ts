@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment.prod';
 
 
+
 @Injectable()
 export class MasterService {
 
@@ -23,6 +24,8 @@ export class MasterService {
 
 	currentSection = 'home';
 	searchmenu_selection = 'starters';
+
+	/* dishes */
 	masterDish: DishModel[] = [];
 	dishArray: DishModel[] = [];
 	selectedDishArr: DishModel[] = [];
@@ -35,6 +38,7 @@ export class MasterService {
 	MainCourseArray: DishModel[] = []; // menutype =7
 	desertsArray: DishModel[] = []; // menutype =8
 	stallsArray: DishModel[] = []; // menutype =9
+	/* dishes end */
 
 	alldishes: Menu[] = [];
 	filteredchefList: Array<any> = [];
@@ -549,19 +553,22 @@ export class MasterService {
 		}
 	];
 
-	selectedDishes: {
-		best: Dish[],
-		starter: Dish[],
-		main: Dish[],
-		biryani: Dish[],
-		beverges: Dish[]
-	} = {
-			best: [],
-			starter: [],
-			main: [],
-			biryani: [],
-			beverges: []
-		};
+	/* cities */
+	masterCities: cityModel[] = [];
+	selCity: cityModel = { ID: 0, City: '', is_active: null, Show: null, image: '' };
+	masterLocation: locationModel[] = [];
+	selLoc: locationModel = {
+		location: '', postalcode: null, is_active: null, City_id: null
+	};
+	locationArr: locationModel[] = [];
+	/* cities end*/
+
+	/*service type  */
+	masterServiceType = [
+		{ id: 1, type: "drop off" }, { id: 2, type: " buffet" }, { id: 3, type: "sit down" },
+		{ id: 4, type: "sit down/buffet" }
+	]
+
 
 	comments: string;
 
@@ -589,15 +596,28 @@ export class MasterService {
 			if (localStorage.getItem('session') !== undefined && localStorage.getItem('session')) {
 				this.session = localStorage.getItem('session');
 			}
+			if (localStorage.getItem('selCity') !== undefined && localStorage.getItem('selCity')) {
+				this.selCity = JSON.parse(localStorage.getItem('selCity'));
+			}
+			if ([null,undefined,''].indexOf(localStorage.getItem('totalAttnd')) !== -1 ) {
+				this.totalCost = parseInt(localStorage.getItem('totalAttnd'), 10);
+			}
+			
 		}
 	}
 
 	clearData() {
 		this.totalCost = 0;
+		this.totalAttendees = 0;
 		this.selectedDishArr = [];
-		this.selectedEvtManager =[];
+		this.selectedEvtManager = [];
+		this.session ='';
+		this.selCity = { ID: 0, City: '', is_active: null, Show: null, image: '' };
+		this.searchObj = {
+			location: [], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: null
+		}
 		localStorage.clear();
-		
+
 	}
 
 	randomInt(min, max) {
@@ -607,6 +627,11 @@ export class MasterService {
 
 	public getJSONofDishes(): Observable<any> {
 		return this.http.get<DishModel>('./assets/dishes.json');
+
+	}
+
+	public getJSONofLocation(): Observable<any> {
+		return this.http.get<DishModel>('./assets/location.json');
 
 	}
 
@@ -672,8 +697,8 @@ export class MasterService {
 		return this.http.post(this.ApiUrl + '/v1/paynow', options).pipe();
 	}
 
-	
-	
+
+
 }
 
 export interface SearchModel {
@@ -683,4 +708,19 @@ export interface SearchModel {
 	nonVegAttnd: number;
 	datetime: Date;
 
+}
+
+export interface cityModel {
+	ID: number,
+	City: string,
+	is_active: number,
+	Show: number,
+	image: string
+}
+
+export interface locationModel {
+	"location": string,
+	"postalcode": number,
+	"is_active": number,
+	"City_id": number
 }

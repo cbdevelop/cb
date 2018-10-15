@@ -8,6 +8,7 @@ import { SearchModel, MasterService } from '../../services/master.service';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AlertsComponent } from '../alerts/alerts.component';
 import { alert } from '../models/alert.model';
+import { CityPopupComponent } from '../city-popup/city-popup.component';
 
 
 @Component({
@@ -20,13 +21,18 @@ export class ModifySearchComponent implements OnInit {
   searchObj: SearchModel;
 
   modifiedForm: FormGroup;
-
+  serTypeSettings = {};
   location = [];
-  serviceType = [];
+  serviceTypeArr = [];
 
   settings = {};
   session = "dinner";
   alert: alert = { type: 'success', message: '' };
+
+  today = new Date()
+  min = new Date();
+  max = new Date(2019, 12);
+
   @Input() page;
   @ViewChild("modify") modify;
 
@@ -37,33 +43,32 @@ export class ModifySearchComponent implements OnInit {
     public modalService: NgbModal,
     public masterObj: MasterService,
     private datepipe: DatePipe
-  ) { }
-
-  ngOnInit() {
-
-    this.location = [
-      { "id": 1, "itemName": "Ameerpet" },
-      { "id": 2, "itemName": "Dilsuknagar" },
-      { "id": 3, "itemName": "SR Nagar" },
-      { "id": 4, "itemName": "Athapur" },
-      { "id": 5, "itemName": "Koti" },
-      { "id": 6, "itemName": "Khairathabad" },
-      { "id": 7, "itemName": "Kothapet" },
-      { "id": 8, "itemName": "Secundrabad" }
-    ];
-
-    this.serviceType = [
-      { "id": 1, "itemName": "Buffet" },
-      { "id": 2, "itemName": "Lunch" },
-      { "id": 3, "itemName": "Dinner" }
-    ];
+  ) {
 
     this.settings = {
       singleSelection: true,
-      text: "Select",
+      text: 'Select',
       enableSearchFilter: true,
-      showCheckbox: false
+      showCheckbox: false,
+      labelKey: "location",
+      primaryKey: "postalcode"
     };
+    this.serTypeSettings = {
+      singleSelection: true,
+      text: 'Select',
+      enableSearchFilter: true,
+      showCheckbox: false,
+      labelKey: "type",
+      primaryKey: "id"
+    };
+  }
+
+  ngOnInit() {
+    this.min = new Date(
+      new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 5
+    )
+
+    this.serviceTypeArr = this.masterObj.masterServiceType;
 
     this.modifiedForm = this.fb.group({
       location: [[], Validators.required],
@@ -97,41 +102,79 @@ export class ModifySearchComponent implements OnInit {
   }
 
   selectedTime(evt) {
-    console.log(evt, this.masterObj.searchObj.datetime < new Date());
-
-    if (this.masterObj.searchObj.datetime < new Date()) {
+       
+    if (this.masterObj.searchObj.datetime < this.min) {
       const modalRef = this.modalService.open(AlertsComponent);
       this.alert.message = 'Selected Event Date & Time should be upcoming date';
       this.alert.type = 'warning';
       modalRef.componentInstance.alert = this.alert;
+      return false;
     } else {
       let time = this.datepipe.transform(this.masterObj.searchObj.datetime, 'hh');
       let tt = parseInt(time, 10);
       if (tt > 7 && tt < 11)
         this.masterObj.session = 'Break Fast';
-      else if (tt > 12 && tt < 15)
+      else if (tt > 12 && tt < 16)
         this.masterObj.session = 'Lunch';
       else if (tt > 19 && tt < 22)
         this.masterObj.session = 'Dinner';
       else if (tt > 16 && tt < 18)
         this.masterObj.session = 'Snack Time';
       else {
-        this.masterObj.session = 'other';
+        
+        const modalRef = this.modalService.open(AlertsComponent);
+        this.alert.message = 'We are not serving at this time';
+        this.alert.type = 'warning';
+        modalRef.componentInstance.alert = this.alert;
+        this.masterObj.session = ''
+        return false;        
+        // this.masterObj.session = 'other';
       }
     }
+    return true;
   }
+  /*
+    onSearch(evt) {
+      console.log(this.masterObj.searchObj, this.modifiedForm);
+      if (this.modifiedForm.valid) {
+        // if (this.page == "home") {
+        this.masterObj.clearData();
+        localStorage.setItem('searchObj', JSON.stringify(this.masterObj.searchObj));
+        localStorage.setItem('session', this.masterObj.session);
+        this.routerObj.navigate(['../search']);
+        this.activeModal.close();
+        // } else
+        //   this.activeModal.close();
+      }
+  
+      
+    }
+  */
 
   onSearch(evt) {
-    console.log(this.masterObj.searchObj, this.modifiedForm);
+
+    // console.log(this.masterObj.searchObj, this.homeForm);
     if (this.modifiedForm.valid) {
-      // if (this.page == "home") {
-      this.masterObj.clearData();
-      localStorage.setItem('searchObj', JSON.stringify(this.masterObj.searchObj));
-      localStorage.setItem('session', this.masterObj.session);
-      this.routerObj.navigate(['../search']);
-      this.activeModal.close();
-      // } else
-      //   this.activeModal.close();
+      if (this.masterObj.totalAttendees > 0) {
+        if (!this.selectedTime(null))
+          return;
+        localStorage.setItem('searchObj', JSON.stringify(this.masterObj.searchObj));
+        localStorage.setItem('session', this.masterObj.session);
+        localStorage.setItem('totalAttnd', this.masterObj.totalAttendees.toString());
+        this.routerObj.navigate(['../search']);
+        this.activeModal.close();
+      } else {
+        const modalRef = this.modalService.open(AlertsComponent);
+        this.alert.message = 'Please fill out no of Attendees.';
+        this.alert.type = 'warning';
+        modalRef.componentInstance.alert = this.alert;
+
+      }
+    } else {
+      const modalRef = this.modalService.open(AlertsComponent);
+      this.alert.message = 'Please fill all the fields';
+      this.alert.type = 'warning';
+      modalRef.componentInstance.alert = this.alert;
     }
   }
   getTotal() {
@@ -146,5 +189,10 @@ export class ModifySearchComponent implements OnInit {
     }
 
     return this.masterObj.totalAttendees;
+  }
+
+  cityPopup() {
+    // alert('city');console.log('popup');
+    this.modalService.open(CityPopupComponent);
   }
 }

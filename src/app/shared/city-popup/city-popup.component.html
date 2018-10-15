@@ -1,50 +1,55 @@
-  <div class="citymask"></div>
+<div class="citymask"></div>
 <section class="cityPop">
-	<div class="cityPopInn">
-		<h3>Select Your City
-		   <div class="ui-widget"><input id="tags"></div>
-		</h3>
-		<ul>
-			<li>
-				<a href="javascript:void(0)" class="Act">
-				<img src="./assets/images/hyderabad.png" alt=""/>Hyderabad</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-				<img src="./assets/images/lucknow.png" alt=""/>Lucknow</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-				<img src="./assets/images/kolkata.png" alt=""/>Kolkata</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-				<img src="./assets/images/mumbai.png" alt=""/>Mumbai</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-				<img src="./assets/images/bangalore.png" alt=""/>Bangalore</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-				<img src="./assets/images/jaipur.png" alt=""/>Jaipur</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-				<img src="./assets/images/agra.png" alt=""/>Agra</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-				<img src="./assets/images/ahmedabad.png" alt=""/>Ahmedabad</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-				<img src="./assets/images/chennai.png" alt=""/>Chennai</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-				<img src="./assets/images/delhi.png" alt=""/>Delhi</a>
-			</li>																											
-		</ul>
-	</div>
-</section> 
+  <div class="cityPopInn">
+    <!-- <h3>Select Your City
+      <div class="ui-widget">
+        <input id="tags">
+      </div>
+    </h3> -->
+    <ul>
+      <li *ngFor="let city of cityArr">
+		<a href="javascript:void(0)" [ngClass]="masterObj.selCity.ID == city.ID ? 'Act' : ''" 
+		(click)="onSelectCity(city)" >
+          <img [src]="city.image" alt="" />{{ city.City }}
+        </a>
+      </li>
+      <!-- <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/lucknow.png" alt="" />Lucknow
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/kolkata.png" alt="" />Kolkata</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/mumbai.png" alt="" />Mumbai</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/bangalore.png" alt="" />Bangalore</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/jaipur.png" alt="" />Jaipur</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/agra.png" alt="" />Agra</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/ahmedabad.png" alt="" />Ahmedabad</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/chennai.png" alt="" />Chennai</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <img src="./assets/images/delhi.png" alt="" />Delhi</a>
+      </li> -->
+    </ul>
+  </div>
+</section>

@@ -21,6 +21,10 @@ export class CheckoutComponent implements OnInit {
     private router:Router
   ) {
     this.getlist();
+    if (this.masterObj.selectedDishArr.length < 1) {
+   
+      this.router.navigate(['../search']);
+    }
   }
 
   ngOnInit() {
