@@ -24,9 +24,9 @@ export class CareerComponent implements OnInit {
   }
 
   // Positions Open
-  openPositions() {
-    this.activeModel.open(PositionsComponent);
-  }
+  // openPositions() {
+  //   this.activeModel.open(PositionsComponent);
+  // }
 
   // header scroll
   @HostListener("window:scroll", [])
