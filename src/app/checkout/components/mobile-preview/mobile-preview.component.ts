@@ -4,6 +4,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { MasterService } from '../../../services/master.service';
 import { UserService } from '../../../services/user_service/user.service';
+import { AlertsService } from '../../../services/alerts.service';
 
 
 
@@ -18,13 +19,14 @@ export class MobilePreviewComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     public masterObj: MasterService,
-    private userSerObj:UserService,
-    private activeModal: NgbActiveModal) { }
+    private userSerObj: UserService,
+    private activeModal: NgbActiveModal,
+  private alertObj:AlertsService) { }
 
   ngOnInit() {
   }
 
- 
+
 
   onClose() {
     this.activeModal.dismiss();
@@ -35,9 +37,19 @@ export class MobilePreviewComponent implements OnInit {
     if (this.userSerObj.userId) {
 
     }
-    if (this.masterObj.selectedDishArr.length) {
-      this.router.navigate(['../payment'], { relativeTo: this.route });
+    if (this.masterObj.chef_eventmanager_flag == 'Chef') {
+      this.router.navigate(['./manager']);
+      
+    } else {
+      if (this.masterObj.evntManagerSelFlag || this.masterObj.selectedEvtManager.length) {
+        this.router.navigate(['./payment']);
+      } else {
+        this.alertObj.openAlert({ message: 'Please Select Event manager or confirm that you can manage this event without a event maganer', type: 'warning' })
+      }
     }
+
+    this.activeModal.close();
+
 
   }
 }

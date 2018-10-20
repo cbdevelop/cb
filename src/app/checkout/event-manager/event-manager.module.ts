@@ -9,6 +9,7 @@ import { AddMoreComponent } from './addMore/addMore.component';
 import { EventManagerRoutingModule } from './event-manager-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms'; 
+import { MobilePreviewModule } from '../components/mobile-preview/mobile-preview.module';
 
 
 
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     EventManagerRoutingModule,
     FormsModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    MobilePreviewModule
   ],
   declarations: [ 
     EventManagerComponent, 
@@ -26,6 +28,9 @@ import { FormsModule } from '@angular/forms';
     AddMoreComponent
   ],
   providers:[
+  ],
+  entryComponents:[
+
   ]
 })
 export class EventManagerModule { }

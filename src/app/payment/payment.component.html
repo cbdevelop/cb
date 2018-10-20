@@ -10,8 +10,8 @@
       <div class="cartOut">
         <div class="cartWpar">
           <a href="javascript:void(0)" class="cartBtn clearfix">
-            <b>Total 25000</b>
-            <span>Per Plate 500</span>
+            <b>Total {{ masterObj.totalCost }}</b>
+            <!-- <span>Per Plate 500</span> -->
           </a>
           <div class="cartOver">
             <h3>Menu</h3>
@@ -19,11 +19,11 @@
 
               <li *ngFor="let item of masterObj.selectedDishArr;let index= index">
                 <span> {{ item.Dish_Name }}
-                  <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-                  <label *ngIf="item.Cuisine ==''"> - (</label>
-                  <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-                  <label *ngIf="item.Restrictions ==''">)</label>
-                  <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+                    <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+                    <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
+                    <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+                    <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
+                    <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
 
                 </span>
               </li>

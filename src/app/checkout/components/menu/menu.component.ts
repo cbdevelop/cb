@@ -6,6 +6,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { CommentsComponent } from '../../../shared/comments/comments.component';
 import { PromocodeComponent } from '../promocode/promocode.component';
 import { MasterService } from '../../../services/master.service';
+import { AlertsService } from '../../../services/alerts.service';
 
 
 @Component({
@@ -18,18 +19,19 @@ export class MenuComponent implements OnInit {
   @ViewChild('chefHead') chefHead;
 
   constructor(
+    private alertObj: AlertsService,
     private commentService: NgbModal,
-    public masterObj:MasterService,
-    private router:Router
+    public masterObj: MasterService,
+    private router: Router
   ) { }
 
   ngOnInit() {
   }
 
-  
+
   // Comments Model Popup
   onCommentPopup() {
-    this.commentService.open(CommentsComponent);    
+    this.commentService.open(CommentsComponent);
   }
 
   // Promocode Popup
@@ -38,8 +40,17 @@ export class MenuComponent implements OnInit {
   }
 
   onproceed() {
-    if(this.masterObj.evntManagerSelFlag || this.masterObj.selectedEvtManager.length){
-      this.router.navigate(['./payment']); 
+    if (this.masterObj.chef_eventmanager_flag == 'Chef') {
+      this.router.navigate(['./manager']);
+    } else {
+
+
+      console.log(this.masterObj.evntManagerSelFlag, this.masterObj.selectedEvtManager);
+      if (this.masterObj.evntManagerSelFlag || this.masterObj.selectedEvtManager.length) {
+        this.router.navigate(['./payment']);
+      } else {
+        this.alertObj.openAlert({ message: 'Please Select Event manager or confirm that you can manage this event without a event maganer', type: 'warning' })
+      }
     }
   }
 

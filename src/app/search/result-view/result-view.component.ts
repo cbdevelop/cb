@@ -123,7 +123,14 @@ export class ResultViewComponent implements OnInit {
       } else if (arr.length) {
         // {ca  menucategoryid,arr[0]}
         arr[0].Restrictions = "";
-        this.service.totalCost += arr[0].Price;
+        if(arr[0].Category_Type == 2){
+          this.service.totalCost += this.service.nonVegAttendees * arr[0].Price;
+        }else if(arr[0].Category_Type == 1){
+          this.service.totalCost += this.service.vegAttendees * arr[0].Price;
+        }else {
+          this.service.totalCost += this.service.totalAttendees * arr[0].Price;
+        }
+        // this.service.totalCost += arr[0].Price;
         this.service.selectedDishArr.push(arr[0]);
         var selectedDish = JSON.stringify(this.service.selectedDishArr);
         localStorage.setItem("selDises", selectedDish);

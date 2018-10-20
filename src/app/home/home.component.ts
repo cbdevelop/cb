@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,OnDestroy } from '@angular/core';
 
 
 import { Router } from '@angular/router';
@@ -14,12 +14,13 @@ import { DatePipe } from '@angular/common';
 import { CityPopupComponent } from '../shared/city-popup/city-popup.component';
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit,OnDestroy {
   alert: alert = { type: 'success', message: '' };
   public searchObj: SearchModel = {
     location: [
@@ -61,6 +62,8 @@ export class HomeComponent implements OnInit {
     public modalService: NgbModal,
     private datepipe: DatePipe
   ) {
+
+    this.masterObj.footerFlag = false;
     this.barwidth = 0;
     this.dancingNumbers();
     this.masterObj.clearData();
@@ -185,15 +188,16 @@ export class HomeComponent implements OnInit {
       modalRef.componentInstance.alert = this.alert;
       return false;
     } else {
-      let time = this.datepipe.transform(this.masterObj.searchObj.datetime, 'hh');
+      let time = this.datepipe.transform(this.masterObj.searchObj.datetime, 'HH');
       let tt = parseInt(time, 10);
-      if (tt > 7 && tt < 11)
+      console.log(tt);
+      if (tt >= 7 && tt <=11)
         this.masterObj.session = 'Break Fast';
-      else if (tt > 12 && tt < 16)
+      else if (tt >= 12 && tt < 16)
         this.masterObj.session = 'Lunch';
-      else if (tt > 19 && tt < 22)
+      else if (tt >= 19 && tt <= 22)
         this.masterObj.session = 'Dinner';
-      else if (tt > 16 && tt < 18)
+      else if (tt >= 16 && tt <= 18)
         this.masterObj.session = 'Snack Time';
       else {
         
@@ -252,6 +256,10 @@ export class HomeComponent implements OnInit {
     const modalref = this.modalService.open(ModifySearchComponent);
     modalref.componentInstance.page = 'home';
   }
+
+  ngOnDestroy(){
+    this.masterObj.footerFlag = true;
+  }
   /* @HostListener("window:scroll", ["$event"])
    onWindowScroll(event: any) {
        console.log('sad');
@@ -273,4 +281,7 @@ export class HomeComponent implements OnInit {
          }
      }
      */
-}
+
+
+
+    }

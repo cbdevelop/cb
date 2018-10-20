@@ -5,174 +5,171 @@
       <span>Proceed to Checkout</span>
     </a> -->
 
-    <div class="cartOver">
-      <div *ngIf="masterObj.getSelectedDishesById(1).length ">
-        <h3>Starters</h3>
-        <ul class="head">
-          <li *ngFor="let item of masterObj.getSelectedDishesById(1);let index= index">
-            <span> {{ item.Dish_Name }}
-              <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-              <label *ngIf="item.Cuisine ==''"> - (</label>
-              <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-              <label *ngIf="item.Restrictions ==''">)</label>
-              <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+<div class="cartOver">
+  <div *ngIf="masterObj.getSelectedDishesById(1).length ">
+    <h3>Starters</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(1);let index= index">
+        <span> {{ item.Dish_Name }}
+          <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+          <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
+          <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
 
-            </span>
-          </li>
+        </span>
+      </li>
 
-        </ul>
-      </div>
-      <div *ngIf="masterObj.getSelectedDishesById(2).length ">
+    </ul>
+  </div>
+  <div *ngIf="masterObj.getSelectedDishesById(2).length ">
 
-        <h3>Snacks</h3>
-        <ul class="head">
-          <li *ngFor="let item of masterObj.getSelectedDishesById(2);let index= index">
-            <span> {{ item.Dish_Name }}
-              <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-              <label *ngIf="item.Cuisine ==''"> - (</label>
-              <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-              <label *ngIf="item.Restrictions ==''">)</label>
-              <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+    <h3>Snacks</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(2);let index= index">
+        <span> {{ item.Dish_Name }}
+          <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+          <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
+          <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+        </span>
+      </li>
 
-            </span>
-          </li>
+    </ul>
+  </div>
+  <div *ngIf="masterObj.getSelectedDishesById(4).length ">
+    <h3>Breads</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(4);let index= index">
+        <span> {{ item.Dish_Name }}
+          <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+          <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
+          <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
 
-        </ul>
-      </div>
-      <div *ngIf="masterObj.getSelectedDishesById(4).length ">
-        <h3>Breads</h3>
-        <ul class="head">
-          <li *ngFor="let item of masterObj.getSelectedDishesById(4);let index= index">
-            <span> {{ item.Dish_Name }}
-              <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-              <label *ngIf="item.Cuisine ==''"> - (</label>
-              <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-              <label *ngIf="item.Restrictions ==''">)</label>
-              <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="masterObj.getSelectedDishesById(7).length ">
+    <h3>Main Course</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(7);let index= index">
+        <span> {{ item.Dish_Name }}
+          <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+          <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
+          <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
 
-            </span>
-          </li>
-        </ul>
-      </div>
-      <div *ngIf="masterObj.getSelectedDishesById(7).length ">
-        <h3>Main Course</h3>
-        <ul class="head">
-          <li *ngFor="let item of masterObj.getSelectedDishesById(7);let index= index">
-            <span> {{ item.Dish_Name }}
-              <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-              <label *ngIf="item.Cuisine ==''"> - (</label>
-              <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-              <label *ngIf="item.Restrictions ==''">)</label>
-              <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+        </span>
+      </li>
 
-            </span>
-          </li>
+    </ul>
+  </div>
 
-        </ul>
-      </div>
+  <div *ngIf="masterObj.getSelectedDishesById(6).length ">
+    <h3>Salads and Extras</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(6);let index= index">
+        <span> {{ item.Dish_Name }}
+          <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+          <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
+          <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
 
-      <div *ngIf="masterObj.getSelectedDishesById(6).length ">
-        <h3>Salads and Extras</h3>
-        <ul class="head">
-          <li *ngFor="let item of masterObj.getSelectedDishesById(6);let index= index">
-            <span> {{ item.Dish_Name }}
-              <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-              <label *ngIf="item.Cuisine ==''"> - (</label>
-              <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-              <label *ngIf="item.Restrictions ==''">)</label>
-              <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+        </span>
+      </li>
 
-            </span>
-          </li>
+    </ul>
+  </div>
 
-        </ul>
-      </div>
+  <div *ngIf="masterObj.getSelectedDishesById(5).length ">
+    <h3>Soups</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(5);let index= index">
+        <span> {{ item.Dish_Name }}
+          <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+          <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
+          <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
 
-      <div *ngIf="masterObj.getSelectedDishesById(5).length ">
-        <h3>Soups</h3>
-        <ul class="head">
-          <li *ngFor="let item of masterObj.getSelectedDishesById(5);let index= index">
-            <span> {{ item.Dish_Name }}
-              <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-              <label *ngIf="item.Cuisine ==''"> - (</label>
-              <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-              <label *ngIf="item.Restrictions ==''">)</label>
-              <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+        </span>
+      </li>
 
-            </span>
-          </li>
+    </ul>
+  </div>
 
-        </ul>
-      </div>
+  <div *ngIf="masterObj.getSelectedDishesById(3).length ">
+    <h3>Beverages and Drinks</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(3);let index= index">
+        <span> {{ item.Dish_Name }}
+          <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+          <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
+          <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
 
-      <div *ngIf="masterObj.getSelectedDishesById(3).length ">
-        <h3>Beverages and Drinks</h3>
-        <ul class="head">
-          <li *ngFor="let item of masterObj.getSelectedDishesById(3);let index= index">
-            <span> {{ item.Dish_Name }}
-              <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-              <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
-              <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-              <label *ngIf="item.Restrictions =='' && item.Cuisine !=''">)</label>
-              <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+        </span>
+      </li>
 
-            </span>
-          </li>
+    </ul>
+  </div>
 
-        </ul>
-      </div>
+  <div *ngIf="masterObj.getSelectedDishesById(8).length ">
+    <h3>Desserts and Ice creams</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(8);let index= index">
+        <span> {{ item.Dish_Name }}
+          <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+          <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
+          <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
 
-      <div *ngIf="masterObj.getSelectedDishesById(8).length ">
-        <h3>Desserts and Ice creams</h3>
-        <ul class="head">
-          <li *ngFor="let item of masterObj.getSelectedDishesById(8);let index= index">
-            <span> {{ item.Dish_Name }}
-              <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-              <label *ngIf="item.Cuisine ==''"> - (</label>
-              <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-              <label *ngIf="item.Restrictions ==''">)</label>
-              <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+        </span>
+      </li>
 
-            </span>
-          </li>
+    </ul>
+  </div>
 
-        </ul>
-      </div>
+  <div *ngIf="masterObj.getSelectedDishesById(9).length ">
+    <h3>Stalls and Miscellaneous</h3>
+    <ul class="head">
+      <li *ngFor="let item of masterObj.getSelectedDishesById(9);let index= index">
+        <span> {{ item.Dish_Name }}
+          <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
+          <label *ngIf="item.Cuisine =='' && item.Restrictions !=''"> - (</label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
+          <label *ngIf="item.Cuisine !='' && item.Restrictions ==''">)</label>
+          <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
 
-      <div *ngIf="masterObj.getSelectedDishesById(9).length ">
-        <h3>Stalls and Miscellaneous</h3>
-        <ul class="head">
-          <li *ngFor="let item of masterObj.getSelectedDishesById(9);let index= index">
-            <span> {{ item.Dish_Name }}
-              <label *ngIf="item.Cuisine !=''">- ( {{ item.Cuisine }} </label>
-              <label *ngIf="item.Cuisine ==''"> - (</label>
-              <label *ngIf="item.Cuisine !='' && item.Restrictions !=''"> , </label>
-              <label *ngIf="item.Restrictions ==''">)</label>
-              <label *ngIf="item.Restrictions !=''"> {{ item.Restrictions }} )</label>
+        </span>
+      </li>
 
-            </span>
-          </li>
+    </ul>
+  </div>
 
-        </ul>
-      </div>
+  <div *ngIf="masterObj.selectedEvtManager.length">
+    <h3>Event Manager</h3>
+    <ul>
+      <li *ngFor="let item of masterObj.selectedEvtManager;let i= index">
+        <span> {{ item.Name}}
+          <i class="fa fa-close" (click)="remove(i)"></i>
+        </span>
+      </li>
 
-      <div *ngIf="masterObj.selectedEvtManager.length">
-        <h3>Event Manager</h3>
-        <ul>
-          <li *ngFor="let item of masterObj.selectedEvtManager;let i= index">
-            <span> {{ item.Name}}
-              <i class="fa fa-close" (click)="remove(i)"></i>
-            </span>
-          </li>
+    </ul>
+  </div>
+</div>
 
-        </ul>
-      </div>
-    </div>
-
-    <ng-template #nocart>
-      <div class="cartOver">
-        <h3>Your cart is empty</h3>
-      </div>
-    </ng-template>
-
-   
+<ng-template #nocart>
+  <div class="cartOver">
+    <h3>Your cart is empty</h3>
+  </div>
+</ng-template>

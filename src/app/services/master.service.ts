@@ -12,9 +12,12 @@ export class MasterService {
 
 	// tslint:disable-next-line:indent
 	// tslint:disable-next-line:indent
+	footerFlag= true;
 	ApiUrl = '';
 	dishCount = 0;
 	totalCost = 0;
+	vegAttendees = 0;
+	nonVegAttendees = 0;
 	totalAttendees = 0;
 	searchObj: SearchModel = {
 		location: [], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: null
@@ -42,7 +45,8 @@ export class MasterService {
 
 	alldishes: Menu[] = [];
 	filteredchefList: Array<any> = [];
-	evntManagerSelFlag = false;
+	evntManagerSelFlag = true;
+	chef_eventmanager_flag = 'Chef';
 	selectedEvtManager = [];
 	eventManagerList = [
 		{
@@ -283,7 +287,7 @@ export class MasterService {
 			'Proficiency': 'hyderabadi, persian',
 			'Experience': 12,
 			'Profile_Picture': '',
-			'Cost': '1500 for anything below 150 else 15pp untill 400 else 10pp for infinite',
+			'Cost': 50,
 			'About': '',
 			'Reviews': [{
 				'name': 'xyz',
@@ -291,9 +295,7 @@ export class MasterService {
 				'text': 'Chicken biriyani and majestic chicken were so flavoursome, but a little too spicy for my palate and was truely Hyderabadi way, the raita complements the spicyness perfectly., The biryani is cooked very well and the chicken was tender and delicious.',
 			}],
 			'Gold': 'Biryani',
-			'menu': [
-				'butter chicken', 'chicken biryani'
-			]
+			'menu': '',
 		},
 		{
 			'Name': 'Ahmed',
@@ -303,7 +305,7 @@ export class MasterService {
 			'Proficiency': 'hyderabadi, middle eastern',
 			'Experience': 7,
 			'Profile_Picture': '',
-			'Cost': '',
+			'Cost': 100,
 			'About': '',
 			'Reviews': [{
 				'name': 'xyz',
@@ -311,9 +313,7 @@ export class MasterService {
 				'text': ''
 			}],
 			'Gold': '',
-			'menu': [
-				'chicken 65', 'chicken biryani'
-			]
+			'menu': ''
 		},
 		{
 			'Name': 'Mirza',
@@ -323,7 +323,7 @@ export class MasterService {
 			'Proficiency': 'hyderabadi ',
 			'Experience': 15,
 			'Profile_Picture': '',
-			'Cost': '',
+			'Cost': 0,
 			'About': '',
 			'Reviews': [{
 				'name': 'xyz',
@@ -331,9 +331,7 @@ export class MasterService {
 				'text': ''
 			}],
 			'Gold': '',
-			'menu': [
-				'chicken curry', 'mutton biryani'
-			]
+			'menu': ''
 		},
 		{
 			'Name': 'Raju',
@@ -343,7 +341,7 @@ export class MasterService {
 			'Proficiency': 'telugu, chinese',
 			'Experience': 16,
 			'Profile_Picture': '',
-			'Cost': '',
+			'Cost': 0,
 			'About': '',
 			'Reviews': [{
 				'name': 'xyz',
@@ -351,7 +349,7 @@ export class MasterService {
 				'text': ''
 			}],
 			'Gold': '',
-			'menu': []
+			'menu': ''
 		},
 		{
 			'Name': 'Sai teja',
@@ -361,7 +359,7 @@ export class MasterService {
 			'Proficiency': 'Andhra, indian',
 			'Experience': 9,
 			'Profile_Picture': '',
-			'Cost': '',
+			'Cost': 0,
 			'About': '',
 			'Reviews': [{
 				'name': 'xyz',
@@ -369,7 +367,7 @@ export class MasterService {
 				'text': ''
 			}],
 			'Gold': '',
-			'menu': []
+			'menu': ''
 		},
 		{
 			'Name': 'Furqaan',
@@ -379,7 +377,7 @@ export class MasterService {
 			'Proficiency': 'hyderabadi, chinese',
 			'Experience': 11,
 			'Profile_Picture': '',
-			'Cost': '',
+			'Cost': 0,
 			'About': '',
 			'Reviews': [{
 				'name': 'xyz',
@@ -387,7 +385,7 @@ export class MasterService {
 				'text': ''
 			}],
 			'Gold': '',
-			'menu': []
+			'menu': ''
 		},
 		{
 			'Name': 'Usman',
@@ -397,7 +395,7 @@ export class MasterService {
 			'Proficiency': 'hyderabadi, telangana',
 			'Experience': 14,
 			'Profile_Picture': '',
-			'Cost': '',
+			'Cost': 0,
 			'About': '',
 			'Reviews': [{
 				'name': 'xyz',
@@ -405,7 +403,7 @@ export class MasterService {
 				'text': ''
 			}],
 			'Gold': '',
-			'menu': []
+			'menu': ''
 		},
 		{
 			'Name': 'Faisal',
@@ -415,7 +413,7 @@ export class MasterService {
 			'Proficiency': 'hyderabadi, south asia',
 			'Experience': 12,
 			'Profile_Picture': '',
-			'Cost': '',
+			'Cost': 0,
 			'About': '',
 			'Reviews': [{
 				'name': 'xyz',
@@ -423,7 +421,7 @@ export class MasterService {
 				'text': ''
 			}],
 			'Gold': '',
-			'menu': []
+			'menu': ''
 		},
 		{
 			'Name': 'Aadinath',
@@ -433,7 +431,7 @@ export class MasterService {
 			'Proficiency': 'south india, andhra, telugu',
 			'Experience': 10,
 			'Profile_Picture': '',
-			'Cost': '',
+			'Cost': 0,
 			'About': '',
 			'Reviews': [{
 				'name': 'xyz',
@@ -441,7 +439,7 @@ export class MasterService {
 				'text': ''
 			}],
 			'Gold': '',
-			'menu': []
+			'menu': ''
 		},
 		{
 			'Name': 'Kiran',
@@ -451,7 +449,7 @@ export class MasterService {
 			'Proficiency': 'Andhra',
 			'Experience': 8,
 			'Profile_Picture': '',
-			'Cost': '',
+			'Cost': 0,
 			'About': '',
 			'Reviews': [{
 				'name': 'xyz',
@@ -459,7 +457,7 @@ export class MasterService {
 				'text': ''
 			}],
 			'Gold': '',
-			'menu': []
+			'menu': ''
 		},
 		{
 			'Name': 'Kailash',
@@ -469,7 +467,7 @@ export class MasterService {
 			'Proficiency': 'chinese, english',
 			'Experience': 12,
 			'Profile_Picture': '',
-			'Cost': '',
+			'Cost': 0,
 			'About': '',
 			'Reviews': [{
 				'name': 'xyz',
@@ -477,7 +475,7 @@ export class MasterService {
 				'text': ''
 			}],
 			'Gold': '',
-			'menu': []
+			'menu': ''
 		},
 		{
 			'Name': 'Ashish',
@@ -487,7 +485,7 @@ export class MasterService {
 			'Proficiency': 'andhra ',
 			'Experience': 13,
 			'Profile_Picture': '',
-			'Cost': '',
+			'Cost': 0,
 			'About': '',
 			'Reviews': [{
 				'name': 'xyz',
@@ -495,7 +493,7 @@ export class MasterService {
 				'text': ''
 			}],
 			'Gold': '',
-			'menu': []
+			'menu': ''
 		},
 		{
 			'Name': 'Kalyan',
@@ -505,7 +503,7 @@ export class MasterService {
 			'Proficiency': 'telugu',
 			'Experience': 17,
 			'Profile_Picture': '',
-			'Cost': '',
+			'Cost': 0,
 			'About': '',
 			'Reviews': [{
 				'name': 'xyz',
@@ -513,7 +511,7 @@ export class MasterService {
 				'text': ''
 			}],
 			'Gold': '',
-			'menu': []
+			'menu': ''
 		},
 		{
 			'Name': 'Ramesh',
@@ -523,7 +521,7 @@ export class MasterService {
 			'Proficiency': 'telugu',
 			'Experience': 14,
 			'Profile_Picture': '',
-			'Cost': '',
+			'Cost': 0,
 			'About': '',
 			'Reviews': [{
 				'name': 'xyz',
@@ -531,7 +529,7 @@ export class MasterService {
 				'text': ''
 			}],
 			'Gold': '',
-			'menu': []
+			'menu': ''
 		},
 		{
 			'Name': 'Rajesh',
@@ -541,7 +539,7 @@ export class MasterService {
 			'Proficiency': 'south indian',
 			'Experience': 11,
 			'Profile_Picture': '',
-			'Cost': '',
+			'Cost': 0,
 			'About': '',
 			'Reviews': [{
 				'name': 'xyz',
@@ -549,7 +547,7 @@ export class MasterService {
 				'text': ''
 			}],
 			'Gold': '',
-			'menu': []
+			'menu': ''
 		}
 	];
 
@@ -565,7 +563,7 @@ export class MasterService {
 
 	/*service type  */
 	masterServiceType = [
-		{ id: 1, type: "drop off" }, { id: 2, type: " buffet" }, { id: 3, type: "sit down" },
+		{ id: 1, type: "drop off" }, { id: 2, type: "buffet" }, { id: 3, type: "sit down" },
 		{ id: 4, type: "sit down/buffet" }
 	]
 
@@ -584,6 +582,9 @@ export class MasterService {
 			if (localStorage.getItem('cost')) {
 				this.totalCost = parseInt(localStorage.getItem('cost'), 10);
 			}
+			if(localStorage.getItem('noManager') == 'yes'){
+				this.evntManagerSelFlag = true;
+			};
 			if (localStorage.getItem('selManager')) {
 				this.selectedEvtManager = JSON.parse(localStorage.getItem('selManager'));
 			}
@@ -600,7 +601,7 @@ export class MasterService {
 				this.selCity = JSON.parse(localStorage.getItem('selCity'));
 			}
 			if ([null,undefined,''].indexOf(localStorage.getItem('totalAttnd')) !== -1 ) {
-				this.totalCost = parseInt(localStorage.getItem('totalAttnd'), 10);
+				this.totalAttendees = parseInt(localStorage.getItem('totalAttnd'), 10);
 			}
 			
 		}
