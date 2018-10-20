@@ -22,6 +22,7 @@ export class ChefComponent implements OnInit {
 
   ngOnInit() {
     this.masterObj.chef_eventmanager_flag = 'Chef';
+    console.log(this.masterObj.chef_eventmanager_flag);
   }
   onproceed(){
     this.router.navigate(['./manager']);
