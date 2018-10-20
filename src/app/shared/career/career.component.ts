@@ -22,7 +22,9 @@ export class CareerComponent implements OnInit {
   openSign() {
     this.activeModel.open(SigninComponent);
   }
-
+  openPositions(){
+    
+  }
   // Positions Open
   // openPositions() {
   //   this.activeModel.open(PositionsComponent);
