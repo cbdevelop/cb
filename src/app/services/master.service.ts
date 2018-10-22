@@ -16,8 +16,12 @@ export class MasterService {
 	ApiUrl = '';
 	dishCount = 0;
 	totalCost = 0;
-	vegAttendees = 0;
-	nonVegAttendees = 0;
+	dishesCost = 0;
+	chefsCost = 0;
+	eventMangerCost = 0;
+	serviceCost =0;
+	// vegAttendees = 0;
+	// nonVegAttendees = 0;
 	totalAttendees = 0;
 	searchObj: SearchModel = {
 		location: [], serviceType: [], nonVegAttnd: null, vegAttnd: null, datetime: null
@@ -600,9 +604,23 @@ export class MasterService {
 			if (localStorage.getItem('selCity') !== undefined && localStorage.getItem('selCity')) {
 				this.selCity = JSON.parse(localStorage.getItem('selCity'));
 			}
-			if ([null,undefined,''].indexOf(localStorage.getItem('totalAttnd')) !== -1 ) {
+			if ([null,undefined,''].indexOf(localStorage.getItem('totalAttnd')) == -1 ) {
+				console.log(localStorage.getItem('totalAttnd'));
 				this.totalAttendees = parseInt(localStorage.getItem('totalAttnd'), 10);
 			}
+			if ([null,undefined,''].indexOf(localStorage.getItem('dishCost')) == -1 ) {
+				
+				this.dishesCost = parseInt(localStorage.getItem('dishCost'), 10);
+			}
+			if ([null,undefined,''].indexOf(localStorage.getItem('chefsCost')) == -1 ) {
+				
+				this.chefsCost = parseInt(localStorage.getItem('chefsCost'), 10);
+			}
+			if ([null,undefined,''].indexOf(localStorage.getItem('serviceCost')) == -1 ) {
+				
+				this.serviceCost = parseInt(localStorage.getItem('serviceCost'), 10);
+			}
+		
 			
 		}
 	}
@@ -610,6 +628,11 @@ export class MasterService {
 	clearData() {
 		this.totalCost = 0;
 		this.totalAttendees = 0;
+		// this.nonVegAttendees = 0;
+		// this.vegAttendees = 0;
+		this.dishesCost = 0;
+		this.chefsCost = 0;
+		this.eventMangerCost = 0;
 		this.selectedDishArr = [];
 		this.selectedEvtManager = [];
 		this.session ='';

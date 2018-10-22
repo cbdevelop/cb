@@ -2,21 +2,21 @@
 
   <div class="resultWrap">
 
-    <!-- <div class="noteMesg">
+     <div class="noteMesg">
 
       <p>Your estimate fare for the service is Rs.
-        <span>0</span>
-        
-        <a href="javascript:void(0)" (click)="openAddMore()">Add More..</a>
+        <span *ngIf="masterobj.serviceCost > 0" > {{ masterobj.totalCost + masterobj.serviceCost }} </span>
+        <span *ngIf="masterobj.serviceCost == 0">0</span>
+        <a href="javascript:void(0)" (click)="openAddMore()">Add Service </a>
       </p>
-    </div> -->
+    </div> 
 
     <div class="eventCheck">
       <div class="checkbox">
         <label>
           <input name="manager" type="checkbox" [checked]="evntManagerSelFlag" (change)="onNoManager()"/>
           <i class="input-helper"></i>
-          <span>I can manage this event without a event maganer </span>
+          <span>I'll self organise the event without any maganer </span>
         </label>
       </div>
     </div>
@@ -51,6 +51,7 @@
               </div>
             </div>
             <div class="managerPrice">
+              <i class="fa fa-rupee"></i>
               {{ item.Price }}.00
             </div>
           </div>

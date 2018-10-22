@@ -31,12 +31,12 @@
             (onSelect)="LocationSelect($event)" (onDeSelect)="LocationDeSelect($event)" formControlName="location">
           </angular2-multiselect>
         </div>
-        <div class="select">
+        <!-- <div class="select">
           <label>Service Type</label>
           <angular2-multiselect class="loca" [data]="serviceTypeArr" [(ngModel)]="masterObj.searchObj.serviceType" [settings]="serTypeSettings"
             (onSelect)="ServiceSelect($event)" (onDeSelect)="ServiceDeSelect($event)" formControlName="serviceType">
           </angular2-multiselect>
-        </div>
+        </div> -->
         <div class="atten">
           <label>Attendees -
             <b>{{ masterObj.totalAttendees }}</b> (Veg + Nonveg)</label>
@@ -46,8 +46,9 @@
             (blur)="getTotal()" (keypress)="onlyNumberKey($event)" />
         </div>
         <div class="select date">
-          <label>Date - Time</label>
-          <input type="text" placeholder="DD/MM/YY HH:MM" class="datePic" formControlName="datetime" [(ngModel)]="masterObj.searchObj.datetime"
+          <label>Date - Time(24hrs format)</label>
+          <input type="text" placeholder="Select Time" class="datePic" formControlName="datetime" 
+          [(ngModel)]="masterObj.searchObj.datetime" (keypress)="onTime($event)"
             [min]="min" [max]="max" [owlDateTime]="dt1" hour12Timer="true" [owlDateTimeTrigger]="dt1">
           <owl-date-time #dt1 (afterPickerClosed)="selectedTime($event)"></owl-date-time>
         </div>
@@ -100,7 +101,7 @@
       </div>
       <div class="howItCta">
         <span>
-          <img src="./assets/images/Event-Management-home.jpg" alt="" />
+          <img src="./assets/images/howit-4.jpg" alt="" />
         </span>
         <div class="howItCtaInn">
           <b>Step 4</b>
@@ -267,34 +268,34 @@
       <div class="overScroll">
         <div class="overScrollInnTwo">
           <div class="blogCta">
-            <a href="blogdetails.html">
+            <a href="">
               <span>
-                <img src="./assets/images/blog.jpg" alt="" />
+                <img src="./assets/images/blog-1.jpeg" alt="" />
               </span>
               <h4>Tips to do catering right</h4>
               <p>
                 There are a lot of things to consider while choosing a menu to be most suitable for all your guests, taste preferences and
                 special dietary requirements. Ordering from is Halal-certified caterer is hard these days...
               </p>
-              <a class="viBl" href="blogdetails.html">View</a>
+              <a class="viBl" href="javascript:void(0)">View</a>
             </a>
           </div>
           <div class="blogCta">
-            <a href="blogdetails.html">
+            <a href="javascript:void(0)">
               <span>
-                <img src="./assets/images/blog.jpg" alt="" />
+                <img src="./assets/images/blog-2.jpeg" alt="" />
               </span>
               <h4>You are a brand to offer a great culinary experience to the audience</h4>
               <p>Being a chef means you alone are the master of your dish. You are judged by each and every person's plate that
                 goes out of the kitchen. You will have to maintain your rating as it is important and impacts your profile...
               </p>
-              <a class="viBl" href="blogdetails.html">View</a>
+              <a class="viBl" href="javascript:void(0)">View</a>
             </a>
           </div>
           <div class="blogCta">
-            <a href="blogdetails.html">
+            <a href="javascript:void(0)">
               <span>
-                <img src="./assets/images/blog.jpg" alt="" />
+                <img src="./assets/images/blog-3.jpeg" alt="" />
               </span>
               <h4>What it's like being a freelancer as an event manager at caterbinge</h4>
               <p>
@@ -302,7 +303,7 @@
                 the manager to look after the entire workflow of serving food on the table and to ensure that everything
                 is being served timely...
               </p>
-              <a class="viBl" href="blogdetails.html">View</a>
+              <a class="viBl" href="javascript:void(0)">View</a>
             </a>
           </div>
         </div>
@@ -332,7 +333,7 @@
               Chicken biriyani and majestic chicken were so flavoursome, but a little too spicy for my palate and was cooked truly in a
               Hyderabadi style, the raita complemented the spiciness perfectly.
             </p>
-            <h4> Srinivas Rao</h4>
+            <h4>- Srinivas Rao</h4>
           </div>
           <div class="testiCta">
             <span>
@@ -344,7 +345,7 @@
             </span>
             <!-- <h3>Outstanding quality</h3> -->
             <p>Great food.. Potato wedges, Butter garlic prawn all were delicious. Dine in experience was good.</p>
-            <h4>Durga Mahesh</h4>
+            <h4>- Durga Mahesh</h4>
           </div>
           <div class="testiCta">
             <span>
@@ -357,7 +358,7 @@
             <!-- <h3>Outstanding quality</h3> -->
             <p>Amazingly hidden great aroma and spices with absolutely tender peices of mutton. When I ate the first spoon it
               was an explosion of flavors in my mouth. It was unexpected and very good.</p>
-            <h4>Zilani</h4>
+            <h4>- Zilani</h4>
           </div>
           <div class="testiCta">
             <span>
@@ -370,7 +371,7 @@
             <!-- <h3>Outstanding quality</h3> -->
             <p>I really loved the cilantro fish. It was well balanced, not seasoned too much, which is a good thing because
               I could taste the fish; not just the spices.</p>
-            <h4>Kiran Kumar</h4>
+            <h4>- Kiran Kumar</h4>
           </div>
         </div>
       </div>

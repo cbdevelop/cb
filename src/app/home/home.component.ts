@@ -70,7 +70,7 @@ export class HomeComponent implements OnInit,OnDestroy {
     const modalRef = this.modalService.open(CityPopupComponent);
     this.homeForm = this.fb.group({
       location: [[], Validators.required],
-      serviceType: [[], Validators.required],
+      // serviceType: [[], Validators.required],
       vegAttnd: [null, [Validators.pattern('^[0-9]+[1-9]*$')]],
       nonVegAttnd: [null, [Validators.pattern('^[1-9]+[0-9]*$')]],
       datetime: ['', Validators.required]
@@ -103,13 +103,21 @@ export class HomeComponent implements OnInit,OnDestroy {
 
   ngOnInit() {
     // this.selectedTime(null);
-    this.serviceTypeArr = this.masterObj.masterServiceType;
+    // this.serviceTypeArr = this.masterObj.masterServiceType;
     // console.log(this.min)
   }
 
   cityPopup() {
     // alert('city');
     const modalRef = this.modalService.open(CityPopupComponent);
+  }
+
+  onTime(event) {
+    const pattern = /[0-9]/;
+    const inputChar = String.fromCharCode(event.charCode);
+    if (event.keyCode !== 9 && event.keyCode !== 13 ) {
+      event.preventDefault();
+    }
   }
   onlyNumberKey(event) {
     const pattern = /[0-9]/;
@@ -190,7 +198,6 @@ export class HomeComponent implements OnInit,OnDestroy {
     } else {
       let time = this.datepipe.transform(this.masterObj.searchObj.datetime, 'HH');
       let tt = parseInt(time, 10);
-      console.log(tt);
       if (tt >= 7 && tt <=11)
         this.masterObj.session = 'Break Fast';
       else if (tt >= 12 && tt < 16)
@@ -202,7 +209,7 @@ export class HomeComponent implements OnInit,OnDestroy {
       else {
         
         const modalRef = this.modalService.open(AlertsComponent);
-        this.alert.message = 'We are not serving at this time';
+        this.alert.message = 'Sorry, we serve from 7 AM till 10 PM.';
         this.alert.type = 'warning';
         modalRef.componentInstance.alert = this.alert;
         this.masterObj.session = ''
@@ -235,18 +242,19 @@ export class HomeComponent implements OnInit,OnDestroy {
             return;
         localStorage.setItem('searchObj', JSON.stringify(this.masterObj.searchObj));
         localStorage.setItem('session', this.masterObj.session);
-        localStorage.setItem('totalAttnd', this.masterObj.totalAttendees.toString());
+       
+        // localStorage.setItem('veg', this.masterObj.vegAttendees.toString());
         this.routerObj.navigate(['../search']);
       } else {
         const modalRef = this.modalService.open(AlertsComponent);
-        this.alert.message = 'Please fill out no of Attendees.';
+        this.alert.message = 'Please enter no. of Attendees.';
         this.alert.type = 'warning';
         modalRef.componentInstance.alert = this.alert;
         
       }
     } else {
       const modalRef = this.modalService.open(AlertsComponent);
-      this.alert.message = 'Please fill all the fields';
+      this.alert.message = 'Please enter all the details';
       this.alert.type = 'warning';
       modalRef.componentInstance.alert = this.alert;
     }

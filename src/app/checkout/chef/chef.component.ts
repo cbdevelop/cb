@@ -22,9 +22,11 @@ export class ChefComponent implements OnInit {
 
   ngOnInit() {
     this.masterObj.chef_eventmanager_flag = 'Chef';
-    console.log(this.masterObj.chef_eventmanager_flag);
+    if (this.masterObj.eventMangerCost > 0 && this.masterObj.totalCost)
+      this.masterObj.totalCost -= this.masterObj.eventMangerCost;
   }
   onproceed(){
+    // 
     this.router.navigate(['./manager']);
   }
   onCommentPopup() {

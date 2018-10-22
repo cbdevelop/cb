@@ -21,7 +21,8 @@
         <h3>Restrict your serving for</h3>
         <div class="checkbox" *ngFor="let ser  of restrictArr">
           <label>
-            <input type="checkbox" class="check" [checked]="isResChecked(ser)" [value]="ser" (change)="onReschecked($event)" />
+            <input type="radio" class="check" name="restricted"
+            [checked]="isResChecked(ser)" [value]="ser" (change)="onReschecked($event)" />
             <i class="input-helper"></i>
             <span> {{ ser }}</span>
           </label>

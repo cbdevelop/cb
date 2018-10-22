@@ -3,7 +3,7 @@ import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
 import { NgbPopoverConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { MasterService } from '../../services/master.service';
 import { ModifySearchComponent } from '../../shared/modify-search/modify-search.component';
-import { Router,ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { CommentsComponent } from '../../shared/comments/comments.component';
 import { UserService } from '../../services/user_service/user.service';
 
@@ -22,12 +22,12 @@ export class MenuComponent implements OnInit {
   @ViewChild('cheftop') cheftop;
 
   constructor(
-    private userSerObj:UserService,
+    private userSerObj: UserService,
     private router: Router,
     private route: ActivatedRoute,
     public masterObj: MasterService,
-    public modifiedService: NgbModal, 
-    public config: NgbPopoverConfig ) {
+    public modifiedService: NgbModal,
+    public config: NgbPopoverConfig) {
 
     // customize default values of popovers used by this component tree
     config.placement = 'bottom';
@@ -47,15 +47,17 @@ export class MenuComponent implements OnInit {
       { "id": 9, "itemName": "Italy" },
       { "id": 10, "itemName": "Sweden" }
     ];
-   
+
     this.settings = {
       singleSelection: false,
       text: "+ More",
       badgeShowLimit: 2,
       enableSearchFilter: true
     };
+    if (this.masterObj.chefsCost > 0 && this.masterObj.totalCost)
+      this.masterObj.totalCost -= this.masterObj.chefsCost;
   }
-  
+
 
   menuSelect(item: any) {
     console.log(item);
@@ -85,10 +87,12 @@ export class MenuComponent implements OnInit {
   }
 
   onCheckout() {
-    if(this.userSerObj.userId){
-      
+    if (this.userSerObj.userId) {
+
     }
     if (this.masterObj.selectedDishArr.length) {
+      this.masterObj.dishesCost = this.masterObj.totalCost;
+      localStorage.setItem('dishCost', this.masterObj.dishesCost.toString());
       this.router.navigate(['../chef'], { relativeTo: this.route });
     }
   }
@@ -106,6 +110,6 @@ export class MenuComponent implements OnInit {
     }
   };
 
-  
+
 
 }

@@ -10,6 +10,7 @@ import { EventManagerRoutingModule } from './event-manager-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms'; 
 import { MobilePreviewModule } from '../components/mobile-preview/mobile-preview.module';
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/multiselect.component';
 
 
 
@@ -19,7 +20,8 @@ import { MobilePreviewModule } from '../components/mobile-preview/mobile-preview
     EventManagerRoutingModule,
     FormsModule,
     NgbModule.forRoot(),
-    MobilePreviewModule
+    MobilePreviewModule,
+    AngularMultiSelectModule
   ],
   declarations: [ 
     EventManagerComponent, 

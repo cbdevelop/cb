@@ -1,108 +1,165 @@
 <div class="estPopOut">
-        <div class="estMesg">
-            <h3>Mixed Selection <span>33</span></h3>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        </div>
-        <div class="estPop clearfix">
-            <div class="estCta clearfix">
-                <span class="pull-left"><img src="../../../../assets/images/chairs.jpg" alt=""/></span>
-                <b class="pull-left">Chairs</b>
-                <select class="pull-left">
-                    <option>Material type</option>
-                    <option>Type 1</option>
-                    <option>Type 2</option>
-                    <option>Type 3</option>
-                </select>
-                <div class="pull-left">
-                    <button class='down_count btn btn-info' title='Down'><i class="fa fa-minus"></i></button>
-                    <input class='counter' type="text" placeholder="value..." value='1' />    
-                    <button class='up_count btn btn-info' title='Up'><i class='fa fa-plus'></i></button>
-                </div>
-                <i class="pull-left fa fa-info" title="Title text will show here..."></i>
-            </div>
-            <div class="estCta clearfix">
-                <span class="pull-left"><img src="../../../../assets/images/chairs.jpg" alt=""/></span>
-                <b class="pull-left">Chairs</b>
-                <select class="pull-left">
-                    <option>Material type</option>
-                    <option>Type 1</option>
-                    <option>Type 2</option>
-                    <option>Type 3</option>
-                </select>
-                <div class="pull-left">
-                    <button class='down_count btn btn-info' title='Down'><i class="fa fa-minus"></i></button>
-                    <input class='counter' type="text" placeholder="value..." value='1' />    
-                    <button class='up_count btn btn-info' title='Up'><i class='fa fa-plus'></i></button>
-                </div>
-                <i class="pull-left fa fa-info" title="Title text will show here..."></i>
-            </div>
-            <div class="estCta clearfix">
-                <span class="pull-left"><img src="../../../../assets/images/chairs.jpg" alt=""/></span>
-                <b class="pull-left">Chairs</b>
-                <select class="pull-left">
-                    <option>Material type</option>
-                    <option>Type 1</option>
-                    <option>Type 2</option>
-                    <option>Type 3</option>
-                </select>
-                <div class="pull-left">
-                    <button class='down_count btn btn-info' title='Down'><i class="fa fa-minus"></i></button>
-                    <input class='counter' type="text" placeholder="value..." value='1' />    
-                    <button class='up_count btn btn-info' title='Up'><i class='fa fa-plus'></i></button>
-                </div>
-                <i class="pull-left fa fa-info" title="Title text will show here..."></i>
-            </div>
-            <div class="estCta clearfix">
-                <span class="pull-left"><img src="../../../../assets/images/chairs.jpg" alt=""/></span>
-                <b class="pull-left">Chairs</b>
-                <select class="pull-left">
-                    <option>Material type</option>
-                    <option>Type 1</option>
-                    <option>Type 2</option>
-                    <option>Type 3</option>
-                </select>
-                <div class="pull-left">
-                    <button class='down_count btn btn-info' title='Down'><i class="fa fa-minus"></i></button>
-                    <input class='counter' type="text" placeholder="value..." value='1' />    
-                    <button class='up_count btn btn-info' title='Up'><i class='fa fa-plus'></i></button>
-                </div>
-                <i class="pull-left fa fa-info" title="Title text will show here..."></i>
-            </div>
-            <div class="estCta clearfix">
-                <span class="pull-left"><img src="../../../../assets/images/chairs.jpg" alt=""/></span>
-                <b class="pull-left">Chairs</b>
-                <select class="pull-left">
-                    <option>Material type</option>
-                    <option>Type 1</option>
-                    <option>Type 2</option>
-                    <option>Type 3</option>
-                </select>
-                <div class="pull-left">
-                    <button class='down_count btn btn-info' title='Down'><i class="fa fa-minus"></i></button>
-                    <input class='counter' type="text" placeholder="value..." value='1' />    
-                    <button class='up_count btn btn-info' title='Up'><i class='fa fa-plus'></i></button>
-                </div>
-                <i class="pull-left fa fa-info" title="Title text will show here..."></i>
-            </div>
-            <div class="estCta clearfix">
-                <span class="pull-left"><img src="../../../../assets/images/chairs.jpg" alt=""/></span>
-                <b class="pull-left">Chairs</b>
-                <select class="pull-left">
-                    <option>Material type</option>
-                    <option>Type 1</option>
-                    <option>Type 2</option>
-                    <option>Type 3</option>
-                </select>
-                <div class="pull-left">
-                    <button class='down_count btn btn-info' title='Down'><i class="fa fa-minus"></i></button>
-                    <input class='counter' type="text" placeholder="value..." value='1' />    
-                    <button class='up_count btn btn-info' title='Up'><i class='fa fa-plus'></i></button>
-                </div>
-                <i class="pull-left fa fa-info" title="Title text will show here..."></i>
-            </div>		
-        </div>
-        <div class="foodPopBtn text-right">
-            <a href="javascript:void(0)" class="foodClose" (click)="onCancel()">Cancel</a>		
-            <a href="javascript:void(0)" class="add" (click)="onAdd()">Add</a>
-        </div>	
+  <div class="chPopInn">
+    <div class="estMesg" *ngIf="masterObj.serviceCost">
+      <!-- <h3>Yo
+        <span>33</span>
+      </h3> -->
+      <!-- <div > -->
+        <h3  *ngIf="masterObj.searchObj.serviceType.length ">Selected Service: 
+          <span > {{ masterObj.searchObj.serviceType[0].type }}</span>
+          <span (click)="changeService()" style="color:#08a88b">Change</span>
+        </h3>
+      <!-- </div> -->
+      Your estimated total cost for the service is {{ masterObj.totalCost + masterObj.serviceCost }}
+
     </div>
+    <div class="estPop clearfix">
+     
+      <div class="estCta clearfix" *ngIf="serviceFlag">
+        <label>Service Type</label>
+        <angular2-multiselect class="loca" [data]="serviceTypeArr" [(ngModel)]="masterObj.searchObj.serviceType" [settings]="serTypeSettings">
+        </angular2-multiselect>
+      </div>
+    </div>
+    <ng-template>
+      <div class="estPop clearfix">
+        <div class="estCta clearfix">
+          <span class="pull-left">
+            <img src="../../../../assets/images/chairs.jpg" alt="" />
+          </span>
+          <b class="pull-left">Chairs</b>
+          <select class="pull-left">
+            <option>Material type</option>
+            <option>Type 1</option>
+            <option>Type 2</option>
+            <option>Type 3</option>
+          </select>
+          <div class="pull-left">
+            <button class='down_count btn btn-info' title='Down'>
+              <i class="fa fa-minus"></i>
+            </button>
+            <input class='counter' type="text" placeholder="value..." value='1' />
+            <button class='up_count btn btn-info' title='Up'>
+              <i class='fa fa-plus'></i>
+            </button>
+          </div>
+          <i class="pull-left fa fa-info" title="Title text will show here..."></i>
+        </div>
+        <div class="estCta clearfix">
+          <span class="pull-left">
+            <img src="../../../../assets/images/chairs.jpg" alt="" />
+          </span>
+          <b class="pull-left">Chairs</b>
+          <select class="pull-left">
+            <option>Material type</option>
+            <option>Type 1</option>
+            <option>Type 2</option>
+            <option>Type 3</option>
+          </select>
+          <div class="pull-left">
+            <button class='down_count btn btn-info' title='Down'>
+              <i class="fa fa-minus"></i>
+            </button>
+            <input class='counter' type="text" placeholder="value..." value='1' />
+            <button class='up_count btn btn-info' title='Up'>
+              <i class='fa fa-plus'></i>
+            </button>
+          </div>
+          <i class="pull-left fa fa-info" title="Title text will show here..."></i>
+        </div>
+        <div class="estCta clearfix">
+          <span class="pull-left">
+            <img src="../../../../assets/images/chairs.jpg" alt="" />
+          </span>
+          <b class="pull-left">Chairs</b>
+          <select class="pull-left">
+            <option>Material type</option>
+            <option>Type 1</option>
+            <option>Type 2</option>
+            <option>Type 3</option>
+          </select>
+          <div class="pull-left">
+            <button class='down_count btn btn-info' title='Down'>
+              <i class="fa fa-minus"></i>
+            </button>
+            <input class='counter' type="text" placeholder="value..." value='1' />
+            <button class='up_count btn btn-info' title='Up'>
+              <i class='fa fa-plus'></i>
+            </button>
+          </div>
+          <i class="pull-left fa fa-info" title="Title text will show here..."></i>
+        </div>
+        <div class="estCta clearfix">
+          <span class="pull-left">
+            <img src="../../../../assets/images/chairs.jpg" alt="" />
+          </span>
+          <b class="pull-left">Chairs</b>
+          <select class="pull-left">
+            <option>Material type</option>
+            <option>Type 1</option>
+            <option>Type 2</option>
+            <option>Type 3</option>
+          </select>
+          <div class="pull-left">
+            <button class='down_count btn btn-info' title='Down'>
+              <i class="fa fa-minus"></i>
+            </button>
+            <input class='counter' type="text" placeholder="value..." value='1' />
+            <button class='up_count btn btn-info' title='Up'>
+              <i class='fa fa-plus'></i>
+            </button>
+          </div>
+          <i class="pull-left fa fa-info" title="Title text will show here..."></i>
+        </div>
+        <div class="estCta clearfix">
+          <span class="pull-left">
+            <img src="../../../../assets/images/chairs.jpg" alt="" />
+          </span>
+          <b class="pull-left">Chairs</b>
+          <select class="pull-left">
+            <option>Material type</option>
+            <option>Type 1</option>
+            <option>Type 2</option>
+            <option>Type 3</option>
+          </select>
+          <div class="pull-left">
+            <button class='down_count btn btn-info' title='Down'>
+              <i class="fa fa-minus"></i>
+            </button>
+            <input class='counter' type="text" placeholder="value..." value='1' />
+            <button class='up_count btn btn-info' title='Up'>
+              <i class='fa fa-plus'></i>
+            </button>
+          </div>
+          <i class="pull-left fa fa-info" title="Title text will show here..."></i>
+        </div>
+        <div class="estCta clearfix">
+          <span class="pull-left">
+            <img src="../../../../assets/images/chairs.jpg" alt="" />
+          </span>
+          <b class="pull-left">Chairs</b>
+          <select class="pull-left">
+            <option>Material type</option>
+            <option>Type 1</option>
+            <option>Type 2</option>
+            <option>Type 3</option>
+          </select>
+          <div class="pull-left">
+            <button class='down_count btn btn-info' title='Down'>
+              <i class="fa fa-minus"></i>
+            </button>
+            <input class='counter' type="text" placeholder="value..." value='1' />
+            <button class='up_count btn btn-info' title='Up'>
+              <i class='fa fa-plus'></i>
+            </button>
+          </div>
+          <i class="pull-left fa fa-info" title="Title text will show here..."></i>
+        </div>
+      </div>
+    </ng-template>
+    <div class="foodPopBtn text-right">
+      <a href="javascript:void(0)" class="foodClose" (click)="onCancel()">Cancel</a>
+      <a href="javascript:void(0)" class="add" (click)="onAdd()">Add</a>
+    </div>
+  </div>
+</div>

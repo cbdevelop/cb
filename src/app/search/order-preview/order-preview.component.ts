@@ -25,10 +25,36 @@ export class OrderPreviewComponent implements OnInit {
   }
 
   remove(id, index) {
+    console.log(this.masterObj.totalCost);
     let ind = this.masterObj.selectedDishArr.findIndex(x => x.id == id);
     if (ind !== -1) {
-      this.masterObj.totalCost = this.masterObj.totalCost - this.masterObj.selectedDishArr[ind].Price;
-      this.masterObj.selectedDishArr.splice(ind,1);
+      console.log(this.masterObj.selectedDishArr);
+      let arr = this.masterObj.selectedDishArr[ind];
+      // this.masterObj.totalCost = this.masterObj.totalCost - arr.Price;
+
+      if (arr.Category_Type == 2) {
+        // nonveg
+        if (arr.Restrictions == "")
+          this.masterObj.totalCost -= this.masterObj.searchObj.nonVegAttnd * arr.Price;
+        else
+          this.masterObj.totalCost -= Math.ceil(1 / 4 * this.masterObj.searchObj.nonVegAttnd) * arr.Price;
+      } else if (arr.Category_Type == 1) {
+        /* restricted service functionality */
+        // veg people
+        //this.masterObj.totalCost -= this.masterObj.totalAttendees * arr.Price;
+        if (arr.Restrictions == "")
+          this.masterObj.totalCost -= this.masterObj.totalAttendees * arr.Price;
+        else if( arr.Restrictions.includes('Only for vegetarian'))
+          this.masterObj.totalCost -= this.masterObj.searchObj.vegAttnd * arr.Price;
+        else if (arr.Restrictions.includes('Mostly for vegetarian(50% of total Attendees)') )
+          this.masterObj.totalCost -= (this.masterObj.searchObj.vegAttnd + Math.ceil(1 / 2 * this.masterObj.searchObj.nonVegAttnd)) * arr.Price;
+        else
+          this.masterObj.totalCost -= Math.ceil(1 / 4 * this.masterObj.totalAttendees) * arr.Price;
+      } else {
+        this.masterObj.totalCost -= this.masterObj.totalAttendees * arr.Price;
+      }
+console.log(this.masterObj.totalCost);
+      this.masterObj.selectedDishArr.splice(ind, 1);
       var selectedDish = JSON.stringify(this.masterObj.selectedDishArr);
       localStorage.setItem("cost", this.masterObj.totalCost.toString());
       localStorage.setItem("selDises", selectedDish);

@@ -44,7 +44,7 @@ export class ResultViewComponent implements OnInit {
   getDishList() {
     this.service.getJSONofDishes().subscribe(
       (data) => {
-        console.log(data);
+        
         this.service.masterDish = data;
         this.service.dishArray = data;
         this.service.startersArray = this.service.getDishesByMenuID(1);
@@ -96,9 +96,9 @@ export class ResultViewComponent implements OnInit {
 
   /* open pop up if cuisnes are there*/
   DishClicked(menucategoryid: number, disId) {
-    console.log(disId);
+    
     if (this.isDishSelected(menucategoryid, disId)) {
-      console.log('selected');
+     
       var arr = this.service.dishArray.filter(x => x.id == disId);
 
       if (arr[0].Cuisine != "" && this.getCuisinesArr(arr[0].id).length) {
@@ -106,7 +106,7 @@ export class ResultViewComponent implements OnInit {
         modalRef.componentInstance.cat_id = menucategoryid;
         modalRef.componentInstance.dishId = disId;
       } else if (arr.length) {
-        this.alertsObj.openAlert({ message: 'This Dish already added', type: 'warning' });
+        this.alertsObj.openAlert({ message: 'The selected dish is already added', type: 'warning' });
 
         // const modalRef = this.modalService.open(AlertsComponent);
         
@@ -123,16 +123,22 @@ export class ResultViewComponent implements OnInit {
       } else if (arr.length) {
         // {ca  menucategoryid,arr[0]}
         arr[0].Restrictions = "";
+        
+        /*dish category price*/
         if(arr[0].Category_Type == 2){
-          this.service.totalCost += this.service.nonVegAttendees * arr[0].Price;
+          // nonveg
+          this.service.totalCost += this.service.searchObj.nonVegAttnd * arr[0].Price;
         }else if(arr[0].Category_Type == 1){
-          this.service.totalCost += this.service.vegAttendees * arr[0].Price;
+          /* restricted service functionality */ 
+          // veg people
+          this.service.totalCost += this.service.totalAttendees * arr[0].Price;
         }else {
           this.service.totalCost += this.service.totalAttendees * arr[0].Price;
         }
         // this.service.totalCost += arr[0].Price;
+        
         this.service.selectedDishArr.push(arr[0]);
-        var selectedDish = JSON.stringify(this.service.selectedDishArr);
+        let selectedDish = JSON.stringify(this.service.selectedDishArr);
         localStorage.setItem("selDises", selectedDish);
         localStorage.setItem("cost", this.service.totalCost.toString());
       }

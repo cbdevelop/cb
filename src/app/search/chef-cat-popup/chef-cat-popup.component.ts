@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { NgbModal,NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { MasterService } from '../../services/master.service';
 import { Dish, DishModel } from '../../shared/models/dish.model';
 import { Menu } from '../../shared/models/menu.mode';
@@ -13,18 +13,18 @@ import { alert } from '../../shared/models/alert.model';
 })
 export class ChefCatPopupComponent implements OnInit {
 
-  alert: alert= { type: 'success', message: '' };
+  alert: alert = { type: 'success', message: '' };
 
   @Input() cat_id;
   @Input() dishId;
 
   res = [];
   cus = [];
-  btnText = 'Save';
+  btnText = 'Add';
   dishDetails: DishModel;
 
   restrictArr = [
-    'Only for vegetarian', 'Mostly for vegetarian', 'Only for main table(25% of total Attendees)'
+    'Only for vegetarian', 'Mostly for vegetarian(50% of total Attendees)', 'Only for main table(25% of total Attendees)'
   ];
   constructor(
     public modalService: NgbModal,
@@ -37,7 +37,9 @@ export class ChefCatPopupComponent implements OnInit {
   ngOnInit() {
 
     this.dishDetails = this.findDish();
-
+    if (this.dishDetails.Category_Type == 2) {
+      this.restrictArr = this.restrictArr.slice(2);
+    }
   }
 
 
@@ -46,11 +48,11 @@ export class ChefCatPopupComponent implements OnInit {
     let index = this.masterService.selectedDishArr.findIndex(d => d.id == this.dishId);
     if (index !== -1) {
       // return this.masterService.selectedDishArr[index];
-      
+
       this.btnText = 'Update';
       this.cus = this.getArr(this.masterService.selectedDishArr[index].Cuisine);
       this.res = this.getArr(this.masterService.selectedDishArr[index].Restrictions);
-      
+
     }
 
     return arr[0];
@@ -63,8 +65,34 @@ export class ChefCatPopupComponent implements OnInit {
 
   onAdd() {
     let index = this.masterService.selectedDishArr.findIndex(d => d.id == this.dishId);
-    if(index != -1)
+    if (index != -1) {
+      let arr = this.masterService.selectedDishArr[index];
+      // this.masterService.totalCost = this.masterService.totalCost - arr.Price;
+
+      if (arr.Category_Type == 2) {
+        // nonveg
+        if (arr.Restrictions == "")
+          this.masterService.totalCost -= this.masterService.searchObj.nonVegAttnd * arr.Price;
+        else
+          this.masterService.totalCost -= Math.ceil(1 / 4 * this.masterService.searchObj.nonVegAttnd) * arr.Price;
+      } else if (arr.Category_Type == 1) {
+        /* restricted service functionality */
+        // veg people
+        //this.masterService.totalCost -= this.masterService.totalAttendees * arr.Price;
+        if (arr.Restrictions == "")
+          this.masterService.totalCost -= this.masterService.totalAttendees * arr.Price;
+        else if (arr.Restrictions.includes('Only for vegetarian'))
+          this.masterService.totalCost -= this.masterService.searchObj.vegAttnd * arr.Price;
+        else if (arr.Restrictions.includes('Mostly for vegetarian(50% of total Attendees)'))
+          this.masterService.totalCost -= (this.masterService.searchObj.vegAttnd + (1 / 2 * this.masterService.searchObj.nonVegAttnd)) * arr.Price;
+        else
+          this.masterService.totalCost -= Math.ceil(1 / 4 * this.masterService.totalAttendees) * arr.Price;
+      } else {
+        this.masterService.totalCost -= this.masterService.totalAttendees * arr.Price;
+      }
       this.masterService.selectedDishArr.splice(index);
+
+    }
     let cusine = "";
     if (this.cus.length > 0) {
       cusine = this.cus[0];
@@ -87,13 +115,40 @@ export class ChefCatPopupComponent implements OnInit {
 
     this.dishDetails.Cuisine = cusine;
     this.dishDetails.Restrictions = restrict;
-    this.masterService.totalCost += this.dishDetails.Price;
+    // this.masterService.totalCost += this.dishDetails.Price;
+    console.log(this.masterService.totalCost);
+
+    if (this.dishDetails.Category_Type == 2) {
+      // nonveg
+      if (restrict == "")
+        this.masterService.totalCost += this.masterService.searchObj.nonVegAttnd * this.dishDetails.Price;
+      else
+        this.masterService.totalCost += Math.ceil(1 / 4 * this.masterService.searchObj.nonVegAttnd) * this.dishDetails.Price;
+
+    } else if (this.dishDetails.Category_Type == 1) {
+      /* restricted service functionality */
+      // veg people
+      console.log(this.res, this.res.indexOf('Only for vegetarian'))
+      if (this.res.length == 0)
+        this.masterService.totalCost += this.masterService.totalAttendees * this.dishDetails.Price;
+      else if (this.res.indexOf('Only for vegetarian') != -1)
+        this.masterService.totalCost += this.masterService.searchObj.vegAttnd * this.dishDetails.Price;
+      else if (this.res.indexOf('Mostly for vegetarian(50% of total Attendees)') != -1)
+        this.masterService.totalCost += (this.masterService.searchObj.vegAttnd + Math.ceil(1 / 2 * this.masterService.searchObj.nonVegAttnd)) * this.dishDetails.Price;
+      else
+        this.masterService.totalCost += Math.ceil(1 / 4 * this.masterService.totalAttendees) * this.dishDetails.Price;
+    } else {
+      this.masterService.totalCost += this.masterService.totalAttendees * this.dishDetails.Price;
+    }
+
+
+    console.log(this.masterService.totalCost);
     this.masterService.selectedDishArr.push(this.dishDetails);
     var selectedDish = JSON.stringify(this.masterService.selectedDishArr);
     localStorage.setItem("cost", this.masterService.totalCost.toString());
     localStorage.setItem("selDises", selectedDish);
-    this.cus =[];
-    this.res =[];
+    this.cus = [];
+    this.res = [];
     this.activeModal.close();
   }
 
@@ -142,6 +197,7 @@ export class ChefCatPopupComponent implements OnInit {
   }
   onReschecked(evt) {
     if (evt.target.checked) {
+      this.res.pop();
       this.res.push(evt.target.value);
     } else {
       this.res.splice(this.res.indexOf(evt.target.value), 1);

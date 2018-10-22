@@ -1,11 +1,11 @@
 <app-chef-list></app-chef-list>
 
 <div class="responsiveCart">
-  <!-- <div class="resPro">Total {{ masterObj.totalCost }}</div> -->
+  <div class="resPro">Total <b>{{ masterObj.totalCost }}</b></div>
   <!-- <div class="resPro" (click)="openPromo()">Have a Promo code</div> -->
   <div class="clearfix">
     <a (click)="onproceed()" class="resBtn">
-      <span>{{ masterObj.selectedDishArr.length }}</span>Proceed to confirm Event manager </a>
+      <span>{{ masterObj.selectedDishArr.length }}</span>Proceed to Event manager </a>
     <a href="javascript:void(0)" class="resCart" (click)="opencat()">
       <span>{{ masterObj.selectedDishArr.length }}</span>
       <img src="./assets/images/cart.svg" alt="" />

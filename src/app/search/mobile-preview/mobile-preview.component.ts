@@ -16,14 +16,14 @@ export class MobilePreviewComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     public masterObj: MasterService,
-    private userSerObj:UserService,
+    private userSerObj: UserService,
     private activeModal: NgbActiveModal) { }
 
   ngOnInit() {
   }
 
   remove(cat_id, index) {
-   
+
     var selectedDish = JSON.stringify(this.masterObj.selectedDishArr);
     localStorage.setItem("cost", this.masterObj.totalCost.toString());
     localStorage.setItem("selDises", selectedDish);
@@ -59,10 +59,14 @@ export class MobilePreviewComponent implements OnInit {
     }
     if (this.masterObj.selectedDishArr.length) {
       this.activeModal.close();
-      if(this.masterObj.selCity.ID == 6){
+      if (this.masterObj.selCity.ID == 6) {
 
-      }else 
+      } else {
+
+        this.masterObj.dishesCost = this.masterObj.totalCost;
+        localStorage.setItem('dishCost', this.masterObj.dishesCost.toString());
         this.router.navigate(['../chef'], { relativeTo: this.route });
+      }
     }
 
   }

@@ -17,13 +17,13 @@
           (onDeSelect)="LocationDeSelect($event)" formControlName="location">
         </angular2-multiselect>
       </div>
-      <div class="select">
+      <!-- <div class="select">
         <label>Service Type</label>
         <angular2-multiselect class="loca" [data]="serviceTypeArr" [(ngModel)]="masterObj.searchObj.serviceType"
          [settings]="serTypeSettings" (onSelect)="ServiceSelect($event)"
           (onDeSelect)="ServiceDeSelect($event)" formControlName="serviceType">
         </angular2-multiselect>
-      </div>
+      </div> -->
       <div class="atten">
         <label>Attendees -
           <b>{{ masterObj.totalAttendees }}</b> (Veg - Nonveg)</label>
@@ -32,15 +32,16 @@
         />
       </div>
       <div class="select date">
-        <label>Date - Time</label>
-        <input type="text" placeholder="DD/MM/YY HH:MM" class="datePic" formControlName="datetime" 
-        [(ngModel)]="masterObj.searchObj.datetime" [min]="min" [max]="max"
+        <label>Date - Time (24hrs format)</label>
+        <input type="text" placeholder="Select Time" class="datePic" formControlName="datetime" 
+        [(ngModel)]="masterObj.searchObj.datetime" [min]="min" [max]="max" (keypress)="onTime($event)"
           [owlDateTime]="dt1" hour12Timer="true" [owlDateTimeTrigger]="dt1">
         <owl-date-time #dt1 (afterPickerClosed)="selectedTime($event)"></owl-date-time>
       </div>
       <div class="select time" >
         <label>You're ordering for</label>
         <div class="session" *ngIf="masterObj.session !== ''"> {{ masterObj.session }}</div>
+        <div class="session" *ngIf="masterObj.session == ''"> -- </div>
       </div>
       <div class="seaBtn">
         <input type="button" value="Search" (click)="onSearch(masterObj.searchObj)" class="seaButton" />

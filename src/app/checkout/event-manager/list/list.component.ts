@@ -48,6 +48,8 @@ export class ListComponent implements OnInit {
         localStorage.setItem('selManager', '');
         localStorage.setItem('noManager', 'yes');
         this.masterobj.selectedEvtManager = [];
+        this.masterobj.totalCost -= this.masterobj.eventMangerCost;
+        this.masterobj.eventMangerCost=0;
         this.alertObj.openAlert({message:'selected event managers will be removed',type:'warning'});
         // if (confirm('Do you Remove selected Event managers')) {
          

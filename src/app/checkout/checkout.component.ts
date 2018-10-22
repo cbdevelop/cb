@@ -29,7 +29,7 @@ export class CheckoutComponent implements OnInit {
   }
 
   ngOnInit() {
-    
+   /* 
     if (this.masterObj.searchObj.serviceType[0].id == 1) {
       this.masterObj.totalCost += 600;  // drop off
     } else if (this.masterObj.searchObj.serviceType[0].id == 2) {
@@ -52,6 +52,7 @@ export class CheckoutComponent implements OnInit {
     }
     let stallArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 9);
     this.masterObj.totalCost += (stallArr.length * 5000) ;
+    */
   }
 
 
@@ -66,7 +67,7 @@ export class CheckoutComponent implements OnInit {
     /* 1 to 3 dishes 1 chef*/
     /* 3 to 10 dishes 2 to 5 chef*/
     let length = this.masterObj.randomInt(1, min);
-    console.log(this.masterObj.filteredchefList,length);
+    
     if (this.masterObj.filteredchefList.length < length) {
       this.masterObj.filteredchefList = [];
       for (let i = 0; i < length; i++) {
@@ -75,18 +76,22 @@ export class CheckoutComponent implements OnInit {
         if (arr !== undefined) {
           arr.menu = '';
           let cost = 0;
+          console.log(arr.Cost);
           if (this.masterObj.totalAttendees <= 250)
-            this.masterObj.totalCost += arr.Cost;
+            this.masterObj.chefsCost += arr.Cost;
           else {
             let percent = 1 + (this.masterObj.totalAttendees - 250) / 100;
             cost = arr.Cost + (Math.round(percent) * (0.2) * arr.Cost);
-            this.masterObj.totalCost += cost;
+            this.masterObj.chefsCost += cost;
           }
 
           this.masterObj.filteredchefList.push(arr);
         }
       }
 
+      localStorage.setItem('chefsCost',this.masterObj.chefsCost.toString());
+      console.log( this.masterObj.totalCost,this.masterObj.chefsCost)
+      this.masterObj.totalCost +=this.masterObj.chefsCost;
     }
   }
 

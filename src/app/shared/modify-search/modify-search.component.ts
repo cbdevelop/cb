@@ -68,11 +68,11 @@ export class ModifySearchComponent implements OnInit {
       new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 5
     )
 
-    this.serviceTypeArr = this.masterObj.masterServiceType;
+    // this.serviceTypeArr = this.masterObj.masterServiceType;
 
     this.modifiedForm = this.fb.group({
       location: [[], Validators.required],
-      serviceType: [[], Validators.required],
+      // serviceType: [[], Validators.required],
       vegAttnd: [''],
       nonVegAttnd: [''],
       datetime: []
@@ -101,6 +101,14 @@ export class ModifySearchComponent implements OnInit {
     this.activeModal.dismiss();
   }
 
+  onTime(event) {
+    // const pattern = /[0-9]/;
+    // const inputChar = String.fromCharCode(event.charCode);
+    if (event.keyCode !== 9 && event.keyCode !== 13 ) {
+      event.preventDefault();
+    }
+  }
+
   selectedTime(evt) {
        
     if (this.masterObj.searchObj.datetime < this.min) {
@@ -110,20 +118,20 @@ export class ModifySearchComponent implements OnInit {
       modalRef.componentInstance.alert = this.alert;
       return false;
     } else {
-      let time = this.datepipe.transform(this.masterObj.searchObj.datetime, 'hh');
+      let time = this.datepipe.transform(this.masterObj.searchObj.datetime, 'HH');
       let tt = parseInt(time, 10);
-      if (tt > 7 && tt < 11)
+      if (tt >= 7 && tt <=11)
         this.masterObj.session = 'Break Fast';
-      else if (tt > 12 && tt < 16)
+      else if (tt >= 12 && tt < 16)
         this.masterObj.session = 'Lunch';
-      else if (tt > 19 && tt < 22)
+      else if (tt >= 19 && tt <= 22)
         this.masterObj.session = 'Dinner';
-      else if (tt > 16 && tt < 18)
+      else if (tt >= 16 && tt <= 18)
         this.masterObj.session = 'Snack Time';
       else {
         
         const modalRef = this.modalService.open(AlertsComponent);
-        this.alert.message = 'We are not serving at this time';
+        this.alert.message = 'Sorry, we serve from 7 AM till 10 PM.';
         this.alert.type = 'warning';
         modalRef.componentInstance.alert = this.alert;
         this.masterObj.session = ''
@@ -165,14 +173,14 @@ export class ModifySearchComponent implements OnInit {
         this.activeModal.close();
       } else {
         const modalRef = this.modalService.open(AlertsComponent);
-        this.alert.message = 'Please fill out no of Attendees.';
+        this.alert.message = 'Please enter no. of Attendees.';
         this.alert.type = 'warning';
         modalRef.componentInstance.alert = this.alert;
 
       }
     } else {
       const modalRef = this.modalService.open(AlertsComponent);
-      this.alert.message = 'Please fill all the fields';
+      this.alert.message = 'Please enter all the details';
       this.alert.type = 'warning';
       modalRef.componentInstance.alert = this.alert;
     }
