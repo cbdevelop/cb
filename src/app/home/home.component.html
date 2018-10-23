@@ -8,11 +8,12 @@
     <div class="themeWrap">
       <div class="themeText">
         <h1>Welcome to Caterbinge</h1>
-        <h2>A one stop solution from hiring your chefs till complete catering your entire event. Book your order now</h2>
+        <h2>A food catering platform from hiring professional chefs to complete catering of your entire event.
+           Book your order now!</h2>
       </div>
     </div>
     <div class="resSearch clearfix" (click)="onMobileSearch()">
-      <input type="text" placeholder="Search" />
+      <input type="text" placeholder="Enter event location, date&time and proceed to build a menu" />
       <button>Search</button>
     </div>
 
@@ -40,7 +41,8 @@
         <div class="atten">
           <label>Attendees -
             <b>{{ masterObj.totalAttendees }}</b> (Veg + Nonveg)</label>
-          <input type="text" placeholder="000" formControlName="vegAttnd" [(ngModel)]="masterObj.searchObj.vegAttnd" (keypress)="onlyNumberKey($event)"
+          <input type="text" placeholder="000" formControlName="vegAttnd" 
+          [(ngModel)]="masterObj.searchObj.vegAttnd" (keypress)="onlyNumberKey($event)"
             (blur)="getTotal()" />
           <input type="text" placeholder="000" class="non" formControlName="nonVegAttnd" [(ngModel)]="masterObj.searchObj.nonVegAttnd"
             (blur)="getTotal()" (keypress)="onlyNumberKey($event)" />
@@ -122,7 +124,7 @@
       <h3>About
         <span>Caterbinge</span>
       </h3>
-      <p>Caterbinge is an on-demand food catering service and your personal chef. We aim to provide superior quality food by
+      <p>Caterbinge is Indias first on-demand food catering platform, Hire professional chefs or book a complete catering service, We aim to provide superior quality food by
         allocating best-experienced chefs around the city to master the taste of every single dish of your custom built menu,
         not just that we provide delicious cuisines but also assures high-quality service. At caterbinge.com we strive to
         achieve the highest level of Customer Satisfaction and are committed giving the best service regardless of the size

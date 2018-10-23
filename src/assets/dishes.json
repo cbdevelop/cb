@@ -1,198 +1,6 @@
 [
   {
     "id": 1,
-    "Dish_Name": "Upma",
-    "Logo": "",
-    "Menu_Type": 1,
-    "Category_Type": 1,
-    "Price": 15,
-    "Description": "Upma is a dish originating from the Indian subcontinent, most common in South Indian,Maharashtrian, and Sri Lankan Tamilbreakfast; cooked as a thick porridge from dry roasted semolina or coarse rice flour.Various seasonings and/or vegetables are often added during the cooking, depending on individual preferences.",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 2,
-    "Dish_Name": "Mixture",
-    "Logo": "",
-    "Menu_Type": 1,
-    "Category_Type": 1,
-    "Price": 6,
-    "Description": "",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 3,
-    "Dish_Name": "Poornalu",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": 1,
-    "Price": 15,
-    "Description": "",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 4,
-    "Dish_Name": "Rava Laddu",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": 1,
-    "Price": 15,
-    "Description": "This is the most simplest and the easiest festive sweet recipe and it is made with very few ingredients Rava , Coconut, Ghee, sugar and nuts.",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 5,
-    "Dish_Name": "Tapeswaram Kaja",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": 1,
-    "Price": 15,
-    "Description": "",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 6,
-    "Dish_Name": "Payasam",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": 1,
-    "Price": 15,
-    "Description": "",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 7,
-    "Dish_Name": "Gavvalu",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": 1,
-    "Price": 15,
-    "Description": "Gavvalu sweet is a traditional Indian sweet. This sweet is normally prepared during festival celebrations and other special occasions.",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 8,
-    "Dish_Name": "Chakodi",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": 1,
-    "Price": 15,
-    "Description": "Chakodi also Chagodi is a hot and crunchy Indian snack. It is made with flour and is round in shape",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 9,
-    "Dish_Name": "sugar pongal",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": 1,
-    "Price": 15,
-    "Description": "Chakkara pongali or chakra pongali rice recipe is a very famous south indian pongal recipe. it is also called as chakkera pongali, chekkara pongali orsweet pongali. chakkara pongali or chakra pongalican be prepared with gaggery and sugar",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 10,
-    "Dish_Name": "Boondi",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": 1,
-    "Price": 15,
-    "Description": "Boondi or Bundiya is an Indian dessert made from sweetened, fried chickpea flour.",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 11,
-    "Dish_Name": "Palathalikalu",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": 1,
-    "Price": 15,
-    "Description": "Palathalikalu is an Indian sweet dish made during Sankranthi in the Delta region of Andhra Pradesh, India.",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 12,
-    "Dish_Name": "Rava Kesari",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": 1,
-    "Price": 15,
-    "Description": "A quick South Indian dessert made of semolina, sugar, ghee and nuts. This recipe will yield you delicious, flavorful, soft and fluffy rava kesari.",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 13,
-    "Dish_Name": "Pappuchekka",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": 1,
-    "Price": 15,
-    "Description": "",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 14,
-    "Dish_Name": "Jeedilu",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": 1,
-    "Price": 15,
-    "Description": "",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 15,
-    "Dish_Name": "Malai Khaja",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": 1,
-    "Price": 15,
-    "Description": "Khaja is a dessert of India. Refined wheat flour, sugar and oils are the chief ingredients of khaja. Khaja of Kakinada is a coastal town of AndhraPradesh.",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 16,
-    "Dish_Name": "Kobbari Lavuju",
-    "Logo": "",
-    "Menu_Type": 8,
-    "Category_Type": 1,
-    "Price": 15,
-    "Description": "Kobbari Lavuju is a famous sweet in Godavari and Krishna districts in the state of Andhra Pradesh. The key ingredients are grated coconut, sugar, jaggery and spices like elaichi.",
-    "Cuisine": "South Indian",
-    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
-    "is_active": 1
-  },
-  {
-    "id": 17,
     "Dish_Name": "Vennappalu",
     "Logo": "",
     "Menu_Type": 8,
@@ -204,7 +12,7 @@
     "is_active": 1
   },
   {
-    "id": 18,
+    "id": 2,
     "Dish_Name": "Mutton kheema Spring Rolls",
     "Logo": "",
     "Menu_Type": 1,
@@ -216,7 +24,7 @@
     "is_active": 1
   },
   {
-    "id": 19,
+    "id": 3,
     "Dish_Name": "Chicken Spring Rolls",
     "Logo": "",
     "Menu_Type": 1,
@@ -228,7 +36,7 @@
     "is_active": 1
   },
   {
-    "id": 20,
+    "id": 4,
     "Dish_Name": "Veg Spring Rolls",
     "Logo": "",
     "Menu_Type": 1,
@@ -240,67 +48,31 @@
     "is_active": 1
   },
   {
-    "id": 21,
-    "Dish_Name": "Mutton Haleem",
+    "id": 5,
+    "Dish_Name": "Gavvalu",
     "Logo": "",
-    "Menu_Type": 1,
-    "Category_Type": 2,
-    "Price": 35,
-    "Description": "",
-    "Cuisine": "Hyderabadi",
-    "Restrictions": "Only for main table",
-    "is_active": 1
-  },
-  {
-    "id": 22,
-    "Dish_Name": "Chicken Haleem",
-    "Logo": "",
-    "Menu_Type": 1,
-    "Category_Type": 2,
-    "Price": 30,
-    "Description": "Chicken Haleem is a popular dish prepared during the month of Ramzan, comprises of wheat, meat, ghee and nuts.",
-    "Cuisine": "Hyderabadi",
-    "Restrictions": "Only for main table",
-    "is_active": 1
-  },
-  {
-    "id": 23,
-    "Dish_Name": "vegetable Haleem",
-    "Logo": "",
-    "Menu_Type": 1,
-    "Category_Type": 2,
-    "Price": 18,
-    "Description": "",
-    "Cuisine": "Hyderabadi",
-    "Restrictions": "Only for main table",
-    "is_active": 1
-  },
-  {
-    "id": 24,
-    "Dish_Name": "Mutton Luqhmi",
-    "Logo": "",
-    "Menu_Type": 1,
-    "Category_Type": 2,
-    "Price": 16,
-    "Description": "Lukhmi is a typical mince savoury starter, a cuisine of Hyderabad. It is a local variation of samosa. The snack's authentic preparation includes stuffing with mutton-mince kheema.",
-    "Cuisine": "Hyderabadi",
-    "Restrictions": "Only for main table",
-    "is_active": 1
-  },
-  {
-    "id": 25,
-    "Dish_Name": "Chicken Luqhmi",
-    "Logo": "",
-    "Menu_Type": 1,
+    "Menu_Type": 8,
     "Category_Type": 1,
-    "Price": 13,
-    "Description": "",
-    "Cuisine": "Hyderabadi",
+    "Price": 15,
+    "Description": "Gavvalu sweet is a traditional Indian sweet. This sweet is normally prepared during festival celebrations and other special occasions.",
+    "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
-    "id": 26,
+    "id": 6,
+    "Dish_Name": "Chakodi",
+    "Logo": "",
+    "Menu_Type": 8,
+    "Category_Type": 1,
+    "Price": 15,
+    "Description": "Chakodi also Chagodi is a hot and crunchy Indian snack. It is made with flour and is round in shape",
+    "Cuisine": "South Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 7,
     "Dish_Name": "Mutton Shikampur",
     "Logo": "",
     "Menu_Type": 1,
@@ -312,7 +84,7 @@
     "is_active": 1
   },
   {
-    "id": 27,
+    "id": 8,
     "Dish_Name": "Veg Nargis Kofta",
     "Logo": "",
     "Menu_Type": 7,
@@ -324,7 +96,7 @@
     "is_active": 1
   },
   {
-    "id": 28,
+    "id": 9,
     "Dish_Name": "chicken Nargis Kofta",
     "Logo": "",
     "Menu_Type": 7,
@@ -336,7 +108,7 @@
     "is_active": 1
   },
   {
-    "id": 29,
+    "id": 10,
     "Dish_Name": "mutton nargis kofta",
     "Logo": "",
     "Menu_Type": 7,
@@ -348,7 +120,7 @@
     "is_active": 1
   },
   {
-    "id": 30,
+    "id": 11,
     "Dish_Name": "Mutton Marag",
     "Logo": "",
     "Menu_Type": 1,
@@ -360,7 +132,7 @@
     "is_active": 1
   },
   {
-    "id": 31,
+    "id": 12,
     "Dish_Name": "Chicken Marag",
     "Logo": "",
     "Menu_Type": 1,
@@ -372,7 +144,7 @@
     "is_active": 1
   },
   {
-    "id": 32,
+    "id": 13,
     "Dish_Name": "Mutton Sheekh Kabab",
     "Logo": "",
     "Menu_Type": 7,
@@ -381,6 +153,234 @@
     "Description": "Mutton seekh kebab is a delighting non-vegetarian starter popularly relished as side dish in India. You can find it across street stalls or dhabas in most of the parts of Delhi, Punjab and Srinagar.",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for main table",
+    "is_active": 1
+  },
+  {
+    "id": 14,
+    "Dish_Name": "Upma",
+    "Logo": "",
+    "Menu_Type": 1,
+    "Category_Type": 1,
+    "Price": 15,
+    "Description": "Upma is a dish originating from the Indian subcontinent, most common in South Indian,Maharashtrian, and Sri Lankan Tamilbreakfast; cooked as a thick porridge from dry roasted semolina or coarse rice flour.Various seasonings and/or vegetables are often added during the cooking, depending on individual preferences.",
+    "Cuisine": "South Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 15,
+    "Dish_Name": "Poornalu",
+    "Logo": "",
+    "Menu_Type": 8,
+    "Category_Type": 1,
+    "Price": 15,
+    "Description": "",
+    "Cuisine": "South Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 16,
+    "Dish_Name": "Rava Laddu",
+    "Logo": "",
+    "Menu_Type": 8,
+    "Category_Type": 1,
+    "Price": 15,
+    "Description": "This is the most simplest and the easiest festive sweet recipe and it is made with very few ingredients Rava , Coconut, Ghee, sugar and nuts.",
+    "Cuisine": "South Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 17,
+    "Dish_Name": "Tapeswaram Kaja",
+    "Logo": "",
+    "Menu_Type": 8,
+    "Category_Type": 1,
+    "Price": 15,
+    "Description": "",
+    "Cuisine": "South Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 18,
+    "Dish_Name": "Payasam",
+    "Logo": "",
+    "Menu_Type": 8,
+    "Category_Type": 1,
+    "Price": 15,
+    "Description": "",
+    "Cuisine": "South Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 19,
+    "Dish_Name": "Malai Khaja",
+    "Logo": "",
+    "Menu_Type": 8,
+    "Category_Type": 1,
+    "Price": 15,
+    "Description": "Khaja is a dessert of India. Refined wheat flour, sugar and oils are the chief ingredients of khaja. Khaja of Kakinada is a coastal town of AndhraPradesh.",
+    "Cuisine": "South Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 20,
+    "Dish_Name": "Kobbari Lavuju",
+    "Logo": "",
+    "Menu_Type": 8,
+    "Category_Type": 1,
+    "Price": 15,
+    "Description": "Kobbari Lavuju is a famous sweet in Godavari and Krishna districts in the state of Andhra Pradesh. The key ingredients are grated coconut, sugar, jaggery and spices like elaichi.",
+    "Cuisine": "South Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 21,
+    "Dish_Name": "Mixture",
+    "Logo": "",
+    "Menu_Type": 1,
+    "Category_Type": 1,
+    "Price": 6,
+    "Description": "",
+    "Cuisine": "South Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 22,
+    "Dish_Name": "sugar pongal",
+    "Logo": "",
+    "Menu_Type": 8,
+    "Category_Type": 1,
+    "Price": 15,
+    "Description": "Chakkara pongali or chakra pongali rice recipe is a very famous south indian pongal recipe. it is also called as chakkera pongali, chekkara pongali orsweet pongali. chakkara pongali or chakra pongalican be prepared with gaggery and sugar",
+    "Cuisine": "South Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 23,
+    "Dish_Name": "Boondi",
+    "Logo": "",
+    "Menu_Type": 8,
+    "Category_Type": 1,
+    "Price": 15,
+    "Description": "Boondi or Bundiya is an Indian dessert made from sweetened, fried chickpea flour.",
+    "Cuisine": "South Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 24,
+    "Dish_Name": "Palathalikalu",
+    "Logo": "",
+    "Menu_Type": 8,
+    "Category_Type": 1,
+    "Price": 15,
+    "Description": "Palathalikalu is an Indian sweet dish made during Sankranthi in the Delta region of Andhra Pradesh, India.",
+    "Cuisine": "South Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 25,
+    "Dish_Name": "Rava Kesari",
+    "Logo": "",
+    "Menu_Type": 8,
+    "Category_Type": 1,
+    "Price": 15,
+    "Description": "A quick South Indian dessert made of semolina, sugar, ghee and nuts. This recipe will yield you delicious, flavorful, soft and fluffy rava kesari.",
+    "Cuisine": "South Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 26,
+    "Dish_Name": "Pappuchekka",
+    "Logo": "",
+    "Menu_Type": 8,
+    "Category_Type": 1,
+    "Price": 15,
+    "Description": "",
+    "Cuisine": "South Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 27,
+    "Dish_Name": "Jeedilu",
+    "Logo": "",
+    "Menu_Type": 8,
+    "Category_Type": 1,
+    "Price": 15,
+    "Description": "",
+    "Cuisine": "South Indian",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
+    "is_active": 1
+  },
+  {
+    "id": 28,
+    "Dish_Name": "Mutton Haleem",
+    "Logo": "",
+    "Menu_Type": 1,
+    "Category_Type": 2,
+    "Price": 35,
+    "Description": "",
+    "Cuisine": "Hyderabadi",
+    "Restrictions": "Only for main table",
+    "is_active": 1
+  },
+  {
+    "id": 29,
+    "Dish_Name": "Chicken Haleem",
+    "Logo": "",
+    "Menu_Type": 1,
+    "Category_Type": 2,
+    "Price": 30,
+    "Description": "Chicken Haleem is a popular dish prepared during the month of Ramzan, comprises of wheat, meat, ghee and nuts.",
+    "Cuisine": "Hyderabadi",
+    "Restrictions": "Only for main table",
+    "is_active": 1
+  },
+  {
+    "id": 30,
+    "Dish_Name": "vegetable Haleem",
+    "Logo": "",
+    "Menu_Type": 1,
+    "Category_Type": 2,
+    "Price": 25,
+    "Description": "",
+    "Cuisine": "Hyderabadi",
+    "Restrictions": "Only for main table",
+    "is_active": 1
+  },
+  {
+    "id": 31,
+    "Dish_Name": "Mutton Luqhmi",
+    "Logo": "",
+    "Menu_Type": 1,
+    "Category_Type": 2,
+    "Price": 16,
+    "Description": "Lukhmi is a typical mince savoury starter, a cuisine of Hyderabad. It is a local variation of samosa. The snack's authentic preparation includes stuffing with mutton-mince kheema.",
+    "Cuisine": "Hyderabadi",
+    "Restrictions": "Only for main table",
+    "is_active": 1
+  },
+  {
+    "id": 32,
+    "Dish_Name": "Chicken Luqhmi",
+    "Logo": "",
+    "Menu_Type": 1,
+    "Category_Type": 1,
+    "Price": 13,
+    "Description": "",
+    "Cuisine": "Hyderabadi",
+    "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
   {
@@ -606,7 +606,7 @@
     "Menu_Type": 4,
     "Category_Type": 1,
     "Price": 6,
-    "Description": "Rumali roti is a thin flatbread originating from the Indian subcontinent, popular in India and in Punjab, Pakistan. It is eaten with tandoori dishes.",
+    "Description": "Rumali roti is a thin flat bread originating from the Indian subcontinent, popular in India and in Punjab, Pakistan. It is eaten with tandoori dishes.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -618,7 +618,7 @@
     "Menu_Type": 4,
     "Category_Type": 1,
     "Price": 7,
-    "Description": "A paratha is a flatbread that originated in the Indian subcontinent. It is still prevalent throughout India, Pakistan, Nepal and Bangladesh, where wheat is grown and is the traditional staple of the area.",
+    "Description": "A paratha is a flat bread that originated in the Indian subcontinent. It is still prevalent throughout India, Pakistan, Nepal and Bangladesh, where wheat is grown and is the traditional staple of the area.",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -630,7 +630,7 @@
     "Menu_Type": 4,
     "Category_Type": 1,
     "Price": 6,
-    "Description": "Chapati, also known as roti, safati, shabaati, phulka and roshi, is an unleavened flatbread from the Indian Subcontinent and staple in India, Nepal, Bangladesh, Pakistan, Sri Lanka..",
+    "Description": "Chapati, also known as roti, safati, shabaati, phulka and roshi, is an unleavened flat bread from the Indian Subcontinent and staple in India, Nepal, Bangladesh, Pakistan, Sri Lanka..",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -1374,7 +1374,7 @@
     "Menu_Type": 7,
     "Category_Type": 1,
     "Price": 13,
-    "Description": "Baghar e baingan is a popular Indian cuisine eggplant/brinjal curry of Hyderabad, India. It is also used as a side dish with the Hyderabadi biryani.",
+    "Description": "Baghar e baigan is a popular Indian cuisine eggplant/brinjal curry of Hyderabad, India. It is also used as a side dish with the Hyderabadi biryani.",
     "Cuisine": "Hyderabadi",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -1446,7 +1446,7 @@
     "Menu_Type": 1,
     "Category_Type": 2,
     "Price": 25,
-    "Description": "Chicken Manchurian is a popular starter recipe, which is relished by people of all age groups. This all time favourite Chinese recipe can be served with Fried Rice, Pan Fried Noodles, Hakka Noodles. ... Chicken Manchurian has half cooked vegetables and thick gravy which adds on to its unique texture.",
+    "Description": "Chicken Manchurian is a popular starter recipe, which is relished by people of all age groups. This all time favourite Chinese recipe can be served with Fried Rice, Pan Fried Noodles, Hakka Noodles. Chicken Manchurian has half cooked vegetables and thick gravy which adds on to its unique texture.",
     "Cuisine": "Indo Chinese",
     "Restrictions": "Only for main table",
     "is_active": 1
@@ -1662,7 +1662,7 @@
     "Menu_Type": 8,
     "Category_Type": 1,
     "Price": 27,
-    "Description": "Kaddu Ki Kheer Recipe (with Step by Step Photos) ... Heat ghee in a non-stick pan or heavy bottomed pan and add grated pumpkin.",
+    "Description": "",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -1806,7 +1806,7 @@
     "Menu_Type": 8,
     "Category_Type": 1,
     "Price": 14,
-    "Description": "",
+    "Description": "Laddu or laddoo are sphere-shaped sweets originated in the Indian subcontinent and are made of flour,",
     "Cuisine": "Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -1818,7 +1818,7 @@
     "Menu_Type": 3,
     "Category_Type": 9,
     "Price": 3,
-    "Description": "Laddu or laddoo are sphere-shaped sweets originated in the Indian subcontinent and are made of flour,",
+    "Description": "",
     "Cuisine": "Iran",
     "Restrictions": "",
     "is_active": 1
@@ -2382,7 +2382,7 @@
     "Menu_Type": 8,
     "Category_Type": "",
     "Price": 20,
-    "Description": "Dry fruits khajur burfi is a rich, delicious recipe ofbarfi prepare with dates, coconut and loads of dry fruits.",
+    "Description": "Dry fruits khajur burfi is a rich, delicious recipe of barfi is been prepared with dates, coconut and loads of dry fruits.",
     "Cuisine": "Indian",
     "Restrictions": "",
     "is_active": 1
@@ -2790,7 +2790,7 @@
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 8,
-    "Description": "Thick and spicy ragda made with dried green/white peas is a key for making tempting ragda patties, ragda samosa and ragda cutlet among many other Indian 2",
+    "Description": "Thick and spicy ragda made with dried green/white peas is a key for making tempting ragda patties, ragda samosa and ragda cutlet among many other Indian too",
     "Cuisine": "North Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -3006,7 +3006,7 @@
     "Menu_Type": 1,
     "Category_Type": 1,
     "Price": 8,
-    "Description": "idly is a type of savoury rice cake, originating from the Indian subcontinent, popular as breakfast foods throughout India and northern Sri Lanka. The cakes are made by steaming a batter consisting of fermented black lentils and rice",
+    "Description": "Idly is a type of savoury rice cake, originating from the Indian subcontinent, popular as breakfast foods throughout India and northern Sri Lanka. The cakes are made by steaming a batter consisting of fermented black lentils and rice",
     "Cuisine": "South Indian",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
@@ -3175,7 +3175,7 @@
     "Category_Type": 1,
     "Price": 10,
     "Description": "This dish is from the Amritsar, Punjab. It is usually served with amritsari kulcha. The chole kulcha is the most popular combo that is served in many restaurants or street stalls",
-    "Cuisine": "South Indian",
+    "Cuisine": "Amritsar",
     "Restrictions": "Only for Vegetarians, Mostly for Vegetarians",
     "is_active": 1
   },
@@ -3829,23 +3829,23 @@
   },
   {
     "id": 320,
-    "Dish_Name": "Fruit Stall",
+    "Dish_Name": "Mock Tail Counter",
     "Logo": "",
     "Menu_Type": 9,
     "Category_Type": "",
-    "Price": 16,
+    "Price": 9,
     "Description": "",
-    "Cuisine": "Indian",
+    "Cuisine": "",
     "Restrictions": "",
     "is_active": 1
   },
   {
     "id": 321,
-    "Dish_Name": "Mock Tail Counter",
+    "Dish_Name": "Sugar Candy",
     "Logo": "",
     "Menu_Type": 9,
     "Category_Type": "",
-    "Price": 15,
+    "Price": 5,
     "Description": "",
     "Cuisine": "",
     "Restrictions": "",
@@ -3853,11 +3853,11 @@
   },
   {
     "id": 322,
-    "Dish_Name": "Sugar Candy",
+    "Dish_Name": "Ice Gola",
     "Logo": "",
     "Menu_Type": 9,
     "Category_Type": "",
-    "Price": 15,
+    "Price": 5,
     "Description": "",
     "Cuisine": "",
     "Restrictions": "",
@@ -3865,54 +3865,42 @@
   },
   {
     "id": 323,
-    "Dish_Name": "Ice Gola",
-    "Logo": "",
-    "Menu_Type": 9,
-    "Category_Type": "",
-    "Price": 13,
-    "Description": "",
-    "Cuisine": "",
-    "Restrictions": "",
-    "is_active": 1
-  },
-  {
-    "id": 324,
     "Dish_Name": "American Sweet Corn",
     "Logo": "",
     "Menu_Type": 9,
     "Category_Type": "",
-    "Price": 14,
+    "Price": 7,
     "Description": "",
     "Cuisine": "Indian",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 325,
+    "id": 324,
     "Dish_Name": "Pop Corn",
     "Logo": "",
     "Menu_Type": 9,
     "Category_Type": "",
-    "Price": 14,
+    "Price": 4,
     "Description": "",
     "Cuisine": "American",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 326,
+    "id": 325,
     "Dish_Name": "Pan Stall",
     "Logo": "",
     "Menu_Type": 9,
     "Category_Type": "",
-    "Price": 10,
+    "Price": 4,
     "Description": "",
     "Cuisine": "Indian",
     "Restrictions": "",
     "is_active": 1
   },
   {
-    "id": 327,
+    "id": 326,
     "Dish_Name": "Medu vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -3924,7 +3912,7 @@
     "is_active": 1
   },
   {
-    "id": 328,
+    "id": 327,
     "Dish_Name": "uddina vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -3936,7 +3924,7 @@
     "is_active": 1
   },
   {
-    "id": 329,
+    "id": 328,
     "Dish_Name": "Masala vada/",
     "Logo": "",
     "Menu_Type": 1,
@@ -3948,7 +3936,7 @@
     "is_active": 1
   },
   {
-    "id": 330,
+    "id": 329,
     "Dish_Name": "Parippu Vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -3960,7 +3948,7 @@
     "is_active": 1
   },
   {
-    "id": 331,
+    "id": 330,
     "Dish_Name": "Batata Vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -3972,7 +3960,7 @@
     "is_active": 1
   },
   {
-    "id": 332,
+    "id": 331,
     "Dish_Name": "Maddur Vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -3984,7 +3972,7 @@
     "is_active": 1
   },
   {
-    "id": 333,
+    "id": 332,
     "Dish_Name": "Neem Flower Vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -3996,7 +3984,7 @@
     "is_active": 1
   },
   {
-    "id": 334,
+    "id": 333,
     "Dish_Name": "Palak Vada",
     "Logo": "",
     "Menu_Type": 1,
@@ -4008,7 +3996,7 @@
     "is_active": 1
   },
   {
-    "id": 335,
+    "id": 334,
     "Dish_Name": "Bellam Garelu",
     "Logo": "",
     "Menu_Type": 1,
@@ -4020,7 +4008,7 @@
     "is_active": 1
   },
   {
-    "id": 336,
+    "id": 335,
     "Dish_Name": "Rava Garelu",
     "Logo": "",
     "Menu_Type": 1,
@@ -4032,7 +4020,7 @@
     "is_active": 1
   },
   {
-    "id": 337,
+    "id": 336,
     "Dish_Name": "Ulli Garelu",
     "Logo": "",
     "Menu_Type": 1,
@@ -4044,7 +4032,7 @@
     "is_active": 1
   },
   {
-    "id": 338,
+    "id": 337,
     "Dish_Name": "pulla Garelu",
     "Logo": "",
     "Menu_Type": 1,
@@ -4056,7 +4044,7 @@
     "is_active": 1
   },
   {
-    "id": 339,
+    "id": 338,
     "Dish_Name": "Perugu gaare",
     "Logo": "",
     "Menu_Type": 1,

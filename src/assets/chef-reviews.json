@@ -1,0 +1,302 @@
+[
+  {
+    "chef_id": 1,
+    "user": "Khansic",
+    "review": "Chicken biriyani and majestic chicken were so flavoursome, but a little too spicy for my palate and was cooked truly in a Hyderabadi style, the raita complemented the spiciness perfectly."
+  },
+  {
+    "chef_id": 2,
+    "user": "absar",
+    "review": "The biryani is cooked very well and the chicken was tender and delicious."
+  },
+  {
+    "chef_id": 3,
+    "user": "ghayas",
+    "review": "Hyderabadi Dum Biryani is something that you should not miss to try."
+  },
+  {
+    "chef_id": 4,
+    "user": "moid",
+    "review": "Butter naan and tikka chicken masala are my all time favourite, The Veg Roll and the Veg Spring Roll in starters were good. And not to forget, the amazing tea. You cannot stop at just one cup!"
+  },
+  {
+    "chef_id": 5,
+    "user": "Khan",
+    "review": "pesto fish, which was served with rice, grilled veggies and salsa. I liked everything on my plate.The red pepper chicken as a starter and I didn't like that so much. I felt it was lacking in flavor, a little more spice and sourness to the masala coating would have done the trick because the chicken inside was well cooked and tender."
+  },
+  {
+    "chef_id": 6,
+    "user": "ihab",
+    "review": "Amazingly hidden great aroma and spices with absolutely tender peices of mutton. When I ate the first spoon it was an explosion of flavors in my mouth. It was unexpected and very good. The spiciness was on the higher side and to my liking of course"
+  },
+  {
+    "chef_id": 7,
+    "user": "hamza",
+    "review": "The mutton biryani served with mirch ka salan is to die for, perfectly prepared, Shikampuri kababs were good. From Chicken 65 to the Mutton Shikhampur in starters, Dum Ka Chicken , Dalcha & Mirchi ka Salan for mains & Khubani Ka Meetha for Desserts. Each dish contained richest spices to lend the most authentic flavour possible."
+  },
+  {
+    "chef_id": 8,
+    "user": "siraj",
+    "review": "Mutton biryani, which was quite the authentic again is really hard to find in caterers these days..Haleem and Kababs are a must-try from this chef and the service is quite satisfactory."
+  },
+  {
+    "chef_id": 9,
+    "user": "haadi",
+    "review": "I really loved the cilantro fish. It was well balanced, not seasoned too much, which is a good thing because I could taste the fish; not just the spices."
+  },
+  {
+    "chef_id": 10,
+    "user": "asrar",
+    "review": "Great food.. Potato wedges, Butter garlic prawn were cooked delicious. Dine in experience was good."
+  },
+  {
+    "chef_id": 1,
+    "user": "Ahmed quadri",
+    "review": "I just hired him alone and self managed my event, must say this chef is an amazing cook"
+  },
+  {
+    "chef_id": 11,
+    "user": "sohail",
+    "review": "Chicken drumsticks and chicken soft noodles without vegetables both the dishes were very tasty"
+  },
+  {
+    "chef_id": 12,
+    "user": "azan",
+    "review": "Prawn fried schezwan noodles could hace been better, I didn't really like them."
+  },
+  {
+    "chef_id": 13,
+    "user": "noor",
+    "review": "The soups; Tomato and Chicken corn was perfect in taste and enhanced our appetite truly and rest of the dinner was followed by Fish fingers, chicken drumsticks, chicken fried rice and chicken noodles."
+  },
+  {
+    "chef_id": 14,
+    "user": "Anil k",
+    "review": "chicken pulao, pachi mirchi kodi pulao and few starters are really good must try"
+  },
+  {
+    "chef_id": 15,
+    "user": "khaliq",
+    "review": "The chicken soup had a rich flavor of spices and had a strong gingery taste. The aroma and taste of fresh spices was noticeable. The starter was soft chicken deep fried in a red colored coating served with sauted green chilies and coriander. The coating was light and the chicken inside was soft and succulent. For the main course, chicken cooked in spicy coconut based gravy was truely perfect."
+  },
+  {
+    "chef_id": 16,
+    "user": "naveen kacharala",
+    "review": "Apart from the Tamil cuisine we tried some chutney and avakaya and gongura pickles, peanut and sesame podi with rice and ghee. Each of the items was tasty and extremely fresh. We also tried a little bit of sambar and rasam."
+  },
+  {
+    "chef_id": 2,
+    "user": "viqar",
+    "review": "The Butter Chicken was very good.and chicken biryani was very good!"
+  },
+  {
+    "chef_id": 3,
+    "user": "waqar",
+    "review": "Service was good."
+  },
+  {
+    "chef_id": 4,
+    "user": "zubair",
+    "review": "noodles were really tasty worthto try it from this chef"
+  },
+  {
+    "chef_id": 5,
+    "user": "ibrahim",
+    "review": "Tried the masala fried prawns and fish tikka- both were okay. Liked the dessert- Chocolate Mousse and my friend tried some Goan special coconut base dessert"
+  },
+  {
+    "chef_id": 6,
+    "user": "muzamil",
+    "review": "Vegetable corn soup was good. Chicken pakoda was in ball shape but was very good with sauces. Paneer dry which is a bit OK. Noodles are super in taste especially when mixed with right sauce. Overall the chef was a master in cooking"
+  },
+  {
+    "chef_id": 7,
+    "user": "Sanjay",
+    "review": "I was satisfied with every thing, will go for it again for any other function"
+  },
+  {
+    "chef_id": 8,
+    "user": "atif",
+    "review": "Food was not that good, i found more vegetables than rice in fried rice"
+  },
+  {
+    "chef_id": 9,
+    "user": "Aditi Musunur",
+    "review": "great"
+  },
+  {
+    "chef_id": 10,
+    "user": "Advitiya Sujeet",
+    "review": "The chicken was a little dry, although it was good, but can be Great."
+  },
+  {
+    "chef_id": 11,
+    "user": "Alagesan Poduri",
+    "review": "Chicken lollypop, ginger prawn, soup and some fish item(forgot the name). Food was fantabulous and finger licking. Great job chef"
+  },
+  {
+    "chef_id": 12,
+    "user": "Amrish Ilyas",
+    "review": "I fell in love with ginger prawn😋👍."
+  },
+  {
+    "chef_id": 13,
+    "user": "Kashyap P",
+    "review": "superb"
+  },
+  {
+    "chef_id": 14,
+    "user": "Asvathama Ponnada",
+    "review": "That dal has a special name which I dont remember.The sambhar, rasam,vegetable stir with curd, buttermilk, chutneys, gun powder, garlic mango achar,papad got me binging more."
+  },
+  {
+    "chef_id": 15,
+    "user": "Avantas Ghosal",
+    "review": "Nice really good stuff loved it dude"
+  },
+  {
+    "chef_id": 16,
+    "user": "Avidosa Vaisakhi",
+    "review": "The guntur chicken, andhra style chilli chicken and andhra meals, the food is wholesome and fulfilling. Service is prompt, thank you chef for a great meal"
+  },
+  {
+    "chef_id": 1,
+    "user": "Barsati Sandipa",
+    "review": "nice"
+  },
+  {
+    "chef_id": 2,
+    "user": "Krupa M",
+    "review": "good"
+  },
+  {
+    "chef_id": 3,
+    "user": "Devasru Subramanyan",
+    "review": "Great food, prompt and efficient in service"
+  },
+  {
+    "chef_id": 4,
+    "user": "Dharmadhrt Ramila",
+    "review": "Chicken pakoda, chicken drumsticks,bamboo shoots mushroom soft noodles, ginger prawns.The food was pleasant tasting except that the noodles were bland for me."
+  },
+  {
+    "chef_id": 5,
+    "user": "Dhritiman Salim",
+    "review": "Was niceish"
+  },
+  {
+    "chef_id": 6,
+    "user": "Gopa Trilochana",
+    "review": "Things are always good here when it comes the food quantity, taste is decent, though we can't say the food is very authentic, it is one of the very old & good Chinese options available in the city."
+  },
+  {
+    "chef_id": 7,
+    "user": "Hardeep Suksma",
+    "review": "Double ka meetha and rabdi was amazing. ."
+  },
+  {
+    "chef_id": 17,
+    "user": "Jayadev Mitali",
+    "review": "The andhra cusines was great Food was great but not as satisfactory as famous biryani of hyderabad, dont know why my cousin had to have andhra cusine in his wedding"
+  },
+  {
+    "chef_id": 9,
+    "user": "Jitendra Choudhary",
+    "review": "Delicious but the food was not that warm"
+  },
+  {
+    "chef_id": 10,
+    "user": "Kalyanavata Veerender",
+    "review": "Good"
+  },
+  {
+    "chef_id": 11,
+    "user": "Abdul Haleem",
+    "review": "Soups and 2 starters were good and chinese coupsuey was too sweet. The fried noodles was almost drinched in sauce already. All over lost in quality and service was appreciable"
+  },
+  {
+    "chef_id": 12,
+    "user": "Vijai Sritharan",
+    "review": "I like the overpowering taste of coconut with fish and think it's one of the best combinations ever. The curry was rich in flavor, the rice was fragrant."
+  },
+  {
+    "chef_id": 13,
+    "user": "viswanath kolisetty",
+    "review": "Rice vermicelli noodles - prawn and a spicy wet chicken main course to go with it. Both tasted really good. The noodles were so delicate and full of flavor, the prawns cooked just right and the chicken was going well with the noodles"
+  },
+  {
+    "chef_id": 14,
+    "user": "K raju",
+    "review": "Fried rice and chicken pepper garlic sauce . It was okayish"
+  },
+  {
+    "chef_id": 15,
+    "user": "rajesh kumar",
+    "review": "Could be better with noodles, although his chicken tikka was really good"
+  },
+  {
+    "chef_id": 16,
+    "user": "pavan kumar",
+    "review": "God loved it, this chef is way to go"
+  },
+  {
+    "chef_id": 1,
+    "user": "R Chakshan",
+    "review": "The starters were chilli chicken and grilled paneer. The paneer was really good. The first batch of chicken was cold and dry, the second was perfect."
+  },
+  {
+    "chef_id": 2,
+    "user": "Wajd waseem",
+    "review": "Lamb platter, large fries and a veg falafel. The food was great"
+  },
+  {
+    "chef_id": 3,
+    "user": "Yasmin sheik",
+    "review": "I liked the spread of soft naan breads"
+  },
+  {
+    "chef_id": 4,
+    "user": "Yusra mohammed",
+    "review": "Noodles were really amazing, reminded me of a popular restraunt in abroad."
+  },
+  {
+    "chef_id": 5,
+    "user": "Zahra islam",
+    "review": "There were quite a lot of options in salads. One had fresh mozzarella in it which was really good. The apple salad was so good, it was coated in a little whipped cream and the taste really spoke to me."
+  },
+  {
+    "chef_id": 6,
+    "user": "Zainab",
+    "review": "Chilli fish was the best among them.Chicken soft noodles- Chicken was a little overcooked and the noodles were purely average ,Mixed fried rice - no taste at all. It was soo bland that I can't even explain."
+  },
+  {
+    "chef_id": 7,
+    "user": "nabeela",
+    "review": "The main course was pretty good. We loved both the chicken and mutton curries. It's been ages that we've had mutton that good in a restaurant. The naan too was done right. The biryani was ok,  great as well. The grilled fish was not good. The taste wasn't so good, the marinate could have been better."
+  },
+  {
+    "chef_id": 8,
+    "user": "shaista",
+    "review": "loved it nicely cooked soft rice and tendor chicken"
+  },
+  {
+    "chef_id": 9,
+    "user": "srikar rao",
+    "review": "Desserts, we didn't have complaints on pretty much all of them. They were done right and tasted amazing."
+  },
+  {
+    "chef_id": 10,
+    "user": "kaushik rao",
+    "review": "The Pot Rice and Corn and Pimento Lasagne in the menu tasted good. The top layer of the lasagna was a bit hard and chewy, I had a little bit of difficulty in cutting it out. But regardless, what was underneath tasted really good."
+  },
+  {
+    "chef_id": 11,
+    "user": "viswa raj",
+    "review": "Ghee Karam Dosa, Rava Masala Dosa and Guntur Idly are absolute love."
+  },
+  {
+    "chef_id": 12,
+    "user": "Naveen Tikaram",
+    "review": "Veg Biryani offered by him is basic Pulav, The vegetables were well cooked well and the masala of the Biryani was appropriately spicy, the seasoning of dry fruits added to all the taste, falafel was just appropriately cooked and there was absolutely nothing to dislike in it."
+  }
+]

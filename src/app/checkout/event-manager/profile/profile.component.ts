@@ -34,7 +34,7 @@ export class ProfileComponent implements OnInit {
       console.log(this.masterObj.totalCost, this.managerDetails.Price);
       let index = this.masterObj.selectedEvtManager.findIndex(x => x.id == this.id);
       if (index == -1) {
-        this.masterObj.eventMangerCost += this.managerDetails.Price;
+        this.masterObj.eventMangerCost += parseInt(this.managerDetails.cost, 10);
         this.masterObj.selectedEvtManager.push(this.managerDetails);
         var selManager = JSON.stringify(this.masterObj.selectedEvtManager);
         localStorage.setItem("selManager", selManager);

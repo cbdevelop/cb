@@ -1,0 +1,257 @@
+[
+  {
+    "id": 1,
+    "Name": "Faheem",
+    "Experience": 12,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 32,
+    "Proficiency": "hyderabadi, persian",
+    "About": "",
+    "Rating": 4.2,
+    "CB_Certified": 1,
+    "Cost": 4500,
+    "is_active": 1
+    
+  },
+  {
+    "id": 2,
+    "Name": "Ahmed",
+    "Experience": 7,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 14,
+    "Proficiency": "hyderabadi, middle eastern",
+    "About": "",
+    "Rating": 4,
+    "CB_Certified": 1,
+    "Cost": 3500,
+    "is_active": 1
+    
+  },
+  {
+    "id": 3,
+    "Name": "Mirza",
+    "Experience": 15,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 23,
+    "Proficiency": "hyderabadi,",
+    "About": "",
+    "Rating": 4,
+    "CB_Certified": 1,
+    "Cost": 3500,
+    "is_active": 1
+    
+  },
+  {
+    "id": 4,
+    "Name": "Raju",
+    "Experience": 16,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 22,
+    "Proficiency": "telugu, chinese",
+    "About": "",
+    "Rating": 4.5,
+    "CB_Certified": 1,
+    "Cost": 3500,
+    "is_active": 1
+    
+  },
+  {
+    "id": 5,
+    "Name": "Sai teja",
+    "Experience": 9,
+    "Profile_Image": "",
+    "Locality": "vijayawada",
+    "Events_Served": 15,
+    "Proficiency": "Andhra, indian",
+    "About": "",
+    "Rating": 4,
+    "CB_Certified": 1,
+    "Cost": 4500,
+    "is_active": 1
+    
+  },
+  {
+    "id": 6,
+    "Name": "Furqaan",
+    "Experience": 11,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 23,
+    "Proficiency": "hyderabadi, chinese",
+    "About": "",
+    "Rating": 4.6,
+    "CB_Certified": 1,
+    "Cost": 4500,
+    "is_active": 1
+    
+  },
+  {
+    "id": 7,
+    "Name": "Usman",
+    "Experience": 14,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 21,
+    "Proficiency": "hyderabadi, telangana",
+    "About": "",
+    "Rating": 4,
+    "CB_Certified": 1,
+    "Cost": 3500,
+    "is_active": 1
+    
+  },
+  {
+    "id": 8,
+    "Name": "Faisal",
+    "Experience": 12,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 41,
+    "Proficiency": "hyderabadi, south asia",
+    "About": "",
+    "Rating": 3.8,
+    "CB_Certified": 1,
+    "Cost": 3500,
+    "is_active": 1
+    
+  },
+  {
+    "id": 9,
+    "Name": "Aadinath",
+    "Experience": 10,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 20,
+    "Proficiency": "south india, andhra, telugu",
+    "About": "",
+    "Rating": 4,
+    "CB_Certified": 1,
+    "Cost": 3500,
+    "is_active": 1
+    
+  },
+  {
+    "id": 10,
+    "Name": "Kiran",
+    "Experience": 8,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 16,
+    "Proficiency": "Andhra",
+    "About": "",
+    "Rating": 4.5,
+    "CB_Certified": 1,
+    "Cost": 3500,
+    "is_active": 1
+    
+  },
+  {
+    "id": 11,
+    "Name": "Kailash",
+    "Experience": 12,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 33,
+    "Proficiency": "chinese, english",
+    "About": "",
+    "Rating": 4.5,
+    "CB_Certified": 1,
+    "Cost": 5000,
+    "is_active": 1
+    
+  },
+  {
+    "id": 12,
+    "Name": "Ashish",
+    "Experience": 13,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 46,
+    "Proficiency": "andhra",
+    "About": "",
+    "Rating": 4.5,
+    "CB_Certified": 1,
+    "Cost": 3500,
+    "is_active": 1
+    
+  },
+  {
+    "id": 13,
+    "Name": "Kalyan",
+    "Experience": 17,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 32,
+    "Proficiency": "telugu",
+    "About": "",
+    "Rating": 4.5,
+    "CB_Certified": 1,
+    "Cost": 3500,
+    "is_active": 1
+    
+  },
+  {
+    "id": 14,
+    "Name": "Ramesh",
+    "Experience": 14,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 31,
+    "Proficiency": "telugu",
+    "About": "",
+    "Rating": 4.5,
+    "CB_Certified": 1,
+    "Cost": 2500,
+    "is_active": 1
+    
+  },
+  {
+    "id": 15,
+    "Name": "Rajesh",
+    "Experience": 11,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 22,
+    "Proficiency": "south indian",
+    "About": "",
+    "Rating": 4.5,
+    "CB_Certified": 1,
+    "Cost": 3500,
+    "is_active": 1
+    
+  },
+  {
+    "id": 16,
+    "Name": "Suraj",
+    "Experience": 7,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 10,
+    "Proficiency": "south indian",
+    "About": "",
+    "Rating": 4.5,
+    "CB_Certified": 1,
+    "Cost": 3500,
+    "is_active": 1
+    
+  },
+  {
+    "id": 17,
+    "Name": "Rajesh R",
+    "Experience": 4,
+    "Profile_Image": "",
+    "Locality": "Hyderabad",
+    "Events_Served": 14,
+    "Proficiency": "Andhra, indian",
+    "About": "",
+    "Rating": 4,
+    "CB_Certified": 1,
+    "Cost": 3500,
+    "is_active": 1
+    
+  }
+]

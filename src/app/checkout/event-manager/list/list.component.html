@@ -2,19 +2,22 @@
 
   <div class="resultWrap">
 
-     <div class="noteMesg">
+    <div class="noteMesg">
 
       <p>Your estimate fare for the service is Rs.
-        <span *ngIf="masterobj.serviceCost > 0" > {{ masterobj.totalCost + masterobj.serviceCost }} </span>
+        <span *ngIf="masterobj.serviceCost > 0"> {{ masterobj.totalCost + masterobj.serviceCost }} </span>
         <span *ngIf="masterobj.serviceCost == 0">0</span>
         <a href="javascript:void(0)" (click)="openAddMore()">Add Service </a>
+        The above cost is not included in the current order. The estimate is to ensure you that the amount may not exceed the above
+        quoted cost. As the cost is dependent on the floor area, you will recieve a separate accurate invoice for the services
+        once after the booked manager visits your premises and provides you with right sugession.
       </p>
-    </div> 
+    </div>
 
     <div class="eventCheck">
       <div class="checkbox">
         <label>
-          <input name="manager" type="checkbox" [checked]="evntManagerSelFlag" (change)="onNoManager()"/>
+          <input name="manager" type="checkbox" [checked]="evntManagerSelFlag" (change)="onNoManager()" />
           <i class="input-helper"></i>
           <span>I'll self organise the event without any maganer </span>
         </label>
@@ -22,11 +25,10 @@
     </div>
     <ul class="">
 
-      <li *ngFor="let item of masterobj.eventManagerList;let i= index"
-      [ngClass]="isEvtSelected(item.id) ? 'foodAct' : '' ">
+      <li *ngFor="let item of masterobj.eventManagerList;let i= index" [ngClass]="isEvtSelected(item.id) ? 'foodAct' : '' ">
         <div class="chefCta clearfix" (click)="eventProfile(item.id)">
           <div class="chefImg">
-            <img [src]="item.Profile_Image" alt="" />
+            <!-- <img [src]="item.Profile_Image" alt="" /> -->
           </div>
           <div class="chefText">
             <h3>{{ item.Name }}</h3>
@@ -52,7 +54,7 @@
             </div>
             <div class="managerPrice">
               <i class="fa fa-rupee"></i>
-              {{ item.Price }}.00
+              {{ item.cost }}.00
             </div>
           </div>
         </div>

@@ -37,8 +37,15 @@ export class ResultViewComponent implements OnInit {
 
   ngOnInit() {
     this.all_categories = this.service.alldishes;
-    console.log(this.service.searchmenu_selection);
+    
     this.getDishList();
+    this.service.getJSONofChefs().subscribe(
+      data => {
+        this.service.ChefData = data;
+        
+      }
+    )
+    
   }
 
   getDishList() {
@@ -173,11 +180,56 @@ export class ResultViewComponent implements OnInit {
     if (this.service.selectedDishArr.length) {
       if(this.service.selCity.ID == 2){
 
-      }else 
+      }else {
         this.router.navigate(['../chef'], { relativeTo: this.route });
+        this.getlist();
+      }
       // this.router.navigate(['../chef'], { relativeTo: this.route });
     }
   }
+
+
+
+getlist() {
+  // this.service.filteredchefList = [];
+  console.log(this.service.totalCost, this.service.chefsCost)
+  if (this.service.chefsCost > 0 && this.service.totalCost >0){
+    this.service.totalCost = this.service.totalCost - this.service.chefsCost;
+    this.service.chefsCost = 0;
+  }
+  let min = this.service.selectedDishArr.length;
+  min = (min <= 2) ? 1 : ((min < 5) ? 2 : 5);
+  /* 1 to 3 dishes 1 chef*/
+  /* 3 to 10 dishes 2 to 5 chef*/
+  let length = this.service.randomInt(1, min);
+
+  if (this.service.filteredchefList.length < length) {
+    this.service.filteredchefList = [];
+    for (let i = 0; i < length; i++) {
+      let index = this.service.randomInt(1, this.service.ChefData.length);
+      let arr = this.service.ChefData[index];
+      if (arr !== undefined) {
+        arr.menu = '';
+        let cost = 0;
+        
+        if (this.service.totalAttendees <= 250)
+          this.service.chefsCost += parseInt(arr.Cost,10);
+        else {
+          let percent = 1 + (this.service.totalAttendees - 250) / 100;
+          cost = arr.Cost + (Math.round(percent) * (0.2) * arr.Cost);
+          this.service.chefsCost += cost;
+        }
+
+        this.service.filteredchefList.push(arr);
+      }
+    }
+
+    localStorage.setItem('chefsList', JSON.stringify(this.service.filteredchefList));
+    localStorage.setItem('chefsCost', this.service.chefsCost.toString());
+    console.log(this.service.totalCost, this.service.chefsCost)
+    this.service.totalCost += this.service.chefsCost;
+  }
+}
 
   fav(evt) {
     console.log(evt);

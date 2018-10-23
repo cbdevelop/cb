@@ -23,6 +23,12 @@ export class EventManagerComponent implements OnInit {
 
   ngOnInit() {
     this.masterObj.chef_eventmanager_flag = 'event';
+    this.masterObj.getJSONofEventManagers().subscribe(
+      data => {
+        this.masterObj.eventManagerList = data;
+        console.log(data);
+      }
+    )
   }
 
   onproceed() {

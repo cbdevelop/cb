@@ -131,7 +131,7 @@
     }
     .chefDet p,
     .chefDet p.menu {
-        width: 60px;
+        width: auto;
     }
     .careerTheme {
         -webkit-background-size: cover;

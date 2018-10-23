@@ -20,39 +20,40 @@ export class CheckoutComponent implements OnInit {
     public masterObj: MasterService,
     private commentService: NgbModal,
     private router: Router,
-    private alertObj:AlertsService
+    private alertObj: AlertsService
   ) {
-    this.getlist();
+   
     if (this.masterObj.selectedDishArr.length < 1) {
       this.router.navigate(['../search']);
     }
   }
 
   ngOnInit() {
-   /* 
-    if (this.masterObj.searchObj.serviceType[0].id == 1) {
-      this.masterObj.totalCost += 600;  // drop off
-    } else if (this.masterObj.searchObj.serviceType[0].id == 2) {
 
-      let mainArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 7);
-      let breadArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 4);
-      let dessertArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 8);
-      this.masterObj.totalCost += (mainArr.length * 800) + (breadArr.length * 400) + (dessertArr.length * 1000);
-
-    } else if (this.masterObj.searchObj.serviceType[0].id == 3) {
-      this.masterObj.totalCost += (this.masterObj.totalAttendees * 50);
-
-    } else if (this.masterObj.searchObj.serviceType[0].id == 4) {
-
-      let mainArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 7);
-      let breadArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 4);
-      let dessertArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 8);
-      this.masterObj.totalCost += (this.masterObj.totalAttendees * 50);
-      this.masterObj.totalCost += (mainArr.length * 800) + (breadArr.length * 400) + (dessertArr.length * 1000);
-    }
-    let stallArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 9);
-    this.masterObj.totalCost += (stallArr.length * 5000) ;
-    */
+    /* 
+     if (this.masterObj.searchObj.serviceType[0].id == 1) {
+       this.masterObj.totalCost += 600;  // drop off
+     } else if (this.masterObj.searchObj.serviceType[0].id == 2) {
+ 
+       let mainArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 7);
+       let breadArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 4);
+       let dessertArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 8);
+       this.masterObj.totalCost += (mainArr.length * 800) + (breadArr.length * 400) + (dessertArr.length * 1000);
+ 
+     } else if (this.masterObj.searchObj.serviceType[0].id == 3) {
+       this.masterObj.totalCost += (this.masterObj.totalAttendees * 50);
+ 
+     } else if (this.masterObj.searchObj.serviceType[0].id == 4) {
+ 
+       let mainArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 7);
+       let breadArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 4);
+       let dessertArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 8);
+       this.masterObj.totalCost += (this.masterObj.totalAttendees * 50);
+       this.masterObj.totalCost += (mainArr.length * 800) + (breadArr.length * 400) + (dessertArr.length * 1000);
+     }
+     let stallArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 9);
+     this.masterObj.totalCost += (stallArr.length * 5000) ;
+     */
   }
 
 
@@ -60,40 +61,7 @@ export class CheckoutComponent implements OnInit {
     localStorage.removeItem('isLoggedin');
   }
 
-  getlist() {
-    // this.masterObj.filteredchefList = [];
-    let min = this.masterObj.selectedDishArr.length;
-    min = (min <= 2) ? 1 : ((min < 5) ? 2 : 5);
-    /* 1 to 3 dishes 1 chef*/
-    /* 3 to 10 dishes 2 to 5 chef*/
-    let length = this.masterObj.randomInt(1, min);
-    
-    if (this.masterObj.filteredchefList.length < length) {
-      this.masterObj.filteredchefList = [];
-      for (let i = 0; i < length; i++) {
-        let index = this.masterObj.randomInt(1, this.masterObj.ChefData.length);
-        let arr = this.masterObj.ChefData[index];
-        if (arr !== undefined) {
-          arr.menu = '';
-          let cost = 0;
-          console.log(arr.Cost);
-          if (this.masterObj.totalAttendees <= 250)
-            this.masterObj.chefsCost += arr.Cost;
-          else {
-            let percent = 1 + (this.masterObj.totalAttendees - 250) / 100;
-            cost = arr.Cost + (Math.round(percent) * (0.2) * arr.Cost);
-            this.masterObj.chefsCost += cost;
-          }
-
-          this.masterObj.filteredchefList.push(arr);
-        }
-      }
-
-      localStorage.setItem('chefsCost',this.masterObj.chefsCost.toString());
-      console.log( this.masterObj.totalCost,this.masterObj.chefsCost)
-      this.masterObj.totalCost +=this.masterObj.chefsCost;
-    }
-  }
+ 
 
   getMenu(cheLength, index) {
     let disLength = this.masterObj.selectedDishArr.length;
@@ -125,7 +93,7 @@ export class CheckoutComponent implements OnInit {
   onproceed() {
     if (this.masterObj.evntManagerSelFlag || this.masterObj.selectedEvtManager.length) {
       this.router.navigate(['./payment']);
-    }else {
+    } else {
       this.alertObj.openAlert({ message: 'Please Select Event manager or confirm that you can manage this event without a event maganer', type: 'warning' })
     }
   }

@@ -1,2288 +1,5444 @@
 [
   {
-    "location": "Basheer Bagh",
+    "location": "Basheer Bagh - 500001",
     "postalcode": 500001,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Wallaee Street",
+    "location": "Gun Foundry - 500001",
     "postalcode": 500001,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "State Bank Of Hyd",
+    "location": "Kandaswamy Bagh - 500001",
     "postalcode": 500001,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Gun Foundry",
+    "location": "Putlii Bowli - 500001",
     "postalcode": 500001,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kandaswamy Bagh",
+    "location": "Ramkote - 500001",
     "postalcode": 500001,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Putlii Bowli",
+    "location": "Gandhi Bhawan - 500001",
     "postalcode": 500001,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Ramkote",
+    "location": "Hindi Bhavan - 500001",
     "postalcode": 500001,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Gandhi Bhawan",
+    "location": "Seetaram Pet - 500001",
     "postalcode": 500001,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Hindi Bhavan",
+    "location": "Mozampura - 500001",
     "postalcode": 500001,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Seetaram Pet",
+    "location": "Mozamzahi Market - 500001",
     "postalcode": 500001,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Mozampura",
-    "postalcode": 500001,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Mozamzahi Market",
-    "postalcode": 500001,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "King Koti Complex",
-    "postalcode": 500001,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Mandi Mir Alam Motigalli",
+    "location": "Mandi Mir Alam Motigalli - 500002",
     "postalcode": 500002,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Tagarikanaka",
+    "location": "Tagarikanaka - 500002",
     "postalcode": 500002,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Mogalpura",
+    "location": "Mogalpura - 500002",
     "postalcode": 500002,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Bhawani Nagar",
+    "location": "Bhawani Nagar - 500002",
     "postalcode": 500002,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Jubilee H O",
-    "postalcode": 500002,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Yellammagutta",
+    "location": "Yellammagutta - 500003",
     "postalcode": 500003,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Secunderabad H O",
+    "location": "St Marrys Road - 500003",
     "postalcode": 500003,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "St Marrys Road",
+    "location": "Gandhi Hospital - 500003",
     "postalcode": 500003,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Market",
+    "location": "Housing Board Colony - 500003",
     "postalcode": 500003,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Gandhi Hospital",
+    "location": "Kavadiguda - 500003",
     "postalcode": 500003,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Housing Board Colony",
+    "location": "Bhoiguda - 500003",
     "postalcode": 500003,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kavadiguda",
+    "location": "Bholakpur - 500003",
     "postalcode": 500003,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Picket",
+    "location": "M G Rd - 500003",
     "postalcode": 500003,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Mud Fort",
+    "location": "Napier Lines - 500003",
     "postalcode": 500003,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Bhoiguda",
+    "location": "Begumpet Police Lines - 500003",
     "postalcode": 500003,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Bholakpur",
-    "postalcode": 500003,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "P G Road",
-    "postalcode": 500003,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Kingsway",
-    "postalcode": 500003,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "M G Rd",
-    "postalcode": 500003,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Bus Station",
-    "postalcode": 500003,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Napier Lines",
-    "postalcode": 500003,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Begumpet Police Lines",
-    "postalcode": 500003,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Erram Manzil Colony",
+    "location": "Erram Manzil Colony - 500082",
     "postalcode": 500082,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "G M Telephones",
+    "location": "G M Telephones - 500004",
     "postalcode": 500004,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Khairatabad H O (Hyd)",
+    "location": "Khairatabad - 500004",
     "postalcode": 500004,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Ac Guards",
+    "location": "Ac Guards - 500004",
     "postalcode": 500004,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Anand Nagar",
+    "location": "Anand Nagar - 500004",
     "postalcode": 500004,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Bazar Ghat",
+    "location": "Bazar Ghat - 500004",
     "postalcode": 500004,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "A.Gs Office",
+    "location": "Bazarghat - 500004",
     "postalcode": 500004,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Bazarghat (Hyderabad)",
+    "location": "Parishram Bhawan - 500004",
     "postalcode": 500004,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Parishram Bhawan",
-    "postalcode": 500004,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Vidhan Sabha (Hyderabad)",
-    "postalcode": 500004,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Mamidi Palli",
+    "location": "Pahadishareef - 500005",
     "postalcode": 500005,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Keshorigi (Hyd)",
+    "location": "Balapur - 500005",
     "postalcode": 500005,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Crp Camp",
-    "postalcode": 500005,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Pahadishareef",
-    "postalcode": 500005,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Balapur",
-    "postalcode": 500005,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Subjimandi",
+    "location": "Mangalhat - 500006",
     "postalcode": 500006,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Mangalhat",
+    "location": "Jiaguda - 500006",
     "postalcode": 500006,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Karwan Sahu (Hyd)",
+    "location": "Kulsumpura - 500006",
     "postalcode": 500006,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Jiaguda",
+    "location": "Dhoolpet - 500006",
     "postalcode": 500006,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kulsumpura",
-    "postalcode": 500006,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Dhoolpet",
-    "postalcode": 500006,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "IICTNgri",
+    "location": "Tarnaka - 500007",
     "postalcode": 500007,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Tarnaka",
+    "location": "NGRI - 500007",
     "postalcode": 500007,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "R R Labs",
+    "location": "Jama I Osmania Hyderabad - 500007",
     "postalcode": 500007,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "NGRI",
-    "postalcode": 500007,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Jama I Osmania Hyderabad",
-    "postalcode": 500007,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Administrative Building (Ou)",
-    "postalcode": 500007,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Advanced Training Institute",
-    "postalcode": 500007,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Mohammedi Lines",
+    "location": "Langar House - 500008",
     "postalcode": 500008,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Langar House",
+    "location": "Appa Himayathsagar - 500008",
     "postalcode": 500008,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Appa Himayathsagar",
+    "location": "Dargah Hussain Shahwali - 500008",
     "postalcode": 500008,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Dargah Hussain Shahwali",
+    "location": "Kakatiya Nagar - 500008",
     "postalcode": 500008,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Hyder Shah Kote",
+    "location": "Nanakramguda - 500008",
     "postalcode": 500008,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kakatiya Nagar",
+    "location": "Sakkubai Nagar - 500008",
     "postalcode": 500008,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Nanakramguda",
+    "location": "Toli Chowki﻿ - 500008",
     "postalcode": 500008,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Sakkubai Nagar",
+    "location": "Golconda (Hyderabad) - 500008",
     "postalcode": 500008,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Toli Chowki",
-    "postalcode": 500008,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Golconda (Hyderabad)",
-    "postalcode": 500008,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Manovikasnagar",
+    "location": "Manovikasnagar - 500009",
     "postalcode": 500009,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Picket",
-    "postalcode": 500009,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Mahidpur Lines Alwal",
+    "location": "Mahidpur Lines Alwal - 500010",
     "postalcode": 500010,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Haig Lines",
+    "location": "Risala Bazar - 500010",
     "postalcode": 500010,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Risala Bazar",
+    "location": "Bolarum  - 500010",
     "postalcode": 500010,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Bolarum (Hyd)",
+    "location": "Kowkoor - 500010",
     "postalcode": 500010,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kowkoor",
+    "location": "Old Alwal Bolaram Bazar - 500010",
     "postalcode": 500010,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Old Alwal Bolaram Bazar",
-    "postalcode": 500010,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Bowenpally",
+    "location": "Bowenpally - 500011",
     "postalcode": 500011,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Old Air Port Hyd",
-    "postalcode": 500011,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Hyderabad City Bus Station",
+    "location": "Afzal Gunj - 500012",
     "postalcode": 500012,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Osmania General Hospital",
+    "location": "Begum Bazar - 500012",
     "postalcode": 500012,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Afzal Gunj",
-    "postalcode": 500012,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Begum Bazar (Hyd)",
-    "postalcode": 500012,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Zinda Tilasmath",
+    "location": "Zinda Tilasmath - 500013",
     "postalcode": 500013,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Hyderabad Public School",
+    "location": "Amberpet - 500013",
     "postalcode": 500013,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Amberpet (Hyd)",
+    "location": "Central Police Lines - 500013",
     "postalcode": 500013,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Seminary",
-    "postalcode": 500013,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Srinivasapuram (Hyderabad)",
-    "postalcode": 500013,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Central Police Lines",
-    "postalcode": 500013,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Samirpet",
+    "location": "Samirpet - 500014",
     "postalcode": 500014,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Hankimpet (Hyd)",
+    "location": "Hankimpet - 500014",
     "postalcode": 500014,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kottur",
+    "location": "Kottur - 500014",
     "postalcode": 500014,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Jagamguda",
+    "location": "Jagamguda - 500014",
     "postalcode": 500014,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Trimulcherry H O",
+    "location": "Trimulcherry - 500015",
     "postalcode": 500015,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Aoc Records",
+    "location": "Sriramnagar Colony - 500015",
     "postalcode": 500015,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Sriramnagar Colony",
+    "location": "Venkatapuram - 500015",
     "postalcode": 500015,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Venkatapuram",
+    "location": "Gough Lines - 500015",
     "postalcode": 500015,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Gough Lines",
-    "postalcode": 500015,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "M C Eme",
-    "postalcode": 500015,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Parkasham Nagar",
+    "location": "Parkasham Nagar - 500016",
     "postalcode": 500016,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Old Begumpet",
+    "location": "Old Begumpet - 500016",
     "postalcode": 500016,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Ameerpet",
+    "location": "Ameerpet - 500016",
     "postalcode": 500016,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Begumpet (Hyd)",
+    "location": "Begumpet  - 500016",
     "postalcode": 500016,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Tarnaka",
+    "location": "Tarnaka - 500017",
     "postalcode": 500017,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Mettuguda",
+    "location": "Mettuguda - 500017",
     "postalcode": 500017,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "IRISET",
+    "location": "Sainagar - 500017",
     "postalcode": 500017,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Sainagar",
+    "location": "Lallaguda - 500017",
     "postalcode": 500017,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Lallaguda",
+    "location": "Lallapet - 500017",
     "postalcode": 500017,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Lallapet",
-    "postalcode": 500017,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Sanathnagar",
+    "location": "Sanathnagar - 500018",
     "postalcode": 500018,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Erragadda",
+    "location": "Erragadda - 500018",
     "postalcode": 500018,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Rahamatnagar Colony",
+    "location": "Rahamatnagar Colony - 500018",
     "postalcode": 500018,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Bharat Nagar Colony",
+    "location": "Bharat Nagar Colony - 500018",
     "postalcode": 500018,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Moosapet",
+    "location": "Moosapet - 500018",
     "postalcode": 500018,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Swarajyanagar",
+    "location": "Swarajyanagar - 500018",
     "postalcode": 500018,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Vivekananda Nagar Colony",
+    "location": "Vivekananda Nagar Colony - 500018",
     "postalcode": 500018,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Fatehnagar",
+    "location": "Fatehnagar - 500018",
     "postalcode": 500018,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Mushirabad (Hyd)",
+    "location": "Mushirabad  - 500020",
     "postalcode": 500020,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Golconda Chowrasta",
+    "location": "Golconda Chowrasta - 500020",
     "postalcode": 500020,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Ashok Nagar",
+    "location": "Ashok Nagar - 500020",
     "postalcode": 500020,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Chikkadapalli Market",
+    "location": "Chikkadapalli Market - 500020",
     "postalcode": 500020,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Zamistanpur",
+    "location": "Zamistanpur - 500020",
     "postalcode": 500020,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Eme Records",
-    "postalcode": 500021,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Central Secretariat (Hyd)",
+    "location": "Central Secretariat - 500022",
     "postalcode": 500022,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Yakutpura (Hyd)",
+    "location": "Yakutpura  - 500023",
     "postalcode": 500023,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Edi Bazar",
+    "location": "Edi Bazar - 500023",
     "postalcode": 500023,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Reinbazar",
+    "location": "Reinbazar - 500023",
     "postalcode": 500023,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Dabirpura",
+    "location": "Dabirpura - 500023",
     "postalcode": 500023,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kattal Guda",
+    "location": "Kattal Guda - 500024",
     "postalcode": 500024,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Sahifa (Hyd)",
+    "location": "Sahifa - 500024",
     "postalcode": 500024,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Noorkhan Bazar",
+    "location": "Noorkhan Bazar - 500024",
     "postalcode": 500024,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Chanchalguda",
+    "location": "Chanchalguda - 500024",
     "postalcode": 500024,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "DarulSahifa",
+    "location": "DarulSahifa - 500024",
     "postalcode": 500024,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Secunderabad",
+    "location": "Secunderabad - 500025",
     "postalcode": 500025,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Secunderabad R S",
+    "location": "Secunderabad R S - 500025",
     "postalcode": 500025,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Padmarao Nagar",
+    "location": "Padmarao Nagar - 500025",
     "postalcode": 500025,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Rail Nilayam",
+    "location": "Rail Nilayam - 500025",
     "postalcode": 500025,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Chilkalguda",
+    "location": "Chilkalguda - 500025",
     "postalcode": 500025,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Himmatnagar",
+    "location": "Himmatnagar - 500025",
     "postalcode": 500025,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "West Maredpalli",
+    "location": "West Maredpalli - 500026",
     "postalcode": 500026,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Nehrunagar (Sec Bad)",
+    "location": "Nehrunagar (Sec Bad) - 500026",
     "postalcode": 500026,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "East Maredpalli",
+    "location": "East Maredpalli - 500026",
     "postalcode": 500026,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Veer Savarkar Marg",
+    "location": "Veer Savarkar Marg - 500027",
     "postalcode": 500027,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kacheguda",
+    "location": "Kacheguda - 500027",
     "postalcode": 500027,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Stone Hosue",
+    "location": "Stone Hosue - 500027",
     "postalcode": 500027,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Esamia Bazar",
+    "location": "Nimboliadda - 500027",
     "postalcode": 500027,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Nimboliadda",
+    "location": "Barkatpura - 500027",
     "postalcode": 500027,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Barkatpura",
+    "location": "Shantinagar - 500027",
     "postalcode": 500027,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Shantinagar",
-    "postalcode": 500027,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Mehdipatnam",
+    "location": "Mehdipatnam - 500028",
     "postalcode": 500028,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Humayun Nagar (Hyd)",
+    "location": "Humayun Nagar - 500028",
     "postalcode": 500028,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Muradnagar",
+    "location": "Muradnagar - 500028",
     "postalcode": 500028,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Asif Nagar",
+    "location": "Asif Nagar - 500028",
     "postalcode": 500028,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Datta Treya Colony",
+    "location": "Datta Treya Colony - 500028",
     "postalcode": 500028,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Hamayatnagar (Hyd)",
+    "location": "Hamayatnagar  - 500029",
     "postalcode": 500029,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Parisrama Bhavan",
+    "location": "Parisrama Bhavan - 500029",
     "postalcode": 500029,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Ramakrishnamath",
+    "location": "Gaganmahal - 500029",
     "postalcode": 500029,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Gaganmahal",
+    "location": "Himayat Nagar East - 500029",
     "postalcode": 500029,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Himayat Nagar East",
+    "location": "Narayanguda - 500029",
     "postalcode": 500029,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Narayanguda",
-    "postalcode": 500029,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "A.G.College",
+    "location": "Rajendranagar  - 500030",
     "postalcode": 500030,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Rajendranagar (Hyd)",
+    "location": "Krishi Raksha - 500030",
     "postalcode": 500030,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Krishi Raksha",
+    "location": "Kismathpur - 500030",
     "postalcode": 500030,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "APERL",
-    "postalcode": 500030,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Kismathpur",
-    "postalcode": 500030,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Agricultural College Jubilee",
-    "postalcode": 500030,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Ibrahim Bagh Lines Hyderabad",
+    "location": "Ibrahim Bagh Lines Hyderabad - 500031",
     "postalcode": 500031,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Gachibowli",
+    "location": "Gachibowli - 500032",
     "postalcode": 500032,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Manuu",
-    "postalcode": 500032,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Dr.B R Ambedkar O.U",
+    "location": "Jubilee Hills - 500033",
     "postalcode": 500033,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Jubilee Hills",
-    "postalcode": 500033,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Banjara Hills Hyderabad",
+    "location": "Banjara Hills - 500034",
     "postalcode": 500034,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Huda Residential Complex",
+    "location": "Ramakrishanapuram - 500035",
     "postalcode": 500035,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Ramakrishanapuram",
+    "location": "Saroornagar - 500035",
     "postalcode": 500035,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Saroornagar",
-    "postalcode": 500035,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Sripuram Colony",
+    "location": "Sripuram Colony - 500036",
     "postalcode": 500036,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Malakpet Colony (Hyd)",
+    "location": "Malakpet Colony  - 500036",
     "postalcode": 500036,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Hyderabad Race Club",
+    "location": "Hyderabad Race Club - 500036",
     "postalcode": 500036,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Moosaram Bagh",
+    "location": "Moosaram Bagh - 500036",
     "postalcode": 500036,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Osman Nagar",
+    "location": "Osman Nagar - 500036",
     "postalcode": 500036,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Old Malakpet",
+    "location": "Old Malakpet - 500036",
     "postalcode": 500036,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Chaitanyapuri Colony",
+    "location": "Chaitanyapuri Colony - 500036",
     "postalcode": 500036,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Dilsukhanagarcoly",
+    "location": "Dilsukhanagarcoly - 500060",
     "postalcode": 500060,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Balanagar Township (Hyd)",
+    "location": "Balanagar Township - 500037",
     "postalcode": 500037,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "T I E Balanagar",
+    "location": "Rangareddynagar - 500037",
     "postalcode": 500037,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Rangareddynagar",
-    "postalcode": 500037,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Cooperative Ind Est",
-    "postalcode": 500037,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Sanjeevareddy Nagar",
+    "location": "Sanjeevareddy Nagar - 500038",
     "postalcode": 500038,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "B K Guda",
+    "location": "B K Guda - 500038",
     "postalcode": 500038,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Uppal",
+    "location": "Uppal - 500039",
     "postalcode": 500039,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Survey Of India",
+    "location": "Peerzadiguda - 500039",
     "postalcode": 500039,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Peerzadiguda",
+    "location": "Beerappagadda - 500039",
     "postalcode": 500039,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Beerappagadda",
-    "postalcode": 500039,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Aphb Colony Moulali",
+    "location": "Moulali - 500040",
     "postalcode": 500040,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Moulali",
+    "location": "Industrial Estate Moulali - 500040",
     "postalcode": 500040,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Industrial Estate Moulali",
-    "postalcode": 500040,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Raj Bhavan (Hyd)",
+    "location": "Raj Bhavan - 500041",
     "postalcode": 500041,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Raju Colony",
+    "location": "HAL - 500042",
     "postalcode": 500042,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Hindustan Aeronautics Hyd",
-    "postalcode": 500042,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "HAL",
-    "postalcode": 500042,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Air Force Academy (Hyd)",
+    "location": "Bahadurpalli - 500043",
     "postalcode": 500043,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Bahadurpalli",
+    "location": "Bowrampet - 500043",
     "postalcode": 500043,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Bowrampet",
+    "location": "Dundigal - 500043",
     "postalcode": 500043,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Dindigul",
+    "location": "Gagillapur - 500043",
     "postalcode": 500043,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Gagillapur",
+    "location": "Srirangavaram - 500043",
     "postalcode": 500043,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Srirangavaram",
-    "postalcode": 500043,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Ambernagar",
+    "location": "Ambernagar - 500044",
     "postalcode": 500044,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Vidyanagar",
+    "location": "Vidyanagar - 500044",
     "postalcode": 500044,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "New Nallakunta",
+    "location": "New Nallakunta - 500044",
     "postalcode": 500044,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Lali-Thanagar Colony",
+    "location": "Lali- Thanagar Colony - 500044",
     "postalcode": 500044,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Nallakunta",
+    "location": "Nallakunta - 500044",
     "postalcode": 500044,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Andhra Mahila Sabha",
+    "location": "Andhra Mahila Sabha - 500044",
     "postalcode": 500044,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Yousufguda (Hyd)",
+    "location": "Yousufguda  - 500045",
     "postalcode": 500045,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Padmavatinagar",
+    "location": "Padmavatinagar - 500045",
     "postalcode": 500045,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "A.Gs. Staff Quarters",
+    "location": "A.Gs. Staff Quarters - 500045",
     "postalcode": 500045,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "CUC",
-    "postalcode": 500046,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Malkajgiri (Sec Bad)",
+    "location": "Hanumanpet - 500047",
     "postalcode": 500047,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Hanumanpet",
+    "location": "Anandbagh - 500047",
     "postalcode": 500047,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Anandbagh",
+    "location": "Radhakrishnagar - 500047",
     "postalcode": 500047,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Radhakrishnagar",
+    "location": "Safilguda - 500047",
     "postalcode": 500047,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Safilguda",
-    "postalcode": 500047,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Zamistanpur (Hyd)",
+    "location": "Zamistanpur  - 500048",
     "postalcode": 500048,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Attapur",
+    "location": "Attapur - 500048",
     "postalcode": 500048,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Hyderguda",
+    "location": "Hyderguda - 500048",
     "postalcode": 500048,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Bakaram",
+    "location": "Bakaram - 500048",
     "postalcode": 500048,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Miyapur",
+    "location": "Miyapur - 500049",
     "postalcode": 500049,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "A P S E Board (Hyd)",
+    "location": "Apsp Camp - 500049",
     "postalcode": 500049,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Apsp Camp",
-    "postalcode": 500049,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Bellavista",
-    "postalcode": 500049,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Chandanagar",
+    "location": "Chandanagar - 500050",
     "postalcode": 500050,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Gajularamaram",
+    "location": "Gajularamaram - 500055",
     "postalcode": 500055,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "IDA Jeedimetla",
+    "location": "IDA Jeedimetla - 500055",
     "postalcode": 500055,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kutbullapur",
+    "location": "Kutbullapur - 500055",
     "postalcode": 500055,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Suraram",
+    "location": "Suraram - 500055",
     "postalcode": 500055,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Neredmet",
+    "location": "Neredmet - 500056",
     "postalcode": 500056,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Ramakrishna Puram",
+    "location": "Ramakrishna Puram - 500056",
     "postalcode": 500056,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Badangpet",
+    "location": "Badangpet - 500058",
     "postalcode": 500058,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kanchanbagh",
+    "location": "Kanchanbagh - 500058",
     "postalcode": 500058,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Saidabad (Hyderabad)",
+    "location": "Saidabad (Hyderabad) - 500059",
     "postalcode": 500059,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Saidabad Colony",
+    "location": "Saidabad Colony - 500059",
     "postalcode": 500059,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Santoshnagar Colony",
+    "location": "Santoshnagar Colony - 500059",
     "postalcode": 500059,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Hindustan Cables (Hyd)",
+    "location": "Hindustan Cables  - 500051",
     "postalcode": 500051,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Hindustan Machine",
+    "location": "Hindustan Machine - 500051",
     "postalcode": 500051,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Gaganpahad",
+    "location": "Gaganpahad - 500052",
     "postalcode": 500052,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Hasannagar",
+    "location": "Hasannagar - 500052",
     "postalcode": 500052,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Shivarampalli",
+    "location": "Shivarampalli - 500052",
     "postalcode": 500052,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Svpnpa",
-    "postalcode": 500052,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Falaknuma",
+    "location": "Falaknuma - 500053",
     "postalcode": 500053,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Uppuguda",
+    "location": "Uppuguda - 500053",
     "postalcode": 500053,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "HMT Township",
+    "location": "HMT Township - 500054",
     "postalcode": 500054,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Vijay Nagar Colony (Hyderabad)",
+    "location": "Vijay Nagar Colony (Hyderabad) - 500057",
     "postalcode": 500057,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "AP Police Academy PO",
+    "location": "Hydershahkote - 500091",
     "postalcode": 500091,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Hydershahkote",
-    "postalcode": 500091,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Boduppal",
+    "location": "Boduppal - 500092",
     "postalcode": 500092,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Sitaphalmandi",
+    "location": "Sitaphalmandi - 500061",
     "postalcode": 500061,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Dr As Rao Nagar",
+    "location": "Dr As Rao Nagar - 500062",
     "postalcode": 500062,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Ecil",
+    "location": "Ecil - 500062",
     "postalcode": 500062,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Jai Jawan Colony",
+    "location": "Jai Jawan Colony - 500062",
     "postalcode": 500062,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kushaiguda",
+    "location": "Kushaiguda - 500062",
     "postalcode": 500062,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "LIC Division",
-    "postalcode": 500063,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "New Mla Quarters",
-    "postalcode": 500063,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Bahadurpura",
+    "location": "Bahadurpura - 500064",
     "postalcode": 500064,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kishanbagh",
+    "location": "Kishanbagh - 500064",
     "postalcode": 500064,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Tadbun",
+    "location": "Tadbun - 500064",
     "postalcode": 500064,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Hussainialam",
+    "location": "Hussainialam - 500064",
     "postalcode": 500064,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "High Court (Hyderabad)",
-    "postalcode": 500066,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Fatehdarwaza",
+    "location": "Fatehdarwaza - 500065",
     "postalcode": 500065,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Shahalibanda",
+    "location": "Shahalibanda - 500065",
     "postalcode": 500065,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Suchitra Junction",
+    "location": "Suchitra - 500067",
     "postalcode": 500067,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Gsi(Sr) Bandlaguda",
+    "location": "Bandlaguda - 500068",
     "postalcode": 500068,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Mansoorabad",
+    "location": "Mansoorabad - 500068",
     "postalcode": 500068,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "R.C.Imarat",
+    "location": "R.C.Imarat - 500069",
     "postalcode": 500069,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Injapur",
+    "location": "Injapur - 500070",
     "postalcode": 500070,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Sarada Nagar",
+    "location": "Sarada Nagar - 500070",
     "postalcode": 500070,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Vaidehinagar",
+    "location": "Vaidehinagar - 500070",
     "postalcode": 500070,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Vanastalipuram",
+    "location": "Vanastalipuram - 500070",
     "postalcode": 500070,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kukatpally",
+    "location": "Kukatpally - 500072",
     "postalcode": 500072,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Vivekanandanagar Colony",
+    "location": "Vivekanandanagar Colony - 500072",
     "postalcode": 500072,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Srinagar Colony",
+    "location": "Srinagar Colony - 500073",
     "postalcode": 500073,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "L B Nagar",
+    "location": "L B Nagar - 500074",
     "postalcode": 500074,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Rangareddy Dt Courts",
+    "location": "Rangareddy Dt Courts - 500074",
     "postalcode": 500074,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Aziz Nagar",
+    "location": "Aziz Nagar - 500075",
     "postalcode": 500075,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Bhaskar Nagar",
+    "location": "Bhaskar Nagar - 500075",
     "postalcode": 500075,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "C.B.I.T",
+    "location": "Gandipet - 500075",
     "postalcode": 500075,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Gandipet",
+    "location": "Himayathnagar - 500075",
     "postalcode": 500075,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Himayathnagar",
+    "location": "Janwada - 500075",
     "postalcode": 500075,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Janwada",
+    "location": "Kokapet - 500075",
     "postalcode": 500075,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kokapet",
+    "location": "Mancherevula - 500075",
     "postalcode": 500075,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Mancherevula",
+    "location": "Narsingi - 500075",
     "postalcode": 500075,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Narsingi",
+    "location": "Wattinagulapalli - 500075",
     "postalcode": 500075,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Wattinagulapalli",
-    "postalcode": 500075,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "I.E.Nacharam",
+    "location": "I.E.Nacharam - 500076",
     "postalcode": 500076,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Mallapur",
+    "location": "Mallapur - 500076",
     "postalcode": 500076,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Snehapuri Colony",
+    "location": "Snehapuri Colony - 500076",
     "postalcode": 500076,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kattedan Ie",
-    "postalcode": 500077,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "BITS",
+    "location": "Bomraspet - 500078",
     "postalcode": 500078,
-    "is_active": 1,
+    "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Bomraspet",
+    "location": "CRPF - 500078",
     "postalcode": 500078,
-    "is_active": 1,
+    "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "CRPF",
+    "location": "Devaryamjal - 500078",
     "postalcode": 500078,
-    "is_active": 1,
+    "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Devaryamjal",
+    "location": "Nisa Hakimpet - 500078",
     "postalcode": 500078,
-    "is_active": 1,
+    "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Nisa Hakimpet",
+    "location": "Ponnal - 500078",
     "postalcode": 500078,
-    "is_active": 1,
+    "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Ponnal",
+    "location": "Thumkunta - 500078",
     "postalcode": 500078,
-    "is_active": 1,
+    "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Thumkunta",
+    "location": "Uddemarri - 500078",
     "postalcode": 500078,
-    "is_active": 1,
+    "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Uddemarri",
-    "postalcode": 500078,
-    "is_active": 1,
+    "location": "Jillellaguda - 500079",
+    "postalcode": 500079,
+    "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Jillellaguda",
+    "location": "Karmanghat - 500079",
     "postalcode": 500079,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Karmanghat",
+    "location": "Vaishalinagar - 500079",
     "postalcode": 500079,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Vaishalinagar",
-    "postalcode": 500079,
-    "is_active": 1,
-    "City_id": 1
-  },
-  {
-    "location": "Gandhinagar",
+    "location": "Gandhinagar - 500080",
     "postalcode": 500080,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Cyberabad",
+    "location": "Cyberabad - 500081",
     "postalcode": 500081,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Madhapur",
+    "location": "Madhapur - 500081",
     "postalcode": 500081,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "I.M.Colony",
+    "location": "I.M.Colony - 500082",
     "postalcode": 500082,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Somajiguda",
+    "location": "Somajiguda - 500082",
     "postalcode": 500082,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Nagaram",
+    "location": "Nagaram - 500083",
     "postalcode": 500083,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kondapur",
+    "location": "Kondapur - 500084",
     "postalcode": 500084,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kothaguda (K.V.Rangareddy)",
+    "location": "Kothaguda - 500084",
     "postalcode": 500084,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Jntu Kukat Pally",
+    "location": "Jntu Kukat Pally - 500085",
     "postalcode": 500085,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "KPHB Colony",
+    "location": "KPHB Colony - 500085",
     "postalcode": 500085,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Don Bosco Nagar",
+    "location": "Don Bosco Nagar - 500086",
     "postalcode": 500086,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Jawahar Nagar",
+    "location": "Jawahar Nagar - 500087",
     "postalcode": 500087,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "JJ Nagar Colony",
+    "location": "JJ Nagar Colony - 500087",
     "postalcode": 500087,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Katchavanisingaram",
+    "location": "Katchavanisingaram - 500088",
     "postalcode": 500088,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Korremal",
+    "location": "Korremal - 500088",
     "postalcode": 500088,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Pratapsingaram",
+    "location": "Pratapsingaram - 500088",
     "postalcode": 500088,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Rajeevagruhakalpa",
+    "location": "Rajeevagruhakalpa - 500088",
     "postalcode": 500088,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Samskruthi",
+    "location": "Samskruthi - 500088",
     "postalcode": 500088,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Venkatadri",
+    "location": "Venkatadri - 500088",
     "postalcode": 500088,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Manikonda",
+    "location": "Manikonda - 500089",
     "postalcode": 500089,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kishanbagh",
+    "location": "Kishanbagh - 500064",
     "postalcode": 500064,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Tadbun",
+    "location": "Tadbun - 500064",
     "postalcode": 500064,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Bachupally",
+    "location": "Bachupally - 500090",
     "postalcode": 500090,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Nizampet",
+    "location": "Nizampet - 500090",
     "postalcode": 500090,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Pragatinagar",
+    "location": "Pragatinagar - 500090",
     "postalcode": 500090,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Hydershahkote",
+    "location": "Hydershahkote - 500091",
     "postalcode": 500091,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Vikasnagar (Secbad)",
+    "location": "Vikasnagar (Secbad) - 500093",
     "postalcode": 500093,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Sainikpuri",
+    "location": "Sainikpuri - 500094",
     "postalcode": 500094,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Putlibowli",
+    "location": "Putlibowli - 500095",
     "postalcode": 500095,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "State Bank Of India (nampally)",
+    "location": "State Bank Of India (nampally) - 500095",
     "postalcode": 500095,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Film Nagar",
+    "location": "Film Nagar - 500096",
     "postalcode": 500096,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Gayatri Nagar",
+    "location": "Gayatri Nagar - 500097",
     "postalcode": 500097,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Meerpet",
+    "location": "Meerpet - 500097",
     "postalcode": 500097,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Medipalli",
+    "location": "Medipalli - 500098",
     "postalcode": 500098,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Doolapalli",
+    "location": "Doolapalli - 500100",
     "postalcode": 500100,
     "is_active": 1,
     "City_id": 1
   },
   {
-    "location": "Kompally",
+    "location": "Kompally - 500100",
     "postalcode": 500100,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Pochampally",
+    "location": "Pochampally - 500100",
     "postalcode": 500100,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Aliabad",
+    "location": "Aliabad - 500101",
     "postalcode": 500101,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Anantaram",
+    "location": "Anantaram - 500101",
     "postalcode": 500101,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Jaggamguda",
+    "location": "Jaggamguda - 500101",
     "postalcode": 500101,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Kolthur",
+    "location": "Kolthur - 500101",
     "postalcode": 500101,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Kyasaram",
+    "location": "Kyasaram - 500101",
     "postalcode": 500101,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Lalgadi Malakpet",
+    "location": "Lalgadi Malakpet - 500101",
     "postalcode": 500101,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Mudchintanapalli",
+    "location": "Mudchintanapalli - 500101",
     "postalcode": 500101,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Peddalaxmapur",
+    "location": "Peddalaxmapur - 500101",
     "postalcode": 500101,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Shamirpet",
+    "location": "Shamirpet - 500101",
     "postalcode": 500101,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Turkapalliyadaram",
+    "location": "Turkapalliyadaram - 500101",
     "postalcode": 500101,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Vikarabad",
+    "location": "Vikarabad - 501101",
     "postalcode": 501101,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Ankireddipalli",
+    "location": "Ankireddipalli - 501301",
     "postalcode": 501301,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Ankushapur",
+    "location": "Ankushapur - 501301",
     "postalcode": 501301,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Bogaram",
+    "location": "Bogaram - 501301",
     "postalcode": 501301,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Cherial",
+    "location": "Cherial - 501301",
     "postalcode": 501301,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Cherlapalli",
+    "location": "Cherlapalli - 501301",
     "postalcode": 501301,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Edulabad",
+    "location": "Edulabad - 501301",
     "postalcode": 501301,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Ghatkesar",
+    "location": "Ghatkesar - 501301",
     "postalcode": 501301,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Keesara",
+    "location": "Keesara - 501301",
     "postalcode": 501301,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Keesaragutta",
+    "location": "Keesaragutta - 501301",
     "postalcode": 501301,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Rampallidiara",
+    "location": "Rampallidiara - 501301",
     "postalcode": 501301,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Rompalli",
+    "location": "Rompalli - 501301",
     "postalcode": 501301,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Thimmaipalli",
+    "location": "Thimmaipalli - 501301",
     "postalcode": 501301,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Yadgarpalli",
+    "location": "Yadgarpalli - 501301",
     "postalcode": 501301,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Athveli",
+    "location": "Athveli - 501401",
     "postalcode": 501401,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "CMR College (Kandlakoya)",
+    "location": "CMR College (Kandlakoya) - 501401",
     "postalcode": 501401,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Dabirpur",
+    "location": "Dabirpur - 501401",
     "postalcode": 501401,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Girmapur",
+    "location": "Girmapur - 501401",
     "postalcode": 501401,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Gowdavalli",
+    "location": "Gowdavalli - 501401",
     "postalcode": 501401,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Medchal",
+    "location": "Medchal - 501401",
     "postalcode": 501401,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Nutankal",
+    "location": "Nutankal - 501401",
     "postalcode": 501401,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Pudur",
+    "location": "Pudur - 501401",
     "postalcode": 501401,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Rajbolaram",
+    "location": "Rajbolaram - 501401",
     "postalcode": 501401,
     "is_active": 0,
     "City_id": 1
   },
   {
-    "location": "Ravalkol",
+    "location": "Ravalkol - 501401",
     "postalcode": 501401,
     "is_active": 0,
     "City_id": 1
+  },
+  {
+    "location": "",
+    "postalcode": "",
+    "is_active": "",
+    "City_id": ""
+  },
+  {
+    "location": "A C Jobner",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Ajairajpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Akodiya",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Amba Bari",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Amloda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Andhi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Asalpur",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Badapadampura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Badwa",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bagru",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Banar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bansa",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Barodiya",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bassi (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Behlod",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhadwa",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhalloji",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhankari",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhato Ki Gali",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhopawa",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhutera",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bilanderpur",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bindayaka",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bobas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Burthal",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chakwada",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chandwaji",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chaturbhuj",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chhapra Kalan (Shahpura)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chhitoli",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chitanu Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chonp",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dabach",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dangaarwara",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dantli",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dehmi Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dev Ka Harwada",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dhamana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dhankya",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dhoblai",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dholi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Doongri Khurd",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Durgapura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Etwa Bhopji",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Gadota",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Garh",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Ghasipura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Goner",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Goverdhanpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Gudha Bersal",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Hadota",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Harmada",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Hasteda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Heerapura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Indergarh",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Itawa",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jaichandpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jairampura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jaisinghpura Bas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jaje Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Janta Colony",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jawanpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jhalana Doongri",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jhotwara",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jorpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kadera",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kalwad",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kanarpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kansli",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Karangarh",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Karoli",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Khadi Bagh",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kharkara",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Khawa",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Khera Raniwas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Khora Meena",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kishangarh Renwal",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kishorpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kothoon",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Krishna Mandir",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kunthada Khurd",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Ladera",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Lalgarh",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Legislative Assembly",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Luniawas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Madhorajpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mahapura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mahlan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Malviya Nagar Sector 11,12",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Manda Bhinda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mandlia Meda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Manota",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Markhi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Meena Wala",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mohanpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mordha",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mrec Jaipur",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mundiagaarh",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Murlipura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nangal Bharda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nangal Ladi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nangal Turkan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Natata",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nawalpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Neemera",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Newar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nithara",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Pachala",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Pahandia",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Panchyawala",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Paota(Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Pawana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Phulera Bazar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Pratapura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Radahkishanpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Raghunathpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Raisar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rajasthan Secretariate",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rajpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Ramjipura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rampura Roopa",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rasili",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rojda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Roopahedi Khurd",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "S.M.S.Hospital",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sakhoon",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sambharia",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sanganer Bazar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sanwalia",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sawai Madhosinghpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Shahpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Shivsinghpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sindhi Colony",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sinodiya",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sirsali",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Srirampura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Suklawas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Surmalikpur",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Tankarda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Teori",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Theekariya Meena",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Thoomli Ka Bas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Toda Meena",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Tripolia Bazar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Udaipuria",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Vedaant Gyan Valley",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Vidyut Bhawan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Achalpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Ajmer Road",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Alisar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Amer",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Anantpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Antela",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Ashok Nagar (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Badhal",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bagawas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bagwara",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bandha Jamwaramgarh",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bapu Nagar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bas Badwa",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bassi Naga",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Benada",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhainsawa",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhambhoria",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhankrota",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhawani",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhura Tiba",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bichi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bilochi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Birsana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Booj",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "C.P.M.G",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chandamakalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chanwandia",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Cheethwari",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chhapra Khurd",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chimanpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chittora",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Choru",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dabla Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dantala Meena",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dantri",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Deogaon",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Deva Ka Bas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dhand",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dhanota",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dhodsar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dhula",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Doongrikalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Durjania Was",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Faliawas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Gagardoo",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Garwasi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Ghatiyali",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Gonera",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Govind Nagar (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Gudhaliya",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Haldiyon Ka Rasta",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Harsoli",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Hathnoda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "High Court (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Indra Bazar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jagatpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jaipur City",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jaisinghpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jaisinghpura Khore",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jalsu",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jatanwali",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jeetawal",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jhapda Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jobner",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jorpura Sundariawas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kaladera",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kalyanpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kanipura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kant",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Karansar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kashipura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Khajalpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Khatipura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Khedi Milk",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Khijuria Brahmin",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Khore Shyamdas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kishanpole Bazar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kodi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kotkhawada",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kudli",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kuthada",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Lakhana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Lalwas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Let Ka Bas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Luniawas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mahadeopura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mahar Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Malikpur",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Malyawas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mandawari",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mandore",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Manpura Machedi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Marwa",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mehandwas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mohanpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Morija",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Muhana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mundota",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "N.C.R.Building",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nangal Govind",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nangal Panditpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Naraina",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nathawala",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Naya Bas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Neendar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nimera",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Niwana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Pachar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Palawalan Jatan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Panditpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Papad",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Peepla",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Pragpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Punana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Radawas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rahori",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Raithal",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rajasthan State Hotel",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rajpurawas Tala",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Ramnagar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rampura Unti",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rehlana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rojdi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rundal",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Saipura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sali",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Samod",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sangteda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sanwarda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sewa",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Shardulpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Shri Ram Ki Nangal",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Singot Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sinwar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sirsi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Station Road (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sumel",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Tala",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Taskola",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Thali",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Thikariya",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Tigaria",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Toonga",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Tripolia Chomu",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Udaipuria",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Veelpur",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Virat Nagar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Achrol",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Akhepura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Amarpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Amer Clark Hotel",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Anantpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Arjun Lal Sethi Nagar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Astikalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Badi Jori",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bagawas Ahiran",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bajaj Nagar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Banethi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Barkat Nagar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Baseri Khurd",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Beelwadi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Beri",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhainslana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhamod",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhankrota",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhojpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhuri Baraja",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bichoon",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bilod",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bishangarh",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Boraj",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chainpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chandlai",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Charanwas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chetawala",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chhardera",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chimanpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chittora Renwal",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Collectorate (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dadiya",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dantil",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Daulatpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Deogudha",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Devan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dhandholi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dharampura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dhola",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Didawata",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dosara",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dwarikapura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Fatehpura Khurd",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Gandhi Nagar (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Gathwadi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Gidhani",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Gopalpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Govindgarh (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Gulab Bari",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Hanutia",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Harsoli",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Hathoj",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Hingonia",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Industrial Area Jhotwara",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Jagatpura",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Jaipur G.P.O.",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Jaisinghpura",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Jaitpura I A",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Jamdoli",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Jatwara",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Jhag",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Jhar",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Jodhpura",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Kacholiya",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Kalakh",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Kalyanpura",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Kanota",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Kant",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Kareda Khurd",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Kazipura",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Khandel",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Khatipura",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Khejroli",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Khora Bisal",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Khori",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Kishanpura",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Kookas",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Kotputli",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Kujota",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Labana",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Lakher",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Langareeyawas",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Loharwada",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "M.I.Road",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Mahangi",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Mahar Khurd",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
+  },
+  {
+    "location": "Malpuria",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mamana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mandha",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Manoharpur (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mansar Khedi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mathasula",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mohabatpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mokhampura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Moti Doongari Road",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mukandpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mundoti",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nabhawala",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nangal Jaisabohara",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nangal Purohitan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nareda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Naupura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nayan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Neendar Banar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nimodiya",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Niwaroo",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Padasoli",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Paldi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Paniyala",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Parwan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Phagi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Pratap Nagar Housing Board",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Purani Basti (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Radoli",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Raikaranpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Raj Bhawan (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rajasthan University",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rambura Dabari",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rampura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Ramsinghpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Renwal",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Roop Was",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "S.D.M.Hospitial",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Saiwad",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Salt Colony",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Samred Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sankotra",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Saraswati Nagar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sewapura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Shastri Nagar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Shyam Nagar (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Singot Khurd",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sirohi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sitapura Industrial Area",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Suderpura Dhadha",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sunderpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Talba Bihajar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Teetaria",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Thali",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Thikariya",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Tilak Nagar (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Toontoli",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Turkyawas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Ugariwas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Vidhani",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Vishwakarma Industrial Area",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Airport Sanganer",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Akoda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Amarsar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Amer Road",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Anantpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Arp Dhelana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Awania",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Badodia",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bagawas Choriyasi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bajrangpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bani Park",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Barnagar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Basna",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Begas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhabroo",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhaislana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhamori",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhanpur Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhonawas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bhurthal",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bidara",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bilwa",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Bobadi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Buchara",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chaksu",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chandpole Bazar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chatarpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chhandel Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chharsa",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chinoi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Chomu",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Crpf Campus Lalwas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Danau Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dantil",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dehar Ka Balaji",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Deota",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Devipura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dhani Boraj",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dheendha",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dhola Ka Bas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Doodhali",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dudu",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Dwarikapuri",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Footalo",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Gangoti Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Gehlota",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Gohandi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Gopalpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Govindpura Baseri",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Habaspura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Hanutpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Harsulia",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Heerapura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Hirnoda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Industrial Estate (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jahota",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jaipur R.S.",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jaisinghpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jaitpura Khinchi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jamwaramgarh",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jawahar Nagar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jhajwar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jhardla",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Jodhula",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kachroda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kali Pahadi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kalyanpura Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kansel",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kanwarpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kariri",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Keshwana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kharab",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Khatipura Road",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Khelana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Khora Lad Khani",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Khudiyala",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kishanpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Korsina",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Krishi Upaj Mandi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Kumariawas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Ladana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Lalasar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Lasadiya",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Luhakna Khurd",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Machwa",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mahapura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mahindra World City (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Malviya Nagar (Jaipur)",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Manda Bhim Singh",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mandi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Manoharpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mansarovar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Med",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mohanpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Molaheda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mozmabad",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Mundia Rampura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Murlipura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nanan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nangal Koju",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nangal Soosawatan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Narera",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Naurangpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Nayla",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Neota",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "NIMS University",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "P.W.D.Office",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Padasoli",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Panchudala",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Panwalia",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Pathredi",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Phulera",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Pratap Nagar Sector 11",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Purshottampura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Raghunathpura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Raipur",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Raja Park Colony",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rajnauta",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Ramganj Bazar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Rampura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Raopura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Road No- 5 Vkia",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Roopa Hedi Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "S.F.S.Mansarovar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Saiwar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sambhar Lake",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sandarsar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sanwali",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sarund",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Shaakar Khawda",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Shivdaspura",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Silki Doongari",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sinodia",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sirohi Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sothana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Sujatnagar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Surana",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Tamariya",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Teja Ka Bas",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Theekariya Gujran",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Tholai",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Toda Bhata",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Torda Kalan",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Tyod",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Vaishali Nagar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Vidhyadhar Nagar",
+    "postalcode": "",
+    "is_active": 1,
+    "City_id": 2
+  },
+  {
+    "location": "Watika",
+    "postalcode": "",
+    "is_active": 0,
+    "City_id": 2
   }
 ]
