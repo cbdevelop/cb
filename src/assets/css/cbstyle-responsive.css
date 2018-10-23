@@ -435,7 +435,7 @@
         color: #666;
     }
     .chefDet p {
-        width: 100px;
+        width: auto;
         font-size: 14px;
         color: #454545;
     }
@@ -466,7 +466,7 @@
         width: 62%;
     }
     .chefDet p {
-        width: 50%;
+        width: auto;
     }
     .chefDet p.menu {
         width: 78%;
@@ -1076,7 +1076,7 @@
         padding: 8px 7px;
     }
     .chefDet p {
-        width: 40%;
+        width: auto;
     }
     .chefDet p.menu {
         width: 75%;

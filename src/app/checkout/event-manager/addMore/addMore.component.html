@@ -1,16 +1,16 @@
 <div class="estPopOut">
   <div class="chPopInn">
-    <div class="estMesg" *ngIf="masterObj.serviceCost">
+    <div class="estMesg" >
       <!-- <h3>Yo
         <span>33</span>
       </h3> -->
       <!-- <div > -->
-        <h3  *ngIf="masterObj.searchObj.serviceType.length ">Selected Service: 
+        <h3  *ngIf="masterObj.searchObj.serviceType.length">Selected Service: 
           <span > {{ masterObj.searchObj.serviceType[0].type }}</span>
           <span (click)="changeService()" style="color:#08a88b">Change</span>
         </h3>
       <!-- </div> -->
-      Your estimated total cost for the service is {{ masterObj.totalCost + masterObj.serviceCost }}
+      Your estimated total cost for the service is {{  masterObj.serviceCost }}
 
     </div>
     <div class="estPop clearfix">

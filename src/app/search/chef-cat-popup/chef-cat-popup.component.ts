@@ -72,9 +72,9 @@ export class ChefCatPopupComponent implements OnInit {
       if (arr.Category_Type == 2) {
         // nonveg
         if (arr.Restrictions == "")
-          this.masterService.totalCost -= this.masterService.searchObj.nonVegAttnd * arr.Price;
+          this.masterService.totalCost -= parseInt(this.masterService.searchObj.nonVegAttnd.toString(),10) * arr.Price;
         else
-          this.masterService.totalCost -= Math.ceil(1 / 4 * this.masterService.searchObj.nonVegAttnd) * arr.Price;
+          this.masterService.totalCost -= Math.ceil(1 / 4 * parseInt(this.masterService.searchObj.nonVegAttnd.toString(),10)) * arr.Price;
       } else if (arr.Category_Type == 1) {
         /* restricted service functionality */
         // veg people
@@ -82,9 +82,9 @@ export class ChefCatPopupComponent implements OnInit {
         if (arr.Restrictions == "")
           this.masterService.totalCost -= this.masterService.totalAttendees * arr.Price;
         else if (arr.Restrictions.includes('Only for vegetarian'))
-          this.masterService.totalCost -= this.masterService.searchObj.vegAttnd * arr.Price;
+          this.masterService.totalCost -= parseInt(this.masterService.searchObj.vegAttnd.toString(),10) * arr.Price;
         else if (arr.Restrictions.includes('Mostly for vegetarian(50% of total Attendees)'))
-          this.masterService.totalCost -= (this.masterService.searchObj.vegAttnd + (1 / 2 * this.masterService.searchObj.nonVegAttnd)) * arr.Price;
+          this.masterService.totalCost -= (parseInt(this.masterService.searchObj.vegAttnd.toString(),10) + (1 / 2 * parseInt(this.masterService.searchObj.nonVegAttnd.toString(),10))) * arr.Price;
         else
           this.masterService.totalCost -= Math.ceil(1 / 4 * this.masterService.totalAttendees) * arr.Price;
       } else {
@@ -121,9 +121,9 @@ export class ChefCatPopupComponent implements OnInit {
     if (this.dishDetails.Category_Type == 2) {
       // nonveg
       if (restrict == "")
-        this.masterService.totalCost += this.masterService.searchObj.nonVegAttnd * this.dishDetails.Price;
+        this.masterService.totalCost += parseInt(this.masterService.searchObj.nonVegAttnd.toString(),10) * this.dishDetails.Price;
       else
-        this.masterService.totalCost += Math.ceil(1 / 4 * this.masterService.searchObj.nonVegAttnd) * this.dishDetails.Price;
+        this.masterService.totalCost += Math.ceil(1 / 4 * parseInt(this.masterService.searchObj.nonVegAttnd.toString(),10)) * this.dishDetails.Price;
 
     } else if (this.dishDetails.Category_Type == 1) {
       /* restricted service functionality */
@@ -132,9 +132,9 @@ export class ChefCatPopupComponent implements OnInit {
       if (this.res.length == 0)
         this.masterService.totalCost += this.masterService.totalAttendees * this.dishDetails.Price;
       else if (this.res.indexOf('Only for vegetarian') != -1)
-        this.masterService.totalCost += this.masterService.searchObj.vegAttnd * this.dishDetails.Price;
+        this.masterService.totalCost += parseInt(this.masterService.searchObj.vegAttnd.toString(),10) * this.dishDetails.Price;
       else if (this.res.indexOf('Mostly for vegetarian(50% of total Attendees)') != -1)
-        this.masterService.totalCost += (this.masterService.searchObj.vegAttnd + Math.ceil(1 / 2 * this.masterService.searchObj.nonVegAttnd)) * this.dishDetails.Price;
+        this.masterService.totalCost += (parseInt(this.masterService.searchObj.vegAttnd.toString(),10) + Math.ceil(1 / 2 * parseInt(this.masterService.searchObj.nonVegAttnd.toString(),10))) * this.dishDetails.Price;
       else
         this.masterService.totalCost += Math.ceil(1 / 4 * this.masterService.totalAttendees) * this.dishDetails.Price;
     } else {

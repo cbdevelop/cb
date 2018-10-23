@@ -42,7 +42,7 @@ export class OrderCheckoutComponent implements OnInit {
 
   remove(i){
     this.masterObj.totalCost -= this.masterObj.eventMangerCost;
-    this.masterObj.eventMangerCost -= this.masterObj.selectedEvtManager[i].cost;
+    this.masterObj.eventMangerCost -= parseInt(this.masterObj.selectedEvtManager[i].cost,10);
     this.masterObj.totalCost += this.masterObj.eventMangerCost;
     this.masterObj.selectedEvtManager.splice(i,1);
     var selManager = JSON.stringify(this.masterObj.selectedEvtManager);

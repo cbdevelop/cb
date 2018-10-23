@@ -134,7 +134,7 @@ export class ResultViewComponent implements OnInit {
         /*dish category price*/
         if(arr[0].Category_Type == 2){
           // nonveg
-          this.service.totalCost += this.service.searchObj.nonVegAttnd * arr[0].Price;
+          this.service.totalCost += parseInt(this.service.searchObj.nonVegAttnd.toString(),10) * arr[0].Price;
         }else if(arr[0].Category_Type == 1){
           /* restricted service functionality */ 
           // veg people
@@ -182,7 +182,7 @@ export class ResultViewComponent implements OnInit {
 
       }else {
         this.router.navigate(['../chef'], { relativeTo: this.route });
-        this.getlist();
+        // this.getlist();
       }
       // this.router.navigate(['../chef'], { relativeTo: this.route });
     }

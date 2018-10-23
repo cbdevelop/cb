@@ -29,6 +29,7 @@ export class AddMoreComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log( this.masterObj.totalCost ,this.masterObj.serviceCost);
     if(this.masterObj.searchObj.serviceType.length)
       this.serviceFlag = false;
 
@@ -43,6 +44,7 @@ export class AddMoreComponent implements OnInit {
 
   onAdd() {
     // this.masterObj.totalCost -= this.masterObj.serviceCost ;
+    localStorage.setItem('searchObj', JSON.stringify(this.masterObj.searchObj));
     this.masterObj.serviceCost =0;
     if (this.masterObj.searchObj.serviceType[0].id == 1) {
       this.masterObj.serviceCost += 600;  // drop off
@@ -63,11 +65,14 @@ export class AddMoreComponent implements OnInit {
       let dessertArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 8);
       this.masterObj.serviceCost += (this.masterObj.totalAttendees * 50);
       this.masterObj.serviceCost += (mainArr.length * 800) + (breadArr.length * 400) + (dessertArr.length * 1000);
+    } else {
+
     }
     let stallArr = this.masterObj.selectedDishArr.filter(x => x.Menu_Type == 9);
     this.masterObj.serviceCost += (stallArr.length * 5000) ;
 
     // this.masterObj.totalCost += this.masterObj.serviceCost ;
+    localStorage.setItem('serviceCost', this.masterObj.serviceCost.toString());
     console.log( this.masterObj.totalCost ,this.masterObj.serviceCost);
     this.activeModal.close();
   }

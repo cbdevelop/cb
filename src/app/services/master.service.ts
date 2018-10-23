@@ -128,7 +128,14 @@ export class MasterService {
 				
 				this.filteredchefList =  JSON.parse (localStorage.getItem('chefsList'));
 			}
-			
+			if ([null,undefined,''].indexOf(localStorage.getItem('eventMangerCost')) == -1 ) {
+				
+				this.eventMangerCost =  JSON.parse (localStorage.getItem('eventMangerCost'));
+			}
+			if ([null,undefined,''].indexOf(localStorage.getItem('filteredChefs')) == -1 ) {
+				
+				this.filteredchefList =  JSON.parse (localStorage.getItem('filteredChefs'));
+			}
 			
 		}
 	}
@@ -138,11 +145,13 @@ export class MasterService {
 		this.totalAttendees = 0;
 		// this.nonVegAttendees = 0;
 		// this.vegAttendees = 0;
+		this.comments='';
 		this.dishesCost = 0;
 		this.chefsCost = 0;
 		this.eventMangerCost = 0;
 		this.selectedDishArr = [];
 		this.selectedEvtManager = [];
+		this.filteredchefList =[];
 		this.session ='';
 		this.selCity = { ID: 0, City: '', is_active: null, Show: null, image: '' };
 		this.searchObj = {

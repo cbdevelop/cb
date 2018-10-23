@@ -93,7 +93,7 @@ export class MenuComponent implements OnInit {
       this.masterObj.dishesCost = this.masterObj.totalCost;
       localStorage.setItem('dishCost', this.masterObj.dishesCost.toString());
       this.router.navigate(['../chef'], { relativeTo: this.route });
-      this.getlist() 
+      // this.getlist() 
     }
   }
   getlist() {

@@ -31,14 +31,16 @@ export class ProfileComponent implements OnInit {
     if (this.masterObj.evntManagerSelFlag) {
       this.alertsObj.openAlert({ message: 'Please uncheck check box ', type: 'warning' });
     } else {
-      console.log(this.masterObj.totalCost, this.managerDetails.Price);
+      console.log(this.masterObj.totalCost, this.managerDetails.cost);
       let index = this.masterObj.selectedEvtManager.findIndex(x => x.id == this.id);
       if (index == -1) {
+        this.masterObj.totalCost -= this.masterObj.eventMangerCost;
         this.masterObj.eventMangerCost += parseInt(this.managerDetails.cost, 10);
+        this.masterObj.totalCost += this.masterObj.eventMangerCost;
         this.masterObj.selectedEvtManager.push(this.managerDetails);
         var selManager = JSON.stringify(this.masterObj.selectedEvtManager);
         localStorage.setItem("selManager", selManager);
-        this.masterObj.totalCost += this.managerDetails.eventMangerCost;
+        localStorage.setItem("eventMangerCost", this.masterObj.eventMangerCost.toString());
         localStorage.setItem("cost", this.masterObj.totalCost.toString());
         this.activeModal.dismiss();
       } else {
