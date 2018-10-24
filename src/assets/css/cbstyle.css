@@ -3360,7 +3360,7 @@ footer {
     font-size: 20px;
     width: 18px;
     height: 22px;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     text-align: center;
     
     border-radius: 3px;
@@ -5036,7 +5036,7 @@ footer {
     background-color: transparent !important;
 }
 
-..dropdown-menu {
+.dropdown-menu {
     background-color: transparent !important;
     border: none !important;
 }

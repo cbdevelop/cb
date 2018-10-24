@@ -5,12 +5,13 @@
     <div class="noteMesg">
 
       <p>Your estimate fare for the service is Rs.
-        <span *ngIf="masterobj.serviceCost > 0"> {{ masterobj.totalCost + masterobj.serviceCost }} </span>
+        <span *ngIf="masterobj.serviceCost > 0"> {{ masterobj.serviceCost }} </span>
         <span *ngIf="masterobj.serviceCost == 0">0</span>
         <a href="javascript:void(0)" (click)="openAddMore()">Add Service </a>
-        The above cost is not included in the current order. The estimate is to ensure you that the amount may not exceed the above
-        quoted cost. As the cost is dependent on the floor area, you will recieve a separate accurate invoice for the services
-        once after the booked manager visits your premises and provides you with right sugession.
+        <br>
+        The estimate is not included in the current order,it is to ensure you that the amount may not exceed the above
+        quoted cost. As the cost is dependent on the floor area, you will recieve a separate invoice for the services
+        once you book an event manager who visits your premises to confirm the service requirements.
       </p>
     </div>
 
