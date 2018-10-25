@@ -331,3 +331,29 @@ button {
 .cartBtn a {
     color: white !important;
 }
+
+
+.loadBar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    left: -2px;
+    top: 0px;
+    border-radius: 3px;
+    padding: 18px 15px 15px;
+}
+
+.loadBar span {
+    display: block;
+    height: 12px;
+    margin: 0px 0px 17px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+}

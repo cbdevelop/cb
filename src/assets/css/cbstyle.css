@@ -2778,7 +2778,7 @@ footer {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    float: right;
+    text-align: right;
 }
 
 .chefDet p.menu {
