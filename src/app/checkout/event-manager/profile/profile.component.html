@@ -26,7 +26,7 @@
         <a href="javascript:void(0)" class="addBtn" (click)="addManager()">Add</a>
         <ul class="ceri clearfix">
           <li>
-            <img src="../../../../assets/images/seq2.png" alt="">CB Certified</li>
+            <img src="../../../../assets/images/seq2.png" alt="">Verified</li>
           <li>
             <img src="../../../../assets/images/seq3.png" alt="">CB Certified</li>
         </ul>
@@ -63,14 +63,14 @@
                     <span>Total events served</span>:
                     <p>{{ managerDetails.Events_Managed }}</p>
                   </div>
-                  <div class="clearfix" *ngIf="managerDetails.locality !== ''">
+                  <!-- <div class="clearfix" *ngIf="managerDetails.locality !== ''">
                     <span>Locality</span>:
                     <p> {{ managerDetails.locality }}</p>
                   </div>
                   <div class="clearfix" *ngIf="managerDetails.Proficiency !== ''">
                     <span>Proficiency</span>:
                     <p>{{ managerDetails.Proficiency }}</p>
-                  </div>
+                  </div> -->
                   <div class="clearfix" *ngIf="managerDetails.About !== ''">
                     <span>About Chef:</span>
                     <br>
@@ -86,8 +86,8 @@
             <ngb-tab title="Reviews" id="tab2">
               <ng-template ngbTabContent>
                 <div class="PopTabTwo">
-                  <div class="review" *ngFor="let rev of managerDetails.Rating">
-                    <h2>{{ rev.name }}</h2>
+                  <div class="review" *ngFor="let rev of reviewsArr">
+                    <h2>{{ rev.user }}</h2>
                     <div class="ratChef">
                       <i class="fa fa-star" [ngClass]="rev.Rating >= 1 ? 'review': ''"></i>
                       <i class="fa fa-star" [ngClass]="rev.Rating >= 2 ? 'review': ''"></i>
@@ -96,7 +96,7 @@
                       <i class="fa fa-star" [ngClass]="rev.Rating >= 5 ? 'review': ''"></i>
                     </div>
                     <p>
-                      {{ rev.text }}
+                      {{ rev.review }}
                     </p>
                   </div>
                   <!-- <div class="review">
@@ -146,7 +146,7 @@
             <!-- PortFolio -->
             <div class="PopTabThree">
 
-              <ngb-tab title="Portfolio" id="tab3">
+              <!-- <ngb-tab title="Portfolio" id="tab3">
                 <ng-template ngbTabContent>
                   <div class="Portfolio">
                     <img class="jbox-img" src="../../../../assets/images/port1.jpg" alt=" vannam mahesh" />
@@ -159,7 +159,7 @@
                     <img class="jbox-img" src="../../../../assets/images/port4.jpg" alt="" />
                   </div>
                 </ng-template>
-              </ngb-tab>
+              </ngb-tab> -->
 
             </div>
 

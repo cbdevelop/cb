@@ -1,25 +1,51 @@
 <div class="estPopOut">
   <div class="chPopInn">
-    <div class="estMesg" >
+    <div class="estMesg">
       <!-- <h3>Yo
         <span>33</span>
       </h3> -->
       <!-- <div > -->
-        <h3  *ngIf="masterObj.searchObj.serviceType.length">Selected Service: 
-          <span > {{ masterObj.searchObj.serviceType[0].type }}</span>
-          <span (click)="changeService()" style="color:#08a88b">Change</span>
-        </h3>
+      <h3 *ngIf="masterObj.searchObj.serviceType.length">Selected Service:
+        <span> {{ masterObj.searchObj.serviceType[0].type }}</span>
+        <span (click)="changeService()" style="color:#08a88b">Change</span>
+      </h3>
       <!-- </div> -->
-      Your estimated total cost for the service is {{  masterObj.serviceCost }}
+      Your estimated total cost for the service is {{ serviceCost }}.
 
     </div>
     <div class="estPop clearfix">
-     
+
       <div class="estCta clearfix" *ngIf="serviceFlag">
-        <label>Service Type</label>
-        <angular2-multiselect class="loca" [data]="serviceTypeArr" [(ngModel)]="masterObj.searchObj.serviceType" [settings]="serTypeSettings">
+        <label class="lbl pull-left">Service Type</label>
+        <angular2-multiselect class="loca" (onSelect)="onServiceSelection()" [data]="serviceTypeArr" [(ngModel)]="masterObj.searchObj.serviceType"
+          [settings]="serTypeSettings">
         </angular2-multiselect>
       </div>
+
+      <div class="estMesg" *ngIf="serviceFlag">
+        
+        <span *ngIf="sTypeId ==1">
+            We deliver you the cooked food at your premises so that you can self organize the event by yourself.
+            
+        </span>
+        <span *ngIf="sTypeId ==2">
+            Food is placed in chaffing dishes where the guests serve themselves while few butlers will also have their presence to assists you in need.
+            Which includes {{chaffing_dish_cnt}} chaffing dishes, {{ butlers_cnt }} butlers.
+        
+          </span>
+        <span *ngIf="sTypeId ==3">
+            Your guests will enjoy a waiter service. Each dish is carefully crafted by our chefs to ensure each one presents with colour and composition worthy of a fine dining experience.
+           <br> Which includes {{chaffing_dish_cnt}} chaffing dishes, {{ butlers_cnt }} butlers.
+        
+          </span>
+        <span *ngIf="sTypeId ==4">
+            Food is placed in chaffing dishes where the guests serve themselves while few butlers will also have their presence to assists you in need.
+            Each dish is carefully crafted by our chefs to ensure each one presents with colour and composition worthy of a fine dining experience.
+            Which includes {{chaffing_dish_cnt}} chaffing dishes, {{ butlers_cnt }} butlers.
+        
+        </span>
+      </div>
+
     </div>
     <ng-template>
       <div class="estPop clearfix">
@@ -157,6 +183,8 @@
         </div>
       </div>
     </ng-template>
+    <span class=""> Note: You can increase or decrease the requirement by consulting with event managers.</span>
+    <br>
     <div class="foodPopBtn text-right">
       <a href="javascript:void(0)" class="foodClose" (click)="onCancel()">Cancel</a>
       <a href="javascript:void(0)" class="add" (click)="onAdd()">Add</a>

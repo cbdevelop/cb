@@ -30,8 +30,16 @@ export class ChefComponent implements OnInit {
 
 
     this.getlist();
+    this.getReviews();
   }
 
+  getReviews(){
+    this.masterObj.getJSONofChefsReviews().subscribe(
+      (data)=> {
+        this.masterObj.masterChefreviws = data;
+      }
+    )
+  }
   getlist() {
     // this.masterObj.filteredchefList = [];
 

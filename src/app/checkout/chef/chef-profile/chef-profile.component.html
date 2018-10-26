@@ -25,7 +25,7 @@
       <a href="javascript:void(0)" class="addBtn" (click)="changeChef()">Change</a>
       <ul class="ceri clearfix">
         <li>
-          <img src="../../../../assets/images/seq2.png" alt="">CB Certified</li>
+          <img src="../../../../assets/images/seq2.png" alt="">Verified</li>
         <li>
           <img src="../../../../assets/images/seq3.png" alt="">CB Certified</li>
       </ul>
@@ -54,11 +54,11 @@
                 </div>
                 <div class="clearfix">
                   <span>Total events served</span>:
-                  <p>{{ chefDetails.total_event_served }}</p>
+                  <p>{{ chefDetails.Events_Served }}</p>
                 </div>
                 <div class="clearfix" *ngIf=" chefDetails.From != ''">
                   <span>Locality</span>:
-                  <p>{{ chefDetails.From }}</p>
+                  <p>{{ chefDetails.Locality }}</p>
                 </div>
                 <div class="clearfix"  *ngIf=" chefDetails.Proficiency != ''">
                   <span>Proficiency</span>:
@@ -86,8 +86,8 @@
           <ngb-tab title="Reviews">
             <ng-template ngbTabContent>
               <div class="PopTabTwo">
-                <div class="review" *ngFor="let rev of chefDetails.Reviews">
-                  <h2>{{ rev.name }}</h2>
+                <div class="review" *ngFor="let rev of reviews">
+                  <h2>{{ rev.user }}</h2>
                   <div class="ratChef">
                     <i class="fa fa-star" [ngClass]="rev.rating >= 1 ? 'review': ''"></i>
                     <i class="fa fa-star" [ngClass]="rev.rating >= 2 ? 'review': ''"></i>
@@ -96,7 +96,7 @@
                     <i class="fa fa-star" [ngClass]="rev.rating >= 5 ? 'review': ''"></i>
                   </div>
                   <p>
-                    {{ rev.text }}
+                    {{ rev.review }}
                   </p>
                 </div>
 

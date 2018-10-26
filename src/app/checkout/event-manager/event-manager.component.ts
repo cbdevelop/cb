@@ -26,11 +26,22 @@ export class EventManagerComponent implements OnInit {
     this.masterObj.getJSONofEventManagers().subscribe(
       data => {
         this.masterObj.eventManagerList = data;
+        for (let i = 0; i < this.masterObj.eventManagerList.length; i++) {
+          this.masterObj.eventManagerList[i].Rating= (this.masterObj.eventManagerList[i].serving_time + this.masterObj.eventManagerList[i].presentation)/2
+        }
         console.log(data);
+      }
+    );
+    this.getReviews();
+  }
+
+  getReviews() {
+    this.masterObj.getJSONofManagerReviews().subscribe(
+      (data) => {
+        this.masterObj.masterManagerReviews = data;
       }
     )
   }
-
   onproceed() {
     console.log(this.masterObj.evntManagerSelFlag, this.masterObj.selectedEvtManager);
     if (this.masterObj.evntManagerSelFlag || this.masterObj.selectedEvtManager.length) {

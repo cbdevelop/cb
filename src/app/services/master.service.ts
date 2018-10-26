@@ -20,6 +20,8 @@ export class MasterService {
 	chefsCost = 0;
 	eventMangerCost = 0;
 	serviceCost =0;
+	butlers_cnt =0;
+	chaffing_dish_cnt =0;
 	// vegAttendees = 0;
 	// nonVegAttendees = 0;
 	totalAttendees = 0;
@@ -52,12 +54,11 @@ export class MasterService {
 	evntManagerSelFlag = true;
 	chef_eventmanager_flag = 'Chef';
 	selectedEvtManager = [];
-	eventManagerList = [
-		
-	];
-
-
+	eventManagerList = [];
 	ChefData = [];
+
+	masterChefreviws =[];
+	masterManagerReviews=[];
 
 	/* cities */
 	masterCities: cityModel[] = [];
@@ -71,6 +72,7 @@ export class MasterService {
 
 	/*service type  */
 	masterServiceType = [
+		{ id: 0, type: "None" },
 		{ id: 1, type: "drop off" }, { id: 2, type: "buffet" }, { id: 3, type: "sit down" },
 		{ id: 4, type: "sit down/buffet" }
 	]
@@ -136,6 +138,14 @@ export class MasterService {
 				
 				this.filteredchefList =  JSON.parse (localStorage.getItem('filteredChefs'));
 			}
+			if ([null,undefined,''].indexOf(localStorage.getItem('bultercnt')) == -1 ) {
+				
+				this.butlers_cnt =   parseInt(localStorage.getItem('bultercnt'),10);
+			}
+			if ([null,undefined,''].indexOf(localStorage.getItem('chafDishCnt')) == -1 ) {
+				
+				this.chaffing_dish_cnt =   parseInt(localStorage.getItem('chafDishCnt'),10);
+			}
 			
 		}
 	}
@@ -178,6 +188,15 @@ export class MasterService {
 
 	public getJSONofChefs(): Observable<any> {
 		return this.http.get<DishModel>('./assets/chefs.json');
+
+	}
+
+	public getJSONofChefsReviews(): Observable<any> {
+		return this.http.get<DishModel>('./assets/chef-reviews.json');
+
+	}
+	public getJSONofManagerReviews(): Observable<any> {
+		return this.http.get<DishModel>('./assets/eventmanager-reviews.json');
 
 	}
 

@@ -13,13 +13,16 @@ export class ProfileComponent implements OnInit {
 
   managerDetails: any = {};
   @Input() id;
+  reviewsArr =[];
   constructor(public activeModal: NgbActiveModal,
     private masterObj: MasterService,
     private alertsObj: AlertsService) { }
 
   ngOnInit() {
     this.managerDetails = this.masterObj.eventManagerList.filter(d => d.id == this.id)[0];
-
+    console.log(this.managerDetails);
+    this.managerDetails.Rating = (this.managerDetails.serving_time + this.managerDetails.presentation)/2;
+    this.reviewsArr = this.masterObj.masterManagerReviews.filter(x=> x.Event_manager_id == this.id);
   }
 
   onCrossClose() {
@@ -27,7 +30,7 @@ export class ProfileComponent implements OnInit {
   }
 
   addManager() {
-    console.log(this.masterObj.evntManagerSelFlag);
+    
     if (this.masterObj.evntManagerSelFlag) {
       this.alertsObj.openAlert({ message: 'Please uncheck check box ', type: 'warning' });
     } else {

@@ -40,6 +40,10 @@ export class ListComponent implements OnInit {
     return index == -1 ? false : true;
 
   }
+
+  getRating(item) {
+    return 5;
+  }
   onNoManager() {
     this.evntManagerSelFlag = !this.evntManagerSelFlag;
     

@@ -72,7 +72,7 @@ export class HomeComponent implements OnInit,OnDestroy {
       location: [[], Validators.required],
       // serviceType: [[], Validators.required],
       vegAttnd: [null, [Validators.pattern('^[0-9]+[1-9]*$')]],
-      nonVegAttnd: [null, [Validators.pattern('^[1-9]+[0-9]*$')]],
+      nonVegAttnd: [null, [Validators.pattern('^[0-9]+[1-9]*$')]],
       datetime: ['', Validators.required]
     });
 
@@ -235,8 +235,10 @@ export class HomeComponent implements OnInit,OnDestroy {
 
   onSearch(evt) {
 
-    // console.log(this.masterObj.searchObj, this.homeForm);
+    console.log( this.homeForm);
     if (this.homeForm.valid) {
+      this.masterObj.searchObj.nonVegAttnd = this.masterObj.searchObj.nonVegAttnd == null ? 0 : this.masterObj.searchObj.nonVegAttnd;
+      this.masterObj.searchObj.vegAttnd = this.masterObj.searchObj.vegAttnd == null ? 0 : this.masterObj.searchObj.vegAttnd;
       if (this.masterObj.totalAttendees > 0) {
         if(!this.selectedTime(null))
             return;

@@ -12,6 +12,7 @@ export class ChefProfileComponent implements OnInit {
 
   @Input() che_index;
   chefDetails:any = [];
+  reviews =[]
   constructor(
     public activeModal: NgbActiveModal,
     private masterObj: MasterService
@@ -22,6 +23,7 @@ export class ChefProfileComponent implements OnInit {
   ngOnInit() {
     this.chefDetails = this.masterObj.filteredchefList[this.che_index];
     console.log(this.chefDetails.Rating);
+    this.reviews = this.masterObj.masterChefreviws.filter(x=> x.chef_id == this.chefDetails.id);
   }
 
   onCrossClose() {

@@ -48,7 +48,7 @@ export class ChefListComponent implements OnInit, AfterViewInit {
   }
 
   chefProfile(id) {
-
+console.log(id);
     const modalRef = this.chefService.open(ChefProfileComponent);
     modalRef.componentInstance.che_index = id;
 
