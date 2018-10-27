@@ -6,6 +6,7 @@ import { ModifySearchComponent } from '../../shared/modify-search/modify-search.
 import { Router, ActivatedRoute } from '@angular/router';
 import { CommentsComponent } from '../../shared/comments/comments.component';
 import { UserService } from '../../services/user_service/user.service';
+import { AlertsService } from '../../services/alerts.service';
 
 @Component({
   selector: 'app-menu',
@@ -22,6 +23,7 @@ export class MenuComponent implements OnInit {
   @ViewChild('cheftop') cheftop;
 
   constructor(
+    private alertsObj:AlertsService,
     private userSerObj: UserService,
     private router: Router,
     private route: ActivatedRoute,
@@ -92,8 +94,11 @@ export class MenuComponent implements OnInit {
     if (this.masterObj.selectedDishArr.length) {
       this.masterObj.dishesCost = this.masterObj.totalCost;
       localStorage.setItem('dishCost', this.masterObj.dishesCost.toString());
-      this.router.navigate(['../chef'], { relativeTo: this.route });
+      this.router.navigate(['../checkout','chef'], { relativeTo: this.route });
       // this.getlist() 
+    }else {
+      this.alertsObj.openAlert({ message: 'Your cart is empty', type: 'warning' });
+
     }
   }
   getlist() {

@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-
 /* @import "./assets/css/bootstrap.min.css"; */
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
@@ -8,9 +7,7 @@
 @import "./assets/css/cbstyle.css";
 @import "./assets/css/cbstyle-responsive.css";
 @import "~ng-pick-datetime/assets/style/picker.min.css";
-
 /* @import "./assets/css/category-menu.scss"; */
-
 
 /* Validations */
 
@@ -26,7 +23,6 @@ a {
     cursor: pointer;
 }
 
-
 button {
     cursor: pointer;
 }
@@ -35,8 +31,10 @@ button {
     color: #ffa200;
 }
 
-
 /* counter  */
+/* a:not([href]):not([tabindex]) {
+    color: white;
+} */
 
 .bar {
     transition: width 0.5s;
@@ -44,9 +42,7 @@ button {
     overflow: hidden;
 }
 
-
 /* Footer Additional */
-
 
 /* 
 .seqHome {
@@ -85,13 +81,11 @@ button {
     padding: 5px 0px 0px 0px;
 } */
 
-
 /* Footer Additional */
 
 .cdk-overlay-container {
     z-index: 10000;
 }
-
 
 /* datepicker */
 
@@ -112,7 +106,6 @@ button {
     background-color: #73c89c;
 }
 
-
 /* multi selection drop dow */
 
 .selected-list .c-btn {
@@ -126,7 +119,7 @@ button {
 
 .c-btn {
     display: inline-block;
-    background:inherit !important;
+    background: inherit !important;
     border: 0px solid #ccc !important;
     border-radius: 3px;
     font-size: 14px;
@@ -145,7 +138,6 @@ button {
     color: #6a6666c7 !important;
 }
 
-
 /* Comments */
 
 .modal-dialog {
@@ -158,16 +150,13 @@ button {
     padding: 40px;
 }
 
-
 /* Comments */
-
 
 /* Popup's padding */
 
 .chPopWrap {
     padding: none !important;
 }
-
 
 /* Add More */
 
@@ -252,9 +241,7 @@ button {
     border-radius: 4px;
 }
 
-
 /* Add More */
-
 
 /* Profile Dropdown */
 
@@ -268,9 +255,7 @@ button {
     float: right;
 }
 
-
 /* Profile Dropdown */
-
 
 /* mobile cart */
 
@@ -285,7 +270,6 @@ button {
     margin: -7px;
 }
 
-
 /* Change Password */
 
 .userDetails h2 {
@@ -297,13 +281,11 @@ button {
     color: #666;
 }
 
-
 /* about */
 
 .backWhite {
     background-color: #fff;
 }
-
 
 /* positions */
 
@@ -314,7 +296,6 @@ button {
     padding: 10px 10px;
     float: none;
 }
-
 
 /* Validations Error */
 
@@ -331,7 +312,6 @@ button {
 .cartBtn a {
     color: white !important;
 }
-
 
 .loadBar {
     position: absolute;
@@ -361,8 +341,34 @@ button {
 .estCta .lbl {
     width: 20%;
     padding: 10px;
- }
+}
+
 .estCta .loca {
-    width:  40%;
+    width: 40%;
     display: inline-block;
+}
+
+.loadBg {
+    /* background-image: url('assets/images/loadBg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+}
+
+.loadBg img {
+    width: 160px;
+    margin-top: 20%;
+}
+
+.app-loading .logo {
+    width: 100px;
+    height: 100px; 
+    background: url('/assets/images/logo-load.gif') center center no-repeat;
 }

@@ -4,6 +4,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { MasterService } from '../../services/master.service';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { UserService } from '../../services/user_service/user.service';
+import { AlertsService } from '../../services/alerts.service';
 
 @Component({
   selector: 'app-mobile-preview',
@@ -13,6 +14,7 @@ import { UserService } from '../../services/user_service/user.service';
 export class MobilePreviewComponent implements OnInit {
 
   constructor(
+    private alertsObj:AlertsService,
     private router: Router,
     private route: ActivatedRoute,
     public masterObj: MasterService,
@@ -65,9 +67,12 @@ export class MobilePreviewComponent implements OnInit {
 
         this.masterObj.dishesCost = this.masterObj.totalCost;
         localStorage.setItem('dishCost', this.masterObj.dishesCost.toString());
-        this.router.navigate(['../chef'], { relativeTo: this.route });
+        this.router.navigate(['../checkout/chef'], { relativeTo: this.route });
         // this.getlist();
       }
+    }else {
+      this.alertsObj.openAlert({ message: 'Your cart is empty', type: 'warning' });
+
     }
 
   }

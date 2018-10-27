@@ -130,7 +130,7 @@ nav ul li a {
     display: block;
     padding: 23px 20px 0px;
     margin: 0px 2px;
-    color: #fff !important;
+    color: #fff ;
     font-size: 15px;
     height: 68px;
     font-weight: 400;
@@ -987,6 +987,11 @@ footer {
     padding: 5% 0px 0px 0px;
 }
 
+.backtotop a > i {
+    /* width: 90%;
+    padding: 5% 0px 0px 0px; */
+    color:grey;
+}
 @-webkit-keyframes bounce {
     0% {
         bottom: 5px;
@@ -2702,10 +2707,11 @@ footer {
 .chefImg {
     float: left;
     width: 28%;
+    text-align: center;
 }
 
 .chefImg img {
-    width: 100%;
+    width: 80%;
     border-radius: 50%;
 }
 

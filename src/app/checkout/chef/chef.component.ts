@@ -82,7 +82,7 @@ export class ChefComponent implements OnInit {
   }
   onproceed() {
     // 
-    this.router.navigate(['./manager']);
+    this.router.navigate(['../manager']);
   }
   onCommentPopup() {
     this.commentService.open(CommentsComponent);

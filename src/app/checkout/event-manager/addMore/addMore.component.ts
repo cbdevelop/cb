@@ -102,7 +102,16 @@ export class AddMoreComponent implements OnInit {
       // sit down
       let res = this.masterObj.totalAttendees * (35 / 100)
       this.serviceCost += (res * 100);
-      this.butlers_cnt = res / 7;
+      this.butlers_cnt = Math.ceil(res / 7);
+      if(this.serviceCost > 35000){
+        this.serviceCost = 35000;
+        this.butlers_cnt = Math.ceil(res / 7);
+      }
+      if(this.butlers_cnt > 50){
+        //this.serviceCost = 35000;
+        this.butlers_cnt = 50;
+      }
+      
 
 
     } else if (this.masterObj.searchObj.serviceType[0].id == 4) {
@@ -147,7 +156,7 @@ export class AddMoreComponent implements OnInit {
 
     } else if (flag <= 400) {
       this.serviceCost += 3 * totalDishs * (800 + (900 / 2));
-      this.chaffing_dish_cnt = 2 * totalDishs;
+      this.chaffing_dish_cnt = 3 * totalDishs;
       this.butlers_cnt = Math.round(3 * (totalDishs / 2));
 
     } else if (flag <= 1000) {
@@ -166,7 +175,16 @@ export class AddMoreComponent implements OnInit {
     if (this.masterObj.searchObj.serviceType[0].id == 4) {
       // let res = this.masterObj.totalAttendees * (35/100)
       this.serviceCost += (flag * 100);
-      this.butlers_cnt += Math.round(flag / 7);
+      this.butlers_cnt += Math.ceil(flag / 7);
+      if(this.serviceCost > 35000){
+        this.serviceCost = 35000;
+        // this.butlers_cnt = Math.ceil(flag / 7);
+      }
+      if(this.butlers_cnt > 50){
+        //this.serviceCost = 35000;
+        this.butlers_cnt = 50;
+      }
+      
     }
     //   if(this.masterObj.totalAttendees <= 500)
     //   this.masterObj.serviceCost +=(starterArr.length * 800) + (snackArr.length * 800) + (saladArr.length * 800) + (mainArr.length * 800) + (breadArr.length * 400) + (dessertArr.length * 1000);

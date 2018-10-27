@@ -181,10 +181,13 @@ export class ResultViewComponent implements OnInit {
       if(this.service.selCity.ID == 2){
 
       }else {
-        this.router.navigate(['../chef'], { relativeTo: this.route });
+        this.router.navigate(['../checkout/chef'], { relativeTo: this.route });
         // this.getlist();
       }
       // this.router.navigate(['../chef'], { relativeTo: this.route });
+    }else {
+      this.alertsObj.openAlert({ message: 'Your cart is empty', type: 'warning' });
+
     }
   }
 

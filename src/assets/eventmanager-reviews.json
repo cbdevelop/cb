@@ -1,292 +1,408 @@
 [
   {
     "Event_manager_id": 14,
-    "rating":5 ,"user":  "Vignesh",
-    "review": "This guy did a tremendous job! I'm very happy, I was really free and was very less concered with the serving, everthing was served quickly"
+    "user": "Vignesh",
+    "review": "This guy did a tremendous job! I'm very happy, I was really free and was very less concered with the serving, everthing was served quickly",
+    "presentation": 4,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 14,
-    "rating":5 ,"user":  "Ramesh sharma",
-    "review": "Perfect and timely service"
+    "user": "Ramesh Sharma",
+    "review": "Perfect and timely service",
+    "presentation": 5,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 14,
-    "rating":5 ,"user":  "Rasheshah",
-    "review": "Bestt!"
+    "user": "Rasheshah",
+    "review": "Bestt!",
+    "presentation": 3.5,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 14,
-    "rating":5 ,"user":  "khaleel",
-    "review": "I'm very much happy with his service."
+    "user": "Khaleel",
+    "review": "I'm very much happy with his service.",
+    "presentation": 4,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 5,
-    "rating":5 ,"user":  "Khan",
-    "review": "He has got a good way with handling the event , makes sure everything alright"
+    "user": "Naveed Khan",
+    "review": "He has got a good way with handling the event , makes sure everything alright",
+    "presentation": 5,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 6,
-    "rating":5 ,"user":  "ihab",
-    "review": "Guests were really happy seeing how fast the service was, looking forward to have this service again whenever needed. Greatly pleased!"
+    "user": "Ihab",
+    "review": "Guests were really happy seeing how fast the service was, looking forward to have this service again whenever needed. Greatly pleased!",
+    "presentation": 5,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 7,
-    "rating":5 ,"user":  "hamza",
-    "review": "Very well presented"
+    "user": "Hamza",
+    "review": "Very well presented",
+    "presentation": 5,
+    "serving_time": 3
   },
   {
     "Event_manager_id": 8,
-    "rating":5 ,"user":  "siraj",
-    "review": "Helpful person"
+    "user": "Siraj",
+    "review": "Helpful person",
+    "presentation": 4,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 9,
-    "rating":5 ,"user":  "haadi",
-    "review": "Perfectionist!!"
+    "user": "Haadi",
+    "review": "Perfectionist!!",
+    "presentation": 5,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 10,
-    "rating":5 ,"user":  "asrar",
-    "review": "Quick serving and great attitude"
+    "user": "Asrar",
+    "review": "Quick serving and great attitude",
+    "presentation": 4,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 1,
-    "rating":5 ,"user":  "Ahmed quadri",
-    "review": "cooperative to guests, really appreciate and will do more events with him."
+    "user": "Ahmed Quadri",
+    "review": "cooperative to guests, really appreciate and will do more events with him.",
+    "presentation": 4,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 11,
-    "rating":5 ,"user":  "sohail",
-    "review": "Really interactive"
+    "user": "Sohail",
+    "review": "Really interactive",
+    "presentation": 4,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 12,
-    "rating":5 ,"user":  "azan",
-    "review": "quick timely serving"
+    "user": "Azan",
+    "review": "quick timely serving",
+    "presentation": 4,
+    "serving_time": 3
   },
   {
     "Event_manager_id": 13,
-    "rating":5 ,"user":  "noor",
-    "review": "A great manager indeed"
+    "user": "Noor",
+    "review": "A great manager indeed",
+    "presentation": 5,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 14,
-    "rating":5 ,"user":  "Anil",
-    "review": "Prompt and smooth with the workflow"
+    "user": "Anil",
+    "review": "Prompt and smooth with the workflow",
+    "presentation": 5,
+    "serving_time": 4.5
   },
   {
     "Event_manager_id": 15,
-    "rating":5 ,"user":  "khaliq",
-    "review": "The manager was really helpful, his presentation was very well and Served very quickly without any delay"
+    "user": "Khaliq",
+    "review": "The manager was really helpful, his presentation was very well and Served very quickly without any delay",
+    "presentation": 5,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 16,
-    "rating":5 ,"user":  "naveen kacharala",
-    "review": "Well done. Truely appreciate his service"
+    "user": "Naveen Kancharala",
+    "review": "Well done. Truely appreciate his service",
+    "presentation": 4,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 2,
-    "rating":5 ,"user":  "viqar",
-    "review": "Event without him would have been really difficult he managed the event in good manner and made it a grand success"
+    "user": "Viqar",
+    "review": "Event without him would have been really stressfull. He managed the event in good manner and made it a grand success",
+    "presentation": 5,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 3,
-    "rating":5 ,"user":  "waqar",
-    "review": "Serving was done really well"
+    "user": "Waqar",
+    "review": "Serving was done really quickly",
+    "presentation": 3,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 4,
-    "rating":5 ,"user":  "zubair",
-    "review": "Presentation, aced it!"
+    "user": "Zubair",
+    "review": "Presentation, aced it!",
+    "presentation": 5,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 5,
-    "rating":5 ,"user":  "ibrahim",
-    "review": "Really interactive with the audience and was making sure to get a prompt delivery"
+    "user": "Ibrahim",
+    "review": "Really interactive with the audience and was making sure to get a prompt delivery",
+    "presentation": 3,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 6,
-    "rating":5 ,"user":  "muzamil",
-    "review": "Quick serving and great attitude"
+    "user": "Muzamil",
+    "review": "Quick serving and great attitude",
+    "presentation": 4,
+    "serving_time": 3.5
   },
   {
     "Event_manager_id": 7,
-    "rating":5 ,"user":  "Sanjay",
-    "review": "Has a good way with handling the event , makes sure everything is alright"
+    "user": "Sanjay",
+    "review": "Has a good way with handling the event , makes sure everything is alright",
+    "presentation": 3,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 8,
-    "rating":5 ,"user":  "Muneer Ahmed",
-    "review": "Good"
+    "user": "Muneer Ahmed",
+    "review": "Good",
+    "presentation": 5,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 9,
-    "rating":5 ,"user":  "Aditi Musunur",
-    "review": "Very well presented"
+    "user": "Aditi Musunur",
+    "review": "Very well presented",
+    "presentation": 4,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 10,
-    "rating":5 ,"user":  "Advitiya Sujeet",
-    "review": "Could have been better witht the service"
+    "user": "Advitiya Sujeet",
+    "review": "Could have been better with the service",
+    "presentation": 2,
+    "serving_time": 3
   },
   {
     "Event_manager_id": 11,
-    "rating":5 ,"user":  "Alagesan Poduri",
-    "review": "Way to go with this guy very humble and quick with his service"
+    "user": "Alagesan Poduri",
+    "review": "Way to go with this guy very humble and quick with his service",
+    "presentation": 4,
+    "serving_time": 3
   },
   {
     "Event_manager_id": 12,
-    "rating":5 ,"user":  "Amrish Ilyas",
-    "review": "cooperative to guests, really appreciate and will do more events with him."
+    "user": "Amrish Ilyas",
+    "review": "Good work",
+    "presentation": 3,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 13,
-    "rating":5 ,"user":  "Kashyap P",
-    "review": "Good work"
+    "user": "Kashyap P",
+    "review": "cooperative to guests, really appreciate and will do more events with him.",
+    "presentation": 4,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 14,
-    "rating":5 ,"user":  "Asvathama Ponnada",
-    "review": "Great, this guy is good!"
+    "user": "Asvathama Ponnada",
+    "review": "Well served...",
+    "presentation": 3,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 15,
-    "rating":5 ,"user":  "Avantas Ghosal",
-    "review": "Has a good way with handling the event , makes sure everything alright"
+    "user": "Avantas Ghosal",
+    "review": "Has a good way with handling the event , makes sure everything alright",
+    "presentation": 4,
+    "serving_time": 3
   },
   {
     "Event_manager_id": 16,
-    "rating":5 ,"user":  "Avidosa Vaisakhi",
-    "review": "Guests were really happy seeing how fast the service was, I'm greatful that I hired this guy"
+    "user": "Kiran Vaisakhi",
+    "review": "Guests were really happy seeing how fast the service was, I'm greatful that I hired this guy",
+    "presentation": 3,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 1,
-    "rating":5 ,"user":  "Barsati Sandipa",
-    "review": "Was cooperative with butler and managed quite well"
+    "user": "Barsati Sandipa",
+    "review": "Was cooperative with butler and managed quite well",
+    "presentation": 4,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 2,
-    "rating":5 ,"user":  "Krupa M",
-    "review": "helpful person"
+    "user": "Krupa M",
+    "review": "helpful person",
+    "presentation": 3,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 3,
-    "rating":5 ,"user":  "Devasru Subramanyan",
-    "review": "very well presented, but had to pay an extra charge of 300/- bucks in total, as the wedding prolonged than the expected time"
+    "user": "Devasru Subramanyan",
+    "review": "very well presented, but had to pay an extra charge of 300/- bucks in total, as the wedding prolonged than the expected time",
+    "presentation": 4,
+    "serving_time": 3
   },
   {
     "Event_manager_id": 4,
-    "rating":5 ,"user":  "Dharmadhrt Ramila",
-    "review": "cooperative to guests, really appreciate"
+    "user": "Ramila Suman",
+    "review": "cooperative to guests, really appreciate",
+    "presentation": 3,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 5,
-    "rating":5 ,"user":  "Dhritiman Salim",
-    "review": "The birthday party was fun, my kids enjoyed his company"
+    "user": "Salim",
+    "review": "The birthday party was fun, my kids enjoyed his company",
+    "presentation": 5,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 6,
-    "rating":5 ,"user":  "Gopa Trilochana",
-    "review": "Quick serving and great attitude"
+    "user": "Gopa Trilochana",
+    "review": "Quick serving and great attitude",
+    "presentation": 4,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 7,
-    "rating":5 ,"user":  "Hardeep Suksma",
-    "review": "Has a good way with handling the event , makes sure everything alright"
+    "user": "Hardeep Suksma",
+    "review": "Has a good way with handling the event , makes sure everything alright",
+    "presentation": 3,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 17,
-    "rating":5 ,"user":  "Jayadev Mitali",
-    "review": "Amazing"
+    "user": "Jayadev Mitali",
+    "review": "Amazing",
+    "presentation": 3,
+    "serving_time": 3
   },
   {
     "Event_manager_id": 9,
-    "rating":5 ,"user":  "Jitendra Choudhary",
-    "review": "very well presented"
+    "user": "Jitendra Choudhary",
+    "review": "very well presented",
+    "presentation": 4,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 10,
-    "rating":5 ,"user":  "Kalyanavata Veerender",
-    "review": "Best!!"
+    "user": "Kalyanavata Veerender",
+    "review": "Best!!",
+    "presentation": 3,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 11,
-    "rating":5 ,"user":  "Abdul Haleem",
-    "review": "Quick serving and great attitude"
+    "user": "Abdul Haleem",
+    "review": "Quick serving and great attitude",
+    "presentation": 5,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 12,
-    "rating":5 ,"user":  "Vijai Sritharan",
-    "review": "very well organized"
+    "user": "Vijai Sritharan",
+    "review": "very well organized",
+    "presentation": 4,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 13,
-    "rating":5 ,"user":  "Rajesh P",
-    "review": "good work man!"
+    "user": "Rajesh P",
+    "review": "good",
+    "presentation": 4,
+    "serving_time": 3
   },
   {
     "Event_manager_id": 14,
-    "rating":5 ,"user":  "K raju",
-    "review": "Nice"
+    "user": "Harsha Sharma",
+    "review": "Nice",
+    "presentation": 3,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 15,
-    "rating":5 ,"user":  "rajesh kumar",
-    "review": "Impressive and prompt with delivery"
+    "user": "Rajesh Kumar",
+    "review": "Impressive and prompt with delivery",
+    "presentation": 3,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 16,
-    "rating":5 ,"user":  "pavan kumar",
-    "review": "Guests were really happy seeing how fast the service was , looking forward to work with him in more events"
+    "user": "Pavan Kumar",
+    "review": "Guests were really happy seeing how fast the service was , looking forward to work with him in more events",
+    "presentation": 5,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 1,
-    "rating":5 ,"user":  "R Chakshan",
-    "review": "very well presented"
+    "user": "R Chakshan",
+    "review": "very well presented",
+    "presentation": 4,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 2,
-    "rating":5 ,"user":  "Wajd waseem",
-    "review": "Great serivce!!"
+    "user": "Wajd Waseem",
+    "review": "Great serivce!!",
+    "presentation": 5,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 3,
-    "rating":5 ,"user":  "Yasmin sheik",
-    "review": "First class, bahut acha!"
+    "user": "Yasmin Sheik",
+    "review": "First class, bahut acha!",
+    "presentation": 5,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 4,
-    "rating":5 ,"user":  "Yusra mohammed",
-    "review": "cooperative with guests, really appreciate and will do more events with him."
+    "user": "Yusra Mohammed",
+    "review": "cooperative with guests, really appreciate and will do more events with him.",
+    "presentation": 5,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 5,
-    "rating":5 ,"user":  "Zahra islam",
-    "review": "Good!"
+    "user": "Zahra Islam",
+    "review": "Good!",
+    "presentation": 3,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 6,
-    "rating":5 ,"user":  "Zainab",
-    "review": "Adaptive with the crowd and well managed"
+    "user": "Zainab",
+    "review": "Adaptive with the crowd and well managed",
+    "presentation": 5,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 7,
-    "rating":5 ,"user":  "nabeela",
-    "review": "Has a good way of handling the event, I hope he will be available for my cousins wedding!!"
+    "user": "Nabeela",
+    "review": "Has a good way of handling the event, I hope he will be available for my cousins wedding!!",
+    "presentation": 4,
+    "serving_time": 4
   },
   {
     "Event_manager_id": 8,
-    "rating":5 ,"user":  "shaista",
-    "review": "Guestd were happy and so was I."
+    "user": "Shaista",
+    "review": "Guestd were happy to see the quick service",
+    "presentation": 4,
+    "serving_time": 5
   },
   {
     "Event_manager_id": 11,
-    "rating":5 ,"user":  "viswa raj",
-    "review": "Well done!"
+    "user": "Viswa Raj",
+    "review": "Well done!",
+    "presentation": 2,
+    "serving_time": 3
   },
   {
     "Event_manager_id": 12,
-    "rating":5 ,"user":  "Naveen Tikaram",
-    "review": "Did his job with sincerity and managed very well!"
+    "user": "Naveen Tikaram",
+    "review": "Did his job with sincerity and managed very well!",
+    "presentation": 4,
+    "serving_time": 4
   }
 ]

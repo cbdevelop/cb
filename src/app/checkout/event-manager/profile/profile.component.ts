@@ -20,9 +20,10 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
     this.managerDetails = this.masterObj.eventManagerList.filter(d => d.id == this.id)[0];
-    console.log(this.managerDetails);
-    this.managerDetails.Rating = (this.managerDetails.serving_time + this.managerDetails.presentation)/2;
+    
+    // this.managerDetails.Rating = (this.managerDetails.serving_time + this.managerDetails.presentation)/2;
     this.reviewsArr = this.masterObj.masterManagerReviews.filter(x=> x.Event_manager_id == this.id);
+    console.log(this.managerDetails,this.reviewsArr );
   }
 
   onCrossClose() {

@@ -1,14 +1,44 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>CaterBinge</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link  type="image" href="./assets/images/logo.png">
+  <link rel="icon"  href="./assets/images/favicon.ico">
+  <style>
+    .loadBg {
+       /* background-image: url('./assets/images/loadBg.jpg');
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;  */
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 1000000;
+      left: 0px;
+      top: 0px;
+      text-align: center;
+    }
+
+    .loadBg img {
+      width: 160px;
+      margin-top: 20%;
+    }
+
+   
+
+  </style>
 </head>
+
 <body>
-  <app-root></app-root>
+  <app-root>
+     <div class="loadBg">
+      <img src="./assets/images/logo-load.gif" alt="" />
+    </div>     
+  </app-root>
 </body>
+
 </html>

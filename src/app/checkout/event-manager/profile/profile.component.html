@@ -6,10 +6,13 @@
       </a>
 
       <div class="chPopImg">
-        <img src="./assets/images/dummychef-2.jpg" alt="" />
+        <img src="./assets/images/dummychef-2.jpeg" alt="" />
         <!-- <img src="" alt="" /> -->
         <h3>{{ managerDetails.Name }}</h3>
+
+
         <div>
+
           <ngb-rating [(rate)]="managerDetails.Rating" [readonly]="true" max="5">
             <ng-template let-fill="fill" let-index="index">
               <span class="star" [class.filled]="fill === 100">
@@ -17,12 +20,18 @@
               </span>
             </ng-template>
           </ngb-rating>
+
           <!-- <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 1 ? 'review': ''"></i>
         <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 2 ? 'review': ''"></i>
         <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 3 ? 'review': ''"></i>
         <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 4 ? 'review': ''"></i>
         <i class="fa fa-star" [ngClass]="managerDetails.Rating >= 5 ? 'review': ''"></i> -->
-          </div>
+        </div>
+        <ul style="list-style:none;float: left;">
+          <li>Presentation : {{ managerDetails.presentation }}</li>
+          <li>Serving time : {{ managerDetails.serving_time }}</li>
+
+        </ul>
         <a href="javascript:void(0)" class="addBtn" (click)="addManager()">Add</a>
         <ul class="ceri clearfix">
           <li>
@@ -88,12 +97,23 @@
                 <div class="PopTabTwo">
                   <div class="review" *ngFor="let rev of reviewsArr">
                     <h2>{{ rev.user }}</h2>
+                    <p>
+                      <span>Presentation : {{ rev.presentation }}</span>
+                      <span>Serving time : {{ rev.serving_time }}</span>
+                    </p>
                     <div class="ratChef">
-                      <i class="fa fa-star" [ngClass]="rev.Rating >= 1 ? 'review': ''"></i>
+                      <ngb-rating [(rate)]="rev.Rating" [readonly]="true" max="5">
+                        <ng-template let-fill="fill" let-index="index">
+                          <span class="star" [class.filled]="fill === 100">
+                            <span class="half" [style.width.%]="fill">&#9733;</span> &#9733;
+                          </span>
+                        </ng-template>
+                      </ngb-rating>
+                      <!-- <i class="fa fa-star" [ngClass]="rev.Rating >= 1 ? 'review': ''"></i>
                       <i class="fa fa-star" [ngClass]="rev.Rating >= 2 ? 'review': ''"></i>
                       <i class="fa fa-star" [ngClass]="rev.Rating >= 3 ? 'review': ''"></i>
                       <i class="fa fa-star" [ngClass]="rev.Rating >= 4 ? 'review': ''"></i>
-                      <i class="fa fa-star" [ngClass]="rev.Rating >= 5 ? 'review': ''"></i>
+                      <i class="fa fa-star" [ngClass]="rev.Rating >= 5 ? 'review': ''"></i> -->
                     </div>
                     <p>
                       {{ rev.review }}

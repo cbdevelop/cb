@@ -14,19 +14,19 @@
       <nav  [ngClass]="isCollapsed ? 'show' : ''">
         <ul class="clearfix">
           <li>
-            <a [ngx-scroll-to]="'#home'" [ngClass]="masterObj.currentSection == 'home' ? 'Act' : ''">Home</a>
+            <a [routerLink]="['/']" [ngx-scroll-to]="'#home'" [ngClass]="masterObj.currentSection == 'home' ? 'Act' : ''">Home</a>
           </li>
           <li>
-            <a [ngx-scroll-to]="'#howitworks'" [ngClass]="masterObj.currentSection == 'howitworks' ? 'Act' : ''">How it Works</a>
+            <a [routerLink]="['/']" [ngx-scroll-to]="'#howitworks'" [ngClass]="masterObj.currentSection == 'howitworks' ? 'Act' : ''">How it Works</a>
           </li>
           <li>
-            <a [ngx-scroll-to]="'#about'" [ngClass]="masterObj.currentSection == 'about' ? 'Act' : ''">About Us</a>
+            <a [routerLink]="['/']" [ngx-scroll-to]="'#about'" [ngClass]="masterObj.currentSection == 'about' ? 'Act' : ''">About Us</a>
           </li>
           <li>
-            <a [ngx-scroll-to]="'#choose'" [ngClass]="masterObj.currentSection == 'choose' ? 'Act' : ''">Choose Us</a>
+            <a [routerLink]="['/']"  [ngx-scroll-to]="'#choose'" [ngClass]="masterObj.currentSection == 'choose' ? 'Act' : ''">Choose Us</a>
           </li>
           <li>
-            <a [ngx-scroll-to]="'#partner'" [ngClass]="masterObj.currentSection == 'partner' ? 'Act' : ''">Partners</a>
+            <a [routerLink]="['/']"  [ngx-scroll-to]="'#partner'" [ngClass]="masterObj.currentSection == 'partner' ? 'Act' : ''">Partners</a>
           </li>
           <li>
             <a [routerLink]="['/contact']">Contact</a>
