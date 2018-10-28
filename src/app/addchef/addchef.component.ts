@@ -41,7 +41,7 @@ export class AddchefComponent implements OnInit {
     this.chefForm = this.fb.group({
 
       fullname: ['', [Validators.required]],
-      age: ['', [Validators.required, Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$')]],
+      age: ['', [Validators.required]],
       gender: [this.genders[0]],
       phone: ['', [Validators.required, Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$')]],
       email: ['', [Validators.required, this.email()]],
@@ -55,7 +55,7 @@ export class AddchefComponent implements OnInit {
   }
 
   onlyNumberKey(event) {
-    const pattern = /[0-9]/;
+    const pattern = /[0-9]+[1-9]/;
     const inputChar = String.fromCharCode(event.charCode);
     if (event.keyCode !== 9 && event.keyCode !== 8 && event.keyCode !== 13 && !pattern.test(inputChar)) {
       event.preventDefault();

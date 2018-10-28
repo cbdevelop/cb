@@ -112,6 +112,13 @@ onManager() {
 
 }
 
+onlyNumberKey(event) {
+  const pattern = /[0-9]+[1-9]/;
+  const inputChar = String.fromCharCode(event.charCode);
+  if (event.keyCode !== 9 && event.keyCode !== 8 && event.keyCode !== 13 && !pattern.test(inputChar)) {
+    event.preventDefault();
+  }
+}
   // Sign-in Open
   openSign() {
     this.signinModel.open(SigninComponent);

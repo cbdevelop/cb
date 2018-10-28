@@ -20,7 +20,7 @@
       </div> -->
     <div class="cartOut">
       <div class="cartWpar">
-        <a class="cartBtn clearfix " (click)="onproceed()" [ngClass]="this.masterObj.evntManagerSelFlag || this.masterObj.selectedEvtManager.length ? '' : 'cartBtnEmpty'">
+        <a class="cartBtn clearfix" href="javascript:void(0)" (click)="onproceed()" [ngClass]="this.masterObj.evntManagerSelFlag || this.masterObj.selectedEvtManager.length ? '' : 'cartBtnEmpty'">
           <b>Total {{ masterObj.totalCost }}</b>
           <span *ngIf="masterObj.chef_eventmanager_flag != 'Chef'">Proceed to Checkout</span>
           <span *ngIf="masterObj.chef_eventmanager_flag == 'Chef'">Proceed to Event manager</span>

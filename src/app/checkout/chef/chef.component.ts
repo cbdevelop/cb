@@ -33,9 +33,9 @@ export class ChefComponent implements OnInit {
     this.getReviews();
   }
 
-  getReviews(){
+  getReviews() {
     this.masterObj.getJSONofChefsReviews().subscribe(
-      (data)=> {
+      (data) => {
         this.masterObj.masterChefreviws = data;
       }
     )
@@ -48,7 +48,7 @@ export class ChefComponent implements OnInit {
     /* 1 to 3 dishes 1 chef*/
     /* 3 to 10 dishes 2 to 5 chef*/
     let length = this.masterObj.randomInt(1, min);
-
+    console.log(this.masterObj.filteredchefList, length, 'chef');
     if (this.masterObj.filteredchefList.length < length) {
       if (this.masterObj.chefsCost > 0 && this.masterObj.totalCost) {
         this.masterObj.totalCost -= this.masterObj.chefsCost;
@@ -57,7 +57,15 @@ export class ChefComponent implements OnInit {
       this.masterObj.filteredchefList = [];
       for (let i = 0; i < length; i++) {
         let index = this.masterObj.randomInt(1, this.masterObj.ChefData.length);
+        if (index > 17) {
+          console.log(this.masterObj.ChefData.length, index)
+          index = this.masterObj.randomInt(1, this.masterObj.ChefData.length - 1);
+        }
         let arr = this.masterObj.ChefData[index];
+        if (arr == undefined) {
+          index = this.masterObj.randomInt(1, this.masterObj.ChefData.length - 1);
+          arr = this.masterObj.ChefData[index];
+        }
         if (arr !== undefined) {
           arr.menu = '';
           let cost = 0;
@@ -65,15 +73,17 @@ export class ChefComponent implements OnInit {
           if (this.masterObj.totalAttendees <= 250)
             this.masterObj.chefsCost += parseInt(arr.Cost, 10);
           else {
-            let percent =  (this.masterObj.totalAttendees - 250) / 100;
+            let percent = (this.masterObj.totalAttendees - 250) / 100;
             cost = arr.Cost + (Math.floor(percent) * (0.2) * arr.Cost);
             this.masterObj.chefsCost += cost;
           }
 
           this.masterObj.filteredchefList.push(arr);
+        } else {
+
         }
       }
-      localStorage.setItem('filteredChefs',JSON.stringify(this.masterObj.filteredchefList));
+      localStorage.setItem('filteredChefs', JSON.stringify(this.masterObj.filteredchefList));
       localStorage.setItem('chefsCost', this.masterObj.chefsCost.toString());
       console.log(this.masterObj.totalCost, this.masterObj.chefsCost)
       this.masterObj.totalCost += this.masterObj.chefsCost;

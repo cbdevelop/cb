@@ -72,7 +72,8 @@
         <div class="clearfix">
           <label for="age">Age</label>
           <div class="addInn">
-            <input type="text" placeholder="Enter Age" [ngClass]="{'validate': showRequiredFieldError('age') }" formControlName="age"
+            <input type="text" placeholder="Enter Age"  (keypress)="onlyNumberKey($event)"
+            [ngClass]="{'validate': showRequiredFieldError('age') }" formControlName="age"
             />
             <em *ngIf="showRequiredFieldError('age')">Age is required</em>
           </div>
