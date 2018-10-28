@@ -6,7 +6,12 @@ const session = require('express-session');
 const utilities = require('./include/utilities');
 const appConfig = require('./include/appconfig');
 const path = require('path');
+
+var compression = require('compression');
+
 global.app = express();
+
+global.app.use(compression());
 
 var server = require('http').createServer(global.app )
 /*********************************************************************/
