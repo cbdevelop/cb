@@ -372,3 +372,13 @@ button {
     height: 100px; 
     background: url('/assets/images/logo-load.gif') center center no-repeat;
 }
+
+/* chefs CSS */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    /* background-color: none ; */
+    border-bottom: 3px solid #12b396; 
+}
+
+.nav-tabs .nav-link.active {
+    border: none; 
+}

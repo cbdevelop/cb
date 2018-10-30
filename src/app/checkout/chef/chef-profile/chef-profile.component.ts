@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { MasterService } from '../../../services/master.service';
@@ -41,4 +41,5 @@ export class ChefProfileComponent implements OnInit {
   changeChef() {
 
   }
+
 }

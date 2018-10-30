@@ -266,6 +266,9 @@ export class MasterService {
 		console.log('paypal service');
 		return this.http.post(this.ApiUrl + '/v1/paynow', options).pipe();
 	}
+	addAddress(options) {
+		return this.http.post(this.ApiUrl + '/v1/address', options);
+	}
 
 
 

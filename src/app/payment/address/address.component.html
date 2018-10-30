@@ -1,7 +1,7 @@
 <div class="payAddWrap">
     <h2 class="addslide" (click)="toggleDiv()">Address<i class="fa fa-caret-down" aria-hidden="true"></i></h2>
     
-    <form [formGroup]="addForm" class="form-horizontal" (ngSubmit)="onAdd()" novalidate>
+    <form [formGroup]="addForm" class="form-horizontal" (ngSubmit)="addressAdd()" novalidate>
     <div class="address clearfix" *ngIf="visible">
         <div class="addressInn">
             <label for="fullname" class="required">Full Name</label>

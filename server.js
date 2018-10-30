@@ -90,6 +90,7 @@ global.app.use(function(req, res, next) {
     require('./router')();
     require('./apis/chef.registration')();
     require('./apis/eventmanager')();
+    require('./apis/address')();
     require('./apis/user')();
     require('./apis/paypal')();
 })();

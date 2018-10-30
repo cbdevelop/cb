@@ -4,6 +4,7 @@ const appConfig = require('../include/appconfig');
 const utils = require('../include/utilities');
 const moment = require('moment-timezone');
 
+// User Registration
 module.exports = () => {
     global.app.post('/v1/userregister', (req, res, next) => {
         var postObj = req.body;

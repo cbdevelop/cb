@@ -69,6 +69,14 @@ module.exports = {
             return false;
         }
     },
+    isLandmarkValid: (landmark) => {
+        try {
+            var re = /^[a-zA-Z0-9-\/,] ?([a-zA-Z0-9-\/,]|[a-zA-Z0-9-\/,] )*[a-zA-Z0-9-\/,]$/;
+            return re.test(landmark);
+        } catch (err) {
+            return false;
+        }
+    },
     isPhoneNumberValid: (phoneNumber) => {
         try {
             var re = /^[6789]\d{9}$/;
